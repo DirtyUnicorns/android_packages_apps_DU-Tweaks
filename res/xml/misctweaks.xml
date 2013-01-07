@@ -24,6 +24,12 @@
             android:entryValues="@array/wired_ringtone_focus_mode_values" />
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="headset_connect_player"
+            android:title="@string/headset_connect_player_title"
+            android:summary="@string/headset_connect_player_summary"
+            android:defaultValue="false" />
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="flashlight_notification"
             android:title="@string/flashlight_notification_title"
             android:summary="@string/flashlight_notification_summary"
