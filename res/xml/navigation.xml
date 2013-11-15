@@ -20,5 +20,10 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-</PreferenceScreen>
+    <PreferenceScreen
+        android:key="navbar_settings"
+        android:fragment="com.dirtyunicorns.dutweaks.fragments.NavbarSettings"
+        android:layout="@layout/preference_navbar"
+        android:title="@string/navigation_bar" />
 
+</PreferenceScreen>
