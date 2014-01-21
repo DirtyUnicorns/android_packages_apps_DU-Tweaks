@@ -83,7 +83,131 @@
             android:summary="@string/button_brightness_summary"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.ButtonBrightnessSettings" />
 
+        <SwitchPreference
+            android:key="enable_hardware_rebind"
+            android:title="@string/keys_enable_custom_title"
+            android:summary="@string/keys_enable_custom_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="button_keys_back"
+        android:title="@string/keys_back_press_title" >
+
+        <Preference
+            android:key="keys_back_press"
+            android:title="@string/keys_action_normal"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_back_long_press"
+            android:title="@string/keys_action_long"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_back_double_tap"
+            android:title="@string/keys_action_double"
+            android:dependency="enable_hardware_rebind" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="button_keys_camera"
+        android:title="@string/keys_camera_press_title" >
+
+        <Preference
+            android:key="keys_camera_press"
+            android:title="@string/keys_action_normal"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_camera_long_press"
+            android:title="@string/keys_action_long"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_camera_double_tap"
+            android:title="@string/keys_action_double"
+            android:dependency="enable_hardware_rebind" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="button_keys_home"
+        android:title="@string/keys_home_press_title">
+
+        <Preference
+            android:key="keys_home_press"
+            android:title="@string/keys_action_normal"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_home_long_press"
+            android:title="@string/keys_action_long"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_home_double_tap"
+            android:title="@string/keys_action_double"
+            android:dependency="enable_hardware_rebind" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="button_keys_menu"
+        android:title="@string/keys_menu_press_title">
+
+        <Preference
+            android:key="keys_menu_press"
+            android:title="@string/keys_action_normal"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_menu_long_press"
+            android:title="@string/keys_action_long"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_menu_double_tap"
+            android:title="@string/keys_action_double"
+            android:dependency="enable_hardware_rebind" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="button_keys_assist"
+        android:title="@string/keys_assist_press_title">
+
+        <Preference
+            android:key="keys_assist_press"
+            android:title="@string/keys_action_normal"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_assist_long_press"
+            android:title="@string/keys_action_long"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_assist_double_tap"
+            android:title="@string/keys_action_double"
+            android:dependency="enable_hardware_rebind" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="button_keys_appSwitch"
+        android:title="@string/keys_app_switch_press_title">
+
+        <Preference
+            android:key="keys_app_switch_press"
+            android:title="@string/keys_action_normal"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_app_switch_long_press"
+            android:title="@string/keys_action_long"
+            android:dependency="enable_hardware_rebind" />
+
+        <Preference
+            android:key="keys_app_switch_double_tap"
+            android:title="@string/keys_action_double"
+            android:dependency="enable_hardware_rebind" />
     </PreferenceCategory>
 
 </PreferenceScreen>
-
