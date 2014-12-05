@@ -577,6 +577,10 @@
     <string name="less_notification_sounds_1m">Every minute</string>
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
     <!-- Expanded desktop -->
     <string name="expanded_desktop_title">Expanded desktop</string>
     <string name="expanded_desktop_summary">Per-app configuration of the status bar and navigation key view</string>
