@@ -1,4 +1,4 @@
-android_packages_apps_DUTweaks
+Dirty Tweaks
 ==============================
 
 All tabs are types of tweaks. All tabs have their own fragment in it's own class in it's own file. 
