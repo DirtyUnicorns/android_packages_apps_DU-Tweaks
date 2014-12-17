@@ -133,7 +133,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         });
         helpDiag.setMessage(R.string.dirtytweaks_dialog_message);
         helpDiag.setTitle(R.string.dirtytweaks_dialog_title);
-        helpDiag.setIcon(R.drawable.ic_action_help);
+        helpDiag.setIcon(R.drawable.ic_action_help_red);
         AlertDialog dialog = helpDiag.create();
         dialog.show();
     }
