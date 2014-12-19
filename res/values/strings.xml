@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!-- Copyright (C) 2014 The Dirty Unicorns Project
 
-    <string name="app_name">DU Tweaks</string>
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
 
+          http://www.apache.org/licenses/LICENSE-2.0
 
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!--Title Strings-->
-    <string name="title_home">Welcome</string>
-    <string name="title_ui">General UI</string>
-    <string name="title_statusbar">Status Bar</string>
-    <string name="title_navigation">Navigation</string>
-    <string name="title_multitask">Multi-Tasking</string>
-    <string name="title_misc">Miscellaneous</string>
+    <!-- Tabs -->
+    <string name="generalui_category">General UI</string>
+    <string name="statusbar_category">Status Bar</string>
+    <string name="navigation_category">Navigation Bar</string>
+    <string name="multitasking_category">Multi-Tasking</string>
+    <string name="system_category">System</string>
+    <string name="misc_category">Miscellaneous</string>
 
-    <!--Standard Strings-->
-    <string name="help">Help</string>
-
-    <string name="dirtytweaks_dialog_message">Please help us to help you!\n\nIf you find a bug with any of these settings, please open up a ticket on Jira or contact a DU developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Any useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not perfect, we do miss things.</string>
-
+    <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
-    <string name="dirtytweaks_main_message">Welcome to Dirty Tweaks.\n\nWith this app you can change the look, feel, and capabilities of your device. If you do not understand a feature in Dirty Tweaks, please research it. If you are looking for something, please look in all settings before asking where it is at.\nIf something is not included, then we haven\'t added it! That doesn\'t mean it is missing and that doesn\'t mean you need to ask for it. Either we don\'t like the feature, we think it is pointless, or we are working on importing it and haven\'t finished it yet.\n\nPlease be patient and remember that this is a hobby for us, we don\'t get paid for it, and we provide it to you guys for FREE!!</string>
+    <string name="dirtytweaks_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a DU developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
+    <string name="dirtytweaks_dialog_toast">READ THE WHOLE THING!</string>
+
+    <!-- Download Center -->
+    <string name="download_category">Download Center</string>
+    <string name="gapps_category">GAPPS Packages</string>
+    <string name="banksgapps_title">Banks Minimal Gapps</string>
+    <string name="banksgapps_summary">Minimal Gapps give you just what you need to access the playstore, nothing more</string>
+    <string name="regulargapps_title">Regular Gapps</string>
+    <string name="regulargapps_summary">Fully packed with the majority of GAPPS, these are commonly used by users that do not want to download/install them later</string>
+
 </resources>
