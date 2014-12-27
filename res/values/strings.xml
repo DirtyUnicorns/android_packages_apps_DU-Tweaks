@@ -79,4 +79,6 @@
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
     <string name="ok">OK</string>
 
+    <string name="omniswitch_category">OmniSwitch</string>
+
 </resources>
