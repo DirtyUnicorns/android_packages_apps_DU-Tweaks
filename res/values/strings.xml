@@ -93,4 +93,11 @@
     <string name="hfm_dialog_success">/4 hosts sources successfully applied!</string>
     <string name="hfm_dialog_conn_error">Error: No network connectivity</string>
 
+    <!-- Misc Tweaks -->
+    <string name="misctweaks_category">Misc. Tweaks</string>
+
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Diable Immersive Mode Messages</string>
+    <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+
 </resources>
