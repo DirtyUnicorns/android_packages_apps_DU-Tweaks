@@ -40,16 +40,16 @@
             android:title="@string/powermenu_category" />
 
          <Preference
-            android:key="recents"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Recents"
-            android:layout="@layout/preference_recents"
-            android:title="@string/recents_category" />
-
-         <Preference
             android:key="wakelockblocker"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.WakelockBlocker"
             android:layout="@layout/preference_wakelockblocker"
             android:title="@string/wakelockblocker_category" />
+
+         <PreferenceScreen
+            android:key="hfm_settings"
+            android:title="@string/hfm_pref_screen_title"
+            android:layout="@layout/preference_adblocker"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.HfmSettings" />
 
 </PreferenceScreen>
 
