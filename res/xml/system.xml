@@ -26,5 +26,11 @@
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
 
+         <PreferenceScreen
+            android:key="hfm_settings"
+            android:title="@string/hfm_pref_screen_title"
+            android:layout="@layout/preference_adblocker"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.HfmSettings" />
+
 </PreferenceScreen>
 
