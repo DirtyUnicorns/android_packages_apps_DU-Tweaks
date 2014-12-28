@@ -100,4 +100,40 @@
     <string name="disable_immersive_message_title">Diable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 
+    <!-- Hardware Button remapping -->  
+    <string name="button_keys_title">Buttons</string>
+    <string name="keys_bindings_title">Key actions</string>
+    <string name="button_keys_back_title" >Back key</string>
+    <string name="button_keys_home_title" >Home key</string>
+    <string name="button_keys_menu_title" >Menu key</string>
+    <string name="button_keys_assist_title" >Search key</string>
+    <string name="button_keys_appSwitch_title" >App switch key</string>
+    <string name="keys_enable_custom_title">Custom actions</string>
+    <string name="keys_back_press_title">Back key</string>
+    <string name="keys_back_long_press_title">Back key (long press)</string>
+    <string name="keys_home_press_title">Home key</string>
+    <string name="keys_home_long_press_title">Home key (long press)</string>
+    <string name="keys_home_double_tap_title">Home key (double tap)</string>
+    <string name="keys_menu_press_title">Menu key</string>
+    <string name="keys_menu_long_press_title">Menu key (long press)</string>
+    <string name="keys_assist_press_title">Search key</string>
+    <string name="keys_assist_long_press_title">Search key (long press)</string>
+    <string name="keys_app_switch_press_title">App switch key</string>
+    <string name="keys_app_switch_long_press_title">App switch key (long press)</string>
+    <string name="keys_action_nothing">No action</string>
+    <string name="keys_action_menu">Open/close menu</string>
+    <string name="keys_action_app_switch">Recent apps switcher</string>
+    <string name="keys_action_search">Search assistant</string>
+    <string name="keys_action_voice_search">Voice search</string>
+    <string name="keys_action_in_app_search">In-app search</string>
+    <string name="keys_action_home">Home button</string>
+    <string name="keys_action_back">Back button</string>
+    <string name="keys_action_last_app">Switch to last app</string>
+    <string name="keys_action_kill_app">Kill app</string>
+    <string name="keys_action_normal">Normal press</string>
+    <string name="keys_action_long">Long press</string>
+    <string name="keys_action_double">Double tap</string>
+    <string name="dialog_no_home_key_title">No home action</string>
+    <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
+
 </resources>

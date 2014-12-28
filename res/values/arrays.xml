@@ -72,4 +72,31 @@
         <item>2000</item>
     </string-array>
 
+    <!-- Hardware key rebinding -->
+    <string-array name="keys_action_entries" translatable="false">
+        <item>@string/keys_action_nothing</item>
+        <item>@string/keys_action_home</item>
+        <item>@string/keys_action_back</item>
+        <item>@string/keys_action_menu</item>
+        <item>@string/keys_action_app_switch</item>
+        <item>@string/keys_action_search</item>
+        <item>@string/keys_action_voice_search</item>
+        <item>@string/keys_action_in_app_search</item>
+        <item>@string/keys_action_last_app</item>
+        <item>@string/keys_action_kill_app</item>
+    </string-array>
+
+    <string-array name="keys_action_values" translatable="false">
+        <item>0</item>
+        <item>6</item>
+        <item>7</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
 </resources>
