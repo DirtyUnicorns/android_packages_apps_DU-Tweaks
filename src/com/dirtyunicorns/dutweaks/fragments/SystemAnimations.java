@@ -34,7 +34,7 @@ import com.android.internal.util.crdroid.AwesomeAnimationHelper;
 
 import java.util.Arrays;
 
-public class AnimationControls extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class SystemAnimations extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String ACTIVITY_OPEN = "activity_open";
     private static final String ACTIVITY_CLOSE = "activity_close";
@@ -69,9 +69,9 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle(R.string.aokp_animation_title);
+        setTitle(R.string.system_animation_title);
         // Load the preferences from an XML resource
-        addPreferencesFromResource(R.xml.aokp_animation_controls);
+        addPreferencesFromResource(R.xml.system_animations);
 
         PreferenceScreen prefs = getPreferenceScreen();
         mAnimations = AwesomeAnimationHelper.getAnimationsList();
