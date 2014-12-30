@@ -61,7 +61,6 @@ import java.util.HashMap;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-//import org.omnirom.omnigears.preference.SystemCheckBoxPreference;
 
 public class ButtonSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -74,13 +73,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String CATEGORY_APPSWITCH = "button_keys_appSwitch";
 
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
-//    private static final String BUTTON_VOLUME_WAKE = "button_volume_wake_screen";
-//    private static final String BUTTON_VOLUME_DEFAULT = "button_volume_default_screen";
-//    private static final String BUTTON_VOLUME_MUSIC_CONTROL = "button_volume_music_control";
-//    private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
-//    private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
-//    private static final String CATEGORY_HEADSETHOOK = "button_headsethook";
-//    private static final String BUTTON_HEADSETHOOK_LAUNCH_VOICE = "button_headsethook_launch_voice";
 
     private static final String KEYS_CATEGORY_BINDINGS = "keys_bindings";
     private static final String KEYS_ENABLE_CUSTOM = "keys_enable_custom";
@@ -96,12 +88,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String KEYS_APP_SWITCH_PRESS = "keys_app_switch_press";
     private static final String KEYS_APP_SWITCH_LONG_PRESS = "keys_app_switch_long_press";
 
-//    private static final String VIRTUAL_KEY_HAPTIC_FEEDBACK = "virtual_key_haptic_feedback";
-//    private static final String FORCE_SHOW_OVERFLOW_MENU = "force_show_overflow_menu";
-//    private static final String KEYS_BRIGHTNESS_KEY = "button_brightness";
-//    private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
-//    private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
-
     // Available custom actions to perform on a key press.
     private static final int ACTION_NOTHING = 0;
     private static final int ACTION_MENU = 1;
@@ -113,7 +99,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final int ACTION_BACK = 7;
     private static final int ACTION_LAST_APP = 8;
     private static final int ACTION_KILL_APP = 9;
-//    private static final int ACTION_SLEEP = 10;
 
     // Masks for checking presence of hardware keys.
     // Must match values in frameworks/base/core/res/res/values/config.xml
@@ -124,10 +109,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final int KEY_MASK_APP_SWITCH = 0x10;
 
     private SwitchPreference mVolumeRockerWake;
-//    private CheckBoxPreference mVolumeWake;
-//    private CheckBoxPreference mVolumeMusicControl;
-//    private CheckBoxPreference mSwapVolumeButtons;
-//    private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mEnableCustomBindings;
     private ListPreference mBackPressAction;
     private ListPreference mBackLongPressAction;
@@ -141,13 +122,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private ListPreference mAppSwitchPressAction;
     private ListPreference mAppSwitchLongPressAction;
     private Map<String, Integer> mKeySettings = new HashMap<String, Integer>();
-//    private ListPreference mVolumeDefault;
-//    private CheckBoxPreference mHeadsetHookLaunchVoice;
-//    private CheckBoxPreference mVirtualKeyHapticFeedback;
-//    private CheckBoxPreference mForceShowOverflowMenu;
-//    private boolean mButtonBrightnessSupport;
-//    private CheckBoxPreference mEnableNavBar;
-//    private CheckBoxPreference mDisabkeHWKeys;
     private PreferenceScreen mButtonBrightness;
     private PreferenceCategory mKeysBackCategory;
     private PreferenceCategory mKeysHomeCategory;
@@ -171,50 +145,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         int volumeRockerWake = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_WAKE, 0);
         mVolumeRockerWake.setChecked(volumeRockerWake != 0);
-
-//        final PreferenceCategory volumeCategory =
-//                (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
-
-//        mButtonBrightnessSupport = getResources().getBoolean(com.android.internal.R.bool.config_button_brightness_support);
-
-//        if (hasVolumeRocker()) {
-//            mVolumeWake = (CheckBoxPreference) findPreference(BUTTON_VOLUME_WAKE);
-//            mVolumeDefault = (ListPreference) findPreference(BUTTON_VOLUME_DEFAULT);
-//            if (!res.getBoolean(R.bool.config_show_volumeRockerWake)) {
-//                volumeCategory.removePreference(mVolumeWake);
-//            } else {
-//                mVolumeWake.setChecked(Settings.System.getInt(resolver,
-//                    Settings.System.VOLUME_WAKE_SCREEN, 0) != 0);
-//            }
-//          int currentDefault = Settings.System.getInt(resolver, Settings.System.VOLUME_KEYS_DEFAULT,
-//                  Utils.isVoiceCapable(getActivity()) ? AudioSystem.STREAM_RING : AudioSystem.STREAM_MUSIC);
-//
-//          if (!Utils.isVoiceCapable(getActivity())) {
-//              removeListEntry(mVolumeDefault, Integer.toString(AudioSystem.STREAM_RING));
-//          }
-//
-//          mVolumeDefault.setValue(Integer.toString(currentDefault));
-//          mVolumeDefault.setOnPreferenceChangeListener(this);
-//
-//          mVolumeMusicControl = (CheckBoxPreference) findPreference(BUTTON_VOLUME_MUSIC_CONTROL);
-//          mVolumeMusicControl.setChecked(Settings.System.getInt(resolver,
-//                  Settings.System.VOLUME_MUSIC_CONTROL, 0) != 0);
-//
-//          mSwapVolumeButtons = (SystemCheckBoxPreference) findPreference(SWAP_VOLUME_BUTTONS);
-//          mSwapVolumeButtons.setChecked(Settings.System.getInt(resolver,
-//                  Settings.System.SWAP_VOLUME_BUTTONS, 0) != 0);
-//
-//          mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
-//          if (mVolumeKeyCursorControl != null) {
-//              mVolumeKeyCursorControl.setValue(Integer.toString(Settings.System.getInt(
-//                      getContentResolver(), Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0)));
-//              mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
-//              mVolumeKeyCursorControl.setOnPreferenceChangeListener(this);
-//          }
-//
-//        } else {
-//            prefScreen.removePreference(volumeCategory);
-//        }
 
         final int deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
@@ -269,16 +199,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     KEYS_APP_SWITCH_PRESS);
             mAppSwitchLongPressAction = (ListPreference) prefScreen.findPreference(
                     KEYS_APP_SWITCH_LONG_PRESS);
-//            mVirtualKeyHapticFeedback = (CheckBoxPreference) prefScreen.findPreference(
-//                    VIRTUAL_KEY_HAPTIC_FEEDBACK);
-//            mForceShowOverflowMenu = (CheckBoxPreference) prefScreen.findPreference(
-//                    FORCE_SHOW_OVERFLOW_MENU);
-//            mEnableNavBar = (CheckBoxPreference) prefScreen.findPreference(
-//                    KEYS_SHOW_NAVBAR_KEY);
-//            mDisabkeHWKeys = (CheckBoxPreference) prefScreen.findPreference(
-//                    KEYS_DISABLE_HW_KEY);
-//            mButtonBrightness = (PreferenceScreen) prefScreen.findPreference(
-//                    KEYS_BRIGHTNESS_KEY);
 
             if (hasBackKey) {
                 int backPressAction = Settings.System.getInt(resolver,
@@ -423,78 +343,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             mEnableCustomBindings.setChecked((Settings.System.getInt(resolver,
                     Settings.System.HARDWARE_KEY_REBINDING, 0) == 1));
             mEnableCustomBindings.setOnPreferenceChangeListener(this);
-
-//            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-//            if (vibrator == null || !vibrator.hasVibrator()) {
-//                removePreference(VIRTUAL_KEY_HAPTIC_FEEDBACK);
-//            } else {
-//                mVirtualKeyHapticFeedback.setChecked(Settings.System.getInt(resolver,
-//                        Settings.System.VIRTUAL_KEYS_HAPTIC_FEEDBACK, 1) == 1);
-//            }
-//
-//            boolean hasNavBar = getResources().getBoolean(
-//                    com.android.internal.R.bool.config_showNavigationBar);
-//            mForceShowOverflowMenu.setChecked(Settings.System.getInt(resolver,
-//                    Settings.System.FORCE_SHOW_OVERFLOW_MENU, (!hasNavBar && hasMenuKey) ? 0 : 1) == 1);
-//
-//            boolean harwareKeysDisable = Settings.System.getInt(resolver,
-//                        Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
-//            mDisabkeHWKeys.setChecked(harwareKeysDisable);
-//
-//            if (!mButtonBrightnessSupport) {
-//                keysCategory.removePreference(mButtonBrightness);
-//            }
-//            updateDisableHWKeyEnablement(harwareKeysDisable);
         }
-
-//        final PreferenceCategory headsethookCategory =
-//                (PreferenceCategory) prefScreen.findPreference(CATEGORY_HEADSETHOOK);
-
-//        mHeadsetHookLaunchVoice = (CheckBoxPreference) findPreference(BUTTON_HEADSETHOOK_LAUNCH_VOICE);
-//        mHeadsetHookLaunchVoice.setChecked(Settings.System.getInt(resolver,
-//                Settings.System.HEADSETHOOK_LAUNCH_VOICE, 1) == 1);
     }
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-//        if (preference == mVolumeWake) {
-//            boolean checked = ((CheckBoxPreference)preference).isChecked();
-//            Settings.System.putInt(getContentResolver(),
-//                    Settings.System.VOLUME_WAKE_SCREEN, checked ? 1:0);
-//            return true;
-//        }
-//        else if (preference == mHeadsetHookLaunchVoice) {
-//            boolean checked = ((CheckBoxPreference)preference).isChecked();
-//            Settings.System.putInt(getContentResolver(),
-//                    Settings.System.HEADSETHOOK_LAUNCH_VOICE, checked ? 1:0);
-//
-//            return true;
-//        } else if (preference == mVirtualKeyHapticFeedback) {
-//            boolean checked = ((CheckBoxPreference)preference).isChecked();
-//            Settings.System.putInt(getContentResolver(),
-//                    Settings.System.VIRTUAL_KEYS_HAPTIC_FEEDBACK, checked ? 1:0);
-//            return true;
-//        } else if (preference == mVolumeMusicControl) {
-//            boolean checked = ((CheckBoxPreference)preference).isChecked();
-//            Settings.System.putInt(getActivity().getContentResolver(),
-//                    Settings.System.VOLUME_MUSIC_CONTROL, checked ? 1:0);
-//            return true;
-//        } else if (preference == mForceShowOverflowMenu) {
-//            boolean checked = ((CheckBoxPreference)preference).isChecked();
-//            Settings.System.putInt(getContentResolver(),
-//                    Settings.System.FORCE_SHOW_OVERFLOW_MENU, checked ? 1:0);
-//            return true;
-//        } else if (preference == mDisabkeHWKeys) {
-//            boolean checked = ((CheckBoxPreference)preference).isChecked();
-//            Settings.System.putInt(getContentResolver(),
-//                    Settings.System.HARDWARE_KEYS_DISABLE, checked ? 1:0);
-//            updateDisableHWKeyEnablement(checked);
-//        } else if (preference == mSwapVolumeButtons) {
-//            boolean checked = ((CheckBoxPreference)preference).isChecked();
-//            Settings.System.putInt(getContentResolver(),
-//                    Settings.System.SWAP_VOLUME_BUTTONS, checked ? 1:0);
-//            return true;
-//        }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
@@ -504,23 +357,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), Settings.System.HARDWARE_KEY_REBINDING,
                     value ? 1 : 0);
-//            boolean harwareKeysDisable = Settings.System.getInt(getContentResolver(),
-//                    Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
-//            updateDisableHWKeyEnablement(harwareKeysDisable);
             return true;
         } else if (preference == mVolumeRockerWake) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
                     value ? 1 : 0);
             return true;
-//        } else if (preference == mVolumeKeyCursorControl) {
-//            String volumeKeyCursorControl = (String) newValue;
-//            int val = Integer.parseInt(volumeKeyCursorControl);
-//            Settings.System.putInt(getContentResolver(),
-//                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, val);
-//            int index = mVolumeKeyCursorControl.findIndexOfValue(volumeKeyCursorControl);
-//            mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntries()[index]);
-//            return true;
         } else if (preference == mBackPressAction) {
             int value = Integer.valueOf((String) newValue);
             int index = mBackPressAction.findIndexOfValue((String) newValue);
@@ -631,17 +473,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             mKeySettings.put(Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, value);
             checkForHomeKey();
             return true;
-//        } else if (preference == mVolumeDefault) {
-//            int value = Integer.valueOf((String) newValue);
-//            Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_KEYS_DEFAULT, value);
-//            return true;
         }
         return false;
     }
-
-//    private boolean hasVolumeRocker() {
-//        return getActivity().getResources().getBoolean(R.bool.config_has_volume_rocker);
-//    }
 
     private boolean hasHomeKey() {
         Iterator<Integer> nextAction = mKeySettings.values().iterator();
@@ -669,35 +503,4 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             alertDialog.show();
         }
     }
-
-//    public void removeListEntry(ListPreference list, String valuetoRemove) {
-//        ArrayList<CharSequence> entries = new ArrayList<CharSequence>();
-//        ArrayList<CharSequence> values = new ArrayList<CharSequence>();
-//
-//        for (int i = 0; i < list.getEntryValues().length; i++) {
-//            if (list.getEntryValues()[i].toString().equals(valuetoRemove)) {
-//                continue;
-//            } else {
-//                entries.add(list.getEntries()[i]);
-//                values.add(list.getEntryValues()[i]);
-//            }
-//        }
-//
-//        list.setEntries(entries.toArray(new CharSequence[entries.size()]));
-//        list.setEntryValues(values.toArray(new CharSequence[values.size()]));
-//    }
-
-//    private void updateDisableHWKeyEnablement(boolean harwareKeysDisable) {
-//        boolean enableHWKeyRebinding = Settings.System.getInt(getContentResolver(),
-//                    Settings.System.HARDWARE_KEY_REBINDING, 0) == 1;
-//
-//        mVirtualKeyHapticFeedback.setEnabled(!harwareKeysDisable);
-//        mForceShowOverflowMenu.setEnabled(!harwareKeysDisable);
-//        mButtonBrightness.setEnabled(!harwareKeysDisable);
-//        mKeysHomeCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
-//        mKeysBackCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
-//        mKeysMenuCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
-//        mKeysAppSwitchCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
-//        mKeysAssistCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
-//    }
 }
