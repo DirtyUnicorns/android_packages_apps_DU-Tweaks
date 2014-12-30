@@ -73,6 +73,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String CATEGORY_ASSIST = "button_keys_assist";
     private static final String CATEGORY_APPSWITCH = "button_keys_appSwitch";
 
+    private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
 //    private static final String BUTTON_VOLUME_WAKE = "button_volume_wake_screen";
 //    private static final String BUTTON_VOLUME_DEFAULT = "button_volume_default_screen";
 //    private static final String BUTTON_VOLUME_MUSIC_CONTROL = "button_volume_music_control";
@@ -122,6 +123,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final int KEY_MASK_ASSIST = 0x08;
     private static final int KEY_MASK_APP_SWITCH = 0x10;
 
+    private SwitchPreference mVolumeRockerWake;
 //    private CheckBoxPreference mVolumeWake;
 //    private CheckBoxPreference mVolumeMusicControl;
 //    private CheckBoxPreference mSwapVolumeButtons;
@@ -162,6 +164,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
+
+        // volume rocker wake
+        mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
+        mVolumeRockerWake.setOnPreferenceChangeListener(this);
+        int volumeRockerWake = Settings.System.getInt(getContentResolver(),
+                VOLUME_ROCKER_WAKE, 0);
+        mVolumeRockerWake.setChecked(volumeRockerWake != 0);
 
 //        final PreferenceCategory volumeCategory =
 //                (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
@@ -498,6 +507,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //            boolean harwareKeysDisable = Settings.System.getInt(getContentResolver(),
 //                    Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
 //            updateDisableHWKeyEnablement(harwareKeysDisable);
+            return true;
+        } else if (preference == mVolumeRockerWake) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
+                    value ? 1 : 0);
             return true;
 //        } else if (preference == mVolumeKeyCursorControl) {
 //            String volumeKeyCursorControl = (String) newValue;
