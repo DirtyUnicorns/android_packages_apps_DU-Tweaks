@@ -136,4 +136,9 @@
     <string name="dialog_no_home_key_title">No home action</string>
     <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
 
+    <!-- Status bar brightness control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
+    <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
+
 </resources>
