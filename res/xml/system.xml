@@ -26,7 +26,13 @@
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
 
-         <PreferenceScreen
+         <Preference
+            android:key="recents"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Recents"
+            android:layout="@layout/preference_recents"
+            android:title="@string/recents_category" />
+
+         <Preference
             android:key="hfm_settings"
             android:title="@string/hfm_pref_screen_title"
             android:layout="@layout/preference_adblocker"
