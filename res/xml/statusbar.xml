@@ -32,5 +32,11 @@
             android:layout="@layout/preference_statusbarclock"
             android:title="@string/status_bar_clock" />
 
+         <Preference
+            android:key="quick_settings"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.QuickSettings"
+            android:layout="@layout/preference_quicksettings"
+            android:title="@string/quicksettings_category" />
+
 </PreferenceScreen>
 
