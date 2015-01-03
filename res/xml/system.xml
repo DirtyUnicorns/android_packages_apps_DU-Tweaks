@@ -32,7 +32,7 @@
             android:layout="@layout/preference_recents"
             android:title="@string/recents_category" />
 
-         <Preference
+         <PreferenceScreen
             android:key="hfm_settings"
             android:title="@string/hfm_pref_screen_title"
             android:layout="@layout/preference_adblocker"
