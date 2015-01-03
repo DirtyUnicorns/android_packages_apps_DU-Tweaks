@@ -201,4 +201,8 @@
     <string name="recents_show_searchbar_summary">Disable or enable the Google search bar in the recents menu</string>
     <string name="keywords_recents_show_searchbar">recent recents disable search bar searchbar hide</string>
 
+    <!-- Disable QS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Disable QS on lockscreen</string>
+    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
+
 </resources>
