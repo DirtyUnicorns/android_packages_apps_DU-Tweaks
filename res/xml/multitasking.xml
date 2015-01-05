@@ -30,5 +30,11 @@
                 android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
          </PreferenceScreen>
 
+         <PreferenceScreen
+            android:key="gesture_anywhere"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereSettings"
+            android:layout="@layout/preference_gestureanywhere"
+            android:title="@string/gesture_anywhere_title" />
+
 </PreferenceScreen>
 
