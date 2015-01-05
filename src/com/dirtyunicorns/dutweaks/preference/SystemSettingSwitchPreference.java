@@ -21,9 +21,7 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.util.AttributeSet;
 
-
 public class SystemSettingSwitchPreference extends SwitchPreference {
-
     public SystemSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
@@ -43,7 +41,6 @@ public class SystemSettingSwitchPreference extends SwitchPreference {
                 // It's already there, so the same as persisting
                 return true;
             }
-
             Settings.System.putInt(getContext().getContentResolver(), getKey(), value ? 1 : 0);
             return true;
         }
@@ -55,7 +52,6 @@ public class SystemSettingSwitchPreference extends SwitchPreference {
         if (!shouldPersist()) {
             return defaultReturnValue;
         }
-
         return Settings.System.getInt(getContext().getContentResolver(),
                 getKey(), defaultReturnValue ? 1 : 0) != 0;
     }
@@ -65,11 +61,5 @@ public class SystemSettingSwitchPreference extends SwitchPreference {
         // Using getString instead of getInt so we can simply check for null
         // instead of catching an exception. (All values are stored as strings.)
         return Settings.System.getString(getContext().getContentResolver(), getKey()) != null;
-    }
-
-    @Override
-    protected void onClick() {
-        // Do nothing
-        //super.onClick();
     }
 }
