@@ -36,5 +36,11 @@
             android:layout="@layout/preference_gestureanywhere"
             android:title="@string/gesture_anywhere_title" />
 
+         <PreferenceScreen
+            android:key="app_circle_bar"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.AppCircleBar"
+            android:layout="@layout/preference_appcirclebar"
+            android:title="@string/app_circle_bar_title" />
+
 </PreferenceScreen>
 
