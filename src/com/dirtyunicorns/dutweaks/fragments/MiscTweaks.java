@@ -24,7 +24,7 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.CheckBoxPreference;
+import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -42,8 +42,8 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
 
-    private CheckBoxPreference mDisableIM;
-    private CheckBoxPreference mStatusBarBrightnessControl;
+    private SwitchPreference mDisableIM;
+    private SwitchPreference mStatusBarBrightnessControl;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,11 +53,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mDisableIM = (CheckBoxPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
+        mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
         mDisableIM.setChecked((Settings.System.getInt(resolver,
                 Settings.System.DISABLE_IMMERSIVE_MESSAGE, 0) == 1));
 
-        mStatusBarBrightnessControl = (CheckBoxPreference) findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
+        mStatusBarBrightnessControl = (SwitchPreference) findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
         mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
         int statusBarBrightnessControl = Settings.System.getInt(getContentResolver(),
                 STATUS_BAR_BRIGHTNESS_CONTROL, 0);
@@ -80,7 +80,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if  (preference == mDisableIM) {
-            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_IMMERSIVE_MESSAGE, checked ? 1:0);
             return true;

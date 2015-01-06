@@ -48,7 +48,7 @@
         android:dependency="network_traffic_state"
         android:persistent="false" />
 
-    <CheckBoxPreference
+    <SwitchPreference
         android:key="network_traffic_autohide"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"

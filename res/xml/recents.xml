@@ -17,7 +17,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/recents_category" >
 
-         <com.dirtyunicorns.dutweaks.preference.SystemCheckBoxPreference
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="recents_show_hide_search_bar"
             android:title="@string/recents_show_searchbar"
             android:summary="@string/recents_show_searchbar_summary"
