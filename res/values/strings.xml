@@ -135,6 +135,8 @@
     <string name="keys_action_double">Double tap</string>
     <string name="dialog_no_home_key_title">No home action</string>
     <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
+    <string name="keys_action_sleep">Go to sleep</string>
+    <string name="keys_action_omniswitch">OmniSwitch recents</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_brightness_control_title">Brightness control</string>
