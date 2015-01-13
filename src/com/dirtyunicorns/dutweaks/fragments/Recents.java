@@ -70,7 +70,7 @@ public class Recents extends SettingsPreferenceFragment implements
 
         mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
         int location = Settings.System.getIntForUser(resolver,
-                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 0, UserHandle.USER_CURRENT);
+                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
         updateRecentsLocation(location);
@@ -85,7 +85,7 @@ public class Recents extends SettingsPreferenceFragment implements
         if (preference == mRecentsClearAll) {
             boolean show = (Boolean) objValue;
             Settings.System.putIntForUser(getActivity().getContentResolver(),
-                    Settings.System.SHOW_CLEAR_ALL_RECENTS, show ? 1 : 0, UserHandle.USER_CURRENT);
+                    Settings.System.SHOW_CLEAR_ALL_RECENTS, show ? 1 : 3, UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mRecentsClearAllLocation) {
             int location = Integer.valueOf((String) objValue);
