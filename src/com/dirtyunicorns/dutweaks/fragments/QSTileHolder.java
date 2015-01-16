@@ -57,6 +57,9 @@ public class QSTileHolder {
         } else if (tileType.equals("rotation")) {
             resId = R.drawable.ic_qs_rotation;
             stringId = R.string.display_rotation_title;
+        } else if (tileType.equals("notifications")) {
+            resId = R.drawable.ic_qs_notifications;
+            stringId = R.string.qs_notifications_label;
         } else if (tileType.equals("flashlight")) {
             resId = R.drawable.ic_qs_flashlight;
             stringId = R.string.power_flashlight;

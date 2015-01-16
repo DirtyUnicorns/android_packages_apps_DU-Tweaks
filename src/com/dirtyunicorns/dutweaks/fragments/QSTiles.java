@@ -42,12 +42,12 @@ public class QSTiles extends Fragment implements
         DraggableGridView.OnRearrangeListener, AdapterView.OnItemClickListener {
 
     private static final String[] AVAILABLE_TILES = {
-        "wifi" ,"bt", "cell", "airplane", "rotation", "flashlight",
+        "wifi" ,"bt", "cell", "airplane", "rotation", "notifications", "flashlight",
         "location", "cast", "inversion", "hotspot"
     };
 
     private static final String QS_DEFAULT_ORDER =
-            "wifi,bt,cell,airplane,rotation,flashlight,location,cast";
+            "wifi,bt,cell,airplane,rotation,notifications,flashlight,location,cast";
 
     private DraggableGridView mDraggableGridView;
 
