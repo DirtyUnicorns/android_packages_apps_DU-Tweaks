@@ -51,6 +51,8 @@ public class QuickSettings extends SettingsPreferenceFragment
     ListPreference mSmartPulldown;
     SwitchPreference mBlockOnSecureKeyguard;
 
+    private Preference mQSTiles;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +60,8 @@ public class QuickSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.quicksettings);
 
         PreferenceScreen prefs = getPreferenceScreen();
+
+        mQSTiles = findPreference("qs_order");
 
         mQuickPulldown = (ListPreference) findPreference(PREF_QUICK_PULLDOWN);
         mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
@@ -91,6 +95,10 @@ public class QuickSettings extends SettingsPreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
+
+        int qsTileCount = QSTiles.determineTileCount(getActivity());
+        mQSTiles.setSummary(getResources().getQuantityString(R.plurals.qs_tiles_summary,
+                    qsTileCount, qsTileCount));
     }
 
     @Override
