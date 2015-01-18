@@ -295,6 +295,7 @@
 
     <!-- powermenu  -->
     <string name="powermenu_screenshot">Screenshot</string>
+    <string name="powermenu_screenshot_delay_title">Set screenshot delay</string>
     <string name="powermenu_power">Power</string>
     <string name="powermenu_reboot">Reboot</string>
     <string name="powermenu_airplane">Airplane</string>
