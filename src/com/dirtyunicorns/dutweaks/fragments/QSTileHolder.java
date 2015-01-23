@@ -151,6 +151,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_media_play";
                 stringId = R.string.qs_music_play_tile;
                 break;
+            case QSConstants.TILE_ADB_NETWORK:
+                resourceName = "ic_qs_network_adb_on";
+                stringId = R.string.adb_over_network;
+                break;
             case QSConstants.TILE_NFC:
                 resourceName = "ic_qs_nfc_on";
                 stringId = R.string.qs_tile_nfc;
