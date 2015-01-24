@@ -32,5 +32,11 @@
             android:layout="@layout/preference_density"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.Density" />
 
+        <PreferenceScreen
+            android:key="lockscreen_shortcuts_settings"
+            android:title="@string/lockscreen_targets_message"
+            android:layout="@layout/preference_lockscreentargets"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenShortcuts" />
+
 </PreferenceScreen>
 
