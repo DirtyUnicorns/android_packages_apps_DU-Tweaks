@@ -57,6 +57,9 @@ public class QSTileHolder {
         } else if (tileType.equals("rotation")) {
             resId = R.drawable.ic_qs_rotation;
             stringId = R.string.display_rotation_title;
+        } else if (tileType.equals("lockscreentoggle")) {
+            resId = R.drawable.ic_qs_lockscreen;
+            stringId = R.string.qs_title_lockscreen;
         } else if (tileType.equals("notifications")) {
             resId = R.drawable.ic_qs_notifications;
             stringId = R.string.qs_notifications_label;

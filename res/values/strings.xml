@@ -353,6 +353,7 @@
     <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
     <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
     <string name="qs_notifications_label">Notifications</string>
+    <string name="qs_title_lockscreen">Lockscreen</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Diable FC Notifications</string>
