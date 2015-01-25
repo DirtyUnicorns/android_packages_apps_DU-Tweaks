@@ -42,7 +42,7 @@ public class QSTiles extends Fragment implements
         DraggableGridView.OnRearrangeListener, AdapterView.OnItemClickListener {
 
     private static final String[] AVAILABLE_TILES = {
-        "wifi" ,"bt", "cell", "airplane", "rotation", "notifications", "flashlight",
+        "wifi" ,"bt", "cell", "airplane", "rotation", "lockscreentoggle", "notifications", "flashlight",
         "location", "cast", "inversion", "hotspot"
     };
 
