@@ -42,5 +42,11 @@
             android:layout="@layout/preference_appcirclebar"
             android:title="@string/app_circle_bar_title" />
 
+         <Preference
+            android:key="heads_up_enabled"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings"
+            android:layout="@layout/preference_headsup"
+            android:title="@string/category_heads_up" />
+
 </PreferenceScreen>
 
