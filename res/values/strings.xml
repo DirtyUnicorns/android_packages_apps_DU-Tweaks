@@ -40,6 +40,7 @@
     <string name="breathing_notifications_category">Breathing Notifications</string>
     <string name="omniswitch_category">OmniSwitch</string>
     <string name="carrier_label_category">Carrier label</string>
+    <string name="category_heads_up">Heads Up</string>
 
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Immersive Recents</string>
@@ -540,5 +541,11 @@
     <!-- Recents memory bar -->
     <string name="systemui_recents_mem_display_title">Show memory bar</string>
     <string name="systemui_recents_mem_display_summary">Display RAM usage under recents view</string>
+
+    <!-- Heads Up -->
+    <string name="heads_up_notifications">Heads Up</string>
+    <string name="summary_heads_up_enabled">Peeking notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Peeking notifications are disabled</string>
+    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable peeking notifications.</string>
 
 </resources>
