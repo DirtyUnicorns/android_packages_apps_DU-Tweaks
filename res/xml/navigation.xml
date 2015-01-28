@@ -48,5 +48,12 @@
             android:layout="@layout/preference_navbar_dimens"
             android:dependency="navigation_bar_show" />
 
+        <PreferenceScreen
+            android:key="navigation_bar_ring"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.NavRing"
+            android:title="@string/navigation_ring_title"
+            android:layout="@layout/preference_navbar_ring"
+            android:dependency="navigation_bar_show" />
+
 </PreferenceScreen>
 
