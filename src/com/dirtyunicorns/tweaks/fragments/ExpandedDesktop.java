@@ -17,6 +17,9 @@
 package com.dirtyunicorns.tweaks.fragments;
 
 import android.annotation.Nullable;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -33,6 +36,7 @@ import android.view.ViewGroup;
 import android.view.WindowManagerGlobal;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
@@ -67,11 +71,14 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
     private static final int STATE_ENABLE_FOR_ALL = 0;
     private static final int STATE_USER_CONFIGURABLE = 1;
 
+    private static final String EXPANDED_DESKTOP_PREFERENCE_TAG = "desktop_prefs";
+
     private AllPackagesAdapter mAllPackagesAdapter;
     private ApplicationsState mApplicationsState;
     private View mEmptyView;
     private View mProgressBar;
     private ListView mUserListView;
+    private FrameLayout mExtraOptions;
     private ApplicationsState.Session mSession;
     private ActivityFilter mActivityFilter;
     private Map<String, ApplicationsState.AppEntry> mEntryMap =
@@ -138,6 +145,7 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
         super.onViewCreated(view, savedInstanceState);
 
         mUserListView = (ListView) view.findViewById(R.id.user_list_view);
+        mExtraOptions = (FrameLayout) view.findViewById(R.id.extra_content);
         mUserListView.setAdapter(mAllPackagesAdapter);
         mUserListView.setFastScrollEnabled(true);
         mUserListView.setOnItemClickListener(this);
@@ -154,10 +162,12 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
         if (mExpandedDesktopState == STATE_USER_CONFIGURABLE) {
             mSwitchBar.setChecked(false);
             showListView();
+            mExtraOptions.setVisibility(View.GONE);
         } else {
             mSwitchBar.setChecked(true);
             mProgressBar.setVisibility(View.GONE);
             hideListView();
+            mExtraOptions.setVisibility(View.VISIBLE);
         }
     }
 
@@ -172,6 +182,8 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
         writeValue("immersive.full=*");
         mAllPackagesAdapter.notifyDataSetInvalidated();
         hideListView();
+        transactFragment();
+        mExtraOptions.setVisibility(View.VISIBLE);
     }
 
     private void userConfigurableSettings() {
@@ -180,7 +192,25 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
         WindowManagerPolicyControl.reloadFromSetting(getActivity());
         mAllPackagesAdapter.notifyDataSetInvalidated();
         showListView();
+        mExtraOptions.setVisibility(View.GONE);
+        removeFragment();
+    }
 
+    private void transactFragment() {
+        Fragment expandedDesktopExtraPrefs = ExpandedDesktopExtraPrefs.newInstance();
+        FragmentTransaction fragmentTransaction = getChildFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.extra_content, expandedDesktopExtraPrefs,
+                EXPANDED_DESKTOP_PREFERENCE_TAG);
+        fragmentTransaction.commit();
+    }
+
+    private void removeFragment() {
+        FragmentManager fragmentManager = getChildFragmentManager();
+        Fragment fragment = fragmentManager.findFragmentByTag(EXPANDED_DESKTOP_PREFERENCE_TAG);
+        if (fragment != null) {
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.remove(fragment).commit();
+        }
     }
 
     private void hideListView() {
