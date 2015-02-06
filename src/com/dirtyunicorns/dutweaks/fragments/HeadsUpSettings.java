@@ -432,7 +432,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
     private void updateEnabledState() {
         boolean enabled = Settings.System.getInt(getContentResolver(),
-                Settings.System.HEADS_UP_NOTIFICATION, 0) != 0;
+                Settings.System.HEADS_UP_NOTIFICATION, 1) != 0;
         mPrefsContainer.setVisibility(enabled ? View.VISIBLE : View.GONE);
         mDisabledText.setVisibility(enabled ? View.GONE : View.VISIBLE);
     }
