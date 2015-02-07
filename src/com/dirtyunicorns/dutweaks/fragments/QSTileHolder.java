@@ -103,6 +103,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_screenshot";
                 stringId = R.string.qs_title_screenshot;
                 break;
+            case QSConstants.TILE_SYNC:
+                resourceName = "ic_qs_sync_on";
+                stringId = R.string.qs_title_sync;
+                break;
             default:
                 return null;
         }
