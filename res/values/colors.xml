@@ -19,4 +19,5 @@
     <color name="background_tab_pressed">#66ffffff</color>
     <color name="ga_gesture_color">#FF07998B</color>
     <color name="qs_tile_tint_color">#FF009587</color>
+    <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
 </resources>
