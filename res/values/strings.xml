@@ -364,6 +364,9 @@
     <string name="qs_brightness_slider_title">Show brightness slider</string>
     <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
 
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Show four tiles per row</string>
+
     <!-- Notification drawer -->
     <string name="qs_order_title">Select and order tiles</string>
     <string name="add_qs">Add new tile</string>
