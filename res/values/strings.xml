@@ -384,6 +384,8 @@
     <string name="qs_title_sync">Sync</string>
     <string name="qs_tile_headsup">Heads up</string>
     <string name="qs_tile_screen_timeout">Screen timeout</string>
+    <string name="qs_battery_saver_tile">Battery saver</string>
+    <string name="qs_brightness_tile">Brightness</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
