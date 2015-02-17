@@ -382,6 +382,7 @@
     <string name="qs_title_lockscreen">Lockscreen</string>
     <string name="qs_title_screenshot">Screenshot</string>
     <string name="qs_title_sync">Sync</string>
+    <string name="qs_tile_headsup">Heads up</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
