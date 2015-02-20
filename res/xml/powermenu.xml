@@ -62,6 +62,11 @@
             android:defaultValue="false" />
 
          <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_lockdown"
+            android:title="@string/powermenu_lockdown"
+            android:defaultValue="false" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="powermenu_soundpanel"
             android:title="@string/powermenu_soundpanel"
             android:defaultValue="true" />
