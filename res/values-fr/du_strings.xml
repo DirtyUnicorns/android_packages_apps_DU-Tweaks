@@ -364,6 +364,10 @@
     <string name="qs_brightness_slider_title">Curseur de luminosité</string>
     <string name="qs_brightness_slider_summary">Affiche le curseur de luminosité dans le volet des paramètres</string>
 
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Afficher quatre raccourcis par ligne</string>
+
+
     <!-- Notification drawer -->
     <string name="qs_order_title">Sélectionner et organiser les raccourcis</string>
     <string name="add_qs">Ajouter un raccourci</string>
@@ -379,6 +383,11 @@
     <string name="qs_title_lockscreen">Écran de déverrouillage</string>
     <string name="qs_title_screenshot">Capture d\'écran</string>
     <string name="qs_title_sync">Synchronisation</string>
+    <string name="qs_tile_headsup">Notifications Flottantes</string>
+    <string name="qs_tile_screen_timeout">Délai de Capture d\'écran</string>
+    <string name="qs_battery_saver_tile">Économiseur de batterie</string>
+    <string name="qs_brightness_tile">Luminosité</string>
+
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Notifications Force Close</string>
@@ -415,4 +424,6 @@
     <string name="navigation_bar_arrow_keys_title">Flèches de direction</string>
     <string name="navigation_bar_arrow_keys_summary">Affiche les touches de direction dans la barre de navigation lors de la saisie de texte. Cela masque le sélecteur de mode de saisie.</string>
 
+    <string name="navigation_ring_title">Anneau de la barre de navigation</string>
+    <string name="navigation_ring_message">Appuyez sur \'Modifier\' pour  modifier les raccourcis de l\'anneau de la barre de navigation.\n\nSélectionner un raccourci pour le configurer.\n\nAppuyez sur \'Enregistrer\' pour valider vos modifications, ou sur \'Restaurer\' pour revenir à la configuration d\'origine.</string>
 </resources>
