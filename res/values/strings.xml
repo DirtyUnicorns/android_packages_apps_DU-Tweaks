@@ -170,10 +170,6 @@
     <string name="volume_rocker_wake_title">Volume rocker wake</string>
     <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
 
-    <!-- tap-to-sleep -->
-    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
-
     <!-- Battery options -->
     <string name="battery_category">Battery options</string>
     <string name="status_bar_battery_percentage_title">Show battery percentage</string>
@@ -424,7 +420,15 @@
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
     <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
     <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons while typing. Overrides IME switcher.</string>
-
     <string name="navigation_ring_title">Navigation ring targets</string>
     <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the check mark icon to save your changes, or restore to reset the settings to defaults.</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+
+    <!-- Double Tap Statusbar to Sleep -->
+    <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
+    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
+
 </resources>
