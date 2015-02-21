@@ -84,14 +84,14 @@
 
     <!-- Heads Up -->
     <string name="category_heads_up">Notifications Flottantes</string>
-    <string name="summary_heads_up_enabled">Notifications Flottantes activées</string>
-    <string name="summary_heads_up_disabled">Notifications Flottantes désactivées</string>
+    <string name="summary_heads_up_enabled">Notifications flottantes activées</string>
+    <string name="summary_heads_up_disabled">Notifications flottantes désactivées</string>
     <string name="add_heads_up_package">Ajouter une application</string>
     <string name="add_heads_up_dnd_summary">Applications exclues</string>
     <string name="add_heads_up_blacklist_summary">Les notifications ne seront pas affichées dans ces applications</string>
     <string name="heads_up_dnd_title">Ne pas déranger</string>
     <string name="heads_up_blacklist_title">Liste Noire</string>
-    <string name="heads_up_disabled_notice">Pour autoriser les applications à afficher des notifications dans une fenêtre de dialogue, activez les Notifications Flottantes.</string>
+    <string name="heads_up_disabled_notice">Pour autoriser les applications à afficher des notifications dans une fenêtre de dialogue, activez les Notifications flottantes.</string>
     <string name="profile_choose_app">Sélectionnez une application</string>
     <string name="dialog_delete_title">Supprimer</string>
     <string name="dialog_delete_message">Supprimer l\'élément sélectionné ?</string>
@@ -325,6 +325,8 @@
     <string name="powermenu_settings">Paramètres</string>
     <string name="powermenu_soundpanel">Panneau de volume</string>
     <string name="powermenu_screenrecord">Capture vidéo</string>
+    <string name="powermenu_lockdown">Verrouiller</string>
+
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Bouton de fermeture rapide</string>
@@ -383,10 +385,13 @@
     <string name="qs_title_lockscreen">Écran de déverrouillage</string>
     <string name="qs_title_screenshot">Capture d\'écran</string>
     <string name="qs_title_sync">Synchronisation</string>
-    <string name="qs_tile_headsup">Notifications Flottantes</string>
-    <string name="qs_tile_screen_timeout">Délai de Capture d\'écran</string>
+    <string name="qs_tile_headsup">Notifications flottantes</string>
+    <string name="qs_tile_screen_timeout">Délai de capture d\'écran</string>
     <string name="qs_battery_saver_tile">Économiseur de batterie</string>
     <string name="qs_brightness_tile">Luminosité</string>
+    <string name="qs_navbar_tile">Barre de navigation</string>
+    <string name="qs_appcirclebar_tile">Cercle d\'applications</string>
+
 
 
     <!-- Text for forcing expanded notifications -->
@@ -425,5 +430,5 @@
     <string name="navigation_bar_arrow_keys_summary">Affiche les touches de direction dans la barre de navigation lors de la saisie de texte. Cela masque le sélecteur de mode de saisie.</string>
 
     <string name="navigation_ring_title">Anneau de la barre de navigation</string>
-    <string name="navigation_ring_message">Appuyez sur \'Modifier\' pour  modifier les raccourcis de l\'anneau de la barre de navigation.\n\nSélectionner un raccourci pour le configurer.\n\nAppuyez sur \'Enregistrer\' pour valider vos modifications, ou sur \'Restaurer\' pour revenir à la configuration d\'origine.</string>
+    <string name="navigation_ring_message">Appuyez sur \'Modifier\' pour  modifier les raccourcis de l\'anneau de la barre de navigation.\n\nSélectionnez un raccourci pour le configurer.\n\nAppuyez sur \'Enregistrer\' pour valider vos modifications, ou sur \'Restaurer\' pour revenir à la configuration d\'origine.</string>
 </resources>
