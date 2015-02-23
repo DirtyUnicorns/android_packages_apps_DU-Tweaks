@@ -17,7 +17,7 @@
 
     <!-- Tabs -->
     <string name="generalui_category">Interface</string>
-    <string name="statusbar_category">Barre de statut</string>
+    <string name="statusbar_category">Barre d\'État</string>
     <string name="navigation_category">Barre de navigation</string>
     <string name="multitasking_category">Multitâche</string>
     <string name="system_category">Système</string>
@@ -170,9 +170,9 @@
     <string name="volume_rocker_wake_title">Réveiller par touche Volume</string>
     <string name="volume_rocker_wake_summary">Sortir l\'appareil de la veille en appuyant sur une des touches Volume</string>
 
-    <!-- tap-to-sleep -->
-    <string name="double_tap_to_sleep_title">Veille par double appui</string>
-    <string name="double_tap_to_sleep_summary">Éteindre l\'écran avec un double appui sur la barre d\'état</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
+    <string name="volume_rocker_music_controls_summary">Sur écran éteint, un appui long sur les touches Volume cherche les morceaux de musique</string>
 
     <!-- Battery options -->
     <string name="battery_category">Batterie</string>
@@ -217,6 +217,7 @@
     <string name="enable_clock_weekday_summary">Jour abrégé de la semaine avant l\'heure</string>
     <string name="right_clock">À droite</string>
     <string name="center_clock">Au centre</string>
+    <string name="left_clock">À gauche</string>
     <string name="dont_show">Ne pas afficher</string>
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Afficher une date personnalisée avant l\'heure</string>
@@ -369,7 +370,6 @@
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Afficher quatre raccourcis par ligne</string>
 
-
     <!-- Notification drawer -->
     <string name="qs_order_title">Sélectionner et organiser les raccourcis</string>
     <string name="add_qs">Ajouter un raccourci</string>
@@ -391,8 +391,6 @@
     <string name="qs_brightness_tile">Luminosité</string>
     <string name="qs_navbar_tile">Barre de navigation</string>
     <string name="qs_appcirclebar_tile">Cercle d\'applications</string>
-
-
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Notifications Force Close</string>
@@ -431,4 +429,13 @@
 
     <string name="navigation_ring_title">Anneau de la barre de navigation</string>
     <string name="navigation_ring_message">Appuyez sur \'Modifier\' pour  modifier les raccourcis de l\'anneau de la barre de navigation.\n\nSélectionnez un raccourci pour le configurer.\n\nAppuyez sur \'Enregistrer\' pour valider vos modifications, ou sur \'Restaurer\' pour revenir à la configuration d\'origine.</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Veille par double appui</string>
+    <string name="double_tap_sleep_nav_bar_summary">Éteindre l\'écran par double appui sur la barre de navigation</string>
+
+    <!-- Double Tap Statusbar to Sleep -->
+    <string name="double_tap_to_sleep_title">Veille par double appui</string>
+    <string name="double_tap_to_sleep_summary">Éteindre l\'écran par double appui sur la barre d\'état</string>
+
 </resources>
