@@ -44,5 +44,11 @@
             android:layout="@layout/preference_quicksettings"
             android:title="@string/quicksettings_category" />
 
+         <Preference
+            android:key="carrier_options"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.CarrierLabel"
+            android:layout="@layout/preference_carrierlabel"
+            android:title="@string/carrier_options" />
+
 </PreferenceScreen>
 
