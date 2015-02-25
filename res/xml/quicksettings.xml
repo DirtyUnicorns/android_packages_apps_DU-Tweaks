@@ -29,6 +29,12 @@
             android:title="@string/qs_four_columns_title"
             android:defaultValue="false" />
 
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="qs_location_advanced"
+            android:title="@string/qs_advanced_location_title"
+            android:summary="@string/qs_advanced_location_summary"
+            android:defaultValue="false" />
+
         <PreferenceScreen
             android:key="qs_order"
             android:title="@string/qs_order_title"
