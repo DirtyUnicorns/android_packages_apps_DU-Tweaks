@@ -438,4 +438,17 @@
     <string name="double_tap_to_sleep_title">Veille par double appui</string>
     <string name="double_tap_to_sleep_summary">Éteindre l\'écran par double appui sur la barre d\'état</string>
 
+    <!-- Show carrier label and custom -->
+    <string name="carrier_options">Libellé opérateur</string>
+    <string name="show_status_bar_carrier_title">Libellé opérateur</string>
+    <string name="show_status_bar_carrier_summary">Affiche le libellé opérateur dans la barre d\'état</string>
+    <string name="custom_carrier_label_title">Modifier le libellé opérateur</string>
+    <string name="custom_carrier_label_explain">Saisir un nouveau libellé. Laisser vide pour revenir au libellé d\'origine.</string>
+    <string name="custom_carrier_label_notset">Libellé opérateur non défini</string>
+    <string name="status_bar_carrier_color">Couleur libellé opérateur</string>
+
+    <!-- Location QS advanced options -->
+    <string name="qs_advanced_location_title">Paramètres avancés de localisation</string>
+    <string name="qs_advanced_location_summary">Activer les paramètres avancés de localisation dans le volet des paramètres</string>
+
 </resources>
