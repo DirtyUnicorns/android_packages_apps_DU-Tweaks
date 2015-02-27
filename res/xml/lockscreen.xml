@@ -29,11 +29,23 @@
                   android:targetClass="com.android.systemui.du.LockscreenShortcutsActivity" />
          </PreferenceScreen>
 
-        <PreferenceScreen
+         <PreferenceScreen
             android:key="lockscreen_wallpaper_changer"
             android:title="@string/lockscreen_wallpaper_title"
             android:layout="@layout/preference_lockscreenwp"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenSettings" />
+
+         <PreferenceScreen
+                 android:key="lockscreen_shortcuts"
+                 android:fragment="com.dirtyunicorns.dutweaks.dslv.ActionListViewSettings"
+                 android:title="@string/lockscreen_shortcuts_title"
+                 android:layout="@layout/preference_appshortcuts" >
+             <extra android:name="actionMode" android:value="4" />
+             <extra android:name="maxAllowedActions" android:value="5" />
+             <extra android:name="disableLongpress" android:value="true" />
+             <extra android:name="useAppPickerOnly" android:value="true" />
+             <extra android:name="fragment" android:value="com.dirtyunicorns.dutweaks.fragments.AppShortcuts" />
+         </PreferenceScreen>
 
 </PreferenceScreen>
 
