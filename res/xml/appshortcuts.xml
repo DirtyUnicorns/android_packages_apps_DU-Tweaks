@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2007 The Android Open Source Project
+<!-- Copyright (C) 2013 SlimRoms Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,15 +13,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-<resources>
-    <color name="white">#FFF</color>
-    <color name="background_tab_pressed">#66ffffff</color>
-    <color name="ga_gesture_color">#FF07998B</color>
-    <color name="qs_tile_tint_color">#FF009587</color>
-    <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
+    <SwitchPreference
+        android:key="lockscreen_shortcuts_longpress"
+        android:title="@string/lockscreen_shorcuts_longpress_title"
+        android:summary="@string/lockscreen_shorcuts_longpress_summary" />
 
-    <!-- DSLV colors -->
-    <color name="dslv_icon_dark">#ff009688</color>
-    <color name="dslv_float_cackground_color">#ffe1e1e0</color>
-</resources>
+</PreferenceScreen>
