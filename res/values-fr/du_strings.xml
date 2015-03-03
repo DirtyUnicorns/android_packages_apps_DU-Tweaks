@@ -83,7 +83,7 @@
     <string name="omniswitch_category">OmniSwitch</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Notifications Flottantes</string>
+    <string name="category_heads_up">Notifications flottantes</string>
     <string name="summary_heads_up_enabled">Notifications flottantes activées</string>
     <string name="summary_heads_up_disabled">Notifications flottantes désactivées</string>
     <string name="add_heads_up_package">Ajouter une application</string>
@@ -92,7 +92,7 @@
     <string name="heads_up_dnd_title">Ne pas déranger</string>
     <string name="heads_up_blacklist_title">Liste Noire</string>
     <string name="heads_up_disabled_notice">Pour autoriser les applications à afficher des notifications dans une fenêtre de dialogue, activez les Notifications flottantes.</string>
-    <string name="profile_choose_app">Sélectionnez une application</string>
+    <string name="profile_choose_app">Sélectionner une application</string>
     <string name="dialog_delete_title">Supprimer</string>
     <string name="dialog_delete_message">Supprimer l\'élément sélectionné ?</string>
     <string name="heads_up_time_out_title">Délai d\'affichage</string>
@@ -133,16 +133,16 @@
     <string name="button_keys_appSwitch_title">Sélecteur d\'applications</string>
     <string name="keys_enable_custom_title">Actions personnalisées</string>
     <string name="keys_back_press_title">Touche Retour</string>
-    <string name="keys_back_long_press_title">Touche Retour (appui long)</string>
+    <string name="keys_back_long_press_title">Touche Retour (appui prolongé)</string>
     <string name="keys_home_press_title">Touche Accueil</string>
-    <string name="keys_home_long_press_title">Touche Accueil (appui long)</string>
+    <string name="keys_home_long_press_title">Touche Accueil (appui prolongé)</string>
     <string name="keys_home_double_tap_title">Touche Accueil (double appui)</string>
     <string name="keys_menu_press_title">Touche Menu</string>
-    <string name="keys_menu_long_press_title">Touche Menu (appui long)</string>
+    <string name="keys_menu_long_press_title">Touche Menu (appui prolongé)</string>
     <string name="keys_assist_press_title">Touche Recherche</string>
-    <string name="keys_assist_long_press_title">Touche Recherche (appui long)</string>
+    <string name="keys_assist_long_press_title">Touche Recherche (appui prolongé)</string>
     <string name="keys_app_switch_press_title">Sélecteur d\'applications</string>
-    <string name="keys_app_switch_long_press_title">Sélecteur d\'applications (appui long)</string>
+    <string name="keys_app_switch_long_press_title">Sélecteur d\'applications (appui prolongé)</string>
     <string name="keys_action_nothing">Aucune action</string>
     <string name="keys_action_menu">Menu ouvrir/fermer</string>
     <string name="keys_action_app_switch">Changeur d\'applications récentes</string>
@@ -154,7 +154,7 @@
     <string name="keys_action_last_app">Passer à la dernière application</string>
     <string name="keys_action_kill_app">Forcer l\'arrêt l\'application</string>
     <string name="keys_action_normal">Appui normal</string>
-    <string name="keys_action_long">Appui long</string>
+    <string name="keys_action_long">Appui prolongé</string>
     <string name="keys_action_double">Double appui</string>
     <string name="dialog_no_home_key_title">Accueil non définie</string>
     <string name="no_home_key">Aucune touche affectée à l\'action Accueil ! Cela peut rendre l\'appareil inutilisable !</string>
@@ -172,7 +172,7 @@
 
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
-    <string name="volume_rocker_music_controls_summary">Sur écran éteint, un appui long sur les touches Volume cherche les morceaux de musique</string>
+    <string name="volume_rocker_music_controls_summary">Sur écran éteint, un appui prolongé sur les touches Volume change le la chanson</string>
 
     <!-- Battery options -->
     <string name="battery_category">Batterie</string>
@@ -297,11 +297,11 @@
     <string name="profile_applist_title">Applications</string>
 
     <!-- Circle app bar -->
-    <string name="category_app_circle_bar_title">Lanceur d\'Applications</string>
-    <string name="app_circle_bar_title">Cercle d\'Applications</string>
-    <string name="app_circle_bar_summary">Afficher le Cercle d\'Applications après avoir touché le côté droit de l\'écran</string>
+    <string name="category_app_circle_bar_title">Lanceur d\'applications</string>
+    <string name="app_circle_bar_title">Cercle d\'applications</string>
+    <string name="app_circle_bar_summary">Afficher le Cercle d\'applications après avoir touché le côté droit de l\'écran</string>
     <string name="app_circle_bar_included_apps_title">Applications</string>
-    <string name="app_circle_bar_included_apps_summary">Applications qui s\'affichent dans le Cercle d\'Applications</string>
+    <string name="app_circle_bar_included_apps_summary">Applications qui s\'affichent dans le Cercle d\'applications</string>
     <string name="trigger_width_title">Largeur</string>
     <string name="trigger_width_summary">Ajuster la largeur de la zone de déclenchement</string>
     <string name="trigger_top_title">Position</string>
@@ -404,7 +404,7 @@
 
     <!-- Navbar Options -->
     <string name="navigation_bar_title">Boutons et disposition</string>
-    <string name="navigation_bar_help_text">Appuyez sur \'Modifier\' pour déverrouiller la barre de navigation.\n\nUn appui simple sur un bouton pour modifier son  raccourci.\nUn appui long sur sur un bouton pour modifier son emplacement.\n\nAppuyez sur \'Enregistrer\' pour valider vos modifications, ou sur \'Restaurer\' pour revenir à la configuration d\'origine.</string>
+    <string name="navigation_bar_help_text">Appuyez sur \'Modifier\' pour déverrouiller la barre de navigation.\n\nUn appui simple sur un bouton pour modifier son raccourci.\nUn appui prolongé sur sur un bouton pour modifier son emplacement.\n\nAppuyez sur \'Enregistrer\' pour valider vos modifications, ou sur \'Restaurer\' pour revenir à la configuration d\'origine.</string>
     <string name="navigation_restore_button_text">Restaurer les\nvaleurs par défaut</string>
     <string name="navigation_edit_button_text">Modifier</string>
     <string name="navigation_save_button_text">Enregistrer</string>
@@ -450,5 +450,101 @@
     <!-- Location QS advanced options -->
     <string name="qs_advanced_location_title">Paramètres avancés de localisation</string>
     <string name="qs_advanced_location_summary">Activer les paramètres avancés de localisation dans le volet des paramètres</string>
+
+    <!-- Slim lockscreen shortcuts -->
+    <string name="shortcut_action_none">Aucun</string>
+    <string name="shortcut_action_longpress">Appui prolongé\u00A0:</string>
+    <string name="shortcut_action_select_action_longpress">Action par appui prolongé\u00A0:</string>
+    <string name="shortcut_action_select_action">Choisir l\'action\u00A0:</string>
+    <string name="shortcut_action_select_action_newaction">Choisir une nouvelle action\u00A0:</string>
+    <string name="shortcut_action_reset">Réinitialiser</string>
+    <string name="shortcut_action_add">Ajouter</string>
+    <string name="shortcut_action_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="shortcut_action_max">Nombre de raccourcis maximal atteint</string>
+    <string name="shortcut_action_warning">Avertissement</string>
+    <string name="shortcut_action_warning_message">Impossible de supprimer le dernier raccourci</string>
+    <string name="shortcut_action_disable_message">Désactivé\nAjouter un raccourci pour activer cette fonctionnalité</string>
+    <string name="shortcut_image_not_valid">L\'application choisie ne possède pas d\'icône valide ou ne supporte pas le rognage d\'image. Choisissez une autre application.</string>
+    <string name="shortcut_duplicate_entry">L\'action choisie ne peut pas être ajoutée deux fois</string>
+    <string name="shortcut_action_help_shortcut">raccourci</string>
+    <string name="shortcut_action_help_button">bouton</string>
+    <string name="shortcut_action_help_app">application</string>
+    <string name="shortcut_action_help_icon">, appuyer sur l\'icône permet de la personnaliser</string>
+    <string name="shortcut_action_help_main">Pour ajouter un %1$s, sélectionner l\'icône Ajouter. Une fois qu\'un %1$s est ajouté, appuyer sur la ligne permet de modifier le raccourci%2$s\n\nPour supprimer un %1$s, glisser horizontalement la ligne à gauche ou à droite. Modifier la disposition du %1$s dans la liste en faisant glisser verticalement l\'icône de gauche.\n\nPour revenir à la configuration par défaut, sélectionner l\'icône Réinitialiser.</string>
+    <string name="shortcut_action_help_delete_last_entry">Supprimer tous les raccourcis de la liste, désactive totalement la fonctionnalité.</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Supprimer tous les %1$s de la liste désactive totalement la seconde couche.</string>
+    <string name="shortcuts_applications">Applications</string>
+    <string name="shortcuts_select_custom_app_title">Sélectionner l\'application</string>
+    <string name="shortcuts_icon_picker_type">Sélectionner le modèle d\'icône :</string>
+    <string name="shortcuts_icon_default">Par défaut</string>
+    <string name="shortcuts_icon_presets">Icônes système</string>
+    <string name="shortcuts_icon_custom">Galerie</string>
+    <string name="shortcuts_icon_picker_choose_icon_title">Sélectionner l\'icône</string>
+    <string name="shortcuts_icon_picker_alarm">Alarme</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">Batterie</string>
+    <string name="shortcuts_icon_picker_browser">Navigateur</string>
+    <string name="shortcuts_icon_picker_calendar">Agenda</string>
+    <string name="shortcuts_icon_picker_camera">Appareil photo</string>
+    <string name="shortcuts_icon_picker_cloud">Nuage</string>
+    <string name="shortcuts_icon_picker_contact">Contact</string>
+    <string name="shortcuts_icon_picker_directdial">Numérotation</string>
+    <string name="shortcuts_icon_picker_directmessage">Message</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">Courriel</string>
+    <string name="shortcuts_icon_picker_email2">Autre courriel</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Favori</string>
+    <string name="shortcuts_icon_picker_file_browser">Explorateur de fichiers</string>
+    <string name="shortcuts_icon_picker_file_browser2">Autre explorateur de fichiers</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">Galerie</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google+</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">Aide</string>
+    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_key">Comptes</string>
+    <string name="shortcuts_icon_picker_laptop">Ordinateur portable</string>
+    <string name="shortcuts_icon_picker_notes">Notes</string>
+    <string name="shortcuts_icon_picker_luggage">Voyage</string>
+    <string name="shortcuts_icon_picker_maps">Maps</string>
+    <string name="shortcuts_icon_picker_market">Android Market</string>
+    <string name="shortcuts_icon_picker_movie">Films</string>
+    <string name="shortcuts_icon_picker_music">Musique</string>
+    <string name="shortcuts_icon_picker_nav">Navigation</string>
+    <string name="shortcuts_icon_picker_phone">Téléphone</string>
+    <string name="shortcuts_icon_picker_package">Paquet</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+    <string name="shortcuts_icon_picker_quicksettings">Paramètres</string>
+    <string name="shortcuts_icon_picker_rss">Flux RSS</string>
+    <string name="shortcuts_icon_picker_sdcard">Carte SD</string>
+    <string name="shortcuts_icon_picker_search">Recherche</string>
+    <string name="shortcuts_icon_picker_sms">SMS</string>
+    <string name="shortcuts_icon_picker_tasks">Tâches</string>
+    <string name="shortcuts_icon_picker_terminal">Terminal</string>
+    <string name="shortcuts_icon_picker_transit">Transit</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">Déverrouillage</string>
+    <string name="reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="lockscreen_shortcuts_title">Raccourcis application</string>
+    <string name="lockscreen_shorcuts_longpress_title">Raccourcis appui prolongé</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Ouvrir des raccourcis personnalisés sur l\'écran de déverrouillage par appui prolongé</string>
+    <string name="help">Aide</string>
+    <string name="shortcut_action_app">Application personnalisée</string>
+    <string name="shortcut_action_home">Accueil</string>
+    <string name="shortcut_action_back">Retour</string>
+    <string name="shortcut_action_menu">Menu</string>
+    <string name="shortcut_action_ime">Ouvrir le sélecteur de clavier</string>
+    <string name="shortcut_action_power_menu">Menu Marche/Arrêt</string>
+    <string name="shortcut_action_recent">Applications récentes</string>
+    <string name="shortcut_action_power">Mise en veille</string>
+    <string name="shortcut_action_search">Recherche dans l\'application</string>
 
 </resources>
