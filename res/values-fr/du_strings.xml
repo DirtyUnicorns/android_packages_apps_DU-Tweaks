@@ -172,7 +172,7 @@
 
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
-    <string name="volume_rocker_music_controls_summary">Sur écran éteint, un appui prolongé sur les touches Volume change le la chanson</string>
+    <string name="volume_rocker_music_controls_summary">Sur écran éteint, un appui prolongé sur les touches Volume change la chanson</string>
 
     <!-- Battery options -->
     <string name="battery_category">Batterie</string>
@@ -319,7 +319,7 @@
 
     <!-- powermenu  -->
     <string name="powermenu_screenshot">Capture d\'écran</string>
-    <string name="powermenu_screenshot_delay_title">Délai de Capture d\'écran</string>
+    <string name="powermenu_screenshot_delay_title">Délai de capture d\'écran</string>
     <string name="powermenu_power">Alimentation</string>
     <string name="powermenu_reboot">Redémarrer</string>
     <string name="powermenu_airplane">Mode Avion</string>
@@ -384,6 +384,7 @@
     <string name="qs_notifications_label">Notifications</string>
     <string name="qs_title_lockscreen">Écran de déverrouillage</string>
     <string name="qs_title_screenshot">Capture d\'écran</string>
+    <string name="qs_tile_reboot">Redémarrer</string>
     <string name="qs_title_sync">Synchronisation</string>
     <string name="qs_tile_headsup">Notifications flottantes</string>
     <string name="qs_tile_screen_timeout">Délai de capture d\'écran</string>
@@ -391,6 +392,8 @@
     <string name="qs_brightness_tile">Luminosité</string>
     <string name="qs_navbar_tile">Barre de navigation</string>
     <string name="qs_appcirclebar_tile">Cercle d\'applications</string>
+    <string name="qs_ambient_display_tile">Mode Sommeil</string>
+    <string name="qs_screenrecord_tile">Capture vidéo</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Notifications Force Close</string>
@@ -469,7 +472,7 @@
     <string name="shortcut_action_help_shortcut">raccourci</string>
     <string name="shortcut_action_help_button">bouton</string>
     <string name="shortcut_action_help_app">application</string>
-    <string name="shortcut_action_help_icon">, appuyer sur l\'icône permet de la personnaliser</string>
+    <string name="shortcut_action_help_icon">, appuyer sur l\'icône permet de la personnaliser.</string>
     <string name="shortcut_action_help_main">Pour ajouter un %1$s, sélectionner l\'icône Ajouter. Une fois qu\'un %1$s est ajouté, appuyer sur la ligne permet de modifier le raccourci%2$s\n\nPour supprimer un %1$s, glisser horizontalement la ligne à gauche ou à droite. Modifier la disposition du %1$s dans la liste en faisant glisser verticalement l\'icône de gauche.\n\nPour revenir à la configuration par défaut, sélectionner l\'icône Réinitialiser.</string>
     <string name="shortcut_action_help_delete_last_entry">Supprimer tous les raccourcis de la liste, désactive totalement la fonctionnalité.</string>
     <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Supprimer tous les %1$s de la liste désactive totalement la seconde couche.</string>
