@@ -24,14 +24,18 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Set;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
+import android.preference.PreferenceManager;
 import android.os.StrictMode;
 import android.provider.Settings;
 import android.widget.TextView;
@@ -49,15 +53,29 @@ public final class HfmHelpers {
     public static int i = 0;
 
     public static void checkStatus(Context context) {
+        checkStatus(context, false);
+    }
+
+    public static void checkStatus(Context context, boolean applyWhitelist) {
         File defHosts = new File("/etc/hosts.og");
         File altHosts = new File("/etc/hosts.alt");
+        File altOrigHosts = new File("/etc/hosts.alt_orig");
         File hosts = new File("/etc/hosts");
+        if (applyWhitelist || ! altOrigHosts.exists()) {
+            SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+            Set<String> hfmWhitelistSet = sharedPreferences.getStringSet("hfm_whitelist", null);
+            if (hfmWhitelistSet != null) {
+                ArrayList<String> hfmWhitelist = new ArrayList<String>(hfmWhitelistSet);
+                if ( ! hfmWhitelist.isEmpty() ) {
+                    HfmWhitelist.applyWhitelist(context, hfmWhitelist);
+                }
+            }
+        }
         try {
-            if (Settings.System.getInt(context.getContentResolver(), Settings.System.HFM_DISABLE_ADS, 0) == 1
-                    && areFilesDifferent(hosts, altHosts)) {
+            boolean adsDisabled = Settings.System.getInt(context.getContentResolver(), Settings.System.HFM_DISABLE_ADS, 0) == 1;
+            if (adsDisabled && areFilesDifferent(hosts, altHosts)) {
                 copyFiles(altHosts, hosts);
-            } else if (Settings.System.getInt(context.getContentResolver(), Settings.System.HFM_DISABLE_ADS, 0) == 0
-                    && areFilesDifferent(hosts, defHosts) && isOurHostsFile()) {
+            } else if ( ! adsDisabled && areFilesDifferent(hosts, defHosts)) {
                 copyFiles(defHosts, hosts);
             }
         }
@@ -80,18 +98,6 @@ public final class HfmHelpers {
                 return true;
         }
         return br2.readLine() != null;
-    }
-
-    private static boolean isOurHostsFile() throws IOException {
-        boolean ret = false;
-        File hosts = new File("/etc/hosts");
-        String line;
-        BufferedReader rd1 = getBufferedReader(hosts);
-        line = rd1.readLine();
-        if (line.contains("#LiquidSmooth")) {
-            ret = true;
-        }
-        return ret;
     }
 
     private static BufferedReader getBufferedReader(File file) throws IOException {
@@ -118,7 +124,7 @@ public final class HfmHelpers {
     }
 
     public static boolean isScriptFinished() {
-        File altHosts = new File("/etc/hosts.alt");
+        File altHosts = new File("/etc/hosts.alt_orig");
         File hosts0 = new File("/etc/hosts0");
         File hosts1 = new File("/etc/hosts1");
         File hosts2 = new File("/etc/hosts2");
@@ -161,7 +167,7 @@ public final class HfmHelpers {
         AlertDialog dialog = new AlertDialog.Builder(c)
         .setMessage(message)
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) { 
+            public void onClick(DialogInterface dialog, int which) {
                 //Nothing here
             }
         }).show();
@@ -189,7 +195,7 @@ public final class HfmHelpers {
             public void run() {
                 if (isScriptFinished()) {
                     if (HfmSettings.mHfmDisableAds.isChecked()) {
-                        checkStatus(c); //Hosts are downloaded. Apply if user has enabled blocking.
+                        checkStatus(c, true); //Hosts are downloaded. Apply if user has enabled blocking.
                     }
                     showDialog(FetchHosts.successfulSources + HfmSettings.res.getString(R.string.hfm_dialog_success), c);
                     HfmSettings.pd.dismiss();
