@@ -115,12 +115,6 @@
     <string name="hfm_dialog_failed">Updating hosts file failed. Please try again.</string>
     <string name="hfm_dialog_success">/4 hosts sources successfully applied!</string>
     <string name="hfm_dialog_conn_error">Error: No network connectivity</string>
-    <string name="hfm_whitelist_title">Whitelist</string>
-    <string name="hfm_whitelist_summary">List of strings (part of URL\'s) that should be allowed by the ad blocker</string>
-    <string name="hfm_whitelist_pref_text">Type string to add to whitelist</string>
-    <string name="hfm_whitelist_pref_button_add">Add URL</string>
-    <string name="hfm_whitelist_pref_empty">Whitelist is empty</string>
-    <string name="hfm_whitelist_pref_menu_apply">Apply</string>
 
     <!-- Misc Tweaks -->
     <string name="misctweaks_category">Misc. Tweaks</string>
@@ -129,7 +123,7 @@
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 
-    <!-- Hardware Button remapping -->
+    <!-- Hardware Button remapping -->  
     <string name="button_keys_title">Buttons</string>
     <string name="keys_bindings_title">Key actions</string>
     <string name="button_keys_back_title" >Back key</string>
@@ -193,18 +187,6 @@
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
-
-    <!-- Battery Bar -->
-    <string name="battery_icon">Battery icon style</string>
-    <string name="battery_not_title">Battery icon in notifications</string>
-    <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
-    <string name="battery_bar_location">Battery bar location</string>
-    <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar">Battery bar options</string>
-    <string name="battery_bar_style_title">Battery bar style</string>
-    <string name="battery_bar_thickness_title">Battery bar thickness</string>
-    <string name="battery_bar_animate_title">Charging animation</string>
-    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
 
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Status bar</string>
@@ -453,10 +435,6 @@
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
     <string name="status_bar_carrier_color">Carrier label color</string>
-
-    <!-- Location QS advanced options -->
-    <string name="qs_advanced_location_title">Advanced location quick settings</string>
-    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 
     <!-- Slim lockscreen shortcuts -->
     <string name="shortcut_action_none">None</string>
