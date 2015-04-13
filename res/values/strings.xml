@@ -188,18 +188,6 @@
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
 
-    <!-- Battery Bar -->
-    <string name="battery_icon">Battery icon style</string>
-    <string name="battery_not_title">Battery icon in notifications</string>
-    <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
-    <string name="battery_bar_location">Battery bar location</string>
-    <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar">Battery bar options</string>
-    <string name="battery_bar_style_title">Battery bar style</string>
-    <string name="battery_bar_thickness_title">Battery bar thickness</string>
-    <string name="battery_bar_animate_title">Charging animation</string>
-    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
-
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_style_title">Style</string>
@@ -447,10 +435,6 @@
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
     <string name="status_bar_carrier_color">Carrier label color</string>
-
-    <!-- Location QS advanced options -->
-    <string name="qs_advanced_location_title">Advanced location quick settings</string>
-    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 
     <!-- Slim lockscreen shortcuts -->
     <string name="shortcut_action_none">None</string>

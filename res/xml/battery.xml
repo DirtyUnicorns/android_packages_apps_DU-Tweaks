@@ -32,10 +32,5 @@
             android:entries="@array/status_bar_battery_percentage_entries"
             android:entryValues="@array/status_bar_battery_percentage_values" />
 
-        <PreferenceScreen
-            android:key="battery_bar"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.BatteryBar"
-            android:title="@string/battery_bar" />
-
 </PreferenceScreen>
 

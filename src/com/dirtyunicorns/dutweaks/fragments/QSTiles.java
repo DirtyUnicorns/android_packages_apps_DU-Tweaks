@@ -41,6 +41,8 @@ import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class QSTiles extends Fragment implements
@@ -48,7 +50,7 @@ public class QSTiles extends Fragment implements
     private DraggableGridView mDraggableGridView;
     private View mAddDeleteTile;
     private boolean mDraggingActive;
-    private Resources mSystemUIResources;
+    private Context mSystemUiContext;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -62,12 +64,7 @@ public class QSTiles extends Fragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        try {
-            Context context = getActivity().createPackageContext(Utils.SYSTEM_UI_PACKAGE_NAME, 0);
-            mSystemUIResources = context.getResources();
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
+        mSystemUiContext = Utils.createPackageContext(getActivity(), "com.android.systemui");
 
         ContentResolver resolver = getActivity().getContentResolver();
         String order = Settings.System.getString(resolver, Settings.System.QS_TILES);
@@ -181,7 +178,15 @@ public class QSTiles extends Fragment implements
             }
         };
 
-        final QSListAdapter adapter = new QSListAdapter(getActivity(), tilesList);
+        Collections.sort(tilesList, new Comparator<QSTileHolder>() {
+            @Override
+            public int compare(QSTileHolder lhs, QSTileHolder rhs) {
+                return lhs.name.compareTo(rhs.name);
+            }
+        });
+
+        final QSListAdapter adapter = new QSListAdapter(getActivity(),
+                mSystemUiContext, tilesList);
         new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.add_qs)
                 .setSingleChoiceItems(adapter, -1, selectionListener)
@@ -218,9 +223,11 @@ public class QSTiles extends Fragment implements
         qsTile.setColor(defaultColor);
         if (item.name != null) {
             ImageView icon = (ImageView) qsTile.findViewById(android.R.id.icon);
-            Drawable d = Utils.getNamedDrawableFromSystemUI(mSystemUIResources, item.resourceName);
-            d.setColorFilter(getResources().getColor(R.color.qs_tile_tint_color),
-                    PorterDuff.Mode.SRC_ATOP);
+            Drawable d = Utils.getNamedDrawable(mSystemUiContext, item.resourceName);
+            if (d != null) {
+                d.setColorFilter(getResources().getColor(R.color.qs_tile_tint_color),
+                        PorterDuff.Mode.SRC_ATOP);
+            }
             icon.setImageDrawable(d);
             TextView title = (TextView) qsTile.findViewById(android.R.id.title);
             title.setText(item.name);
