@@ -21,6 +21,7 @@
     <color name="qs_tile_default_background_color">@android:color/transparent</color>
     <color name="qs_tile_tint_color">#FF009587</color>
     <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
+    <color name="icon_tint_color">@color/material_deep_teal_500</color>
 
     <!-- DSLV colors -->
     <color name="dslv_icon_dark">#ff009688</color>
