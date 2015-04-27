@@ -91,6 +91,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String KEYS_APP_SWITCH_PRESS = "keys_app_switch_press";
     private static final String KEYS_APP_SWITCH_LONG_PRESS = "keys_app_switch_long_press";
 
+//    private static final String VIRTUAL_KEY_HAPTIC_FEEDBACK = "virtual_key_haptic_feedback";
+//    private static final String FORCE_SHOW_OVERFLOW_MENU = "force_show_overflow_menu";
+    private static final String KEYS_BRIGHTNESS_KEY = "button_brightness";
+//    private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
+//    private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
+
     // Available custom actions to perform on a key press.
     private static final int ACTION_NOTHING = 0;
     private static final int ACTION_MENU = 1;
@@ -128,6 +134,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private ListPreference mAppSwitchPressAction;
     private ListPreference mAppSwitchLongPressAction;
     private Map<String, Integer> mKeySettings = new HashMap<String, Integer>();
+//    private ListPreference mVolumeDefault;
+//    private CheckBoxPreference mHeadsetHookLaunchVoice;
+//    private CheckBoxPreference mVirtualKeyHapticFeedback;
+//    private CheckBoxPreference mForceShowOverflowMenu;
+    private boolean mButtonBrightnessSupport;
+//    private CheckBoxPreference mEnableNavBar;
+//    private CheckBoxPreference mDisabkeHWKeys;
     private PreferenceScreen mButtonBrightness;
     private PreferenceCategory mKeysBackCategory;
     private PreferenceCategory mKeysHomeCategory;
@@ -151,6 +164,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         int volumeRockerWake = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_WAKE, 0);
         mVolumeRockerWake.setChecked(volumeRockerWake != 0);
+        mButtonBrightnessSupport = getResources().getBoolean(com.android.internal.R.bool.config_button_brightness_support);
 
         // volume rocker music control
         mVolumeRockerMusicControl = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
@@ -212,6 +226,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     KEYS_APP_SWITCH_PRESS);
             mAppSwitchLongPressAction = (ListPreference) prefScreen.findPreference(
                     KEYS_APP_SWITCH_LONG_PRESS);
+//            mVirtualKeyHapticFeedback = (CheckBoxPreference) prefScreen.findPreference(
+//                    VIRTUAL_KEY_HAPTIC_FEEDBACK);
+//            mForceShowOverflowMenu = (CheckBoxPreference) prefScreen.findPreference(
+//                    FORCE_SHOW_OVERFLOW_MENU);
+//            mEnableNavBar = (CheckBoxPreference) prefScreen.findPreference(
+//                    KEYS_SHOW_NAVBAR_KEY);
+//            mDisabkeHWKeys = (CheckBoxPreference) prefScreen.findPreference(
+//                    KEYS_DISABLE_HW_KEY);
+            mButtonBrightness = (PreferenceScreen) prefScreen.findPreference(
+                    KEYS_BRIGHTNESS_KEY);
 
             if (hasBackKey) {
                 int backPressAction = Settings.System.getInt(resolver,
@@ -356,6 +380,28 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             mEnableCustomBindings.setChecked((Settings.System.getInt(resolver,
                     Settings.System.HARDWARE_KEY_REBINDING, 0) == 1));
             mEnableCustomBindings.setOnPreferenceChangeListener(this);
+
+//            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+//            if (vibrator == null || !vibrator.hasVibrator()) {
+//                removePreference(VIRTUAL_KEY_HAPTIC_FEEDBACK);
+//            } else {
+//                mVirtualKeyHapticFeedback.setChecked(Settings.System.getInt(resolver,
+//                        Settings.System.VIRTUAL_KEYS_HAPTIC_FEEDBACK, 1) == 1);
+//            }
+//
+//            boolean hasNavBar = getResources().getBoolean(
+//                    com.android.internal.R.bool.config_showNavigationBar);
+//            mForceShowOverflowMenu.setChecked(Settings.System.getInt(resolver,
+//                    Settings.System.FORCE_SHOW_OVERFLOW_MENU, (!hasNavBar && hasMenuKey) ? 0 : 1) == 1);
+//
+//            boolean harwareKeysDisable = Settings.System.getInt(resolver,
+//                        Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
+//            mDisabkeHWKeys.setChecked(harwareKeysDisable);
+//
+            if (!mButtonBrightnessSupport) {
+                keysCategory.removePreference(mButtonBrightness);
+            }
+//            updateDisableHWKeyEnablement(harwareKeysDisable);
         }
     }
 
