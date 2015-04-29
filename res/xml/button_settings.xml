@@ -49,6 +49,36 @@
         android:key="button_keys"
         android:title="@string/button_keys_title" >
 
+
+<!--        <com.android.settings.preference.SystemCheckBoxPreference
+            android:key="navigation_bar_show"
+            android:title="@string/navigation_bar_show_title"
+            android:summary="@string/navigation_bar_show_summary" />
+
+        <CheckBoxPreference
+            android:key="hardware_keys_disable"
+            android:title="@string/hardware_keys_disable_title"
+            android:summary="@string/hardware_keys_disable_summary"
+            android:persistent="false"/>
+
+        <CheckBoxPreference
+            android:key="virtual_key_haptic_feedback"
+            android:title="@string/virtual_key_haptic_feedback_title"
+            android:summary="@string/virtual_key_haptic_feedback_summary"
+            android:persistent="false"/>
+
+        <CheckBoxPreference
+            android:key="force_show_overflow_menu"
+            android:title="@string/force_show_overflow_menu_title"
+            android:summary="@string/force_show_overflow_menu_summary"
+                android:persistent="false"/>-->
+
+        <PreferenceScreen
+            android:key="button_brightness"
+            android:title="@string/button_brightness_title"
+            android:summary="@string/button_brightness_summary"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.ButtonBrightnessSettings" />
+
         <SwitchPreference
             android:key="keys_enable_custom"
             android:title="@string/keys_enable_custom_title"
