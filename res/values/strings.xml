@@ -381,6 +381,7 @@
     <string name="qs_appcirclebar_tile">App Circle Bar</string>
     <string name="qs_ambient_display_tile">Ambient display</string>
     <string name="qs_screenrecord_tile">Screen record</string>
+    <string name="qs_tile_usb_tether">USB tethering</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
