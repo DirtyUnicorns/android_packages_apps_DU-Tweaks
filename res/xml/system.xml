@@ -38,11 +38,17 @@
             android:layout="@layout/preference_adblocker"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.HfmSettings" />
 
-        <Preference
+         <Preference
             android:key="button_settings"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.ButtonSettings"
             android:layout="@layout/preference_buttons"
             android:title="@string/button_keys_title" />
+
+         <PreferenceScreen        
+            android:key="wakelock_blocker"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.WakeLockBlocker"
+            android:layout="@layout/preference_wakelockblocker"
+            android:title="@string/wakelock_blocker_title" />
 
 </PreferenceScreen>
 
