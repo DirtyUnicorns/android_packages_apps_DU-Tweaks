@@ -54,19 +54,13 @@
         android:key="button_keys"
         android:title="@string/button_keys_title" >
 
-
-<!--        <com.android.settings.preference.SystemCheckBoxPreference
-            android:key="navigation_bar_show"
-            android:title="@string/navigation_bar_show_title"
-            android:summary="@string/navigation_bar_show_summary" />
-
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="hardware_keys_disable"
             android:title="@string/hardware_keys_disable_title"
             android:summary="@string/hardware_keys_disable_summary"
-            android:persistent="false"/>
+            android:persistent="false" />
 
-        <CheckBoxPreference
+        <!--<CheckBoxPreference
             android:key="virtual_key_haptic_feedback"
             android:title="@string/virtual_key_haptic_feedback_title"
             android:summary="@string/virtual_key_haptic_feedback_summary"
