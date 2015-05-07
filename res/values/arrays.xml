@@ -197,7 +197,6 @@
         <item>EEE MM/dd</item>
         <item>EEE dd MMM</item>
         <item>EEE MMM dd</item>
-        <item>EEE MMMM dd</item>
         <item>EEEE dd/MM</item>
         <item>EEEE MM/dd</item>
         <item>@string/clock_date_format_custom</item>
