@@ -76,6 +76,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     // volume rocker music control
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
+    // volume rocker reorient
+    private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
 
     private static final String KEYS_CATEGORY_BINDINGS = "keys_bindings";
     private static final String KEYS_ENABLE_CUSTOM = "keys_enable_custom";
@@ -121,6 +123,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
+    private SwitchPreference mSwapVolumeButtons;
     private SwitchPreference mEnableCustomBindings;
     private ListPreference mBackPressAction;
     private ListPreference mBackLongPressAction;
@@ -172,6 +175,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_MUSIC_CONTROLS, 0);
         mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
+
+        // volume rocker reorient
+        mSwapVolumeButtons = (SwitchPreference) findPreference(SWAP_VOLUME_BUTTONS);
+        mSwapVolumeButtons.setOnPreferenceChangeListener(this);
+        int swapVolumeButtons = Settings.System.getInt(getContentResolver(),
+                SWAP_VOLUME_BUTTONS, 0);
+        mSwapVolumeButtons.setChecked(swapVolumeButtons != 0);
 
         final int deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
@@ -425,6 +435,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         } else if (preference == mVolumeRockerMusicControl) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_MUSIC_CONTROLS,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mSwapVolumeButtons) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), SWAP_VOLUME_BUTTONS,
                     value ? 1 : 0);
             return true;
         } else if (preference == mBackPressAction) {
