@@ -50,5 +50,11 @@
             android:layout="@layout/preference_wakelockblocker"
             android:title="@string/wakelock_blocker_title" />
 
+        <PreferenceScreen
+            android:key="aokp_animation"
+            android:title="@string/aokp_animation_title"
+            android:layout="@layout/preference_animations"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.AnimationControls" />
+
 </PreferenceScreen>
 
