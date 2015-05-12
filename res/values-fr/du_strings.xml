@@ -115,6 +115,12 @@
     <string name="hfm_dialog_failed">Échec de la mise à jour du fichier hosts. Veuillez essayez à nouveau.</string>
     <string name="hfm_dialog_success">/4 sources hosts appliquées avec succès\u00A0!</string>
     <string name="hfm_dialog_conn_error">Erreur\u00A0: Aucune connexion Internet</string>
+    <string name="hfm_whitelist_title">Liste blanche</string>
+    <string name="hfm_whitelist_summary">Liste des chaînes (partie des URLs) qui doit être autorisée par le Bloqueur de publicités</string>
+    <string name="hfm_whitelist_pref_text">Saisir une chaîne à ajouter à la Liste blanche</string>
+    <string name="hfm_whitelist_pref_button_add">Ajouter une URL</string>
+    <string name="hfm_whitelist_pref_empty">Liste blanche vide</string>
+    <string name="hfm_whitelist_pref_menu_apply">Appliquer</string>
 
     <!-- Misc Tweaks -->
     <string name="misctweaks_category">Réglages divers</string>
@@ -173,6 +179,10 @@
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
     <string name="volume_rocker_music_controls_summary">Sur écran éteint, un appui prolongé sur les touches Volume change la chanson</string>
+
+    <!-- Volume Key Rotation -->
+    <string name="swap_volume_buttons_title">Inversion des boutons Volume</string>
+    <string name="swap_volume_buttons_summary">En mode Paysage lors de la lecture de vidéo, Volume + diminue le volume sonore, Volume - augmente volume sonore</string>
 
     <!-- Battery options -->
     <string name="battery_category">Batterie</string>
@@ -394,6 +404,8 @@
     <string name="qs_appcirclebar_tile">Cercle d\'applications</string>
     <string name="qs_ambient_display_tile">Mode Sommeil</string>
     <string name="qs_screenrecord_tile">Capture vidéo</string>
+    <string name="qs_tile_usb_tether">Partage de connexion USB</string>
+    <string name="qs_music_play_tile">Lecture</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Notifications Force Close</string>
@@ -549,5 +561,18 @@
     <string name="shortcut_action_recent">Applications récentes</string>
     <string name="shortcut_action_power">Mise en veille</string>
     <string name="shortcut_action_search">Recherche dans l\'application</string>
+
+    <!-- Text for forcing expanded notifications -->
+    <string name="force_expanded_notifications_title">Forcer les Notifications Étendues</string>
+    <string name="force_expanded_notifications_summary">Disponible uniquement pour les applications qui prennent en charge les Notifications Étendues</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Bloqueur de Wakelock</string>
+    <string name="wakelock_blocker_summary">Bloqur les Wakelocks système</string>
+    <string name="wakelock_blocker_save">Appliquer</string>
+    <string name="wakelock_list_header">Wakelocks disponibles</string>
+    <string name="wakelock_blocker_reload">Actualiser</string>
+    <string name="wakelock_blocker_warning_title">Continuez avec précaution</string>
+    <string name="wakelock_blocker_warning">Le blocage de Wakelocks peut potentiellement causer des instabilités, des bogues, des pertes de données</string>
 
 </resources>
