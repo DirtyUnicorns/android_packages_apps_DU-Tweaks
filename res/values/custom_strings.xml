@@ -30,4 +30,9 @@
     <string name="button_manual_brightness">Brightness level</string>
     <string name="dialog_manual_brightness_title">Brightness level</string>
     <string name="unit_sec">sec</string>
+
+    <string name="navigation_bar_show_title">Show navigation bar</string>
+    <string name="navigation_bar_show_summary">Force enable navigation bar</string>
+    <string name="hardware_keys_disable_title">Disable keys</string>
+    <string name="hardware_keys_disable_summary">Force disable hardware keys</string>
 </resources>
