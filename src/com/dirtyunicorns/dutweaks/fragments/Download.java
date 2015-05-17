@@ -41,7 +41,10 @@ import com.android.settings.Utils;
 public class Download extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     Preference mBanksGapps;
-    Preference mRegularGapps;
+    Preference mArm64Gapps;
+    Preference mPaGapps;
+    Preference mTboGapps;
+    Preference mTboClearGapps;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,7 +55,10 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
         final ContentResolver resolver = getActivity().getContentResolver();
 
         mBanksGapps = findPreference("banks_gapps");
-        mRegularGapps = findPreference("regular_gapps");
+        mArm64Gapps = findPreference("arm64_gapps");
+        mPaGapps = findPreference("pa_gapps");
+        mTboGapps = findPreference("tbo_gapps");
+        mTboClearGapps = findPreference("tbo_clear_gapps");
     }
 
     @Override
@@ -63,12 +69,27 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mBanksGapps) {
-            Uri uri = Uri.parse("http://bit.ly/18upldw");
+            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/banks_gapps/gapps-L-4-21-15.zip");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
-        } else if (preference == mRegularGapps) {
-            Uri uri = Uri.parse("http://bit.ly/18uppKg");
+        } else if (preference == mArm64Gapps) {
+            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/arm64/GApps-20150511-minimal-DU-flounder-arm64-signed.zip");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+            return true;
+        } else if (preference == mPaGapps) {
+            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/pa_gapps/pa_gapps-stock-5.1-20150404-signed.zip");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+            return true;
+        } else if (preference == mTboGapps) {
+            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/du_tbo_gapps/DU_TBO_GAPPS_4-26.zip");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+            return true;
+        } else if (preference == mTboClearGapps) {
+            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/du_tbo_gapps/DU_TBO_GAPPS_CLEAR_4-26.zip");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;

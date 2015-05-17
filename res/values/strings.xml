@@ -31,10 +31,17 @@
     <!-- Download Center -->
     <string name="download_category">Download Center</string>
     <string name="gapps_category">GAPPS Packages</string>
-    <string name="banksgapps_title">Banks Minimal Gapps</string>
-    <string name="banksgapps_summary">Minimal Gapps give you just what you need to access the playstore, nothing more</string>
-    <string name="regulargapps_title">Regular Gapps</string>
-    <string name="regulargapps_summary">Fully packed with the majority of GAPPS, these are commonly used by users that do not want to download/install them later</string>
+    <string name="gapps_credit">Special Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
+    <string name="banks_gapps_title">Banks Gapps</string>
+    <string name="banks_gapps_summary">Minimal Gapps package</string>
+    <string name="arm64_gapps_title">Arm64 Gapps</string>
+    <string name="arm64_gapps_summary">Gapps package for Arm64 devices</string>
+    <string name="pa_gapps_title">PA Gapps</string>
+    <string name="pa_gapps_summary">Full stock Gapps package</string>
+    <string name="tbo_gapps_title">TBO Gapps</string>
+    <string name="tbo_gapps_summary">Blacked out Gapps package</string>
+    <string name="tbo_clear_gapps_title">TBO Clear Gapps</string>
+    <string name="tbo_clear_gapps_summary">Blacked out but clear background Gapps package</string>
 
     <!-- Advanced reboot options -->
     <string name="powermenu_category">Power Menu</string>
