@@ -87,6 +87,10 @@
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
     <string name="ok">OK</string>
 
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Show 4G instead of LTE</string>
+    <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G</string>
+
     <!-- OmniSwitch -->
     <string name="omniswitch_category">OmniSwitch</string>
 

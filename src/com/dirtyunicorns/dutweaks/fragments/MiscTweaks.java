@@ -41,11 +41,13 @@ import com.android.settings.Utils;
 
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String SHOW_FOURG = "show_fourg";
     private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
     private static final String ENABLE_TASK_MANAGER = "enable_task_manager";
 
+    private SwitchPreference mShowFourG;
     private SwitchPreference mDisableIM;
     private SwitchPreference mStatusBarBrightnessControl;
     private SwitchPreference mForceExpanded;
@@ -58,6 +60,10 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         addPreferencesFromResource(R.xml.misc_tweaks);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        mShowFourG = (SwitchPreference) findPreference(SHOW_FOURG);
+        mShowFourG.setChecked((Settings.System.getInt(resolver,
+                Settings.System.SHOW_FOURG, 0) == 1));
 
         mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
         mDisableIM.setChecked((Settings.System.getInt(resolver,
@@ -109,6 +115,12 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.ENABLE_TASK_MANAGER, checked ? 1:0);
+            Helpers.restartSystemUI();
+        }
+        if  (preference == mShowFourG) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SHOW_FOURG, checked ? 1:0);
             Helpers.restartSystemUI();
             return true;
         }
