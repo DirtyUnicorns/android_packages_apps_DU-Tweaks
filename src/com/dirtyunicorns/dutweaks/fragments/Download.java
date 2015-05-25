@@ -84,12 +84,12 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             startActivity(intent);
             return true;
         } else if (preference == mTboGapps) {
-            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/du_tbo_gapps/DU_TBO_GAPPS_4-26.zip");
+            Uri uri = Uri.parse("http://downloads.hostingsharedbox.com/spaceman/DU_TBO_Gapps/DU_TBO_GAPPS.zip");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
         } else if (preference == mTboClearGapps) {
-            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/du_tbo_gapps/DU_TBO_GAPPS_CLEAR_4-26.zip");
+            Uri uri = Uri.parse("http://downloads.hostingsharedbox.com/spaceman/DU_TBO_Gapps/DU_TBO_GAPPS_CLEAR.zip");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
