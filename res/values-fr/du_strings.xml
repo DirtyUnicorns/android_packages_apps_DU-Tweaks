@@ -87,6 +87,10 @@
     <string name="network_traffic_color_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="ok">OK</string>
 
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Afficher 4G plutôt que LTE</string>
+    <string name="show_fourg_summary">Utiliser l\'icône 4G dans la barre d\'état plutôt que LTE</string>
+
     <!-- OmniSwitch -->
     <string name="omniswitch_category">OmniSwitch</string>
 
@@ -422,6 +426,7 @@
     <string name="lockscreen_settings_title">Écran de déverrouillage</string>
     <string name="lockscreen_targets_message">Raccourcis de l\'écran de déverrouillage</string>
     <string name="lockscreen_default_target">Configuration d\'origine</string>
+    <string name="lockscreen_none_target">Aucun</string>
     <string name="lockscreen_message">Appuyez sur une icône à gauche ou à droite pour attribuer un raccourci sur l\'écran de verrouillage.</string>
     <string name="lockscreen_choose_action_title">Raccourci</string>
 
@@ -623,5 +628,9 @@
     <string name="listview_overshoot_interpolator">Surpasser</string>
     <string name="listview_anticipate_overshoot_interpolator">Anticiper et surpasser</string>
     <string name="listview_bounce_interpolator">Rebondir</string>
+
+    <!-- Task Manager -->
+    <string name="enable_task_manager_title">Gestionnaire de tâches</string>
+    <string name="enable_task_manager_summary">Activer/Désactiver le Gestionnaire de tâches dans la barre d\'état</string>
 
 </resources>
