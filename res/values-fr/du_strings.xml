@@ -418,6 +418,7 @@
     <string name="qs_screenrecord_tile">Capture vidéo</string>
     <string name="qs_tile_usb_tether">Partage de connexion USB</string>
     <string name="qs_music_play_tile">Lecture</string>
+    <string name="qs_tile_nfc">NFC</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Notifications Force Close</string>
