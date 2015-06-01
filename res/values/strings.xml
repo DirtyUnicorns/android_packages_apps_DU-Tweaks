@@ -405,6 +405,7 @@
     <string name="qs_tile_usb_tether">USB tethering</string>
     <string name="qs_music_play_tile">Play</string>
     <string name="qs_tile_nfc">NFC</string>
+    <string name="qs_title_compass">Compass</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
