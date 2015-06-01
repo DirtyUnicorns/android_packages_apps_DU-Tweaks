@@ -22,12 +22,6 @@
             android:persistent="false" />
 
         <Preference
-            android:key="hfm_whitelist"
-            android:title="@string/hfm_whitelist_title"
-            android:summary="@string/hfm_whitelist_summary"
-            android:dependency="hfm_disable_ads" />
-
-        <Preference
             android:key="hfm_update_hosts"
             android:title="@string/hfm_update_hosts"
             android:summary="@string/hfm_update_hosts_summary"

@@ -115,12 +115,6 @@
     <string name="hfm_dialog_failed">Updating hosts file failed. Please try again.</string>
     <string name="hfm_dialog_success">/4 hosts sources successfully applied!</string>
     <string name="hfm_dialog_conn_error">Error: No network connectivity</string>
-    <string name="hfm_whitelist_title">Whitelist</string>
-    <string name="hfm_whitelist_summary">List of strings (part of URL\'s) that should be allowed by the ad blocker</string>
-    <string name="hfm_whitelist_pref_text">Type string to add to whitelist</string>
-    <string name="hfm_whitelist_pref_button_add">Add URL</string>
-    <string name="hfm_whitelist_pref_empty">Whitelist is empty</string>
-    <string name="hfm_whitelist_pref_menu_apply">Apply</string>
 
     <!-- Misc Tweaks -->
     <string name="misctweaks_category">Misc. Tweaks</string>
@@ -129,7 +123,7 @@
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 
-    <!-- Hardware Button remapping -->
+    <!-- Hardware Button remapping -->  
     <string name="button_keys_title">Buttons</string>
     <string name="keys_bindings_title">Key actions</string>
     <string name="button_keys_back_title" >Back key</string>
