@@ -58,12 +58,17 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.misc_tweaks);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
         mShowFourG = (SwitchPreference) findPreference(SHOW_FOURG);
+        if (Utils.isWifiOnly(getActivity())) {
+            prefSet.removePreference(mShowFourG);
+        } else {
         mShowFourG.setChecked((Settings.System.getInt(resolver,
                 Settings.System.SHOW_FOURG, 0) == 1));
+        }
 
         mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
         mDisableIM.setChecked((Settings.System.getInt(resolver,
