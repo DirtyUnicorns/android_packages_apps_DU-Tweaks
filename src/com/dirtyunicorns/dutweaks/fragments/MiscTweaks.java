@@ -120,7 +120,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.ENABLE_TASK_MANAGER, checked ? 1:0);
-            Helpers.restartSystemUI();
         }
         if  (preference == mShowFourG) {
             boolean checked = ((SwitchPreference)preference).isChecked();
