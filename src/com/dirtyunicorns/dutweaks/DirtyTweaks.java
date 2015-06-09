@@ -75,7 +75,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         mContainer = container;
 
         View view = inflater.inflate(R.layout.preference_generalui, container, false);
-        mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
+        mViewPager = (ViewPager) view.findViewById(R.id.pager);
         mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
