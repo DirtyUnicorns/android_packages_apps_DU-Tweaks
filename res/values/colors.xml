@@ -16,7 +16,7 @@
 
 <resources>
     <color name="white">#FFF</color>
-    <color name="background_tab_pressed">#66ffffff</color>
+    <color name="background_tab_pressed">#1AFFFFFF</color>
     <color name="ga_gesture_color">#FF07998B</color>
     <color name="qs_tile_default_background_color">@android:color/transparent</color>
     <color name="qs_tile_tint_color">#FF009587</color>
