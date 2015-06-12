@@ -22,7 +22,7 @@
         android:title="@string/force_expanded_notifications_title"
         android:summary="@string/force_expanded_notifications_summary" />
 
-    <SwitchPreference
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
         android:key="disable_immersive_message"
         android:title="@string/disable_immersive_message_title"
         android:summary="@string/disable_immersive_message_summary"
@@ -34,5 +34,20 @@
         android:summary="@string/status_bar_notif_count_summary"
         android:persistent="false" />
 
-</PreferenceScreen>
+    <PreferenceCategory
+        android:key="breathing_notifications_category"
+        android:title="@string/breathing_notifications_category" />
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="missed_call_breath"
+        android:title="@string/missed_call_breath_title"
+        android:summary="@string/missed_call_breath_summary"
+        android:persistent="false"/>
+
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="voicemail_breath"
+        android:title="@string/voicemail_breath_title"
+        android:summary="@string/voicemail_breath_summary"
+        android:persistent="false"/>
+
+</PreferenceScreen>
