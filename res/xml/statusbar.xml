@@ -50,5 +50,12 @@
             android:layout="@layout/preference_carrierlabel"
             android:title="@string/carrier_options" />
 
+        <Preference
+            android:key="breathing_notifications"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.BreathingNotifications"
+            android:layout="@layout/preference_breathe"
+            android:title="@string/breathing_notifications_title" />
+
+
 </PreferenceScreen>
 
