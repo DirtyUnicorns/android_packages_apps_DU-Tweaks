@@ -131,7 +131,36 @@
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 
-    <!-- Hardware Button remapping -->  
+    <!-- Button Brightness -->
+    <string name="button_brightness_title">Brightness</string>
+    <string name="button_brightness_summary">Button backlight brightness</string>
+    <string name="button_timeout_title">Backlight timeout</string>
+    <string name="button_timeout_summary">Disabled on value 0</string>
+    <string name="button_no_brightness">Dark mode</string>
+    <string name="button_no_brightness_summary">Don\'t set button brightness</string>
+    <string name="button_link_brightness">Link to screen</string>
+    <string name="button_link_brightness_summary">Use screen brightness level. Not for adaptive brightness!</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="dialog_manual_brightness_title">Brightness level</string>
+    <string name="unit_sec">sec</string>
+
+    <!-- Hardware key disabler -->
+    <string name="navigation_bar_show_title">Show navigation bar</string>
+    <string name="navigation_bar_show_summary">Force enable navigation bar</string>
+    <string name="hardware_keys_disable_title">Disable keys</string>
+    <string name="hardware_keys_disable_summary">Force disable hardware keys</string>
+
+    <!-- Disable torch when screen goes off -->
+    <string name="disable_torch_screen_off_title">Disable torch on screen off</string>
+    <string name="disable_torch_screen_off_delay_title">Delay</string>
+    <string name="torch_screen_off_one_second">1 second</string>
+    <string name="torch_screen_off_ten_second">10 seconds (default)</string>
+    <string name="torch_screen_off_thirty_second">30 seconds</string>
+    <string name="torch_screen_off_one_minute">1 minute</string>
+    <string name="torch_screen_off_five_minutes">5 minutes</string>
+    <string name="torch_screen_off_ten_minutes">10 minutes</string>
+
+    <!-- Hardware Button remapping -->
     <string name="button_keys_title">Buttons</string>
     <string name="keys_bindings_title">Key actions</string>
     <string name="button_keys_back_title" >Back key</string>
