@@ -463,8 +463,7 @@
     <string name="status_bar_carrier_color">Carrier label color</string>
 
     <!-- Recent panel -->
-    <string name="recent_panel_category">Recent apps panel</string>
-    <string name="use_slim_recents_title">SlimRecents</string>
+    <string name="use_slim_recents_title">Enable Slim Recents</string>
     <string name="show_running_tasks_title">Only show running apps</string>
     <string name="recents_max_apps_title">Max allowed apps</string>
     <string name="recent_panel_scale_title">Size</string>
@@ -478,6 +477,8 @@
     <string name="recent_panel_bg_color_title">Panel background color</string>
     <string name="recent_card_bg_color_title">Card background color</string>
     <string name="recent_card_text_color_title">Card text color</string>
+    <string name="aosp_recents_title">AOSP recents options</string>
+    <string name="slim_recents_title">Slim recents options</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
