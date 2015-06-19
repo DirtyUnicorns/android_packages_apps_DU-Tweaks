@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The Dirty Unicorns Project
+<!-- Copyright (C) 2015 The SlimRoms Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,21 +13,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/recents_category" >
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/recents_category">
+
+    <PreferenceCategory
+        android:key="aosp_recents"
+        android:title="@string/aosp_recents_title"/>
 
          <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="recents_show_hide_search_bar"
             android:title="@string/recents_show_searchbar"
             android:summary="@string/recents_show_searchbar_summary"
-            settings:keywords="@string/keywords_recents_show_searchbar"
             android:defaultValue="false" />
-
-        <PreferenceScreen
-            android:key="recent_panel"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.RecentPanel"
-            android:title="@string/use_slim_recents_title" />
 
         <SwitchPreference
             android:key="show_clear_all_recents"
@@ -43,5 +42,70 @@
             android:defaultValue="3"
             android:dependency="show_clear_all_recents" />
 
-</PreferenceScreen>
+    <PreferenceCategory
+        android:key="slim_recents"
+        android:title="@string/slim_recents_title"/>
 
+        <SwitchPreference
+            android:key="use_slim_recents"
+            android:title="@string/use_slim_recents_title"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="only_show_running_tasks"
+            android:title="@string/show_running_tasks_title"
+            android:defaultValue="false" />
+
+        <SlimSeekBarPreference
+            android:key="max_apps"
+            android:title="@string/recents_max_apps_title" />
+
+        <ListPreference
+            android:dependency="use_slim_recents"
+            android:key="recent_panel_expanded_mode"
+            android:entries="@array/recent_panel_expanded_mode_entries"
+            android:entryValues="@array/recent_panel_expanded_mode_values"
+            android:title="@string/recent_panel_expanded_mode_title"
+            android:summary="@string/recent_panel_expanded_mode_summary"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:dependency="use_slim_recents"
+            android:key="recent_panel_lefty_mode"
+            android:title="@string/recent_panel_lefty_mode_title"
+            android:summary="@string/recent_panel_lefty_mode_summary"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:dependency="use_slim_recents"
+            android:key="recent_panel_show_topmost"
+            android:title="@string/recent_panel_show_topmost_title"
+            android:summary="@string/recent_panel_show_topmost_summary"
+            android:persistent="true" />
+
+        <SlimSeekBarPreference
+            android:key="recent_panel_scale"
+            android:title="@string/recent_panel_scale_title" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:dependency="use_slim_recents"
+            android:key="recent_panel_bg_color"
+            android:title="@string/recent_panel_bg_color_title"
+            android:defaultValue="0x00ffffff"
+            alphaSlider="true" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:dependency="use_slim_recents"
+            android:key="recent_card_bg_color"
+            android:title="@string/recent_card_bg_color_title"
+            android:defaultValue="0x00ffffff"
+            alphaSlider="true" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:dependency="use_slim_recents"
+            android:key="recent_card_text_color"
+            android:title="@string/recent_card_text_color_title"
+            android:defaultValue="0x00ffffff"
+            alphaSlider="true" />
+
+</PreferenceScreen>
