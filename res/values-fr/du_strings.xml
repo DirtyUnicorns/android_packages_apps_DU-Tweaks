@@ -170,7 +170,7 @@
     <string name="keys_action_home">Bouton Accueil</string>
     <string name="keys_action_back">Bouton retour</string>
     <string name="keys_action_last_app">Passer à la dernière application</string>
-    <string name="keys_action_kill_app">Forcer l\'arrêt l\'application</string>
+    <string name="keys_action_kill_app">Forcer l\'arrêt de l\'application</string>
     <string name="keys_action_normal">Appui normal</string>
     <string name="keys_action_long">Appui prolongé</string>
     <string name="keys_action_double">Double appui</string>
@@ -482,6 +482,27 @@
     <string name="custom_carrier_label_notset">Libellé opérateur non défini</string>
     <string name="status_bar_carrier_color">Couleur libellé opérateur</string>
 
+    <!-- Recent panel -->
+    <string name="recent_panel_category">Applications Récentes Slim</string>
+    <string name="use_slim_recents_title">SlimRecents</string>
+    <string name="show_running_tasks_title">Afficher les applications en cours</string>
+    <string name="recents_max_apps_title">Nombre maximal d\'application</string>
+    <string name="recent_panel_scale_title">Taille</string>
+    <string name="recent_panel_expanded_mode_title">Affichage étendu</string>
+    <string name="recent_panel_expanded_mode_summary">Mode d\'affichage</string>
+    <string name="recent_panel_expanded_mode_auto">Automatique (Par défaut)</string>
+    <string name="recent_panel_expanded_mode_always">Toujours</string>
+    <string name="recent_panel_expanded_mode_never">Jamais</string>
+    <string name="recent_panel_show_topmost_title">Application en cours</string>
+    <string name="recent_panel_show_topmost_summary">Afficher l\'application en cours</string>
+    <string name="recent_panel_bg_color_title">Couleur du panneau</string>
+    <string name="recent_card_bg_color_title">Couleur du fond</string>
+    <string name="recent_card_text_color_title">Couleur du texte</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Panneau à gauche</string>
+    <string name="recent_panel_lefty_mode_summary">Affiche le panneau sur le coté gauche de l\'écran</string>
+
     <!-- Location QS advanced options -->
     <string name="qs_advanced_location_title">Paramètres avancés de localisation</string>
     <string name="qs_advanced_location_summary">Activer les paramètres avancés de localisation dans le volet des paramètres</string>
@@ -639,5 +660,15 @@
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Gestionnaire de tâches</string>
     <string name="enable_task_manager_summary">Activer/Désactiver le Gestionnaire de tâches dans la barre d\'état</string>
+
+   <!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Notifications clignotantes</string>
+    <string name="sms_breath_title">SMS</string>
+    <string name="sms_breath_summary">Faire clignoter la notification de réception de nouveau SMS, dans la barre d\'état</string>
+    <string name="missed_call_breath_title">Appel Manqué</string>
+    <string name="missed_call_breath_summary">Faire clignoter la notification d\'appel manqué, dans la barre d\'état</string>
+    <string name="voicemail_breath_title">Messagerie Vocale</string>
+    <string name="voicemail_breath_summary">Faire clignoter la notification de la messagerie vocale, dans la barre d\'état</string>
+
 
 </resources>
