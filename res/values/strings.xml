@@ -398,7 +398,6 @@
     <string name="qs_tile_screen_timeout">Screen timeout</string>
     <string name="qs_battery_saver_tile">Battery saver</string>
     <string name="qs_brightness_tile">Brightness</string>
-    <string name="qs_navbar_tile">Navigation Bar</string>
     <string name="qs_appcirclebar_tile">App Circle Bar</string>
     <string name="qs_ambient_display_tile">Ambient display</string>
     <string name="qs_screenrecord_tile">Screen record</string>
@@ -427,33 +426,6 @@
     <string name="lockscreen_none_target">None</string>
     <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
     <string name="lockscreen_choose_action_title">Choose action</string>
-
-    <!-- Navbar Options -->
-    <string name="navigation_bar_title">Buttons &amp; layout</string>
-    <string name="navigation_bar_help_text">To get started tap the edit icon to unlock the navigation bar for editing.\n\nYou can tap an icon to change its shortcut, or long press an icon to re-arrange the layout.\n\nTap save to commit your changes, or restore to reset the layout to default settings.</string>
-    <string name="navigation_restore_button_text">Restore\ndefaults</string>
-    <string name="navigation_edit_button_text">Edit</string>
-    <string name="navigation_save_button_text">Save</string>
-    <string name="navigation_bar_reset_message">Delete current settings and restore the default layout?</string>
-    <string name="navbar_enable_bar">Enable</string>
-    <string name="navbar_dimen_title">Dimensions</string>
-    <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
-    <string name="navigation_bar_height_title">Navigation bar height</string>
-    <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
-    <string name="navigation_bar_width_title">Navigation bar width</string>
-    <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
-    <string name="navigation_bar_size_36_dp">36 dp</string>
-    <string name="navigation_bar_size_30_dp">30 dp</string>
-    <string name="navigation_bar_size_24_dp">24 dp</string>
-    <string name="navigation_bar_size_48_dp_default">48 dp (default)</string>
-    <string name="navigation_bar_size_44_dp">44 dp</string>
-    <string name="navigation_bar_size_40_dp">40 dp</string>
-    <string name="navigation_bar_size_42_dp">42 dp</string>
-    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
-    <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
-    <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons while typing. Overrides IME switcher.</string>
-    <string name="navigation_ring_title">Navigation ring targets</string>
-    <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the check mark icon to save your changes, or restore to reset the settings to defaults.</string>
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
