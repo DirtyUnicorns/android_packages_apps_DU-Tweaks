@@ -72,37 +72,6 @@
         <item>2000</item>
     </string-array>
 
-    <!-- Hardware key rebinding -->
-    <string-array name="keys_action_entries" translatable="false">
-        <item>@string/keys_action_nothing</item>
-        <item>@string/keys_action_home</item>
-        <item>@string/keys_action_back</item>
-        <item>@string/keys_action_menu</item>
-        <item>@string/keys_action_app_switch</item>
-        <item>@string/keys_action_search</item>
-        <item>@string/keys_action_voice_search</item>
-        <item>@string/keys_action_in_app_search</item>
-        <item>@string/keys_action_last_app</item>
-        <item>@string/keys_action_kill_app</item>
-        <item>@string/keys_action_sleep</item>
-        <item>@string/keys_action_omniswitch</item>
-    </string-array>
-
-    <string-array name="keys_action_values" translatable="false">
-        <item>0</item>
-        <item>6</item>
-        <item>7</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-    </string-array>
-
     <!-- Battery Options -->
     <string-array name="status_bar_battery_percentage_entries" translatable="false">
         <item>@string/status_bar_battery_percentage_default</item>
@@ -424,69 +393,6 @@
         <item>6000</item>
         <item>8000</item>
         <item>10000</item>
-    </string-array>
-
-    <!-- Navbar Options -->
-    <string-array name="navigation_bar_width_entries" translatable="false">
-        <item>@string/navigation_bar_size_42_dp_default</item>
-        <item>@string/navigation_bar_size_40_dp</item>
-        <item>@string/navigation_bar_size_36_dp</item>
-        <item>@string/navigation_bar_size_30_dp</item>
-        <item>@string/navigation_bar_size_24_dp</item>
-        <item>@string/navigation_bar_size_0_dp</item>
-    </string-array>
-
-    <string-array name="navigation_bar_width" translatable="false">
-        <item>42</item>
-        <item>40</item>
-        <item>36</item>
-        <item>30</item>
-        <item>24</item>
-        <item>0</item>
-    </string-array>
-
-    <string-array name="navigation_bar_height_entries" translatable="false">
-        <item>@string/navigation_bar_size_48_dp_default</item>
-        <item>@string/navigation_bar_size_44_dp</item>
-        <item>@string/navigation_bar_size_42_dp</item>
-        <item>@string/navigation_bar_size_40_dp</item>
-        <item>@string/navigation_bar_size_36_dp</item>
-        <item>@string/navigation_bar_size_30_dp</item>
-        <item>@string/navigation_bar_size_24_dp</item>
-        <item>@string/navigation_bar_size_0_dp</item>
-    </string-array>
-
-    <string-array name="navigation_bar_height" translatable="false">
-        <item>48</item>
-        <item>44</item>
-        <item>42</item>
-        <item>40</item>
-        <item>36</item>
-        <item>30</item>
-        <item>24</item>
-        <item>0</item>
-    </string-array>
-
-    <string-array name="navigation_bar_height_entries_landscape" translatable="false">
-        <item>@string/navigation_bar_size_48_dp_default</item>
-        <item>@string/navigation_bar_size_44_dp</item>
-        <item>@string/navigation_bar_size_42_dp</item>
-        <item>@string/navigation_bar_size_40_dp</item>
-        <item>@string/navigation_bar_size_36_dp</item>
-        <item>@string/navigation_bar_size_30_dp</item>
-        <item>@string/navigation_bar_size_24_dp</item>
-        <item>@string/navigation_bar_size_0_dp</item>
-    </string-array>
-
-    <string-array name="navigation_bar_height_landscape" translatable="false">
-        <item>48</item>
-        <item>44</item>
-        <item>42</item>
-        <item>40</item>
-        <item>36</item>
-        <item>30</item>
-        <item>24</item>
-        <item>0</item>
     </string-array>
 
     <!-- Disable torch on screen off delay -->
