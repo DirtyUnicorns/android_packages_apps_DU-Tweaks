@@ -25,8 +25,8 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.ListPreference;
 import android.preference.SwitchPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -36,12 +36,11 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 
 import com.dirtyunicorns.dutweaks.Helpers;
+import com.android.internal.util.du.QSUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-
-import com.android.internal.util.du.QSUtils;
 
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -62,12 +61,14 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private ListPreference mTorchOffDelay;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         addPreferencesFromResource(R.xml.misc_tweaks);
         PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
         Activity activity = getActivity();
+
+        final ContentResolver resolver = getActivity().getContentResolver();
 
         mShowFourG = (SwitchPreference) findPreference(SHOW_FOURG);
         if (Utils.isWifiOnly(getActivity())) {
@@ -122,19 +123,20 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if  (preference == mDisableIM) {
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_IMMERSIVE_MESSAGE, checked ? 1:0);
             return true;
-        } else if  (preference == mForceExpanded) {
+        }
+        if  (preference == mForceExpanded) {
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FORCE_EXPANDED_NOTIFICATIONS, checked ? 1:0);
             return true;
-        } else if  (preference == mEnableTaskManager) {
+        }
+        if  (preference == mEnableTaskManager) {
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.ENABLE_TASK_MANAGER, checked ? 1:0);
@@ -145,17 +147,23 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
                     Settings.System.SHOW_FOURG, checked ? 1:0);
             Helpers.restartSystemUI();
             return true;
-        } else if (preference == mStatusBarBrightnessControl) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
-                    value ? 1 : 0);
-            return true;
-        } else if (preference == mTorchOffDelay) {
-            int torchOffDelay = Integer.valueOf((String) newValue);
-            int index = mTorchOffDelay.findIndexOfValue((String) newValue);
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mTorchOffDelay) {
+            int torchOffDelay = Integer.valueOf((String) objValue);
+            int index = mTorchOffDelay.findIndexOfValue((String) objValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_TORCH_ON_SCREEN_OFF_DELAY, torchOffDelay);
             mTorchOffDelay.setSummary(mTorchOffDelay.getEntries()[index]);
+            return true;
+        } else if (preference == mStatusBarBrightnessControl) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
+                    value ? 1 : 0);
             return true;
         }
         return false;
