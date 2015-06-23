@@ -16,6 +16,12 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
+
+import java.io.InputStreamReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.BufferedReader;
+
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.admin.DeviceAdminReceiver;
@@ -41,8 +47,11 @@ import com.android.settings.Utils;
 
 import com.android.internal.util.du.QSUtils;
 
+import com.dirtyunicorns.dutweaks.CMDProcessor;
+
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String SELINUX = "selinux";
     private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
@@ -50,6 +59,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String DISABLE_TORCH_ON_SCREEN_OFF = "disable_torch_on_screen_off";
     private static final String DISABLE_TORCH_ON_SCREEN_OFF_DELAY = "disable_torch_on_screen_off_delay";
 
+    private SwitchPreference mSelinux;
     private SwitchPreference mDisableIM;
     private SwitchPreference mStatusBarBrightnessControl;
     private SwitchPreference mForceExpanded;
@@ -64,6 +74,17 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         ContentResolver resolver = getActivity().getContentResolver();
         Activity activity = getActivity();
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mSelinux = (SwitchPreference) findPreference(SELINUX);
+        mSelinux.setOnPreferenceChangeListener(this);
+
+        if (CMDProcessor.runSuCommand("getenforce").getStdout().contains("Enforcing")) {
+            mSelinux.setChecked(true);
+            mSelinux.setSummary(R.string.selinux_enforcing_title);
+        } else {
+            mSelinux.setChecked(false);
+            mSelinux.setSummary(R.string.selinux_permissive_title);
+        }
 
         mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
         mDisableIM.setChecked((Settings.System.getInt(resolver,
@@ -138,6 +159,15 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_TORCH_ON_SCREEN_OFF_DELAY, torchOffDelay);
             mTorchOffDelay.setSummary(mTorchOffDelay.getEntries()[index]);
+            return true;
+        } else if (preference == mSelinux) {
+            if (newValue.toString().equals("true")) {
+                CMDProcessor.runSuCommand("setenforce 1");
+                mSelinux.setSummary(R.string.selinux_enforcing_title);
+            } else if (newValue.toString().equals("false")) {
+                CMDProcessor.runSuCommand("setenforce 0");
+                mSelinux.setSummary(R.string.selinux_permissive_title);
+            }
             return true;
         }
         return false;
