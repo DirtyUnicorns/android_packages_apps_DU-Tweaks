@@ -158,6 +158,9 @@
     <string name="keys_action_long">Long press</string>
     <string name="keys_action_double">Double tap</string>
     <string name="no_home_key">You have no button assigned any more to the \"Home\" action!\n\nThis can make your device unusable!</string>
+    <string name="hardware_keys_disable_title">Disable keys</string>
+    <string name="hardware_keys_disable_summary">Force disable hardware keys</string>
+    <string name="haptic_feedback_disable_title">Disable Haptic feedback</string>
 
     <!-- Button shorcut actions -->
     <string name="shortcut_action_back">Back</string>
