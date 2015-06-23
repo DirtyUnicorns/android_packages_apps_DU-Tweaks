@@ -16,6 +16,12 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
+
+import java.io.InputStreamReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.BufferedReader;
+
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.admin.DeviceAdminReceiver;
@@ -37,6 +43,7 @@ import android.provider.Settings.SettingNotFoundException;
 
 import com.dirtyunicorns.dutweaks.Helpers;
 import com.android.internal.util.du.QSUtils;
+import com.dirtyunicorns.dutweaks.CMDProcessor;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -45,6 +52,8 @@ import com.android.settings.Utils;
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String SHOW_FOURG = "show_fourg";
+
+    private static final String SELINUX = "selinux";
     private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
@@ -53,6 +62,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String DISABLE_TORCH_ON_SCREEN_OFF_DELAY = "disable_torch_on_screen_off_delay";
 
     private SwitchPreference mShowFourG;
+    private SwitchPreference mSelinux;
     private SwitchPreference mDisableIM;
     private SwitchPreference mStatusBarBrightnessControl;
     private SwitchPreference mForceExpanded;
@@ -76,6 +86,17 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         } else {
         mShowFourG.setChecked((Settings.System.getInt(resolver,
                 Settings.System.SHOW_FOURG, 0) == 1));
+        }
+
+        mSelinux = (SwitchPreference) findPreference(SELINUX);
+        mSelinux.setOnPreferenceChangeListener(this);
+
+        if (CMDProcessor.runSuCommand("getenforce").getStdout().contains("Enforcing")) {
+            mSelinux.setChecked(true);
+            mSelinux.setSummary(R.string.selinux_enforcing_title);
+        } else {
+            mSelinux.setChecked(false);
+            mSelinux.setSummary(R.string.selinux_permissive_title);
         }
 
         mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
@@ -114,6 +135,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
                 mStatusBarBrightnessControl.setSummary(R.string.status_bar_brightness_control_info);
             }
         } catch (SettingNotFoundException e) {
+
         }
     }
 
@@ -164,6 +186,15 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
                     value ? 1 : 0);
+            return true;
+        } else if (preference == mSelinux) {
+            if (objValue.toString().equals("true")) {
+                CMDProcessor.runSuCommand("setenforce 1");
+                mSelinux.setSummary(R.string.selinux_enforcing_title);
+            } else if (objValue.toString().equals("false")) {
+                CMDProcessor.runSuCommand("setenforce 0");
+                mSelinux.setSummary(R.string.selinux_permissive_title);
+            }
             return true;
         }
         return false;

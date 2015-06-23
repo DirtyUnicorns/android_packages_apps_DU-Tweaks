@@ -435,6 +435,13 @@
     <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
     <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
 
+    <!-- Selinux Switch -->
+    <string name="selinux_switch_title">Selinux Switch options</string>
+    <string name="selinux_switch_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk</string>
+    <string name="selinux_title">Selinux Mode</string>
+    <string name="selinux_permissive_title">Permissive</string>
+    <string name="selinux_enforcing_title">Enforcing</string>
+
     <!-- Show carrier label and custom -->
     <string name="carrier_options">Carrier Label</string>
     <string name="show_status_bar_carrier_title">Status bar carrier</string>
