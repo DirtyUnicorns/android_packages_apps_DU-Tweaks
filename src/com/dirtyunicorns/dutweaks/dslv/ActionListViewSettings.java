@@ -645,13 +645,13 @@ public class ActionListViewSettings extends ListFragment implements
                 d = ImageHelper.resize(
                         mActivity, PolicyHelper.getPowerMenuIconImage(mActivity,
                         getItem(position).getClickAction(),
-                        iconUri, false), 48);
+                        iconUri, false), 36);
                 */
             } else {
                 ActionHelper.useSystemUI = true;
                 d = ImageHelper.resize(mActivity, ActionHelper.getActionIconImage(
                         mActivity, getItem(position).getClickAction(),
-                        iconUri), 48);
+                        iconUri), 36);
                 ActionHelper.useSystemUI = false;
             }
 
@@ -663,7 +663,7 @@ public class ActionListViewSettings extends ListFragment implements
                             .getColor(R.color.dslv_icon_dark));
                 }
             }
-            holder.iconView.setImageDrawable(d);
+            holder.iconView.setImageBitmap(ImageHelper.drawableToBitmap(d));
 
             if (!mDisableIconPicker && holder.iconView.getDrawable() != null) {
                 holder.iconView.setOnClickListener(new OnClickListener() {
