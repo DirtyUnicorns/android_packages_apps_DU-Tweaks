@@ -47,6 +47,11 @@
             android:dependency="powermenu_screenshot" />
 
          <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_torch"
+            android:title="@string/powermenu_torch"
+            android:defaultValue="false" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="powermenu_screenrecord"
             android:title="@string/powermenu_screenrecord"
             android:defaultValue="false" />
