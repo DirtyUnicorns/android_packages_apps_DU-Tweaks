@@ -24,7 +24,7 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.CheckBoxPreference;
+import android.preference.SwitchPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
@@ -37,15 +37,19 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import com.android.internal.util.du.QSUtils;
+
 import com.dirtyunicorns.dutweaks.NumberPickerPreference;
 
 public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
     private static final String SCREENSHOT_DELAY = "screenshot_delay";
+    private static final String POWERMENU_TORCH = "powermenu_torch";
 
     private ListPreference mAdvancedReboot;
     private NumberPickerPreference mScreenshotDelay;
+    private SwitchPreference mPowermenuTorch;
 
     private ContentResolver mCr;
     private PreferenceScreen mPrefSet;
@@ -70,6 +74,15 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                 getContentResolver(), Settings.Secure.ADVANCED_REBOOT, 0)));
         mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
         mAdvancedReboot.setOnPreferenceChangeListener(this);
+
+        mPowermenuTorch = (SwitchPreference) findPreference(POWERMENU_TORCH);
+        mPowermenuTorch.setOnPreferenceChangeListener(this);
+        if (!QSUtils.deviceSupportsFlashLight(getActivity())) {
+            mPrefSet.removePreference(mPowermenuTorch);
+        } else {
+        mPowermenuTorch.setChecked((Settings.System.getInt(resolver,
+                Settings.System.POWERMENU_TORCH, 0) == 1));
+        }
 
         mScreenshotDelay = (NumberPickerPreference) mPrefSet.findPreference(
                 SCREENSHOT_DELAY);
@@ -102,6 +115,11 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
             int value = Integer.parseInt(newValue.toString());
             Settings.System.putInt(mCr, Settings.System.SCREENSHOT_DELAY,
                     value);
+            return true;
+        } else if (preference == mPowermenuTorch) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.POWERMENU_TORCH, checked ? 1:0);
             return true;
         }
         return false;
