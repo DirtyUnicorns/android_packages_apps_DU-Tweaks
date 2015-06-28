@@ -163,6 +163,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_navbar_on";
                 stringId = R.string.qs_navbar_tile;
                 break;
+            case QSConstants.TILE_PIE:
+                resourceName = "ic_qs_pie_on";
+                stringId = R.string.qs_pie_tile;
+                break;
             default:
                 return null;
         }

@@ -477,6 +477,7 @@
     <string name="qs_tile_nfc">NFC</string>
     <string name="qs_title_compass">Compass</string>
     <string name="qs_navbar_tile">Navigation Bar</string>
+    <string name="qs_pie_tile">Pie</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
