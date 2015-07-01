@@ -32,6 +32,11 @@
             android:layout="@layout/preference_recents"
             android:title="@string/recents_category" />
 
+        <PreferenceScreen
+            android:key="expanded_desktop"
+            android:title="@string/power_menu_expanded_desktop"
+            android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
+
          <PreferenceScreen
             android:key="hfm_settings"
             android:title="@string/hfm_pref_screen_title"
