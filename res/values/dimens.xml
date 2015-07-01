@@ -41,4 +41,8 @@
     <dimen name="navigation_bar_30">30dp</dimen>
     <dimen name="navigation_bar_24">24dp</dimen>
     <dimen name="navigation_bar_0">0dp</dimen>
+
+    <!-- Expanded Desktop -->
+    <dimen name="fab_line_width">2dp</dimen>
+
 </resources>
