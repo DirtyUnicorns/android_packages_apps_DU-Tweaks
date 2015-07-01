@@ -35,6 +35,7 @@
         <PreferenceScreen
             android:key="expanded_desktop"
             android:title="@string/power_menu_expanded_desktop"
+            android:layout="@layout/preference_extdesktop"
             android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
 
          <PreferenceScreen
