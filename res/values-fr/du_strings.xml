@@ -18,7 +18,7 @@
     <!-- Tabs -->
     <string name="generalui_category">Interface</string>
     <string name="statusbar_category">Barre d\'État</string>
-    <string name="navigation_category">Barre de navigation</string>
+    <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multitâche</string>
     <string name="system_category">Système</string>
     <string name="misc_category">Réglages divers</string>
@@ -417,7 +417,6 @@
     <string name="qs_tile_screen_timeout">Délai de capture d\'écran</string>
     <string name="qs_battery_saver_tile">Économiseur de batterie</string>
     <string name="qs_brightness_tile">Luminosité</string>
-    <string name="qs_navbar_tile">Barre de navigation</string>
     <string name="qs_appcirclebar_tile">Cercle d\'applications</string>
     <string name="qs_ambient_display_tile">Mode Sommeil</string>
     <string name="qs_screenrecord_tile">Capture vidéo</string>
@@ -425,6 +424,16 @@
     <string name="qs_music_play_tile">Lecture</string>
     <string name="qs_tile_nfc">NFC</string>
     <string name="qs_title_compass">Boussole</string>
+
+    <!-- Disable torch when screen goes off -->
+    <string name="disable_torch_screen_off_title">Désactiver la lampe de poche lors de l\'extinction de l\'écran</string>
+    <string name="disable_torch_screen_off_delay_title">Délai</string>
+    <string name="torch_screen_off_one_second">1 seconde</string>
+    <string name="torch_screen_off_ten_second">10 secondes (par défaut)</string>
+    <string name="torch_screen_off_thirty_second">30 secondes</string>
+    <string name="torch_screen_off_one_minute">1 minute</string>
+    <string name="torch_screen_off_five_minutes">5 minutes</string>
+    <string name="torch_screen_off_ten_minutes">10 minutes</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Notifications Force Close</string>
@@ -434,36 +443,8 @@
     <string name="lockscreen_targets_message">Raccourcis de l\'écran de déverrouillage</string>
     <string name="lockscreen_default_target">Configuration d\'origine</string>
     <string name="lockscreen_none_target">Aucun</string>
-    <string name="lockscreen_message">Appuyez sur une icône à gauche ou à droite pour attribuer un raccourci sur l\'écran de verrouillage.</string>
+    <string name="lockscreen_message">Appuyez sur une icône à gauche ou à droite pour attribuer un raccourci sur l\'écran de déverrouillage.</string>
     <string name="lockscreen_choose_action_title">Raccourci</string>
-
-    <!-- Navbar Options -->
-    <string name="navigation_bar_title">Boutons et disposition</string>
-    <string name="navigation_bar_help_text">Appuyez sur \'Modifier\' pour déverrouiller la barre de navigation.\n\nUn appui simple sur un bouton pour modifier son raccourci.\nUn appui prolongé sur sur un bouton pour modifier son emplacement.\n\nAppuyez sur \'Enregistrer\' pour valider vos modifications, ou sur \'Restaurer\' pour revenir à la configuration d\'origine.</string>
-    <string name="navigation_restore_button_text">Restaurer les\nvaleurs par défaut</string>
-    <string name="navigation_edit_button_text">Modifier</string>
-    <string name="navigation_save_button_text">Enregistrer</string>
-    <string name="navigation_bar_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
-    <string name="navbar_enable_bar">Activer</string>
-    <string name="navbar_dimen_title">Dimensions</string>
-    <string name="navbar_dimensions_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
-    <string name="navigation_bar_height_title">Hauteur de la barre de navigation</string>
-    <string name="navigation_bar_height_landscape_title">Hauteur de la barre de navigation en mode paysage</string>
-    <string name="navigation_bar_width_title">Largeur de la barre de navigation</string>
-    <string name="navigation_bar_size_42_dp_default">42 dp (par défaut)</string>
-    <string name="navigation_bar_size_36_dp">36 dp</string>
-    <string name="navigation_bar_size_30_dp">30 dp</string>
-    <string name="navigation_bar_size_24_dp">24 dp</string>
-    <string name="navigation_bar_size_48_dp_default">48 dp (par défaut)</string>
-    <string name="navigation_bar_size_44_dp">44 dp</string>
-    <string name="navigation_bar_size_40_dp">40 dp</string>
-    <string name="navigation_bar_size_42_dp">42 dp</string>
-    <string name="navigation_bar_size_0_dp">0 dp (désactivé)</string>
-    <string name="navigation_bar_arrow_keys_title">Flèches de direction</string>
-    <string name="navigation_bar_arrow_keys_summary">Affiche les touches de direction dans la barre de navigation lors de la saisie de texte. Cela masque le sélecteur de mode de saisie.</string>
-
-    <string name="navigation_ring_title">Anneau de la barre de navigation</string>
-    <string name="navigation_ring_message">Appuyez sur \'Modifier\' pour  modifier les raccourcis de l\'anneau de la barre de navigation.\n\nSélectionnez un raccourci pour le configurer.\n\nAppuyez sur \'Enregistrer\' pour valider vos modifications, ou sur \'Restaurer\' pour revenir à la configuration d\'origine.</string>
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Veille par double appui</string>
@@ -498,6 +479,8 @@
     <string name="recent_panel_bg_color_title">Couleur du panneau</string>
     <string name="recent_card_bg_color_title">Couleur du fond</string>
     <string name="recent_card_text_color_title">Couleur du texte</string>
+    <string name="aosp_recents_title">Applications Récentes AOSP</string>
+    <string name="slim_recents_title">Applications Récentes Slim</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Panneau à gauche</string>
@@ -519,6 +502,7 @@
     <string name="shortcut_action_max">Nombre de raccourcis maximal atteint</string>
     <string name="shortcut_action_warning">Avertissement</string>
     <string name="shortcut_action_warning_message">Impossible de supprimer le dernier raccourci</string>
+    <string name="shortcut_action_required_warning_message">Impossible de supprimer les boutons obligatoires</string>
     <string name="shortcut_action_disable_message">Désactivé\nAjouter un raccourci pour activer cette fonctionnalité</string>
     <string name="shortcut_image_not_valid">L\'application choisie ne possède pas d\'icône valide ou ne supporte pas le rognage d\'image. Choisissez une autre application.</string>
     <string name="shortcut_duplicate_entry">L\'action choisie ne peut pas être ajoutée deux fois</string>
@@ -526,9 +510,12 @@
     <string name="shortcut_action_help_button">bouton</string>
     <string name="shortcut_action_help_app">application</string>
     <string name="shortcut_action_help_icon">, appuyer sur l\'icône permet de la personnaliser.</string>
-    <string name="shortcut_action_help_main">Pour ajouter un %1$s, sélectionner l\'icône Ajouter. Une fois qu\'un %1$s est ajouté, appuyer sur la ligne permet de modifier le raccourci%2$s\n\nPour supprimer un %1$s, glisser horizontalement la ligne à gauche ou à droite. Modifier la disposition du %1$s dans la liste en faisant glisser verticalement l\'icône de gauche.\n\nPour revenir à la configuration par défaut, sélectionner l\'icône Réinitialiser.</string>
+    <string name="shortcut_action_help_main">Pour ajouter un %1$s, sélectionner l\'icône Ajouter. Une fois qu\'un %1$s est ajouté, appuyer sur la ligne permet de modifier le raccourci%2$s\n\nPour supprimer un %1$s, glisser horizontalement la ligne à gauche ou à droite. Modifier la disposition du %1$s dans la liste en faisant glisser verticalement l\'icône de gauche.\n\nPour revenir à la configuration par défaut, sélectionner l\'option Réinitialiser.</string>
     <string name="shortcut_action_help_delete_last_entry">Supprimer tous les raccourcis de la liste, désactive totalement la fonctionnalité.</string>
     <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Supprimer tous les %1$s de la liste désactive totalement la seconde couche.</string>
+    <string name="icon_color_mode_all_icons">Toutes les icônes</string>
+    <string name="icon_color_mode_system_icons">Icônes système</string>
+    <string name="icon_color_mode_system_custom_icons">Icônes système et icônes personnalisées</string>
     <string name="shortcuts_applications">Applications</string>
     <string name="shortcuts_select_custom_app_title">Sélectionner l\'application</string>
     <string name="shortcuts_icon_picker_type">Sélectionner le modèle d\'icône :</string>
@@ -588,7 +575,9 @@
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Déverrouillage</string>
+    <string name="navigation_bar_warning_no_navigation_present">Aucune autre méthode de navigation activée. Désactiver la barre de navigation peut rendre inutilisable l\'appareil. Activer SlimPie à la place\u00A0?</string>
     <string name="reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="additional_options_title">Options supplémentaires</string>
     <string name="lockscreen_shortcuts_title">Raccourcis application</string>
     <string name="lockscreen_shorcuts_longpress_title">Raccourcis appui prolongé</string>
     <string name="lockscreen_shorcuts_longpress_summary">Ouvrir des raccourcis personnalisés sur l\'écran de déverrouillage par appui prolongé</string>
@@ -602,6 +591,20 @@
     <string name="shortcut_action_recent">Applications récentes</string>
     <string name="shortcut_action_power">Mise en veille</string>
     <string name="shortcut_action_search">Recherche dans l\'application</string>
+    <string name="shortcut_action_ring_vib">Sonnerie/Vibreur</string>
+    <string name="shortcut_action_ring_silent">Sonnerie/Muet</string>
+    <string name="shortcut_action_ring_vib_silent">Sonnerie/Vibreur/Muet</string>
+    <string name="shortcut_action_camera">Appareil Photo</string>
+    <string name="shortcut_action_media_next">Musique : Piste suivante</string>
+    <string name="shortcut_action_media_play_pause">Musique : Lecture/Pause</string>
+    <string name="shortcut_action_media_previous">Musique : Piste précédente</string>
+    <string name="shortcut_action_wake_device">Réveiller l\'appareil</string>
+    <string name="shortcut_action_screenshot">Capture d\'écran</string>
+    <string name="shortcut_action_torch">Lampe de poche</string>
+    <string name="shortcut_action_kill">Forcer l\'arrêt de l\'application</string>
+    <string name="shortcut_action_lastapp">Dernière application</string>
+    <string name="shortcut_action_notifications">Notifications</string>
+    <string name="shortcut_action_qs">Volet des paramètres</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="force_expanded_notifications_title">Forcer les Notifications Étendues</string>
@@ -670,5 +673,101 @@
     <string name="voicemail_breath_title">Messagerie Vocale</string>
     <string name="voicemail_breath_summary">Faire clignoter la notification de la messagerie vocale, dans la barre d\'état</string>
 
+    <!-- Navigation bar -->
+    <string name="navigation_bar_size_42_dp_default">42 dp (par défaut)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (par défaut)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (désactivé)</string>
+    <string name="navigation_menu_right">À droite</string>
+    <string name="navigation_menu_left">À gauche</string>
+    <string name="navigation_menu_both">Sur les deux côtés</string>
+    <string name="navigation_menu_default_jb_behavior">Sur demande (par défaut)</string>
+    <string name="navigation_menu_never_show">Jamais</string>
+    <string name="navigation_menu_always_show">Toujours</string>
+    <string name="navigation_bar">Barre de navigation</string>
+    <string name="navbar_button_cat">Boutons de la barre de navigation</string>
+    <string name="title_pref_menu_location">Emplacement du bouton Menu</string>
+    <string name="summary_pref_menu_location">Définir l\'emplacement du bouton Menu</string>
+    <string name="title_pref_menu_display">Affichage du bouton Menu</string>
+    <string name="summary_pref_menu_display">Conditions d\'affichage du bouton Menu</string>
+    <string name="navbar_enable_bar">Activer</string>
+    <string name="navbar_enable_bar_summary">Activer la barre de navigation</string>
+    <string name="navigation_bar_height_title">Hauteur (Portrait)</string>
+    <string name="navigation_bar_height_summary">Hauteur de la barre de navigation en mode portrait</string>
+    <string name="navigation_bar_height_landscape_title">Hauteur (Paysage)</string>
+    <string name="navigation_bar_height_landscape_summary">Hauteur de la barre de navigation en mode paysage</string>
+    <string name="navigation_bar_width_title">Largeur (Paysage)</string>
+    <string name="navigation_bar_width_summary">Largeur de la barre de navigation en mode paysage</string>
+    <string name="navbar_can_move">Affichage (Paysage)</string>
+    <string name="navbar_can_move_summary">En mode paysage, afficher la barre de navigation en bas</string>
+    <string name="navbar_style_dimen_title">Dimensions</string>
+    <string name="navbar_button_title">Boutons</string>
+    <string name="navbar_cat">Barre de navigation</string>
+    <string name="navbar_dimensions_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="navbar_button_style_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+
+    <!-- Navigation bar button style -->
+    <string name="nav_bar_button_style">Apparence des boutons</string>
+    <string name="nav_bar_button_style_summary">Modifier l\'apparence des boutons</string>
+    <string name="button_transparency_title">Transparence</string>
+    <string name="navigation_bar_icon_tint_title">Couleur</string>
+    <string name="nav_button_color_mode_title">Colorier</string>
+    <string name="nav_button_color_mode_dialog_title">Teindre</string>
+    <string name="nav_button_color_mode_summary">Modifier la couleur des boutons de la barre de navigation</string>
+    <string name="navigation_bar_glow_tint_title">Lueur</string>
+
+    <!-- Pie Control -->
+    <string name="pie_control_title">SlimPIE</string>
+    <string name="pie_control_summary">Activer SlimPIE</string>
+    <string name="pie_control_size">Taille</string>
+    <string name="pie_control_trigger_positions">Options de déclenchement</string>
+    <string name="pie_control_trigger_left">Bord gauche de l\'écran</string>
+    <string name="pie_control_trigger_bottom">Bord inférieur de l\'écran</string>
+    <string name="pie_control_trigger_right">Bord droit de l\'écran</string>
+    <string name="pie_control_trigger_top">Bord supérieur de l\'écran</string>
+    <string name="pie_control_trigger_top_summary">Masque les informations de statut et de l\'horloge</string>
+    <string name="pie_button_style">Apparence des boutons</string>
+    <string name="pie_button_color_title">Couleur</string>
+    <string name="pie_button_alpha_title">Transparence</string>
+    <string name="pie_button_outline_color_title">Couleur du contour</string>
+    <string name="pie_button_pressed_color_title">Couleur (appui simple)</string>
+    <string name="pie_button_long_pressed_color_title">Couleur (appui prolongé)</string>
+    <string name="pie_button_pressed_alpha_title">Transparence du bouton appuyé</string>
+    <string name="pie_icon_style">Apparence des icônes</string>
+    <string name="pie_icon_color_title">Couleur</string>
+    <string name="pie_icon_color_mode_title">Colorier</string>
+    <string name="pie_icon_color_mode_dialog_title">Teindre</string>
+    <string name="pie_icon_color_mode_summary">Modifier la couleur de l\'icône du bouton</string>
+    <string name="pie_trigger_note_title">Remarque</string>
+    <string name="pie_trigger_note_summary">Pour éviter les conflits avec la barre d\'état ou la barre de navigation, les déclencheurs sur ces bords sont automatiquement désactivés si l\'un d\'eux, ou les deux sont disponibles</string>
+    <string name="pie_background_color_title">Couleur</string>
+    <string name="pie_snap_color_title">Couleur du point d\'ancrage</string>
+    <string name="pie_text_color_title">Couleur du texte</string>
+    <string name="pie_background_alpha_title">Transparence</string>
+    <string name="pie_mirror_right_title">Inverser SlimPIE</string>
+    <string name="pie_mirror_right_summary">Inverser le sens des boutons de SlimPIE sur le bord droit de l\'écran</string>
+    <string name="pie_style">Apparence et dimensions</string>
+    <string name="pie_style_title">Apparence</string>
+    <string name="pie_dimens_title">Dimension</string>
+    <string name="pie_show_snap_title">Afficher les points d\'ancrage</string>
+    <string name="pie_show_snap_summary">Permet de changer le bord de déclenchement de manière dynamique</string>
+    <string name="pie_show_text_title">Informations supplémentaires</string>
+    <string name="pie_show_text_summary">Afficher l\'heure, la date, les informations de connectivité, et l\'état de la batterie</string>
+    <string name="pie_show_background_title">Arrière-plan</string>
+    <string name="pie_show_background_summary">Active la couleur d\'arrière-plan de SlimPIE</string>
+    <string name="pie_button">Boutons</string>
+    <string name="pie_button_second_layer">Seconde couche</string>
+    <string name="pie_button_second_layer_summary">Modifier les boutons de la seconde couche</string>
+    <string name="pie_button_style_summary">Modifier le style des boutons</string>
+    <string name="pie_style_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="pie_warning_no_navigation_present">Aucune autre méthode de navigation activée. Désactiver SlimPIE peut rendre inutilisable l\'appareil. Activer la barre de navigation à la place\u00A0?</string>
+    <string name="pie_trigger_warning">Au moins l\'un des déclencheurs (bas, gauche ou droit) doit être activé</string>
+    <string name="pie_disable_ime_triggers_title">Réduction des déclencheurs</string>
+    <string name="pie_disable_ime_triggers_summary">Diminue la taille des déclencheurs gauche et droit lors de l\'affichage du clavier</string>
 
 </resources>
