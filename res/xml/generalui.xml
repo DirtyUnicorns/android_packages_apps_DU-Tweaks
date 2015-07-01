@@ -39,6 +39,12 @@
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenShortcuts" />
 
         <PreferenceScreen
+            android:key="weather_settings"
+            android:title="@string/lockscreen_weather_settings"
+            android:layout="@layout/preference_lockscreenweather"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenWeather" />
+
+        <PreferenceScreen
                  android:key="lockscreen_shortcuts"
                  android:fragment="com.dirtyunicorns.dutweaks.dslv.ActionListViewSettings"
                  android:title="@string/lockscreen_shortcuts_title"
