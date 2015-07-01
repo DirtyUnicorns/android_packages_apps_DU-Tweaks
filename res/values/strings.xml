@@ -291,6 +291,40 @@
     <string name="quick_pulldown_left">Left</string>
     <string name="quick_pulldown_right">Right</string>
 
+    <!-- Weather settings -->
+    <string name="lockscreen_weather_settings">Weather settings</string>
+    <string name="weather_settings_title">LockClock settings</string>
+    <string name="weather_settings_summary">Configure location for weather widget and other settings</string>
+    <string name="weather_show_weather_title">Show weather options</string>
+    <string name="weather_show_weather_summary">Enable to show weather options that go along with LockClock</string>
+    <string name="status_bar_show_weather_title">Extended statusbar weather</string>
+    <string name="status_bar_show_weather_summary">Show basic weather in the extended statusbar area</string>
+    <string name="weather_show_location_title">Show location</string>
+    <string name="weather_show_location_summary">Enable to show the location</string>
+    <string name="weather_show_timestamp_title">Show timestamp</string>
+    <string name="weather_show_timestamp_summary">Enable to show the timestamp</string>
+    <string name="weather_condition_icon_title">Condition icon</string>
+    <string name="weather_condition_icon_dlg_title">Pick an icon for displaying the weather condition</string>
+    <string name="weather_condition_icon_monochrome_title">Monochrome</string>
+    <string name="weather_condition_icon_colored_title">Colored</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="weather_colorize_all_icons_title">Colorize all icons</string>
+    <string name="weather_colorize_all_icons_summary">Enable to colorize all icons, disable to colorize only the monochrome icons</string>
+    <string name="colors_title">Colors</string>
+    <string name="icons_title">Icons</string>
+    <string name="text_title">Text</string>
+    <string name="reset_lockscreen_weather">OK</string>
+    <string name="reset_values_message">Reset values?</string>
+
+    <!-- cLOCK -->
+    <string name="status_bar_clock_title">Clock style</string>
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="right_clock">Right position</string>
+    <string name="left_clock">Left position</string>
+    <string name="center_clock">Center position</string>
+    <string name="no_clock">Hidden</string>
+
     <!-- Show/Hide Search Bar -->
     <string name="recents_category">Recents</string>
     <string name="recents_show_searchbar">Disable Search Bar in Recents</string>
