@@ -35,7 +35,7 @@
     <string name="gapps_credit">Special Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
     <string name="banks_gapps_title">Banks Gapps</string>
     <string name="banks_gapps_summary">Minimal Gapps package</string>
-    <string name="arm64_gapps_title">Arm64 Gapps</string>
+    <string name="aimport com.android.settings.du.AmbientSettings;rm64_gapps_title">Arm64 Gapps</string>
     <string name="arm64_gapps_summary">Gapps package for Arm64 devices</string>
     <string name="pa_gapps_title">PA Gapps</string>
     <string name="pa_gapps_summary">Full stock Gapps package</string>
@@ -435,6 +435,7 @@
     <string name="qs_brightness_tile">Brightness</string>
     <string name="qs_appcirclebar_tile">App Circle Bar</string>
     <string name="qs_ambient_display_tile">Ambient display</string>
+    <string name="qs_pie_tile">Pie</string>
     <string name="qs_screenrecord_tile">Screen record</string>
     <string name="qs_tile_usb_tether">USB tethering</string>
     <string name="qs_music_play_tile">Play</string>
