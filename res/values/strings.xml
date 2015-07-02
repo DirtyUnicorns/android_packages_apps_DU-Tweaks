@@ -35,7 +35,7 @@
     <string name="gapps_credit">Special Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
     <string name="banks_gapps_title">Banks Gapps</string>
     <string name="banks_gapps_summary">Minimal Gapps package</string>
-    <string name="aimport com.android.settings.du.AmbientSettings;rm64_gapps_title">Arm64 Gapps</string>
+    <string name="arm64_gapps_title">Arm64 Gapps</string>
     <string name="arm64_gapps_summary">Gapps package for Arm64 devices</string>
     <string name="pa_gapps_title">PA Gapps</string>
     <string name="pa_gapps_summary">Full stock Gapps package</string>
