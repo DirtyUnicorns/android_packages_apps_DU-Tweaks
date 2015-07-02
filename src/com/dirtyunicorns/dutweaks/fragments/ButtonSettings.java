@@ -132,6 +132,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
 
     private static final String KEYS_BRIGHTNESS_KEY = "button_brightness";
+    private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
 
     private Preference mBackPressAction;
     private Preference mBackLongPressAction;
@@ -151,12 +152,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private Preference mAppSwitchPressAction;
     private Preference mAppSwitchLongPressAction;
     private Preference mAppSwitchDoubleTapAction;
+    private PreferenceScreen mButtonBrightness;
+    private SwitchPreference mDisabkeHWKeys;
     private SwitchPreference mEnableCustomBindings;
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
     private SwitchPreference mSwapVolumeButtons;
+
     private boolean mButtonBrightnessSupport;
-    private PreferenceScreen mButtonBrightness;
 
     private boolean mCheckPreferences;
     private Map<String, String> mKeySettings = new HashMap<String, String>();
@@ -196,8 +199,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.button_settings);
-        prefs = getPreferenceScreen();
 
+        prefs = getPreferenceScreen();
         Resources res = getResources();
 
         int deviceKeys = getResources().getInteger(
@@ -231,6 +234,20 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         int swapVolumeButtons = Settings.System.getInt(getContentResolver(),
                 SWAP_VOLUME_BUTTONS, 0);
         mSwapVolumeButtons.setChecked(swapVolumeButtons != 0);
+
+        mEnableCustomBindings = (SwitchPreference) findPreference(KEYS_ENABLE_CUSTOM);
+        boolean enableHardwareRebind = Settings.System.getInt(getContentResolver(),
+                Settings.System.HARDWARE_KEY_REBINDING, 0) == 1;
+        mEnableCustomBindings.setChecked(enableHardwareRebind);
+        mEnableCustomBindings.setOnPreferenceChangeListener(this);
+
+        mDisabkeHWKeys = (SwitchPreference) prefs.findPreference(KEYS_DISABLE_HW_KEY);
+        boolean harwareKeysDisable = Settings.System.getInt(getContentResolver(),
+                Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
+        mDisabkeHWKeys.setChecked(harwareKeysDisable);
+
+        mButtonBrightness = (PreferenceScreen) prefs.findPreference(
+                KEYS_BRIGHTNESS_KEY);
 
         PreferenceCategory keysCategory =
                 (PreferenceCategory) prefs.findPreference(CATEGORY_KEYS);
@@ -400,12 +417,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             prefs.removePreference(keysAppSwitchCategory);
         }
 
-        boolean enableHardwareRebind = Settings.System.getInt(getContentResolver(),
-                Settings.System.HARDWARE_KEY_REBINDING, 0) == 1;
-        mEnableCustomBindings = (SwitchPreference) findPreference(KEYS_ENABLE_CUSTOM);
-        mEnableCustomBindings.setChecked(enableHardwareRebind);
-        mEnableCustomBindings.setOnPreferenceChangeListener(this);
-
         // Handle warning dialog.
         SharedPreferences preferences =
                 getActivity().getSharedPreferences("hw_key_settings", Activity.MODE_PRIVATE);
@@ -418,18 +429,19 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     .putBoolean("no_home_action", false).commit();
         }
 
-        if (!res.getBoolean(R.bool.config_has_hardware_buttons)) {
-            prefs.removePreference(keysCategory);
-        } else {
-            mButtonBrightness = (PreferenceScreen) prefs.findPreference(
-                    KEYS_BRIGHTNESS_KEY);
-            if (!mButtonBrightnessSupport) {
-                keysCategory.removePreference(mButtonBrightness);
-            }
+        if (!mButtonBrightnessSupport) {
+            keysCategory.removePreference(mButtonBrightness);
         }
+
+        updateDisableHWKeyEnablement(harwareKeysDisable);
 
         mCheckPreferences = true;
         return prefs;
+    }
+
+    private void updateDisableHWKeyEnablement(boolean harwareKeysDisable) {
+        mButtonBrightness.setEnabled(!harwareKeysDisable);
+        mEnableCustomBindings.setEnabled(!harwareKeysDisable);
     }
 
     private void setupOrUpdatePreference(
@@ -530,6 +542,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         return false;
     }
 
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mDisabkeHWKeys) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HARDWARE_KEYS_DISABLE, checked ? 1:0);
+            updateDisableHWKeyEnablement(checked);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (!mCheckPreferences) {
             return false;
@@ -553,6 +577,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), Settings.System.HARDWARE_KEY_REBINDING,
                     value ? 1 : 0);
+            boolean harwareKeysDisable = Settings.System.getInt(getContentResolver(),
+                    Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
+            updateDisableHWKeyEnablement(harwareKeysDisable);
             return true;
         }
         return false;
