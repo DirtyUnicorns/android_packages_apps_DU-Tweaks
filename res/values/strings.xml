@@ -440,6 +440,7 @@
     <string name="qs_music_play_tile">Play</string>
     <string name="qs_tile_nfc">NFC</string>
     <string name="qs_title_compass">Compass</string>
+    <string name="qs_navbar_tile">Navigation Bar</string>
 
     <!-- Disable torch when screen goes off -->
     <string name="disable_torch_screen_off_title">Disable torch on screen off</string>
