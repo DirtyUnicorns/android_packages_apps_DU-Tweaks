@@ -38,22 +38,14 @@
         <SwitchPreference
             android:key="weather_show_location"
             android:title="@string/weather_show_location_title"
-            android:summary="@string/weather_show_location_summary"
-            android:dependency="weather_show_weather" />
+            android:summary="@string/weather_show_location_summary" />
 
         <ListPreference
             android:key="weather_condition_icon"
             android:title="@string/weather_condition_icon_title"
             android:dialogTitle="@string/weather_condition_icon_dlg_title"
             android:entries="@array/weather_condition_icon_entries"
-            android:entryValues="@array/weather_condition_icon_values"
-            android:dependency="weather_show_weather" />
-
-        <SwitchPreference
-            android:key="weather_colorize_all_icons"
-            android:title="@string/weather_colorize_all_icons_title"
-            android:summary="@string/weather_colorize_all_icons_summary"
-            android:dependency="weather_show_weather" />
+            android:entryValues="@array/weather_condition_icon_values" />
 
         <PreferenceCategory
             android:key="weather_cat_colors"
@@ -62,14 +54,12 @@
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="weather_text_color"
             android:title="@string/text_title"
-            android:defaultValue="0xffffffff"
-            android:dependency="weather_show_weather" />
+            android:defaultValue="0xffffffff" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="weather_icon_color"
             android:title="@string/icons_title"
-            android:defaultValue="0xffffffff"
-            android:dependency="weather_colorize_all_icons" />
+            android:defaultValue="0xffffffff" />
 
         </PreferenceCategory>
 
