@@ -272,11 +272,8 @@
     <string name="weather_condition_icon_monochrome_title">Monochrome</string>
     <string name="weather_condition_icon_colored_title">Colored</string>
     <string name="weather_condition_icon_vclouds_title">VClouds</string>
-    <string name="weather_colorize_all_icons_title">Colorize all icons</string>
-    <string name="weather_colorize_all_icons_summary">Enable to colorize all icons, disable to colorize only the monochrome icons</string>
-    <string name="colors_title">Colors</string>
-    <string name="icons_title">Icons</string>
-    <string name="text_title">Text</string>
+    <string name="icons_title">Icons color</string>
+    <string name="text_title">Text color</string>
     <string name="reset_lockscreen_weather">OK</string>
     <string name="reset_values_message">Reset values?</string>
 
