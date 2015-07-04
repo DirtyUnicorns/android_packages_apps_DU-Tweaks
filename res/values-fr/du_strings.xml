@@ -211,8 +211,8 @@
     <string name="status_bar_battery_style_hidden">Masqué</string>
 
     <!-- Status bar ticker -->
-    <string name="status_bar_ticker_title">Notifications animées</string>
-    <string name="status_bar_ticker_summary">Animation du texte des notifications dans la barre d\'état</string>
+    <string name="status_bar_ticker_title">Notifications détaillées</string>
+    <string name="status_bar_ticker_summary">Afficher les détails des notifications dans la barre d\'état</string>
 
     <!-- Battery Bar -->
     <string name="battery_icon">Style de l\'icône Batterie</string>
@@ -244,6 +244,7 @@
     <string name="right_clock">À droite</string>
     <string name="center_clock">Au centre</string>
     <string name="left_clock">À gauche</string>
+    <string name="no_clock">Masqué</string>
     <string name="dont_show">Ne pas afficher</string>
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Afficher une date personnalisée avant l\'heure</string>
@@ -272,6 +273,28 @@
     <string name="quick_pulldown_off">Désactivé</string>
     <string name="quick_pulldown_left">gauche</string>
     <string name="quick_pulldown_right">droit</string>
+
+    <!-- Weather settings -->
+    <string name="lockscreen_weather_settings">Paramètres météo</string>
+    <string name="weather_settings_title">Widget météo</string>
+    <string name="weather_settings_summary">Paramètre pour le widget météo</string>
+    <string name="weather_show_weather_title">Afficher les options météo</string>
+    <string name="weather_show_weather_summary">Affiche les options météo avec l\'horloge sur l\'écran de déverrouillage</string>
+    <string name="status_bar_show_weather_title">Météo sur la barre d\'état étendue</string>
+    <string name="status_bar_show_weather_summary">Afficher les informations météo dans la barre d\'état étendue</string>
+    <string name="weather_show_location_title">Localisation</string>
+    <string name="weather_show_location_summary">Afficher la localisation</string>
+    <string name="weather_show_timestamp_title">Horodatage</string>
+    <string name="weather_show_timestamp_summary">Afficher l\'horodatage</string>
+    <string name="weather_condition_icon_title">Conditions météo</string>
+    <string name="weather_condition_icon_dlg_title">Icônes pour l\'affichage des conditions météo</string>
+    <string name="weather_condition_icon_monochrome_title">Monochrome</string>
+    <string name="weather_condition_icon_colored_title">Colorée</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="icons_title">Couleur des icônes</string>
+    <string name="text_title">Couleur du texte</string>
+    <string name="reset_lockscreen_weather">OK</string>
+    <string name="reset_values_message">Revenir à la configuration d\'origine\u00A0?</string>
 
     <!-- Show/Hide Search Bar -->
     <string name="recents_category">Applications récentes</string>
@@ -419,11 +442,14 @@
     <string name="qs_brightness_tile">Luminosité</string>
     <string name="qs_appcirclebar_tile">Cercle d\'applications</string>
     <string name="qs_ambient_display_tile">Mode Sommeil</string>
+    <string name="qs_pie_tile">Pie</string>
     <string name="qs_screenrecord_tile">Capture vidéo</string>
     <string name="qs_tile_usb_tether">Partage de connexion USB</string>
     <string name="qs_music_play_tile">Lecture</string>
     <string name="qs_tile_nfc">NFC</string>
     <string name="qs_title_compass">Boussole</string>
+    <string name="qs_navbar_tile">Barre de navigation</string>
+    <string name="qs_expanded_desktop_tile">Bureau étendu</string>
 
     <!-- Disable torch when screen goes off -->
     <string name="disable_torch_screen_off_title">Désactiver la lampe de poche lors de l\'extinction de l\'écran</string>
@@ -457,7 +483,7 @@
     <!-- Show carrier label and custom -->
     <string name="carrier_options">Libellé opérateur</string>
     <string name="show_status_bar_carrier_title">Libellé opérateur</string>
-    <string name="show_status_bar_carrier_summary">Affiche le libellé opérateur dans la barre d\'état</string>
+    <string name="show_status_bar_carrier_summary">Affiche le libellé opérateur dans la barre d\'état et sur l\'écran de déverrouillage</string>
     <string name="custom_carrier_label_title">Modifier le libellé opérateur</string>
     <string name="custom_carrier_label_explain">Saisir un nouveau libellé. Laisser vide pour revenir au libellé d\'origine.</string>
     <string name="custom_carrier_label_notset">Libellé opérateur non défini</string>
@@ -769,5 +795,18 @@
     <string name="pie_trigger_warning">Au moins l\'un des déclencheurs (bas, gauche ou droit) doit être activé</string>
     <string name="pie_disable_ime_triggers_title">Réduction des déclencheurs</string>
     <string name="pie_disable_ime_triggers_summary">Diminue la taille des déclencheurs gauche et droit lors de l\'affichage du clavier</string>
+
+    <!-- Expanded Desktop -->
+    <string name="power_menu_expanded_desktop">Bureau étendu</string>
+    <string name="expanded_hide_nothing">Ne rien masquer</string>
+    <string name="expanded_hide_status">Masquer la barre d\'état</string>
+    <string name="expanded_hide_navigation">Masquer la barre de navigation</string>
+    <string name="expanded_hide_both">Masquer les deux</string>
+    <string name="expanded_nothing_to_show">Pour ajouter une configuration du bureau étendu par application, dans \"État\" désactiver \"Activé pour tout\".</string>
+    <string name="expanded_desktop_state">État</string>
+    <string name="expanded_enabled_for_all">Activé pour tout</string>
+    <string name="expanded_desktop_style">Style</string>
+    <string name="expanded_desktop_style_description">Style de bureau étendu par défaut</string>
+    <string name="expanded_desktop_title">Options</string>
 
 </resources>
