@@ -74,7 +74,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             startActivity(intent);
             return true;
         } else if (preference == mArm64Gapps) {
-            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/arm64/GApps-20150521-flounder-DU-signed.zip");
+            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/arm64/du-gapps-20150707-arm64-signed.zip");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
