@@ -751,6 +751,8 @@
     <string name="navbar_cat">Navigation bar</string>
     <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
     <string name="navbar_button_style_reset_message">Reset all style entries to default?</string>
+    <string name="show_ime_arrows_title">Show arrow keys while typing</string>
+    <string name="show_ime_arrows_summary">Display left and right cursor buttons in navigation bar while typing. Longpress to navigate up/down. Overrides IME switcher and menu buttons.</string>
 
     <!-- Navigation bar button style -->
     <string name="nav_bar_button_style">Button style</string>
