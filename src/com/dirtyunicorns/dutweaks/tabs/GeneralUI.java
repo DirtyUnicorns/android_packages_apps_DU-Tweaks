@@ -46,6 +46,11 @@ public class GeneralUI extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "GeneralUI";
 
+    private static final String KEY_WEATHER_SETTINGS = "weather_settings";
+    private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
+
+    private PreferenceScreen mWeatherSettings;
+
     private final Configuration mCurConfig = new Configuration();
 
     @Override
@@ -54,6 +59,11 @@ public class GeneralUI extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.generalui);
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mWeatherSettings = (PreferenceScreen) findPreference(KEY_WEATHER_SETTINGS);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
+            prefSet.removePreference(mWeatherSettings);
+        }
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
