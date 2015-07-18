@@ -24,10 +24,10 @@ import com.dirtyunicorns.dutweaks.fragments.HfmHelpers;
 public class FetchHosts {
 
     public static String[] stringUrl = {
-        "http://hosts-file.net/.%5Cad_servers.txt",
-        "http://winhelp2002.mvps.org/hosts.txt",
-        "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
-        "http://adaway.org/hosts.txt"
+        "http://download.dirtyunicorns.com/files/misc/hosts/hosts1.txt",
+        "http://download.dirtyunicorns.com/files/misc/hosts/hosts2.txt",
+        "http://download.dirtyunicorns.com/files/misc/hosts/hosts3.txt",
+        "http://download.dirtyunicorns.com/files/misc/hosts/hosts4.txt"
     };
 
     public static int successfulSources;
