@@ -88,7 +88,7 @@ public final class HfmHelpers {
         String line;
         BufferedReader rd1 = getBufferedReader(hosts);
         line = rd1.readLine();
-        if (line.contains("#LiquidSmooth")) {
+        if (line.contains("#DirtyUnicorns")) {
             ret = true;
         }
         return ret;
