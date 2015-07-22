@@ -243,6 +243,10 @@
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
 
+    <!-- Statusbar DU logo -->
+    <string name="status_bar_du_logo_title">DU logo</string>
+    <string name="status_bar_du_logo_summary">Enable to show DU logo on the left side of statusbar</string>
+
     <!-- Status bar ticker -->
     <string name="status_bar_ticker_title">Notification Ticker</string>
     <string name="status_bar_ticker_summary">Scroll notification text in the statusbar.</string>
@@ -325,7 +329,7 @@
     <string name="center_clock">Center position</string>
     <string name="no_clock">Hidden</string>
 
-    <!-- Show/Hide Search Bar -->
+    <!-- Show / Hide Search Bar -->
     <string name="recents_category">Recents</string>
     <string name="recents_show_searchbar">Disable Search Bar in Recents</string>
     <string name="recents_show_searchbar_summary">Disable or enable the Google search bar in the recents menu</string>
