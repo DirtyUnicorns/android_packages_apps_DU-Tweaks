@@ -50,6 +50,12 @@
             android:layout="@layout/preference_carrierlabel"
             android:title="@string/carrier_options" />
 
+         <Preference
+            android:key="du_logo"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.DuLogo"
+            android:layout="@layout/preference_dulogo"
+            android:title="@string/status_bar_du_logo_title" />
+
         <Preference
             android:key="breathing_notifications"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.BreathingNotifications"
