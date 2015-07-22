@@ -246,6 +246,7 @@
     <!-- Statusbar DU logo -->
     <string name="status_bar_du_logo_title">DU logo</string>
     <string name="status_bar_du_logo_summary">Enable to show DU logo on the left side of statusbar</string>
+    <string name="status_bar_du_logo_color">DU logo color</string>
 
     <!-- Status bar ticker -->
     <string name="status_bar_ticker_title">Notification Ticker</string>
