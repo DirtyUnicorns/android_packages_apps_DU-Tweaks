@@ -163,6 +163,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_nfc_on";
                 stringId = R.string.qs_tile_nfc;
                 break;
+            case QSConstants.TILE_THEMES:
+                resourceName = "ic_qs_themes";
+                stringId = R.string.qs_tile_themes;
+                break;
             case QSConstants.TILE_COMPASS:
                 resourceName = "ic_qs_compass_on";
                 stringId = R.string.qs_title_compass;
