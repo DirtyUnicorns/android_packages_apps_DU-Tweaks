@@ -210,6 +210,11 @@
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Masqué</string>
 
+    <!-- Statusbar DU logo -->
+    <string name="status_bar_du_logo_title">DU Logo</string>
+    <string name="status_bar_du_logo_summary">Afficher le logo de DU sur la gauche de la barre d\'état</string>
+    <string name="status_bar_du_logo_color">Couleur</string>
+
     <!-- Status bar ticker -->
     <string name="status_bar_ticker_title">Notifications détaillées</string>
     <string name="status_bar_ticker_summary">Afficher les détails des notifications dans la barre d\'état</string>
@@ -744,6 +749,8 @@
     <string name="navbar_cat">Barre de navigation</string>
     <string name="navbar_dimensions_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="navbar_button_style_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="show_ime_arrows_title">Touches de Direction</string>
+    <string name="show_ime_arrows_summary">Affiche les Touches de Direction dans la Barre de Navigation lors de la saisie de texte. Appui long pour naviguer vers le haut/bas. Remplace le commutateur et les boutons Menu.</string>
 
     <!-- Navigation bar button style -->
     <string name="nav_bar_button_style">Apparence des boutons</string>
