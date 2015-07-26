@@ -65,4 +65,11 @@
         android:dependency="network_traffic_autohide"
         android:persistent="false" />
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="status_bar_show_empty_sims"
+        android:defaultValue="true"
+        android:title="@string/status_bar_show_unused_sims_title"
+        android:summaryOn="@string/status_bar_show_unused_sims_title_summary_on"
+        android:summaryOff="@string/status_bar_show_unused_sims_title_summary_off" />
+
 </PreferenceScreen>

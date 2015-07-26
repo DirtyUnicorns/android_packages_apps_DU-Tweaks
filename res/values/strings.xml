@@ -63,6 +63,11 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
+    <!-- MSIM tweaks-->
+    <string name="status_bar_show_unused_sims_title">Show empty SIM icons</string>
+    <string name="status_bar_show_unused_sims_title_summary_off">Hide icons of unused SIM slots</string>
+    <string name="status_bar_show_unused_sims_title_summary_on">Indicate unused SIM slots</string>
+
     <!-- Network traffic -->
     <string name="traffic_category">Traffic Indicators</string>
     <string name="network_traffic_title">Network traffic</string>
