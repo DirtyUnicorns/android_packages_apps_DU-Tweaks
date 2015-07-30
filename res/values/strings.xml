@@ -599,7 +599,7 @@
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Unlock</string>
-    <string name="navigation_bar_warning_no_navigation_present">No other navigation is currently enabled. Turning off the navigation bar can result in an unusable device. Do you want to enable pie controls instead?</string>
+    <string name="navigation_bar_warning_no_navigation_present">Are you sure you want to disable this?</string>
     <string name="reset_message">Reset all entries to default?</string>
     <string name="additional_options_title">Additional options</string>
     <string name="lockscreen_shortcuts_title">App Shortcuts</string>
@@ -791,7 +791,6 @@
     <string name="pie_button_second_layer_summary">Change second layer buttons</string>
     <string name="pie_button_style_summary">Change pie button style</string>
     <string name="pie_style_reset_message">Reset style entries to default?</string>
-    <string name="pie_warning_no_navigation_present">No other navigation is currently enabled. Turning off pie controls can result in an unusable device. Do you want to enable navigation bar instead?</string>
     <string name="pie_trigger_warning">Minimum one of the main triggers (bottom, left or right) needs to be enabled.</string>
     <string name="pie_disable_ime_triggers_title">Reduce trigger size on keyboard</string>
     <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size if keyboard is active</string>
