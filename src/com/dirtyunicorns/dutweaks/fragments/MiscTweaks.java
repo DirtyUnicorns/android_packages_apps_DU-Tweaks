@@ -30,6 +30,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.SwitchPreference;
@@ -58,6 +59,9 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String ENABLE_TASK_MANAGER = "enable_task_manager";
     private static final String DISABLE_TORCH_ON_SCREEN_OFF = "disable_torch_on_screen_off";
     private static final String DISABLE_TORCH_ON_SCREEN_OFF_DELAY = "disable_torch_on_screen_off_delay";
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String SCROLLINGCACHE_DEFAULT = "1";
 
     private SwitchPreference mSelinux;
     private SwitchPreference mDisableIM;
@@ -66,6 +70,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private SwitchPreference mEnableTaskManager;
     private SwitchPreference mTorchOff;
     private ListPreference mTorchOffDelay;
+    private ListPreference mScrollingCachePref;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -110,6 +115,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             prefSet.removePreference(mTorchOffDelay);
         }
 
+        mScrollingCachePref = (ListPreference) prefSet.findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
+
         mStatusBarBrightnessControl = (SwitchPreference) findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
         mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
         int statusBarBrightnessControl = Settings.System.getInt(getContentResolver(),
@@ -153,6 +163,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
                     value ? 1 : 0);
             return true;
+        } else if (preference == mScrollingCachePref) {
+            if (newValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String)newValue);
+            return true;
+            }
         } else if (preference == mTorchOffDelay) {
             int torchOffDelay = Integer.valueOf((String) newValue);
             int index = mTorchOffDelay.findIndexOfValue((String) newValue);
