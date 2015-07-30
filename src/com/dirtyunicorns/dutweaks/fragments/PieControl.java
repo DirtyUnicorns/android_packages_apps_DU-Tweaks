@@ -85,8 +85,7 @@ public class PieControl extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mPieControl) {
-            if (!((Boolean) newValue) && !Action.isNavBarEnabled(getActivity())
-                    && Action.isNavBarDefault(getActivity())) {
+            if (!((Boolean) newValue) && !Action.isNavBarDefault(getActivity())) {
                 showDialogInner(DLG_NAVIGATION_WARNING);
                 return true;
             }
@@ -147,7 +146,7 @@ public class PieControl extends SettingsPreferenceFragment
                 case DLG_NAVIGATION_WARNING:
                     return new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.attention)
-                    .setMessage(R.string.pie_warning_no_navigation_present)
+                    .setMessage(R.string.navigation_bar_warning_no_navigation_present)
                     .setNegativeButton(R.string.dlg_cancel,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
@@ -159,9 +158,6 @@ public class PieControl extends SettingsPreferenceFragment
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getActivity().getContentResolver(),
                                     Settings.System.PIE_CONTROLS, 0);
-                            Settings.System.putInt(getActivity().getContentResolver(),
-                                    Settings.System.NAVIGATION_BAR_SHOW, 1);
-
                         }
                     })
                     .create();

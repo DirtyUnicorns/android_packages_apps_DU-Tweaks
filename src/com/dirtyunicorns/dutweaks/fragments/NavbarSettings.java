@@ -169,8 +169,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             mMenuDisplayLocation.setEnabled(mNavBarMenuDisplayValue != 1);
             return true;
         } else if (preference == mEnableNavigationBar) {
-            if (!((Boolean) newValue) && !Action.isPieEnabled(getActivity())
-                    && Action.isNavBarDefault(getActivity())) {
+            if (!((Boolean) newValue) && Action.isNavBarDefault(getActivity())) {
                 showDialogInner(DLG_NAVIGATION_WARNING);
                 return true;
             }
@@ -243,8 +242,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
                     .setPositiveButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            Settings.System.putInt(getActivity().getContentResolver(),
-                                    Settings.System.PIE_CONTROLS, 1);
                             Settings.System.putInt(getActivity().getContentResolver(),
                                     Settings.System.NAVIGATION_BAR_SHOW, 0);
                             getOwner().updateNavbarPreferences(false);
