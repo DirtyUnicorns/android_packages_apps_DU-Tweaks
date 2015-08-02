@@ -207,6 +207,7 @@
     <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
     <string name="status_bar_battery_style_icon_landscape">Icône paysage</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_dotted_circle">Cercle en pointillés</string>
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Masqué</string>
 
@@ -815,5 +816,13 @@
     <string name="expanded_desktop_style">Style</string>
     <string name="expanded_desktop_style_description">Style de bureau étendu par défaut</string>
     <string name="expanded_desktop_title">Options</string>
+
+    <!-- Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Mémoire cache de défilement</string>
+    <string name="pref_scrollingcache_summary">Améliore les performances de défilement mais augmente l\'utilisation de la mémoire RAM</string>
+    <string name="pref_scrollingcache_force_enable">Forcer l\'activation</string>
+    <string name="pref_scrollingcache_default_enable">Activer par défaut</string>
+    <string name="pref_scrollingcache_default_disable">Désactiver par défaut</string>
+    <string name="pref_scrollingcache_force_disable">Forcer la désactivation</string>
 
 </resources>
