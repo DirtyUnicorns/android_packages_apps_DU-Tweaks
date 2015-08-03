@@ -130,6 +130,8 @@
 
     <!-- Misc Tweaks -->
     <string name="misctweaks_category">Misc. Tweaks</string>
+    <string name="misctweaks_statusbarbar_category">Statusbar/Notification</string>
+    <string name="misctweaks_gestures_category">Gestures</string>
 
     <!-- Disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
