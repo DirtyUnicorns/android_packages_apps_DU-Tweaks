@@ -39,6 +39,12 @@
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenShortcuts" />
 
         <PreferenceScreen
+            android:key="lockscreen_wallpaper_changer"
+            android:title="@string/lockscreen_wallpaper_title"
+            android:layout="@layout/preference_lockscreenwp"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenSettings" />
+
+        <PreferenceScreen
             android:key="weather_settings"
             android:title="@string/lockscreen_weather_settings"
             android:layout="@layout/preference_lockscreenweather"
