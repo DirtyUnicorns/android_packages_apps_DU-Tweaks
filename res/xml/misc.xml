@@ -26,4 +26,10 @@
             android:layout="@layout/preference_download"
             android:title="@string/download_category" />
 
+         <Preference
+            android:key="gestures"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Gestures"
+            android:layout="@layout/preference_gestures"
+            android:title="@string/gestures_category" />
+
 </PreferenceScreen>
