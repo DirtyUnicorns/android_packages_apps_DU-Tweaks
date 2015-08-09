@@ -136,6 +136,8 @@
 
     <!-- Misc Tweaks -->
     <string name="misctweaks_category">Réglages divers</string>
+    <string name="misctweaks_statusbarbar_category">Barre d\'état et notification</string>
+    <string name="misctweaks_gestures_category">Gestes</string>
 
     <!-- Disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Message en Mode Immersif</string>
@@ -181,7 +183,7 @@
 
     <!-- Status bar brightness control -->
     <string name="status_bar_brightness_control_title">Réglage de la luminosité</string>
-    <string name="status_bar_brightness_control_summary">Ajuster la luminosité en glissant sur la barre de statut</string>
+    <string name="status_bar_brightness_control_summary">Ajuster la luminosité en glissant sur la barre d\'état</string>
     <string name="status_bar_brightness_control_info">La luminosité automatique doit être désactivée</string>
 
     <!-- Volume rocker wake -->
@@ -486,6 +488,10 @@
     <!-- Double Tap Statusbar to Sleep -->
     <string name="double_tap_to_sleep_title">Veille par double appui</string>
     <string name="double_tap_to_sleep_summary">Éteindre l\'écran par double appui sur la barre d\'état</string>
+
+    <!-- Double tap to sleep on lockscreen -->
+    <string name="double_tap_sleep_anywhere_title">Veille par double appui</string>
+    <string name="double_tap_sleep_anywhere_summary">Éteindre l\'écran par double appui sur l\'écran de déverrouillage</string>
 
     <!-- Selinux Switch -->
     <string name="selinux_switch_title">Option de changement d\'état de Selinux</string>
@@ -832,5 +838,32 @@
     <string name="pref_scrollingcache_default_enable">Activer par défaut</string>
     <string name="pref_scrollingcache_default_disable">Désactiver par défaut</string>
     <string name="pref_scrollingcache_force_disable">Forcer la désactivation</string>
+
+    <!-- SlimSizer  -->
+    <string name="listsystem">liste</string>
+    <string name="sizer_title">Suppression d\'application système</string>
+    <string name="caution">Attention\u00A0!</string>
+    <string name="sizer_message_startup">Cet outil permet de supprimer des applications système. À utiliser avec précaution et uniquement pour des applications dont la suppression est sans danger.</string>
+    <string name="cancel">Annuler</string>
+    <string name="sizer_message_delete">Supprimer cette application\u00A0?</string>
+    <string name="btn_delete">Supprimer les applications sélectionnées\u00A0!</string>
+    <string name="delete_progress_title">Suppression en cours</string>
+    <string name="delete_progress">Les applications sélectionnés sont en cours de suppression...</string>
+    <string name="delete_success">Supprimée(s)</string>
+    <string name="delete_fail">Suppression impossible</string>
+    <string name="btn_profile">Profil</string>
+    <string name="sizer_message_sdnowrite">Impossible d\'écrire sur la carte SD</string>
+    <string name="sizer_message_sdnoread">Impossible de lire la carte SD</string>
+    <string name="sizer_message_filesuccess">Profil créé</string>
+    <string name="sizer_message_filefail">Impossible de créer le profil</string>
+    <string name="sizer_message_noselect">Aucune sélection</string>
+    <string name="system_app_remover">Suppression d\'application système</string>
+
+    <!-- Lock screen wallpaper -->
+   <string name="lockscreen_category_title">Écran de déverrouillage</string>
+   <string name="lockscreen_wallpaper_title">Fond d\'écran</string>
+   <string name="lockscreen_wallpaper_set_title">Définir un fond d\'écran</string>
+   <string name="lockscreen_wallpaper_clear_title">Revenir à la configuration d\'origine</string>
+   <string name="reset_lockscreen_wallpaper">Le fond d\'écran de déverrouillage par défaut rétabli</string>
 
 </resources>
