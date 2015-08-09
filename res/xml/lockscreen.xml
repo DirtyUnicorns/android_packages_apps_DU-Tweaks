@@ -34,7 +34,6 @@
             android:title="@string/lockscreen_wallpaper_title"
             android:layout="@layout/preference_lockscreenwp"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenSettings" />
-         </PreferenceScreen>
 
 </PreferenceScreen>
 
