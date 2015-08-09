@@ -46,4 +46,10 @@
         <item>560 -- xxxhdpi</item>
     </string-array>
 
+    <!-- SlimSizer -->
+    <string-array name="slimsizer_profile_array">
+        <item >Charger le profil</item>
+        <item >Enregistrer le profil</item>
+    </string-array>
+
 </resources>
