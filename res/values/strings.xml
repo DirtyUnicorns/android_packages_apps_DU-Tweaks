@@ -634,6 +634,7 @@
     <string name="shortcut_action_kill">Kill app</string>
     <string name="shortcut_action_lastapp">Last app</string>
     <string name="shortcut_action_notifications">Notifications</string>
+    <string name="shortcut_action_menu_legacy">Legacy Menu</string>
     <string name="shortcut_action_qs">Quicksettings panel</string>
 
     <!-- Text for forcing expanded notifications -->
