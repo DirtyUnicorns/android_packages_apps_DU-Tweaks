@@ -45,7 +45,7 @@
     <string name="tbo_clear_gapps_summary">Blacked out but clear background Gapps package</string>
 
     <!-- Advanced reboot options -->
-    <string name="powermenu_category">Power menu</string>
+    <string name="powermenu_category">Power Menu</string>
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">Include options in the power menu for rebooting into recovery and bootloader</string>
     <string name="advanced_reboot_dialog_title">Advanced reboot menu</string>
@@ -131,7 +131,15 @@
     <!-- Misc Tweaks -->
     <string name="misctweaks_category">Misc. Tweaks</string>
     <string name="misctweaks_statusbarbar_category">Statusbar/Notification</string>
-    <string name="misctweaks_gestures_category">Gestures</string>
+
+    <!-- Gestures -->
+    <string name="gestures_category">DT2S Gestures</string>
+    <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
+    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
+    <string name="double_tap_sleep_anywhere_title">DT2S on Lockscreen</string>
+    <string name="double_tap_sleep_anywhere_summary">Double tap lockscreen to put the device to sleep</string>
 
     <!-- Disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
@@ -193,7 +201,7 @@
     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
     <!-- Battery options -->
-    <string name="battery_category">Battery options</string>
+    <string name="battery_category">Battery Options</string>
     <string name="status_bar_battery_percentage_title">Show battery percentage</string>
     <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
     <string name="status_bar_battery_percentage_default">Hidden (default)</string>
@@ -208,7 +216,7 @@
     <string name="status_bar_battery_style_hidden">Hidden</string>
 
     <!-- Statusbar DU logo -->
-    <string name="status_bar_du_logo_title">DU logo</string>
+    <string name="status_bar_du_logo_title">DU Logo</string>
     <string name="status_bar_du_logo_summary">Enable to show DU logo on the left side of statusbar</string>
     <string name="status_bar_du_logo_color">DU logo color</string>
 
@@ -219,14 +227,13 @@
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_style_title">Style</string>
-    <string name="status_bar_clock">Clock and date</string>
-    <string name="status_bar_clock_title">Clock and date style</string>
+    <string name="status_bar_clock">Clock &amp; Date</string>
     <string name="clock_title_enable">Alignment</string>
     <string name="clock_enabled">Enabled</string>
     <string name="clock_disabled">Disabled</string>
     <string name="clock_color_title">Color</string>
     <string name="status_bar_clock_style_reset">Reset color</string>
-    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
     <string name="enable_clock_weekday">Day of the week</string>
@@ -256,7 +263,7 @@
     <string name="reset">Reset</string>
 
     <!-- Quick Pulldown -->
-    <string name="quicksettings_category">Quick settings</string>
+    <string name="quicksettings_category">Quick Settings</string>
     <string name="title_quick_pulldown">Quick pulldown</string>
     <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
     <string name="quick_pulldown_off">Off</string>
@@ -264,7 +271,7 @@
     <string name="quick_pulldown_right">Right</string>
 
     <!-- Weather settings -->
-    <string name="lockscreen_weather_settings">Weather settings</string>
+    <string name="lockscreen_weather_settings">Weather Settings</string>
     <string name="weather_settings_title">LockClock settings</string>
     <string name="weather_settings_summary">Configure location for weather widget and other settings</string>
     <string name="weather_show_weather_title">Show weather options</string>
@@ -345,7 +352,7 @@
 
     <!-- Circle app bar -->
     <string name="category_app_circle_bar_title">App launcher</string>
-    <string name="app_circle_bar_title">App circle bar</string>
+    <string name="app_circle_bar_title">App Circle Bar</string>
     <string name="app_circle_bar_summary">Show circle app launcher after touching right side of screen</string>
     <string name="app_circle_bar_included_apps_title">Included apps</string>
     <string name="app_circle_bar_included_apps_summary">Apps will show in app circle bar</string>
@@ -464,23 +471,11 @@
     <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
 
     <string name="lockscreen_settings_title">Lock screen</string>
-    <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
+    <string name="lockscreen_targets_message">Lockscreen Shortcuts</string>
     <string name="lockscreen_default_target">Default</string>
     <string name="lockscreen_none_target">None</string>
     <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
     <string name="lockscreen_choose_action_title">Choose action</string>
-
-    <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
-
-    <!-- Double Tap Statusbar to Sleep -->
-    <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
-    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
-
-    <!-- Double tap to sleep on lockscreen -->
-    <string name="double_tap_sleep_anywhere_title">DT2S on Lockscreen</string>
-    <string name="double_tap_sleep_anywhere_summary">Double tap lockscreen to put the device to sleep</string>
 
     <!-- Selinux Switch -->
     <string name="selinux_switch_title">Selinux Switch options</string>
@@ -617,7 +612,7 @@
     <string name="shortcut_action_back">Back</string>
     <string name="shortcut_action_menu">Menu</string>
     <string name="shortcut_action_ime">Open IME Switcher</string>
-    <string name="shortcut_action_power_menu">Power menu</string>
+    <string name="shortcut_action_power_menu">Power Menu</string>
     <string name="shortcut_action_recent">Recents</string>
     <string name="shortcut_action_power">Screen Off</string>
     <string name="shortcut_action_search">Search in app</string>
@@ -642,7 +637,7 @@
     <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
 
     <!-- Wakelock blocker -->
-    <string name="wakelock_blocker_title">Wakelock blocker</string>
+    <string name="wakelock_blocker_title">Wakelock Blocker</string>
     <string name="wakelock_blocker_summary">Block system wakelocks</string>
     <string name="wakelock_blocker_save">Save</string>
     <string name="wakelock_list_header">Available wakelocks</string>
@@ -696,7 +691,7 @@
     <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area</string>
 
    <!-- Breathing Notifications -->
-    <string name="breathing_notifications_title">Breathing notifications</string>
+    <string name="breathing_notifications_title">Breathing Notifications</string>
     <string name="sms_breath_title">Breathing SMS</string>
     <string name="sms_breath_summary">Will give your sms notifications a breathing effect in the statusbar</string>
     <string name="missed_call_breath_title">Breathing Missed Call</string>
@@ -720,7 +715,7 @@
     <string name="navigation_menu_default_jb_behavior">Show on request (default)</string>
     <string name="navigation_menu_never_show">Never show</string>
     <string name="navigation_menu_always_show">Always show</string>
-    <string name="navigation_bar">Navigation bar</string>
+    <string name="navigation_bar">Navigation Bar</string>
     <string name="navbar_button_cat">Navigation bar buttons</string>
     <string name="title_pref_menu_location">Menu location</string>
     <string name="summary_pref_menu_location">Where do you want the menu buttons to appear?</string>
@@ -803,7 +798,7 @@
     <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size if keyboard is active</string>
 
     <!-- Expanded Desktop -->
-    <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="power_menu_expanded_desktop">Expanded Desktop</string>
     <string name="expanded_hide_nothing">Hide nothing</string>
     <string name="expanded_hide_status">Hide status bar</string>
     <string name="expanded_hide_navigation">Hide navigation bar</string>
