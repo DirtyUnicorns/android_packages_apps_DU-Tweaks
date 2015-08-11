@@ -32,35 +32,5 @@
             android:layout="@layout/preference_density"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.Density" />
 
-        <PreferenceScreen
-            android:key="lockscreen_shortcuts_settings"
-            android:title="@string/lockscreen_targets_message"
-            android:layout="@layout/preference_lockscreentargets"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenShortcuts" />
-
-        <PreferenceScreen
-            android:key="lockscreen_wallpaper_changer"
-            android:title="@string/lockscreen_wallpaper_title"
-            android:layout="@layout/preference_lockscreenwp"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenSettings" />
-
-        <PreferenceScreen
-            android:key="weather_settings"
-            android:title="@string/lockscreen_weather_settings"
-            android:layout="@layout/preference_lockscreenweather"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenWeather" />
-
-        <PreferenceScreen
-                 android:key="lockscreen_shortcuts"
-                 android:fragment="com.dirtyunicorns.dutweaks.dslv.ActionListViewSettings"
-                 android:title="@string/lockscreen_shortcuts_title"
-                 android:layout="@layout/preference_appshortcuts" >
-             <extra android:name="actionMode" android:value="4" />
-             <extra android:name="maxAllowedActions" android:value="5" />
-             <extra android:name="disableLongpress" android:value="true" />
-             <extra android:name="useAppPickerOnly" android:value="true" />
-             <extra android:name="fragment" android:value="com.dirtyunicorns.dutweaks.fragments.AppShortcuts" />
-        </PreferenceScreen>
-
 </PreferenceScreen>
 

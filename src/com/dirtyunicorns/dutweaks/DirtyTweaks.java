@@ -50,6 +50,7 @@ import android.widget.Toast;
 import com.android.internal.util.slim.DeviceUtils;
 import com.dirtyunicorns.dutweaks.tabs.GeneralUI;
 import com.dirtyunicorns.dutweaks.tabs.StatusBar;
+import com.dirtyunicorns.dutweaks.tabs.Lockscreen;
 import com.dirtyunicorns.dutweaks.tabs.Navigation;
 import com.dirtyunicorns.dutweaks.tabs.MultiTasking;
 import com.dirtyunicorns.dutweaks.tabs.System;
@@ -173,10 +174,11 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new GeneralUI();
             frags[1] = new StatusBar();
-            frags[2] = new Navigation();
-            frags[3] = new MultiTasking();
-            frags[4] = new System();
-            frags[5] = new Misc();
+            frags[2] = new Lockscreen();
+            frags[3] = new Navigation();
+            frags[4] = new MultiTasking();
+            frags[5] = new System();
+            frags[6] = new Misc();
         }
 
         @Override
@@ -201,6 +203,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.generalui_category),
                     getString(R.string.statusbar_category),
+                    getString(R.string.lockscreen_category),
                     getString(R.string.navigation_category),
                     getString(R.string.multitasking_category),
                     getString(R.string.system_category),
@@ -209,6 +212,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.generalui_category),
                     getString(R.string.statusbar_category),
+                    getString(R.string.lockscreen_category),
                     getString(R.string.navigation_category),
                     getString(R.string.multitasking_category),
                     getString(R.string.system_category),
