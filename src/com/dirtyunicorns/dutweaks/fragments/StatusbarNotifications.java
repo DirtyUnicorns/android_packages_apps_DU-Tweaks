@@ -31,13 +31,17 @@ import java.util.List;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
-public class BreathingNotifications extends SettingsPreferenceFragment implements
+public class StatusbarNotifications extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
+    private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
     private static final String SMS_BREATH = "sms_breath";
     private static final String MISSED_CALL_BREATH = "missed_call_breath";
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
 
+    private SwitchPreference mDisableIM;
+    private SwitchPreference mForceExpanded;
     private SwitchPreference mSMSBreath;
     private SwitchPreference mMissedCallBreath;
     private SwitchPreference mVoicemailBreath;
@@ -45,10 +49,18 @@ public class BreathingNotifications extends SettingsPreferenceFragment implement
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.breathing_notifications);
+        addPreferencesFromResource(R.xml.statusbar_notifications);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
+        mDisableIM.setChecked((Settings.System.getInt(resolver,
+                Settings.System.DISABLE_IMMERSIVE_MESSAGE, 0) == 1));
+
+	mForceExpanded = (SwitchPreference) findPreference(FORCE_EXPANDED_NOTIFICATIONS);
+        mForceExpanded.setChecked((Settings.System.getInt(resolver,
+                Settings.System.FORCE_EXPANDED_NOTIFICATIONS, 0) == 1));
 
         mSMSBreath = (SwitchPreference) findPreference(SMS_BREATH);
         mMissedCallBreath = (SwitchPreference) findPreference(MISSED_CALL_BREATH);
@@ -80,7 +92,19 @@ public class BreathingNotifications extends SettingsPreferenceFragment implement
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        return true;
+        if  (preference == mDisableIM) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DISABLE_IMMERSIVE_MESSAGE, checked ? 1:0);
+            return true;
+        }
+        if  (preference == mForceExpanded) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FORCE_EXPANDED_NOTIFICATIONS, checked ? 1:0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {

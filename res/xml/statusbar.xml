@@ -20,48 +20,53 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <Preference
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/double_tap_to_sleep_title"
+            android:summary="@string/double_tap_to_sleep_summary"
+            android:defaultValue="true" />
+
+        <Preference
             android:key="traffic"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.Traffic"
             android:layout="@layout/preference_traffic"
             android:title="@string/traffic_category" />
 
-         <Preference
+        <Preference
+            android:key="statusbar_notifications"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
+            android:layout="@layout/preference_breathe"
+            android:title="@string/statusbar_notifications_title" />
+
+        <Preference
             android:key="statusbarclock"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarClock"
             android:layout="@layout/preference_statusbarclock"
             android:title="@string/status_bar_clock" />
 
-         <Preference
+        <Preference
             android:key="battery"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.Battery"
             android:layout="@layout/preference_battery"
             android:title="@string/battery_category" />
 
-         <Preference
+        <Preference
             android:key="quick_settings"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.QuickSettings"
             android:layout="@layout/preference_quicksettings"
             android:title="@string/quicksettings_category" />
 
-         <Preference
+        <Preference
             android:key="carrier_options"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.CarrierLabel"
             android:layout="@layout/preference_carrierlabel"
             android:title="@string/carrier_options" />
 
-         <Preference
+        <Preference
             android:key="du_logo"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.DuLogo"
             android:layout="@layout/preference_dulogo"
             android:title="@string/status_bar_du_logo_title" />
 
-        <Preference
-            android:key="breathing_notifications"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.BreathingNotifications"
-            android:layout="@layout/preference_breathe"
-            android:title="@string/breathing_notifications_title" />
-
-
 </PreferenceScreen>
-

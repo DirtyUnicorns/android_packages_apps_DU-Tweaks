@@ -49,6 +49,13 @@
                 android:key="advanced_cat"
                 android:title="@string/advanced_settings">
 
+            <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+                    android:key="double_tap_sleep_navbar"
+                    android:title="@string/double_tap_sleep_nav_bar_title"
+                    android:summary="@string/double_tap_sleep_nav_bar_summary"
+                    android:dependency="enable_nav_bar"
+                    android:defaultValue="false" />
+
             <SwitchPreference
                     android:key="navigation_bar_ime_arrows"
                     android:title="@string/show_ime_arrows_title"

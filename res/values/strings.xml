@@ -132,10 +132,8 @@
 
     <!-- Misc Tweaks -->
     <string name="misctweaks_category">Misc. Tweaks</string>
-    <string name="misctweaks_statusbarbar_category">Statusbar/Notification</string>
 
     <!-- Gestures -->
-    <string name="gestures_category">DT2S Gestures</string>
     <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
     <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
@@ -719,7 +717,8 @@
     <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area</string>
 
    <!-- Breathing Notifications -->
-    <string name="breathing_notifications_title">Breathing Notifications</string>
+    <string name="statusbar_notifications_title">Notifications</string>
+    <string name="statusbarbar_breathing_category">Breathing Notifications</string>
     <string name="sms_breath_title">Breathing SMS</string>
     <string name="sms_breath_summary">Will give your sms notifications a breathing effect in the statusbar</string>
     <string name="missed_call_breath_title">Breathing Missed Call</string>
