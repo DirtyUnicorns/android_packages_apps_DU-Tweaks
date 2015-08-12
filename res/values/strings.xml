@@ -872,4 +872,8 @@
    <string name="lockscreen_wallpaper_clear_title">Return to default</string>
    <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
 </resources>
