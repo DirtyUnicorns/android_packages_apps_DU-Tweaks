@@ -181,9 +181,9 @@
     <string name="volume_rocker_music_controls_summary">Wenn der Bildschirm ausgeschaltet ist, wird langes Drücken der Lautstärketasten Musiktitel suchen</string>
 
     <!-- Battery options -->
-    <string name="battery_category">Battarie Optionen</string>
-    <string name="status_bar_battery_percentage_title">zeigt Battarie Prozentsatz</string>
-    <string name="status_bar_battery_percentage_dialog_title">Battarie Prozentsatz</string>
+    <string name="battery_category">Batterie Optionen</string>
+    <string name="status_bar_battery_percentage_title">zeigt Batterie Prozentsatz</string>
+    <string name="status_bar_battery_percentage_dialog_title">Batterie Prozentsatz</string>
     <string name="status_bar_battery_percentage_default">verborgen (Standard)</string>
     <string name="status_bar_battery_percentage_text_inside">im Inneren des Symbols</string>
     <string name="status_bar_battery_percentage_text_next">neben dem Symbol</string>
@@ -195,14 +195,14 @@
     <string name="status_bar_battery_style_hidden">verborgen</string>
 
     <!-- Battery Bar -->
-    <string name="battery_icon">Battarie Icon aussehen</string>
-    <string name="battery_not_title">Battarie Icon in Benachichtigung</string>
-    <string name="battery_not_summary">Battarie Icon wird auftauchen, wo sich das Abräumen des ganzen Knopfs zeigt</string>
-    <string name="battery_bar_location">Battariebar Anhaftung</string>
-    <string name="battery_bar_color">Battariebar Farbe</string>
-    <string name="battery_bar">Battariebar Optionen</string>
-    <string name="battery_bar_style_title">Battariebar style</string>
-    <string name="battery_bar_thickness_title">Battariebar Dicke</string>
+    <string name="battery_icon">Batterie Icon aussehen</string>
+    <string name="battery_not_title">Batterie Icon in Benachichtigung</string>
+    <string name="battery_not_summary">Batterie Icon wird auftauchen, wo sich das Abräumen des ganzen Knopfs zeigt</string>
+    <string name="battery_bar_location">Batteriebar Anhaftung</string>
+    <string name="battery_bar_color">Batteriebar Farbe</string>
+    <string name="battery_bar">Batteriebar Optionen</string>
+    <string name="battery_bar_style_title">Batteriebar style</string>
+    <string name="battery_bar_thickness_title">Batteriebar Dicke</string>
     <string name="battery_bar_animate_title">Ladeanimation</string>
     <string name="battery_bar_animate_summary">Die Ladeanimation kann zu schlechtem Verhalten führen. Aktivieren Sie nach Ihrem eigenen Ermessen.</string>
 
@@ -489,7 +489,7 @@
     <string name="shortcuts_icon_picker_choose_icon_title">Icon suchen</string>
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
-    <string name="shortcuts_icon_picker_battery">Battarie</string>
+    <string name="shortcuts_icon_picker_battery">Batterie</string>
     <string name="shortcuts_icon_picker_browser">Browser</string>
     <string name="shortcuts_icon_picker_calendar">Kalender</string>
     <string name="shortcuts_icon_picker_camera">Kamera</string>
