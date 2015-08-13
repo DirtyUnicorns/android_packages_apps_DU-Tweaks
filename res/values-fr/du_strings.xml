@@ -18,6 +18,7 @@
     <!-- Tabs -->
     <string name="generalui_category">Interface</string>
     <string name="statusbar_category">Barre d\'État</string>
+    <string name="lockscreen_category">Écran de déverrouillage</string>
     <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multitâche</string>
     <string name="system_category">Système</string>
@@ -475,13 +476,14 @@
     <string name="disable_fc_notifications_summary">Masquer les notifications de plantage des applications</string>
 
     <string name="lockscreen_settings_title">Écran de déverrouillage</string>
-    <string name="lockscreen_targets_message">Raccourcis de l\'écran de déverrouillage</string>
+    <string name="lockscreen_targets_message">Raccourcis bas</string>
     <string name="lockscreen_default_target">Configuration d\'origine</string>
     <string name="lockscreen_none_target">Aucun</string>
     <string name="lockscreen_message">Appuyez sur une icône à gauche ou à droite pour attribuer un raccourci sur l\'écran de déverrouillage.</string>
     <string name="lockscreen_choose_action_title">Raccourci</string>
 
     <!-- Double Tap Navbar to Sleep -->
+    <string name="gestures_category">Veille par double appui</string>
     <string name="double_tap_sleep_nav_bar_title">Veille par double appui</string>
     <string name="double_tap_sleep_nav_bar_summary">Éteindre l\'écran par double appui sur la barre de navigation</string>
 
@@ -624,7 +626,7 @@
     <string name="navigation_bar_warning_no_navigation_present">Aucune autre méthode de navigation activée. Désactiver la barre de navigation peut rendre inutilisable l\'appareil. Activer SlimPie à la place\u00A0?</string>
     <string name="reset_message">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="additional_options_title">Options supplémentaires</string>
-    <string name="lockscreen_shortcuts_title">Raccourcis application</string>
+    <string name="lockscreen_shortcuts_title">Raccourcis haut</string>
     <string name="lockscreen_shorcuts_longpress_title">Raccourcis appui prolongé</string>
     <string name="lockscreen_shorcuts_longpress_summary">Ouvrir des raccourcis personnalisés sur l\'écran de déverrouillage par appui prolongé</string>
     <string name="help">Aide</string>
@@ -650,6 +652,7 @@
     <string name="shortcut_action_kill">Forcer l\'arrêt de l\'application</string>
     <string name="shortcut_action_lastapp">Dernière application</string>
     <string name="shortcut_action_notifications">Notifications</string>
+    <string name="shortcut_action_menu_legacy">Menu hérité</string>
     <string name="shortcut_action_qs">Volet des paramètres</string>
 
     <!-- Text for forcing expanded notifications -->
@@ -711,6 +714,8 @@
     <string name="enable_task_manager_summary">Activer/Désactiver le Gestionnaire de tâches dans la barre d\'état</string>
 
    <!-- Breathing Notifications -->
+    <string name="statusbar_notifications_title">Notifications</string>
+    <string name="statusbarbar_breathing_category">Notifications clignotantes</string>
     <string name="breathing_notifications_title">Notifications clignotantes</string>
     <string name="sms_breath_title">SMS</string>
     <string name="sms_breath_summary">Faire clignoter la notification de réception de nouveau SMS, dans la barre d\'état</string>
@@ -864,6 +869,10 @@
    <string name="lockscreen_wallpaper_title">Fond d\'écran</string>
    <string name="lockscreen_wallpaper_set_title">Définir un fond d\'écran</string>
    <string name="lockscreen_wallpaper_clear_title">Revenir à la configuration d\'origine</string>
-   <string name="reset_lockscreen_wallpaper">Le fond d\'écran de déverrouillage par défaut rétabli</string>
+   <string name="reset_lockscreen_wallpaper">Fond d\'écran de déverrouillage par défaut rétabli</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Geste avec trois doigts</string>
+    <string name="three_finger_gesture_summary">Capture d\'écran par balayage de l\'écran avec trois doigts</string>
 
 </resources>
