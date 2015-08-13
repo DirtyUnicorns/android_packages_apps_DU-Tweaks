@@ -21,8 +21,7 @@
 
     <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
         android:key="enable_app_circle_bar"
-        android:title="@string/app_circle_bar_title"
-        android:summary="@string/app_circle_bar_summary" />
+        android:title="@string/app_circle_bar_title" />
 
     <com.dirtyunicorns.dutweaks.AppMultiSelectListPreference
         android:key="app_circle_bar_included_apps"

@@ -30,12 +30,12 @@
             android:entries="@array/entries_scrollingcache"
             android:entryValues="@array/values_scrollingcache" />
 
-         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="disable_torch_on_screen_off"
             android:title="@string/disable_torch_screen_off_title"
             android:defaultValue="false" />
 
-         <ListPreference
+        <ListPreference
             android:key="disable_torch_on_screen_off_delay"
             android:title="@string/disable_torch_screen_off_delay_title"
             android:dialogTitle="@string/disable_torch_screen_off_delay_title"
@@ -54,12 +54,11 @@
             android:title="@string/selinux_title"
             android:defaultValue="false" />
 
-         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="enable_task_manager"
             android:title="@string/enable_task_manager_title"
             android:summary="@string/enable_task_manager_summary" />
 
-       <!-- Three-fingers-swipe to screenshot -->
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="three_finger_gesture"
             android:title="@string/three_finger_gesture"

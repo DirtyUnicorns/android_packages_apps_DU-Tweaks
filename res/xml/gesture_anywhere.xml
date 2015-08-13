@@ -21,7 +21,6 @@
     <SwitchPreference
         android:key="gesture_anywhere_enabled"
         android:title="@string/gesture_anywhere_enabled_title"
-        android:summary="@string/gesture_anywhere_enabled_summary"
         android:defaultValue="false" />
 
     <ListPreference

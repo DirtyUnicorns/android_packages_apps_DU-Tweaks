@@ -20,14 +20,76 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <PreferenceScreen
-            android:key="system_animations"
-            android:title="@string/system_animation_title"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.SystemAnimations" />
+    <PreferenceCategory
+        android:key="listview_animations_category"
+        android:title="@string/listview_animation_title"/>
 
-        <PreferenceScreen
-            android:key="listview_animations"
-            android:title="@string/listview_animation_title"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.ListViewAnimations" />
+    <ListPreference
+        android:key="listview_animation"
+        android:dialogTitle="@string/listview_animation_title"
+        android:title="@string/listview_animation_title"
+        android:entries="@array/listview_animation_entries"
+        android:entryValues="@array/listview_animation_values"
+        android:defaultValue="0" />
+
+    <ListPreference
+        android:key="listview_interpolator"
+        android:dialogTitle="@string/listview_interpolator_title"
+        android:title="@string/listview_interpolator_title"
+        android:entries="@array/listview_interpolator_entries"
+        android:entryValues="@array/listview_interpolator_values"
+        android:defaultValue="0" />
+
+    <PreferenceCategory
+        android:key="system_animations_category"
+        android:title="@string/system_animation_title"/>
+
+    <ListPreference
+        android:key="activity_open"
+        android:title="@string/activity_open_title" />
+
+    <ListPreference
+        android:key="activity_close"
+        android:title="@string/activity_close_title" />
+
+    <ListPreference
+        android:key="task_open"
+        android:title="@string/task_open_title" />
+
+    <ListPreference
+        android:key="task_close"
+        android:title="@string/task_close_title" />
+
+    <ListPreference
+        android:key="task_move_to_front"
+        android:title="@string/task_move_to_front_title" />
+
+    <ListPreference
+        android:key="task_move_to_back"
+        android:title="@string/task_move_to_back_title" />
+
+    <ListPreference
+        android:key="wallpaper_open"
+        android:title="@string/wallpaper_open_title" />
+
+    <ListPreference
+        android:key="wallpaper_close"
+        android:title="@string/wallpaper_close_title" />
+
+    <ListPreference
+        android:key="wallpaper_intra_open"
+        android:title="@string/wallpaper_intra_open_title" />
+
+    <ListPreference
+        android:key="wallpaper_intra_close"
+        android:title="@string/wallpaper_intra_close_title" />
+
+    <ListPreference
+        android:key="task_open_behind"
+        android:title="@string/task_open_behind_title" />
+
+    <com.dirtyunicorns.dutweaks.fragments.AnimBarPreference
+        android:key="animation_duration"
+        android:title="@string/animation_duration_title" />
 
 </PreferenceScreen>
