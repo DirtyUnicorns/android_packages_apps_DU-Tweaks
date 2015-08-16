@@ -82,4 +82,22 @@
 
         </PreferenceCategory>
 
+        <PreferenceCategory
+                android:key="navring_cat"
+                android:title="@string/navigation_ring_title">
+
+            <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+                android:key="search_panel_enabled"
+                android:title="@string/navigation_ring_enable_title"
+                android:defaultValue="true" />
+
+            <PreferenceScreen
+                android:key="navigation_bar_ring"
+                android:fragment="com.dirtyunicorns.dutweaks.fragments.NavRing"
+                android:summary="@string/navigation_ring_summary"
+                android:title="@string/navigation_ring_customize"
+                android:dependency="search_panel_enabled" />
+
+        </PreferenceCategory>
+
 </PreferenceScreen>
