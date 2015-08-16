@@ -164,7 +164,7 @@ public class ActionListViewSettings extends ListFragment implements
                 } else {
                     setConfig(mActionConfigs, false);
                     deleteIconFileIfPresent(item, true);
-                    if (mActionConfigs.size() == 0) {
+                    if (mActionConfigs == null || mActionConfigs.size() == 0) {
                         showDisableMessage(true);
                     }
                 }
@@ -637,23 +637,31 @@ public class ActionListViewSettings extends ListFragment implements
 
             Drawable d = null;
             String iconUri = getItem(position).getIcon();
+            if (iconUri == null) {
+                iconUri = SlimActionConstants.ICON_EMPTY;
+            }
             if (mActionMode == POWER_MENU_SHORTCUT) {
-/* Disabled for now till slims power menu is back!!!!!!!!!!!!!!
+                /* Disabled for now till slims power menu is back!!!!!!!!!!!!!!
                 d = ImageHelper.resize(
                         mActivity, PolicyHelper.getPowerMenuIconImage(mActivity,
                         getItem(position).getClickAction(),
-                        iconUri, false), 36); */
+                        iconUri, false), 48);
+                */
             } else {
-                d = ImageHelper.resize(
-                        mActivity, ActionHelper.getActionIconImage(mActivity,
-                        getItem(position).getClickAction(),
-                        iconUri), 36);
+                ActionHelper.useSystemUI = true;
+                d = ImageHelper.resize(mActivity, ActionHelper.getActionIconImage(
+                        mActivity, getItem(position).getClickAction(),
+                        iconUri), 48);
+                ActionHelper.useSystemUI = false;
             }
 
-            if ((iconUri.equals(SlimActionConstants.ICON_EMPTY) &&
-                    getItem(position).getClickAction().startsWith("**")) || (iconUri != null
-                    && iconUri.startsWith(SlimActionConstants.SYSTEM_ICON_IDENTIFIER))) {
-                if (d != null) d.setTint(getResources().getColor(R.color.dslv_icon_dark));
+            if (d != null) {
+                if ((iconUri.equals(SlimActionConstants.ICON_EMPTY) &&
+                        getItem(position).getClickAction().startsWith("**")) ||
+                    iconUri.startsWith(SlimActionConstants.SYSTEM_ICON_IDENTIFIER)) {
+                    d = ImageHelper.getColoredDrawable(d, getResources()
+                            .getColor(R.color.dslv_icon_dark));
+                }
             }
             holder.iconView.setImageDrawable(d);
 
