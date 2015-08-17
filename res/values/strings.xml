@@ -502,7 +502,7 @@
     <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
 
     <string name="lockscreen_settings_title">Lock screen</string>
-    <string name="lockscreen_targets_message">Lockscreen Shortcuts</string>
+    <string name="lockscreen_targets_message">Bottom L/R Shortcuts</string>
     <string name="lockscreen_default_target">Default</string>
     <string name="lockscreen_none_target">None</string>
     <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
@@ -634,7 +634,7 @@
     <string name="navigation_bar_warning_no_navigation_present">Are you sure you want to disable this?</string>
     <string name="reset_message">Reset all entries to default?</string>
     <string name="additional_options_title">Additional options</string>
-    <string name="lockscreen_shortcuts_title">App Shortcuts</string>
+    <string name="lockscreen_shortcuts_title">Mid-Screen Shortcuts</string>
     <string name="lockscreen_shorcuts_longpress_title">Shortcuts longpress</string>
     <string name="lockscreen_shorcuts_longpress_summary">Open custom lock screen shortcuts on longpress</string>
     <string name="help">Help</string>
@@ -863,8 +863,8 @@
 
     <!-- Lock screen wallpaper -->
    <string name="lockscreen_category_title">Lockscreen</string>
-   <string name="lockscreen_wallpaper_title">Lockscreen Wallpaper</string>
-   <string name="lockscreen_wallpaper_set_title">Set new wallpaper</string>
+   <string name="lockscreen_wallpaper_title">Wallpaper Changer</string>
+   <string name="lockscreen_wallpaper_set_title">Set new lockscreen wallpaper</string>
    <string name="lockscreen_wallpaper_clear_title">Return to default</string>
    <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
 

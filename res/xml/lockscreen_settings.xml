@@ -24,6 +24,18 @@
             android:key="double_tap_sleep_anywhere"
             android:title="@string/double_tap_sleep_anywhere_title"
             android:summary="@string/double_tap_sleep_anywhere_summary" />
+
+        <PreferenceScreen
+                 android:key="lockscreen_app_shortcuts"
+                 android:fragment="com.dirtyunicorns.dutweaks.dslv.ActionListViewSettings"
+                 android:title="@string/lockscreen_shortcuts_title"
+                 android:layout="@layout/preference_appshortcuts" >
+             <extra android:name="actionMode" android:value="4" />
+             <extra android:name="maxAllowedActions" android:value="5" />
+             <extra android:name="disableLongpress" android:value="true" />
+             <extra android:name="useAppPickerOnly" android:value="true" />
+             <extra android:name="fragment" android:value="com.dirtyunicorns.dutweaks.fragments.AppShortcuts" />
+        </PreferenceScreen>
        
         <PreferenceScreen
             android:key="lockscreen_shortcuts"
@@ -42,17 +54,5 @@
             android:title="@string/lockscreen_weather_settings"
             android:layout="@layout/preference_lockscreenweather"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenWeather" />
-
-        <PreferenceScreen
-                 android:key="lockscreen_app_shortcuts"
-                 android:fragment="com.dirtyunicorns.dutweaks.dslv.ActionListViewSettings"
-                 android:title="@string/lockscreen_shortcuts_title"
-                 android:layout="@layout/preference_appshortcuts" >
-             <extra android:name="actionMode" android:value="4" />
-             <extra android:name="maxAllowedActions" android:value="5" />
-             <extra android:name="disableLongpress" android:value="true" />
-             <extra android:name="useAppPickerOnly" android:value="true" />
-             <extra android:name="fragment" android:value="com.dirtyunicorns.dutweaks.fragments.AppShortcuts" />
-        </PreferenceScreen>
 
 </PreferenceScreen>
