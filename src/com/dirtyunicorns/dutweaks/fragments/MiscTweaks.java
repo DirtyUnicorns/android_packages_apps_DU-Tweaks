@@ -143,6 +143,18 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     }
 
     @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if  (preference == mShowFourG) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SHOW_FOURG, checked ? 1:0);
+            Helpers.restartSystemUI();
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if  (preference == mEnableTaskManager) {
@@ -166,12 +178,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_TORCH_ON_SCREEN_OFF_DELAY, torchOffDelay);
             mTorchOffDelay.setSummary(mTorchOffDelay.getEntries()[index]);
-            return true;
-        } else if (preference == mShowFourG) {
-            boolean checked = ((SwitchPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.SHOW_FOURG, checked ? 1:0);
-            Helpers.restartSystemUI();
             return true;
         } else if (preference == mSelinux) {
             if (newValue.toString().equals("true")) {
