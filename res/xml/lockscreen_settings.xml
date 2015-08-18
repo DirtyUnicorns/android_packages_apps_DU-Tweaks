@@ -23,7 +23,8 @@
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="double_tap_sleep_anywhere"
             android:title="@string/double_tap_sleep_anywhere_title"
-            android:summary="@string/double_tap_sleep_anywhere_summary" />
+            android:summary="@string/double_tap_sleep_anywhere_summary"
+            android:defaultValue="true" />
 
         <PreferenceScreen
                  android:key="lockscreen_app_shortcuts"
