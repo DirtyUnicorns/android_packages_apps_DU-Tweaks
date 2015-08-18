@@ -878,4 +878,40 @@
         <item >Save Profile</item>
     </string-array>
 
+    <string-array name="shortcut_action_navring_entries">
+        <item>@string/shortcut_action_none</item>
+        <item>@string/shortcut_action_assist</item>
+        <item>@string/shortcut_action_power</item>
+        <item>@string/shortcut_action_notifications</item>
+        <item>@string/shortcut_action_qs</item>
+        <item>@string/shortcut_action_app</item>
+        <item>@string/shortcut_action_screenshot</item>
+        <item>@string/shortcut_action_ime</item>
+        <item>@string/shortcut_action_lastapp</item>
+        <item>@string/shortcut_action_kill</item>
+        <item>@string/shortcut_action_ring_vib</item>
+        <item>@string/shortcut_action_ring_silent</item>
+        <item>@string/shortcut_action_ring_vib_silent</item>
+        <item>@string/shortcut_action_power_menu</item>
+        <item>@string/shortcut_action_torch</item>
+    </string-array>
+
+    <string-array name="shortcut_action_navring_values" translatable="false">
+        <item>**null**</item>
+        <item>**assist**</item>
+        <item>**power**</item>
+        <item>**notifications**</item>
+        <item>**settings_panel**</item>
+        <item>**app**</item>
+        <item>**screenshot**</item>
+        <item>**ime**</item>
+        <item>**lastapp**</item>
+        <item>**kill**</item>
+        <item>**ring_vib**</item>
+        <item>**ring_silent**</item>
+        <item>**ring_vib_silent**</item>
+        <item>**power_menu**</item>
+        <item>**torch**</item>
+    </string-array>
+
 </resources>
