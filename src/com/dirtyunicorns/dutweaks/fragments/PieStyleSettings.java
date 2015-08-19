@@ -30,7 +30,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.preference.SlimSeekBarPreference;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -88,7 +87,6 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
                 mSystemUiResources = pm.getResourcesForApplication("com.android.systemui");
             } catch (Exception e) {
                 mSystemUiResources = null;
-                Log.e("PIEStyle:", "can't access systemui resources",e);
             }
         }
 
@@ -159,7 +157,6 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
         }
         if (preference == mPieBackgroundAlpha) {
             float val = Float.parseFloat((String) newValue);
-            Log.e("R", "value: " + val / 100);
             Settings.System.putFloat(getActivity().getContentResolver(),
                     Settings.System.PIE_BACKGROUND_ALPHA,
                     val / 100);

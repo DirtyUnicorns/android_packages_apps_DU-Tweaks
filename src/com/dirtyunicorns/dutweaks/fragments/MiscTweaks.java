@@ -23,15 +23,9 @@ import java.io.IOException;
 import java.io.BufferedReader;
 
 import android.app.Activity;
-import android.app.ActivityManager;
-import android.app.admin.DeviceAdminReceiver;
-import android.app.admin.DevicePolicyManager;
-import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.SystemProperties;
-import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.SwitchPreference;
 import android.preference.Preference;

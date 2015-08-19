@@ -16,11 +16,7 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.content.pm.PackageManager;
 import android.content.res.Resources;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;

@@ -21,11 +21,8 @@ import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.IPackageDataObserver;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.PowerManager;
 import android.os.SystemProperties;
 import android.preference.ListPreference;
@@ -33,7 +30,6 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.text.Editable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -118,7 +114,6 @@ public class Density extends SettingsPreferenceFragment implements
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 EditText dpi = (EditText) textEntryView.findViewById(R.id.dpi_edit);
                                 Editable text = dpi.getText();
-                                Log.i(TAG, text.toString());
 
                                 try {
                                     newDensityValue = Integer.parseInt(text.toString());

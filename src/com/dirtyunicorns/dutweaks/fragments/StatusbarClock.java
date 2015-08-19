@@ -34,7 +34,6 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.text.format.DateFormat;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -100,7 +99,6 @@ public class StatusbarClock extends SettingsPreferenceFragment
         try {
             systemUiResources = pm.getResourcesForApplication("com.android.systemui");
         } catch (Exception e) {
-            Log.e(TAG, "can't access systemui resources",e);
             return null;
         }
 

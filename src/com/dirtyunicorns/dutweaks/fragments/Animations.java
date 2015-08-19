@@ -19,12 +19,7 @@
 package com.dirtyunicorns.dutweaks.fragments;
 
 import android.app.Activity;
-import android.app.ActivityManager;
-import android.content.res.Resources;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
