@@ -37,10 +37,10 @@
                 <extra android:name="fragment" android:value="com.dirtyunicorns.dutweaks.fragments.NavbarButtonFragment" />
             </PreferenceScreen>
 
-            <PreferenceScreen
+            <com.dirtyunicorns.dutweaks.fragments.NavbarSizePreference
                 android:key="navbar_style_dimen_settings"
-                android:fragment="com.dirtyunicorns.dutweaks.fragments.NavbarStyleDimenSettings"
-                android:title="@string/navbar_style_dimen_title" />
+                android:title="@string/navbar_style_dimen_title"
+                android:dependency="enable_nav_bar" />
 
         </PreferenceCategory>
 
