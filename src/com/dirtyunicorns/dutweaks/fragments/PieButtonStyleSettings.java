@@ -30,7 +30,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.preference.SlimSeekBarPreference;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -91,7 +90,6 @@ public class PieButtonStyleSettings extends SettingsPreferenceFragment implement
                 mSystemUiResources = pm.getResourcesForApplication("com.android.systemui");
             } catch (Exception e) {
                 mSystemUiResources = null;
-                Log.e("PIEButtonStyle:", "can't access systemui resources",e);
             }
         }
 
@@ -216,14 +214,12 @@ public class PieButtonStyleSettings extends SettingsPreferenceFragment implement
             return true;
        } else if (preference == mPieButtonAlpha) {
             float val = Float.parseFloat((String) newValue);
-            Log.e("R", "value: " + val / 100);
             Settings.System.putFloat(getActivity().getContentResolver(),
                     Settings.System.PIE_BUTTON_ALPHA,
                     val / 100);
             return true;
        } else if (preference == mPieButtonPressedAlpha) {
             float val = Float.parseFloat((String) newValue);
-            Log.e("R", "value: " + val / 100);
             Settings.System.putFloat(getActivity().getContentResolver(),
                     Settings.System.PIE_BUTTON_PRESSED_ALPHA,
                     val / 100);

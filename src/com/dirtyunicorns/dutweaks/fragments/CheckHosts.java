@@ -21,7 +21,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
-import android.util.Log;
 
 public class CheckHosts extends Service {
 
@@ -43,7 +42,6 @@ public class CheckHosts extends Service {
 
     @Override
     public void onStart(Intent intent, int startId) {
-        Log.i(TAG, "Started check");
         HfmHelpers.checkStatus(mContext);
     }
 }

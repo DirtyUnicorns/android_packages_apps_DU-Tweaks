@@ -17,15 +17,11 @@
 package com.dirtyunicorns.dutweaks.fragments;
 
 import android.content.ContentResolver;
-import android.content.res.Resources;
-import android.database.ContentObserver;
 import android.os.Bundle;
-import android.os.Handler;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 

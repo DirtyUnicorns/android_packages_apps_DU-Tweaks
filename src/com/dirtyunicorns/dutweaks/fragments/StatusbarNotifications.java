@@ -3,20 +3,10 @@ package com.dirtyunicorns.dutweaks.fragments;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.net.ConnectivityManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
@@ -24,7 +14,6 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
-import android.util.Log;
 
 import java.util.List;
 

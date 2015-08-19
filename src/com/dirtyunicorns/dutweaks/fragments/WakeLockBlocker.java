@@ -3,7 +3,6 @@ package com.dirtyunicorns.dutweaks.fragments;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.PowerManager;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.preference.PreferenceFragment;
@@ -88,7 +87,6 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("maxwen", "running");
     }
 
     @Override
@@ -171,7 +169,6 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
 
     private void updateSeenWakeLocksList() {
         PowerManager pm = (PowerManager) getActivity().getSystemService(Context.POWER_SERVICE);
-        Log.d("maxwen", pm.getSeenWakeLocks());
 
         String seenWakeLocks =  pm.getSeenWakeLocks();
         mSeenWakeLocks = new ArrayList<String>();
@@ -220,7 +217,6 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
         if(buffer.length()>0){
             buffer.deleteCharAt(buffer.length() - 1);
         }
-        Log.d("maxwen", buffer.toString());
         Settings.System.putString(getActivity().getContentResolver(),
                 Settings.System.WAKELOCK_BLOCKING_LIST, buffer.toString());
     }

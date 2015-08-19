@@ -16,34 +16,22 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.app.ActivityManagerNative;
-import android.app.Dialog;
-import android.app.admin.DevicePolicyManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.hardware.Camera;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
-import android.preference.RingtonePreference;
 import android.preference.SeekBarPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
-import android.util.Log;
-import android.view.WindowManagerGlobal;
 
 import java.util.ArrayList;
 

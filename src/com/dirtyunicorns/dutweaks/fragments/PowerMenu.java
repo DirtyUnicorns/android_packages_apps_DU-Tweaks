@@ -16,14 +16,8 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.app.ActivityManager;
-import android.app.admin.DeviceAdminReceiver;
-import android.app.admin.DevicePolicyManager;
-import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.preference.SwitchPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
