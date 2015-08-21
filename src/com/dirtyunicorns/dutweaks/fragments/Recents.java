@@ -54,27 +54,26 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
     private static final String TAG = "Recents";
 
     // Preferences
+    private static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
     private static final String RECENTS_SHOW_HIDE_SEARCH_BAR = "recents_show_hide_search_bar";
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String USE_SLIM_RECENTS = "use_slim_recents";
     private static final String ONLY_SHOW_RUNNING_TASKS = "only_show_running_tasks";
     private static final String RECENTS_MAX_APPS = "max_apps";
-    private static final String RECENT_PANEL_SHOW_TOPMOST =
-            "recent_panel_show_topmost";
-    private static final String RECENT_PANEL_LEFTY_MODE =
-            "recent_panel_lefty_mode";
-    private static final String RECENT_PANEL_SCALE =
-            "recent_panel_scale";
-    private static final String RECENT_PANEL_EXPANDED_MODE =
-            "recent_panel_expanded_mode";
-    private static final String RECENT_PANEL_BG_COLOR =
-            "recent_panel_bg_color";
-    private static final String RECENT_CARD_BG_COLOR =
-            "recent_card_bg_color";
-    private static final String RECENT_CARD_TEXT_COLOR =
-            "recent_card_text_color";
+    private static final String RECENT_PANEL_SHOW_TOPMOST = "recent_panel_show_topmost";
+    private static final String RECENT_PANEL_LEFTY_MODE = "recent_panel_lefty_mode";
+    private static final String RECENT_PANEL_SCALE = "recent_panel_scale";
+    private static final String RECENT_PANEL_EXPANDED_MODE = "recent_panel_expanded_mode";
+    private static final String RECENT_PANEL_BG_COLOR = "recent_panel_bg_color";
+    private static final String RECENT_CARD_BG_COLOR = "recent_card_bg_color";
+    private static final String RECENT_CARD_TEXT_COLOR = "recent_card_text_color";
 
+    private static final String CATEGORY_STOCK_RECENTS = "stock_recents";
+    private static final String CATEGORY_SLIM_RECENTS = "slim_recents";
+    private static final String CATEGORY_OMNI_RECENTS = "omni_recents";
+
+    private SwitchPreference mOmniSwitchRecents;
     private SwitchPreference mRecentsSearch;
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
@@ -105,26 +104,31 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
         mRecentsSearch.setChecked((Settings.System.getInt(resolver,
                 Settings.System.RECENTS_SHOW_HIDE_SEARCH_BAR, 0) == 1));
 
+        mOmniSwitchRecents = (SwitchPreference) findPreference(RECENTS_USE_OMNISWITCH);
+        mOmniSwitchRecents.setChecked((Settings.System.getInt(resolver,
+                Settings.System.RECENTS_USE_OMNISWITCH, 0) == 1));
+
         mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
         mRecentsClearAll.setChecked(Settings.System.getIntForUser(resolver,
             Settings.System.SHOW_CLEAR_ALL_RECENTS, 1, UserHandle.USER_CURRENT) == 1);
         mRecentsClearAll.setOnPreferenceChangeListener(this);
-        updatePrefs();
 
         mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
         int location = Settings.System.getIntForUser(resolver,
                 Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
+
         updateRecentsLocation(location);
-        updatePrefs();
+        updateDisableStockRecents();
+
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mUseSlimRecents) {
             Settings.System.putInt(getContentResolver(), Settings.System.USE_SLIM_RECENTS,
                     ((Boolean) newValue) ? 1 : 0);
-            updatePrefs();
+            updateDisableStockRecents();
             return true;
         } else if (preference == mShowRunningTasks) {
             Settings.System.putInt(getContentResolver(), Settings.System.RECENT_SHOW_RUNNING_TASKS,
@@ -217,6 +221,11 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.RECENTS_SHOW_HIDE_SEARCH_BAR, checked ? 1:0);
             return true;
+        } else if (preference == mOmniSwitchRecents) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_USE_OMNISWITCH, checked ? 1:0);
+            return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
@@ -242,36 +251,6 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
                 return true;
             default:
                 return super.onContextItemSelected(item);
-        }
-    }
-
-     private void updatePrefs() {
-        int value = Settings.System.getInt(getActivity().getContentResolver(),
-               Settings.System.USE_SLIM_RECENTS, 0);
-        if (value == 1) {
-            mShowRunningTasks.setEnabled(true);
-            mMaxApps.setEnabled(true);
-            mRecentsShowTopmost.setEnabled(true);
-            mRecentPanelLeftyMode.setEnabled(true);
-            mRecentPanelScale.setEnabled(true);
-            mRecentPanelExpandedMode.setEnabled(true);
-            mRecentPanelBgColor.setEnabled(true);
-            mRecentCardBgColor.setEnabled(true);
-            mRecentCardTextColor.setEnabled(true);
-            mRecentsClearAll.setEnabled(false);
-            mRecentsSearch.setEnabled(false);
-        } else {
-            mShowRunningTasks.setEnabled(false);
-            mMaxApps.setEnabled(false);
-            mRecentsShowTopmost.setEnabled(false);
-            mRecentPanelLeftyMode.setEnabled(false);
-            mRecentPanelScale.setEnabled(false);
-            mRecentPanelExpandedMode.setEnabled(false);
-            mRecentPanelBgColor.setEnabled(false);
-            mRecentCardBgColor.setEnabled(false);
-            mRecentCardTextColor.setEnabled(false);
-            mRecentsClearAll.setEnabled(true);
-            mRecentsSearch.setEnabled(true);
         }
     }
 
@@ -399,6 +378,31 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
         mRecentPanelExpandedMode =
                 (ListPreference) findPreference(RECENT_PANEL_EXPANDED_MODE);
         mRecentPanelExpandedMode.setOnPreferenceChangeListener(this);
+    }
+
+    private void updateDisableStockRecents() {
+        boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.USE_SLIM_RECENTS, 0) == 1;
+
+        updateRecentsOptions(!enabled);
+    }
+
+    private void updateRecentsOptions(boolean enabled) {
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        final PreferenceCategory stockRecentsCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_STOCK_RECENTS);
+
+        if (stockRecentsCategory != null) {
+            stockRecentsCategory.setEnabled(enabled);
+        }
+
+        final PreferenceCategory OmniSwitchRecentsCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_OMNI_RECENTS);
+
+        if (OmniSwitchRecentsCategory != null) {
+            OmniSwitchRecentsCategory.setEnabled(enabled);
+        }
     }
 
     private void updateRecentsLocation(int value) {
