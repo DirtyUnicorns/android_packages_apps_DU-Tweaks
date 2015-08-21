@@ -491,6 +491,7 @@
     <string name="status_bar_carrier_color">Carrier label color</string>
 
     <!-- Recent panel -->
+    <string name="use_omniswitch_recents_title">Enable OmniSwitch Recents</string>
     <string name="use_slim_recents_title">Enable Slim Recents</string>
     <string name="show_running_tasks_title">Only show running apps</string>
     <string name="recents_max_apps_title">Max allowed apps</string>
@@ -507,6 +508,9 @@
     <string name="recent_card_text_color_title">Card text color</string>
     <string name="aosp_recents_title">AOSP recents options</string>
     <string name="slim_recents_title">Slim recents options</string>
+    <string name="omniswitch_recents_title">OmniSwitch recents options</string>
+    <string name="launch_omniswitch_title">Launch OmniSwitch</string>
+    <string name="launch_omniswitch_summary">Make sure to turn OmniSwitch on if you\'re using OmniSwitch recents</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>

@@ -19,8 +19,8 @@
         android:title="@string/recents_category">
 
     <PreferenceCategory
-        android:key="aosp_recents"
-        android:title="@string/aosp_recents_title"/>
+        android:key="stock_recents"
+        android:title="@string/aosp_recents_title" >
 
          <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="recents_show_hide_search_bar"
@@ -42,9 +42,32 @@
             android:defaultValue="3"
             android:dependency="show_clear_all_recents" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="omni_recents"
+        android:title="@string/omniswitch_recents_title" >
+
+        <SwitchPreference
+            android:key="recents_use_omniswitch"
+            android:title="@string/use_omniswitch_recents_title"
+            android:defaultValue="false"/>
+
+         <PreferenceScreen
+            android:key="launch_omniswitch"
+            android:title="@string/launch_omniswitch_title"
+            android:summary="@string/launch_omniswitch_summary" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="org.omnirom.omniswitch"
+                android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
+         </PreferenceScreen>
+
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:key="slim_recents"
-        android:title="@string/slim_recents_title"/>
+        android:title="@string/slim_recents_title" >
 
         <SwitchPreference
             android:key="use_slim_recents"
@@ -54,11 +77,13 @@
         <SwitchPreference
             android:key="only_show_running_tasks"
             android:title="@string/show_running_tasks_title"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            android:dependency="use_slim_recents" />
 
         <SlimSeekBarPreference
             android:key="max_apps"
-            android:title="@string/recents_max_apps_title" />
+            android:title="@string/recents_max_apps_title"
+            android:dependency="use_slim_recents" />
 
         <ListPreference
             android:dependency="use_slim_recents"
@@ -85,7 +110,8 @@
 
         <SlimSeekBarPreference
             android:key="recent_panel_scale"
-            android:title="@string/recent_panel_scale_title" />
+            android:title="@string/recent_panel_scale_title"
+            android:dependency="use_slim_recents" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:dependency="use_slim_recents"
@@ -107,5 +133,7 @@
             android:title="@string/recent_card_text_color_title"
             android:defaultValue="0x00ffffff"
             alphaSlider="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
