@@ -87,6 +87,7 @@
     <string name="network_traffic_color_reset">Réinitialiser la couleur</string>
     <string name="network_traffic_color_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="ok">OK</string>
+    <string name="positive_done">Terminé</string>
 
     <!-- 4G LTE switch -->
     <string name="show_fourg_title">Afficher 4G plutôt que LTE</string>
@@ -512,8 +513,12 @@
     <string name="status_bar_carrier_color">Couleur libellé opérateur</string>
 
     <!-- Recent panel -->
+    <string name="use_omniswitch_recents_title">Activer OmniSwitch</string>
+    <string name="omniswitch_recents_title">Applications Récentes OmniSwitch</string>
+    <string name="launch_omniswitch_title">Démarrer OmniSwitch</string>
+    <string name="launch_omniswitch_summary">Il faut absolument avoir activé OmniSwitch pour utiliser Applications Récentes OmniSwitch</string>
     <string name="recent_panel_category">Applications Récentes Slim</string>
-    <string name="use_slim_recents_title">SlimRecents</string>
+    <string name="use_slim_recents_title">Activer SlimRecents</string>
     <string name="show_running_tasks_title">Afficher les applications en cours</string>
     <string name="recents_max_apps_title">Nombre maximal d\'application</string>
     <string name="recent_panel_scale_title">Taille</string>
@@ -654,6 +659,7 @@
     <string name="shortcut_action_notifications">Notifications</string>
     <string name="shortcut_action_menu_legacy">Menu hérité</string>
     <string name="shortcut_action_qs">Volet des paramètres</string>
+    <string name="shortcut_action_assist">Recherche</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="force_expanded_notifications_title">Forcer les Notifications Étendues</string>
@@ -723,6 +729,19 @@
     <string name="missed_call_breath_summary">Faire clignoter la notification d\'appel manqué, dans la barre d\'état</string>
     <string name="voicemail_breath_title">Messagerie Vocale</string>
     <string name="voicemail_breath_summary">Faire clignoter la notification de la messagerie vocale, dans la barre d\'état</string>
+
+    <!-- Navigation Ring Targets -->
+    <string name="navigation_ring_title">Anneau de navigation</string>
+    <string name="navigation_ring_enable_title">Activer</string>
+    <string name="navigation_ring_customize">Raccourcis</string>
+    <string name="navigation_ring_summary">Personnaliser la navigation le comportement des raccourcis</string>
+    <string name="navigation_ring_message">Appuyer sur l\'icône d\'édition pour ouvrir l\'anneau de navigation.\n\nSélectionner un raccourci pour le configurer.\n\nAppuyer sur l\'icône de validation pour enregistrer les modifications, ou réinitialiser les paramètres.</string>
+    <string name="navigation_bar_title">Boutons et disposition</string>
+    <string name="navigation_bar_help_text">Appuyer sur l\'icône d\'édition pour déverrouiller la barre de navigation.\n\nAppuyer sur une icône pour changer le raccourci, ou effectuer un appui prolongé sur une icône pour modifier la disposition.\n\nAppuyer sur Enregistrer pour valider les modifications, ou réinitialiser les paramètres.</string>
+    <string name="navigation_restore_button_text">Réinitialiser</string>
+    <string name="navigation_edit_button_text">Modifier</string>
+    <string name="navigation_save_button_text">Enregistrer</string>
+    <string name="navigation_bar_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
 
     <!-- Navigation bar -->
     <string name="navigation_bar_size_42_dp_default">42 dp (par défaut)</string>
