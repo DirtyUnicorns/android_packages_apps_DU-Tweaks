@@ -380,6 +380,7 @@
     <string name="powermenu_screenrecord">Screen Record</string>
     <string name="powermenu_lockdown">Lock Down</string>
     <string name="powermenu_torch">Torch</string>
+    <string name="powermenu_lockscreen_title">Show power menu lock screen</string>
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear All Recents Button</string>
