@@ -72,4 +72,10 @@
             android:summary="@string/three_finger_gesture_summary"
             android:defaultValue="false" />
 
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
