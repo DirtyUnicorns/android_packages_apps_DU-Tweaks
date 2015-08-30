@@ -215,6 +215,9 @@
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Masqué</string>
 
+    <!-- Battery Bar Category -->
+    <string name="battery_bar_settings">Barre de batterie</string>
+
     <!-- Statusbar DU logo -->
     <string name="status_bar_du_logo_title">DU Logo</string>
     <string name="status_bar_du_logo_summary">Afficher le logo de DU sur la gauche de la barre d\'état</string>
@@ -225,14 +228,17 @@
     <string name="status_bar_ticker_summary">Afficher les détails des notifications dans la barre d\'état</string>
 
     <!-- Battery Bar -->
+    <string name="status_bar_battery_cat_title">Batterie</string>
+    <string name="battery_bar_title">Barre de batterie</string>
     <string name="battery_icon">Style de l\'icône Batterie</string>
     <string name="battery_not_title">Icône de la batterie dans les notifications</string>
     <string name="battery_not_summary">L\'icône de la batterie s\'affiche à la place du bouton Tout fermer</string>
-    <string name="battery_bar_location">Emplacement de la barre de batterie</string>
-    <string name="battery_bar_color">Couleur de la barre de batterie</string>
+    <string name="battery_bar_location">Emplacement</string>
+    <string name="battery_bar_color">Couleur</string>
+    <string name="battery_bar_cat">Style</string>
     <string name="battery_bar">Options de la barre de batterie</string>
     <string name="battery_bar_style_title">Style de la barre de batterie</string>
-    <string name="battery_bar_thickness_title">Épaisseur de la barre de batterie</string>
+    <string name="battery_bar_thickness_title">Épaisseur</string>
     <string name="battery_bar_animate_title">Animation lors de la charge</string>
     <string name="battery_bar_animate_summary">L\'animation de chargement peut entraîner une expérience utilisateur médiocre. Activez selon votre goût.</string>
 
@@ -387,6 +393,7 @@
     <string name="powermenu_screenrecord">Capture vidéo</string>
     <string name="powermenu_lockdown">Verrouiller</string>
     <string name="powermenu_torch">Lampe de poche</string>
+    <string name="powermenu_lockscreen_title">Afficher le menu marche/arrêt sur l\'écran de déverrouillage</string>
 
 
     <!-- Recents panel settings -->
