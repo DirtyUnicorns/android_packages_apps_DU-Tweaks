@@ -29,6 +29,22 @@
     <string name="dirtytweaks_dialog_title">Helfen Sie uns, und wir helfen Ihnen</string>
     <string name="dirtytweaks_dialog_message">Leider können wir nicht zaubern! \n\nWenn Sie einen Fehler finden, eröffnen Sie bitte ein Ticket auf Jira oder wenden Sie sich an einen DU-Entwickler.\n\n1. Logcat oder Last_Kmsg\n2. Kernel und verwendete Mods\n3. Nützliche Informationen\n\nWenn Sie keine Fehler berichten, erwarten Sie bitte keine Dinge die behoben werden können.</string>
     <string name="dirtytweaks_dialog_toast">LESEN SIE ALLES DURCH!</string>
+    
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast-Symbol</string>
+    <string name="toast_icon_summary">Zeige das zugehörige App-Symbol mit dem Toast an.</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors">Sperrbildschirm-Farben</string>
+    <string name="lockscreen_phone_icon_color">Sperrbildschirm Verknüpfung unten links</string>
+    <string name="lockscreen_lock_icon_color">Sperrbildschirm Sperr-Symbol</string>
+    <string name="lockscreen_camera_icon_color">Sperrbildschirm Verknüpfung unten rechts</string>
+    <string name="lockscreen_indication_text_color">Sperrbildschirm Anzeigetext</string>
+    <string name="lockscreen_clock_color">Sperrbildschirm Uhr</string>
+    <string name="lockscreen_clock_date_color">Sperrbildschirm Datum</string>
+    <string name="lockscreen_colors_reset_title">Sperrbildschirm-Farben zurücksetzen</string>
+    <string name="lockscreen_colors_reset_message">Möchten Sie die Farben auf die Standardwerte zurücksetzen?</string>
+    <string name="yes">JA</string>
  
     <!-- Download Center -->
     <string name="download_category">Download-Center</string>
