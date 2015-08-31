@@ -171,6 +171,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_expanded_desktop";
                 stringId = R.string.qs_expanded_desktop_tile;
                 break;
+           case QSConstants.TILE_VOLUME_PANEL:
+                resourceName = "ic_qs_volume_panel";
+                stringId = R.string.qs_volume_panel_tile;
+                break;    
             default:
                 return null;
         }
