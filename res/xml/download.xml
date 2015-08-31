@@ -17,42 +17,18 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/download_category" >
 
-    <PreferenceCategory
-        android:key="google_apps"
-        android:title="@string/gapps_category">
-
-    <Preference
-        android:key="banks_gapps"
-        android:title="@string/banks_gapps_title"
-        android:summary="@string/banks_gapps_summary" />
-
-    <Preference
-        android:key="arm64_gapps"
-        android:title="@string/arm64_gapps_title"
-        android:summary="@string/arm64_gapps_summary" />
-
-    <Preference
-        android:key="pa_gapps"
-        android:title="@string/pa_gapps_title"
-        android:summary="@string/pa_gapps_summary" />
-
-    <Preference
-        android:key="tbo_gapps"
-        android:title="@string/tbo_gapps_title"
-        android:summary="@string/tbo_gapps_summary" />
-
-    <Preference
-        android:key="tbo_clear_gapps"
-        android:title="@string/tbo_clear_gapps_title"
-        android:summary="@string/tbo_clear_gapps_summary" />
+    <ListPreference 
+        android:key="gapps"
+        android:dialogTitle="@string/gapps_title"
+        android:title="@string/gapps_title" 
+        android:summary="@string/gapps_summary"
+        android:entries="@array/gapps_list"
+        android:entryValues="@array/gapps_list_url" />
 
     <Preference
         android:key="gapps_credit"
         android:summary="@string/gapps_credit" 
-        android:icon="@drawable/ic_gapps_thanks"
         android:selectable="false"
         style="?android:attr/listSeparatorTextViewStyle" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>

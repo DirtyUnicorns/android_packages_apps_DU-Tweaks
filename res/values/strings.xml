@@ -48,18 +48,9 @@
 
     <!-- Download Center -->
     <string name="download_category">Download Center</string>
-    <string name="gapps_category">GAPPS Packages</string>
-    <string name="gapps_credit">Special Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
-    <string name="banks_gapps_title">Banks Gapps</string>
-    <string name="banks_gapps_summary">Minimal Gapps package</string>
-    <string name="arm64_gapps_title">Arm64 Gapps</string>
-    <string name="arm64_gapps_summary">Gapps package for Arm64 devices</string>
-    <string name="pa_gapps_title">PA Gapps</string>
-    <string name="pa_gapps_summary">Full stock Gapps package</string>
-    <string name="tbo_gapps_title">DU TBO Gapps</string>
-    <string name="tbo_gapps_summary">Blacked out Gapps package</string>
-    <string name="tbo_clear_gapps_title">DU TBO Clear Gapps</string>
-    <string name="tbo_clear_gapps_summary">Blacked out but clear background Gapps package</string>
+    <string name="gapps_title">Google Apps (GAPPS)</string>
+    <string name="gapps_summary">List of GAPPS packages to flash in recovery</string>
+    <string name="gapps_credit">Although GAPPS packages are not compiled from source and don\'t belong to nobody but Google, we would still like to take the time to thank a few individuals and team that maintain these packages for all of us and just make things easier for everyone.\n\nSpecial Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
 
     <!-- Advanced reboot options -->
     <string name="powermenu_category">Power Menu</string>
