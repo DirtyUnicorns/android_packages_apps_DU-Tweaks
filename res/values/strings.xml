@@ -36,9 +36,9 @@
 
     <!-- Lockscreen Colors -->
     <string name="lockscreen_colors">Lockscreen Colors</string>
-    <string name="lockscreen_phone_icon_color">Lockscreen Bottom Left shortcut</string>
-    <string name="lockscreen_lock_icon_color">Lockscreen Lock icon</string>
-    <string name="lockscreen_camera_icon_color">Lockscreen Bottom Right shortcut</string>
+    <string name="lockscreen_bottom_icons_color">Lockscreen Bottom shortcuts</string>
+    <string name="lockscreen_owner_info_color">Lockscreen Owner info text</string>
+    <string name="lockscreen_alarm_color">Lockscreen Alarm text</string>
     <string name="lockscreen_indication_text_color">Lockscreen Indication text</string>
     <string name="lockscreen_clock_color">Lockscreen Clock</string>
     <string name="lockscreen_clock_date_color">Lockscreen Date</string>
