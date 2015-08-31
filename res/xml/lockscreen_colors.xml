@@ -20,18 +20,18 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
-        android:key="lockscreen_phone_icon_color"
-        android:title="@string/lockscreen_phone_icon_color"
+        android:key="lockscreen_bottom_icons_color"
+        android:title="@string/lockscreen_bottom_icons_color"
         android:defaultValue="0xffffffff" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
-        android:key="lockscreen_lock_icon_color"
-        android:title="@string/lockscreen_lock_icon_color"
+        android:key="lockscreen_owner_info_color"
+        android:title="@string/lockscreen_owner_info_color"
         android:defaultValue="0xffffffff" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
-        android:key="lockscreen_camera_icon_color"
-        android:title="@string/lockscreen_camera_icon_color"
+        android:key="lockscreen_alarm_color"
+        android:title="@string/lockscreen_alarm_color"
         android:defaultValue="0xffffffff" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
