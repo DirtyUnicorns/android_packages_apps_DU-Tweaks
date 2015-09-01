@@ -45,6 +45,12 @@
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenShortcuts" />
 
         <PreferenceScreen
+            android:key="lockscreen_colors"
+            android:title="@string/lockscreen_colors"
+            android:layout="@layout/preference_lockscreencolors"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenColors" />
+
+        <PreferenceScreen
             android:key="lockscreen_wallpaper"
             android:title="@string/lockscreen_wallpaper_title"
             android:layout="@layout/preference_lockscreenwp"
@@ -55,11 +61,5 @@
             android:title="@string/lockscreen_weather_settings"
             android:layout="@layout/preference_lockscreenweather"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenWeather" />
-
-        <PreferenceScreen
-            android:key="lockscreen_colors"
-            android:title="@string/lockscreen_colors"
-            android:layout="@layout/preference_lockscreencolors"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenColors" />
 
 </PreferenceScreen>
