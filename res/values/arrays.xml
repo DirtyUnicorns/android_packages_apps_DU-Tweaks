@@ -891,4 +891,21 @@
         <item>**torch**</item>
     </string-array>
 
+    <!-- Download Center - Gapps -->
+    <string-array name="gapps_list">
+        <item>Banks Gapps</item>
+        <item>Arm64 Gapps</item>
+        <item>PA Gapps</item>
+        <item>DU TBO Gapps</item>
+        <item>DU TBO Gapps (Clear)</item>
+    </string-array>
+
+    <string-array name="gapps_list_url">
+        <item>http://download.dirtyunicorns.com/files/gapps/banks_gapps/gapps-L-4-21-15.zip</item>
+        <item>http://download.dirtyunicorns.com/files/gapps/arm64/du-gapps-20150707-arm64-signed.zip</item>
+        <item>http://download.dirtyunicorns.com/files/gapps/pa_gapps/pa_gapps-stock-5.1-20150404-signed.zip</item>
+        <item>http://downloads.hostingsharedbox.com/spaceman/DU_TBO_Gapps/DU_TBO_GAPPS.zip</item>
+        <item>http://downloads.hostingsharedbox.com/spaceman/DU_TBO_Gapps/DU_TBO_GAPPS_CLEAR.zip</item>
+    </string-array>
+
 </resources>

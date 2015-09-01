@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The Dirty Unicorns Project
+ * Copyright (C) 2015 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +16,11 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.app.admin.DeviceAdminReceiver;
-import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceCategory;
+import android.preference.ListPreference;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SeekBarPreference;
@@ -30,71 +28,41 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 
 public class Download extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    Preference mBanksGapps;
-    Preference mArm64Gapps;
-    Preference mPaGapps;
-    Preference mTboGapps;
-    Preference mTboClearGapps;
+    private static final String GAPPS = "gapps";
+
+    private ListPreference mGapps;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.download);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
-        final ContentResolver resolver = getActivity().getContentResolver();
-
-        mBanksGapps = findPreference("banks_gapps");
-        mArm64Gapps = findPreference("arm64_gapps");
-        mPaGapps = findPreference("pa_gapps");
-        mTboGapps = findPreference("tbo_gapps");
-        mTboClearGapps = findPreference("tbo_clear_gapps");
+        mGapps = (ListPreference) prefSet.findPreference(GAPPS);
+        mGapps.setOnPreferenceChangeListener(this);
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mBanksGapps) {
-            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/banks_gapps/gapps-L-4-21-15.zip");
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
-            return true;
-        } else if (preference == mArm64Gapps) {
-            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/arm64/du-gapps-20150707-arm64-signed.zip");
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
-            return true;
-        } else if (preference == mPaGapps) {
-            Uri uri = Uri.parse("http://download.dirtyunicorns.com/files/gapps/pa_gapps/pa_gapps-stock-5.1-20150404-signed.zip");
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
-            return true;
-        } else if (preference == mTboGapps) {
-            Uri uri = Uri.parse("http://downloads.hostingsharedbox.com/spaceman/DU_TBO_Gapps/DU_TBO_GAPPS.zip");
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
-            return true;
-        } else if (preference == mTboClearGapps) {
-            Uri uri = Uri.parse("http://downloads.hostingsharedbox.com/spaceman/DU_TBO_Gapps/DU_TBO_GAPPS_CLEAR.zip");
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
-            return true;
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (newValue != null) {
+            if (preference != null) {
+                return launchBrowser(newValue.toString());
+            }
         }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+
+        return false;
     }
 
-    public boolean onPreferenceChange(Preference preference, Object value) {
-         return true;
+    private boolean launchBrowser(String urlValue) {
+        if (urlValue != null) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlValue));
+            startActivity(browserIntent);
+			return true;
+        }
+
+        return false;
     }
-
-    public static class DeviceAdminLockscreenReceiver extends DeviceAdminReceiver {}
-
 }
