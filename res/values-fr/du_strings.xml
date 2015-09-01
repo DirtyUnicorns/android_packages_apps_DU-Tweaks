@@ -30,6 +30,22 @@
     <string name="dirtytweaks_dialog_message">Malheureusement, nous ne sommes pas des magiciens !\n\nSi vous trouvez un bogue avec un de ces réglages, ouvrez un ticket d\'incident sur Jira ou contactez un développeur de DU en fournissant les éléments suivant :\n\n1) Journal d\'erreur (Logcat) ou Last_Kmsg\n2) Kernel et Modes installés\n3) Des informations utiles\n\nSans rapport de bogue correcte, ne vous attendez pas à ce que les problèmes soient corrigés. Rappelez-vous, nous ne sommes pas des magiciens, nous pouvons donc manquer des choses.</string>
     <string name="dirtytweaks_dialog_toast">À LIRE ENTIÈREMENT !</string>
 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Icône Toast</string>
+    <string name="toast_icon_summary">Afficher l\'icône de l\'application correspondante dans la notification Toast</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors">Couleurs des raccourcis</string>
+    <string name="lockscreen_phone_icon_color">Raccourci en bas à gauche</string>
+    <string name="lockscreen_lock_icon_color">Icône de verrouillage</string>
+    <string name="lockscreen_camera_icon_color">Raccourci en bas à droite</string>
+    <string name="lockscreen_indication_text_color">Texte d\'information</string>
+    <string name="lockscreen_clock_color">Horloge</string>
+    <string name="lockscreen_clock_date_color">Date</string>
+    <string name="lockscreen_colors_reset_title">Réinitialiser les couleurs</string>
+    <string name="lockscreen_colors_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="yes">OK</string>
+
     <!-- Download Center -->
     <string name="download_category">Centre de Téléchargement</string>
     <string name="gapps_category">GAPPS</string>
