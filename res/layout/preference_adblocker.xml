@@ -30,6 +30,7 @@
         android:layout_height="wrap_content">
         <ImageView
             android:src="@drawable/ic_adblocker"
+            android:tint="@color/icon_tint_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
