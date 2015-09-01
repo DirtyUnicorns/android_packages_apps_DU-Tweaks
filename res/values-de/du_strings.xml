@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2014 The Dirty Unicorns Project
- 
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
- 
+
           http://www.apache.org/licenses/LICENSE-2.0
- 
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
- 
+
     <!-- Tabs -->
     <string name="generalui_category">Benutzeroberfläche</string>
     <string name="statusbar_category">Statusleiste</string>
@@ -24,27 +24,34 @@
     <string name="system_category">System</string>
     <string name="misc_category">Sonstiges</string>
     <string name="animations_category">Animationen</string>
- 
+
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Helfen Sie uns, und wir helfen Ihnen</string>
     <string name="dirtytweaks_dialog_message">Leider können wir nicht zaubern! \n\nWenn Sie einen Fehler finden, eröffnen Sie bitte ein Ticket auf Jira oder wenden Sie sich an einen DU-Entwickler.\n\n1. Logcat oder Last_Kmsg\n2. Kernel und verwendete Mods\n3. Nützliche Informationen\n\nWenn Sie keine Fehler berichten, erwarten Sie bitte keine Dinge die behoben werden können.</string>
     <string name="dirtytweaks_dialog_toast">LESEN SIE ALLES DURCH!</string>
- 
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast-Symbol</string>
+    <string name="toast_icon_summary">Zeige das zugehörige App-Symbol mit dem Toast an.</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors">Sperrbildschirm-Farben</string>
+    <string name="lockscreen_bottom_icons_color">Sperrbildschirm untere Verknüpfungen</string>
+    <string name="lockscreen_owner_info_color">Sperrbildschirm Infotext des Bestitzers</string>
+    <string name="lockscreen_alarm_color">Sperrbildschirm Weckertext</string>
+    <string name="lockscreen_indication_text_color">Sperrbildschirm Anzeigetext</string>
+    <string name="lockscreen_clock_color">Sperrbildschirm Uhr</string>
+    <string name="lockscreen_clock_date_color">Sperrbildschirm Datum</string>
+    <string name="lockscreen_colors_reset_title">Sperrbildschirm-Farben zurücksetzen</string>
+    <string name="lockscreen_colors_reset_message">Auf Standard zurücksetzen?</string>
+    <string name="yes">JA</string>
+
     <!-- Download Center -->
     <string name="download_category">Download-Center</string>
-    <string name="gapps_category">GAPPS-Pakete</string>
-    <string name="gapps_credit">Besonderen Dank an Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
-    <string name="banks_gapps_title">Banks Gapps</string>
-    <string name="banks_gapps_summary">Minimales Gapps-Paket</string>
-    <string name="arm64_gapps_title">Arm64 Gapps</string>
-    <string name="arm64_gapps_summary">Gapps-Paket für Arm64 Geräte</string>
-    <string name="pa_gapps_title">PA Gapps</string>
-    <string name="pa_gapps_summary">Vollständiges Stock Gapps-Paket</string>
-    <string name="tbo_gapps_title">DU TBO Gapps</string>
-    <string name="tbo_gapps_summary">Blacked out Gapps-Paket (dunkles Design)</string>
-    <string name="tbo_clear_gapps_title">DU TBO Clear Gapps</string>
-    <string name="tbo_clear_gapps_summary">Blacked out Gapps-Paket (transparentes Design)</string>
- 
+    <string name="gapps_title">Google Apps (GAPPS)</string>
+    <string name="gapps_summary">Liste der GAPPS-Pakete, die in der Recovery geflasht werden</string>
+    <string name="gapps_credit">Obwohl GAPPS-Pakete nicht aus einer Quelle kompiliert werden und niemandem außer Google gehören, möchten wir uns trotzdem die Zeit nehmen und einigen Menschen und Teams danken, die diese Pakete für uns alle verwalten, um Dinge einfacher zu gestalten\n\nSpeziellen Dank an Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
+
     <!-- Advanced reboot options -->
     <string name="powermenu_category">Power-Menü</string>
     <string name="advanced_reboot_title">Erweiterter Neustart</string>
@@ -53,7 +60,7 @@
     <string name="advanced_reboot_disabled">Deaktivieren</string>
     <string name="advanced_reboot_hide_on_keyguard">Auf Sperrbildschirm verbergen</string>
     <string name="advanced_reboot_show_always">Immer anzeigen</string>
- 
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Farbauswahl</string>
     <string name="press_color_to_apply">Drücken Sie auf die passende Farbe, um diese anzuwenden</string>
@@ -63,7 +70,7 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Auswählen</string>
     <string name="color_default">Standard</string>
- 
+
     <!-- Network traffic -->
     <string name="traffic_category">Netzwerkverkehr-Anzeige</string>
     <string name="network_traffic_title">Netzwerkanzeige</string>
@@ -91,10 +98,10 @@
     <!-- 4G LTE switch -->
     <string name="show_fourg_title">4G anstatt LTE anzeigen</string>
     <string name="show_fourg_summary">Ersetzt LTE Statusleisten-Indikator mit 4G</string>
- 
+
     <!-- OmniSwitch -->
     <string name="omniswitch_category">OmniSwitch</string>
- 
+
     <!-- Heads Up -->
     <string name="category_heads_up">Heads-Up</string>
     <string name="summary_heads_up_enabled">Benachrichtigungen aktiviert</string>
@@ -117,7 +124,7 @@
     <string name="heads_up_time_out_8sec">8 Sekunden</string>
     <string name="heads_up_time_out_10sec">10 Sekunden</string>
     <string name="heads_up_time_out_never">Nie</string>
- 
+
     <!-- HFM Settings -->
     <string name="hfm_disable_ads_title">Werbung (Ads) blockieren</string>
     <string name="hfm_disable_ads_summary">Ändere die Hosts-Datei, um Werbung (Ads) zu blockieren</string>
@@ -128,7 +135,7 @@
     <string name="hfm_dialog_failed">Update fehlgeschlagen. Bitte versuchen Sie es erneut.</string>
     <string name="hfm_dialog_success">/4 Hosts-Quellen erfolgreich aktualisiert</string>
     <string name="hfm_dialog_conn_error">Fehler: Keine Netzwerkverbindung</string>
- 
+
     <!-- Misc Tweaks -->
     <string name="misctweaks_category">Sonstige Funktionen</string>
 
@@ -139,11 +146,11 @@
     <string name="double_tap_to_sleep_summary">Tippen Sie zweimal auf die Statusleiste, um das Gerät in den Ruhezustand zu versetzen.</string>
     <string name="double_tap_sleep_anywhere_title">DT2S auf Sperrbildschirm</string>
     <string name="double_tap_sleep_anywhere_summary">Tippen Sie zweimal auf den Sperrbildschirm, um das Gerät in den Ruhezustand zu versetzen.</string>
- 
+
     <!-- Disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Immersive-Modus Benachrichtigungen deaktivieren</string>
     <string name="disable_immersive_message_summary">Dadurch werden alle Immersive-Modus Benachrichtigungen ausgeblendet</string>
- 
+
     <!-- Hardware Button remapping -->
     <string name="button_keys_title">Tasten</string>
     <string name="keys_bindings_title">Tasten-Aktionen</string>
@@ -224,16 +231,16 @@
     <string name="button_manual_brightness">Helligkeitslevel</string>
     <string name="dialog_manual_brightness_title">Helligkeitslevel</string>
     <string name="unit_sec">sek.</string>
- 
+
     <!-- Status bar brightness control -->
     <string name="status_bar_brightness_control_title">Helligkeitsregelung</string>
     <string name="status_bar_brightness_control_summary">Helligkeit durch Wischen über die Statusleiste ändern</string>
     <string name="status_bar_brightness_control_info">Automatische Helligkeit muss deaktiviert sein</string>
- 
+
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Wecken mit Lautstärketaste</string>
     <string name="volume_rocker_wake_summary">Drücken der Lautstärketaste weckt Ihr Gerät.\nÜberschreibt die Wiedergabesteuerung.</string>
- 
+
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Wiedergabesteuerung</string>
     <string name="volume_rocker_music_controls_summary">Wenn der Bildschirm ausgeschaltet ist, wird durch langes drücken der Lautstärketaste der Musiktitel gewechselt</string>
@@ -241,7 +248,7 @@
     <!-- Volume Key Rotation -->
     <string name="swap_volume_buttons_title">Neu ausrichten</string>
     <string name="swap_volume_buttons_summary">Tausche Lautstärketasten, wenn der Bildschirm gedreht wird.</string>
- 
+
     <!-- Battery options -->
     <string name="battery_category">Akkuanzeige</string>
     <string name="status_bar_battery_percentage_title">Akku-Prozentanzeige</string>
@@ -411,7 +418,7 @@
     <string name="smart_pulldown_dismissable">Keine verwerfbaren Benachrichtigungen</string>
     <string name="smart_pulldown_persistent">Keine dauerhaften Benachrichtigungen</string>
     <string name="smart_pulldown_all">Keine verwerfbaren oder dauerhaften Benachrichtigungen</string>
- 
+
     <!-- powermenu  -->
     <string name="powermenu_screenshot">Bildschirmfoto</string>
     <string name="powermenu_screenshot_delay_title">Bildschirmfoto-Verzögerung festlegen</string>
@@ -423,7 +430,7 @@
     <string name="powermenu_screenrecord">Bildschirmaufnahme</string>
     <string name="powermenu_lockdown">Jetzt sperren</string>
     <string name="powermenu_torch">Taschenlampe</string>
- 
+
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Löschen-Taste im Anwendungsverlauf</string>
     <string name="show_clear_all_recents_button_summary">Löschen-Taste im Anwendungsverlauf anzeigen</string>
@@ -434,7 +441,7 @@
     <string name="recents_clear_all_location_bottom_right">Unten rechts</string>
     <string name="recents_clear_all_location_bottom_left">Unten links</string>
     <string name="recents_clear_all_location_bottom_center">Unten mittig</string>
- 
+
     <!-- Density changer -->
     <string name="dpi">DPI</string>
     <string name="su_dialog_error_title">Warnung</string>
@@ -457,14 +464,14 @@
     <string name="custom_density_dialog_summary">Ändern der Standard LCD-Dichte kann zur Folge haben, dass einige Anwendungen nicht mehr richtig funktionieren. Möglicherweise werden dadurch Apps im Play Store als inkompatibel angezeigt</string>
     <string name="custom_density_dialog_button_got">Einverstanden!</string>
     <string name="custom_density_dialog_button_reboot">Jetzt neustarten</string>
- 
+
     <!-- QS brightness slider -->
     <string name="qs_brightness_slider_title">Helligkeitsregler anzeigen</string>
     <string name="qs_brightness_slider_summary">Zeigt den Helligkeitsregler im Schnelleinstellungsfenster</string>
- 
+
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Zeige vier Kacheln pro Zeile</string>
- 
+
     <!-- Notification drawer -->
     <string name="qs_order_title">Kacheln auswählen und ordnen</string>
     <string name="add_qs">Kachel hinzufügen</string>
@@ -506,11 +513,11 @@
     <string name="torch_screen_off_one_minute">1 Minute</string>
     <string name="torch_screen_off_five_minutes">5 Minuten</string>
     <string name="torch_screen_off_ten_minutes">10 Minuten</string>
- 
+
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">FC-Benachrichtigungen deaktivieren</string>
     <string name="disable_fc_notifications_summary">Alle FC-Benachrichtigungen ausschalten</string>
- 
+
     <string name="lockscreen_settings_title">Sperrbildschirm</string>
     <string name="lockscreen_targets_message">Sperrbildschirm-Verknüpfungen</string>
     <string name="lockscreen_default_target">Standard</string>
@@ -648,8 +655,10 @@
     <string name="reset_message">Alle Einträge auf Standard zurücksetzen?</string>
     <string name="additional_options_title">Zusätzliche Optionen</string>
     <string name="lockscreen_shortcuts_title">Mid-Screen-Verknüpfungen</string>
-    <string name="lockscreen_shorcuts_longpress_title">Lange-Drücken-Verknüpfungen</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Sperrbildschirm-Verknüpfungen durch langes drücken öffnen</string>
+    <string name="lockscreen_shorcuts_launch_type_title">Verknüpfung Klick-Typ</string>
+    <string name="lockscreen_shortcuts_single_tap">Einmal drücken</string>
+    <string name="lockscreen_shortcuts_double_tap">Zweimal drücken</string>
+    <string name="lockscreen_shortcuts_longpress">Lange drücken</string>
     <string name="help">Hilfe</string>
     <string name="shortcut_action_app">Benutzerdefinierte Anwendung</string>
     <string name="shortcut_action_home">Startseite</string>
