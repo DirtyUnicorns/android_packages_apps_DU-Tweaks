@@ -57,7 +57,7 @@ public final class HfmHelpers {
                     && areFilesDifferent(hosts, altHosts)) {
                 copyFiles(altHosts, hosts);
             } else if (Settings.System.getInt(context.getContentResolver(), Settings.System.HFM_DISABLE_ADS, 0) == 0
-                    && areFilesDifferent(hosts, defHosts) && isOurHostsFile()) {
+                    && areFilesDifferent(hosts, defHosts)) {
                 copyFiles(defHosts, hosts);
             }
         }
@@ -79,19 +79,8 @@ public final class HfmHelpers {
                 }
                 return true;
         }
-        return br2.readLine() != null;
-    }
 
-    private static boolean isOurHostsFile() throws IOException {
-        boolean ret = false;
-        File hosts = new File("/etc/hosts");
-        String line;
-        BufferedReader rd1 = getBufferedReader(hosts);
-        line = rd1.readLine();
-        if (line.contains("#DirtyUnicorns")) {
-            ret = true;
-        }
-        return ret;
+        return br2.readLine() != null;
     }
 
     private static BufferedReader getBufferedReader(File file) throws IOException {
