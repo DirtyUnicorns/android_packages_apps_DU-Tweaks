@@ -36,6 +36,9 @@
 
     <!-- Lockscreen Colors -->
     <string name="lockscreen_colors">Couleurs des raccourcis</string>
+    <string name="lockscreen_bottom_icons_color">Raccourci du bas</string>
+    <string name="lockscreen_owner_info_color">Informations du propriétaire</string>
+    <string name="lockscreen_alarm_color">Alarme</string>
     <string name="lockscreen_phone_icon_color">Raccourci en bas à gauche</string>
     <string name="lockscreen_lock_icon_color">Icône de verrouillage</string>
     <string name="lockscreen_camera_icon_color">Raccourci en bas à droite</string>
@@ -48,8 +51,10 @@
 
     <!-- Download Center -->
     <string name="download_category">Centre de Téléchargement</string>
+    <string name="gapps_title">Applications Google (GApps)</string>
+    <string name="gapps_summary">Liste des GApps à installer depuis le recovery</string>
     <string name="gapps_category">GAPPS</string>
-    <string name="gapps_credit">Un grand merci à la Team BlackOut, Michael Banks, TKruzze et M. Wasif Chauhdary</string>
+    <string name="gapps_credit">Bien que les GApps ne soient pas compilées depuis les sources et n\'appartiennent qu\'à Google, nous remercions tout de même les quelques personnes et équipes qui maintiennent ces paquets, et qui nous facilitent grandement les choses.\n\nUn grand merci à la Team BlackOut, Michael Banks, TKruzze et M. Wasif Chauhdary</string>
     <string name="banks_gapps_title">Gapps Banks</string>
     <string name="banks_gapps_summary">Pack Gapps minimal</string>
     <string name="arm64_gapps_title">Gapps Arm64</string>
@@ -500,7 +505,7 @@
     <string name="disable_fc_notifications_summary">Masquer les notifications de plantage des applications</string>
 
     <string name="lockscreen_settings_title">Écran de déverrouillage</string>
-    <string name="lockscreen_targets_message">Raccourcis bas</string>
+    <string name="lockscreen_targets_message">Raccourcis du bas</string>
     <string name="lockscreen_default_target">Configuration d\'origine</string>
     <string name="lockscreen_none_target">Aucun</string>
     <string name="lockscreen_message">Appuyez sur une icône à gauche ou à droite pour attribuer un raccourci sur l\'écran de déverrouillage.</string>
@@ -654,7 +659,11 @@
     <string name="navigation_bar_warning_no_navigation_present">Aucune autre méthode de navigation activée. Désactiver la barre de navigation peut rendre inutilisable l\'appareil. Activer SlimPie à la place\u00A0?</string>
     <string name="reset_message">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="additional_options_title">Options supplémentaires</string>
-    <string name="lockscreen_shortcuts_title">Raccourcis haut</string>
+    <string name="lockscreen_shortcuts_title">Raccourcis du haut</string>
+    <string name="lockscreen_shorcuts_launch_type_title">Ouverture des raccourcis</string>
+    <string name="lockscreen_shortcuts_single_tap">Appui simple</string>
+    <string name="lockscreen_shortcuts_double_tap">Double appui</string>
+    <string name="lockscreen_shortcuts_longpress">Appui prolongé</string>
     <string name="lockscreen_shorcuts_longpress_title">Raccourcis appui prolongé</string>
     <string name="lockscreen_shorcuts_longpress_summary">Ouvrir des raccourcis personnalisés sur l\'écran de déverrouillage par appui prolongé</string>
     <string name="help">Aide</string>
