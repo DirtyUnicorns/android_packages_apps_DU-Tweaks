@@ -519,6 +519,7 @@
     <string name="qs_navbar_tile">Navigation Bar</string>
     <string name="qs_pie_tile">Pie</string>
     <string name="qs_expanded_desktop_tile">Expanded Desktop</string>
+    <string name="qs_tile_volume_panel">Volume panel</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
