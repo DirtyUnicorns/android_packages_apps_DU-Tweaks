@@ -92,7 +92,7 @@ public class LockscreenWeather extends SettingsPreferenceFragment implements
 
         mShowStatusbarWeather = (SwitchPreference) findPreference(PREF_STATUSBAR_WEATHER);
         mShowStatusbarWeather.setChecked(Settings.System.getInt(mResolver,
-                Settings.System.STATUS_BAR_SHOW_WEATHER, 1) == 1);
+                Settings.System.STATUS_BAR_SHOW_WEATHER, 0) == 1);
         mShowStatusbarWeather.setOnPreferenceChangeListener(this);
 
         mTextColor = (ColorPickerPreference) findPreference(PREF_TEXT_COLOR);
