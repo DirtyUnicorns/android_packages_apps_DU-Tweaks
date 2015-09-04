@@ -434,6 +434,10 @@
     <string name="smart_pulldown_persistent">No persistent</string>
     <string name="smart_pulldown_all">No dismissable or persistent</string>
 
+    <!--Time Contexual Header -->
+    <string name="status_bar_custom_header_title">Time Contexual Header</string>
+    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+
     <!-- powermenu  -->
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_screenshot_delay_title">Set screenshot delay</string>
