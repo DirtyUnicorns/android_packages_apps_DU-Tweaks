@@ -139,6 +139,7 @@ public class LockscreenWeather extends SettingsPreferenceFragment implements
             mIconColor.setOnPreferenceChangeListener(this);
         } else {
             removePreference(PREF_SHOW_LOCATION);
+            removePreference(PREF_STATUSBAR_WEATHER);
             removePreference(PREF_SHOW_TIMESTAMP);
             removePreference(PREF_CONDITION_ICON);
             removePreference(PREF_TEXT_COLOR);
