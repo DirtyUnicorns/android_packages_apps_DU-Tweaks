@@ -102,7 +102,7 @@ public class NavBarButtonStyle extends SettingsPreferenceFragment implements
         mNavigationBarButtonColorMode =
             (ListPreference) prefs.findPreference(PREF_NAV_BUTTON_COLOR_MODE);
         int navigationBarButtonColorMode = Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVIGATION_BAR_BUTTON_TINT_MODE, 0);
+                Settings.System.NAVIGATION_BAR_BUTTON_TINT_MODE, 3);
         mNavigationBarButtonColorMode.setValue(String.valueOf(navigationBarButtonColorMode));
         mNavigationBarButtonColorMode.setSummary(mNavigationBarButtonColorMode.getEntry());
         mNavigationBarButtonColorMode.setOnPreferenceChangeListener(this);
@@ -142,7 +142,7 @@ public class NavBarButtonStyle extends SettingsPreferenceFragment implements
                 Settings.System.putInt(getActivity().getContentResolver(),
                         Settings.System.NAVIGATION_BAR_BUTTON_TINT, -2);
                 Settings.System.putInt(getActivity().getContentResolver(),
-                       Settings.System.NAVIGATION_BAR_BUTTON_TINT_MODE, 0);
+                       Settings.System.NAVIGATION_BAR_BUTTON_TINT_MODE, 3);
                 Settings.System.putInt(getActivity().getContentResolver(),
                         Settings.System.NAVIGATION_BAR_GLOW_TINT, -2);
                 refreshSettings();
@@ -194,7 +194,7 @@ public class NavBarButtonStyle extends SettingsPreferenceFragment implements
 
     private void updateColorPreference() {
         int navigationBarButtonColorMode = Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVIGATION_BAR_BUTTON_TINT_MODE, 0);
+                Settings.System.NAVIGATION_BAR_BUTTON_TINT_MODE, 3);
         mNavigationBarButtonColor.setEnabled(navigationBarButtonColorMode != 3);
     }
 }
