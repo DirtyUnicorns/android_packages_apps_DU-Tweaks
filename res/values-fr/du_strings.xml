@@ -403,6 +403,10 @@
     <string name="smart_pulldown_persistent">non-persistantes</string>
     <string name="smart_pulldown_all">non-effaçables et non-persistantes</string>
 
+    <!--Time Contexual Header -->
+    <string name="status_bar_custom_header_title">En-tête contextuel</string>
+    <string name="status_bar_custom_header_summary">Afficher une image d\'arrière-plan sur le volet des notifications</string>
+
     <!-- powermenu  -->
     <string name="powermenu_screenshot">Capture d\'écran</string>
     <string name="powermenu_screenshot_delay_title">Délai de capture d\'écran</string>
@@ -451,6 +455,10 @@
     <string name="custom_density_dialog_button_got">OK\u00A0!</string>
     <string name="custom_density_dialog_button_reboot">Redémarrer</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Retour haptique</string>
+    <string name="quick_settings_vibrate_summary">Vibrer lors des appuis sur les raccourcis</string>
+
     <!-- QS brightness slider -->
     <string name="qs_brightness_slider_title">Curseur de luminosité</string>
     <string name="qs_brightness_slider_summary">Affiche le curseur de luminosité dans le volet des paramètres</string>
@@ -489,6 +497,7 @@
     <string name="qs_title_compass">Boussole</string>
     <string name="qs_navbar_tile">Barre de navigation</string>
     <string name="qs_expanded_desktop_tile">Bureau étendu</string>
+    <string name="qs_tile_volume_panel">Volet du volume</string>
 
     <!-- Disable torch when screen goes off -->
     <string name="disable_torch_screen_off_title">Désactiver la lampe de poche lors de l\'extinction de l\'écran</string>
@@ -557,7 +566,7 @@
     <string name="recent_panel_expanded_mode_never">Jamais</string>
     <string name="recent_panel_show_topmost_title">Application en cours</string>
     <string name="recent_panel_show_topmost_summary">Afficher l\'application en cours</string>
-    <string name="recent_panel_bg_color_title">Couleur du panneau</string>
+    <string name="recent_panel_bg_color_title">Couleur du volet</string>
     <string name="recent_card_bg_color_title">Couleur du fond</string>
     <string name="recent_card_text_color_title">Couleur du texte</string>
     <string name="aosp_recents_title">Applications Récentes AOSP</string>
@@ -565,7 +574,7 @@
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Panneau à gauche</string>
-    <string name="recent_panel_lefty_mode_summary">Affiche le panneau sur le coté gauche de l\'écran</string>
+    <string name="recent_panel_lefty_mode_summary">Affiche le volet sur le coté gauche de l\'écran</string>
 
     <!-- Location QS advanced options -->
     <string name="qs_advanced_location_title">Paramètres avancés de localisation</string>
@@ -766,7 +775,7 @@
     <string name="navigation_ring_title">Anneau de navigation</string>
     <string name="navigation_ring_enable_title">Activer</string>
     <string name="navigation_ring_customize">Raccourcis</string>
-    <string name="navigation_ring_summary">Personnaliser la navigation le comportement des raccourcis</string>
+    <string name="navigation_ring_summary">Définir les raccourcis de la barre de navigation</string>
     <string name="navigation_ring_message">Appuyer sur l\'icône d\'édition pour ouvrir l\'anneau de navigation.\n\nSélectionner un raccourci pour le configurer.\n\nAppuyer sur l\'icône de validation pour enregistrer les modifications, ou réinitialiser les paramètres.</string>
     <string name="navigation_bar_title">Boutons et disposition</string>
     <string name="navigation_bar_help_text">Appuyer sur l\'icône d\'édition pour déverrouiller la barre de navigation.\n\nAppuyer sur une icône pour changer le raccourci, ou effectuer un appui prolongé sur une icône pour modifier la disposition.\n\nAppuyer sur Enregistrer pour valider les modifications, ou réinitialiser les paramètres.</string>
