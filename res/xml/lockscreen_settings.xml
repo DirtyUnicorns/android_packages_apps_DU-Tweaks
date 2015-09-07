@@ -26,6 +26,11 @@
             android:summary="@string/double_tap_sleep_anywhere_summary"
             android:defaultValue="true" />
 
+        <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+            android:key="long_press_lock_icon_torch"
+            android:title="@string/longpress_lock_icon_torch_title"
+            android:summary="@string/longpress_lock_icon_torch_summary" />
+
         <PreferenceScreen
                  android:key="lockscreen_app_shortcuts"
                  android:fragment="com.dirtyunicorns.dutweaks.dslv.ActionListViewSettings"
