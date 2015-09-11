@@ -35,13 +35,13 @@
     <string name="toast_icon_summary">Zeige das zugehörige App-Symbol mit dem Toast an.</string>
 
     <!-- Lockscreen Colors -->
-    <string name="lockscreen_colors">Sperrbildschirm-Farben</string>
-    <string name="lockscreen_bottom_icons_color">Sperrbildschirm untere Verknüpfungen</string>
-    <string name="lockscreen_owner_info_color">Sperrbildschirm Infotext des Bestitzers</string>
-    <string name="lockscreen_alarm_color">Sperrbildschirm Weckertext</string>
-    <string name="lockscreen_indication_text_color">Sperrbildschirm Anzeigetext</string>
-    <string name="lockscreen_clock_color">Sperrbildschirm Uhr</string>
-    <string name="lockscreen_clock_date_color">Sperrbildschirm Datum</string>
+    <string name="lockscreen_colors">Farben</string>
+    <string name="lockscreen_bottom_icons_color">Untere Verknüpfungen</string>
+    <string name="lockscreen_owner_info_color">Infotext des Bestitzers</string>
+    <string name="lockscreen_alarm_color">Weckertext</string>
+    <string name="lockscreen_indication_text_color">Anzeigetext</string>
+    <string name="lockscreen_clock_color">Uhr</string>
+    <string name="lockscreen_clock_date_color">Datum</string>
     <string name="lockscreen_colors_reset_title">Sperrbildschirm-Farben zurücksetzen</string>
     <string name="lockscreen_colors_reset_message">Auf Standard zurücksetzen?</string>
     <string name="yes">JA</string>
@@ -72,12 +72,12 @@
     <string name="color_default">Standard</string>
 
     <!-- Network traffic -->
-    <string name="traffic_category">Netzwerkverkehr-Anzeige</string>
+    <string name="traffic_category">Netzwerkverkehr</string>
     <string name="network_traffic_title">Netzwerkanzeige</string>
     <string name="show_network_traffic_state">Netzwerkverkehr in der Statusleiste anzeigen</string>
     <string name="show_network_traffic_unit">Anzeigeeinheit</string>
     <string name="show_network_traffic_frequency">Aktualisierungsintervall</string>
-    <string name="show_network_traffic_disable">Deaktivieren</string>
+    <string name="show_network_traffic_disable">Deaktiviert</string>
     <string name="show_network_traffic_up">Ausgehend</string>
     <string name="show_network_traffic_down">Eingehend</string>
     <string name="show_network_traffic_all">Ausgehend und Eingehend</string>
@@ -90,7 +90,7 @@
     <string name="network_traffic_autohide">Automatisch verbergen</string>
     <string name="network_traffic_autohide_summary">Netzwerkanzeige bei Inaktivität verbergen</string>
     <string name="network_traffic_autohide_threshold">Inaktivitätsschwelle</string>
-    <string name="network_traffic_color_style">Farbstil</string>
+    <string name="network_traffic_color_style">Farbe</string>
     <string name="network_traffic_color_reset">Farbe zurücksetzen</string>
     <string name="network_traffic_color_reset_message">Netzwerkverkehrsfarbe auf die Voreinstellungen zurücksetzen?</string>
     <string name="ok">OK</string>
@@ -250,9 +250,9 @@
     <string name="swap_volume_buttons_summary">Tausche Lautstärketasten, wenn der Bildschirm gedreht wird.</string>
 
     <!-- Battery options -->
-    <string name="battery_category">Akkuanzeige</string>
-    <string name="status_bar_battery_percentage_title">Akku-Prozentanzeige</string>
-    <string name="status_bar_battery_percentage_dialog_title">Akku-Prozentanzeige</string>
+    <string name="battery_category">Akku</string>
+    <string name="status_bar_battery_percentage_title">Prozentanzeige</string>
+    <string name="status_bar_battery_percentage_dialog_title">Prozentanzeige</string>
     <string name="status_bar_battery_percentage_default">Versteckt (Standard)</string>
     <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
     <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
@@ -263,6 +263,20 @@
     <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Versteckt</string>
+
+    <!-- Battery Bar Category -->
+    <string name="battery_bar_settings">Akkuleiste</string>
+
+    <!-- Battery Bar -->
+    <string name="status_bar_battery_cat_title">Akku</string>
+    <string name="battery_bar_title">Akkuleiste</string>
+    <string name="battery_bar">Position</string>
+    <string name="battery_bar_color">Farbe</string>
+    <string name="battery_bar_cat">Stil</string>
+    <string name="battery_bar_style_title">Ausrichtung</string>
+    <string name="battery_bar_thickness_title">Dicke</string>
+    <string name="battery_bar_animate_title">Ladeanimation</string>
+    <string name="battery_bar_animate_summary">Die Ladeanimation kann zu einer schlechten Nutzererfahrung führen. Nach eigenem Ermessen aktivieren!</string>
 
     <!-- Statusbar DU logo -->
     <string name="status_bar_du_logo_title">DU-Logo</string>
@@ -401,9 +415,9 @@
 
     <!-- Circle app bar -->
     <string name="category_app_circle_bar_title">App-Launcher</string>
-    <string name="app_circle_bar_title">App Circle Bar</string>
+    <string name="app_circle_bar_title">App Circle Leiste</string>
     <string name="app_circle_bar_included_apps_title">Enthaltene Apps</string>
-    <string name="app_circle_bar_included_apps_summary">Apps werden in der App Circle Bar angezeigt</string>
+    <string name="app_circle_bar_included_apps_summary">Apps werden in der App Circle Leiste angezeigt</string>
     <string name="trigger_width_title">Breite des auszulösenden Bereichs</string>
     <string name="trigger_width_summary">Breite des auszulösenden Bereichs anpassen</string>
     <string name="trigger_top_title">Auslöseposition</string>
@@ -419,6 +433,10 @@
     <string name="smart_pulldown_persistent">Keine dauerhaften Benachrichtigungen</string>
     <string name="smart_pulldown_all">Keine verwerfbaren oder dauerhaften Benachrichtigungen</string>
 
+    <!--Time Contexual Header -->
+    <string name="status_bar_custom_header_title">Zeitabhängige Kopfzeile</string>
+    <string name="status_bar_custom_header_summary">Bild in Kopfzeile des Benachrichtigungsfelds aktivieren</string>
+
     <!-- powermenu  -->
     <string name="powermenu_screenshot">Bildschirmfoto</string>
     <string name="powermenu_screenshot_delay_title">Bildschirmfoto-Verzögerung festlegen</string>
@@ -430,6 +448,7 @@
     <string name="powermenu_screenrecord">Bildschirmaufnahme</string>
     <string name="powermenu_lockdown">Jetzt sperren</string>
     <string name="powermenu_torch">Taschenlampe</string>
+    <string name="powermenu_lockscreen_title">Power-Menü auf Sperrbildschirm</string>
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Löschen-Taste im Anwendungsverlauf</string>
@@ -464,6 +483,10 @@
     <string name="custom_density_dialog_summary">Ändern der Standard LCD-Dichte kann zur Folge haben, dass einige Anwendungen nicht mehr richtig funktionieren. Möglicherweise werden dadurch Apps im Play Store als inkompatibel angezeigt</string>
     <string name="custom_density_dialog_button_got">Einverstanden!</string>
     <string name="custom_density_dialog_button_reboot">Jetzt neustarten</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Bei Berührung vibrieren</string>
+    <string name="quick_settings_vibrate_summary">Bei Berührung der Kacheln vibrieren</string>
 
     <!-- QS brightness slider -->
     <string name="qs_brightness_slider_title">Helligkeitsregler anzeigen</string>
@@ -519,7 +542,7 @@
     <string name="disable_fc_notifications_summary">Alle FC-Benachrichtigungen ausschalten</string>
 
     <string name="lockscreen_settings_title">Sperrbildschirm</string>
-    <string name="lockscreen_targets_message">Sperrbildschirm-Verknüpfungen</string>
+    <string name="lockscreen_targets_message">Verknüpfungen</string>
     <string name="lockscreen_default_target">Standard</string>
     <string name="lockscreen_none_target">Keine</string>
     <string name="lockscreen_message">Tippen Sie auf das linke oder rechte Symbol, um eine Sperrbildschirm-Verknüpfung zu erstellen.</string>
@@ -539,7 +562,7 @@
     <string name="custom_carrier_label_title">Benutzerdefiniertes Label</string>
     <string name="custom_carrier_label_explain">Geben Sie bitte in ein neues Label ein. Leer lassen, um Standard-Label zu erhalten</string>
     <string name="custom_carrier_label_notset">Benutzerdefiniertes Label zur Zeit nicht gesetzt</string>
-    <string name="status_bar_carrier_color">Lable-Farbe</string>
+    <string name="status_bar_carrier_color">Farbe</string>
 
     <!-- Recent panel -->
     <string name="use_omniswitch_recents_title">OmniSwitch-Recents aktivieren</string>
@@ -701,17 +724,17 @@
 
     <!-- System animations -->
     <string name="system_animation_title">System-Animationen</string>
-    <string name="activity_open_title">Aktivität öffnen Animation</string>
-    <string name="activity_close_title">Aktivität schließen Animation</string>
-    <string name="task_open_title">Aufgabe öffnen Animation</string>
-    <string name="task_close_title">Aufgabe schließen Animation</string>
-    <string name="task_move_to_front_title">Nach vorne verschieben Animation</string>
-    <string name="task_move_to_back_title">Nach hinten verschieben Animation</string>
-    <string name="wallpaper_open_title">Wallpaper öffnen Animation</string>
-    <string name="wallpaper_close_title">Wallpaper schließen Animation</string>
-    <string name="wallpaper_intra_open_title">Wallpaper innerhalb öffnen Animation</string>
-    <string name="wallpaper_intra_close_title">Wallpaper innerhalb schließen Animation</string>
-    <string name="task_open_behind_title">Aufgabe im Hintergrund öffnen Animation</string>
+    <string name="activity_open_title">Aktivität öffnen</string>
+    <string name="activity_close_title">Aktivität schließen</string>
+    <string name="task_open_title">Aufgabe öffnen</string>
+    <string name="task_close_title">Aufgabe schließen</string>
+    <string name="task_move_to_front_title">Nach vorne verschieben</string>
+    <string name="task_move_to_back_title">Nach hinten verschieben</string>
+    <string name="wallpaper_open_title">Wallpaper öffnen</string>
+    <string name="wallpaper_close_title">Wallpaper schließen</string>
+    <string name="wallpaper_intra_open_title">Wallpaper innerhalb öffnen</string>
+    <string name="wallpaper_intra_close_title">Wallpaper innerhalb schließen</string>
+    <string name="task_open_behind_title">Aufgabe im Hintergrund öffnen</string>
     <string name="animation_duration_title">Animationsdauer</string>
     <string name="animation_duration_default">Standard</string>
 
@@ -880,8 +903,8 @@
     <string name="expanded_desktop_title"> Erweiterter Desktop Optionen</string>
 
     <!-- Scrolling Cache -->
-    <string name="pref_scrollingcache_title">Scrolling-Cache</string>
-    <string name="pref_scrollingcache_summary">Scrolling-Cache kann die Scroll-Leistung verbessern, auf Kosten des Arbeitsspeichers.</string>
+    <string name="pref_scrollingcache_title">Scrolling Cache</string>
+    <string name="pref_scrollingcache_summary">Scrolling Cache kann die Scroll-Leistung verbessern, auf Kosten des Arbeitsspeichers.</string>
     <string name="pref_scrollingcache_force_enable">Aktivierung erzwingen</string>
     <string name="pref_scrollingcache_default_enable">Standard aktiviert</string>
     <string name="pref_scrollingcache_default_disable">Standard deaktiviert</string>
@@ -909,7 +932,7 @@
 
    <!-- Lock screen wallpaper -->
    <string name="lockscreen_category_title">Sperrbildschirm</string>
-   <string name="lockscreen_wallpaper_title">Sperrbildschirm-Wallpaper</string>
+   <string name="lockscreen_wallpaper_title">Wallpaper</string>
    <string name="lockscreen_wallpaper_set_title">Neues Wallpaper setzen</string>
    <string name="lockscreen_wallpaper_clear_title">Auf Standard zurücksetzen</string>
    <string name="reset_lockscreen_wallpaper">Standard-Sperrbildschirm wiederhergestellt</string>
@@ -917,5 +940,9 @@
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">3-Finger-Geste</string>
     <string name="three_finger_gesture_summary">Bildschirmfoto durch Geste mit 3 Fingern aufnehmen</string>
+
+    <!-- Long press on lock screen lock icon to launch torch-->
+    <string name="longpress_lock_icon_torch_title">Taschenlampe mit Sperrsymbol aktivieren</string>
+    <string name="longpress_lock_icon_torch_summary">Taschenlampe wird durch langes Drücken des Sperrsymbols akiviert.Funktioniert nicht, wenn Smart Lock aktiviert ist.</string>
 
 </resources>
