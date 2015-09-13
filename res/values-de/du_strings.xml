@@ -37,7 +37,7 @@
     <!-- Lockscreen Colors -->
     <string name="lockscreen_colors">Farben</string>
     <string name="lockscreen_bottom_icons_color">Untere Verknüpfungen</string>
-    <string name="lockscreen_owner_info_color">Infotext des Bestitzers</string>
+    <string name="lockscreen_owner_info_color">Infotext des Besitzers</string>
     <string name="lockscreen_alarm_color">Weckertext</string>
     <string name="lockscreen_indication_text_color">Anzeigetext</string>
     <string name="lockscreen_clock_color">Uhr</string>
@@ -415,9 +415,9 @@
 
     <!-- Circle app bar -->
     <string name="category_app_circle_bar_title">App-Launcher</string>
-    <string name="app_circle_bar_title">App Circle Leiste</string>
+    <string name="app_circle_bar_title">App-Kreisleiste</string>
     <string name="app_circle_bar_included_apps_title">Enthaltene Apps</string>
-    <string name="app_circle_bar_included_apps_summary">Apps werden in der App Circle Leiste angezeigt</string>
+    <string name="app_circle_bar_included_apps_summary">Apps werden in der App-Kreisleiste angezeigt</string>
     <string name="trigger_width_title">Breite des auszulösenden Bereichs</string>
     <string name="trigger_width_summary">Breite des auszulösenden Bereichs anpassen</string>
     <string name="trigger_top_title">Auslöseposition</string>
@@ -434,8 +434,8 @@
     <string name="smart_pulldown_all">Keine verwerfbaren oder dauerhaften Benachrichtigungen</string>
 
     <!--Time Contexual Header -->
-    <string name="status_bar_custom_header_title">Zeitabhängige Kopfzeile</string>
-    <string name="status_bar_custom_header_summary">Bild in Kopfzeile des Benachrichtigungsfelds aktivieren</string>
+    <string name="status_bar_custom_header_title">Kopfzeilen-Bild</string>
+    <string name="status_bar_custom_header_summary">Bild in Kopfzeile des Benachrichtigungsfelds aktivieren. Variiert je nach Uhrzeit.</string>
 
     <!-- powermenu  -->
     <string name="powermenu_screenshot">Bildschirmfoto</string>
@@ -516,7 +516,7 @@
     <string name="qs_battery_saver_tile">Energiesparmodus</string>
     <string name="qs_brightness_tile">Helligkeit</string>
     <string name="qs_navbar_tile">Navigationsleiste</string>
-    <string name="qs_appcirclebar_tile">App Circle Bar</string>
+    <string name="qs_appcirclebar_tile">App-Kreisleiste</string>
     <string name="qs_ambient_display_tile">Ambient Display</string>
     <string name="qs_pie_tile">Pie</string>
     <string name="qs_screenrecord_tile">Bildschirmaufnahme</string>
@@ -903,8 +903,8 @@
     <string name="expanded_desktop_title"> Erweiterter Desktop Optionen</string>
 
     <!-- Scrolling Cache -->
-    <string name="pref_scrollingcache_title">Scrolling Cache</string>
-    <string name="pref_scrollingcache_summary">Scrolling Cache kann die Scroll-Leistung verbessern, auf Kosten des Arbeitsspeichers.</string>
+    <string name="pref_scrollingcache_title">Scrolling-Cache</string>
+    <string name="pref_scrollingcache_summary">Scrolling-Cache kann die Scroll-Leistung verbessern, auf Kosten des Arbeitsspeichers.</string>
     <string name="pref_scrollingcache_force_enable">Aktivierung erzwingen</string>
     <string name="pref_scrollingcache_default_enable">Standard aktiviert</string>
     <string name="pref_scrollingcache_default_disable">Standard deaktiviert</string>
@@ -930,19 +930,19 @@
     <string name="sizer_message_noselect">Keine Auswahl</string>
     <string name="system_app_remover">App-Entferner</string>
 
-   <!-- Lock screen wallpaper -->
-   <string name="lockscreen_category_title">Sperrbildschirm</string>
-   <string name="lockscreen_wallpaper_title">Wallpaper</string>
-   <string name="lockscreen_wallpaper_set_title">Neues Wallpaper setzen</string>
-   <string name="lockscreen_wallpaper_clear_title">Auf Standard zurücksetzen</string>
-   <string name="reset_lockscreen_wallpaper">Standard-Sperrbildschirm wiederhergestellt</string>
+    <!-- Lock screen wallpaper -->
+    <string name="lockscreen_category_title">Sperrbildschirm</string>
+    <string name="lockscreen_wallpaper_title">Wallpaper</string>
+    <string name="lockscreen_wallpaper_set_title">Neues Wallpaper setzen</string>
+    <string name="lockscreen_wallpaper_clear_title">Auf Standard zurücksetzen</string>
+    <string name="reset_lockscreen_wallpaper">Standard-Sperrbildschirm wiederhergestellt</string>
 
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">3-Finger-Geste</string>
     <string name="three_finger_gesture_summary">Bildschirmfoto durch Geste mit 3 Fingern aufnehmen</string>
 
     <!-- Long press on lock screen lock icon to launch torch-->
-    <string name="longpress_lock_icon_torch_title">Taschenlampe mit Sperrsymbol aktivieren</string>
-    <string name="longpress_lock_icon_torch_summary">Taschenlampe wird durch langes Drücken des Sperrsymbols akiviert.Funktioniert nicht, wenn Smart Lock aktiviert ist.</string>
+    <string name="longpress_lock_icon_torch_title">Sperrsymbol Taschenlampe</string>
+    <string name="longpress_lock_icon_torch_summary">Langes Drücken des Sperrsymbols aktiviert Taschenlampe. Funktioniert nicht, wenn Smart Lock aktiviert ist.</string>
 
 </resources>
