@@ -18,32 +18,23 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- SlimSizer -->
+    <string-array name="slimsizer_profile_array">
+        <item>Profil laden</item>
+        <item>Profil speichern</item>
+    </string-array>
+
     <!-- Battery Bar -->
     <string-array name="battery_bar_entries">
-        <item>maskiert</item>
+        <item>Versteckt</item>
         <item>Statusbar</item>
         <item>Über der Navigationsleiste</item>
         <item>Unterhalb der Navigationsleiste</item>
     </string-array>
 
     <string-array name="battery_bar_style_entries">
-        <item>normal</item>
-        <item>mittig</item>
-    </string-array>
-
-    <string-array name="battery_bar_thickness_entries">
-        <item>1 dp</item>
-        <item>2 dp</item>
-        <item>3 dp</item>
-        <item>4 dp</item>
-    </string-array>
-
-    <string-array name="lcd_density_stock_entries">
-        <item>160 -- mdpi</item>
-        <item>240 -- hdpi</item>
-        <item>320 -- xhdpi</item>
-        <item>480 -- xxhdpi</item>
-        <item>560 -- xxxhdpi</item>
+        <item>Normal</item>
+        <item>Zentriert</item>
     </string-array>
 
 </resources>
