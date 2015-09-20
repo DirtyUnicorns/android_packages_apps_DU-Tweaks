@@ -935,4 +935,8 @@
     <string name="three_finger_gesture">Geste avec trois doigts</string>
     <string name="three_finger_gesture_summary">Capture d\'écran par balayage de l\'écran avec trois doigts</string>
 
+    <!-- Long press on lock screen lock icon to launch torch-->
+    <string name="longpress_lock_icon_torch_title">Icône de verr. pour la torche</string>
+    <string name="longpress_lock_icon_torch_summary">Déclencher la lampe torche par un appui prolongé sur l\'icône de verrouillage\n\nCette option ne fonctionnera pas si \"Smart Lock\" et \"Explorer au toucher\" sont activés</string>
+
 </resources>
