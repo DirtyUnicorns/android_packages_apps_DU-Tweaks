@@ -526,6 +526,7 @@
     <string name="qs_title_compass">Kompass</string>
     <string name="qs_navbar_tile">Navigationsleiste</string>
     <string name="qs_expanded_desktop_tile">Erweiterter Desktop</string>
+    <string name="qs_tile_themes">Designs</string>
 
     <!-- Disable torch when screen goes off -->
     <string name="disable_torch_screen_off_title">Taschenlampe im Sperrbildschirm deaktivieren</string>
