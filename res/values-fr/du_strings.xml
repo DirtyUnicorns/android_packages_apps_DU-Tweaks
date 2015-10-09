@@ -498,6 +498,7 @@
     <string name="qs_navbar_tile">Barre de navigation</string>
     <string name="qs_expanded_desktop_tile">Bureau étendu</string>
     <string name="qs_tile_volume_panel">Volet du volume</string>
+    <string name="qs_tile_themes">Thèmes</string>
 
     <!-- Disable torch when screen goes off -->
     <string name="disable_torch_screen_off_title">Désactiver la lampe de poche lors de l\'extinction de l\'écran</string>
