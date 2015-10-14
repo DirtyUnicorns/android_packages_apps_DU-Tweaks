@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The Dirty Unicorns project
+ * Copyright (C) 2014-2015 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,16 +40,12 @@ import java.util.regex.Pattern;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
 
 public class GeneralUI extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "GeneralUI";
-
-    private static final String KEY_WEATHER_SETTINGS = "weather_settings";
-    private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
-
-    private PreferenceScreen mWeatherSettings;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -60,12 +56,12 @@ public class GeneralUI extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.generalui);
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        mWeatherSettings = (PreferenceScreen) findPreference(KEY_WEATHER_SETTINGS);
-        if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
-            prefSet.removePreference(mWeatherSettings);
-        }
-
         ContentResolver resolver = getActivity().getContentResolver();
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DIRTYTWEAKS;
     }
 
     @Override

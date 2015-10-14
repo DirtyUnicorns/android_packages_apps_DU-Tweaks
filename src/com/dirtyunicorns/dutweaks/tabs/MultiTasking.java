@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The Dirty Unicorns project
+ * Copyright (C) 2014-2015 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,16 +40,12 @@ import java.util.regex.Pattern;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
 
 public class MultiTasking extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "MultiTasking";
-
-    private static final String KEY_OMNISWITCH = "omniswitch";
-    private static final String KEY_OMNI_SWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
-
-    private PreferenceScreen mOmniSwitch;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -60,12 +56,12 @@ public class MultiTasking extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.multitasking);
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        mOmniSwitch = (PreferenceScreen) findPreference(KEY_OMNISWITCH);
-        if (!Utils.isPackageInstalled(getActivity(), KEY_OMNI_SWITCH_PACKAGE_NAME)) {
-            prefSet.removePreference(mOmniSwitch);
-        }
-
         ContentResolver resolver = getActivity().getContentResolver();
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DIRTYTWEAKS;
     }
 
     @Override

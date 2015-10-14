@@ -40,6 +40,7 @@ import java.util.regex.Pattern;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
 
 public class Navigation extends SettingsPreferenceFragment implements
@@ -56,6 +57,11 @@ public class Navigation extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DIRTYTWEAKS;
     }
 
     @Override

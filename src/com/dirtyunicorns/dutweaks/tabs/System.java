@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The Dirty Unicorns project
+ * Copyright (C) 2014-2015 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,6 +40,7 @@ import java.util.regex.Pattern;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
 
 public class System extends SettingsPreferenceFragment implements
@@ -56,6 +57,11 @@ public class System extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DIRTYTWEAKS;
     }
 
     @Override
