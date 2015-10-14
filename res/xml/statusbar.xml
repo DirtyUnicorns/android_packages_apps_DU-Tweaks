@@ -21,5 +21,15 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <PreferenceScreen
+            android:key="systemuituner"
+            android:title="@string/systemuituner"
+            android:layout="@layout/preference_systemui_tuner" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity" />
+         </PreferenceScreen>
+
 </PreferenceScreen>
 
