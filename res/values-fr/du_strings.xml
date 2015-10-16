@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+     French translation for Dirty Unicorns
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Tabs -->
+    <string name="generalui_category">Interface</string>
+    <string name="statusbar_category">Barre d\'état</string>
+    <string name="navigation_category">Barre de navigation</string>
+    <string name="multitasking_category">Multitâche</string>
+    <string name="system_category">Système</string>
+    <string name="misc_category">Réglages divers</string>
+
+    <!-- Dialog -->
+    <string name="dirtytweaks_dialog_title">Aidez-Nous, Aidez-Vous !</string>
+    <string name="dirtytweaks_dialog_message">Malheureusement, nous ne sommes pas des magiciens !\n\nSi vous trouvez un bogue avec un de ces réglages, ouvrez un ticket d\'incident sur Jira ou contactez un développeur de DU en fournissant les éléments suivant :\n\n1) Journal d\'erreur (Logcat ou Last_Kmsg)\n2) Kernel et Modes installés\n3) Des informations utiles\n\nSans rapport de bogue correcte, ne vous attendez pas à ce que les problèmes soient corrigés. Rappelez-vous, nous ne sommes pas des magiciens, nous pouvons donc passer à côté de certaines choses.</string>
+    <string name="dirtytweaks_dialog_toast">À LIRE ENTIÈREMENT !</string>
+    <!-- optimisation de l\'interface (?) -->
+    <string name="systemuituner">System UI Tuner</string>
+
+</resources>
