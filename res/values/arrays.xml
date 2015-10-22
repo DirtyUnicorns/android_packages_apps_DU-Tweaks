@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014 The Dirty Unicorns Project
+
+  Parts Copyright (C) 2012-2013 The CyanogenMod Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -14,17 +16,15 @@
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/misc_category"
-    android:layout="@layout/tab"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <!-- Download Center - Gapps -->
+    <string-array name="gapps_list">
+        <item>Banks Gapps</item>
+    </string-array>
 
-         <Preference
-            android:key="download_center"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Download"
-            android:layout="@layout/preference_download"
-            android:title="@string/download_category" />
+    <string-array name="gapps_list_url">
+        <item>http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</item>
+    </string-array>
 
-</PreferenceScreen>
+</resources>
