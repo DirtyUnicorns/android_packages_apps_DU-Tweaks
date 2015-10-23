@@ -47,7 +47,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.android.internal.util.slim.DeviceUtils;
+import com.android.internal.util.du.DeviceUtils;
 import com.dirtyunicorns.dutweaks.tabs.GeneralUI;
 import com.dirtyunicorns.dutweaks.tabs.StatusBar;
 import com.dirtyunicorns.dutweaks.tabs.Navigation;
