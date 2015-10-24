@@ -17,13 +17,49 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/powermenu_category" >
 
-    <ListPreference
-        android:key="advanced_reboot"
-        android:title="@string/advanced_reboot_title"
-        android:dialogTitle="@string/advanced_reboot_dialog_title"
-        android:entries="@array/advanced_reboot_entries"
-        android:entryValues="@array/advanced_reboot_values"
-        android:summary="@string/advanced_reboot_summary"
-        android:persistent="false" />
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_power"
+            android:title="@string/powermenu_power"
+            android:defaultValue="true" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_reboot"
+            android:title="@string/powermenu_reboot"
+            android:defaultValue="true" />
+
+         <ListPreference
+            android:key="advanced_reboot"
+            android:title="@string/advanced_reboot_title"
+            android:dialogTitle="@string/advanced_reboot_dialog_title"
+            android:entries="@array/advanced_reboot_entries"
+            android:entryValues="@array/advanced_reboot_values"
+            android:summary="@string/advanced_reboot_summary"
+            android:dependency="powermenu_reboot"
+            android:persistent="false" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_screenshot"
+            android:title="@string/powermenu_screenshot"
+            android:defaultValue="true" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_airplane"
+            android:title="@string/powermenu_airplane"
+            android:defaultValue="true" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_settings"
+            android:title="@string/powermenu_settings"
+            android:defaultValue="false" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_lockdown"
+            android:title="@string/powermenu_lockdown"
+            android:defaultValue="false" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_soundpanel"
+            android:title="@string/powermenu_soundpanel"
+            android:defaultValue="true" />
 
 </PreferenceScreen>
