@@ -54,7 +54,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
 
         mAdvancedReboot = (ListPreference) findPreference(KEY_ADVANCED_REBOOT);
         mAdvancedReboot.setValue(String.valueOf(Settings.Secure.getInt(
-                getContentResolver(), Settings.Secure.ADVANCED_REBOOT, 0)));
+                getContentResolver(), Settings.Secure.ADVANCED_REBOOT, 1)));
         mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
         mAdvancedReboot.setOnPreferenceChangeListener(this);
     }
