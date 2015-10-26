@@ -22,10 +22,22 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <Preference
+            android:key="animations"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Animations"
+            android:layout="@layout/preference_animations"
+            android:title="@string/animations_category" />
+
+         <Preference
             android:key="powermenu"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.PowerMenu"
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
+
+         <Preference
+            android:key="recents"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Recents"
+            android:layout="@layout/preference_recents"
+            android:title="@string/recents_category" />
 
 </PreferenceScreen>
 

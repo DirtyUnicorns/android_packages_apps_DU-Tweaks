@@ -21,5 +21,11 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <Preference
+            android:key="misctweaks"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.MiscTweaks"
+            android:layout="@layout/preference_misctweaks"
+            android:title="@string/misctweaks_category" />
+
 </PreferenceScreen>
 

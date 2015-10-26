@@ -21,9 +21,15 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <Preference
+            android:key="battery"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Battery"
+            android:layout="@layout/preference_battery"
+            android:title="@string/battery_category" />
+
          <PreferenceScreen
             android:key="systemui_tuner_qs"
-            android:title="@string/systemui_tuner_qs_title"
+            android:title="@string/quicksettings_category"
             android:layout="@layout/preference_systemui_tuner_qs" >
             <intent
                 android:action="android.intent.action.MAIN"
@@ -33,13 +39,19 @@
 
          <PreferenceScreen
             android:key="systemui_tuner_statusbar"
-            android:title="@string/systemui_tuner_statusbar_title"
+            android:title="@string/statusbar_items_category"
             android:layout="@layout/preference_systemui_tuner_statusbaritems" >
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.TunerActivity" />
          </PreferenceScreen>
+
+         <Preference
+            android:key="statusbar_notifications"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
+            android:layout="@layout/preference_statusbar_notifications"
+            android:title="@string/statusbar_notifications_category" />
 
 </PreferenceScreen>
 
