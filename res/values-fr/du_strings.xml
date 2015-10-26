@@ -34,4 +34,10 @@
     <!-- optimisation de l\'interface (?) -->
     <string name="systemuituner">System UI Tuner</string>
 
+    <!-- Download Center -->
+    <string name="download_category">Centre de Téléchargement</string>
+    <string name="gapps_title">Applications Google (GApps)</string>
+    <string name="gapps_summary">Liste des GApps à installer depuis le recovery</string>
+    <string name="gapps_credit">Bien que les GApps ne soient pas compilées depuis les sources et n\'appartiennent qu\'à Google, nous remercions tout de même les quelques personnes et équipes qui maintiennent ces paquets, et qui nous facilitent grandement les choses.\n\nUn grand merci à la BlackOut, Michael Banks, TKruzze et M. Wasif Chauhdary</string>
+
 </resources>
