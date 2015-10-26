@@ -22,9 +22,19 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <PreferenceScreen
-            android:key="systemuituner"
-            android:title="@string/systemuituner"
-            android:layout="@layout/preference_systemui_tuner" >
+            android:key="systemui_tuner_qs"
+            android:title="@string/systemui_tuner_qs_title"
+            android:layout="@layout/preference_systemui_tuner_qs" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.QsActivity" />
+         </PreferenceScreen>
+
+         <PreferenceScreen
+            android:key="systemui_tuner_statusbar"
+            android:title="@string/systemui_tuner_statusbar_title"
+            android:layout="@layout/preference_systemui_tuner_statusbaritems" >
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
