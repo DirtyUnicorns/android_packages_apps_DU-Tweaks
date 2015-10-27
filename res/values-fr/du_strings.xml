@@ -35,9 +35,36 @@
     <string name="systemuituner">System UI Tuner</string>
 
     <!-- Download Center -->
-    <string name="download_category">Centre de Téléchargement</string>
     <string name="gapps_title">Applications Google (GApps)</string>
     <string name="gapps_summary">Liste des GApps à installer depuis le recovery</string>
     <string name="gapps_credit">Bien que les GApps ne soient pas compilées depuis les sources et n\'appartiennent qu\'à Google, nous remercions tout de même les quelques personnes et équipes qui maintiennent ces paquets, et qui nous facilitent grandement les choses.\n\nUn grand merci à la BlackOut, Michael Banks, TKruzze et M. Wasif Chauhdary</string>
+
+    <!-- Power Menu -->
+    <string name="powermenu_screenshot">Capture d\'écran</string>
+    <string name="powermenu_power">Éteindre</string>
+    <string name="powermenu_reboot">Redémarrer</string>
+    <string name="powermenu_airplane">Mode Avion</string>
+    <string name="powermenu_settings">Paramètres</string>
+    <string name="powermenu_lockdown">Verrouiller</string>
+    <string name="powermenu_soundpanel">Panneau de volume</string>
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">Redémarrage avancé</string>
+    <string name="advanced_reboot_summary">Permet de redémarrer dans le recovery et le bootloader</string>
+    <string name="advanced_reboot_dialog_title">Menu de redémarrage avancé</string>
+    <string name="advanced_reboot_disabled">Désactiver</string>
+    <string name="advanced_reboot_hide_on_keyguard">Masquer sur l\'écran de déverrouillage</string>
+    <string name="advanced_reboot_show_always">Toujours afficher</string>
+
+    <!-- Categories -->
+    <string name="animations_category">Animations</string>
+    <string name="battery_category">Batterie</string>
+    <string name="download_category">Centre de téléchargement</string>
+    <string name="misctweaks_category">Réglages divers</string>
+    <string name="powermenu_category">Menu marche/arrêt</string>
+    <string name="quicksettings_category">Volet des paramètres</string>
+    <string name="recents_category">Applications récentes</string>
+    <string name="statusbar_items_category">Éléments</string>
+    <string name="statusbar_notifications_category">Notifications</string>
+    <string name="wakelockblocker_category">Wakelock Blocker</string>
 
 </resources>
