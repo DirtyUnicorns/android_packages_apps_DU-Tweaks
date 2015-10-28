@@ -29,6 +29,7 @@
     <string name="animations_category">Animations</string>
     <string name="battery_category">Battery</string>
     <string name="download_category">Download Center</string>
+    <string name="expanded_desktop_category">Expanded Desktop</string>
     <string name="misctweaks_category">Misc. Tweaks</string>
     <string name="powermenu_category">Power Menu</string>
     <string name="quicksettings_category">Quick Settings</string>
@@ -85,5 +86,15 @@
     <string name="wakelock_blocker_reload">Reload</string>
     <string name="wakelock_blocker_warning_title">Proceed with caution</string>
     <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+
+    <!-- Expanded desktop -->
+    <string name="expanded_hide_nothing">Hide nothing</string>
+    <string name="expanded_hide_status">Hide status bar</string>
+    <string name="expanded_hide_navigation">Hide navigation bar</string>
+    <string name="expanded_hide_both">Hide both</string>
+    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set "Enabled for all" to the off position</string>
+    <string name="expanded_desktop_state">Expanded state</string>
+    <string name="expanded_enabled_for_all">Enabled for all</string>
+    <string name="expanded_user_configurable">User configurable</string>
 
 </resources>

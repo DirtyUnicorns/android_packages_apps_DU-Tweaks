@@ -16,6 +16,8 @@
  -->
 
 <resources>
-    <dimen name="header_icon_width">28dp</dimen>
-</resources>
 
+    <dimen name="header_icon_width">28dp</dimen>
+    <dimen name="fab_line_width">2dp</dimen>
+
+</resources>
