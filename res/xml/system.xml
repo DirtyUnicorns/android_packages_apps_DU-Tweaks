@@ -22,6 +22,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <Preference
+            android:key="expanded_desktop"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop"
+            android:layout="@layout/preference_expanded_desktop"
+            android:title="@string/expanded_desktop_category" />
+
+         <Preference
             android:key="powermenu"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.PowerMenu"
             android:layout="@layout/preference_powermenu"
