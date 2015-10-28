@@ -27,15 +27,11 @@
             android:layout="@layout/preference_battery"
             android:title="@string/battery_category" />
 
-         <PreferenceScreen
-            android:key="systemui_tuner_qs"
-            android:title="@string/quicksettings_category"
-            android:layout="@layout/preference_systemui_tuner_qs" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.QsActivity" />
-         </PreferenceScreen>
+         <Preference
+            android:key="quicksettings"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.QuickSettings"
+            android:layout="@layout/preference_systemui_tuner_qs"
+            android:title="@string/quicksettings_category" />
 
          <PreferenceScreen
             android:key="systemui_tuner_statusbar"
