@@ -25,6 +25,11 @@
     </com.android.settings.applications.LayoutPreference>
 
     <com.android.settings.applications.LayoutPreference
+        android:key="expanded_desktop_category"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.ExpandedDesktop"
+        android:layout="@layout/expanded_desktop" />
+
+    <com.android.settings.applications.LayoutPreference
         android:key="miscellaneous_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.Miscellaneous"
         android:layout="@layout/miscellaneous" />

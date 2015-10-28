@@ -36,9 +36,11 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class System extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+    private static final String EXPANDED_DESKTOP_CATEGORY = "expanded_desktop_category";
     private static final String MISC_CATEGORY = "miscellaneous_category";
     private static final String POWERMENU_CATEGORY = "powermenu_category";
 
+    private LayoutPreference mExpandedDesktop;
     private LayoutPreference mMisc;
     private LayoutPreference mPowerMenu;
 
@@ -52,6 +54,9 @@ public class System extends SettingsPreferenceFragment implements Preference.OnP
         if (!getResources().getBoolean(R.bool.has_device_extras)) {
             getPreferenceScreen().removePreference(DeviceExtras);
         }
+
+        mExpandedDesktop = (LayoutPreference) findPreference(EXPANDED_DESKTOP_CATEGORY);
+        mExpandedDesktop.setTitle(R.string.expanded_desktop_title);
 
         mMisc = (LayoutPreference) findPreference(MISC_CATEGORY);
         mMisc.setTitle(R.string.miscellaneous_title);
