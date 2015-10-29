@@ -34,10 +34,25 @@
     <!-- optimisation de l\'interface (?) -->
     <string name="systemuituner">System UI Tuner</string>
 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Icône Toast</string>
+    <string name="toast_icon_summary">Afficher l\'icône de l\'application correspondante dans la notification Toast</string>
+
     <!-- Download Center -->
     <string name="gapps_title">Applications Google (GApps)</string>
     <string name="gapps_summary">Liste des GApps à installer depuis le recovery</string>
     <string name="gapps_credit">Bien que les GApps ne soient pas compilées depuis les sources et n\'appartiennent qu\'à Google, nous remercions tout de même les quelques personnes et équipes qui maintiennent ces paquets, et qui nous facilitent grandement les choses.\n\nUn grand merci à la BlackOut, Michael Banks, TKruzze et M. Wasif Chauhdary</string>
+
+    <!-- Status bar quick qs pulldown -->
+    <string name="title_quick_pulldown">Accès rapide</string>
+    <string name="summary_quick_pulldown">Côté %1$s de la barre d\'état tirée vers le bas</string>
+    <string name="quick_pulldown_off">Désactivé</string>
+    <string name="quick_pulldown_left">gauche</string>
+    <string name="quick_pulldown_right">droit</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_title">Curseur de luminosité</string>
+    <string name="qs_brightness_slider_summary">Afficher le curseur de luminosité dans le volet des paramètres</string>
 
     <!-- Power Menu -->
     <string name="powermenu_screenshot">Capture d\'écran</string>
@@ -59,12 +74,31 @@
     <string name="animations_category">Animations</string>
     <string name="battery_category">Batterie</string>
     <string name="download_category">Centre de téléchargement</string>
+    <string name="expanded_desktop_category">Bureau étendu</string>
     <string name="misctweaks_category">Réglages divers</string>
     <string name="powermenu_category">Menu marche/arrêt</string>
     <string name="quicksettings_category">Volet des paramètres</string>
     <string name="recents_category">Applications récentes</string>
     <string name="statusbar_items_category">Éléments</string>
     <string name="statusbar_notifications_category">Notifications</string>
-    <string name="wakelockblocker_category">Wakelock Blocker</string>
+    <string name="wakelockblocker_category">Bloqueur de Wakelock</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_summary">Bloquer les Wakelocks système</string>
+    <string name="wakelock_blocker_save">Appliquer</string>
+    <string name="wakelock_list_header">Wakelocks disponibles</string>
+    <string name="wakelock_blocker_reload">Actualiser</string>
+    <string name="wakelock_blocker_warning_title">Continuez avec précaution</string>
+    <string name="wakelock_blocker_warning">Le blocage de Wakelocks peut potentiellement causer des instabilités, des bogues, des pertes de données</string>
+
+    <!-- Expanded desktop -->
+    <string name="expanded_hide_nothing">Ne rien masquer</string>
+    <string name="expanded_hide_status">Masquer la barre d\'état</string>
+    <string name="expanded_hide_navigation">Masquer la barre de navigation</string>
+    <string name="expanded_hide_both">Masquer les deux</string>
+    <string name="expanded_nothing_to_show">Pour ajouter une configuration du bureau étendu par application, dans \"État\" désactiver \"Activé pour tout\".</string>
+    <string name="expanded_desktop_state">État</string>
+    <string name="expanded_enabled_for_all">Activé pour tout</string>
+    <string name="expanded_user_configurable">Configurable</string>
 
 </resources>
