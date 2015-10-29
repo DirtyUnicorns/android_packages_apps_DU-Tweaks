@@ -36,8 +36,10 @@ import com.android.settings.Utils;
 public class StatusbarNotifications extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
+    private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
 
     private SwitchPreference mEnableNC;
+    private SwitchPreference mForceExpanded;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,13 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         int EnableNC = Settings.System.getInt(getContentResolver(),
                 STATUS_BAR_NOTIF_COUNT, 0);
         mEnableNC.setChecked(EnableNC != 0);
+
+        mForceExpanded = (SwitchPreference) findPreference(FORCE_EXPANDED_NOTIFICATIONS);
+        mForceExpanded.setOnPreferenceChangeListener(this);
+        int ForceExpanded = Settings.System.getInt(getContentResolver(),
+                FORCE_EXPANDED_NOTIFICATIONS, 0);
+        mForceExpanded.setChecked(ForceExpanded != 0);
+
     }
 
     @Override
@@ -70,6 +79,11 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         if  (preference == mEnableNC) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), STATUS_BAR_NOTIF_COUNT,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mForceExpanded) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), FORCE_EXPANDED_NOTIFICATIONS,
                     value ? 1 : 0);
             return true;
         }
