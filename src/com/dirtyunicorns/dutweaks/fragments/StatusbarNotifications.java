@@ -37,9 +37,11 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
 
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
+    private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
 
     private SwitchPreference mEnableNC;
     private SwitchPreference mForceExpanded;
+    private SwitchPreference mDisableIM;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,6 +63,12 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         int ForceExpanded = Settings.System.getInt(getContentResolver(),
                 FORCE_EXPANDED_NOTIFICATIONS, 0);
         mForceExpanded.setChecked(ForceExpanded != 0);
+
+        mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
+        mDisableIM.setOnPreferenceChangeListener(this);
+        int DisableIM = Settings.System.getInt(getContentResolver(),
+                DISABLE_IMMERSIVE_MESSAGE, 0);
+        mDisableIM.setChecked(DisableIM != 0);
 
     }
 
@@ -84,6 +92,11 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         } else if (preference == mForceExpanded) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), FORCE_EXPANDED_NOTIFICATIONS,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mDisableIM) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), DISABLE_IMMERSIVE_MESSAGE,
                     value ? 1 : 0);
             return true;
         }
