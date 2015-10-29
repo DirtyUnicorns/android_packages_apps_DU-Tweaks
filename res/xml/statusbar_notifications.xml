@@ -17,5 +17,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/statusbar_notifications_category" >
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary" />
+
 </PreferenceScreen>
 

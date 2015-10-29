@@ -35,13 +35,21 @@ import com.android.settings.Utils;
 
 public class StatusbarNotifications extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
+
+    private SwitchPreference mForceExpanded;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.statusbar_notifications);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         final ContentResolver resolver = getActivity().getContentResolver();
+
+	mForceExpanded = (SwitchPreference) findPreference(FORCE_EXPANDED_NOTIFICATIONS);
+        mForceExpanded.setChecked((Settings.System.getInt(resolver, Settings.System.FORCE_EXPANDED_NOTIFICATIONS, 0) == 1));
     }
 
     @Override
@@ -56,6 +64,12 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if  (preference == mForceExpanded) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FORCE_EXPANDED_NOTIFICATIONS, checked ? 1:0);
+            return true;
+        }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
