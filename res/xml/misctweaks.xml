@@ -29,5 +29,11 @@
             android:summary="@string/disable_fc_notifications_summary"
             android:defaultValue="false" />
 
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/double_tap_to_sleep_title"
+            android:summary="@string/double_tap_to_sleep_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
 

@@ -109,4 +109,8 @@
     <string name="disable_fc_notifications_title">Diable FC Notifications</string>
     <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
 
+    <!-- Double tap to sleep -->
+    <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
+    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
+
 </resources>
