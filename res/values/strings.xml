@@ -112,5 +112,7 @@
     <!-- Double tap to sleep -->
     <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
     <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
+    <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
 
 </resources>
