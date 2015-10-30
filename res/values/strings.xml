@@ -114,5 +114,7 @@
     <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
     <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_to_sleep_lockscreen_title">DT2S on Lockscreen</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
 
 </resources>
