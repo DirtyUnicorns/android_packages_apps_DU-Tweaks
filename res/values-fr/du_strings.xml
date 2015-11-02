@@ -96,9 +96,29 @@
     <string name="expanded_hide_status">Masquer la barre d\'état</string>
     <string name="expanded_hide_navigation">Masquer la barre de navigation</string>
     <string name="expanded_hide_both">Masquer les deux</string>
-    <string name="expanded_nothing_to_show">Pour ajouter une configuration du bureau étendu par application, dans \"État\" désactiver \"Activé pour tout\".</string>
+    <string name="expanded_nothing_to_show">Pour ajouter une configuration du bureau étendu par application, désactiver \"Activé pour tout\".</string>
     <string name="expanded_desktop_state">État</string>
     <string name="expanded_enabled_for_all">Activé pour tout</string>
     <string name="expanded_user_configurable">Configurable</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Forcer les notifications étendues</string>
+    <string name="force_expanded_notifications_summary">Disponible uniquement pour les applications prenant en charge les notifications étendues</string>
+
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Messages immersifs</string>
+    <string name="disable_immersive_message_summary">Masquer tous les messages immersifs</string>
+
+    <!-- Disabling FC notifications -->
+    <string name="disable_fc_notifications_title">Notifications \"force close\"</string>
+    <string name="disable_fc_notifications_summary">Masquer les notifications de plantage des applications</string>
+
+    <!-- Double tap to sleep -->
+    <string name="double_tap_to_sleep_title">Veille par double appui</string>
+    <string name="double_tap_to_sleep_summary">Éteindre l\'écran par double appui sur la barre d\'état</string>
+    <string name="double_tap_sleep_nav_bar_title">Veille par double appui</string>
+    <string name="double_tap_sleep_nav_bar_summary">Éteindre l\'écran par double appui sur la barre de navigation</string>
+    <string name="double_tap_to_sleep_lockscreen_title">Veille par double appui</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Éteindre l\'écran par double appui sur le tiers supérieur ou sur la zone de raccourci inférieure de l\'écran de déverrouillage</string>
 
 </resources>
