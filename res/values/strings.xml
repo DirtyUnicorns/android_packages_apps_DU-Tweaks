@@ -121,6 +121,10 @@
     <string name="flashlight_notification_title">Flashlight notification</string>
     <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
 
+    <!-- Volume key controls media stream -->
+    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+
     <!-- Volume Key Rotation -->
     <string name="swap_volume_buttons_title">Reorient</string>
     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
