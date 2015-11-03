@@ -121,4 +121,20 @@
     <string name="double_tap_to_sleep_lockscreen_title">Veille par double appui</string>
     <string name="double_tap_to_sleep_lockscreen_summary">Éteindre l\'écran par double appui sur le tiers supérieur ou sur la zone de raccourci inférieure de l\'écran de déverrouillage</string>
 
+    <!-- Battery options -->
+    <string name="battery_title">Batterie</string>
+    <string name="battery2_summary">Icônes et pourcentage</string>
+    <string name="status_bar_battery_style_title">Style de la batterie</string>
+    <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
+    <string name="status_bar_battery_style_icon_landscape">Icône paysage</string>
+    <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_dotted_circle">Cercle en pointillés</string>
+    <string name="status_bar_battery_style_text">Texte</string>
+    <string name="status_bar_battery_style_hidden">Masqué</string>
+    <string name="status_bar_battery_percentage_title">Afficher le pourcentage restant de batterie</string>
+    <string name="status_bar_battery_percentage_dialog_title">Pourcentage</string>
+    <string name="status_bar_battery_percentage_default">Masqué (Par défaut)</string>
+    <string name="status_bar_battery_percentage_text_inside">Dans l\'icône</string>
+    <string name="status_bar_battery_percentage_text_next">Après l\'icône</string>
+
 </resources>
