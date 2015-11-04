@@ -28,6 +28,12 @@
             android:title="@string/battery_category" />
 
          <Preference
+            android:key="statusbarclock"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarClock"
+            android:layout="@layout/preference_statusbarclock"
+            android:title="@string/status_bar_clock" />
+
+         <Preference
             android:key="quicksettings"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.QuickSettings"
             android:layout="@layout/preference_systemui_tuner_qs"
