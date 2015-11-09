@@ -46,10 +46,10 @@
             android:title="@string/wakelockblocker_category" />
 
          <PreferenceScreen
-            android:key="hfm_settings"
-            android:title="@string/hfm_pref_screen_title"
+            android:key="adblocker"
+            android:title="@string/adblocker_title"
             android:layout="@layout/preference_adblocker"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.HfmSettings" />
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.AdBlocker_Settings" />
 
 </PreferenceScreen>
 

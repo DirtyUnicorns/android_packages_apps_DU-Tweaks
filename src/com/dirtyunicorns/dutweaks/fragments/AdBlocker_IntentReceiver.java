@@ -21,15 +21,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.preference.PreferenceManager;
 
-public class IntentReceiver extends BroadcastReceiver {
+public class AdBlocker_IntentReceiver extends BroadcastReceiver {
 
-    private static final String TAG = "HFMBootReceiver";
+    private static final String TAG = "BootReceiver";
 
     public static final String ACTION_RUN_BOOTCOMPLETE = "android.intent.action.BOOT_COMPLETED";
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Intent serv = new Intent(context, CheckHosts.class);
+        Intent serv = new Intent(context, AdBlocker_CheckHosts.class);
         serv.setAction(intent.getAction());
         serv.putExtras(intent);
         context.startService(serv);

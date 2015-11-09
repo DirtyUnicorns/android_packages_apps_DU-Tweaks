@@ -21,13 +21,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
-import android.util.Log;
 
-public class CheckHosts extends Service {
+public class AdBlocker_CheckHosts extends Service {
 
-    private static final String TAG = "HFMCheckHosts";
+    private static final String TAG = "AdBlocker_CheckHosts";
 
-    public static final String HFM_DISABLE_ADS = "hfm_disable_ads";
+    public static final String DISABLE_ADS = "disable_ads";
 
     private Context mContext;
 
@@ -43,7 +42,6 @@ public class CheckHosts extends Service {
 
     @Override
     public void onStart(Intent intent, int startId) {
-        Log.i(TAG, "Started check");
-        HfmHelpers.checkStatus(mContext);
+        AdBlocker_Helpers.checkStatus(mContext);
     }
 }
