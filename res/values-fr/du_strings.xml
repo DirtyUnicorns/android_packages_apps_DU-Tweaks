@@ -23,7 +23,7 @@
     <string name="generalui_category">Interface</string>
     <string name="statusbar_category">Barre d\'état</string>
     <string name="navigation_category">Barre de navigation</string>
-    <string name="multitasking_category">Multitâche</string>
+    <string name="multitasking_category">Multi-tâche</string>
     <string name="system_category">Système</string>
     <string name="misc_category">Réglages divers</string>
 
@@ -82,6 +82,9 @@
     <string name="statusbar_items_category">Éléments</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="wakelockblocker_category">Bloqueur de Wakelock</string>
+    <string name="geatures_category">Gestes</string>
+    <string name="multitasking_category">Multi-tâche</string>
+    <string name="multiwindow_category">Multi-fenêtre</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_summary">Bloquer les Wakelocks système</string>
@@ -164,13 +167,17 @@
     <string name="enable_clock_weekday_summary">Jour de la semaine abrégé avant l\'heure</string>
     <string name="right_clock">À droite</string>
     <string name="center_clock">Au centre</string>
+    <string name="left_clock">À gauche</string>
     <string name="dont_show">Masqué</string>
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Afficher une date personnalisée avant l\'heure</string>
     <string name="clock_date_style">Style de la date</string>
+    <string name="clock_date_position">Position de la date</string>
     <string name="clock_date_format">Format de la date</string>
     <string name="clock_date_string_edittext_title">Doit être au format de date Java par ex : MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Saisir le code</string>
+    <string name="clock_date_right">À droite de l\'heure</string>
+    <string name="clock_date_left">À gauche de l\'heure</string>
     <string name="am_pm_clock_normal">Police de taille normale</string>
     <string name="am_pm_clock_small">Police de petite taille</string>
     <string name="am_pm_clock_none">Ne pas afficher</string>
@@ -194,5 +201,10 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Définir</string>
     <string name="color_default">Par défaut</string>
+
+    <!-- AOSP MultiWindow -->
+    <string name="enable_multi_window">Mode multi-fenêtre</string>
+    <string name="enable_multi_window_summary">Affichage simultané de plusieurs activités à l\'écran.</string>
+    <string name="warning_multi_window_text">AVERTISSEMENT : Il s\'agit d\'une fonctionnalité hautement expérimentale qui autorise l\'affichage simultané de plusieurs activités à l\'écran via l\'interface utilisateur Applications récentes. Certaines applications peuvent planter ou ne pas fonctionner correctement lorsqu\'elles sont utilisées avec cette fonctionnalité.</string>
 
 </resources>
