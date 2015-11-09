@@ -37,6 +37,9 @@
     <string name="statusbar_items_category">Statusbar Items</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="wakelockblocker_category">Wakelock Blocker</string>
+    <string name="geatures_category">Gestures</string>
+    <string name="multitasking_category">Multi-Tasking</string>
+    <string name="multiwindow_category">Multi-Window</string>
 
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
@@ -195,5 +198,10 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+
+    <!-- AOSP MultiWindow -->
+    <string name="enable_multi_window">Multi-window mode</string>
+    <string name="enable_multi_window_summary">Multiple activities on screen at the same time.</string>
+    <string name="warning_multi_window_text">WARNING: This is a highly experimental feature that allows multiple activities on-screen at the same time through the Recent apps UI. Some apps may crash or not function correctly when used with this feature.</string>
 
 </resources>

@@ -15,13 +15,17 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/multitasking_category" >
+    android:title="@string/multiwindow_category" >
 
          <Preference
-            android:key="multitwindow"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.MultiWindow"
-            android:layout="@layout/preference_multiwindow"
-            android:title="@string/multiwindow_category" />
+            android:key="warning_multi_window"
+            android:summary="@string/warning_multi_window_text"
+            android:selectable="false"/>
+
+        <SwitchPreference
+            android:key="enable_multi_window"
+            android:title="@string/enable_multi_window"
+            android:summary="@string/enable_multi_window_summary"/>
 
 </PreferenceScreen>
 
