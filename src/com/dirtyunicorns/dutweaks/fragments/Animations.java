@@ -21,7 +21,9 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.SwitchPreference;
@@ -30,6 +32,8 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import android.view.View;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -39,6 +43,7 @@ import com.dirtyunicorns.dutweaks.fragments.AnimBarPreference;
 import com.android.internal.util.du.AwesomeAnimationHelper;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Animations extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -54,6 +59,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     private static final String WALLPAPER_CLOSE = "wallpaper_close";
     private static final String WALLPAPER_INTRA_OPEN = "wallpaper_intra_open";
     private static final String WALLPAPER_INTRA_CLOSE = "wallpaper_intra_close";
+    private static final String KEY_TOAST_ANIMATION = "toast_animation";
 
     ListPreference mActivityOpenPref;
     ListPreference mActivityClosePref;
@@ -65,6 +71,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     ListPreference mWallpaperClose;
     ListPreference mWallpaperIntraOpen;
     ListPreference mWallpaperIntraClose;
+    ListPreference mToastAnimation;
     AnimBarPreference mAnimationDuration;
     SwitchPreference mAnimNoOverride;
 
@@ -89,6 +96,13 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
             mAnimationsStrings[i] = AwesomeAnimationHelper.getProperName(mContext, mAnimations[i]);
             mAnimationsNum[i] = String.valueOf(mAnimations[i]);
         }
+
+        mToastAnimation = (ListPreference) findPreference(KEY_TOAST_ANIMATION);
+        mToastAnimation.setSummary(mToastAnimation.getEntry());
+        int CurrentToastAnimation = Settings.System.getInt(getContentResolver(), Settings.System.TOAST_ANIMATION, 1);
+        mToastAnimation.setValueIndex(CurrentToastAnimation); //set to index of default value
+        mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
+        mToastAnimation.setOnPreferenceChangeListener(this);
 
         //mAnimNoOverride = (SwitchPreference) findPreference(ANIMATION_NO_OVERRIDE);
         //mAnimNoOverride.setChecked(Settings.System.getBoolean(mContentRes,
@@ -185,6 +199,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
         boolean result = false;
         if (preference == mActivityOpenPref) {
             int val = Integer.parseInt((String) newValue);
@@ -230,6 +245,12 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
             int val = Integer.parseInt((String) newValue);
             Settings.System.putInt(mContentRes,
                     Settings.System.ANIMATION_CONTROLS_DURATION, val);
+        } else if (preference == mToastAnimation) {
+            int index = mToastAnimation.findIndexOfValue((String) newValue);
+            Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) newValue);
+            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+            Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
+            return true;
         }
         preference.setSummary(getProperSummary(preference));
         return result;

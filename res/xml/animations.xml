@@ -66,4 +66,11 @@
             android:key="animation_duration"
             android:title="@string/animation_duration_title" />
 
+        <ListPreference
+            android:key="toast_animation"
+            android:title="@string/toast_animation_title"
+            android:entries="@array/toast_animation_entries"
+            android:entryValues="@array/toast_animation_values"
+            android:persistent="false" />
+
 </PreferenceScreen>
