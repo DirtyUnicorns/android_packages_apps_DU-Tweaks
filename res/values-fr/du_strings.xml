@@ -85,6 +85,8 @@
     <string name="geatures_category">Gestes</string>
     <string name="multitasking_category">Multi-tâche</string>
     <string name="multiwindow_category">Multi-fenêtre</string>
+    <string name="listview_animations_category">Animations des listes</string>
+    <string name="system_animations_category">Animations système</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_summary">Bloquer les Wakelocks système</string>
@@ -200,5 +202,64 @@
     <string name="enable_multi_window">Mode multi-fenêtre</string>
     <string name="enable_multi_window_summary">Affichage simultané de plusieurs activités à l\'écran.</string>
     <string name="warning_multi_window_text">AVERTISSEMENT : Il s\'agit d\'une fonctionnalité hautement expérimentale qui autorise l\'affichage simultané de plusieurs activités à l\'écran via l\'interface utilisateur Applications récentes. Certaines applications peuvent planter ou ne pas fonctionner correctement lorsqu\'elles sont utilisées avec cette fonctionnalité.</string>
+
+    <!-- AOKP custom system animations -->
+    <string name="activity_open_title">Activité : animation d\'ouverture</string>
+    <string name="activity_close_title">Activité : animation de fermeture</string>
+    <string name="task_open_title">Tâche : animation d\'ouverture</string>
+    <string name="task_close_title">Tâche : animation de fermeture</string>
+    <string name="task_move_to_front_title">Animation suivante</string>
+    <string name="task_move_to_back_title">Animation précédente</string>
+    <string name="wallpaper_open_title">Fond d\'écran : animation d\'ouverture</string>
+    <string name="wallpaper_close_title">Fond d\'écran : animation de fermeture</string>
+    <string name="wallpaper_intra_open_title">Fond d\'écran : animation d\'ouverture intra</string>
+    <string name="wallpaper_intra_close_title">Fond d\'écran : animation de fermeture intra</string>
+    <string name="animation_duration_title">Durée d\'animation</string>
+    <string name="title_animation_no_override">Interdire les remplacements</string>
+    <string name="summary_animation_no_override">Empêche les applications d\'outrepasser les effets de transition</string>
+    <string name="animation_duration_default">Par défaut</string>
+
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Animation Toast</string>
+    <string name="toast_none_animation">Aucune</string>
+    <string name="toast_default_animation">Par défaut</string>
+    <string name="toast_fade_animation">Fondu</string>
+    <string name="toast_SlideRight_animation">Glisser vers la droite</string>
+    <string name="toast_SlideLeft_animation">Glissez vers la gauche</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">Rapide fade</string>
+    <string name="toast_GrowFade_animation">Agrandissement avec fondu</string>
+    <string name="toast_GrowFadeCenter_animation">Agrandissement (Centre)</string>
+    <string name="toast_GrowFadeBottom_animation">Agrandissement (Bas)</string>
+    <string name="toast_Translucent_animation">Transparent</string>
+    <string name="toast_SlideLeftRight_animation">Glisser de gauche à droite</string>
+    <string name="toast_SlideRightLeft_animation">Glisser de droite à gauche</string>
+
+    <!-- List View animation -->
+    <string name="listview_animation_title">Animation</string>
+    <string name="listview_off">Par défaut</string>
+    <string name="listview_wave_left">Vague (à gauche)</string>
+    <string name="listview_wave_right">Vague (à droite)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Mise à l\'échelle</string>
+    <string name="listview_stack_top">Empiler (en haut)</string>
+    <string name="listview_stack_bottom">Empiler (en bas)</string>
+    <string name="listview_unfold">Déplier</string>
+    <string name="listview_fold">Plier</string>
+    <string name="listview_translate_left">Transférer (à gauche)</string>
+    <string name="listview_translate_right">Transférer (à droite)</string>
+
+    <!-- List View interpolator -->
+    <string name="listview_interpolator_title">Interpolation</string>
+    <string name="listview_accelerate_interpolator">Accélérer</string>
+    <string name="listview_decelerate_interpolator">Ralentir</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accélérer et ralentir</string>
+    <string name="listview_anticipate_interpolator">Anticiper</string>
+    <string name="listview_overshoot_interpolator">Surpasser</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticiper et surpasser</string>
+    <string name="listview_bounce_interpolator">Rebondir</string>
 
 </resources>
