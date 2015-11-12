@@ -42,6 +42,7 @@
     <string name="multiwindow_category">Multi-Window</string>
     <string name="listview_animations_category">List View Animations</string>
     <string name="system_animations_category">System Animations</string>
+    <string name="omniswitch_category">OmniSwitch</string>
 
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
