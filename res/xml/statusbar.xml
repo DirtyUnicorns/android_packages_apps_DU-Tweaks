@@ -54,6 +54,11 @@
             android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
             android:layout="@layout/preference_statusbar_notifications"
             android:title="@string/statusbar_notifications_category" />
+ 
+	 <Preference
+            android:key="traffic"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Traffic"
+            android:layout="@layout/preference_traffic"
+            android:title="@string/traffic_category" />
 
 </PreferenceScreen>
-
