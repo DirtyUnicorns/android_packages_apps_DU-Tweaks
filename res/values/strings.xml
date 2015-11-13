@@ -297,4 +297,8 @@
     <string name="weather_settings_title">LockClock settings</string>
     <string name="weather_settings_summary">Configure location for weather widget and other settings</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
+
 </resources>
