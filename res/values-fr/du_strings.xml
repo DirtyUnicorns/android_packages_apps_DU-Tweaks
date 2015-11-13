@@ -87,6 +87,7 @@
     <string name="multiwindow_category">Multi-fenêtre</string>
     <string name="listview_animations_category">Animations des listes</string>
     <string name="system_animations_category">Animations système</string>
+    <string name="omniswitch_category">OmniSwitch</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_summary">Bloquer les Wakelocks système</string>
@@ -261,5 +262,33 @@
     <string name="listview_overshoot_interpolator">Surpasser</string>
     <string name="listview_anticipate_overshoot_interpolator">Anticiper et surpasser</string>
     <string name="listview_bounce_interpolator">Rebondir</string>
+
+    <!-- Network traffic -->
+    <string name="traffic_category">Indicateurs de trafic</string>
+    <string name="network_traffic_title">Trafic réseau</string>
+    <string name="show_network_traffic_state">Indicateur de vitesse de réseau</string>
+    <string name="show_network_traffic_unit">Afficher l\'unité</string>
+    <string name="show_network_traffic_frequency">Intervalle de mise à jour</string>
+    <string name="show_network_traffic_disable">Désactivé</string>
+    <string name="show_network_traffic_up">Sortant</string>
+    <string name="show_network_traffic_down">Entrant</string>
+    <string name="show_network_traffic_all">Entrant et sortant</string>
+    <string name="show_network_traffic_bit">Bits par seconde</string>
+    <string name="show_network_traffic_byte">Bytes par seconde</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Masquer automatiquement</string>
+    <string name="network_traffic_autohide_summary">Ne pas afficher l\'indicateur de vitesse de réseau lorsqu\'il n\'y a pas de trafic</string>
+    <string name="network_traffic_autohide_threshold">Seuil d\'inactivité</string>
+    <string name="network_traffic_color_style">Couleur</string>
+    <string name="network_traffic_color_reset">Réinitialiser la couleur</string>
+    <string name="network_traffic_color_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="ok">OK</string>
+
+    <!--Time Contexual Header -->
+    <string name="status_bar_custom_header_title">En-tête contextuel</string>
+    <string name="status_bar_custom_header_summary">Afficher une image d\'arrière-plan sur le volet des notifications</string>
 
 </resources>
