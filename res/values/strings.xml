@@ -293,4 +293,8 @@
     <string name="status_bar_show_weather_title">Extended statusbar weather</string>
     <string name="status_bar_show_weather_summary">Show basic weather in the extended statusbar area</string>
 
+    <!-- LockClock Setting -->
+    <string name="weather_settings_title">LockClock settings</string>
+    <string name="weather_settings_summary">Configure location for weather widget and other settings</string>
+
 </resources>
