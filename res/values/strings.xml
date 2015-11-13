@@ -43,6 +43,7 @@
     <string name="listview_animations_category">List View Animations</string>
     <string name="system_animations_category">System Animations</string>
     <string name="omniswitch_category">OmniSwitch</string>
+    <string name="weather_category">Weather</string>
 
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>

@@ -67,4 +67,10 @@
             android:layout="@layout/preference_traffic"
             android:title="@string/traffic_category" />
 
+         <Preference
+            android:key="weather"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Weather"
+            android:layout="@layout/preference_weather"
+            android:title="@string/weather_category" />
+
 </PreferenceScreen>
