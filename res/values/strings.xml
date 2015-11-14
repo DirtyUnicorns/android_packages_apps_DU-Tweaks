@@ -265,7 +265,11 @@
     <string name="traffic_category">Traffic Indicators</string>
     <string name="network_traffic_title">Network traffic</string>
     <string name="show_network_traffic_state">Status bar traffic monitor</string>
-    <string name="show_network_traffic_unit">Display unit</string>
+    <string name="show_network_traffic_un        /**
+         * Show search bar in recents
+         * @hide
+         */
+        public static final String RECENTS_SHOW_SEARCH_BAR = "recents_show_search_bar";it">Display unit</string>
     <string name="show_network_traffic_frequency">Update interval</string>
     <string name="show_network_traffic_disable">Disabled</string>
     <string name="show_network_traffic_up">Outgoing</string>
@@ -312,5 +316,10 @@
     <string name="show_carrier_keyguard">Keyguard carrier</string>
     <string name="show_carrier_statusbar">Status bar carrier</string>
     <string name="show_carrier_enabled">Enabled</string>
+
+    <!-- Show/Hide Search Bar -->
+    <string name="recents_show_searchbar">Recents panel Search bar</string>
+    <string name="recents_searchbar_summary_enabled">Search bar in recents menu is enabled</string>
+    <string name="recents_searchbar_summary_disabled">Search bar in recents menu is disabled</string>
 
 </resources>
