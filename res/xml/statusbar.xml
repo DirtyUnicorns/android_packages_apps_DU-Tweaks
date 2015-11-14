@@ -33,6 +33,12 @@
             android:layout="@layout/preference_battery"
             android:title="@string/battery_category" />
 
+         <PreferenceScreen
+            android:key="carrierlabel"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.CarrierLabel"
+            android:layout="@layout/preference_carrierlabel"
+            android:title="@string/carrier_options" />
+
          <Preference
             android:key="statusbarclock"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarClock"
