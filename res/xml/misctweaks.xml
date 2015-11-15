@@ -17,6 +17,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/misctweaks_category" >
 
+        <SwitchPreference
+            android:key="status_bar_brightness_control"
+            android:summary="@string/status_bar_brightness_control_summary"
+            android:title="@string/status_bar_brightness_control_title" />
+
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="toast_icon"
             android:title="@string/toast_icon_title"

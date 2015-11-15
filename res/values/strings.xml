@@ -313,7 +313,7 @@
     <string name="show_carrier_statusbar">Status bar carrier</string>
     <string name="show_carrier_enabled">Enabled</string>
 
-    <!-- Show/Hide Search Bar -->
+    <!-- Recents Search Bar -->
     <string name="recents_show_searchbar">Recents panel Search bar</string>
     <string name="recents_searchbar_summary_enabled">Search bar in recents menu is enabled</string>
     <string name="recents_searchbar_summary_disabled">Search bar in recents menu is disabled</string>
@@ -321,5 +321,10 @@
     <!-- Notification Count in Statusbar -->
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- Status bar brightness control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
+    <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
 
 </resources>
