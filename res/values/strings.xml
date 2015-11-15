@@ -318,4 +318,8 @@
     <string name="recents_searchbar_summary_enabled">Search bar in recents menu is enabled</string>
     <string name="recents_searchbar_summary_disabled">Search bar in recents menu is disabled</string>
 
+    <!-- Notification Count in Statusbar -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
 </resources>
