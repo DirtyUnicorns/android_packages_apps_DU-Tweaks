@@ -88,6 +88,7 @@
     <string name="listview_animations_category">Animations des listes</string>
     <string name="system_animations_category">Animations système</string>
     <string name="omniswitch_category">OmniSwitch</string>
+    <string name="weather_category">Météo</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_summary">Bloquer les Wakelocks système</string>
@@ -290,5 +291,17 @@
     <!--Time Contexual Header -->
     <string name="status_bar_custom_header_title">En-tête contextuel</string>
     <string name="status_bar_custom_header_summary">Afficher une image d\'arrière-plan sur le volet des notifications</string>
+
+    <!-- Extended statusbar weather -->
+    <string name="status_bar_show_weather_title">Météo sur la barre d\'état étendue</string>
+    <string name="status_bar_show_weather_summary">Afficher les informations météo dans la barre d\'état étendue</string>
+
+    <!-- LockClock Setting -->
+    <string name="weather_settings_title">Widget météo</string>
+    <string name="weather_settings_summary">Paramètres pour le widget météo</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Retour haptique</string>
+    <string name="quick_settings_vibrate_summary">Vibrer lors des appuis sur les raccourcis</string>
 
 </resources>
