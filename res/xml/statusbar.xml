@@ -21,4 +21,10 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <Preference
+            android:key="statusbar_notifications"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
+            android:layout="@layout/preference_statusbar_notifications"
+            android:title="@string/statusbar_notifications_category" />
+
 </PreferenceScreen>

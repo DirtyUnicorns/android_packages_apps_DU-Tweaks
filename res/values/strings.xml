@@ -26,7 +26,8 @@
     <!-- Categories -->
     <string name="powermenu_category">Power menu</string>
     <string name="misctweaks_category">Misc. tweaks</string>
-    <string name="button_settings">Button settings</string>
+    <string name="button_settings">Buttons</string>
+    <string name="statusbar_notifications_category">Notifications</string>
 
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
@@ -79,5 +80,9 @@
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+
+    <!-- Notification Count in Statusbar -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 
 </resources>
