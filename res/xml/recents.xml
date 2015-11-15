@@ -17,5 +17,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/recents_category" >
 
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="recents_show_search_bar"
+            android:title="@string/recents_show_searchbar"
+            android:summaryOn="@string/recents_searchbar_summary_enabled"
+            android:summaryOff="@string/recents_searchbar_summary_disabled"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
 

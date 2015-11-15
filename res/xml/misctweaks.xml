@@ -34,13 +34,6 @@
             android:summary="@string/disable_fc_notifications_summary"
             android:defaultValue="false" />
 
-	<com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-            android:key="recents_show_search_bar"
-            android:title="@string/recents_show_searchbar"
-            android:summaryOn="@string/recents_searchbar_summary_enabled"
-            android:summaryOff="@string/recents_searchbar_summary_disabled"
-            android:defaultValue="true" />
-
         <PreferenceCategory
             android:key="gestures_category"
             android:title="@string/gestures_category" />

@@ -39,6 +39,12 @@
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
 
+-         <Preference
+            android:key="recents"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Recents"
+            android:layout="@layout/preference_recents"
+            android:title="@string/recents_category" />
+
          <Preference
             android:key="wakelockblocker"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.WakelockBlocker"
