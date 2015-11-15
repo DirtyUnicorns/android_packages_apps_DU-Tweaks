@@ -82,7 +82,7 @@
     <string name="statusbar_items_category">Éléments</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="wakelockblocker_category">Bloqueur de Wakelock</string>
-    <string name="geatures_category">Gestes</string>
+    <string name="gestures_category">Gestes</string>
     <string name="multitasking_category">Multi-tâche</string>
     <string name="multiwindow_category">Multi-fenêtre</string>
     <string name="listview_animations_category">Animations des listes</string>
@@ -320,5 +320,9 @@
     <string name="recents_show_searchbar">Barre de recherche</string>
     <string name="recents_searchbar_summary_enabled">La barre de recherche des applications récentes est activée</string>
     <string name="recents_searchbar_summary_disabled">La barre de recherche des applications récentes est désactivée</string>
+
+    <!-- Notification Count in Statusbar -->
+    <string name="status_bar_notif_count_title">Notifications en attente</string>
+    <string name="status_bar_notif_count_summary">Afficher le nombre de notifications en attente</string>
 
 </resources>
