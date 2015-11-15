@@ -37,8 +37,8 @@
             android:defaultValue="true" />
 
         <PreferenceCategory
-            android:key="geatures_category"
-            android:title="@string/geatures_category" />
+            android:key="gestures_category"
+            android:title="@string/gestures_category" />
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"

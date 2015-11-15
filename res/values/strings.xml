@@ -37,7 +37,7 @@
     <string name="statusbar_items_category">Statusbar Items</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="wakelockblocker_category">Wakelock Blocker</string>
-    <string name="geatures_category">Gestures</string>
+    <string name="gestures_category">Gestures</string>
     <string name="multitasking_category">Multi-Tasking</string>
     <string name="multiwindow_category">Multi-Window</string>
     <string name="listview_animations_category">List View Animations</string>
