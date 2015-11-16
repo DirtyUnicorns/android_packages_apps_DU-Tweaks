@@ -325,4 +325,9 @@
     <string name="status_bar_notif_count_title">Notifications en attente</string>
     <string name="status_bar_notif_count_summary">Afficher le nombre de notifications en attente</string>
 
+    <!-- Status bar brightness control -->
+    <string name="status_bar_brightness_control_title">Réglage de la luminosité</string>
+    <string name="status_bar_brightness_control_summary">Ajuster la luminosité en glissant sur la barre d\'état</string>
+    <string name="status_bar_brightness_control_info">La luminosité automatique doit être désactivée</string>
+
 </resources>
