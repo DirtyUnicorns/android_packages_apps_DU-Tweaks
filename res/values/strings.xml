@@ -19,6 +19,7 @@
 
     <!-- Tabs -->
     <string name="generalui_category">General UI</string>
+    <string name="lockscreen_category">Lockscreen</string>
     <string name="statusbar_category">Status Bar</string>
     <string name="navigation_category">Navigation Bar</string>
     <string name="multitasking_category">Multi-Tasking</string>
@@ -326,5 +327,8 @@
     <string name="status_bar_brightness_control_title">Brightness control</string>
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
     <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_targets_title">Bottom L/R Shortcuts</string>
 
 </resources>
