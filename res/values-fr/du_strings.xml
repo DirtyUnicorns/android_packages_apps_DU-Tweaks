@@ -21,6 +21,7 @@
 
     <!-- Tabs -->
     <string name="generalui_category">Interface</string>
+    <string name="lockscreen_category">Écran de déverrouillage</string>
     <string name="statusbar_category">Barre d\'état</string>
     <string name="navigation_category">Barre de navigation</string>
     <string name="multitasking_category">Multi-tâche</string>
@@ -329,5 +330,8 @@
     <string name="status_bar_brightness_control_title">Réglage de la luminosité</string>
     <string name="status_bar_brightness_control_summary">Ajuster la luminosité en glissant sur la barre d\'état</string>
     <string name="status_bar_brightness_control_info">La luminosité automatique doit être désactivée</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_targets_title">Raccourcis du bas</string>
 
 </resources>
