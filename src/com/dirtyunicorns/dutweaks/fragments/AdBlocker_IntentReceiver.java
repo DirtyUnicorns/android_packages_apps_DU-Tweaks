@@ -16,22 +16,42 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
+import android.app.ActivityManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.preference.PreferenceManager;
+
+import java.io.IOException;
+import java.util.List;
 
 public class AdBlocker_IntentReceiver extends BroadcastReceiver {
 
     private static final String TAG = "BootReceiver";
-
-    public static final String ACTION_RUN_BOOTCOMPLETE = "android.intent.action.BOOT_COMPLETED";
+    Context settingsContext = null;
+    Boolean mSetupRunning = false;
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Intent serv = new Intent(context, AdBlocker_CheckHosts.class);
-        serv.setAction(intent.getAction());
-        serv.putExtras(intent);
-        context.startService(serv);
+        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningAppProcessInfo> procInfos = activityManager.getRunningAppProcesses();
+        for(int i = 0; i < procInfos.size(); i++)
+        {
+            if(procInfos.get(i).processName.equals("com.google.android.setupwizard")) {
+                mSetupRunning = true;
+            }
+        }
+        if(!mSetupRunning) {
+             try {
+                 settingsContext = context.createPackageContext("com.android.settings", 0);
+             } catch (Exception e) {
+                 Log.e(TAG, "Package not found", e);
+             }
+             Intent serv = new Intent(context, AdBlocker_CheckHosts.class);
+             serv.setAction(intent.getAction());
+             serv.putExtras(intent);
+             context.startService(serv);
+        }
     }
 }
