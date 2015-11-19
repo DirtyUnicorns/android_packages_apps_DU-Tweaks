@@ -352,4 +352,9 @@
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
+    <!-- Statusbar DU logo -->
+    <string name="status_bar_du_logo_title">DU logo</string>
+    <string name="status_bar_du_logo_summary">Enable to show DU logo on the left side of statusbar</string>
+    <string name="status_bar_du_logo_color">DU logo color</string>
+
 </resources>
