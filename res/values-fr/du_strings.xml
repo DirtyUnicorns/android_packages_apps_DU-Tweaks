@@ -150,6 +150,16 @@
     <string name="status_bar_battery_percentage_text_inside">Dans l\'icône</string>
     <string name="status_bar_battery_percentage_text_next">Après l\'icône</string>
 
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Barre de batterie</string>
+    <string name="battery_bar">Emplacement</string>
+    <string name="battery_bar_color">Couleur</string>
+    <string name="battery_bar_cat">Style</string>
+    <string name="battery_bar_style_title">Alignement</string>
+    <string name="battery_bar_thickness_title">Épaisseur</string>
+    <string name="battery_bar_animate_title">Animation lors de la charge</string>
+    <string name="battery_bar_animate_summary">L\'animation de chargement peut entraîner une expérience utilisateur médiocre</string>
+
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Barre d\'état</string>
     <string name="status_bar_style_title">Style</string>
