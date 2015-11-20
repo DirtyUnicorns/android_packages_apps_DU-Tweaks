@@ -37,4 +37,11 @@
             android:entries="@array/entries_scrollingcache"
             android:entryValues="@array/values_scrollingcache" />
 
+        <ListPreference
+            android:key="media_scanner_on_boot"
+            android:title="@string/media_scanner_on_boot_title"
+            android:entries="@array/media_scanner_on_boot_entries"
+            android:entryValues="@array/media_scanner_on_boot_values"
+            android:persistent="false" />
+
 </PreferenceScreen>

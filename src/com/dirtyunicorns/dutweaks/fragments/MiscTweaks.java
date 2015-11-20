@@ -23,11 +23,11 @@ import android.os.Bundle;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
-import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
@@ -42,9 +42,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
     private static final String SCROLLINGCACHE_DEFAULT = "1";
+    private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
 
     private SwitchPreference mFlashlightNotification;
     private ListPreference mScrollingCachePref;
+    private ListPreference mMsob;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,7 +64,13 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         } else {
         mFlashlightNotification.setChecked((Settings.System.getInt(resolver,
                 Settings.System.FLASHLIGHT_NOTIFICATION, 0) == 1));
-        }
+       }
+
+        mMsob = (ListPreference) findPreference(PREF_MEDIA_SCANNER_ON_BOOT);
+        mMsob.setValue(String.valueOf(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0)));
+        mMsob.setSummary(mMsob.getEntry());
+        mMsob.setOnPreferenceChangeListener(this);
 
         mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
         mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
@@ -92,6 +100,13 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
                 SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String)newValue);
             return true;
             }
+        } else if (preference == mMsob) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.MEDIA_SCANNER_ON_BOOT,
+                    Integer.valueOf(String.valueOf(newValue)));
+            mMsob.setValue(String.valueOf(newValue));
+            mMsob.setSummary(mMsob.getEntry());
+            return true;
         }
         return false;
     }
