@@ -28,6 +28,13 @@
             android:summary="@string/toast_icon_summary"
             android:defaultValue="false" />
 
+        <ListPreference
+            android:key="media_scanner_on_boot"
+            android:title="@string/media_scanner_on_boot_title"
+            android:entries="@array/media_scanner_on_boot_entries"
+            android:entryValues="@array/media_scanner_on_boot_values"
+            android:persistent="false" />
+
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="disable_fc_notifications"
             android:title="@string/disable_fc_notifications_title"
