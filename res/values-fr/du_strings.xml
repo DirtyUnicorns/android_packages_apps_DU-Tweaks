@@ -355,4 +355,32 @@
     <string name="recents_clear_all_location_bottom_left">En bas à gauche</string>
     <string name="recents_clear_all_location_bottom_center">En bas au milieu</string>
 
+    <!-- Statusbar DU logo -->
+    <string name="status_bar_du_logo_title">DU logo</string>
+    <string name="status_bar_du_logo_summary">Afficher le logo de DU sur la gauche de la barre d\'état</string>
+    <string name="status_bar_du_logo_color">Couleur</string>
+
+    <!-- Density Changer -->
+    <string name="dpi">DPI</string>
+    <string name="su_dialog_error_title">Attention</string>
+    <string name="su_dialog_error_message">Une erreur s\'est produite.\n\nVérifiez l\'accès aux droits root. Rendez-vous dans les paramètres de SuperSu, et activez  l\'accès aux droits root.</string>
+    <string name="lcd_density_title">Densité de l\'écran</string>
+    <string name="lcd_density_category">Options</string>
+    <string name="follow_through_title">Attention</string>
+    <string name="follow_through_summary">Modifier les paramètres de densité de l\'écran peut provoquer le dysfonctionnement de certaines applications, et le Play Store peut afficher les applications comme incompatibles avec votre appareil</string>
+    <string name="stock_density_title">Utiliser une valeur prédéfinie</string>
+    <string name="stock_density_summary">Valeur usuelle pour les tablettes\u00A0: 160 dpi. Valeur usuelle pour les appareils récents\u00A0: 320 ou 480 dpi. Valeur usuelle pour les appareils plus anciens\u00A0: 240 dpi.</string>
+    <string name="stock_density_changed_summary">"Densité de l\'écran définie à \u00A0: "</string>
+    <string name="reboot_title">Redémarrer</string>
+    <string name="reboot_summary">L\'appareil doit être redémarré pour la prise en charge des nouveaux paramètres</string>
+    <string name="custom_density_title">Utiliser une valeur personnalisée</string>
+    <string name="custom_density_summary_invalid">"VALEUR INCORRECTE\u00A0!"</string>
+    <string name="custom_density">valeur personnalisée</string>
+    <string name="set_custom_density_title">Choisir une densité d\'écran personnalisée</string>
+    <string name="set_custom_density_set">Choisir</string>
+    <string name="custom_density_dialog_title">AVERTISSEMENT\u00A0!</string>
+    <string name="custom_density_dialog_summary">Modifier les paramètres de densité de l\'écran peut provoquer le dysfonctionnement de certaines applications, et le Play Store peut afficher les applications comme incompatibles avec votre appareil"</string>
+    <string name="custom_density_dialog_button_got">OK\u00A0!</string>
+    <string name="custom_density_dialog_button_reboot">Redémarrer</string>
+
 </resources>
