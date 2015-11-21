@@ -383,4 +383,10 @@
     <string name="custom_density_dialog_button_got">OK\u00A0!</string>
     <string name="custom_density_dialog_button_reboot">Redémarrer</string>
 
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Comportement de l\'analyseur de médias au démarrage</string>
+    <string name="media_scanner_on_boot_enabled">Analyser les médias</string>
+    <string name="media_scanner_on_boot_ask">Demander pour analyser (notification)</string>
+    <string name="media_scanner_on_boot_disabled">Ne pas analyser les médias</string>
+
 </resources>
