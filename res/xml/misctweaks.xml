@@ -35,6 +35,14 @@
             android:entryValues="@array/media_scanner_on_boot_values"
             android:persistent="false" />
 
+        <ListPreference
+            android:key="pref_scrollingcache"
+            android:dialogTitle="@string/pref_scrollingcache_title"
+            android:title="@string/pref_scrollingcache_title"
+            android:summary="@string/pref_scrollingcache_summary"
+            android:entries="@array/entries_scrollingcache"
+            android:entryValues="@array/values_scrollingcache" />
+
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="disable_fc_notifications"
             android:title="@string/disable_fc_notifications_title"
