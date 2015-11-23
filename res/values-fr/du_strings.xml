@@ -389,4 +389,12 @@
     <string name="media_scanner_on_boot_ask">Demander pour analyser (notification)</string>
     <string name="media_scanner_on_boot_disabled">Ne pas analyser les médias</string>
 
+    <!-- Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Mémoire cache de défilement</string>
+    <string name="pref_scrollingcache_summary">Améliore les performances de défilement mais augmente l\'utilisation de la mémoire RAM</string>
+    <string name="pref_scrollingcache_force_enable">Forcer l\'activation</string>
+    <string name="pref_scrollingcache_default_enable">Activer par défaut</string>
+    <string name="pref_scrollingcache_default_disable">Désactiver par défaut</string>
+    <string name="pref_scrollingcache_force_disable">Forcer la désactivation</string>
+
 </resources>
