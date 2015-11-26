@@ -48,12 +48,14 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     public static Intent INTENT_OMNISWITCH_SETTINGS = new Intent(Intent.ACTION_MAIN)
             .setClassName(OMNISWITCH_PACKAGE_NAME, OMNISWITCH_PACKAGE_NAME + ".SettingsActivity");
     private static final String CATEGORY_STOCK_RECENTS = "stock_recents";
+    private static final String CATEGORY_OMNI_RECENTS = "omni_recents";
 
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
     private SwitchPreference mRecentsUseOmniSwitch;
     private Preference mOmniSwitchSettings;
     private boolean mOmniSwitchInitCalled;
+    private PreferenceCategory mOmniSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,6 +81,11 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         mOmniSwitchSettings = (Preference)
                 prefSet.findPreference(OMNISWITCH_START_SETTINGS);
         mOmniSwitchSettings.setEnabled(mRecentsUseOmniSwitch.isChecked());
+
+        mOmniSwitch = (PreferenceCategory) findPreference(CATEGORY_OMNI_RECENTS);
+        if (!Utils.isPackageInstalled(getActivity(), OMNISWITCH_PACKAGE_NAME)) {
+            prefSet.removePreference(mOmniSwitch);
+        }
 
         mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
 
