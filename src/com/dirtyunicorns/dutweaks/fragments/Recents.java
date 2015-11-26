@@ -47,6 +47,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     public static final String OMNISWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
     public static Intent INTENT_OMNISWITCH_SETTINGS = new Intent(Intent.ACTION_MAIN)
             .setClassName(OMNISWITCH_PACKAGE_NAME, OMNISWITCH_PACKAGE_NAME + ".SettingsActivity");
+    private static final String CATEGORY_STOCK_RECENTS = "stock_recents";
 
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
@@ -87,6 +88,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
+        updateDisableStockRecents();
     }
 
     @Override
@@ -130,11 +132,30 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
             Settings.System.putInt(
                     resolver, Settings.System.RECENTS_USE_OMNISWITCH, value ? 1 : 0);
             mOmniSwitchSettings.setEnabled(value);
+            updateDisableStockRecents();
         } else {
             return false;
         }
 
         return true;
+    }
+
+    private void updateDisableStockRecents() {
+        boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.RECENTS_USE_OMNISWITCH, 0) == 1;
+
+        updateRecentsOptions(!enabled);
+    }
+
+    private void updateRecentsOptions(boolean enabled) {
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        final PreferenceCategory stockRecentsCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_STOCK_RECENTS);
+
+        if (stockRecentsCategory != null) {
+            stockRecentsCategory.setEnabled(enabled);
+        }
     }
 
     private void openOmniSwitchFirstTimeWarning() {
