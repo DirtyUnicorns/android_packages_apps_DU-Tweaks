@@ -38,6 +38,8 @@ public class Recents extends SettingsPreferenceFragment implements Preference.On
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
 
     private ListPreference mRecentsClearAllLocation;
+    private PreferenceCategory mStockRecents;
+    private PreferenceCategory mSlimRecents;
     private SwitchPreference mSlimToggle;
 
     @Override
@@ -47,6 +49,9 @@ public class Recents extends SettingsPreferenceFragment implements Preference.On
 
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mStockRecents = (PreferenceCategory) findPreference("stock_recents");
+        mSlimRecents = (PreferenceCategory) findPreference("slim_recents");
 
         mRecentsClearAllLocation = (ListPreference) findPreference(RECENTS_CLEAR_ALL_LOCATION);
         int location = Settings.System.getIntForUser(resolver,
@@ -60,6 +65,7 @@ public class Recents extends SettingsPreferenceFragment implements Preference.On
                 Settings.System.USE_SLIM_RECENTS, 0,
                 UserHandle.USER_CURRENT) == 1);
         mSlimToggle.setOnPreferenceChangeListener(this);
+        updateRecents();
     }
 
     @Override
@@ -77,9 +83,23 @@ public class Recents extends SettingsPreferenceFragment implements Preference.On
             Settings.System.putIntForUser(resolver,
                     Settings.System.USE_SLIM_RECENTS, value ? 1 : 0,
                     UserHandle.USER_CURRENT);
+            updateRecents();
             return true;
         }
         return false;
+    }
+
+    private void updateRecents() {
+        boolean slimRecents = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.USE_SLIM_RECENTS, 0, UserHandle.USER_CURRENT) == 1;
+
+        if (slimRecents) {
+            mSlimRecents.setEnabled(true);
+            mStockRecents.setEnabled(false);
+        } else {
+            mSlimRecents.setEnabled(true);
+            mStockRecents.setEnabled(true);
+        }
     }
 
     @Override
