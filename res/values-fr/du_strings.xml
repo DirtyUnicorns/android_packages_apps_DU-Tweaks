@@ -88,8 +88,17 @@
     <string name="multiwindow_category">Multi-fenêtre</string>
     <string name="listview_animations_category">Animations des listes</string>
     <string name="system_animations_category">Animations système</string>
-    <string name="omniswitch_category">OmniSwitch</string>
     <string name="weather_category">Météo</string>
+
+    <!-- OmniSwitch -->
+    <string name="aosp_recents_title">Applications récentes AOSP</string>
+    <string name="omniswitch_recents_title">Applications récentes OmniSwitch</string>
+    <string name="omniswitch_category">OmniSwitch</string>
+    <string name="recents_use_omniswitch_title">Activer OmniSwitch</string>
+    <string name="recents_use_omniswitch_summary">Utiliser OmniSwitch au lieu de la vue des applications récentes AOSP</string>
+    <string name="omniswitch_start_settings_summary">Paramètres OmniSwitch</string>
+    <string name="omniswitch_first_time_title">Information</string>
+    <string name="omniswitch_first_time_message">Il faut absolument avoir activé OmniSwitch pour utiliser applications récentes OmniSwitch. Vous pouvez l\'activer en utilisant l\entrée \"Paramètres OmniSwitch\" en dessous</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_summary">Bloquer les Wakelocks système</string>
@@ -303,13 +312,31 @@
     <string name="status_bar_custom_header_title">En-tête contextuel</string>
     <string name="status_bar_custom_header_summary">Afficher une image d\'arrière-plan sur le volet des notifications</string>
 
-    <!-- Extended statusbar weather -->
-    <string name="status_bar_show_weather_title">Météo sur la barre d\'état étendue</string>
-    <string name="status_bar_show_weather_summary">Afficher les informations météo dans la barre d\'état étendue</string>
-
     <!-- LockClock Setting -->
     <string name="weather_settings_title">Widget météo</string>
     <string name="weather_settings_summary">Paramètres pour le widget météo</string>
+
+    <!-- Weather settings -->
+    <string name="weather_show_weather_title">Afficher les options météo</string>
+    <string name="weather_show_weather_summary">Affiche les options météo avec l\'horloge sur l\'écran de déverrouillage</string>
+    <string name="status_bar_show_weather_title">Météo sur la barre d\'état étendue</string>
+    <string name="status_bar_show_weather_summary">Afficher les informations météo dans la barre d\'état étendue</string>
+    <string name="weather_show_location_title">Localisation</string>
+    <string name="weather_show_location_summary">Afficher la localisation</string>
+    <string name="weather_show_timestamp_title">Horodatage</string>
+    <string name="weather_show_timestamp_summary">Afficher l\'horodatage</string>
+    <string name="weather_condition_icon_title">Conditions météo</string>
+    <string name="weather_condition_icon_dlg_title">Icônes pour l\'affichage des conditions météo</string>
+    <string name="weather_condition_icon_monochrome_title">Monochrome</string>
+    <string name="weather_condition_icon_colored_title">Colorée</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="weather_colorize_all_icons_title">Coloriser toutes les icônes</string>
+    <string name="weather_colorize_all_icons_summary">Activer pour coloriser toutes les icônes, désactiver pour coloriser seulement les icônes monochromes.</string>
+    <string name="colors_title">Couleurs</string>
+    <string name="icons_title">Icônes</string>
+    <string name="text_title">Texte</string>
+    <string name="reset_lockscreen_weather">OK</string>
+    <string name="reset_values_message">Revenir à la configuration d\'origine\u00A0?</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Retour haptique</string>
@@ -346,7 +373,7 @@
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Bouton de fermeture rapide</string>
-    <string name="show_clear_all_recents_button_summary">Afficher le bouton de fermeture rapide des applications dans la fenêtre des Applications récentes</string>
+    <string name="show_clear_all_recents_button_summary">Afficher le bouton de fermeture rapide des applications dans la fenêtre des applications récentes</string>
     <string name="recents_clear_all_location_title">Position du bouton de fermeture rapide</string>
     <string name="recents_clear_all_location_top_right">En haut à droite</string>
     <string name="recents_clear_all_location_top_left">En haut à gauche</string>
