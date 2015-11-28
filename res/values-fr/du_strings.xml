@@ -98,7 +98,7 @@
     <string name="recents_use_omniswitch_summary">Utiliser OmniSwitch au lieu de la vue des applications récentes AOSP</string>
     <string name="omniswitch_start_settings_summary">Paramètres OmniSwitch</string>
     <string name="omniswitch_first_time_title">Information</string>
-    <string name="omniswitch_first_time_message">Il faut absolument avoir activé OmniSwitch pour utiliser applications récentes OmniSwitch. Vous pouvez l\'activer en utilisant l\entrée \"Paramètres OmniSwitch\" en dessous</string>
+    <string name="omniswitch_first_time_message">Il faut absolument avoir activé OmniSwitch pour utiliser applications récentes OmniSwitch. Vous pouvez l\'activer en utilisant l\'entrée \"Paramètres OmniSwitch\" en dessous</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_summary">Bloquer les Wakelocks système</string>
