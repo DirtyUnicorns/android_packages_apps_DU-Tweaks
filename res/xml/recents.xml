@@ -22,6 +22,13 @@
             android:title="@string/aosp_recents_title" >
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="recents_full_screen"
+            android:title="@string/recents_show_fullscreen"
+            android:summaryOn="@string/recents_fullscreen_summary_enabled"
+            android:summaryOff="@string/recents_fullscreen_summary_disabled"
+            android:defaultValue="false" />
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="recents_show_search_bar"
             android:title="@string/recents_show_searchbar"
             android:summaryOn="@string/recents_searchbar_summary_enabled"
