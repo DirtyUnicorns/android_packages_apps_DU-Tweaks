@@ -91,8 +91,8 @@
     <string name="weather_category">Météo</string>
 
     <!-- OmniSwitch -->
-    <string name="aosp_recents_title">Applications récentes AOSP</string>
-    <string name="omniswitch_recents_title">Applications récentes OmniSwitch</string>
+    <string name="aosp_recents_title">AOSP</string>
+    <string name="omniswitch_recents_title">OmniSwitch</string>
     <string name="omniswitch_category">OmniSwitch</string>
     <string name="recents_use_omniswitch_title">Activer OmniSwitch</string>
     <string name="recents_use_omniswitch_summary">Utiliser OmniSwitch au lieu de la vue des applications récentes AOSP</string>
@@ -358,6 +358,11 @@
     <string name="recents_show_searchbar">Barre de recherche</string>
     <string name="recents_searchbar_summary_enabled">La barre de recherche des applications récentes est activée</string>
     <string name="recents_searchbar_summary_disabled">La barre de recherche des applications récentes est désactivée</string>
+
+    <!-- Recents Fullscreen -->
+    <string name="recents_show_fullscreen">Plein écran</string>
+    <string name="recents_fullscreen_summary_enabled">Applications récentes en plein écran activées</string>
+    <string name="recents_fullscreen_summary_disabled">Applications récentes en plein écran désactivées</string>
 
     <!-- Notification Count in Statusbar -->
     <string name="status_bar_notif_count_title">Notifications en attente</string>
