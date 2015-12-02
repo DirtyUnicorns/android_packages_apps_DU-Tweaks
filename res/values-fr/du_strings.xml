@@ -63,6 +63,9 @@
     <string name="powermenu_settings">Paramètres</string>
     <string name="powermenu_lockdown">Verrouiller</string>
     <string name="powermenu_soundpanel">Panneau de volume</string>
+    <string name="powermenu_lockscreen_title">Écran de déverrouillage</string>
+    <string name="powermenu_lockscreen_summary">Afficher le menu marche/arrêt sur l\'écran de déverrouillage</string>
+
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Permet de redémarrer dans le recovery et le bootloader</string>
