@@ -26,6 +26,7 @@
     <!-- Categories -->
     <string name="powermenu_category">Power menu</string>
     <string name="misctweaks_category">Misc. tweaks</string>
+    <string name="button_settings">Button settings</string>
 
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
@@ -66,5 +67,9 @@
     <!-- Flashlight notification -->
     <string name="flashlight_notification_title">Flashlight notification</string>
     <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
+
+    <!-- Volume Key Rotation -->
+    <string name="swap_volume_buttons_title">Reorient</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
 </resources>
