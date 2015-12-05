@@ -92,6 +92,7 @@
     <string name="listview_animations_category">Animations des listes</string>
     <string name="system_animations_category">Animations système</string>
     <string name="weather_category">Météo</string>
+    <string name="breathing_notifications_category">Notifications clignotantes</string>
 
     <!-- OmniSwitch -->
     <string name="aosp_recents_title">AOSP</string>
@@ -489,5 +490,102 @@
     <string name="select_custom_activity_title">Sélectionner l\'activité</string>
     <string name="profile_applist_title">Applications</string>
 
+    <!-- Circle app bar -->
+    <string name="category_app_circle_bar_title">Lanceur d\'applications</string>
+    <string name="app_circle_bar_title">Cercle d\'applications</string>
+    <string name="app_circle_bar_summary">Afficher le Cercle d\'applications après avoir touché le côté droit de l\'écran</string>
+    <string name="app_circle_bar_included_apps_title">Applications</string>
+    <string name="app_circle_bar_included_apps_summary">Applications à afficher dans le Cercle d\'applications</string>
+
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Notifications clignotantes</string>
+    <string name="missed_call_breath_title">Appel Manqué</string>
+    <string name="missed_call_breath_summary">Faire clignoter la notification d\'appel manqué, dans la barre d\'état</string>
+    <string name="voicemail_breath_title">Messagerie Vocale</string>
+    <string name="voicemail_breath_summary">Faire clignoter la notification de la messagerie vocale, dans la barre d\'état</string>
+
+    <!-- Navigation Bar -->
+    <string name="navbar_interface_title">Interface</string>
+    <string name="navbar_size">Dimensions</string>
+    <string name="navbar_mode">Mode de navigation</string>
+    <string name="navbar_visibility">Activer la barre de navigation</string>
+    <string name="navigationbar_settings_title">Navigation</string>
+    <string name="aosp_navigation_bar">Barre de navigation</string>
+    <string name="aosp_navigation_bar_settings">Paramètres barre de navigation</string>
+    <string name="navigationbar_settings_summary">Style et comportement de la barre de navigation</string>
+    <string name="navbar_general_title">Options avancées</string>
+    <string name="navigation_bar_left_title">Mode gaucher</string>
+    <string name="navigation_bar_left_summary">En mode paysage, afficher la barre de navigation à gauche</string>
+    <string name="info_pref_note_title">Note</string>
+
+    <!-- Actions dialog and default task values set in ActionPreference xml-->
+    <string name="choose_action_title">Type de raccourci</string>
+    <string name="action_entry_default_action">Par défaut</string>
+    <string name="action_entry_select_app">Application</string>
+    <string name="action_entry_custom_action">Action</string>
+
+    <!-- Fling -->
+    <string name="fling_settings">Paramètres Fling</string>
+    <string name="fling_interface">Fling</string>
+    <string name="fling_enable_title">Activer</string>
+    <string name="fling_back_home_policy">Les fonctionnalités \"Retour\" et \"Accueil\" doivent toujours être définies. Pour modifier les raccourcis grisés, il faut d\'abord définir les fonctions \"Retour\" et \"Accueil\" sur un autre raccourci</string>
+    <string name="fling_split_bar_policy">Lorsqu\'une seule action (de gauche ou de droite) est définie, elle s\'applique aux deux côtés de la barre</string>
+    <string name="fling_def_summary">Aucune action définie</string>
+    <string name="fling_swipe_actions">Glissements</string>
+    <string name="fling_tap_actions">Appuis</string>
+    <string name="fling_short_swipe_right">Glissement vers la droite</string>
+    <string name="fling_short_swipe_left">Glissement vers la gauche</string>
+    <string name="fling_long_swipe_right">Glissement prolongé vers la droite</string>
+    <string name="fling_long_swipe_left">Glissement prolongé vers la gauche</string>
+    <string name="fling_single_tap">Appui droit simple</string>
+    <string name="fling_double_tap">Double appui droit</string>
+    <string name="fling_long_press">Appui droit prolongé</string>
+    <string name="fling_single_left_tap">Appui gauche simple</string>
+    <string name="fling_double_left_tap">Double appui gauche</string>
+    <string name="fling_long_left_press">Appui gauche prolongé</string>
+    <string name="long_swipe_portrait_title">Portrait</string>
+    <string name="long_swipe_landscape_title">Paysage</string>
+    <string name="right_swipe_title">Glissement vers la droite</string>
+    <string name="left_swipe_title">Glissement vers la gauche</string>
+    <string name="up_swipe_title">Glissement vers le haut</string>
+    <string name="down_swipe_title">Glissement vers le bas</string>
+    <string name="long_swipe_reset">Configuration d\'origine</string>
+    <string name="fling_advanced">Avancé</string>
+    <string name="fling_long_swipe_title">Seuil du glissement prolongé</string>
+    <string name="fling_long_swipe_summary">Définir la zone de déclenchement selon un pourcentage de la hauteur ou de la largeur</string>
+    <string name="fling_trails_enable_title">Tracé des gestes</string>
+    <string name="fling_trails_enable_summary">Afficher le tracé des gestes par glissement</string>
+    <string name="fling_trails_color_title">Couleur du tracé</string>
+    <string name="fling_appearance">Apparence</string>
+    <string name="fling_show_logo_title">Logo Fling</string>
+    <string name="fling_animate_logo_title">Animer le logo</string>
+    <string name="fling_animate_logo_summary">Le logo s\'anime lors des événements tactiles</string>
+    <string name="fling_logo_color">Couleur du logo</string>
+    <string name="fling_show_ripple_title">Ondulation</string>
+    <string name="fling_show_ripple_summary">Effet d\'ondulation lors des événements tactiles</string>
+    <string name="fling_ripple_color">Couleur de l\'ondulation</string>
+    <string name="fling_show_pulse_title">Pulse</string>
+    <string name="fling_show_pulse_summary">Fling affiche une barre de visualisation lors de l\'écoute de musique</string>
+    <string name="fling_pulse_color">Couleur de Pulse</string>
+    <string name="eos_fling_lavalamp_title">Activer la lampe Lava</string>
+    <string name="eos_fling_lavalamp_summary">Pulse anime la lampe Lava</string>
+    <string name="fling_longpress_timeout_label_left">Diminution du délai</string>
+    <string name="fling_longpress_timeout_label_right">Augmentation du délai</string>
+    <string name="fling_longpress_title">Délai d\'appui prolongé</string>
+    <string name="fling_longpress_summary">Augmenter ou diminuer délai d\'appui prolongé</string>
+
+    <!-- Navbar height -->
+    <string name="navigation_bar_size_title">Dimensions</string>
+    <string name="portrait_title">Hauteur (Portrait)</string>
+    <string name="land_vert_title">Largeur (Paysage)</string>
+    <string name="land_hor_title">Hauteur (Paysage)</string>
+    <string name="positive_done">OK</string>
+
+    <!-- Lock screen wallpaper -->
+   <string name="lockscreen_category_title">Écran de déverrouillage</string>
+   <string name="lockscreen_wallpaper_title">Fond d\'écran</string>
+   <string name="lockscreen_wallpaper_set_title">Définir un fond d\'écran</string>
+   <string name="lockscreen_wallpaper_clear_title">Configuration d\'origine</string>
+   <string name="reset_lockscreen_wallpaper">Fond d\'écran de déverrouillage par défaut rétabli</string>
 
 </resources>
