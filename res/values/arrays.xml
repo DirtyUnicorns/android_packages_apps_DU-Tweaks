@@ -581,7 +581,7 @@
     </string-array>
 
     <string-array name="systemui_navbar_mode_entries">
-        <item>@string/aosp_navigation_bar</item>
+        <item>@string/navigationbar_settings_title</item>
         <item>@string/fling_interface</item>
     </string-array>
 
@@ -596,7 +596,7 @@
     </string-array>
 
     <string-array name="systemui_navbar_mode_settings">
-        <item>@string/aosp_navigation_bar_settings</item>
+        <item>@string/navigationbar_settings_title</item>
         <item>@string/fling_settings</item>
     </string-array>
 

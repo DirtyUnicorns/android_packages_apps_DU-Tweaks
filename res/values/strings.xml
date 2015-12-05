@@ -4,7 +4,7 @@
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
-  (at your option) any later version
+  (at your option) any later version.
 
   This program is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -21,7 +21,7 @@
     <string name="generalui_category">General UI</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="statusbar_category">Status Bar</string>
-    <string name="navigation_category">Navigation Bar</string>
+    <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-Tasking</string>
     <string name="system_category">System</string>
     <string name="misc_category">Miscellaneous</string>
@@ -46,7 +46,7 @@
     <string name="omniswitch_category">OmniSwitch</string>
     <string name="weather_category">Weather</string>
     <string name="breathing_notifications_category">Breathing Notifications</string>
-    <string name="button_settings">Button Settings</string>
+    <string name="button_settings">Buttons</string>
 
     <!-- OmniSwitch -->
     <string name="aosp_recents_title">AOSP recents</string>
@@ -503,9 +503,7 @@
     <string name="navbar_size">Bar size</string>
     <string name="navbar_mode">Navigation mode</string>
     <string name="navbar_visibility">Enable navigation bar</string>
-    <string name="navigationbar_settings_title">Navigation</string>
-    <string name="aosp_navigation_bar">Navigation bar</string>
-    <string name="aosp_navigation_bar_settings">Navigation bar settings</string>
+    <string name="navigationbar_settings_title">Navigation Bar</string>
     <string name="navigationbar_settings_summary">Customize navigation style and behavior</string>
     <string name="navbar_general_title">Advanced</string>
     <string name="navigation_bar_left_title">Left-handed mode</string>
