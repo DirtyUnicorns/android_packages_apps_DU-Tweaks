@@ -33,4 +33,10 @@
         <item>Centrée et reflétée</item>
     </string-array>
 
+    <!-- SlimSizer -->
+    <string-array name="slimsizer_profile_array">
+        <item >Charger un profil</item>
+        <item >Enregistrer un profil</item>
+    </string-array>
+
 </resources>

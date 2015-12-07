@@ -93,6 +93,7 @@
     <string name="system_animations_category">Animations système</string>
     <string name="weather_category">Météo</string>
     <string name="breathing_notifications_category">Notifications clignotantes</string>
+    <string name="button_settings">Boutons</string>
 
     <!-- OmniSwitch -->
     <string name="aosp_recents_title">AOSP</string>
@@ -146,6 +147,18 @@
     <string name="adblocker_title">Bloqueur de publicités</string>
     <string name="disable_ads_title">Désactiver les publicités</string>
     <string name="disable_ads_summary">Modifier le fichier hosts pour désactiver les publicités</string>
+
+    <!-- Volume Key Rotation -->
+    <string name="swap_volume_buttons_title">Inversion des boutons Volume</string>
+    <string name="swap_volume_buttons_summary">En mode Paysage lors de la lecture de vidéo, Volume + diminue le volume sonore, Volume - augmente volume sonore</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Réveiller par touche Volume</string>
+    <string name="volume_rocker_wake_summary">Sortir l\'appareil de la veille en appuyant sur une des touches Volume\nOutrepasse aussi les commandes de lecture musicale</string>
+
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
+    <string name="volume_rocker_music_controls_summary">Sur écran éteint, un appui prolongé sur les touches Volume change la chanson</string>
 
     <!-- Battery options -->
     <string name="battery_title">Batterie</string>
@@ -315,6 +328,8 @@
     <!--Time Contexual Header -->
     <string name="status_bar_custom_header_title">En-tête contextuel</string>
     <string name="status_bar_custom_header_summary">Afficher une image d\'arrière-plan sur le volet des notifications</string>
+    <string name="status_bar_custom_header_default_title">Images HD Polygraphiques</string>
+    <string name="status_bar_custom_header_default_summary">Activer pour utiliser les images HD Polygraphiques. Désactiver pour utiliser les images d\'origine.</string>
 
     <!-- LockClock Setting -->
     <string name="weather_settings_title">Widget météo</string>
@@ -587,5 +602,122 @@
    <string name="lockscreen_wallpaper_set_title">Définir un fond d\'écran</string>
    <string name="lockscreen_wallpaper_clear_title">Configuration d\'origine</string>
    <string name="reset_lockscreen_wallpaper">Fond d\'écran de déverrouillage par défaut rétabli</string>
+
+    <!-- Slim lockscreen shortcuts -->
+    <string name="shortcut_action_none">Aucun</string>
+    <string name="shortcut_action_longpress">Appui prolongé\u00A0:</string>
+    <string name="shortcut_action_select_action_longpress">Action par appui prolongé\u00A0:</string>
+    <string name="shortcut_action_select_action">Choisir l\'action\u00A0:</string>
+    <string name="shortcut_action_select_action_newaction">Choisir une nouvelle action\u00A0:</string>
+    <string name="shortcut_action_reset">Réinitialiser</string>
+    <string name="shortcut_action_add">Ajouter</string>
+    <string name="shortcut_action_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="shortcut_action_max">Nombre de raccourcis maximal atteint</string>
+    <string name="shortcut_action_warning">Avertissement</string>
+    <string name="shortcut_action_warning_message">Impossible de supprimer le dernier raccourci</string>
+    <string name="shortcut_action_disable_message">Désactivé\nAjouter un raccourci pour activer cette fonctionnalité</string>
+    <string name="shortcut_image_not_valid">L\'application choisie ne possède pas d\'icône valide ou ne supporte pas le rognage d\'image. Choisissez une autre application.</string>
+    <string name="shortcut_duplicate_entry">L\'action choisie ne peut pas être ajoutée deux fois</string>
+    <string name="shortcut_action_help_shortcut">raccourci</string>
+    <string name="shortcut_action_help_button">bouton</string>
+    <string name="shortcut_action_help_app">application</string>
+    <string name="shortcut_action_help_icon">, appuyer sur l\'icône permet de la personnaliser.</string>
+    <string name="shortcut_action_help_main">Pour ajouter un %1$s, sélectionner l\'icône Ajouter. Une fois qu\'un %1$s est ajouté, appuyer sur la ligne permet de modifier le raccourci%2$s\n\nPour supprimer un %1$s, glisser horizontalement la ligne à gauche ou à droite. Modifier la disposition du %1$s dans la liste en faisant glisser verticalement l\'icône de gauche.\n\nPour revenir à la configuration par défaut, sélectionner l\'option Réinitialiser.</string>
+    <string name="shortcut_action_help_delete_last_entry">Supprimer tous les raccourcis de la liste, désactive totalement la fonctionnalité.</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Supprimer tous les %1$s de la liste désactive totalement la seconde couche.</string>
+    <string name="shortcuts_applications">Applications</string>
+    <string name="shortcuts_select_custom_app_title">Sélectionner l\'application</string>
+    <string name="shortcuts_icon_picker_type">Sélectionner le modèle d\'icône :</string>
+    <string name="shortcuts_icon_default">Par défaut</string>
+    <string name="shortcuts_icon_presets">Icônes système</string>
+    <string name="shortcuts_icon_custom">Galerie</string>
+    <string name="shortcuts_icon_picker_choose_icon_title">Sélectionner l\'icône</string>
+    <string name="shortcuts_icon_picker_alarm">Alarme</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">Batterie</string>
+    <string name="shortcuts_icon_picker_browser">Navigateur</string>
+    <string name="shortcuts_icon_picker_calendar">Agenda</string>
+    <string name="shortcuts_icon_picker_camera">Appareil photo</string>
+    <string name="shortcuts_icon_picker_cloud">Cloud</string>
+    <string name="shortcuts_icon_picker_contact">Contact</string>
+    <string name="shortcuts_icon_picker_directdial">Numérotation</string>
+    <string name="shortcuts_icon_picker_directmessage">Message</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">Courriel</string>
+    <string name="shortcuts_icon_picker_email2">Autre courriel</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Favori</string>
+    <string name="shortcuts_icon_picker_file_browser">Explorateur de fichiers</string>
+    <string name="shortcuts_icon_picker_file_browser2">Autre explorateur de fichiers</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">Galerie</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google+</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">Aide</string>
+    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_key">Comptes</string>
+    <string name="shortcuts_icon_picker_laptop">Ordinateur portable</string>
+    <string name="shortcuts_icon_picker_notes">Notes</string>
+    <string name="shortcuts_icon_picker_luggage">Voyage</string>
+    <string name="shortcuts_icon_picker_maps">Maps</string>
+    <string name="shortcuts_icon_picker_market">Android Market</string>
+    <string name="shortcuts_icon_picker_movie">Films</string>
+    <string name="shortcuts_icon_picker_music">Musique</string>
+    <string name="shortcuts_icon_picker_nav">Navigation</string>
+    <string name="shortcuts_icon_picker_phone">Téléphone</string>
+    <string name="shortcuts_icon_picker_package">Paquet</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+    <string name="shortcuts_icon_picker_quicksettings">Paramètres</string>
+    <string name="shortcuts_icon_picker_rss">Flux RSS</string>
+    <string name="shortcuts_icon_picker_sdcard">Carte SD</string>
+    <string name="shortcuts_icon_picker_search">Recherche</string>
+    <string name="shortcuts_icon_picker_sms">SMS</string>
+    <string name="shortcuts_icon_picker_tasks">Tâches</string>
+    <string name="shortcuts_icon_picker_terminal">Terminal</string>
+    <string name="shortcuts_icon_picker_transit">Transit</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">Déverrouillage</string>
+    <string name="reset_message">Revenir à la configuration d\'origine\u00A0?</string>
+    <string name="lockscreen_shortcuts_title">Raccourcis du haut</string>
+    <string name="lockscreen_shorcuts_longpress_title">Raccourcis par appui prolongé</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Ouvrir des raccourcis personnalisés sur l\'écran de déverrouillage par appui prolongé</string>
+    <string name="help">Aide</string>
+    <string name="shortcut_action_app">Application</string>
+    <string name="shortcut_action_home">Accueil</string>
+    <string name="shortcut_action_back">Retour</string>
+    <string name="shortcut_action_menu">Menu</string>
+    <string name="shortcut_action_ime">Ouvrir le sélecteur de clavier</string>
+    <string name="shortcut_action_power_menu">Menu Marche/Arrêt</string>
+    <string name="shortcut_action_recent">Applications récentes</string>
+    <string name="shortcut_action_power">Mise en veille</string>
+    <string name="shortcut_action_search">Recherche dans l\'application</string>
+
+    <!-- SlimSizer  -->
+    <string name="listsystem">liste</string>
+    <string name="sizer_title">Suppression d\'application système</string>
+    <string name="caution">Attention\u00A0!</string>
+    <string name="sizer_message_startup">Cet outil permet de supprimer des applications système. À utiliser avec précaution et uniquement pour des applications dont la suppression est sans danger.</string>
+    <string name="cancel">Annuler</string>
+    <string name="sizer_message_delete">Supprimer cette application\u00A0?</string>
+    <string name="btn_delete">Supprimer les applications sélectionnées\u00A0!</string>
+    <string name="delete_progress_title">Suppression en cours</string>
+    <string name="delete_progress">Les applications sélectionnés sont en cours de suppression...</string>
+    <string name="delete_success">Supprimée(s)</string>
+    <string name="delete_fail">Suppression impossible</string>
+    <string name="btn_profile">Profil</string>
+    <string name="sizer_message_sdnowrite">Impossible d\'écrire sur la carte SD</string>
+    <string name="sizer_message_sdnoread">Impossible de lire la carte SD</string>
+    <string name="sizer_message_filesuccess">Profil créé</string>
+    <string name="sizer_message_filefail">Impossible de créer le profil</string>
+    <string name="sizer_message_noselect">Aucune sélection</string>
+    <string name="system_app_remover">Suppression d\'application système</string>
+
 
 </resources>
