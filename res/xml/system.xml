@@ -45,6 +45,12 @@
             android:layout="@layout/preference_recents"
             android:title="@string/recents_category" />
 
+         <PreferenceScreen
+            android:id="@+id/system_app_remover"
+            android:title="@string/system_app_remover"
+            android:layout="@layout/preference_systemappremover"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.SystemappRemover" />
+
          <Preference
             android:key="wakelockblocker"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.WakelockBlocker"
@@ -58,4 +64,3 @@
             android:fragment="com.dirtyunicorns.dutweaks.fragments.AdBlocker_Settings" />
 
 </PreferenceScreen>
-
