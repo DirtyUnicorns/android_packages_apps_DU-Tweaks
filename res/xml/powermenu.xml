@@ -49,6 +49,11 @@
             android:defaultValue="true" />
 
          <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="powermenu_screenrecord"
+            android:title="@string/powermenu_screenrecord"
+            android:defaultValue="false" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="powermenu_airplane"
             android:title="@string/powermenu_airplane"
             android:defaultValue="true" />
