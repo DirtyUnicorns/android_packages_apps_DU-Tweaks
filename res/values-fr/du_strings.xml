@@ -57,6 +57,7 @@
 
     <!-- Power Menu -->
     <string name="powermenu_screenshot">Capture d\'écran</string>
+    <string name="powermenu_screenrecord">Capture vidéo</string>
     <string name="powermenu_power">Éteindre</string>
     <string name="powermenu_reboot">Redémarrer</string>
     <string name="powermenu_airplane">Mode Avion</string>
