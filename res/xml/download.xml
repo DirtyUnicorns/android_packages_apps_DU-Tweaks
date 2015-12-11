@@ -17,18 +17,26 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/download_category" >
 
-    <ListPreference 
+    <ListPreference
         android:key="gapps"
         android:dialogTitle="@string/gapps_title"
-        android:title="@string/gapps_title" 
+        android:title="@string/gapps_title"
         android:summary="@string/gapps_summary"
         android:entries="@array/gapps_list"
         android:entryValues="@array/gapps_list_url" />
 
     <Preference
         android:key="gapps_credit"
-        android:summary="@string/gapps_credit" 
+        android:summary="@string/gapps_credit"
         android:selectable="false"
         style="?android:attr/listSeparatorTextViewStyle" />
+
+    <ListPreference
+        android:key="tomahawk"
+        android:dialogTitle="@string/tomahawk_music_player_title"
+        android:title="@string/tomahawk_music_player_title"
+        android:summary="@string/tomahawk_music_player_summary"
+        android:entries="@array/tomahawk_list"
+        android:entryValues="@array/tomahawk_list_url" />
 
 </PreferenceScreen>

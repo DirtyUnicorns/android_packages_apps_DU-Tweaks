@@ -699,7 +699,7 @@
     <string name="shortcut_action_power">Screen Off</string>
     <string name="shortcut_action_search">Search in app</string>
 
-    <!-- SlimSizer  -->
+    <!-- SlimSizer -->
     <string name="listsystem">list</string>
     <string name="sizer_title">App remover</string>
     <string name="caution">Caution!</string>
@@ -718,5 +718,9 @@
     <string name="sizer_message_filefail">Failed to create profile.</string>
     <string name="sizer_message_noselect">Nothing selected.</string>
     <string name="system_app_remover">System App Remover</string>
+
+    <!-- Tomahawk Music Player -->
+    <string name="tomahawk_music_player_title">Tomahawk\'s Music Player</string>
+    <string name="tomahawk_music_player_summary">An open source android music player with great development and features</string>
 
 </resources>

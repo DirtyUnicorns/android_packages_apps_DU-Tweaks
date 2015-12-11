@@ -33,8 +33,10 @@ import com.android.settings.SettingsPreferenceFragment;
 public class Download extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String GAPPS = "gapps";
+    private static final String TOMAHAWK = "tomahawk";
 
     private ListPreference mGapps;
+    private ListPreference mTomahawk;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,9 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
 
         mGapps = (ListPreference) prefSet.findPreference(GAPPS);
         mGapps.setOnPreferenceChangeListener(this);
+
+        mTomahawk = (ListPreference) prefSet.findPreference(TOMAHAWK);
+        mTomahawk.setOnPreferenceChangeListener(this);
     }
 
     @Override
