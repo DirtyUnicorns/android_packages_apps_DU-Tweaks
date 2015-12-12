@@ -720,5 +720,9 @@
     <string name="sizer_message_noselect">Aucune sélection</string>
     <string name="system_app_remover">Suppression d\'application système</string>
 
+    <!-- Tomahawk Music Player -->
+    <string name="tomahawk_music_player_title">Lecteur de musique Tomahawk</string>
+    <string name="tomahawk_music_player_summary">Un lecteur de musique Android Open Source, avec de nombreuses fonctionnalités</string>
+
 
 </resources>
