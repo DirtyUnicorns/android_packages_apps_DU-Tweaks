@@ -16,12 +16,7 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.content.Context;
-import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.SystemProperties;
-import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.SwitchPreference;
 import android.preference.Preference;
@@ -33,8 +28,6 @@ import android.provider.Settings;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.utils.du.DUActionUtils;
-import com.android.settings.Utils;
-import com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference;
 import com.android.settings.R;
 
 public class NavbarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {

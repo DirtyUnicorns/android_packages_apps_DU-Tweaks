@@ -579,15 +579,21 @@
     <string name="fling_show_ripple_title">Show ripple</string>
     <string name="fling_show_ripple_summary">Ripple effect on touch events</string>
     <string name="fling_ripple_color">Ripple color</string>
-    <string name="fling_show_pulse_title">Show Pulse</string>
-    <string name="fling_show_pulse_summary">Fling shows bar visualization when music plays</string>
-    <string name="fling_pulse_color">Pulse color</string>
-    <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
-    <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
     <string name="fling_longpress_timeout_label_left">Less delay</string>
     <string name="fling_longpress_timeout_label_right">More delay</string>
     <string name="fling_longpress_title">Long press delay</string>
     <string name="fling_longpress_summary">Increase or decrease the time it takes to execute a long press</string>
+
+    <!-- Pulse navigation bar music visualizer -->
+    <string name="pulse_help_policy_notice_title">About Pulse</string>
+    <string name="pulse_help_policy_notice_summary">Pulse is brilliant equalizer bar style audio visualization on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Navigation bar audio visualization</string>
+    <string name="fling_show_pulse_title">Show Pulse</string>
+    <string name="fling_show_pulse_summary">Audio visualization on the navigation bar</string>
+    <string name="fling_pulse_color">Pulse color</string>
+    <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
+    <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
 
     <!-- Navbar height -->
     <string name="navigation_bar_size_title">Bar size</string>
