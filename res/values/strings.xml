@@ -723,4 +723,8 @@
     <string name="tomahawk_music_player_title">Tomahawk\'s Music Player</string>
     <string name="tomahawk_music_player_summary">An open source android music player with great development and features</string>
 
+    <!-- Task Manager -->
+    <string name="enable_task_manager_title">Task Manager</string>
+    <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area</string>
+
 </resources>

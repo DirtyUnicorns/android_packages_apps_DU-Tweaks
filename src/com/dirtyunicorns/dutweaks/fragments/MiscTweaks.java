@@ -43,10 +43,12 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
     private static final String SCROLLINGCACHE_DEFAULT = "1";
+    private static final String ENABLE_TASK_MANAGER = "enable_task_manager";
 
     private SwitchPreference mStatusBarBrightnessControl;
     private ListPreference mMsob;
     private ListPreference mScrollingCachePref;
+    private SwitchPreference mEnableTaskManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -80,6 +82,10 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             }
         } catch (SettingNotFoundException e) {
         }
+
+        mEnableTaskManager = (SwitchPreference) findPreference(ENABLE_TASK_MANAGER);
+        mEnableTaskManager.setChecked((Settings.System.getInt(resolver,
+                Settings.System.ENABLE_TASK_MANAGER, 0) == 1));
     }
 
     @Override
@@ -106,6 +112,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
 
             mMsob.setValue(String.valueOf(newValue));
             mMsob.setSummary(mMsob.getEntry());
+            return true;
+        } else if  (preference == mEnableTaskManager) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ENABLE_TASK_MANAGER, checked ? 1:0);
             return true;
         } else if (preference == mScrollingCachePref) {
             if (newValue != null) {
