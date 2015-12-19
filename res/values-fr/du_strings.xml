@@ -185,7 +185,7 @@
     <string name="battery_bar_style_title">Alignement</string>
     <string name="battery_bar_thickness_title">Épaisseur</string>
     <string name="battery_bar_animate_title">Animation lors de la charge</string>
-    <string name="battery_bar_animate_summary">L\'animation de chargement peut entraîner une expérience utilisateur médiocre</string>
+    <string name="battery_bar_animate_summary">Animer la barre de batterie pendant la charge</string>
 
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Barre d\'état</string>
@@ -735,6 +735,10 @@
     <!-- Tomahawk Music Player -->
     <string name="tomahawk_music_player_title">Lecteur de musique Tomahawk</string>
     <string name="tomahawk_music_player_summary">Un lecteur de musique Android Open Source, avec de nombreuses fonctionnalités</string>
+
+    <!-- Task Manager -->
+    <string name="enable_task_manager_title">Gestionnaire de tâches</string>
+    <string name="enable_task_manager_summary">Activer/Désactiver le Gestionnaire de tâches dans la barre d\'état</string>
 
 
 </resources>
