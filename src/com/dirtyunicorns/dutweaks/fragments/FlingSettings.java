@@ -44,14 +44,11 @@ public class FlingSettings extends ActionFragment implements
 
     SwitchPreference mShowLogo;
     SwitchPreference mAnimateLogo;
-    SwitchPreference mShowPulse;
     SwitchPreference mShowRipple;
-    SwitchPreference mLavaLampEnabled;
     SwitchPreference mTrailsEnabled;
 
     ColorPickerPreference mLogoColor;
     ColorPickerPreference mRippleColor;
-    ColorPickerPreference mPulseColor;
     ColorPickerPreference mTrailsColor;
 
     @Override
@@ -104,22 +101,6 @@ public class FlingSettings extends ActionFragment implements
         mTrailsColor.setNewPreviewColor(trailsColor);
         mTrailsColor.setOnPreferenceChangeListener(this);
 
-        mShowPulse = (SwitchPreference) findPreference("eos_fling_show_pulse");
-        mShowPulse.setChecked(Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.FLING_PULSE_ENABLED, 1) == 1);
-        mShowPulse.setOnPreferenceChangeListener(this);
-
-        int pulseColor = Settings.Secure.getIntForUser(getContentResolver(),
-                Settings.Secure.FLING_PULSE_COLOR, Color.WHITE, UserHandle.USER_CURRENT);
-        mPulseColor = (ColorPickerPreference) findPreference("eos_fling_pulse_color");
-        mPulseColor.setNewPreviewColor(pulseColor);
-        mPulseColor.setOnPreferenceChangeListener(this);
-
-        mLavaLampEnabled = (SwitchPreference) findPreference("eos_fling_lavalamp");
-        mLavaLampEnabled.setChecked(Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.FLING_PULSE_LAVALAMP_ENABLED, 1) == 1);
-        mLavaLampEnabled.setOnPreferenceChangeListener(this);
-
         onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.FLING));
     }
 
@@ -140,11 +121,6 @@ public class FlingSettings extends ActionFragment implements
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.FLING_LOGO_COLOR, color);
             return true;
-        } else if (preference.equals(mShowPulse)) {
-            boolean enabled = ((Boolean) newValue).booleanValue();
-            Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.FLING_PULSE_ENABLED, enabled ? 1 : 0);
-            return true;
         } else if (preference.equals(mShowRipple)) {
             boolean enabled = ((Boolean) newValue).booleanValue();
             Settings.Secure.putInt(getContentResolver(),
@@ -155,11 +131,6 @@ public class FlingSettings extends ActionFragment implements
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.FLING_RIPPLE_COLOR, color);
             return true;
-        } else if (preference.equals(mPulseColor)) {
-            int color = ((Integer) newValue).intValue();
-            Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.FLING_PULSE_COLOR, color);
-            return true;
         } else if (preference.equals(mTrailsEnabled)) {
             boolean enabled = ((Boolean) newValue).booleanValue();
             Settings.Secure.putInt(getContentResolver(),
@@ -169,11 +140,6 @@ public class FlingSettings extends ActionFragment implements
             int color = ((Integer) newValue).intValue();
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.FLING_TRAILS_COLOR, color);
-            return true;
-        } else if (preference.equals(mLavaLampEnabled)) {
-            boolean enabled = ((Boolean) newValue).booleanValue();
-            Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.FLING_PULSE_LAVALAMP_ENABLED, enabled ? 1 : 0);
             return true;
         }
         return false;
