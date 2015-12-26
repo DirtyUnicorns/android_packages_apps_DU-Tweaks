@@ -62,6 +62,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
+    private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
 
     ListPreference mActivityOpenPref;
     ListPreference mActivityClosePref;
@@ -78,6 +79,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     ListPreference mListViewInterpolator;
     AnimBarPreference mAnimationDuration;
     SwitchPreference mAnimNoOverride;
+    ListPreference mPowerMenuAnimations;
 
     private int[] mAnimations;
     private String[] mAnimationsStrings;
@@ -192,6 +194,12 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
         mAnimationDuration = (AnimBarPreference) findPreference(ANIMATION_DURATION);
         mAnimationDuration.setInitValue((int) (defaultDuration));
         mAnimationDuration.setOnPreferenceChangeListener(this);
+
+        mPowerMenuAnimations = (ListPreference) findPreference(POWER_MENU_ANIMATIONS);
+        mPowerMenuAnimations.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
+        mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+        mPowerMenuAnimations.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -284,6 +292,12 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LISTVIEW_INTERPOLATOR, value);
             mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
+            return true;
+        } else if (preference == mPowerMenuAnimations) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS,
+                    Integer.valueOf((String) newValue));
+            mPowerMenuAnimations.setValue(String.valueOf(newValue));
+            mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
             return true;
         }
         preference.setSummary(getProperSummary(preference));
