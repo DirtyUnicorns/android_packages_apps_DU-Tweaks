@@ -65,7 +65,7 @@
     <string name="powermenu_lockdown">Verrouiller</string>
     <string name="powermenu_soundpanel">Panneau de volume</string>
     <string name="powermenu_lockscreen_title">Écran de déverrouillage</string>
-    <string name="powermenu_lockscreen_summary">Afficher le menu marche/arrêt sur l\'écran de déverrouillage</string>
+    <string name="powermenu_lockscreen_summary">Afficher le menu Marche/Arrêt sur l\'écran de déverrouillage</string>
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Redémarrage avancé</string>
@@ -81,7 +81,7 @@
     <string name="download_category">Centre de téléchargement</string>
     <string name="expanded_desktop_category">Bureau étendu</string>
     <string name="misctweaks_category">Réglages divers</string>
-    <string name="powermenu_category">Menu marche/arrêt</string>
+    <string name="powermenu_category">Menu Marche/Arrêt</string>
     <string name="quicksettings_category">Volet des paramètres</string>
     <string name="recents_category">Applications récentes</string>
     <string name="statusbar_items_category">Éléments</string>
@@ -746,5 +746,12 @@
     <string name="enable_task_manager_title">Gestionnaire de tâches</string>
     <string name="enable_task_manager_summary">Activer/Désactiver le Gestionnaire de tâches dans la barre d\'état</string>
 
+    <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Animation du menu Marche/Arrêt</string>
+    <string name="power_menu_animation_summary">Modifier l\'animation d\'ouverture et de fermeture du menu Marche/Arrêt</string>
+    <string name="power_menu_animation_dialog_title">Animation du menu Marche/Arrêt</string>
+    <string name="power_menu_animation_aosp">AOSP (Par défaut)</string>
+    <string name="power_menu_animation_bottom">En bas</string>
+    <string name="power_menu_animation_top">En haut</string>
 
 </resources>
