@@ -25,6 +25,7 @@ import android.os.UserHandle;
 import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
+import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
@@ -33,6 +34,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
+import com.android.internal.util.du.DeviceUtils;
 
 public class StatusbarNotifications extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -41,12 +43,14 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String MISSED_CALL_BREATH = "missed_call_breath";
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
+    private static final String BREATHING_NOTIFICATIONS = "breathing_notifications";
 
     private SwitchPreference mForceExpanded;
     private SwitchPreference mDisableIM;
     private SwitchPreference mEnableNC;
     private SwitchPreference mMissedCallBreath;
     private SwitchPreference mVoicemailBreath;
+    private PreferenceGroup mBreathingNotifications;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -69,22 +73,12 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         mMissedCallBreath = (SwitchPreference) findPreference(MISSED_CALL_BREATH);
         mVoicemailBreath = (SwitchPreference) findPreference(VOICEMAIL_BREATH);
 
-        Context context = getActivity();
-        ConnectivityManager cm = (ConnectivityManager)
-                context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        mBreathingNotifications = (PreferenceGroup) findPreference(BREATHING_NOTIFICATIONS);
 
-        if(cm.isNetworkSupported(ConnectivityManager.TYPE_MOBILE)) {
-
-            mMissedCallBreath.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.KEY_MISSED_CALL_BREATH, 0) == 1);
-            mMissedCallBreath.setOnPreferenceChangeListener(this);
-
-            mVoicemailBreath.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1);
-            mVoicemailBreath.setOnPreferenceChangeListener(this);
-        } else {
-            prefSet.removePreference(mMissedCallBreath);
-            prefSet.removePreference(mVoicemailBreath);
+        if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
+            getPreferenceScreen().removePreference(findPreference(MISSED_CALL_BREATH));
+            getPreferenceScreen().removePreference(findPreference(VOICEMAIL_BREATH));
+            getPreferenceScreen().removePreference(findPreference(BREATHING_NOTIFICATIONS));
         }
     }
 

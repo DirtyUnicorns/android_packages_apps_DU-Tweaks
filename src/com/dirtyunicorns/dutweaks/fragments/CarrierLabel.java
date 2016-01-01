@@ -82,9 +82,6 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
 
-        if (!Utils.isVoiceCapable(getActivity())) {
-            prefSet.removePreference(mShowCarrierLabel);
-        }
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
 
         mCarrierColorPicker = (ColorPickerPreference) findPreference(STATUS_BAR_CARRIER_COLOR);
@@ -94,13 +91,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mCarrierColorPicker.setSummary(hexColor);
         mCarrierColorPicker.setNewPreviewColor(intColor);
-
-        if (TelephonyManager.getDefault().isMultiSimEnabled()) {
-            prefSet.removePreference(mCustomCarrierLabel);
-        } else {
-            updateCustomLabelTextSummary();
-        }
-
+        updateCustomLabelTextSummary();
     }
 
     @Override

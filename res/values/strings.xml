@@ -371,9 +371,9 @@
     <string name="status_bar_carrier_color">Carrier label color</string>
     <string name="show_carrier_title">Carrier label</string>
     <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Keyguard carrier</string>
-    <string name="show_carrier_statusbar">Status bar carrier</string>
-    <string name="show_carrier_enabled">Enabled</string>
+    <string name="show_carrier_keyguard">Lockscreen Only</string>
+    <string name="show_carrier_statusbar">Statusbar Only</string>
+    <string name="show_carrier_enabled">Both Enabled</string>
 
     <!-- Recents Search Bar -->
     <string name="recents_show_searchbar">Recents panel Search bar</string>
