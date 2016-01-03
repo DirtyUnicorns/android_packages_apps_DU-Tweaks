@@ -36,6 +36,7 @@ import android.view.MenuItem;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
+import com.android.settings.Utils;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
@@ -50,6 +51,8 @@ public class Weather extends SettingsPreferenceFragment implements
     private static final String PREF_COLORIZE_ALL_ICONS = "weather_colorize_all_icons";
     private static final String PREF_TEXT_COLOR = "weather_text_color";
     private static final String PREF_ICON_COLOR = "weather_icon_color";
+    private static final String KEY_LOCKCLOCK = "lockclock";
+    private static final String KEY_LOCKCLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
     private static final int MONOCHROME_ICON = 0;
     private static final int DEFAULT_COLOR = 0xffffffff;
@@ -64,6 +67,7 @@ public class Weather extends SettingsPreferenceFragment implements
     private SwitchPreference mColorizeAllIcons;
     private ColorPickerPreference mTextColor;
     private ColorPickerPreference mIconColor;
+    private PreferenceScreen mLockClock;
 
     private ContentResolver mResolver;
 
@@ -96,6 +100,11 @@ public class Weather extends SettingsPreferenceFragment implements
 
         int intColor;
         String hexColor;
+
+        mLockClock = (PreferenceScreen) findPreference(KEY_LOCKCLOCK);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_LOCKCLOCK_PACKAGE_NAME)) {
+            prefs.removePreference(mLockClock);
+        }
 
         mShowWeather = (SwitchPreference) findPreference(PREF_SHOW_WEATHER);
         mShowWeather.setChecked(showWeather);
@@ -138,8 +147,7 @@ public class Weather extends SettingsPreferenceFragment implements
             mTextColor.setOnPreferenceChangeListener(this);
         } else {
             removePreference(PREF_SHOW_LOCATION);
-            removePreference(PREF_STATUSBAR_WEATHER);
-            removePreference(PREF_STATUSBAR_WEATHER);
+            removePreference(KEY_LOCKCLOCK);
             removePreference(PREF_CONDITION_ICON);
             removePreference(PREF_COLORIZE_ALL_ICONS);
             catColors.removePreference(mTextColor);

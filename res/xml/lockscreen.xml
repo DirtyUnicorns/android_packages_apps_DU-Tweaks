@@ -53,5 +53,11 @@
             android:layout="@layout/preference_lock_clock_fonts"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockClockFonts" />
 
+         <Preference
+            android:key="weather"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Weather"
+            android:layout="@layout/preference_weather"
+            android:title="@string/weather_category" />
+
 </PreferenceScreen>
 

@@ -39,12 +39,6 @@
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
 
--         <Preference
-            android:key="recents"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Recents"
-            android:layout="@layout/preference_recents"
-            android:title="@string/recents_category" />
-
          <PreferenceScreen
             android:id="@+id/system_app_remover"
             android:title="@string/system_app_remover"

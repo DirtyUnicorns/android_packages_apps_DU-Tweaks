@@ -17,6 +17,18 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/multitasking_category" >
 
+         <PreferenceScreen
+            android:key="app_circle_bar"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.AppCircleBar"
+            android:layout="@layout/preference_appcirclebar"
+            android:title="@string/app_circle_bar_title" />
+
+         <PreferenceScreen
+            android:key="gesture_anywhere"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereSettings"
+            android:layout="@layout/preference_gestureanywhere"
+            android:title="@string/gesture_anywhere_title" />
+
          <Preference
             android:key="multitwindow"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.MultiWindow"
@@ -33,17 +45,11 @@
                 android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
          </PreferenceScreen>
 
-         <PreferenceScreen
-            android:key="gesture_anywhere"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereSettings"
-            android:layout="@layout/preference_gestureanywhere"
-            android:title="@string/gesture_anywhere_title" />
-
-         <PreferenceScreen
-            android:key="app_circle_bar"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.AppCircleBar"
-            android:layout="@layout/preference_appcirclebar"
-            android:title="@string/app_circle_bar_title" />
+         <Preference
+            android:key="recents"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Recents"
+            android:layout="@layout/preference_recents"
+            android:title="@string/recents_category" />
 
 </PreferenceScreen>
 
