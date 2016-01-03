@@ -46,7 +46,6 @@ public class Weather extends SettingsPreferenceFragment implements
     private static final String PREF_SHOW_WEATHER = "weather_show_weather";
     private static final String PREF_SHOW_LOCATION = "weather_show_location";
     private static final String PREF_STATUSBAR_WEATHER = "status_bar_show_weather";
-    private static final String PREF_SHOW_TIMESTAMP = "weather_show_timestamp";
     private static final String PREF_CONDITION_ICON = "weather_condition_icon";
     private static final String PREF_COLORIZE_ALL_ICONS = "weather_colorize_all_icons";
     private static final String PREF_TEXT_COLOR = "weather_text_color";
@@ -60,7 +59,6 @@ public class Weather extends SettingsPreferenceFragment implements
 
     private SwitchPreference mShowWeather;
     private SwitchPreference mShowLocation;
-    private SwitchPreference mShowTimestamp;
     private SwitchPreference mShowStatusbarWeather;
     private ListPreference mConditionIcon;
     private SwitchPreference mColorizeAllIcons;
@@ -122,11 +120,6 @@ public class Weather extends SettingsPreferenceFragment implements
                     Settings.System.STATUS_BAR_SHOW_WEATHER, 0) == 1);
             mShowStatusbarWeather.setOnPreferenceChangeListener(this);
 
-            mShowTimestamp = (SwitchPreference) findPreference(PREF_SHOW_TIMESTAMP);
-            mShowTimestamp.setChecked(Settings.System.getInt(mResolver,
-                    Settings.System.LOCK_SCREEN_SHOW_WEATHER_TIMESTAMP, 0) == 1);
-            mShowTimestamp.setOnPreferenceChangeListener(this);
-
             mConditionIcon = (ListPreference) findPreference(PREF_CONDITION_ICON);
             mConditionIcon.setValue(String.valueOf(conditionIcon));
             mConditionIcon.setSummary(mConditionIcon.getEntry());
@@ -146,7 +139,6 @@ public class Weather extends SettingsPreferenceFragment implements
         } else {
             removePreference(PREF_SHOW_LOCATION);
             removePreference(PREF_STATUSBAR_WEATHER);
-            removePreference(PREF_SHOW_TIMESTAMP);
             removePreference(PREF_STATUSBAR_WEATHER);
             removePreference(PREF_CONDITION_ICON);
             removePreference(PREF_COLORIZE_ALL_ICONS);
@@ -211,12 +203,6 @@ public class Weather extends SettingsPreferenceFragment implements
             value = (Boolean) newValue;
             Settings.System.putInt(mResolver,
                     Settings.System.STATUS_BAR_SHOW_WEATHER,
-                    value ? 1 : 0);
-            return true;
-        } else if (preference == mShowTimestamp) {
-            value = (Boolean) newValue;
-            Settings.System.putInt(mResolver,
-                    Settings.System.LOCK_SCREEN_SHOW_WEATHER_TIMESTAMP,
                     value ? 1 : 0);
             return true;
         } else if (preference == mConditionIcon) {
@@ -290,8 +276,6 @@ public class Weather extends SettingsPreferenceFragment implements
                                     Settings.System.LOCK_SCREEN_SHOW_WEATHER, 1);
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.LOCK_SCREEN_SHOW_WEATHER_LOCATION, 1);
-                            Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.LOCK_SCREEN_SHOW_WEATHER_TIMESTAMP, 1);
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.LOCK_SCREEN_WEATHER_CONDITION_ICON, 2);
                             Settings.System.putInt(getOwner().mResolver,
