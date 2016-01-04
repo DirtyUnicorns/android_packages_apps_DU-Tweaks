@@ -47,5 +47,11 @@
             android:layout="@layout/preference_lockscreenwp"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenSettings" />
 
+         <PreferenceScreen
+            android:key="lock_clock_fonts"
+            android:title="@string/lock_clock_font_title"
+            android:layout="@layout/preference_lock_clock_fonts"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockClockFonts" />
+
 </PreferenceScreen>
 
