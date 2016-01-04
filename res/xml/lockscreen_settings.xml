@@ -27,4 +27,10 @@
             android:title="@string/lockscreen_wallpaper_clear_title"
             android:persistent="false"/>
 
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
