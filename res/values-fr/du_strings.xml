@@ -187,6 +187,23 @@
     <string name="battery_bar_animate_title">Animation lors de la charge</string>
     <string name="battery_bar_animate_summary">Animer la barre de batterie pendant la charge</string>
 
+    <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Police d\'écriture de l\'horloge</string>
+    <string name="lock_clock_font_summary">Modifier la police d\'écriture de l\'horloge de l\'écran de déverrouillage</string>
+    <string name="lock_clock_font_dialog_title">Police d\'écriture de l\'horloge</string>
+    <string name="lock_clock_font_stock">Normale (par défaut)</string>
+    <string name="lock_clock_font_bold">Gras</string>
+    <string name="lock_clock_font_italic">Italique</string>
+    <string name="lock_clock_font_bold_italic">Italique gras</string>
+    <string name="lock_clock_font_light_italic">Italique léger</string>
+    <string name="lock_clock_font_thin_italic">Italique fin</string>
+    <string name="lock_clock_font_condensed_normal">Condensé</string>
+    <string name="lock_clock_font_condensed_italic">Italique condensé</string>
+    <string name="lock_clock_font_condensed_bold">Gras condensé</string>
+    <string name="lock_clock_font_condensed_bold_italic">Italique gras condensé</string>
+    <string name="lock_clock_font_medium_normal">Moyen</string>
+    <string name="lock_clock_font_medium_italic">Italique moyen</string>
+
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Barre d\'état</string>
     <string name="status_bar_style_title">Style</string>
@@ -753,5 +770,9 @@
     <string name="power_menu_animation_aosp">AOSP (Par défaut)</string>
     <string name="power_menu_animation_bottom">En bas</string>
     <string name="power_menu_animation_top">En haut</string>
+
+    <!-- Media art -->
+    <string name="media_art_title">Pochette de l\'album</string>
+    <string name="media_art_summary">Afficher la pochette de l\'album ou du titre en cours de lecture sur l\'écran de déverrouillage</string>
 
 </resources>
