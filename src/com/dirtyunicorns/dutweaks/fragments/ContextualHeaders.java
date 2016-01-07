@@ -35,13 +35,30 @@ import com.android.settings.Utils;
 
 public class ContextualHeaders extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String PREF_CUSTOM_HEADER = "status_bar_custom_header";
+    private static final String PREF_CUSTOM_HEADER_DEFAULT = "status_bar_custom_header_default";
+
+    private SwitchPreference mCustomHeader;
+    private SwitchPreference mCustomHeaderDefault;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.contextualheaders);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        mCustomHeader = (SwitchPreference) prefSet.findPreference(PREF_CUSTOM_HEADER);
+        mCustomHeader.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1));
+        mCustomHeader.setOnPreferenceChangeListener(this);
+
+        mCustomHeaderDefault = (SwitchPreference) prefSet.findPreference(PREF_CUSTOM_HEADER_DEFAULT);
+        mCustomHeaderDefault.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, 0) == 1));
+        mCustomHeaderDefault.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -55,11 +72,24 @@ public class ContextualHeaders extends SettingsPreferenceFragment implements OnP
     }
 
     @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    ContentResolver resolver = getActivity().getContentResolver();
+      if (preference == mCustomHeader) {
+         Settings.System.putInt(getContentResolver(),
+                 Settings.System.STATUS_BAR_CUSTOM_HEADER,
+                 (Boolean) newValue ? 1 : 0);
+         return true;
+      } else if (preference == mCustomHeaderDefault) {
+         Settings.System.putInt(getContentResolver(),
+                 Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT,
+                 (Boolean) newValue ? 1 : 0);
+         return true;
+       }
+       return false;
     }
 
-    public boolean onPreferenceChange(Preference preference, Object value) {
-         return true;
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 }
