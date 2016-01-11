@@ -37,6 +37,7 @@
     <string name="recents_category">Recents</string>
     <string name="statusbar_items_category">Statusbar Items</string>
     <string name="statusbar_notifications_category">Notifications</string>
+    <string name="lockscreen_notifications_category">Lockscreen Notifications</string>
     <string name="wakelockblocker_category">Wakelock Blocker</string>
     <string name="gestures_category">Gestures</string>
     <string name="multitasking_category">Multi-Tasking</string>
@@ -762,5 +763,10 @@
     <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
+    <!-- Lockscreen notification count -->
+    <string name="lockscreen_maxnotif_title">Lockscreen notification count</string>
+    <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
+    <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
 
 </resources>
