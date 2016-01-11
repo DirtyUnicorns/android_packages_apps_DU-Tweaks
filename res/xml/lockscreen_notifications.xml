@@ -13,9 +13,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/lockscreen_notifications_category" >
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        android:title="@string/lockscreen_notifications_category" >
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="lock_screen_custom_notif"

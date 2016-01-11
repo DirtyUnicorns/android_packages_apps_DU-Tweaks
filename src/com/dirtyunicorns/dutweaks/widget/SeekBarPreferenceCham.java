@@ -1,3 +1,20 @@
+/*
+ * Copyright (C) 2015 The Pure Nexus Project
+ * Borrows parts from work by Matthew Wiggins
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.dirtyunicorns.dutweaks.widget;
 
 import android.content.Context;
@@ -20,7 +37,7 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
     private final String TAG = getClass().getName();
 
     private static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
-    private static final String SETTINGS = "http://schemas.android.com/apk/res/com.android.settings";
+    private static final String SETTINGS = "http://schemas.android.com/apk/res-auto";
     private static final int DEFAULT_VALUE = 50;
 
     private int mMaxValue      = 100;
@@ -52,11 +69,24 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
     }
 
     private void setValuesFromXml(AttributeSet attrs) {
+        final TypedArray typedArray = getContext().obtainStyledAttributes(
+                attrs, R.styleable.SeekBarPreferenceCham);
+
         mMaxValue = attrs.getAttributeIntValue(ANDROIDNS, "max", 100);
-        mMinValue = attrs.getAttributeIntValue(SETTINGS, "min", 0);
+        mMinValue = attrs.getAttributeIntValue(SETTINGS, "minimum", 0);
         mUnitsLeft = getAttributeStringValue(attrs, SETTINGS, "unitsLeft", "");
         String units = getAttributeStringValue(attrs, SETTINGS, "units", "");
         mUnitsRight = getAttributeStringValue(attrs, SETTINGS, "unitsRight", units);
+
+        Integer id = typedArray.getResourceId(R.styleable.SeekBarPreferenceCham_unitsRight, 0);
+        if (id > 0) {
+            mUnitsRight = getContext().getResources().getString(id);
+        }
+        id = typedArray.getResourceId(R.styleable.SeekBarPreferenceCham_unitsLeft, 0);
+        if (id > 0) {
+            mUnitsLeft = getContext().getResources().getString(id);
+        }
+
         try {
             String newInterval = attrs.getAttributeValue(SETTINGS, "interval");
             if(newInterval != null)
@@ -66,12 +96,12 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
             Log.e(TAG, "Invalid interval value", e);
         }
     }
-    
+
     private String getAttributeStringValue(AttributeSet attrs, String namespace, String name, String defaultValue) {
         String value = attrs.getAttributeValue(namespace, name);
         if(value == null)
             value = defaultValue;
-        
+
         return value;
     }
 
@@ -87,7 +117,7 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
 
     @Override
     protected View onCreateView(ViewGroup parent){
-        
+
         RelativeLayout layout =  null;
         try {
             LayoutInflater mInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -100,7 +130,7 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
         }
         return layout;
     }
-    
+
     @Override
     public void onBindView(View view) {
         super.onBindView(view);
@@ -109,7 +139,7 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
             // move our seekbar to the new view we've been given
             ViewParent oldContainer = mSeekBar.getParent();
             ViewGroup newContainer = (ViewGroup) view.findViewById(R.id.seekBarPrefBarContainer);
-            
+
             if (oldContainer != newContainer) {
                 // remove the seekbar from the old view
                 if (oldContainer != null) {
@@ -149,7 +179,7 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
             Log.e(TAG, "Error updating seek bar preference", e);
         }
     }
-    
+
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         int newValue = progress + mMinValue;
@@ -158,12 +188,12 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
         else if(newValue < mMinValue)
             newValue = mMinValue;
         else if(mInterval != 1 && newValue % mInterval != 0)
-            newValue = Math.round(((float)newValue)/mInterval)*mInterval;  
-        
+            newValue = Math.round(((float)newValue)/mInterval)*mInterval;
+
         // change rejected, revert to the previous value
         if(!callChangeListener(newValue)){
-            seekBar.setProgress(mCurrentValue - mMinValue); 
-            return; 
+            seekBar.setProgress(mCurrentValue - mMinValue);
+            return;
         }
         // change accepted, store it
         mCurrentValue = newValue;
@@ -179,7 +209,7 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
         notifyChanged();
     }
 
-    @Override 
+    @Override
     protected Object onGetDefaultValue(TypedArray ta, int index){
         int defaultValue = ta.getInt(index, DEFAULT_VALUE);
         return defaultValue;
@@ -205,5 +235,11 @@ public class SeekBarPreferenceCham extends Preference implements OnSeekBarChange
 
     public void setValue(int value) {
         mCurrentValue = value;
+    }
+
+    @Override
+    public void setEnabled (boolean enabled) {
+        mSeekBar.setEnabled(enabled);
+        super.setEnabled(enabled);
     }
 }
