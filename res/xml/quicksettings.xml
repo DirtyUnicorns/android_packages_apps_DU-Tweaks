@@ -33,6 +33,12 @@
            android:targetClass="com.android.systemui.tuner.QsActivity" />
     </PreferenceScreen>
 
+    <SwitchPreference
+        android:key="block_on_secure_keyguard"
+        android:title="@string/block_on_secure_keyguard_title"
+        android:summary="@string/block_on_secure_keyguard_summary"
+        android:persistent="false" />
+
     <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
         android:key="qs_show_brightness_slider"
         android:title="@string/qs_brightness_slider_title"
