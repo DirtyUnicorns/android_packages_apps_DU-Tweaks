@@ -49,6 +49,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
             .setClassName(OMNISWITCH_PACKAGE_NAME, OMNISWITCH_PACKAGE_NAME + ".SettingsActivity");
     private static final String CATEGORY_STOCK_RECENTS = "stock_recents";
     private static final String CATEGORY_OMNI_RECENTS = "omni_recents";
+    private static final String IMMERSIVE_RECENTS = "immersive_recents";
 
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
@@ -56,6 +57,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private Preference mOmniSwitchSettings;
     private boolean mOmniSwitchInitCalled;
     private PreferenceCategory mOmniSwitch;
+    private ListPreference mImmersiveRecents;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -96,6 +98,12 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
         updateDisableStockRecents();
+
+        mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+        mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.IMMERSIVE_RECENTS, 0)));
+        mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+        mImmersiveRecents.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -127,6 +135,12 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
             return true;
+        }
+        if (preference == mImmersiveRecents) {
+            Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
+                    Integer.valueOf((String) objValue));
+            mImmersiveRecents.setValue(String.valueOf(objValue));
+            mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
         }
         if (preference == mRecentsUseOmniSwitch) {
             boolean value = (Boolean) objValue;
