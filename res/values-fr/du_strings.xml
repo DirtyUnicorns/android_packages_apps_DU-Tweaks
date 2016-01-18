@@ -58,6 +58,15 @@
     <string name="brightness_icon_title">Icône de luminosité</string>
     <string name="brightness_icon_summary">Afficher l\'icône de luminosité à gauche du urseur de luminosité permettant d\'ajuster automatiquement la luminosité</string>
 
+    <!-- Immersive Recents -->
+    <string name="immersive_recents_title">Applications récentes immersives</string>
+    <string name="immersive_recents_summary">Apparence de l\'écran des applications récentes</string>
+    <string name="immersive_recents_dialog_title">Choisir l\'apparence</string>
+    <string name="immersive_recents_default">Par défaut</string>
+    <string name="immersive_recents_fullscreen">Plein-écran</string>
+    <string name="immersive_recents_statusbar">Uniquement la barre d\'état</string>
+    <string name="immersive_recents_navbar">Uniquement la barre de navigation</string>
+
     <!-- Power Menu -->
     <string name="powermenu_screenshot">Capture d\'écran</string>
     <string name="powermenu_screenrecord">Capture vidéo</string>
@@ -388,6 +397,10 @@
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Retour haptique</string>
     <string name="quick_settings_vibrate_summary">Vibrer lors des appuis sur les raccourcis</string>
+
+    <!-- Quick settings disable on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Volet des paramètres</string>
+    <string name="block_on_secure_keyguard_summary">Désactiver le volet des paramètre sur l\'écran de déverrouillage sécurisé</string>
 
     <!-- Carrier Label -->
     <string name="carrier_options">Libellé opérateur</string>
