@@ -75,10 +75,23 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
 
         mBreathingNotifications = (PreferenceGroup) findPreference(BREATHING_NOTIFICATIONS);
 
-        if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
-            getPreferenceScreen().removePreference(findPreference(MISSED_CALL_BREATH));
-            getPreferenceScreen().removePreference(findPreference(VOICEMAIL_BREATH));
-            getPreferenceScreen().removePreference(findPreference(BREATHING_NOTIFICATIONS));
+        Context context = getActivity();
+        ConnectivityManager cm = (ConnectivityManager)
+                context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        if(cm.isNetworkSupported(ConnectivityManager.TYPE_MOBILE)) {
+
+            mMissedCallBreath.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.KEY_MISSED_CALL_BREATH, 0) == 1);
+            mMissedCallBreath.setOnPreferenceChangeListener(this);
+
+            mVoicemailBreath.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1);
+            mVoicemailBreath.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mMissedCallBreath);
+            prefSet.removePreference(mVoicemailBreath);
+            prefSet.removePreference(mBreathingNotifications);
         }
     }
 
@@ -115,18 +128,20 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mMissedCallBreath) {
-            boolean value = (Boolean) objValue;
+            boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver, Settings.System.KEY_MISSED_CALL_BREATH, value ? 1 : 0);
+            return true;
         } else if (preference == mVoicemailBreath) {
-            boolean value = (Boolean) objValue;
+            boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver, Settings.System.KEY_VOICEMAIL_BREATH, value ? 1 : 0);
-        } else {
-            return false;
+            return true;
         }
-
-        return true;
+        return false;
     }
 }
+
