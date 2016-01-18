@@ -17,6 +17,7 @@
 package com.dirtyunicorns.dutweaks.fragments;
 
 import android.content.Context;
+import android.hardware.fingerprint.FingerprintManager;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -49,6 +50,8 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private ListPreference mMsob;
     private ListPreference mScrollingCachePref;
     private SwitchPreference mEnableTaskManager;
+    private FingerprintManager mFingerprintManager;
+    private SwitchPreference mFingerprintVib;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,6 +60,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         addPreferencesFromResource(R.xml.misctweaks);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+	final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mMsob = (ListPreference) findPreference(PREF_MEDIA_SCANNER_ON_BOOT);
         mMsob.setValue(String.valueOf(Settings.System.getInt(getActivity().getContentResolver(),
@@ -86,6 +90,12 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mEnableTaskManager = (SwitchPreference) findPreference(ENABLE_TASK_MANAGER);
         mEnableTaskManager.setChecked((Settings.System.getInt(resolver,
                 Settings.System.ENABLE_TASK_MANAGER, 0) == 1));
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintVib = (SwitchPreference) prefScreen.findPreference("fingerprint_success_vib");
+        if (!mFingerprintManager.isHardwareDetected()){
+            prefScreen.removePreference(mFingerprintVib);
+        }
     }
 
     @Override
