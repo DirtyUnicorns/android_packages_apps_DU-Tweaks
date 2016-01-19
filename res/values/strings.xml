@@ -185,6 +185,10 @@
     <string name="quick_pulldown_right">Right</string>
     <string name="quick_pulldown_always">Always</string>
 
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">Lockscreen torch</string>
+    <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
+
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_style_title">Style</string>
