@@ -16,27 +16,18 @@
 
 package com.dirtyunicorns.dutweaks.tabs;
 
-import android.app.ActivityManagerNative;
 import android.content.Context;
 import android.content.ContentResolver;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
-import android.preference.Preference;
-import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
+import android.preference.SwitchPreference;
+import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
-import android.util.Log;
-import android.view.WindowManagerGlobal;
-import android.view.IWindowManager;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -46,8 +37,6 @@ import com.android.settings.Utils;
 public class Navigation extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Navigation";
-
-    private final Configuration mCurConfig = new Configuration();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
