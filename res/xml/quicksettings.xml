@@ -40,6 +40,13 @@
         android:entryValues="@array/qs_num_columns_values"
         android:persistent="false" />
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="sysui_qs_main_tiles"
+        android:title="@string/qs_main_tiles_title"
+        android:summaryOn="@string/qs_main_tiles_summary_on"
+        android:summaryOff="@string/qs_main_tiles_summary_off"
+        android:defaultValue="true" />
+
     <SwitchPreference
         android:key="block_on_secure_keyguard"
         android:title="@string/block_on_secure_keyguard_title"
