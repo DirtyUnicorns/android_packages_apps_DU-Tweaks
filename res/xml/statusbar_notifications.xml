@@ -38,13 +38,13 @@
         android:key="breathing_notifications"
         android:title="@string/breathing_notifications_category">
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="missed_call_breath"
         android:title="@string/missed_call_breath_title"
         android:summary="@string/missed_call_breath_summary"
         android:persistent="false"/>
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="voicemail_breath"
         android:title="@string/voicemail_breath_title"
         android:summary="@string/voicemail_breath_summary"
