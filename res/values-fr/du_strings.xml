@@ -803,4 +803,8 @@
     <string name="lockscreen_maxnotif_sumary">Activer le réglage du nombre maximal de notifications en attente sur l\'écran de déverrouillage</string>
     <string name="lockscreen_maxnotif_config">Nombre maximal de notifications en attente</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Authentification par empreintes digitales</string>
+    <string name="fprint_sucess_vib_summary">Vibrer en cas d\'authentification correcte</string>
+
 </resources>
