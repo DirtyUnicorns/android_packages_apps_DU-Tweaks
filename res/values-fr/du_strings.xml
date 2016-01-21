@@ -223,6 +223,10 @@
     <string name="lock_clock_font_condensed_light_normal">Roboto condensé léger</string>
     <string name="lock_clock_font_condensed_light_italic">Roboto condensé léger italique</string>
 
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">Lampe de poche</string>
+    <string name="keyguard_torch_summary">Sur écran éteint, un appui prolongé sur la touche Marche/Arrêt allume la lampe de poche</string>
+
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Barre d\'état</string>
     <string name="status_bar_style_title">Style</string>
@@ -806,5 +810,14 @@
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Authentification par empreintes digitales</string>
     <string name="fprint_sucess_vib_summary">Vibrer en cas d\'authentification correcte</string>
+
+    <!-- QS Tiles Columns -->
+    <string name="qs_num_columns_title">Nombre de raccourcis par ligne</string>
+    <string name="qs_num_columns_showing">Afficher %1$s raccourcis par ligne</string>
+
+    <!-- QuickSettings main tiles -->
+    <string name="qs_main_tiles_title">Agrandir la première ligne</string>
+    <string name="qs_main_tiles_summary_on">Deux raccourcis principaux sur la première ligne</string>
+    <string name="qs_main_tiles_summary_off">3, 4 ou 5 raccourcis par ligne</string>
 
 </resources>

@@ -39,4 +39,10 @@
         <item >Enregistrer un profil</item>
     </string-array>
 
+    <string-array name="qs_num_columns_entries">
+        <item>Trois</item>
+        <item>Quatre</item>
+        <item>Cinq</item>
+    </string-array>
+
 </resources>
