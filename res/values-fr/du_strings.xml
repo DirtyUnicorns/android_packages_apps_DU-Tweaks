@@ -56,7 +56,7 @@
     <string name="qs_brightness_slider_summary">Afficher le curseur de luminosité dans le volet des paramètres</string>
 
     <string name="brightness_icon_title">Icône de luminosité</string>
-    <string name="brightness_icon_summary">Afficher l\'icône de luminosité à gauche du urseur de luminosité permettant d\'ajuster automatiquement la luminosité</string>
+    <string name="brightness_icon_summary">Afficher l\'icône de luminosité à gauche du curseur de luminosité permettant d\'ajuster automatiquement la luminosité</string>
 
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Applications récentes immersives</string>
@@ -124,7 +124,7 @@
     <string name="wakelock_blocker_save">Appliquer</string>
     <string name="wakelock_list_header">Wakelocks disponibles</string>
     <string name="wakelock_blocker_reload">Actualiser</string>
-    <string name="wakelock_blocker_warning_title">Continuez avec précaution</string>
+    <string name="wakelock_blocker_warning_title">Continuer avec précaution</string>
     <string name="wakelock_blocker_warning">Le blocage de Wakelocks peut potentiellement causer des instabilités, des bogues, des pertes de données</string>
 
     <!-- Expanded desktop -->
