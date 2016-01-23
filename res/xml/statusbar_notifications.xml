@@ -50,6 +50,12 @@
         android:summary="@string/voicemail_breath_summary"
         android:persistent="false"/>
 
+    <SwitchPreference
+        android:key="sms_breath"
+        android:title="@string/sms_breath_title"
+        android:summary="@string/sms_breath_summary"
+        android:persistent="false"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
