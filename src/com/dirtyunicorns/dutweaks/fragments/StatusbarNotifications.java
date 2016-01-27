@@ -43,6 +43,7 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String MISSED_CALL_BREATH = "missed_call_breath";
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
+    private static final String SMS_BREATH = "sms_breath";
     private static final String BREATHING_NOTIFICATIONS = "breathing_notifications";
 
     private SwitchPreference mForceExpanded;
@@ -50,6 +51,7 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
     private SwitchPreference mEnableNC;
     private SwitchPreference mMissedCallBreath;
     private SwitchPreference mVoicemailBreath;
+    private SwitchPreference mSmsBreath;
     private PreferenceGroup mBreathingNotifications;
 
     @Override
@@ -72,6 +74,7 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
 
         mMissedCallBreath = (SwitchPreference) findPreference(MISSED_CALL_BREATH);
         mVoicemailBreath = (SwitchPreference) findPreference(VOICEMAIL_BREATH);
+        mSmsBreath = (SwitchPreference) findPreference(SMS_BREATH);
 
         mBreathingNotifications = (PreferenceGroup) findPreference(BREATHING_NOTIFICATIONS);
 
@@ -88,9 +91,14 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
             mVoicemailBreath.setChecked(Settings.System.getInt(resolver,
                     Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1);
             mVoicemailBreath.setOnPreferenceChangeListener(this);
+
+            mSmsBreath.setChecked(Settings.Global.getInt(resolver,
+                    Settings.Global.KEY_SMS_BREATH, 0) == 1);
+            mSmsBreath.setOnPreferenceChangeListener(this);
         } else {
             prefSet.removePreference(mMissedCallBreath);
             prefSet.removePreference(mVoicemailBreath);
+            prefSet.removePreference(mSmsBreath);
             prefSet.removePreference(mBreathingNotifications);
         }
     }
@@ -139,6 +147,10 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         } else if (preference == mVoicemailBreath) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver, Settings.System.KEY_VOICEMAIL_BREATH, value ? 1 : 0);
+            return true;
+        } else if (preference == mSmsBreath) {
+            boolean value = (Boolean) newValue;
+            Settings.Global.putInt(resolver, Settings.Global.KEY_SMS_BREATH, value ? 1 : 0);
             return true;
         }
         return false;
