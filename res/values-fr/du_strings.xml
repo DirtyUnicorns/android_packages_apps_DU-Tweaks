@@ -23,7 +23,7 @@
     <string name="generalui_category">Interface</string>
     <string name="lockscreen_category">Écran de déverrouillage</string>
     <string name="statusbar_category">Barre d\'état</string>
-    <string name="navigation_category">Barre de navigation</string>
+    <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-tâche</string>
     <string name="system_category">Système</string>
     <string name="misc_category">Réglages divers</string>
@@ -360,6 +360,8 @@
     <string name="show_network_traffic_2000">2000 ms</string>
     <string name="network_traffic_autohide">Masquer automatiquement</string>
     <string name="network_traffic_autohide_summary">Ne pas afficher l\'indicateur de vitesse de réseau lorsqu\'il n\'y a pas de trafic</string>
+    <string name="network_traffic_hidearrow">Masquer les flèches</string>
+    <string name="network_traffic_hidearrow_summary">Masquer les flèches de l\'indicateur de trafic</string>
     <string name="network_traffic_autohide_threshold">Seuil d\'inactivité</string>
     <string name="network_traffic_color_style">Couleur</string>
     <string name="network_traffic_color_reset">Réinitialiser la couleur</string>
@@ -813,7 +815,7 @@
 
     <!-- QS Tiles Columns -->
     <string name="qs_num_columns_title">Nombre de raccourcis par ligne</string>
-    <string name="qs_num_columns_showing">Afficher %1$s raccourcis par ligne</string>
+    <string name="qs_num_columns_showing">%1$s raccourcis affichés par ligne</string>
 
     <!-- QuickSettings main tiles -->
     <string name="qs_main_tiles_title">Agrandir la première ligne</string>
