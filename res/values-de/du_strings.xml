@@ -66,7 +66,7 @@
 
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast-Symbol</string>
-    <string name="toast_icon_summary">Zeige das zugehörige App-Symbol mit dem Toast an.</string>
+    <string name="toast_icon_summary">Zeige das zugehörige App-Symbol mit dem Toast an</string>
 
     <!-- Download Center -->
     <string name="gapps_title">Google Apps (GAPPS)</string>
@@ -107,7 +107,7 @@
     <string name="powermenu_airplane">Flugmodus</string>
     <string name="powermenu_settings">Einstellungen</string>
     <string name="powermenu_lockdown">Sperren</string>
-    <string name="powermenu_soundpanel">Sound Panel</string>
+    <string name="powermenu_soundpanel">Benachrichtigungsmodus</string>
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Erweiterter Neustart</string>
@@ -140,8 +140,8 @@
     <string name="force_expanded_notifications_summary">Verfügbar nur für Anwendungen, die erweiterte Benachrichtigungen unterstützen.</string>
 
     <!-- Disabling immersive mode messages -->
-    <string name="disable_immersive_message_title">Immersive-Modus Benachrichtigungen deaktivieren</string>
-    <string name="disable_immersive_message_summary">Dadurch werden alle Immersive-Modus Benachrichtigungen ausgeblendet</string>
+    <string name="disable_immersive_message_title">Immersive-Benachrichtigungen deaktivieren</string>
+    <string name="disable_immersive_message_summary">Dadurch werden alle Benachrichtigungen im Immersive-Modus ausgeblendet</string>
 
     <!-- Disabling FC notifications -->
     <string name="disable_fc_notifications_title">FC-Benachrichtigungen deaktivieren</string>
@@ -161,8 +161,8 @@
     <string name="disable_ads_summary">Wechselt die Host-Datei aus um Werbung zu deaktivieren</string>
 
     <!-- Volume Key Rotation -->
-    <string name="swap_volume_buttons_title">Neu ausrichten</string>
-    <string name="swap_volume_buttons_summary">Tausche Lautstärketasten, wenn der Bildschirm gedreht wird</string>
+    <string name="swap_volume_buttons_title">Ausrichtung</string>
+    <string name="swap_volume_buttons_summary">Tausche die Position der Lautstärketasten, wenn der im Querformat ist</string>
 
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Wecken mit Lautstärketaste</string>
@@ -199,7 +199,7 @@
     <string name="battery_bar_animate_summary">Aktiviert die Ladeanimation beim Laden des Geräts</string>
 
     <!-- Lock Clock Fonts -->
-    <string name="lock_clock_font_title">Schriftart</string>
+    <string name="lock_clock_font_title">Sperrbildschirm-Schriftart</string>
     <string name="lock_clock_font_summary">Ändert die Schriftart der Uhr auf dem Sperrbildschirm</string>
     <string name="lock_clock_font_dialog_title">Wähle die Schriftart der Uhr</string>
     <string name="lock_clock_font_normal">Roboto (Standard)</string>
@@ -288,17 +288,17 @@
     <string name="task_close_title">Aufgabe schließen</string>
     <string name="task_move_to_front_title">Nach vorne verschieben</string>
     <string name="task_move_to_back_title">Nach hinten verschieben</string>
-    <string name="wallpaper_open_title">Wallpaper open animation</string>
-    <string name="wallpaper_close_title">Wallpaper close animation</string>
-    <string name="wallpaper_intra_open_title">Wallpaper innerhalb öffnen</string>
-    <string name="wallpaper_intra_close_title">Wallpaper innerhalb schließen</string>
+    <string name="wallpaper_open_title">Hintergrundbild öffen</string>
+    <string name="wallpaper_close_title">Hintergrundbild schließen</string>
+    <string name="wallpaper_intra_open_title">Hintergrundbild innerhalb öffnen</string>
+    <string name="wallpaper_intra_close_title">Hintergrundbild innerhalb schließen</string>
     <string name="animation_duration_title">Animationsdauer</string>
     <string name="title_animation_no_override">Verhindere Übschreibung durch Apps</string>
     <string name="summary_animation_no_override">Verhindert Animationsübschreibung durch Apps</string>
     <string name="animation_duration_default">Standard</string>
 
     <!-- Toast Animation -->
-    <string name="toast_animation_title">Toast Animation</string>
+    <string name="toast_animation_title">Toast-Animation</string>
     <string name="toast_none_animation">Keine</string>
     <string name="toast_default_animation">Standard</string>
     <string name="toast_fade_animation">Ausblenden</string>
@@ -317,7 +317,7 @@
     <string name="toast_SlideRightLeft_animation">Gleite von rechts nach links</string>
 
     <!-- List View animation -->
-    <string name="listview_animation_title">Listenansicht-Animationen</string>
+    <string name="listview_animation_title">Listen-Animation</string>
     <string name="listview_off">Standard</string>
     <string name="listview_wave_left">Welle (links)</string>
     <string name="listview_wave_right">Welle (rechts)</string>
@@ -331,7 +331,7 @@
     <string name="listview_translate_right">Rutsch (rechts)</string>
 
     <!-- List View interpolator -->
-    <string name="listview_interpolator_title">Listenansicht-Interpolation</string>
+    <string name="listview_interpolator_title">Listen-Interpolation</string>
     <string name="listview_accelerate_interpolator">Beschleunigen</string>
     <string name="listview_decelerate_interpolator">Verlangsamen</string>
     <string name="listview_accelerate_decelerate_interpolator">Beschleunigen und verlangsamen</string>
@@ -365,10 +365,10 @@
     <string name="ok">OK</string>
 
     <!-- Time Contextual Header -->
-    <string name="status_bar_custom_header_title">Benutzerdefinierter Hintergrund nach Zeit</string>
-    <string name="status_bar_custom_header_summary">Aktiviere Hintergrundbild für die Benachrichtigungsleiste</string>
-    <string name="status_bar_custom_header_default_title">Benutze Poly HD Bilder</string>
-    <string name="status_bar_custom_header_default_summary">Einschalten für Polygraphische HD Bilder. Ausschalten für die originalen Bilder.</string>
+    <string name="status_bar_custom_header_title">Zeitbasierter Hintergrund</string>
+    <string name="status_bar_custom_header_summary">Ersetzt den Hintergrund der oberen Benachrichtigungsleiste durch Bilder</string>
+    <string name="status_bar_custom_header_default_title">Polygon-Bilder</string>
+    <string name="status_bar_custom_header_default_summary">Ersetzt den Hintergrund durch Polygon-Bilder</string>
 
     <!-- Extended statusbar weather -->
     <string name="status_bar_show_weather_title">Wetter in erweiterter Statusleiste</string>
@@ -408,7 +408,7 @@
     <string name="carrier_options">Anbieter-Label</string>
     <string name="custom_carrier_label_title">Benutzerdefiniertes Label</string>
     <string name="custom_carrier_label_explain">Bitte gebe ein neues Label ein. Leer lassen, um Standard-Label zu erhalten</string>
-    <string name="custom_carrier_label_notset">Benutzerdefiniertes Label zur Zeit nicht gesetzt</string>
+    <string name="custom_carrier_label_notset">Benutzerdefiniertes Label ist zur Zeit nicht gesetzt</string>
     <string name="status_bar_carrier_color">Farbe</string>
     <string name="show_carrier_title">Anbieter-Label</string>
     <string name="show_carrier_disabled">Deaktiviert</string>
@@ -472,7 +472,7 @@
     <string name="custom_density_dialog_button_got">Einverstanden!</string>
     <string name="custom_density_dialog_button_reboot">Jetzt neustarten</string>
     <!-- MediaScanner behavior on boot -->
-    <string name="media_scanner_on_boot_title">MediaScanner verhalten beim Start</string>
+    <string name="media_scanner_on_boot_title">Verhalten des MediaScanners beim Start</string>
     <string name="media_scanner_on_boot_enabled">Medien scannen</string>
     <string name="media_scanner_on_boot_ask">Nachfragen (Benachrichtigung)</string>
     <string name="media_scanner_on_boot_disabled">Medien nicht scannen</string>
@@ -524,9 +524,9 @@
     <string name="profile_applist_title">Anwendungen</string>
 
     <!-- Circle app bar -->
-    <string name="category_app_circle_bar_title">App-Starter (Ring)</string>
-    <string name="app_circle_bar_title">Ringleiste für Apps</string>
-    <string name="app_circle_bar_summary">Zeige den Ring bei Berührung des rechten Displayrandes</string>
+    <string name="category_app_circle_bar_title">Ringleiste</string>
+    <string name="app_circle_bar_title">Ringleiste</string>
+    <string name="app_circle_bar_summary">Zeigt einen Ring mit Anwendungen bei Berührung des rechten Displayrands</string>
     <string name="app_circle_bar_included_apps_title">Enthaltene Apps</string>
     <string name="app_circle_bar_included_apps_summary">Angezeigte Apps in der Ringleiste</string>
     <string name="trigger_width_title">Breite des Auslösers</string>
@@ -543,7 +543,7 @@
     <string name="voicemail_breath_title">Sprachnachricht</string>
     <string name="voicemail_breath_summary">Benachrichtigungen pulsieren in der Statusleiste bei Sprachnachrichten</string>
     <!-- Navigation Bar -->
-    <string name="navbar_interface_title">Öberfläche</string>
+    <string name="navbar_interface_title">Oberfläche</string>
     <string name="navbar_size">Leistengröße</string>
     <string name="navbar_mode">Navigationmodus</string>
     <string name="navbar_visibility">Navigationsleiste aktivieren</string>
@@ -574,7 +574,7 @@
 
     <!-- Fling -->
     <string name="fling_settings">Fling-Einstellungen</string>
-    <string name="fling_interface">Fling-Gesten-Oberfläche</string>
+    <string name="fling_interface">Fling</string>
     <string name="fling_enable_title">Fling aktivieren</string>
     <string name="fling_back_home_policy">Zurück und Home müssen die ganze Zeit gesetzt sein! Um diese zu ändern wähle zuerst eine Alternative!</string>
     <string name="fling_split_bar_policy">Wenn nur eine Aktion rechts oder links gewählt ist, zählt diese für die gesamte Leiste</string>
@@ -621,9 +621,9 @@
     <string name="pulse_help_policy_notice_title">Über Pulse</string>
     <string name="pulse_help_policy_notice_summary">Pulse ist eine brilliante Equalizerleiste zum Visualisieren von Musik auf der Navigationsleiste. Pulse funktioniert nicht mit allen Audioquellen wenn Musik über die Lautsprecher gehört wird</string>
     <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Navigation bar audio visualization</string>
+    <string name="pulse_settings_summary">Tonvisualisierung auf der Navigationsleiste</string>
     <string name="fling_show_pulse_title">Pulse anzeigen</string>
-    <string name="fling_show_pulse_summary">Audio visualization on the navigation bar</string>
+    <string name="fling_show_pulse_summary">Tonvisualisierung auf der Navigationsleiste</string>
     <string name="fling_pulse_color">Farbe</string>
     <string name="eos_fling_lavalamp_title">Lavalampe einschalten</string>
     <string name="eos_fling_lavalamp_summary">Pulse animiert einen weichen Lavalampenstil</string>
@@ -639,7 +639,7 @@
     <string name="lockscreen_category_title">Sperrbildschirm</string>
     <string name="lockscreen_wallpaper_title">Sperrbildschirm-Hintergrund</string>
     <string name="lockscreen_wallpaper_set_title">Neuen Hintergrund setzen</string>
-    <string name="lockscreen_wallpaper_clear_title">Zurück zu Standard</string>
+    <string name="lockscreen_wallpaper_clear_title">Hintergrund zurücksetzen</string>
     <string name="reset_lockscreen_wallpaper">Sperrbildschirm-Hintergrund wurde zurückgesetzt</string>
 
     <!-- Slim lockscreen shortcuts -->
@@ -654,17 +654,17 @@
     <string name="shortcut_action_max">Maximale Einträge erreicht!</string>
     <string name="shortcut_action_warning">Warnung!</string>
     <string name="shortcut_action_warning_message">Es ist nicht möglich den letzten Eintrag zu löschen!</string>
-    <string name="shortcut_action_disable_message">Deaktiviert\nFüge einen Eintrag hinzu um diese Funktion zu aktivieren</string>
+    <string name="shortcut_action_disable_message">Diese Funktion ist deaktiviert da keine Verknüpfung festgelegt ist.\nFüge einen Eintrag hinzu um diese Funktion zu aktivieren.\nÜber das Menü erhälst du weiter Informationen.</string>
     <string name="shortcut_image_not_valid">Die gewählte App hat kein gültiges Symbol oder erlaubt keinen Bildzuschnitt. Verwenden Sie eine andere App</string>
     <string name="shortcut_duplicate_entry">Die ausgewählte Aktion kann nicht zweimal hinzugefügt werden</string>
     <string name="shortcut_action_help_shortcut">Verknüpfung</string>
     <string name="shortcut_action_help_button">Schalter</string>
     <string name="shortcut_action_help_app">App</string>
-    <string name="shortcut_action_help_icon">,während Sie auf das Symbol gehen, öffnen sich die Anpassungsoptionen</string>
-    <string name="shortcut_action_help_main">Zum hinzufügen von%1$s, wählen Sie das Symbol "Hinzufügen". Wenn %1$s hinzugefügt ist, wird das Auswählen der Reihe das Ziel %2$s ändern\n\nZum entfernen von %1$s, wischen Sie die Reihe nach links oder rechts. Zum Neuordnen von %1$s in der Liste Schalter vertikale ziehen\n\nZum löschen, oder um auf die Standardwerte zurückzusetzen, wählen Sie das Symbol "Zurücksetzen".</string>
-    <string name="shortcut_action_help_delete_last_entry">Durch entfernen von %1$s in der Liste, wird die Funktion vollständig deaktiviert.</string>
-    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Durch entfernen von %1$s in der Liste, wird die zweite Spalte vollständig deaktiviert.</string>
-<string name="shortcuts_applications">Anwendungen</string>
+
+    <string name="shortcut_action_help_main">Zum hinzufügen von Verknüpfungen, wählen Sie das + Symbol. Wenn eine Verknüpfung hinzugefügt ist, können Sie durch ein Tippen auf den Listeneintrag die Aktion ändern.\n\nZum Entfernen von Verknüpfungen, wischen Sie auf dem Listeneintrag nach links oder rechts. Zum Ordnen halten Sie auf das linke Symbol und ziehen Sie anschließend die Verknüpfung an die gewünschte Stelle.\n\nUm die Verknüpfungen zurückzusetzen wählen Sie den Zurücksetzen-Eintrag im Menü.</string>
+    <string name="shortcut_action_help_icon">\nTippen Sie auf das rechte Symbol um es das Verknüpfungssymbol anzupassen.</string>
+    <string name="shortcut_action_help_delete_last_entry">Durch das Zurücksetzen wird die Funktion wieder deaktiviert.</string>
+    <string name="shortcuts_applications">Anwendungen</string>
     <string name="shortcuts_select_custom_app_title">Benutzerdefinierte Anwendung auswählen</string>
     <string name="shortcuts_icon_picker_type">Symbol-Typ auswählen:</string>
     <string name="shortcuts_icon_default">Standard</string>
@@ -734,7 +734,7 @@
     <string name="shortcut_action_menu">Menü</string>
     <string name="shortcut_action_ime">IME-Schalter öffnen</string>
     <string name="shortcut_action_power_menu">Power-Menü</string>
-    <string name="shortcut_action_recent">Recents</string>
+    <string name="shortcut_action_recent">Anwendungsverlauf</string>
     <string name="shortcut_action_power">Bildschirm ausschalten</string>
     <string name="shortcut_action_search">In-App Suche</string>
 
@@ -742,7 +742,7 @@
     <string name="listsystem">Liste</string>
     <string name="sizer_title">System-App Entferner</string>
     <string name="caution">Achtung\u00A0!</string>
-    <string name="sizer_message_startup">Dieses Tool hilft bei der Entfernung von Systemanwendungen. Verwenden Sie es mit Vorsicht, und nur für Anwendungen, deren Entfernung sicher ist.</string>
+    <string name="sizer_message_startup">Dieses Tool hilft bei der Entfernung von Systemanwendungen. Verwenden Sie es mit Vorsicht, und nur für Anwendungen, deren Entfernung sicher ist</string>
     <string name="cancel">Abbrechen</string>
     <string name="sizer_message_delete">Diese Anwendung entfernen\u00A0?</string>
     <string name="btn_delete">Die ausgewählten Anwendungen entfernen\u00A0!</string>
@@ -763,11 +763,11 @@
     <string name="tomahawk_music_player_summary">Ein Open-Source Android Musik Player mit toller Entwicklung und Funktionen</string>
 
     <!-- Task Manager -->
-    <string name="enable_task_manager_title">Task Manager</string>
-    <string name="enable_task_manager_summary">Ein-/Ausschalten des Task Manager in der erweiterten Statusleiste.</string>
+    <string name="enable_task_manager_title">Task Manager aktivieren</string>
+    <string name="enable_task_manager_summary">Zeigt den Task Manager in der erweiterten Statusleiste an</string>
 
     <!-- Power menu Animations  -->
-    <string name="power_menu_animation_title">Startmenü-Animationen</string>
+    <string name="power_menu_animation_title">Startmenü-Animation</string>
     <string name="power_menu_animation_summary">Ändere die Ein-/Ausblendeanimation des Startmenüs</string>
     <string name="power_menu_animation_dialog_title">Startmenü-Animation auswählen</string>
     <string name="power_menu_animation_aosp">AOSP (Standard)</string>
