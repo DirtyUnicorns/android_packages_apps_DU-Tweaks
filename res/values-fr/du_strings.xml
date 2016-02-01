@@ -48,8 +48,8 @@
     <string name="title_quick_pulldown">Accès rapide</string>
     <string name="summary_quick_pulldown">Côté %1$s de la barre d\'état tirée vers le bas</string>
     <string name="quick_pulldown_off">Désactivé</string>
-    <string name="quick_pulldown_left">gauche</string>
-    <string name="quick_pulldown_right">droit</string>
+    <string name="quick_pulldown_left">Gauche</string>
+    <string name="quick_pulldown_right">Droit</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title">Curseur de luminosité</string>
@@ -204,11 +204,11 @@
     <string name="lock_clock_font_title">Police d\'écriture de l\'horloge</string>
     <string name="lock_clock_font_summary">Modifier la police d\'écriture de l\'horloge de l\'écran de déverrouillage</string>
     <string name="lock_clock_font_dialog_title">Police d\'écriture de l\'horloge</string>
-    <string name="lock_clock_font_normal">Roboto (par défaut)</string>
+    <string name="lock_clock_font_normal">Roboto</string>
     <string name="lock_clock_font_bold">Roboto gras</string>
     <string name="lock_clock_font_italic">Roboto italique</string>
     <string name="lock_clock_font_bold_italic">Roboto italique gras</string>
-    <string name="lock_clock_font_light_normal">Roboto léger</string>
+    <string name="lock_clock_font_light_normal">Roboto léger  (Par défaut)</string>
     <string name="lock_clock_font_light_italic">Roboto italique léger</string>
     <string name="lock_clock_font_thin_normal">Roboto fin</string>
     <string name="lock_clock_font_thin_italic">Roboto italique fin</string>
@@ -565,6 +565,8 @@
     <string name="missed_call_breath_summary">Faire clignoter la notification d\'appel manqué, dans la barre d\'état</string>
     <string name="voicemail_breath_title">Messagerie Vocale</string>
     <string name="voicemail_breath_summary">Faire clignoter la notification de la messagerie vocale, dans la barre d\'état</string>
+    <string name="sms_breath_title">SMS</string>
+    <string name="sms_breath_summary">Faire clignoter la notification de réception de nouveau SMS, dans la barre d\'état</string>
 
     <!-- Navigation Bar -->
     <string name="navbar_interface_title">Interface</string>
