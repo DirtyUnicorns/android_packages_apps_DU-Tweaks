@@ -202,11 +202,11 @@
     <string name="lock_clock_font_title">Sperrbildschirm-Schriftart</string>
     <string name="lock_clock_font_summary">Ändert die Schriftart der Uhr auf dem Sperrbildschirm</string>
     <string name="lock_clock_font_dialog_title">Wähle die Schriftart der Uhr</string>
-    <string name="lock_clock_font_normal">Roboto (Standard)</string>
+    <string name="lock_clock_font_normal">Roboto</string>
     <string name="lock_clock_font_bold">Roboto fett</string>
     <string name="lock_clock_font_italic">Roboto kursiv</string>
     <string name="lock_clock_font_bold_italic">Roboto fett, kursiv</string>
-    <string name="lock_clock_font_light_normal">Roboto leicht</string>
+    <string name="lock_clock_font_light_normal">Roboto leicht (Standard)</string>
     <string name="lock_clock_font_light_italic">Roboto leicht, kursiv</string>
     <string name="lock_clock_font_thin_normal">Roboto dünn</string>
     <string name="lock_clock_font_thin_italic">Roboto dünn, kursiv</string>
@@ -293,7 +293,7 @@
     <string name="wallpaper_intra_open_title">Hintergrundbild innerhalb öffnen</string>
     <string name="wallpaper_intra_close_title">Hintergrundbild innerhalb schließen</string>
     <string name="animation_duration_title">Animationsdauer</string>
-    <string name="title_animation_no_override">Verhindere Übschreibung durch Apps</string>
+    <string name="title_animation_no_override">Verhindere Überschreibung durch Apps</string>
     <string name="summary_animation_no_override">Verhindert Animationsübschreibung durch Apps</string>
     <string name="animation_duration_default">Standard</string>
 
@@ -358,6 +358,8 @@
     <string name="show_network_traffic_2000">2000 ms</string>
     <string name="network_traffic_autohide">Automatisch verbergen</string>
     <string name="network_traffic_autohide_summary">Netzwerkanzeige bei Inaktivität verbergen</string>
+    <string name="network_traffic_hidearrow">Pfeile verbergen</string>
+    <string name="network_traffic_hidearrow_summary">Verbirgt die Pfeile des Netzwerkverkehrs in der Statusleiste</string>
     <string name="network_traffic_autohide_threshold">Inaktivitätsschwelle</string>
     <string name="network_traffic_color_style">Farbe</string>
     <string name="network_traffic_color_reset">Farbe zurücksetzen</string>
@@ -445,8 +447,8 @@
     <string name="recents_clear_all_location_bottom_center">Unten mittig</string>
 
     <!-- Statusbar DU logo -->
-    <string name="status_bar_du_logo_title">Dirty Unicorn-Logo</string>
-    <string name="status_bar_du_logo_summary">Dirty Unicorn-Logo auf der linken Seite der Statusleiste anzeigen</string>
+    <string name="status_bar_du_logo_title">Dirty Unicorns-Logo</string>
+    <string name="status_bar_du_logo_summary">Dirty Unicorns-Logo auf der linken Seite der Statusleiste anzeigen</string>
     <string name="status_bar_du_logo_color">Farbe</string>
 
     <!-- Density Changer -->
@@ -542,6 +544,8 @@
     <string name="missed_call_breath_summary">Benachrichtigungen pulsieren in der Statusleiste bei verpassten Anrufen</string>
     <string name="voicemail_breath_title">Sprachnachricht</string>
     <string name="voicemail_breath_summary">Benachrichtigungen pulsieren in der Statusleiste bei Sprachnachrichten</string>
+    <string name="sms_breath_title">Pulsierende SMS</string>
+    <string name="sms_breath_summary">Benachrichtigungen pulsieren in der Statusleiste bei SMS</string>
     <!-- Navigation Bar -->
     <string name="navbar_interface_title">Oberfläche</string>
     <string name="navbar_size">Leistengröße</string>
@@ -553,6 +557,8 @@
     <string name="navigation_bar_left_title">Linkshändermodus</string>
     <string name="navigation_bar_left_summary">Plaziert die Navigationsleiste auf der linken Seite im Querformat</string>
     <string name="info_pref_note_title">Notiz</string>
+    <string name="smartbar_interface">SmartBar</string>
+    <string name="icon_pack_picker_dialog_title">Symbolpakete</string>
 
     <!-- Actions dialog and default task values set in ActionPreference xml-->
     <string name="choose_action_title">Aktion auswählen</string>
@@ -634,6 +640,20 @@
     <string name="land_vert_title">Höhe im Querformat</string>
     <string name="land_hor_title">Höhe im Querformat</string>
     <string name="positive_done">Fertig</string>
+
+<!-- SmartBar -->
+    <string name="smartbar_category">Smartbar</string>
+    <string name="smartbar_settings_title">Smartbar-Einstellungen</string>
+    <string name="smartbar_editor_title">Bearbeitungsmodus aktivieren</string>
+    <string name="smartbar_editor_summary">Halten und wischen um die Position zu ändern. Lange halten um das Bearbeitungsmenü zu öffnen. Position kann varieren während das Menü geöffnet ist</string>
+    <string name="smartbar_context_menu_position_title">Kontexttastenposition</string>
+    <string name="smartbar_context_menu_position_summary">Legt die Position der Kontexttasten fest</string>
+    <string name="smartbar_right">Rechts</string>
+    <string name="smartbar_left">Links</string>
+    <string name="smartbar_factory_reset_title">Zurücksetzen</string>
+    <string name="smartbar_factory_reset_summary">Setzt Smartbar in den Ausgangszustand zurück</string>
+    <string name="smartbar_factory_reset_confirm">Bist du dir sicher das du Smartbar in den Ausgangszustand zurücksetzen möchtest?</string>
+
 
     <!-- Lock screen wallpaper -->
     <string name="lockscreen_category_title">Sperrbildschirm</string>
