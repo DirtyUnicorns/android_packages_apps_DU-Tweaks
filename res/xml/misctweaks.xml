@@ -76,4 +76,20 @@
             android:summary="@string/double_tap_to_sleep_lockscreen_summary"
             android:defaultValue="false" />
 
+        <!-- SELinux -->
+        <PreferenceCategory
+            android:key="selinux_switch_category"
+            android:title="@string/selinux_switch_title" />
+
+        <Preference
+            android:key="selinux_switch"
+            android:title="@string/selinux_switch_title"
+            android:summary="@string/selinux_switch_summary"
+            android:selectable="false"/>
+
+        <SwitchPreference
+            android:key="selinux"
+            android:title="@string/selinux_title"
+            android:defaultValue="false" />
+
 </PreferenceScreen>

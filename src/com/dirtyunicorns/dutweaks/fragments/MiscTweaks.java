@@ -34,8 +34,15 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import android.provider.Settings.SettingNotFoundException;
+import com.android.internal.util.du.AbstractAsyncSuCMDProcessor;
+import com.android.internal.util.du.CMDProcessor;
+import com.android.internal.util.du.Helpers;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.DataOutputStream;
 
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -45,13 +52,15 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
     private static final String SCROLLINGCACHE_DEFAULT = "1";
     private static final String ENABLE_TASK_MANAGER = "enable_task_manager";
+    private static final String SELINUX = "selinux";
 
-    private SwitchPreference mStatusBarBrightnessControl;
+    private FingerprintManager mFingerprintManager;
     private ListPreference mMsob;
     private ListPreference mScrollingCachePref;
-    private SwitchPreference mEnableTaskManager;
-    private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
+    private SwitchPreference mStatusBarBrightnessControl;
+    private SwitchPreference mEnableTaskManager;
+    private SwitchPreference mSelinux;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,6 +70,18 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
 
         final ContentResolver resolver = getActivity().getContentResolver();
 	final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        //SELinux
+        mSelinux = (SwitchPreference) findPreference(SELINUX);
+        mSelinux.setOnPreferenceChangeListener(this);
+
+        if (CMDProcessor.runShellCommand("getenforce").getStdout().contains("Enforcing")) {
+            mSelinux.setChecked(true);
+            mSelinux.setSummary(R.string.selinux_enforcing_title);
+        } else {
+            mSelinux.setChecked(false);
+            mSelinux.setSummary(R.string.selinux_permissive_title);
+        }
 
         mMsob = (ListPreference) findPreference(PREF_MEDIA_SCANNER_ON_BOOT);
         mMsob.setValue(String.valueOf(Settings.System.getInt(getActivity().getContentResolver(),
@@ -119,14 +140,22 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.MEDIA_SCANNER_ON_BOOT,
                     Integer.valueOf(String.valueOf(newValue)));
-
             mMsob.setValue(String.valueOf(newValue));
             mMsob.setSummary(mMsob.getEntry());
             return true;
-        } else if  (preference == mEnableTaskManager) {
+        } else if (preference == mEnableTaskManager) {
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.ENABLE_TASK_MANAGER, checked ? 1:0);
+            return true;
+        } else if (preference == mSelinux) {
+            if (newValue.toString().equals("true")) {
+                CMDProcessor.runSuCommand("setenforce 1");
+                mSelinux.setSummary(R.string.selinux_enforcing_title);
+            } else if (newValue.toString().equals("false")) {
+                CMDProcessor.runSuCommand("setenforce 0");
+                mSelinux.setSummary(R.string.selinux_permissive_title);
+            }
             return true;
         } else if (preference == mScrollingCachePref) {
             if (newValue != null) {
