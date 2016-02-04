@@ -167,8 +167,8 @@
     <string name="swap_volume_buttons_summary">En mode Paysage lors de la lecture de vidéo, Volume + diminue le volume sonore, Volume - augmente volume sonore</string>
 
     <!-- Volume rocker wake -->
-    <string name="volume_rocker_wake_title">Réveiller par touche Volume</string>
-    <string name="volume_rocker_wake_summary">Sortir l\'appareil de la veille en appuyant sur une des touches Volume\nOutrepasse aussi les commandes de lecture musicale</string>
+    <string name="volume_rocker_wake_title">Réveiller par bouton Volume</string>
+    <string name="volume_rocker_wake_summary">Sortir l\'appareil de la veille en appuyant sur un des boutons Volume\nOutrepasse aussi les commandes de lecture musicale</string>
 
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
@@ -581,6 +581,8 @@
     <string name="navigation_bar_left_title">Mode gaucher</string>
     <string name="navigation_bar_left_summary">En mode paysage, afficher la barre de navigation à gauche</string>
     <string name="info_pref_note_title">Note</string>
+    <string name="smartbar_interface">SmartBar</string>
+    <string name="icon_pack_picker_dialog_title">Packs d\'icônes</string>
 
     <!-- Actions dialog and default task values set in ActionPreference xml-->
     <string name="choose_action_title">Type de raccourci</string>
@@ -662,6 +664,19 @@
     <string name="land_vert_title">Largeur (Paysage)</string>
     <string name="land_hor_title">Hauteur (Paysage)</string>
     <string name="positive_done">OK</string>
+
+    <!-- SmartBar -->
+    <string name="smartbar_category">SmartBar</string>
+    <string name="smartbar_settings_title">Paramètres SmartBar</string>
+    <string name="smartbar_editor_title">Démarrer/Arrêter l\'édition des Boutons</string>
+    <string name="smartbar_editor_summary">Maintenir appuyé et faire glisser le bouton, pour en modifier la position.\nAfficher le menu d\'édition du bouton par appui prolongé.\nLa position du bouton peut être modifiée lors de l\'affichage du menu d\'édition.</string>
+    <string name="smartbar_context_menu_position_title">Boutons contextuels</string>
+    <string name="smartbar_context_menu_position_summary">Définir la position des boutons contextuels tels que le bouton Menu ou le sélecteur de clavier</string>
+    <string name="smartbar_right">À droite</string>
+    <string name="smartbar_left">À gauche</string>
+    <string name="smartbar_factory_reset_title">Réinitialiser les paramètres</string>
+    <string name="smartbar_factory_reset_summary">Rétablir la configuration d\'origine de SmartBar</string>
+    <string name="smartbar_factory_reset_confirm">Revenir à la configuration d\'origine de SmartBar\u00A0?</string>
 
     <!-- Lock screen wallpaper -->
    <string name="lockscreen_category_title">Écran de déverrouillage</string>
@@ -823,5 +838,13 @@
     <string name="qs_main_tiles_title">Agrandir la première ligne</string>
     <string name="qs_main_tiles_summary_on">Deux raccourcis principaux sur la première ligne</string>
     <string name="qs_main_tiles_summary_off">3, 4 ou 5 raccourcis par ligne</string>
+
+    <!-- Selinux Switch -->
+    <string name="selinux_switch_title">Option de changement d\'état de SELinux</string>
+    <string name="selinux_switch_summary">SELinux est un ensemble de modifications du noyau et des outils de l\'utilisateur. Les changements d\'état peuvent provoquer des effets indésirables. À utiliser avec précaution.</string>
+    <string name="selinux_title">Mode Selinux</string>
+    <string name="selinux_permissive_title">Permissif</string>
+    <string name="selinux_enforcing_title">Application</string>
+    <string name="selinux_permissive_toast_title">Selinux est défini à permissif</string>
 
 </resources>
