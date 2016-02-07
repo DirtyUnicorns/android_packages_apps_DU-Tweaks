@@ -53,6 +53,7 @@ public class IconPickerActivity extends Activity {
     private static final int DIALOG_ICON_PACK = 1;
     private static final int ICON_PACK_ICON_RESULT = 69;
     public static final String INTENT_ICON_PICKER = "intent_icon_picker";
+    public static final String ICON_PICK_TYPE_ICONPACK = "iconpack";
     IconPackageAdapter mAdapter;
 
     @Override

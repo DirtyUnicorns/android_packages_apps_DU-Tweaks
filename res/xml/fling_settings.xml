@@ -117,6 +117,14 @@
             android:title="@string/fling_animate_logo_title"
             android:summary="@string/fling_animate_logo_summary" />
 
+        <Preference
+            android:key="fling_custom_logo_pick"
+            android:title="@string/fling_logo_custom_logo_pick_title" />
+
+        <Preference
+            android:key="fling_custom_logo_reset"
+            android:title="@string/fling_logo_custom_logo_reset_title" />
+
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="eos_fling_logo_color"
             android:title="@string/fling_logo_color"

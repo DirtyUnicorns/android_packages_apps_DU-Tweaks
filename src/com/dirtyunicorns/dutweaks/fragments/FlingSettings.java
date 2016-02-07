@@ -23,24 +23,31 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.ActionHandler;
+import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.R;
+import com.dirtyunicorns.dutweaks.IconPickHelper;
 import com.dirtyunicorns.dutweaks.preference.ActionPreference;
 
 import android.app.ActionBar;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.provider.Settings;
+import android.text.TextUtils;
 
 public class FlingSettings extends ActionFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, IconPickHelper.OnPickListener {
     private static final String TAG = FlingSettings.class.getSimpleName();
+    public static final String FLING_LOGO_URI = "fling_custom_icon_config";
 
     Context mContext;
+    IconPickHelper mIconPickHelper;
 
     SwitchPreference mShowLogo;
     SwitchPreference mAnimateLogo;
@@ -62,6 +69,7 @@ public class FlingSettings extends ActionFragment implements
         }
 
         mContext = (Context) getActivity();
+        mIconPickHelper = new IconPickHelper(getActivity(), this);
 
         mShowLogo = (SwitchPreference) findPreference("eos_fling_show_logo");
         mShowLogo.setChecked(Settings.Secure.getInt(getContentResolver(),
@@ -102,6 +110,38 @@ public class FlingSettings extends ActionFragment implements
         mTrailsColor.setOnPreferenceChangeListener(this);
 
         onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.FLING));
+    }
+
+    @Override
+    public void iconPicked(String iconType, String iconPackage, String iconName) {
+        if (TextUtils.isEmpty(iconType)
+                || TextUtils.isEmpty(iconPackage)
+                || TextUtils.isEmpty(iconName)) {
+            return;
+        }
+        ButtonConfig logoConfig = ButtonConfig.getButton(mContext, FLING_LOGO_URI, true);
+        logoConfig.setCustomIconUri(iconType, iconPackage, iconName);
+        ButtonConfig.setButton(mContext, logoConfig, FLING_LOGO_URI, true);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mIconPickHelper.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == findPreference("fling_custom_logo_pick")) {
+            mIconPickHelper.pickIcon(getId(), IconPickHelper.REQUEST_PICK_ICON_PACK);
+            return true;
+        } else if (preference == findPreference("fling_custom_logo_reset")) {
+            ButtonConfig logoConfig = ButtonConfig.getButton(mContext, FLING_LOGO_URI, true);
+            logoConfig.clearCustomIconIconUri();
+            ButtonConfig.setButton(mContext, logoConfig, FLING_LOGO_URI, true);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override

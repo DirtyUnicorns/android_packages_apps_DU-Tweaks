@@ -618,6 +618,8 @@
     <string name="fling_animate_logo_title">Animate logo</string>
     <string name="fling_animate_logo_summary">Logo animates on touch events</string>
     <string name="fling_logo_color">Logo color</string>
+    <string name="fling_logo_custom_logo_pick_title">Custom logo icon</string>
+    <string name="fling_logo_custom_logo_reset_title">Reset logo icon</string>
     <string name="fling_show_ripple_title">Show ripple</string>
     <string name="fling_show_ripple_summary">Ripple effect on touch events</string>
     <string name="fling_ripple_color">Ripple color</string>
