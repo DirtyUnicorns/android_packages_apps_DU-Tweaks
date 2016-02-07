@@ -490,6 +490,7 @@
     <!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">Globale Gesten</string>
     <string name="gesture_anywhere_enabled_title">Globale Gesten</string>
+    <string name="gesture_anywhere_enabled_summary">Aktiviert die globale Gestenfunktion</string>
     <string name="gesture_anywhere_position_title">Lage</string>
     <string name="gesture_anywhere_position_left">Linker Rand</string>
     <string name="gesture_anywhere_position_right">Rechter Rand</string>
@@ -632,7 +633,7 @@
     <string name="fling_show_pulse_summary">Tonvisualisierung auf der Navigationsleiste</string>
     <string name="fling_pulse_color">Farbe</string>
     <string name="eos_fling_lavalamp_title">Lavalampe einschalten</string>
-    <string name="eos_fling_lavalamp_summary">Pulse animiert einen weichen Lavalampenstil</string>
+    <string name="eos_fling_lavalamp_summary">Pulse wechselt automatisch die Farben in einem Lavalampenstil</string>
 
     <!-- Navbar height -->
     <string name="navigation_bar_size_title">Leistenhöhe</string>
@@ -645,7 +646,7 @@
     <string name="smartbar_category">Smartbar</string>
     <string name="smartbar_settings_title">Smartbar-Einstellungen</string>
     <string name="smartbar_editor_title">Bearbeitungsmodus aktivieren</string>
-    <string name="smartbar_editor_summary">Halten und wischen um die Position zu ändern. Lange halten um das Bearbeitungsmenü zu öffnen. Position kann varieren während das Menü geöffnet ist</string>
+    <string name="smartbar_editor_summary">Halten und wischen um die Position zu ändern. Lange halten um das Bearbeitungsmenü zu öffnen. Position kann variieren während das Menü geöffnet ist</string>
     <string name="smartbar_context_menu_position_title">Kontexttastenposition</string>
     <string name="smartbar_context_menu_position_summary">Legt die Position der Kontexttasten fest</string>
     <string name="smartbar_right">Rechts</string>
@@ -815,5 +816,18 @@
     <string name="qs_main_tiles_title">Erste Reihe erweitern</string>
     <string name="qs_main_tiles_summary_on">Zwei Hauptkacheln in der ersten Reihe</string>
     <string name="qs_main_tiles_summary_off">3, 4 oder 5 Kacheln in jeder Reihe</string>
+
+    <!-- Selinux Switch -->
+    <string name="selinux_switch_title">Selinux-Optionen</string>
+    <string name="selinux_switch_summary">Selinux ist Open-Source-Software und setzt sich aus einem Kernel-Patch und aus zahlreichen Erweiterungen für Systemprogramme zusammen. Das Ändern des Modus kann unerwünschte Wirkungen haben. Benutzung auf eigene Gefahr</string>
+    <string name="selinux_title">Selinux-Modus</string>
+    <string name="selinux_permissive_title">Permissive (nachgiebig)</string>
+    <string name="selinux_enforcing_title">Enforcing (strikt)</string>
+    <string name="selinux_permissive_toast_title">Selinux auf Permissive (nachgiebig) gesetzt</string>
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Sperrbildschirm-Anzeige</string>
+    <string name="hide_lockscreen_clock_title">Sperrbildschirm-Uhr anzeigen</string>
+    <string name="hide_lockscreen_date_title">Sperrbildschirm-Datum anzeigen</string>
 
 </resources>
