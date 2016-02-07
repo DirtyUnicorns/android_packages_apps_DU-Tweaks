@@ -96,7 +96,7 @@
     <string name="powermenu_category">Menu Marche/Arrêt</string>
     <string name="quicksettings_category">Volet des paramètres</string>
     <string name="recents_category">Applications récentes</string>
-    <string name="statusbar_items_category">Éléments</string>
+    <string name="statusbar_items_category">Éléments affichés</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="lockscreen_notifications_category">Notifications</string>
     <string name="wakelockblocker_category">Bloqueur de Wakelock</string>
@@ -845,6 +845,11 @@
     <string name="selinux_title">Mode Selinux</string>
     <string name="selinux_permissive_title">Permissif</string>
     <string name="selinux_enforcing_title">Application</string>
-    <string name="selinux_permissive_toast_title">Selinux est défini à permissif</string>
+    <string name="selinux_permissive_toast_title">Selinux défini à permissif</string>
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Éléments affichés</string>
+    <string name="hide_lockscreen_clock_title">Afficher l\'horloge sur l\'écran de déverrouillage</string>
+    <string name="hide_lockscreen_date_title">Afficher la date sur l\'écran de déverrouillage</string>
 
 </resources>
