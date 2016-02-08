@@ -639,6 +639,8 @@
     <string name="fling_animate_logo_title">Animer le logo</string>
     <string name="fling_animate_logo_summary">Le logo s\'anime lors des événements tactiles</string>
     <string name="fling_logo_color">Couleur du logo</string>
+    <string name="fling_logo_custom_logo_pick_title">Définir l\'icône du logo</string>
+    <string name="fling_logo_custom_logo_reset_title">Réinitialiser l\'icône du logo</string>
     <string name="fling_show_ripple_title">Ondulation</string>
     <string name="fling_show_ripple_summary">Effet d\'ondulation lors des événements tactiles</string>
     <string name="fling_ripple_color">Couleur de l\'ondulation</string>
