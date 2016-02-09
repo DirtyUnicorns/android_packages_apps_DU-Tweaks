@@ -51,5 +51,11 @@
             android:layout="@layout/preference_recents"
             android:title="@string/recents_category" />
 
+         <Preference
+            android:key="heads_up_enabled"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings"
+            android:layout="@layout/preference_headsup"
+            android:title="@string/category_heads_up" />
+
 </PreferenceScreen>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -48,6 +48,7 @@
     <string name="weather_category">Weather Widget</string>
     <string name="breathing_notifications_category">Breathing Notifications</string>
     <string name="button_settings">Buttons</string>
+    <string name="category_heads_up">Heads Up</string>
 
     <!-- OmniSwitch -->
     <string name="aosp_recents_title">AOSP recents</string>
@@ -832,5 +833,19 @@
     <string name="hide_lockscreen_items_title">Lockscreen items</string>
     <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
     <string name="hide_lockscreen_date_title">Show lockscreen date</string>
+
+    <!-- Heads Up -->
+    <string name="heads_up_notifications">Heads Up</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
+    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
+    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
+    <string name="add_heads_up_whitelist_summary">Post all notification from these applications to heads up</string>
+    <string name="heads_up_dnd_title">Do not disturb</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="heads_up_whitelist_title">Whitelist</string>
+    <string name="heads_up_contains_key">Already added this application to the list</string>
 
 </resources>
