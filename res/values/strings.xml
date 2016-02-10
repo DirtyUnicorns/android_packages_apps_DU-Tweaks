@@ -415,9 +415,9 @@
     <string name="status_bar_carrier_color">Carrier label color</string>
     <string name="show_carrier_title">Carrier label</string>
     <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Lockscreen Only</string>
-    <string name="show_carrier_statusbar">Statusbar Only</string>
-    <string name="show_carrier_enabled">Both Enabled</string>
+    <string name="show_carrier_keyguard">Lockscreen</string>
+    <string name="show_carrier_statusbar">Statusbar</string>
+    <string name="show_carrier_enabled">Both</string>
 
     <!-- Recents Search Bar -->
     <string name="recents_show_searchbar">Recents panel Search bar</string>
@@ -829,10 +829,11 @@
     <string name="selinux_enforcing_title">Enforcing</string>
     <string name="selinux_permissive_toast_title">Selinux set to permissive</string>
 
-    <!-- Hide Lockscreen clock & date -->
+    <!-- Hide Lockscreen clock, date & alarm -->
     <string name="hide_lockscreen_items_title">Lockscreen items</string>
     <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
     <string name="hide_lockscreen_date_title">Show lockscreen date</string>
+    <string name="hide_lockscreen_alarm_title">Show lockscreen alarm</string>
 
     <!-- Heads Up -->
     <string name="heads_up_notifications">Heads Up</string>
