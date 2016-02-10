@@ -15,7 +15,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/lock_clock_font_title" >
+    android:title="@string/lockscreen_colors_fonts_category_title" >
 
          <ListPreference
             android:key="lock_clock_fonts"
@@ -46,6 +46,32 @@
             android:key="hide_lockscreen_alarm"
             android:title="@string/hide_lockscreen_alarm_title"
             android:defaultValue="true" />
+
+        <!-- Lockscreen colors -->
+        <PreferenceCategory
+            android:key="lockscreen_colors_category"
+            android:title="@string/lockscreen_colors_title" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="lockscreen_owner_info_color"
+            android:title="@string/lockscreen_owner_info_color"
+            android:defaultValue="0xffffffff" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="lockscreen_alarm_color"
+            android:title="@string/lockscreen_alarm_color"
+            android:defaultValue="0xffffffff" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="lockscreen_clock_color"
+            android:title="@string/lockscreen_clock_color"
+            android:defaultValue="0xffffffff"
+            android:dependency="hide_lockscreen_clock" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="lockscreen_clock_date_color"
+            android:title="@string/lockscreen_clock_date_color"
+            android:defaultValue="0xffffffff" />
 
 </PreferenceScreen>
 

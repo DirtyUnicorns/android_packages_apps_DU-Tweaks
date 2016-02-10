@@ -49,6 +49,7 @@
     <string name="breathing_notifications_category">Breathing Notifications</string>
     <string name="button_settings">Buttons</string>
     <string name="category_heads_up">Heads Up</string>
+    <string name="lockscreen_colors_fonts_category_title">Colors &amp; Fonts</string>
 
     <!-- OmniSwitch -->
     <string name="aosp_recents_title">AOSP recents</string>
@@ -200,7 +201,7 @@
     <string name="battery_bar_animate_summary">Enable to animate the battery bar while charging</string>
 
     <!-- Lock Clock Fonts -->
-    <string name="lock_clock_font_title">Lock Clock Fonts</string>
+    <string name="lock_clock_font_title">Clock Fonts</string>
     <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
     <string name="lock_clock_font_dialog_title">Select lock clock font</string>
     <string name="lock_clock_font_normal">Roboto</string>
@@ -831,9 +832,12 @@
 
     <!-- Hide Lockscreen clock, date & alarm -->
     <string name="hide_lockscreen_items_title">Lockscreen items</string>
-    <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
-    <string name="hide_lockscreen_date_title">Show lockscreen date</string>
-    <string name="hide_lockscreen_alarm_title">Show lockscreen alarm</string>
+    <string name="hide_lockscreen_clock_title">Clock</string>
+    <string name="hide_lockscreen_clock_summary">Show lockscreen clock</string>
+    <string name="hide_lockscreen_date_title">Date</string>
+    <string name="hide_lockscreen_date_summary">Show lockscreen date</string>
+    <string name="hide_lockscreen_alarm_title">Alarm</string>
+    <string name="hide_lockscreen_alarm_summary">Show lockscreen alarm</string>
 
     <!-- Heads Up -->
     <string name="heads_up_notifications">Heads Up</string>
@@ -848,5 +852,15 @@
     <string name="heads_up_blacklist_title">Blacklist</string>
     <string name="heads_up_whitelist_title">Whitelist</string>
     <string name="heads_up_contains_key">Already added this application to the list</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors_title">Lockscreen colors</string>
+    <string name="lockscreen_owner_info_color">Owner info</string>
+    <string name="lockscreen_alarm_color">Alarm</string>
+    <string name="lockscreen_clock_color">Clock</string>
+    <string name="lockscreen_clock_date_color">Date</string>
+    <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
+    <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
+    <string name="yes">YES</string>
 
 </resources>
