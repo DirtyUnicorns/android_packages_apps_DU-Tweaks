@@ -27,7 +27,7 @@
             android:dependency="hide_lockscreen_clock"
             android:persistent="false" />
 
-        <!-- Hide Lockscreen clock & date -->
+        <!-- Hide Lockscreen clock, date & alarm -->
         <PreferenceCategory
             android:key="hide_lockscreen_items_category"
             android:title="@string/hide_lockscreen_items_title" />
@@ -40,6 +40,11 @@
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="hide_lockscreen_date"
             android:title="@string/hide_lockscreen_date_title"
+            android:defaultValue="true" />
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_alarm"
+            android:title="@string/hide_lockscreen_alarm_title"
             android:defaultValue="true" />
 
 </PreferenceScreen>
