@@ -109,6 +109,7 @@
     <string name="breathing_notifications_category">Notifications clignotantes</string>
     <string name="button_settings">Boutons</string>
     <string name="category_heads_up">Notifications flottantes</string>
+    <string name="lockscreen_colors_fonts_category_title">Couleurs et polices</string>
 
     <!-- OmniSwitch -->
     <string name="aosp_recents_title">AOSP</string>
@@ -417,9 +418,9 @@
     <string name="status_bar_carrier_color">Couleur libellé opérateur</string>
     <string name="show_carrier_title">Libellé opérateur</string>
     <string name="show_carrier_disabled">Désactivé</string>
-    <string name="show_carrier_keyguard">Écran de déverrouillage uniquement</string>
-    <string name="show_carrier_statusbar">Barre d\'état uniquement</string>
-    <string name="show_carrier_enabled">Sur l\'écran de déverrouillage et la barre d\'état</string>
+    <string name="show_carrier_keyguard">Écran de déverrouillage</string>
+    <string name="show_carrier_statusbar">Barre d\'état</string>
+    <string name="show_carrier_enabled">Sur les deux</string>
 
     <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Barre de recherche</string>
@@ -850,10 +851,14 @@
     <string name="selinux_enforcing_title">Application</string>
     <string name="selinux_permissive_toast_title">Selinux défini à permissif</string>
 
-    <!-- Hide Lockscreen clock & date -->
+    <!-- Hide Lockscreen clock, date & alarm -->
     <string name="hide_lockscreen_items_title">Éléments affichés</string>
-    <string name="hide_lockscreen_clock_title">Afficher l\'horloge sur l\'écran de déverrouillage</string>
-    <string name="hide_lockscreen_date_title">Afficher la date sur l\'écran de déverrouillage</string>
+    <string name="hide_lockscreen_clock_title">Horloge</string>
+    <string name="hide_lockscreen_clock_summary">Afficher l\'horloge sur l\'écran de déverrouillage</string>
+    <string name="hide_lockscreen_date_title">Date</string>
+    <string name="hide_lockscreen_date_summary">Afficher la date sur l\'écran de déverrouillage</string>
+    <string name="hide_lockscreen_alarm_title">Alarme</string>
+    <string name="hide_lockscreen_alarm_summary">Afficher l\'alarme sur l\'écran de déverrouillage</string>
 
     <!-- Heads Up -->
     <string name="heads_up_notifications">Notifications flottantes</string>
@@ -868,5 +873,15 @@
     <string name="heads_up_blacklist_title">Applications prohibées</string>
     <string name="heads_up_whitelist_title">Applications autorisées</string>
     <string name="heads_up_contains_key">Application déjà ajoutée à la liste</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors_title">Couleurs de l\'écran de déverrouillage</string>
+    <string name="lockscreen_owner_info_color">Informations du propriétaire</string>
+    <string name="lockscreen_alarm_color">Alarme</string>
+    <string name="lockscreen_clock_color">Horloge</string>
+    <string name="lockscreen_clock_date_color">Date</string>
+    <string name="lockscreen_colors_reset_title">Réinitialiser les couleurs</string>
+    <string name="lockscreen_colors_reset_message">Réinitialiser les couleurs de l\'écran de déverrouillage ?</string>
+    <string name="yes">Oui</string>
 
 </resources>
