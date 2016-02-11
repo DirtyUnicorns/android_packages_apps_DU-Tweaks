@@ -42,11 +42,13 @@ import com.android.settings.Utils;
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
+    private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
 
     private ListPreference mQuickPulldown;
-    private SwitchPreference mBlockOnSecureKeyguard;
+    private ListPreference mSmartPulldown;
     private ListPreference mNumColumns;
+    private SwitchPreference mBlockOnSecureKeyguard;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -80,6 +82,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             updateQuickPulldownSummary(statusQuickPulldown);
         }
 
+        mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
+        mSmartPulldown.setOnPreferenceChangeListener(this);
+        int smartPulldown = Settings.System.getInt(getContentResolver(),
+                Settings.System.QS_SMART_PULLDOWN, 0);
+        mSmartPulldown.setValue(String.valueOf(smartPulldown));
+        updateSmartPulldownSummary(smartPulldown);
+
         mNumColumns = (ListPreference) findPreference("sysui_qs_num_columns");
         int numColumns = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.QS_NUM_TILE_COLUMNS, getDefaultNumColums(),
@@ -112,6 +121,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     statusQuickPulldown);
             updateQuickPulldownSummary(statusQuickPulldown);
+            return true;
+        } else if (preference == mSmartPulldown) {
+            int smartPulldown = Integer.valueOf((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_SMART_PULLDOWN,
+                    smartPulldown);
+            updateSmartPulldownSummary(smartPulldown);
             return true;
         } else if (preference == mBlockOnSecureKeyguard) {
             Settings.Secure.putInt(getContentResolver(),
@@ -160,6 +176,31 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                     ? (isRtl ? R.string.quick_pulldown_right : R.string.quick_pulldown_left)
                     : (isRtl ? R.string.quick_pulldown_left : R.string.quick_pulldown_right));
             mQuickPulldown.setSummary(res.getString(R.string.summary_quick_pulldown, direction));
+        }
+    }
+
+    private void updateSmartPulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // Smart pulldown deactivated
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_off));
+        } else {
+            String type = null;
+            switch (value) {
+                case 1:
+                    type = res.getString(R.string.smart_pulldown_dismissable);
+                    break;
+                case 2:
+                    type = res.getString(R.string.smart_pulldown_persistent);
+                    break;
+                default:
+                    type = res.getString(R.string.smart_pulldown_all);
+                    break;
+            }
+            // Remove title capitalized formatting
+            type = type.toLowerCase();
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
         }
     }
 }
