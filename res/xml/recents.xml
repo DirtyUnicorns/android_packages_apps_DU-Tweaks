@@ -50,6 +50,12 @@
             android:entryValues="@array/recents_clear_all_location_values"
             android:defaultValue="3"
             android:dependency="show_clear_all_recents" />
+        
+	<PreferenceScreen
+            android:key="recent_panel"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.RecentPanel"
+            android:title="@string/use_slim_recents_title" />
+
 
         </PreferenceCategory>
 
