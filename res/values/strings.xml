@@ -55,8 +55,8 @@
     <string name="aosp_recents_title">AOSP recents</string>
     <string name="omniswitch_recents_title">OmniSwitch recents</string>
     <string name="omniswitch_category">OmniSwitch</string>
-    <string name="recents_use_omniswitch_title">Use for recents</string>
-    <string name="recents_use_omniswitch_summary">Use OmniSwitch instead of default recents view</string>
+    <string name="recents_use_omniswitch_title">Enable omni recents</string>
+    <string name="recents_use_omniswitch_summary">Use OmniSwitch for recents view</string>
     <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
     <string name="omniswitch_first_time_title">Information</string>
     <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
@@ -870,10 +870,11 @@
     <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
     <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
     <string name="yes">YES</string>
-    
-	<!-- Recent panel -->
-    <string name="recent_panel_category">Recent apps panel</string>
-    <string name="use_slim_recents_title">SlimRecents</string>
+
+    <!-- Recent panel -->
+    <string name="slim_recents_enable_title">Enable slim recents</string>
+    <string name="slim_recents_enable_summary">Use Slim Recents for recents view</string>
+    <string name="slim_recents_title">Slim Recents</string>
     <string name="show_running_tasks_title">Only show running apps</string>
     <string name="recents_max_apps_title">Max allowed apps</string>
     <string name="recent_panel_scale_title">Size</string>
@@ -891,7 +892,6 @@
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
-
 
     <!-- Keyguard Statusbar Clock -->
     <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
