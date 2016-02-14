@@ -871,4 +871,8 @@
     <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
     <string name="yes">YES</string>
 
+    <!-- Keyguard Statusbar Clock -->
+    <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
+    <string name="keyguard_statusbar_clock_summary">Enables the statusbar clock in the keyguard on the left side</string>
+
 </resources>
