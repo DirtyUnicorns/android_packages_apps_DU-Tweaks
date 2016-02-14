@@ -40,6 +40,7 @@ import com.android.settings.SettingsPreferenceFragment;
 public class SmartbarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private ListPreference mSmartBarContext;
+    private ListPreference mButtonAnim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,12 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         mSmartBarContext = (ListPreference) findPreference("smartbar_context_menu_position");
         mSmartBarContext.setValue(String.valueOf(contextVal));
         mSmartBarContext.setOnPreferenceChangeListener(this);
+
+        int buttonAnimVal = Settings.Secure.getIntForUser(mContext.getContentResolver(),
+                "smartbar_button_animation_style", 0, UserHandle.USER_CURRENT);
+        mButtonAnim = (ListPreference) findPreference("smartbar_button_animation");
+        mButtonAnim.setValue(String.valueOf(buttonAnimVal));
+        mButtonAnim.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -92,6 +99,11 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
             int position = Integer.parseInt(((String) newValue).toString());
             Settings.Secure.putInt(getContentResolver(), "smartbar_context_menu_mode",
                     position);
+            return true;
+        } else if (preference.equals(mButtonAnim)) {
+            int val = Integer.parseInt(((String) newValue).toString());
+            Settings.Secure.putInt(getContentResolver(), "smartbar_button_animation_style",
+                    val);
             return true;
         }
         return false;
