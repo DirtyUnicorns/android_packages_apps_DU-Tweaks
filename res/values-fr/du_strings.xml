@@ -50,6 +50,12 @@
     <string name="quick_pulldown_off">Désactivé</string>
     <string name="quick_pulldown_left">Gauche</string>
     <string name="quick_pulldown_right">Droit</string>
+    <string name="smart_pulldown_title">Déroulement intelligent</string>
+    <string name="smart_pulldown_summary">Ouvrir le Volet des notifications en présence de notifications %1$s</string>
+    <string name="smart_pulldown_off">Désactivé</string>
+    <string name="smart_pulldown_dismissable">Non-effaçables</string>
+    <string name="smart_pulldown_persistent">Non-persistantes</string>
+    <string name="smart_pulldown_all">Non-effaçables et non-persistantes</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title">Curseur de luminosité</string>
@@ -772,8 +778,10 @@
     <string name="shortcuts_icon_picker_unlock">Déverrouillage</string>
     <string name="reset_message">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="lockscreen_shortcuts_title">Raccourcis du haut</string>
-    <string name="lockscreen_shorcuts_longpress_title">Raccourcis par appui prolongé</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Ouvrir des raccourcis personnalisés sur l\'écran de déverrouillage par appui prolongé</string>
+    <string name="lockscreen_shorcuts_launch_type_title">Type d\'appui</string>
+    <string name="lockscreen_shortcuts_single_tap">Appui simple</string>
+    <string name="lockscreen_shortcuts_double_tap">Double appui</string>
+    <string name="lockscreen_shortcuts_longpress">Appui prolongé</string>
     <string name="help">Aide</string>
     <string name="shortcut_action_app">Application</string>
     <string name="shortcut_action_home">Accueil</string>
@@ -883,5 +891,9 @@
     <string name="lockscreen_colors_reset_title">Réinitialiser les couleurs</string>
     <string name="lockscreen_colors_reset_message">Réinitialiser les couleurs de l\'écran de déverrouillage ?</string>
     <string name="yes">Oui</string>
+
+    <!-- Keyguard Statusbar Clock -->
+    <string name="keyguard_statusbar_clock_title">Horloge</string>
+    <string name="keyguard_statusbar_clock_summary">Afficher l\'horloge à gauche dans la barre d\'état de l\'écran de déverrouillage</string>
 
 </resources>
