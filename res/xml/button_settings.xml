@@ -31,23 +31,137 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <SwitchPreference
-        android:key="swap_volume_buttons"
-        android:title="@string/swap_volume_buttons_title"
-        android:summary="@string/swap_volume_buttons_summary" />
+    <PreferenceCategory
+        android:key="volume_keys"
+        android:title="@string/hardware_keys_volume_keys_title" >
 
-    <SwitchPreference
-        android:key="volume_rocker_wake"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:title="@string/volume_rocker_wake_title"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
+        <SwitchPreference
+            android:key="swap_volume_buttons"
+            android:title="@string/swap_volume_buttons_title"
+            android:summary="@string/swap_volume_buttons_summary" />
 
-    <SwitchPreference
-        android:key="volume_rocker_music_controls"
-        android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title"
-        android:defaultValue="true"
-        android:dependency="volume_rocker_wake" />
+        <SwitchPreference
+            android:key="volume_rocker_wake"
+            android:summary="@string/volume_rocker_wake_summary"
+            android:title="@string/volume_rocker_wake_title"
+            android:defaultValue="false"
+            android:disableDependentsState="true" />
+
+        <SwitchPreference
+            android:key="volume_rocker_music_controls"
+            android:summary="@string/volume_rocker_music_controls_summary"
+            android:title="@string/volume_rocker_music_controls_title"
+            android:defaultValue="true"
+            android:dependency="volume_rocker_wake" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="back_key"
+        android:title="@string/hardware_keys_back_key_title" >
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_back_long_press"
+            android:summary="@string/hardware_keys_long_press_summary"
+            android:title="@string/hardware_keys_long_press_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_back_double_tap"
+            android:summary="@string/hardware_keys_double_tap_summary"
+            android:title="@string/hardware_keys_double_tap_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="home_key"
+        android:title="@string/hardware_keys_home_key_title" >
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_home_long_press"
+            android:summary="@string/hardware_keys_long_press_summary"
+            android:title="@string/hardware_keys_long_press_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_home_double_tap"
+            android:summary="@string/hardware_keys_double_tap_summary"
+            android:title="@string/hardware_keys_double_tap_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="app_switch_key"
+        android:title="@string/hardware_keys_appswitch_key_title" >        
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_overview_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_single_tap_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_overview_long_press"
+            android:summary="@string/hardware_keys_long_press_summary"
+            android:title="@string/hardware_keys_long_press_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_overview_double_tap"
+            android:summary="@string/hardware_keys_double_tap_summary"
+            android:title="@string/hardware_keys_double_tap_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="menu_key"
+        android:title="@string/hardware_keys_menu_key_title" >        
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_menu_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_single_tap_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_menu_long_press"
+            android:summary="@string/hardware_keys_long_press_summary"
+            android:title="@string/hardware_keys_long_press_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_menu_double_tap"
+            android:summary="@string/hardware_keys_double_tap_summary"
+            android:title="@string/hardware_keys_double_tap_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="assist_key"
+        android:title="@string/hardware_keys_assist_key_title" >
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_assist_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_single_tap_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_assist_long_press"
+            android:summary="@string/hardware_keys_long_press_summary"
+            android:title="@string/hardware_keys_long_press_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+        <com.dirtyunicorns.dutweaks.preference.ActionPreference
+            android:key="hwkeys_button_assist_double_tap"
+            android:summary="@string/hardware_keys_double_tap_summary"
+            android:title="@string/hardware_keys_double_tap_title" >
+        </com.dirtyunicorns.dutweaks.preference.ActionPreference>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
