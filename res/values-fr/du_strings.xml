@@ -684,6 +684,10 @@
     <string name="smartbar_context_menu_position_summary">Définir la position des boutons contextuels tels que le bouton Menu ou le sélecteur de clavier</string>
     <string name="smartbar_right">À droite</string>
     <string name="smartbar_left">À gauche</string>
+    <string name="smartbar_button_animation_title">Animation du bouton</string>
+    <string name="smartbar_button_animation_summary">Définir le mode d\'animation des boutons lorsqu\'ils sont appuyés</string>
+    <string name="smartbar_button_animation_ripple">Ondulation</string>
+    <string name="smartbar_button_animation_spring">Rebond</string>
     <string name="smartbar_factory_reset_title">Réinitialiser les paramètres</string>
     <string name="smartbar_factory_reset_summary">Rétablir la configuration d\'origine de SmartBar</string>
     <string name="smartbar_factory_reset_confirm">Revenir à la configuration d\'origine de SmartBar\u00A0?</string>
@@ -891,6 +895,28 @@
     <string name="lockscreen_colors_reset_title">Réinitialiser les couleurs</string>
     <string name="lockscreen_colors_reset_message">Réinitialiser les couleurs de l\'écran de déverrouillage ?</string>
     <string name="yes">Oui</string>
+
+    <!-- Recent panel -->
+    <string name="slim_recents_enable_title">Activer Slim Recents</string>
+    <string name="slim_recents_enable_summary">Utiliser Slim Recents pour l\'affichage des applications récentes</string>
+    <string name="slim_recents_title">Applications Récentes Slim</string>
+    <string name="show_running_tasks_title">Afficher uniquement les applications en cours</string>
+    <string name="recents_max_apps_title">Nombre maximal d\'application</string>
+    <string name="recent_panel_scale_title">Taille</string>
+    <string name="recent_panel_expanded_mode_title">Affichage étendu</string>
+    <string name="recent_panel_expanded_mode_summary">Mode d\'affichage étendu</string>
+    <string name="recent_panel_expanded_mode_auto">Automatique (Par défaut)</string>
+    <string name="recent_panel_expanded_mode_always">Toujours</string>
+    <string name="recent_panel_expanded_mode_never">Jamais</string>
+    <string name="recent_panel_show_topmost_title">Application en cours</string>
+    <string name="recent_panel_show_topmost_summary">Afficher l\'application en cours</string>
+    <string name="recent_panel_bg_color_title">Couleur du volet</string>
+    <string name="recent_card_bg_color_title">Couleur du fond</string>
+    <string name="recent_card_text_color_title">Couleur du texte</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Panneau à gauche</string>
+    <string name="recent_panel_lefty_mode_summary">Afficher le volet sur le coté gauche de l\'écran</string>
 
     <!-- Keyguard Statusbar Clock -->
     <string name="keyguard_statusbar_clock_title">Horloge</string>
