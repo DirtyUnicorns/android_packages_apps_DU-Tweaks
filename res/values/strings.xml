@@ -663,6 +663,10 @@
     <string name="smartbar_context_menu_position_summary">Set the position of contextual buttons such as menu and ime selector</string>
     <string name="smartbar_right">Right</string>
     <string name="smartbar_left">Left</string>
+    <string name="smartbar_button_animation_title">Button touch animation</string>
+    <string name="smartbar_button_animation_summary">Set the animation style of the primary buttons when they are pressed</string>
+    <string name="smartbar_button_animation_ripple">Ripple</string>
+    <string name="smartbar_button_animation_spring">Spring</string>
     <string name="smartbar_factory_reset_title">Restore stock settings</string>
     <string name="smartbar_factory_reset_summary">Smartbar will reset to a factory configuration</string>
     <string name="smartbar_factory_reset_confirm">Are you sure you want to reset Smartbar to stock settings?</string>
