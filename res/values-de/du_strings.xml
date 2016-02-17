@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -48,6 +48,9 @@
     <string name="weather_category">Wetter</string>
     <string name="breathing_notifications_category">Pulsierende Benachrichtigungen</string>
     <string name="button_settings">Tasten</string>
+    <string name="category_heads_up">Heads-Up Benachrichtigungen</string>
+    <string name="lockscreen_colors_fonts_category_title">Farben &amp; Schriftarten</string>
+
 
     <!-- OmniSwitch -->
     <string name="aosp_recents_title">AOSP-Anwendungsverlauf</string>
@@ -79,6 +82,12 @@
     <string name="quick_pulldown_off">Aus</string>
     <string name="quick_pulldown_left">Linke</string>
     <string name="quick_pulldown_right">Rechte</string>
+    <string name="smart_pulldown_title">Intelligentes Öffnen</string>
+    <string name="smart_pulldown_summary">Direktes öffnen der Schnelleinstellungen wenn %1$s Benachtichtigungen vorliegen</string>
+    <string name="smart_pulldown_off">Deaktiviert</string>
+    <string name="smart_pulldown_dismissable">Keine löschbaren</string>
+    <string name="smart_pulldown_persistent">Keine dauerhaften</string>
+    <string name="smart_pulldown_all">Keine löschbaren oder dauerhaften</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title">Helligkeitsregler</string>
@@ -616,6 +625,8 @@
     <string name="fling_animate_logo_title">Logo animieren</string>
     <string name="fling_animate_logo_summary">Logo wird bei Touchgesten animiert</string>
     <string name="fling_logo_color">Logofarbe</string>
+    <string name="fling_logo_custom_logo_pick_title">Benutzerdefiniertes Logo</string>
+    <string name="fling_logo_custom_logo_reset_title">Logo zurücksetzen</string>
     <string name="fling_show_ripple_title">Toucheffekt anzeigen</string>
     <string name="fling_show_ripple_summary">Zeigt einen Toucheffekt bei Berührung an</string>
     <string name="fling_ripple_color">Effektfarbe</string>
@@ -651,6 +662,10 @@
     <string name="smartbar_context_menu_position_summary">Legt die Position der Kontexttasten fest</string>
     <string name="smartbar_right">Rechts</string>
     <string name="smartbar_left">Links</string>
+    <string name="smartbar_button_animation_title">Tasten-Animation</string>
+    <string name="smartbar_button_animation_summary">Wähle die Tasten-Animation welche beim Berühren der Tasten angezeigt wird</string>
+    <string name="smartbar_button_animation_ripple">Standard</string>
+    <string name="smartbar_button_animation_spring">Sprungfeder</string>
     <string name="smartbar_factory_reset_title">Zurücksetzen</string>
     <string name="smartbar_factory_reset_summary">Setzt Smartbar in den Ausgangszustand zurück</string>
     <string name="smartbar_factory_reset_confirm">Bist du dir sicher das du Smartbar in den Ausgangszustand zurücksetzen möchtest?</string>
@@ -746,8 +761,10 @@
     <string name="shortcuts_icon_picker_unlock">Entsperren</string>
     <string name="reset_message">Alle Einträge auf Standard zurücksetzen?</string>
     <string name="lockscreen_shortcuts_title">Mid-Screen-Verknüpfungen</string>
-    <string name="lockscreen_shorcuts_longpress_title">Verknüfung lange halten</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Öffnet benutzerdefinierte Sperrbildschirmverknüpfungen bei langem Druck</string>
+    <string name="lockscreen_shorcuts_launch_type_title">Verhalten beim Berühren</string>
+    <string name="lockscreen_shortcuts_single_tap">Tippen</string>
+    <string name="lockscreen_shortcuts_double_tap">Doppeltes Tippen</string>
+    <string name="lockscreen_shortcuts_longpress">Lange halten</string>
     <string name="help">Hilfe</string>
     <string name="shortcut_action_app">Benutzerdefinierte App</string>
     <string name="shortcut_action_home">Home</string>
@@ -825,9 +842,63 @@
     <string name="selinux_enforcing_title">Enforcing (strikt)</string>
     <string name="selinux_permissive_toast_title">Selinux auf Permissive (nachgiebig) gesetzt</string>
 
-    <!-- Hide Lockscreen clock & date -->
+    <!-- Hide Lockscreen clock, date & alarm -->
     <string name="hide_lockscreen_items_title">Sperrbildschirm-Anzeige</string>
-    <string name="hide_lockscreen_clock_title">Sperrbildschirm-Uhr anzeigen</string>
-    <string name="hide_lockscreen_date_title">Sperrbildschirm-Datum anzeigen</string>
+    <string name="hide_lockscreen_clock_title">Uhr</string>
+    <string name="hide_lockscreen_clock_summary">Zeigt die Uhr auf dem Sperrbildschirm an</string>
+    <string name="hide_lockscreen_date_title">Datum</string>
+    <string name="hide_lockscreen_date_summary">Zeigt das Datum auf dem Sperrbildschirm an</string>
+    <string name="hide_lockscreen_alarm_title">Wecker</string>
+    <string name="hide_lockscreen_alarm_summary">Zeigt den Wecker auf dem Sperrbildschirm an</string>
+
+    <!-- Heads Up -->
+    <string name="heads_up_notifications">Heads-Up Benachrichtigungen</string>
+    <string name="summary_heads_up_enabled">Heads-Up Benachrichtigungen sind aktiviert</string>
+    <string name="summary_heads_up_disabled">Heads-Up Benachrichtigungen sind deaktiviert</string>
+    <string name="heads_up_disabled_notice">Um Benachrichtigungen von Apps in einen Pop-Up zu erlauben aktiviere Heads-Up</string>
+    <string name="add_heads_up_package">App hinzufügen</string>
+    <string name="add_heads_up_dnd_summary">In diesen Apps werden keine Heads-Up Benachrichtigungen angezeigt</string>
+    <string name="add_heads_up_blacklist_summary">Von diesen Apps werden keine Heads-Up Benachrichtigungen angezeigt</string>
+    <string name="add_heads_up_whitelist_summary">Alle Benachrichtigungen dieser Apps als Heads-Up anzeigen</string>
+    <string name="heads_up_dnd_title">Nicht stören</string>
+    <string name="heads_up_blacklist_title">Blockiert</string>
+    <string name="heads_up_whitelist_title">Erlaubt</string>
+    <string name="heads_up_contains_key">App wurde bereits hinzugefügt</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors_title">Sperrbildschirm-Farben</string>
+    <string name="lockscreen_owner_info_color">Sperrbildschirmnachricht</string>
+    <string name="lockscreen_alarm_color">Wecker</string>
+    <string name="lockscreen_clock_color">Uhr</string>
+    <string name="lockscreen_clock_date_color">Datum</string>
+    <string name="lockscreen_colors_reset_title">Sperrbildschirm-Farben zurücksetzen</string>
+    <string name="lockscreen_colors_reset_message">Sperrbildschirm-Farben wirklich auf Standard zurücksetzen?</string>
+    <string name="yes">JA</string>
+
+    <!-- Recent panel -->
+    <string name="slim_recents_enable_title">Slim-Recents aktivieren</string>
+    <string name="slim_recents_enable_summary">Slim-Recents als Anwendungsverlauf nutzen</string>
+    <string name="slim_recents_title">Slim-Recents</string>
+    <string name="show_running_tasks_title">Nur aktive Apps anzeigen</string>
+    <string name="recents_max_apps_title">Maximal erlaubte Apps</string>
+    <string name="recent_panel_scale_title">Größe</string>
+    <string name="recent_panel_expanded_mode_title">Erweiterter Modus</string>
+    <string name="recent_panel_expanded_mode_summary">Darstellung im erweiterten Modus</string>
+    <string name="recent_panel_expanded_mode_auto">Automatisch (Standard)</string>
+    <string name="recent_panel_expanded_mode_always">Immer</string>
+    <string name="recent_panel_expanded_mode_never">Nie</string>
+    <string name="recent_panel_show_topmost_title">Aktuelle App anzeigen</string>
+    <string name="recent_panel_show_topmost_summary">Zeigt die aktuell geöffnete App mit im Anwendungsverlauf an</string>
+    <string name="recent_panel_bg_color_title">Hintergrundfarbe</string>
+    <string name="recent_card_bg_color_title">Kartenhintergrundfarbe</string>
+    <string name="recent_card_text_color_title">Kartentextfarbe</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Auf der linken Seite anzeigen</string>
+    <string name="recent_panel_lefty_mode_summary">Zeigt den Anwendungsverlauf auf der linken Seite an</string>
+
+    <!-- Keyguard Statusbar Clock -->
+    <string name="keyguard_statusbar_clock_title">Sperrbildschirm-Statusleistenuhr</string>
+    <string name="keyguard_statusbar_clock_summary">Zeigt die Uhrzeit auf der linken Seite der Statusleiste an während der Sperrbildschirm aktiv ist</string>
 
 </resources>
