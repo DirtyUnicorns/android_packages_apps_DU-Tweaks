@@ -50,5 +50,25 @@
             android:entryValues="@array/ls_bouncer_values"
             android:persistent="false" />
 
+        <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+            android:key="lockscreen_alpha"
+            android:title="@string/lockscreen_alpha"
+            android:max="100"
+            settings:minimum="0"
+            settings:interval="1"
+            settings:unitsLeft=""
+            settings:unitsRight="%"
+            android:persistent="false" />
+
+        <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+            android:key="lockscreen_security_alpha"
+            android:title="@string/lockscreen_security_alpha"
+            android:max="100"
+            settings:minimum="0"
+            settings:interval="1"
+            settings:unitsLeft=""
+            settings:unitsRight="%"
+            android:persistent="false" />
+
 </PreferenceScreen>
 

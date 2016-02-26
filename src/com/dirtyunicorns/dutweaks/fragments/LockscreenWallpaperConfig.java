@@ -39,6 +39,7 @@ import com.android.internal.util.du.DuUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
 public class LockscreenWallpaperConfig extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -48,11 +49,15 @@ public class LockscreenWallpaperConfig extends SettingsPreferenceFragment implem
     private static final String KEY_WALLPAPER_CLEAR = "lockscreen_wallpaper_clear";
     private static final String KEY_LS_BOUNCER = "lockscreen_bouncer";
     private static final String KEYGUARD_TOGGLE_TORCH = "keyguard_toggle_torch";
+    private static final String LOCKSCREEN_ALPHA = "lockscreen_alpha";
+    private static final String LOCKSCREEN_SECURITY_ALPHA = "lockscreen_security_alpha";
 
     private ListPreference mLsBouncer;
     private Preference mSetWallpaper;
     private Preference mClearWallpaper;
     private SwitchPreference mKeyguardTorch;
+    private SeekBarPreferenceCham mLsAlpha;
+    private SeekBarPreferenceCham mLsSecurityAlpha;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -80,6 +85,22 @@ public class LockscreenWallpaperConfig extends SettingsPreferenceFragment implem
             prefSet.removePreference(mLsBouncer);
         }
 
+        mLsAlpha = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_ALPHA);
+        float alpha = Settings.System.getFloat(resolver,
+                Settings.System.LOCKSCREEN_ALPHA, 0.45f);
+        mLsAlpha.setValue((int)(100 * alpha));
+        mLsAlpha.setOnPreferenceChangeListener(this);
+
+        mLsSecurityAlpha = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_SECURITY_ALPHA);
+        if (lockPatternUtils.isSecure(MY_USER_ID)) {
+        float alpha2 = Settings.System.getFloat(resolver,
+                Settings.System.LOCKSCREEN_SECURITY_ALPHA, 0.75f);
+        mLsSecurityAlpha.setValue((int)(100 * alpha2));
+        mLsSecurityAlpha.setOnPreferenceChangeListener(this);
+        } else if (mLsSecurityAlpha != null) {
+            prefSet.removePreference(mLsSecurityAlpha);
+        }
+
         mKeyguardTorch = (SwitchPreference) findPreference(KEYGUARD_TOGGLE_TORCH);
         mKeyguardTorch.setOnPreferenceChangeListener(this);
         if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
@@ -102,6 +123,16 @@ public class LockscreenWallpaperConfig extends SettingsPreferenceFragment implem
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.KEYGUARD_TOGGLE_TORCH, checked ? 1:0);
+            return true;
+        } else if (preference == mLsAlpha) {
+            int alpha = (Integer) newValue;
+            Settings.System.putFloat(resolver,
+                    Settings.System.LOCKSCREEN_ALPHA, alpha / 100.0f);
+            return true;
+        } else if (preference == mLsSecurityAlpha) {
+            int alpha2 = (Integer) newValue;
+            Settings.System.putFloat(resolver,
+                    Settings.System.LOCKSCREEN_SECURITY_ALPHA, alpha2 / 100.0f);
             return true;
         }
         return false;

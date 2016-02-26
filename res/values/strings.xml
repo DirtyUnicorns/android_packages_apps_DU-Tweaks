@@ -877,6 +877,10 @@
     <string name="ls_bouncer_persistent">No persistent</string>
     <string name="ls_bouncer_all">No dismissable or persistent</string>
 
+    <!-- Lockscreen Alpha -->
+    <string name="lockscreen_alpha">Lockscreen alpha</string>
+    <string name="lockscreen_security_alpha">Lockscreen bouncer alpha</string>
+
     <!-- Heads Up -->
     <string name="heads_up_notifications">Heads Up</string>
     <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
