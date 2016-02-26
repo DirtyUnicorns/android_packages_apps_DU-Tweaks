@@ -21,12 +21,6 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-             android:key="keyguard_toggle_torch"
-             android:title="@string/keyguard_torch_title"
-             android:summary="@string/keyguard_torch_summary"
-             android:defaultValue="false" />
-
          <PreferenceScreen
                  android:key="lockscreen_shortcuts"
                  android:fragment="com.dirtyunicorns.dutweaks.dslv.ActionListViewSettings"
@@ -48,10 +42,10 @@
          </PreferenceScreen>
 
          <PreferenceScreen
-            android:key="lockscreen_wallpaper_changer"
-            android:title="@string/lockscreen_wallpaper_title"
+            android:key="lockscreen_wallpaper_config"
+            android:title="@string/lockscreen_wallpaper_config_title"
             android:layout="@layout/preference_lockscreenwp"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenSettings" />
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenWallpaperConfig" />
 
          <Preference
             android:key="lockscreen_notifications"

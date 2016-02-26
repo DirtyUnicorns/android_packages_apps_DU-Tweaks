@@ -687,7 +687,8 @@
 
     <!-- Lock screen wallpaper -->
     <string name="lockscreen_category_title">Lockscreen</string>
-    <string name="lockscreen_wallpaper_title">Lockscreen Wallpaper</string>
+    <string name="lockscreen_config_title">Lockscreen configs</string>
+    <string name="lockscreen_wallpaper_config_title">Lockscreen Wall/Config</string>
     <string name="lockscreen_wallpaper_set_title">Set new wallpaper</string>
     <string name="lockscreen_wallpaper_clear_title">Return to default</string>
     <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
@@ -864,6 +865,17 @@
     <string name="hide_lockscreen_date_summary">Show lockscreen date</string>
     <string name="hide_lockscreen_alarm_title">Alarm</string>
     <string name="hide_lockscreen_alarm_summary">Show lockscreen alarm</string>
+
+    <!-- Lockscreen Bouncer -->
+    <string name="ls_bouncer_title">Secure lockscreen bouncer</string>
+    <string name="ls_bouncer_summary">Open lockscreen directly to pin/pattern/password when there are %1$s notifications present</string>
+    <string name="ls_bouncer_on">On (default)</string>
+    <string name="ls_bouncer_on_summary">Stock bouncer behavior</string>
+    <string name="ls_bouncer_off">Off</string>
+    <string name="ls_bouncer_off_summary">Open Lockscreen directly to pin/pattern/password</string>
+    <string name="ls_bouncer_dismissable">No dismissable</string>
+    <string name="ls_bouncer_persistent">No persistent</string>
+    <string name="ls_bouncer_all">No dismissable or persistent</string>
 
     <!-- Heads Up -->
     <string name="heads_up_notifications">Heads Up</string>
