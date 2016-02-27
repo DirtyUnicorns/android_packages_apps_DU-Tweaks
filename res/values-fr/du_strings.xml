@@ -708,6 +708,8 @@
 
     <!-- Lock screen wallpaper -->
    <string name="lockscreen_category_title">Écran de déverrouillage</string>
+   <string name="lockscreen_config_title">Paramètres</string>
+   <string name="lockscreen_wallpaper_config_title">Paramètres</string>
    <string name="lockscreen_wallpaper_title">Fond d\'écran</string>
    <string name="lockscreen_wallpaper_set_title">Définir un fond d\'écran</string>
    <string name="lockscreen_wallpaper_clear_title">Configuration d\'origine</string>
@@ -885,6 +887,21 @@
     <string name="hide_lockscreen_date_summary">Afficher la date sur l\'écran de déverrouillage</string>
     <string name="hide_lockscreen_alarm_title">Alarme</string>
     <string name="hide_lockscreen_alarm_summary">Afficher l\'alarme sur l\'écran de déverrouillage</string>
+
+    <!-- Lockscreen Bouncer -->
+    <string name="ls_bouncer_title">Déverrouillage sécurisé</string>
+    <string name="ls_bouncer_summary">Ouvrir l\'écran de déverrouillage directement en mode de saisie de la méthode de déverrouillage sécurisée, en présence de notifications %1$s</string>
+    <string name="ls_bouncer_on">Activé (Par défaut)</string>
+    <string name="ls_bouncer_on_summary">Méthode classique</string>
+    <string name="ls_bouncer_off">Désactivé</string>
+    <string name="ls_bouncer_off_summary">Ouvrir l\'écran de déverrouillage directement en mode de saisie de la méthode de déverrouillage sécurisée</string>
+    <string name="ls_bouncer_dismissable">Non-effaçables</string>
+    <string name="ls_bouncer_persistent">Non-persistantes</string>
+    <string name="ls_bouncer_all">Non-effaçables et non-persistantes</string>
+
+    <!-- Lockscreen Alpha -->
+    <string name="lockscreen_alpha">Transparence de l\'écran de déverrouillage</string>
+    <string name="lockscreen_security_alpha">Transparence de la méthode de déverrouillage sécurisée</string>
 
     <!-- Heads Up -->
     <string name="heads_up_notifications">Notifications flottantes</string>
