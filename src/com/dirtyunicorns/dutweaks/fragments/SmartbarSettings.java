@@ -40,6 +40,7 @@ import com.android.settings.SettingsPreferenceFragment;
 public class SmartbarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private ListPreference mSmartBarContext;
+    private ListPreference mImeActions;
     private ListPreference mButtonAnim;
 
     @Override
@@ -52,6 +53,12 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         mSmartBarContext = (ListPreference) findPreference("smartbar_context_menu_position");
         mSmartBarContext.setValue(String.valueOf(contextVal));
         mSmartBarContext.setOnPreferenceChangeListener(this);
+
+        int imeVal = Settings.Secure.getIntForUser(mContext.getContentResolver(),
+                "smartbar_ime_hint_mode", 1, UserHandle.USER_CURRENT);
+        mImeActions = (ListPreference) findPreference("smartbar_ime_action");
+        mImeActions.setValue(String.valueOf(imeVal));
+        mImeActions.setOnPreferenceChangeListener(this);
 
         int buttonAnimVal = Settings.Secure.getIntForUser(mContext.getContentResolver(),
                 "smartbar_button_animation_style", 0, UserHandle.USER_CURRENT);
@@ -103,6 +110,11 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         } else if (preference.equals(mButtonAnim)) {
             int val = Integer.parseInt(((String) newValue).toString());
             Settings.Secure.putInt(getContentResolver(), "smartbar_button_animation_style",
+                    val);
+            return true;
+        } else if (preference.equals(mImeActions)) {
+            int val = Integer.parseInt(((String) newValue).toString());
+            Settings.Secure.putInt(getContentResolver(), "smartbar_ime_hint_mode",
                     val);
             return true;
         }

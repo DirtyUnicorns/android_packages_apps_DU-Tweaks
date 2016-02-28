@@ -31,6 +31,13 @@
         android:summary="@string/smartbar_context_menu_position_summary" />
 
     <ListPreference
+        android:key="smartbar_ime_action"
+        android:title="@string/smartbar_ime_action_title"
+        android:entries="@array/smartbar_ime_action_entries"
+        android:entryValues="@array/smartbar_ime_action_values"
+        android:summary="@string/smartbar_ime_action_summary" />
+
+    <ListPreference
         android:key="smartbar_button_animation"
         android:title="@string/smartbar_button_animation_title"
         android:entries="@array/smartbar_button_animation_entries"
