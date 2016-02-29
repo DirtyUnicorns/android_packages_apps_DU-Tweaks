@@ -37,6 +37,7 @@ import android.provider.Settings.SettingNotFoundException;
 import com.android.internal.util.du.AbstractAsyncSuCMDProcessor;
 import com.android.internal.util.du.CMDProcessor;
 import com.android.internal.util.du.Helpers;
+import com.android.internal.util.du.DuUtils;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
 
@@ -53,6 +54,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String SCROLLINGCACHE_DEFAULT = "1";
     private static final String ENABLE_TASK_MANAGER = "enable_task_manager";
     private static final String SELINUX = "selinux";
+    private static final String FLASHLIGHT_NOTIFICATION = "flashlight_notification";
 
     private FingerprintManager mFingerprintManager;
     private ListPreference mMsob;
@@ -61,6 +63,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private SwitchPreference mStatusBarBrightnessControl;
     private SwitchPreference mEnableTaskManager;
     private SwitchPreference mSelinux;
+    private SwitchPreference mFlashlightNotification;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,6 +84,15 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         } else {
             mSelinux.setChecked(false);
             mSelinux.setSummary(R.string.selinux_permissive_title);
+        }
+
+        mFlashlightNotification = (SwitchPreference) findPreference(FLASHLIGHT_NOTIFICATION);
+        mFlashlightNotification.setOnPreferenceChangeListener(this);
+        if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
+            prefScreen.removePreference(mFlashlightNotification);
+        } else {
+        mFlashlightNotification.setChecked((Settings.System.getInt(resolver,
+                Settings.System.FLASHLIGHT_NOTIFICATION, 0) == 1));
         }
 
         mMsob = (ListPreference) findPreference(PREF_MEDIA_SCANNER_ON_BOOT);
@@ -147,6 +159,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.ENABLE_TASK_MANAGER, checked ? 1:0);
+            return true;
+        } else if  (preference == mFlashlightNotification) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                   Settings.System.FLASHLIGHT_NOTIFICATION, checked ? 1:0);
             return true;
         } else if (preference == mSelinux) {
             if (newValue.toString().equals("true")) {

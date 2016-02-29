@@ -936,4 +936,8 @@
     <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
     <string name="keyguard_statusbar_clock_summary">Enables the statusbar clock in the keyguard on the left side</string>
 
+    <!-- Flashlight notification -->
+    <string name="flashlight_notification_title">Flashlight notification</string>
+    <string name="flashlight_notification_summary">Enable notificiation for when the flashlight is on</string>
+
 </resources>
