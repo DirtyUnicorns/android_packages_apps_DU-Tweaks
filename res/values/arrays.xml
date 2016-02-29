@@ -107,7 +107,7 @@
     </string-array>
 
     <!-- Download Center - Gapps -->
-    <string-array name="gapps_list" translatable="false">
+    <string-array name="gapps_list">
         <item>Banks Gapps</item>
         <item>DU TBO GAPPS (regular)</item>
         <item>DU TBO GAPPS (regular ARM64)</item>
