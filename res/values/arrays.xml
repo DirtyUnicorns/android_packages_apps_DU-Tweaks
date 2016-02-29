@@ -107,12 +107,20 @@
     </string-array>
 
     <!-- Download Center - Gapps -->
-    <string-array name="gapps_list">
+    <string-array name="gapps_list" translatable="false">
         <item>Banks Gapps</item>
+        <item>DU TBO GAPPS (regular)</item>
+        <item>DU TBO GAPPS (regular ARM64)</item>
+        <item>DU TBO GAPPS (clear)</item>
+        <item>DU TBO GAPPS (clear ARM64)</item>
     </string-array>
 
-    <string-array name="gapps_list_url">
+    <string-array name="gapps_list_url" translatable="false">
         <item>http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</item>
+        <item>http://download.dirtyunicorns.com/files/misc/misc/DU_TBO_GAPPS.zip</item>
+        <item>http://download.dirtyunicorns.com/files/misc/misc/ARM64_DU_TBO_GAPPS.zip</item>
+        <item>http://download.dirtyunicorns.com/files/misc/misc/DU_TBO_GAPPS_CLEAR.zip</item>
+        <item>http://download.dirtyunicorns.com/files/misc/misc/ARM64_DU_TBO_GAPPS_CLEAR.zip</item>
     </string-array>
 
     <!-- Download Center - Tomahawk -->
