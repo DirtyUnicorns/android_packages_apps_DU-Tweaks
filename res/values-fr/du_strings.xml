@@ -705,6 +705,11 @@
     <string name="smartbar_factory_reset_title">Réinitialiser les paramètres</string>
     <string name="smartbar_factory_reset_summary">Rétablir la configuration d\'origine de SmartBar</string>
     <string name="smartbar_factory_reset_confirm">Revenir à la configuration d\'origine de SmartBar\u00A0?</string>
+    <string name="smartbar_ime_action_title">Modes de saisie</string>
+    <string name="smartbar_ime_action_summary">Définir les boutons à afficher lors de l\'affichage du clavier</string>
+    <string name="smartbar_ime_action_none">Aucun</string>
+    <string name="smartbar_ime_action_arrows">Touches de direction</string>
+    <string name="smartbar_ime_action_switcher">Sélecteur de clavier</string>
 
     <!-- Lock screen wallpaper -->
    <string name="lockscreen_category_title">Écran de déverrouillage</string>
@@ -952,5 +957,9 @@
     <!-- Keyguard Statusbar Clock -->
     <string name="keyguard_statusbar_clock_title">Horloge</string>
     <string name="keyguard_statusbar_clock_summary">Afficher l\'horloge à gauche dans la barre d\'état de l\'écran de déverrouillage</string>
+
+    <!-- Flashlight notification -->
+    <string name="flashlight_notification_title">Lampe de poche</string>
+    <string name="flashlight_notification_summary">Activer la notification lorsque la lampe de poche est en cours d\'utilisation﻿</string>
 
 </resources>
