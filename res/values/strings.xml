@@ -52,6 +52,7 @@
     <string name="powermenu_reboot">Reboot</string>
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_screenrecord">Screen Record</string>
+    <string name="powermenu_torch">Torch</string>
     <string name="powermenu_airplane">Airplane</string>
     <string name="powermenu_settings">Settings</string>
     <string name="powermenu_lockdown">Lock Down</string>
