@@ -24,8 +24,8 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
+import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -34,6 +34,7 @@ import android.preference.SeekBarPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
+import com.android.internal.util.du.DuUtils;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -41,8 +42,10 @@ import com.android.settings.Utils;
 public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
+    private static final String POWERMENU_TORCH = "powermenu_torch";
 
     private ListPreference mAdvancedReboot;
+    private SwitchPreference mPowermenuTorch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,12 +54,22 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         addPreferencesFromResource(R.xml.powermenu);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+	final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mAdvancedReboot = (ListPreference) findPreference(KEY_ADVANCED_REBOOT);
         mAdvancedReboot.setValue(String.valueOf(Settings.Secure.getInt(
                 getContentResolver(), Settings.Secure.ADVANCED_REBOOT, 1)));
         mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
         mAdvancedReboot.setOnPreferenceChangeListener(this);
+
+        mPowermenuTorch = (SwitchPreference) findPreference(POWERMENU_TORCH);
+        mPowermenuTorch.setOnPreferenceChangeListener(this);
+        if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
+            prefScreen.removePreference(mPowermenuTorch);
+        } else {
+        mPowermenuTorch.setChecked((Settings.System.getInt(resolver,
+                Settings.System.POWERMENU_TORCH, 0) == 1));
+        }
     }
 
     @Override
@@ -74,16 +87,19 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         return true;
     }
 
-    public boolean onPreferenceChange(Preference preference, Object value) {
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mAdvancedReboot) {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.ADVANCED_REBOOT,
-                    Integer.valueOf((String) value));
-            mAdvancedReboot.setValue(String.valueOf(value));
+                    Integer.valueOf((String) newValue));
+            mAdvancedReboot.setValue(String.valueOf(newValue));
             mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
-        } else {
-            return false;
+        } else if (preference == mPowermenuTorch) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.POWERMENU_TORCH, checked ? 1:0);
+            return true;
         }
-
-        return true;
+        return false;
     }
 }
