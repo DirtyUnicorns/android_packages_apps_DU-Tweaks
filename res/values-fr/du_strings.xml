@@ -958,4 +958,8 @@
     <string name="keyguard_statusbar_clock_title">Horloge</string>
     <string name="keyguard_statusbar_clock_summary">Afficher l\'horloge à gauche dans la barre d\'état de l\'écran de déverrouillage</string>
 
+    <!-- Flashlight notification -->
+    <string name="flashlight_notification_title">Lampe de poche</string>
+    <string name="flashlight_notification_summary">Activer la notification lorsque la lampe de poche est en cours d\'utilisation﻿</string>
+
 </resources>
