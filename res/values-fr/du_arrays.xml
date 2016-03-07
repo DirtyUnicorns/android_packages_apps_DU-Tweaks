@@ -45,4 +45,13 @@
         <item>Cinq</item>
     </string-array>
 
+    <!-- Download Center - Gapps -->
+    <string-array name="gapps_list">
+        <item>Banks</item>
+        <item>DU TBO (Noir)</item>
+        <item>DU TBO (Noir | ARM64)</item>
+        <item>DU TBO (Transparent)</item>
+        <item>DU TBO (Transparent | ARM64)</item>
+    </string-array>
+
 </resources>
