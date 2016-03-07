@@ -74,16 +74,17 @@
     <string name="immersive_recents_navbar">Uniquement la barre de navigation</string>
 
     <!-- Power Menu -->
-    <string name="powermenu_screenshot">Capture d\'écran</string>
-    <string name="powermenu_screenrecord">Capture vidéo</string>
+    <string name="powermenu_lockscreen_title">Écran de déverrouillage</string>
+    <string name="powermenu_lockscreen_summary">Afficher le menu Marche/Arrêt sur l\'écran de déverrouillage</string>
     <string name="powermenu_power">Éteindre</string>
     <string name="powermenu_reboot">Redémarrer</string>
+    <string name="powermenu_screenshot">Capture d\'écran</string>
+    <string name="powermenu_screenrecord">Capture vidéo</string>
+    <string name="powermenu_torch">Lampe de poche</string>
     <string name="powermenu_airplane">Mode Avion</string>
     <string name="powermenu_settings">Paramètres</string>
     <string name="powermenu_lockdown">Verrouiller</string>
     <string name="powermenu_soundpanel">Panneau de volume</string>
-    <string name="powermenu_lockscreen_title">Écran de déverrouillage</string>
-    <string name="powermenu_lockscreen_summary">Afficher le menu Marche/Arrêt sur l\'écran de déverrouillage</string>
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Redémarrage avancé</string>
@@ -844,7 +845,7 @@
 
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Gestionnaire de tâches</string>
-    <string name="enable_task_manager_summary">Activer/Désactiver le Gestionnaire de tâches dans la barre d\'état</string>
+    <string name="enable_task_manager_summary">Activer le Gestionnaire de tâches dans la barre d\'état</string>
 
     <!-- Power menu Animations  -->
     <string name="power_menu_animation_title">Animation du menu Marche/Arrêt</string>
