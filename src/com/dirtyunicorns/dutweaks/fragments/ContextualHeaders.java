@@ -32,14 +32,17 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
+import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
 public class ContextualHeaders extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PREF_CUSTOM_HEADER = "status_bar_custom_header";
     private static final String PREF_CUSTOM_HEADER_DEFAULT = "status_bar_custom_header_default";
+    private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
 
     private SwitchPreference mCustomHeader;
     private SwitchPreference mCustomHeaderDefault;
+    private SeekBarPreferenceCham mHeaderShadow;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +62,12 @@ public class ContextualHeaders extends SettingsPreferenceFragment implements OnP
         mCustomHeaderDefault.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, 0) == 1));
         mCustomHeaderDefault.setOnPreferenceChangeListener(this);
+
+        mHeaderShadow = (SeekBarPreferenceCham) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
+        final int headerShadow = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
+        mHeaderShadow.setValue((int)((headerShadow / 255) * 100));
+        mHeaderShadow.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -83,6 +92,12 @@ public class ContextualHeaders extends SettingsPreferenceFragment implements OnP
          Settings.System.putInt(getContentResolver(),
                  Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT,
                  (Boolean) newValue ? 1 : 0);
+         return true;
+      } else if (preference == mHeaderShadow) {
+         Integer headerShadow = (Integer) newValue;
+         int realHeaderValue = (int) (((double) headerShadow / 100) * 255);
+         Settings.System.putInt(getContentResolver(),
+                 Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, realHeaderValue);
          return true;
        }
        return false;
