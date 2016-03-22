@@ -963,4 +963,8 @@
     <string name="flashlight_notification_title">Lampe de poche</string>
     <string name="flashlight_notification_summary">Activer la notification lorsque la lampe de poche est en cours d\'utilisation﻿</string>
 
+    <!-- Header image shadow -->
+    <string name="status_bar_custom_header_shadow_title">Ombre</string>
+    <string name="status_bar_custom_header_shadow_summary">Appliquer une ombre sur l\'image d\'arrière-plan de l\'en-tête contextuel, pour une meilleure visibilité des images lumineuses</string>
+
 </resources>
