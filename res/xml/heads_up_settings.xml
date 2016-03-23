@@ -19,6 +19,11 @@
             android:summaryOff="@string/summary_heads_up_disabled"
             android:defaultValue="true" />
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="heads_up_show_status_button"
+            android:title="@string/enable_headsup_button_extended_statusbar_title"
+            android:summary="@string/enable_headsup_button_extended_statusbar_summary" />
+
     <PreferenceCategory
             android:title="@string/heads_up_dnd_title"
             android:key="dnd_applications_list"
