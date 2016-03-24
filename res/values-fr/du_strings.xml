@@ -658,14 +658,15 @@
     <string name="fling_trails_enable_summary">Afficher le tracé des gestes par glissement</string>
     <string name="fling_trails_color_title">Couleur du tracé</string>
     <string name="fling_appearance">Apparence</string>
-    <string name="fling_show_logo_title">Logo Fling</string>
+    <string name="fling_show_logo_title">Afficher le logo de Fling</string>
     <string name="fling_animate_logo_title">Animer le logo</string>
-    <string name="fling_animate_logo_summary">Le logo s\'anime lors des événements tactiles</string>
+    <string name="fling_animate_logo_summary">Le logo s\'anime lors des appuis</string>
     <string name="fling_logo_color">Couleur du logo</string>
-    <string name="fling_logo_custom_logo_pick_title">Définir l\'icône du logo</string>
+    <string name="fling_logo_custom_logo_pick_title">Définir l\'icône du logo (pack d\icônes)</string>
+    <string name="fling_logo_custom_logo_image_pick_title">Définir l\'icône du logo (image personnalisée)</string>
     <string name="fling_logo_custom_logo_reset_title">Réinitialiser l\'icône du logo</string>
     <string name="fling_show_ripple_title">Ondulation</string>
-    <string name="fling_show_ripple_summary">Effet d\'ondulation lors des événements tactiles</string>
+    <string name="fling_show_ripple_summary">Effet d\'ondulation lors des appuis</string>
     <string name="fling_ripple_color">Couleur de l\'ondulation</string>
     <string name="fling_show_pulse_title">Pulse</string>
     <string name="fling_show_pulse_summary">Visualisation au style d\'un égaliseur audio la barre de navigation</string>
@@ -846,6 +847,10 @@
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Gestionnaire de tâches</string>
     <string name="enable_task_manager_summary">Activer le Gestionnaire de tâches dans la barre d\'état</string>
+
+    <!-- Heads Up button -->
+    <string name="enable_headsup_button_extended_statusbar_title">Bouton</string>
+    <string name="enable_headsup_button_extended_statusbar_summary">Activer le bouton des Notifications flottantes dans la barre d\'état étendue</string>
 
     <!-- Power menu Animations  -->
     <string name="power_menu_animation_title">Animation du menu Marche/Arrêt</string>
