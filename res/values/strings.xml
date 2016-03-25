@@ -606,7 +606,7 @@
 
     <!-- Fling -->
     <string name="fling_settings">Fling settings</string>
-    <string name="fling_interface">Fling gesture interface</string>
+    <string name="fling_interface">Fling</string>
     <string name="fling_enable_title">Enable Fling</string>
     <string name="fling_back_home_policy">Back and Home are required to be set at all times. To change a Back or Home assignment, set the desired assignment first</string>
     <string name="fling_split_bar_policy">When only a right or left action is assigned, the action applies to the full bar</string>
