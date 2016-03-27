@@ -16,9 +16,12 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,10 +31,15 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
-import com.dirtyunicorns.dutweaks.preferences.BaseSystemSettingSwitchBar;
+import com.dirtyunicorns.dutweaks.preference.BaseSystemSettingSwitchBar;
 
 public class HeadsUpSettings extends SettingsPreferenceFragment
-        implements BaseSystemSettingSwitchBar.SwitchBarChangeCallback {
+        implements BaseSystemSettingSwitchBar.SwitchBarChangeCallback,
+                Preference.OnPreferenceChangeListener {
+
+    private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
+
+    private ListPreference mHeadsUpTimeOut;
 
     private BaseSystemSettingSwitchBar mEnabledSwitch;
 
@@ -43,6 +51,22 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.headsup_settings);
+
+        Resources systemUiResources;
+        try {
+            systemUiResources = getPackageManager().getResourcesForApplication("com.android.systemui");
+        } catch (Exception e) {
+            return;
+        }
+
+        int defaultTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
+                    "com.android.systemui:integer/heads_up_notification_decay", null, null));
+        mHeadsUpTimeOut = (ListPreference) findPreference(PREF_HEADS_UP_TIME_OUT);
+        mHeadsUpTimeOut.setOnPreferenceChangeListener(this);
+        int headsUpTimeOut = Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_TIMEOUT, defaultTimeOut);
+        mHeadsUpTimeOut.setValue(String.valueOf(headsUpTimeOut));
+        updateHeadsUpTimeOutSummary(headsUpTimeOut);
     }
 
     @Override
@@ -95,6 +119,25 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.DIRTYTWEAKS;
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mHeadsUpTimeOut) {
+            int headsUpTimeOut = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HEADS_UP_TIMEOUT,
+                    headsUpTimeOut);
+            updateHeadsUpTimeOutSummary(headsUpTimeOut);
+            return true;
+        }
+        return false;
+    }
+
+    private void updateHeadsUpTimeOutSummary(int value) {
+        String summary = getResources().getString(R.string.heads_up_time_out_summary,
+                value / 1000);
+        mHeadsUpTimeOut.setSummary(summary);
     }
 
     private boolean getUserHeadsUpState() {
