@@ -241,7 +241,6 @@
     <string name="clock_title_enable">Alignment</string>
     <string name="clock_enabled">Enabled</string>
     <string name="clock_disabled">Disabled</string>
-    <string name="clock_color_title">Color</string>
     <string name="status_bar_clock_style_reset">Reset color</string>
     <string name="status_bar_show_clock_title">Show clock &amp; date</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
@@ -370,9 +369,6 @@
     <string name="network_traffic_hidearrow">Hide arrows</string>
     <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-    <string name="network_traffic_color_style">Color style</string>
-    <string name="network_traffic_color_reset">Reset color</string>
-    <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
     <string name="ok">OK</string>
 
     <!-- Time Contextual Header -->
@@ -420,7 +416,6 @@
     <string name="custom_carrier_label_title">Custom carrier label</string>
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="status_bar_carrier_color">Carrier label color</string>
     <string name="show_carrier_title">Carrier label</string>
     <string name="show_carrier_disabled">Disabled</string>
     <string name="show_carrier_keyguard">Lockscreen</string>
@@ -458,7 +453,6 @@
     <!-- Statusbar DU logo -->
     <string name="status_bar_du_logo_title">DU logo</string>
     <string name="status_bar_du_logo_summary">Enable to show DU logo on the left side of statusbar</string>
-    <string name="status_bar_du_logo_color">DU logo color</string>
 
     <!-- Density Changer -->
     <string name="dpi">DPI</string>

@@ -241,7 +241,6 @@
     <string name="clock_title_enable">Ausrichtung</string>
     <string name="clock_enabled">Aktiviert</string>
     <string name="clock_disabled">Deaktiviert</string>
-    <string name="clock_color_title">Farbe</string>
     <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
     <string name="status_bar_show_clock_title">Uhr und Datum anzeigen</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
@@ -370,9 +369,6 @@
     <string name="network_traffic_hidearrow">Pfeile verbergen</string>
     <string name="network_traffic_hidearrow_summary">Verbirgt die Pfeile des Netzwerkverkehrs in der Statusleiste</string>
     <string name="network_traffic_autohide_threshold">Inaktivitätsschwelle</string>
-    <string name="network_traffic_color_style">Farbe</string>
-    <string name="network_traffic_color_reset">Farbe zurücksetzen</string>
-    <string name="network_traffic_color_reset_message">Netzwerkverkehrsfarbe auf die Voreinstellungen zurücksetzen?</string>
     <string name="ok">OK</string>
 
     <!-- Time Contextual Header -->
@@ -420,7 +416,6 @@
     <string name="custom_carrier_label_title">Benutzerdefiniertes Label</string>
     <string name="custom_carrier_label_explain">Bitte gebe ein neues Label ein. Leer lassen, um Standard-Label zu erhalten</string>
     <string name="custom_carrier_label_notset">Benutzerdefiniertes Label ist zur Zeit nicht gesetzt</string>
-    <string name="status_bar_carrier_color">Farbe</string>
     <string name="show_carrier_title">Anbieter-Label</string>
     <string name="show_carrier_disabled">Deaktiviert</string>
     <string name="show_carrier_keyguard">Nur Sperrbildschirm</string>
@@ -458,7 +453,6 @@
     <!-- Statusbar DU logo -->
     <string name="status_bar_du_logo_title">Dirty Unicorns-Logo</string>
     <string name="status_bar_du_logo_summary">Dirty Unicorns-Logo auf der linken Seite der Statusleiste anzeigen</string>
-    <string name="status_bar_du_logo_color">Farbe</string>
 
     <!-- Density Changer -->
     <string name="dpi">DPI</string>

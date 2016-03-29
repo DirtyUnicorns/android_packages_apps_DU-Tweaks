@@ -44,7 +44,6 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class CarrierLabel extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -52,15 +51,11 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 
     private static final String SHOW_CARRIER_LABEL = "status_bar_show_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
-    private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
-
-    static final int DEFAULT_STATUS_CARRIER_COLOR = 0xffffffff;
 
     private PreferenceScreen mCustomCarrierLabel;
 
     private ListPreference mShowCarrierLabel;
     private String mCustomCarrierLabelText;
-    private ColorPickerPreference mCarrierColorPicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -71,9 +66,6 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        int intColor;
-        String hexColor;
-
         mShowCarrierLabel =
                 (ListPreference) findPreference(SHOW_CARRIER_LABEL);
         int showCarrierLabel = Settings.System.getIntForUser(resolver,
@@ -83,14 +75,6 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
 
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
-
-        mCarrierColorPicker = (ColorPickerPreference) findPreference(STATUS_BAR_CARRIER_COLOR);
-        mCarrierColorPicker.setOnPreferenceChangeListener(this);
-        intColor = Settings.System.getInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_CARRIER_COLOR, DEFAULT_STATUS_CARRIER_COLOR);
-        hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mCarrierColorPicker.setSummary(hexColor);
-        mCarrierColorPicker.setNewPreviewColor(intColor);
         updateCustomLabelTextSummary();
     }
 
@@ -111,16 +95,8 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-		ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mCarrierColorPicker) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.STATUS_BAR_CARRIER_COLOR, intHex);
-            return true;
-         } else if (preference == mShowCarrierLabel) {
+         ContentResolver resolver = getActivity().getContentResolver();
+         if (preference == mShowCarrierLabel) {
             int showCarrierLabel = Integer.valueOf((String) newValue);
             int index = mShowCarrierLabel.findIndexOfValue((String) newValue);
             Settings.System.putIntForUser(resolver, Settings.System.

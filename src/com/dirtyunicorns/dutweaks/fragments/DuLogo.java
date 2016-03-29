@@ -34,15 +34,9 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
-
 public class DuLogo extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "DuLogo";
-
-    private static final String KEY_DU_LOGO_COLOR = "status_bar_du_logo_color";
-
-    private ColorPickerPreference mDuLogoColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,30 +45,10 @@ public class DuLogo extends SettingsPreferenceFragment implements OnPreferenceCh
         addPreferencesFromResource(R.xml.du_logo);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-
-        // DU logo color
-        mDuLogoColor =
-            (ColorPickerPreference) prefSet.findPreference(KEY_DU_LOGO_COLOR);
-        mDuLogoColor.setOnPreferenceChangeListener(this);
-        int intColor = Settings.System.getInt(getContentResolver(),
-                Settings.System.STATUS_BAR_DU_LOGO_COLOR, 0xffffffff);
-        String hexColor = String.format("#%08x", (0xffffffff & intColor));
-            mDuLogoColor.setSummary(hexColor);
-            mDuLogoColor.setNewPreviewColor(intColor);
-
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mDuLogoColor) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_DU_LOGO_COLOR, intHex);
-            return true;
-        }
-        return false;
+        return true;
     }
 
     @Override
