@@ -243,7 +243,6 @@
     <string name="clock_title_enable">Position</string>
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
-    <string name="clock_color_title">Couleur</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
     <string name="status_bar_show_clock_title">Afficher l\'heure et la date</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
@@ -372,9 +371,6 @@
     <string name="network_traffic_hidearrow">Masquer les flèches</string>
     <string name="network_traffic_hidearrow_summary">Masquer les flèches de l\'indicateur de trafic</string>
     <string name="network_traffic_autohide_threshold">Seuil d\'inactivité</string>
-    <string name="network_traffic_color_style">Couleur</string>
-    <string name="network_traffic_color_reset">Réinitialiser la couleur</string>
-    <string name="network_traffic_color_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="ok">OK</string>
 
     <!--Time Contexual Header -->
@@ -422,7 +418,6 @@
     <string name="custom_carrier_label_title">Libellé</string>
     <string name="custom_carrier_label_explain">Saisir un nouveau libellé. Laisser vide pour revenir au libellé d\'origine.</string>
     <string name="custom_carrier_label_notset">Non défini</string>
-    <string name="status_bar_carrier_color">Couleur libellé opérateur</string>
     <string name="show_carrier_title">Libellé opérateur</string>
     <string name="show_carrier_disabled">Désactivé</string>
     <string name="show_carrier_keyguard">Écran de déverrouillage</string>
@@ -465,7 +460,6 @@
     <!-- Statusbar DU logo -->
     <string name="status_bar_du_logo_title">DU logo</string>
     <string name="status_bar_du_logo_summary">Afficher le logo de DU sur la gauche de la barre d\'état</string>
-    <string name="status_bar_du_logo_color">Couleur</string>
 
     <!-- Density Changer -->
     <string name="dpi">DPI</string>

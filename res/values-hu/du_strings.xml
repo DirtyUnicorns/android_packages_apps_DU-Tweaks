@@ -241,7 +241,6 @@
     <string name="clock_title_enable">Igazítás</string>
     <string name="clock_enabled">Engedélyezve</string>
     <string name="clock_disabled">Letiltva</string>
-    <string name="clock_color_title">Szín</string>
     <string name="status_bar_clock_style_reset">Szín visszaállítása</string>
     <string name="status_bar_show_clock_title">Óra és dátum mutatása</string>
     <string name="status_bar_am_pm_title">De/Du</string>
@@ -370,9 +369,6 @@
     <string name="network_traffic_hidearrow">Nyilak elrejtése</string>
     <string name="network_traffic_hidearrow_summary">Forgalom indikátor nyilainak elrejtése</string>
     <string name="network_traffic_autohide_threshold">Tétlenségi küszöb</string>
-    <string name="network_traffic_color_style">Szín stílus</string>
-    <string name="network_traffic_color_reset">Szín visszaállítása</string>
-    <string name="network_traffic_color_reset_message">Hálózati forgalom színeinek visszaállítása alapértelmezettre?</string>
     <string name="ok">OK</string>
 
     <!-- Time Contextual Header -->
@@ -420,7 +416,6 @@
     <string name="custom_carrier_label_title">Egyéni szolgáltató</string>
     <string name="custom_carrier_label_explain">Kérjük, adj meg új nevet. Hagyd üresen ha visszatérnél az eredetire.</string>
     <string name="custom_carrier_label_notset">Egyéni szolgáltatói név nincs beállítva</string>
-    <string name="status_bar_carrier_color">Szolgáltatói címke színe</string>
     <string name="show_carrier_title">Szolgáltatói címke</string>
     <string name="show_carrier_disabled">Letiltva</string>
     <string name="show_carrier_keyguard">Zárképernyő</string>
@@ -458,7 +453,6 @@
     <!-- Statusbar DU logo -->
     <string name="status_bar_du_logo_title">DU logó</string>
     <string name="status_bar_du_logo_summary">Engedélyezi a DU logó megjelenítését az állapotsor jobb oldalán</string>
-    <string name="status_bar_du_logo_color">DU logó színe</string>
 
     <!-- Density Changer -->
     <string name="dpi">DPI</string>
