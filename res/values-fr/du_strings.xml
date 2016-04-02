@@ -922,6 +922,16 @@
     <string name="heads_up_whitelist_title">Applications autorisées</string>
     <string name="heads_up_contains_key">Application déjà ajoutée à la liste</string>
 
+    <!-- Heads Up Timeout -->
+    <string name="heads_up_time_out_title">Délai d\'affichage</string>
+    <string name="heads_up_time_out_summary">Affichage des notifications pendant <xliff:g id="number">%d</xliff:g> secondes</string>
+    <string name="heads_up_time_out_2sec">2 secondes</string>
+    <string name="heads_up_time_out_4sec">4 secondes</string>
+    <string name="heads_up_time_out_5sec">5 secondes</string>
+    <string name="heads_up_time_out_6sec">6 secondes</string>
+    <string name="heads_up_time_out_8sec">8 secondes</string>
+    <string name="heads_up_time_out_10sec">10 secondes</string>
+
     <!-- Lockscreen Colors -->
     <string name="lockscreen_colors_title">Couleurs de l\'écran de déverrouillage</string>
     <string name="lockscreen_owner_info_color">Informations du propriétaire</string>
