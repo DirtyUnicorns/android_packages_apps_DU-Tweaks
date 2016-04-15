@@ -297,7 +297,7 @@
   <string name="listview_off">Par défaut</string>
   <string name="listview_wave_left">Vague (à gauche)</string>
   <string name="listview_wave_right">Vague (à droite)</string>
-  <string name="listview_alpha">Alpha</string>
+  <string name="listview_alpha">Transparent</string>
   <string name="listview_scale">Mise à l\'échelle</string>
   <string name="listview_stack_top">Empiler (en haut)</string>
   <string name="listview_stack_bottom">Empiler (en bas)</string>
@@ -553,8 +553,8 @@
   <string name="fling_short_swipe_left">Glissement vers la gauche</string>
   <string name="fling_long_swipe_right">Glissement prolongé vers la droite</string>
   <string name="fling_long_swipe_left">Glissement prolongé vers la gauche</string>
-  <string name="fling_right_up_swipe">Right side swipe up</string>
-  <string name="fling_left_up_swipe">Left side swipe up</string>
+  <string name="fling_right_up_swipe">Glissement vers le haut (Côté droit)</string>
+  <string name="fling_left_up_swipe">Glissement vers le haut (Côté gauche)</string>
   <string name="fling_single_tap">Appui droit simple</string>
   <string name="fling_double_tap">Double appui droit</string>
   <string name="fling_long_press">Appui droit prolongé</string>
@@ -579,7 +579,7 @@
   <string name="fling_animate_logo_title">Animer le logo</string>
   <string name="fling_animate_logo_summary">Le logo s\'anime lors des appuis</string>
   <string name="fling_logo_color">Couleur du logo</string>
-  <string name="fling_logo_custom_logo_pick_title">Définir l\'icône du logo (pack d\icônes)</string>
+  <string name="fling_logo_custom_logo_pick_title">Définir l\'icône du logo (pack d\'icônes)</string>
   <string name="fling_logo_custom_logo_image_pick_title">Définir l\'icône du logo (image personnalisée)</string>
   <string name="fling_logo_custom_logo_reset_title">Réinitialiser l\'icône du logo</string>
   <string name="fling_show_ripple_title">Ondulation</string>
