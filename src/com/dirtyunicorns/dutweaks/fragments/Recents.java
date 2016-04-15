@@ -435,14 +435,17 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
             mSlimRecents.setEnabled(true);
             mStockRecents.setEnabled(false);
             mOmniRecents.setEnabled(false);
+            mShowRunningTasks.setEnabled(true);
         } else if (omniRecents) {
             mOmniRecents.setEnabled(true);
             mStockRecents.setEnabled(false);
             mSlimRecents.setEnabled(false);
+            mShowRunningTasks.setEnabled(false);
         } else {
            mSlimRecents.setEnabled(true);
            mStockRecents.setEnabled(true);
            mOmniSwitch.setEnabled(true);
+           mShowRunningTasks.setEnabled(true);
         }
     }
 
