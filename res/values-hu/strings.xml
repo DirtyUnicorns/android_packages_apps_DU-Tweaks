@@ -85,7 +85,7 @@
   <string name="qs_brightness_slider_summary">Fényerő csúszka megjelenítése a gyors beállításokban</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Fényerő ikon </string>
-  <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+  <string name="brightness_icon_summary">Fényerő ikon megjelenítése a fényerőcsúszka a bal oldalán az automatikus fényerő beállításához</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Teljes képernyős előzmények</string>
   <string name="immersive_recents_summary">Előzmények képernyő megjelenésének módosítása</string>
@@ -190,7 +190,7 @@
   <string name="lock_clock_font_bold">Roboto Bold</string>
   <string name="lock_clock_font_italic">Roboto Italic</string>
   <string name="lock_clock_font_bold_italic">Roboto Bold Italic</string>
-  <string name="lock_clock_font_light_normal">Roboto Light (default)</string>
+  <string name="lock_clock_font_light_normal">Roboto Light (alapértelmezett)</string>
   <string name="lock_clock_font_light_italic">Roboto Light Italic</string>
   <string name="lock_clock_font_thin_normal">Roboto Thin</string>
   <string name="lock_clock_font_thin_italic">Roboto Thin Italic</string>
@@ -553,8 +553,8 @@
   <string name="fling_short_swipe_left">Bal rövid csúsztatás</string>
   <string name="fling_long_swipe_right">Jobb hosszú csúsztatás</string>
   <string name="fling_long_swipe_left">Bal hosszú csúsztatás</string>
-  <string name="fling_right_up_swipe">Right side swipe up</string>
-  <string name="fling_left_up_swipe">Left side swipe up</string>
+  <string name="fling_right_up_swipe">Jobb oldali csúsztatás felfelé</string>
+  <string name="fling_left_up_swipe">Bal oldali csúsztatás felfelé</string>
   <string name="fling_single_tap">Jobb egyszerű érintés</string>
   <string name="fling_double_tap">Jobb dupla érintés</string>
   <string name="fling_long_press">Jobb hosszan nyomás</string>
@@ -580,7 +580,7 @@
   <string name="fling_animate_logo_summary">Érintési műveletek esetén animált logó</string>
   <string name="fling_logo_color">Logó színe</string>
   <string name="fling_logo_custom_logo_pick_title">Egyéni logó ikon</string>
-  <string name="fling_logo_custom_logo_image_pick_title">Custom logo image</string>
+  <string name="fling_logo_custom_logo_image_pick_title">Egyéni logó kép</string>
   <string name="fling_logo_custom_logo_reset_title">Logó ikon visszaállítása</string>
   <string name="fling_show_ripple_title">Hullámosság megjelenítése</string>
   <string name="fling_show_ripple_summary">Hullámosság hatás érintési műveleteknél</string>
@@ -680,8 +680,8 @@
   <string name="shortcuts_icon_picker_favorite">Kedvenc</string>
   <string name="shortcuts_icon_picker_file_browser">Fájlkezelő</string>
   <string name="shortcuts_icon_picker_file_browser2">Alternatív fájlkezelő</string>
-  <string name="shortcuts_icon_picker_fitness">Fitness</string>
-  <string name="shortcuts_icon_picker_gallery">Gallery</string>
+  <string name="shortcuts_icon_picker_fitness">Fitnessz</string>
+  <string name="shortcuts_icon_picker_gallery">Galéria</string>
   <string name="shortcuts_icon_picker_gears">Gears</string>
   <string name="shortcuts_icon_picker_google_small">Google</string>
   <string name="shortcuts_icon_picker_gplus">Google+</string>
@@ -709,7 +709,7 @@
   <string name="shortcuts_icon_picker_sms">Üzenetek</string>
   <string name="shortcuts_icon_picker_tasks">Feladatok</string>
   <string name="shortcuts_icon_picker_terminal">Terminál</string>
-  <string name="shortcuts_icon_picker_transit">Transit</string>
+  <string name="shortcuts_icon_picker_transit">Tranzit</string>
   <string name="shortcuts_icon_picker_tv">TV</string>
   <string name="shortcuts_icon_picker_twitter">Twitter</string>
   <string name="shortcuts_icon_picker_unlock">Feloldás</string>
@@ -755,8 +755,8 @@
   <string name="enable_task_manager_title">Feladatkezelő</string>
   <string name="enable_task_manager_summary">A kiterjesztett állapotsori területen lévő feladatkezelő gombhoz rendelt műveletek engedélyezése/tiltása</string>
   <!-- Heads Up button -->
-  <string name="enable_headsup_button_extended_statusbar_title">Extended statusbar button</string>
-  <string name="enable_headsup_button_extended_statusbar_summary">Enable/Disable action for the heads up button in the expanded statusbar area</string>
+  <string name="enable_headsup_button_extended_statusbar_title">Kiterjesztett állapotsor gomb</string>
+  <string name="enable_headsup_button_extended_statusbar_summary">Engedélyezési/tiltási művelet a lebegő értesítések gombon a kiterjesztett állapotsori területen</string>
   <!-- Power menu Animations  -->
   <string name="power_menu_animation_title">Kikapcsoló menü animációk</string>
   <string name="power_menu_animation_summary">Kikapcsoló menü be/kilépési animációjának változtatása</string>
@@ -823,14 +823,14 @@
   <string name="heads_up_whitelist_title">Engedélyezőlista</string>
   <string name="heads_up_contains_key">Már hozzáadtad ezt az alkalmazást a listához</string>
   <!-- Heads Up Timeout -->
-  <string name="heads_up_time_out_title">Time out</string>
-  <string name="heads_up_time_out_summary">Notification will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-  <string name="heads_up_time_out_2sec">2 seconds</string>
-  <string name="heads_up_time_out_4sec">4 seconds</string>
-  <string name="heads_up_time_out_5sec">5 seconds</string>
-  <string name="heads_up_time_out_6sec">6 seconds</string>
-  <string name="heads_up_time_out_8sec">8 seconds</string>
-  <string name="heads_up_time_out_10sec">10 seconds</string>
+  <string name="heads_up_time_out_title">Időtúllépés</string>
+  <string name="heads_up_time_out_summary">Értesítések megjelenítése <xliff:g id="number">%d</xliff:g> másodpercig</string>
+  <string name="heads_up_time_out_2sec">2 másodperc</string>
+  <string name="heads_up_time_out_4sec">4 másodperc</string>
+  <string name="heads_up_time_out_5sec">5 másodperc</string>
+  <string name="heads_up_time_out_6sec">6 másodperc</string>
+  <string name="heads_up_time_out_8sec">8 másodperc</string>
+  <string name="heads_up_time_out_10sec">10 másodperc</string>
   <!-- Lockscreen Colors -->
   <string name="lockscreen_colors_title">Zárképernyő színek</string>
   <string name="lockscreen_owner_info_color">Tulajdonosi info</string>

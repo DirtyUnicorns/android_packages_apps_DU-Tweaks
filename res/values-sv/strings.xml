@@ -19,26 +19,26 @@
   <!-- Tabs -->
   <string name="generalui_category">Allmänna UI</string>
   <string name="lockscreen_category">Låsskärm</string>
-  <string name="statusbar_category">Status Bar</string>
-  <string name="navigation_category">Navigation</string>
-  <string name="multitasking_category">Multi-Tasking</string>
+  <string name="statusbar_category">Statusfält</string>
+  <string name="navigation_category">Navigering</string>
+  <string name="multitasking_category">Multitasking</string>
   <string name="system_category">System</string>
-  <string name="misc_category">Miscellaneous</string>
+  <string name="misc_category">Övrigt</string>
   <!-- Categories -->
-  <string name="animations_category">Animations</string>
-  <string name="battery_category">Battery</string>
+  <string name="animations_category">Animationer</string>
+  <string name="battery_category">Batteri</string>
   <string name="download_category">Download Center</string>
   <string name="expanded_desktop_category">Expanded Desktop</string>
   <string name="misctweaks_category">Misc. Tweaks</string>
   <string name="powermenu_category">Power Menu</string>
   <string name="quicksettings_category">Quick Settings</string>
-  <string name="recents_category">Recents</string>
+  <string name="recents_category">Senaste</string>
   <string name="statusbar_items_category">Statusbar Items</string>
   <string name="statusbar_notifications_category">Notifications</string>
   <string name="lockscreen_notifications_category">Lockscreen Notifications</string>
   <string name="wakelockblocker_category">Wakelock Blocker</string>
   <string name="gestures_category">Gestures</string>
-  <string name="multitasking_category">Multi-Tasking</string>
+  <string name="multitasking_category">Multitasking</string>
   <string name="multiwindow_category">Multi-Window</string>
   <string name="listview_animations_category">List View Animations</string>
   <string name="system_animations_category">System Animations</string>
@@ -66,7 +66,7 @@
   <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
   <!-- Download Center -->
   <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">List of GAPPS packages to flash in recovery</string>
+  <string name="gapps_summary">Lista över GAPPS paket att flasha i recovery</string>
   <string name="gapps_credit">Although GAPPS packages are not compiled from source and don\'t belong to nobody but Google, we would still like to take the time to thank a few individuals and team that maintain these packages for all of us and just make things easier for everyone.\n\nSpecial Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Quick pulldown</string>
@@ -108,7 +108,7 @@
   <string name="powermenu_soundpanel">Sound Panel</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Advanced reboot</string>
-  <string name="advanced_reboot_summary">Include options in the power menu for rebooting into recovery and bootloader</string>
+  <string name="advanced_reboot_summary">Inkludera alternativ i power menyn för omstart in till recovery och bootloader</string>
   <string name="advanced_reboot_dialog_title">Advanced reboot menu</string>
   <string name="advanced_reboot_disabled">Disable</string>
   <string name="advanced_reboot_hide_on_keyguard">Hide on lock screen</string>

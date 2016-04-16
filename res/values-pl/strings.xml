@@ -56,36 +56,36 @@
   <string name="recents_use_omniswitch_summary">Użyj OmniSwitch zamiast ostatnio uruchomionych</string>
   <string name="omniswitch_start_settings_summary">Otwórz ustawienia OmniSwitch</string>
   <string name="omniswitch_first_time_title">Informacja</string>
-  <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
+  <string name="omniswitch_first_time_message">Upewnij się, że włączyłeś OmniSwitch. Możesz to zrobić w sekcji \"Ustawienia\" poniżej</string>
   <!-- Dialog -->
   <string name="dirtytweaks_dialog_title">Pomóż nam, pomóż sobie!!</string>
   <string name="dirtytweaks_dialog_message">Niestety nie jesteśmy jasnowidzami!\n\nWięc jeśli znajdziesz buga w którymkolwiek z tych ustawień, prosimy zgłosić to na naszej stronie Jira albo skontaktować się z deweloperami DU z następującymi danymi: \n\n1. Logcat lub Last_Kmsg\n2. Kernel i używane Mody\n3. Innymi przydatnymi informacjami\n\nJeśli nie uda ci się czegoś zgłosić, nie oczekuj że zostanie to naprawione. Pamiętaj, nie jesteśmy magikami, więc zdarza nam się coś przeoczyć.</string>
   <string name="dirtytweaks_dialog_toast">PRZECZYTAJ WSZYSTKO!</string>
   <!-- Toast Icons -->
   <string name="toast_icon_title">Ikona powiadomień toast</string>
-  <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+  <string name="toast_icon_summary">Wyświetl ikonę aplikacji odpowiadającej za wyświetlenie powiadomienia typu toast</string>
   <!-- Download Center -->
   <string name="gapps_title">Aplikacje Google (GAPPS)</string>
   <string name="gapps_summary">Lista pakietów GAPPS do instalacji w recovery</string>
-  <string name="gapps_credit">Although GAPPS packages are not compiled from source and don\'t belong to nobody but Google, we would still like to take the time to thank a few individuals and team that maintain these packages for all of us and just make things easier for everyone.\n\nSpecial Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
+  <string name="gapps_credit">Choć paczki GAPPS nie są przez nas kompilowane ze źródeł i nie należą do nikogo poza Google, chcielibyśmy mimo to podziękować kilku osobom za opiekę nad tymi paczkami, czyniąc nasze życie łatwiejszym.\n\nSpecjalne Podziękowania dla Team BlackOut, Michael Banks, TKruzze oraz M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Szybkie rozwijanie</string>
-  <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
+  <string name="summary_quick_pulldown">%1$s krawędź paska statusu rozwija panel szybkich ustawień</string>
   <string name="quick_pulldown_off">Wyłączone</string>
   <string name="quick_pulldown_left">Po lewej</string>
   <string name="quick_pulldown_right">Po prawej</string>
   <string name="smart_pulldown_title">Inteligentne rozwijanie</string>
-  <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
+  <string name="smart_pulldown_summary">Otwórz szybkie ustawienia, gdy są %1$s powiadomienia</string>
   <string name="smart_pulldown_off">Wyłączone</string>
   <string name="smart_pulldown_dismissable">Nie ma usuwalnych</string>
   <string name="smart_pulldown_persistent">Nie ma trwałych</string>
   <string name="smart_pulldown_all">Nie ma usuwalnych i trwałych</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Suwak jasności</string>
-  <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+  <string name="qs_brightness_slider_summary">Pokaż suwak jasności w panelu szybkich ustawień</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Kontrola jasności </string>
-  <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+  <string name="brightness_icon_summary">Pokaż ikonę po lewej stronie suwaka regulacji jasności, pozwalającą na sterowanie automatyczną jasnością</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Pełnoekranowe Ostatnio uruchomione</string>
   <string name="immersive_recents_summary">Zmiana widoku ekranu ostatnio uruchomionych</string>
@@ -108,7 +108,7 @@
   <string name="powermenu_soundpanel">Regulacja dźwięku</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Zaawansowany restart</string>
-  <string name="advanced_reboot_summary">Include options in the power menu for rebooting into recovery and bootloader</string>
+  <string name="advanced_reboot_summary">Dodaj opcję restartu w tryb Recovery oraz Bootloader w menu zasilania</string>
   <string name="advanced_reboot_dialog_title">Zaawansowane menu restartu</string>
   <string name="advanced_reboot_disabled">Wyłączone</string>
   <string name="advanced_reboot_hide_on_keyguard">Ukryj na ekranie blokady</string>
@@ -119,45 +119,45 @@
   <string name="wakelock_list_header">Dostępne wybudzenia</string>
   <string name="wakelock_blocker_reload">Załaduj ponownie</string>
   <string name="wakelock_blocker_warning_title">Postępuj ostrożnie</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_warning">Blokowanie wakelocków może spowodować niestabilność systemu, crashe lub utratę danych</string>
   <!-- Expanded desktop -->
   <string name="expanded_hide_nothing">Nic nie ukrywaj</string>
   <string name="expanded_hide_status">Ukryj pasek stanu</string>
   <string name="expanded_hide_navigation">Ukryj pasek nawigacji</string>
   <string name="expanded_hide_both">Ukryj oba</string>
-  <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \"Enabled for all\" to the off position</string>
+  <string name="expanded_nothing_to_show">By dodać własną konfigurację poszczególnych aplikacji dla stanu rozszerzonego, wyłącz opcję \"Włączone dla wszystkich\"</string>
   <string name="expanded_desktop_state">Tryb rozszerzony</string>
   <string name="expanded_enabled_for_all">Włączone dla wszystkich</string>
   <string name="expanded_user_configurable">Konfigurowalne przez użytkownika</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Wymuś rozwinięte powiadomienia</string>
-  <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+  <string name="force_expanded_notifications_summary">Dostępne wyłącznie dla aplikacji, które obsługują rozwijane powiadomienia</string>
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Wyłącz wiadomości trybu pełnoekranowego</string>
-  <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+  <string name="disable_immersive_message_summary">Nie pokazuj wiadomości trybu pełnoekranowego</string>
   <!-- Disabling FC notifications -->
   <string name="disable_fc_notifications_title">Wyłącz powiadomienia o FC</string>
-  <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
+  <string name="disable_fc_notifications_summary">Wyłącza powiadomienia o wymuszonych zamknięciach</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">DT2S na pasku stanu</string>
-  <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_summary">Dwukrotne dotknięcie na pasku stanu usypia urządzenie</string>
   <string name="double_tap_sleep_nav_bar_title">DT2S na pasku nawigacji</string>
-  <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+  <string name="double_tap_sleep_nav_bar_summary">Dwukrotne dotknięcie na pasku nawigacji usypia urządzenie</string>
   <string name="double_tap_to_sleep_lockscreen_title">DT2S na ekranie blokady</string>
-  <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
+  <string name="double_tap_to_sleep_lockscreen_summary">Dwukrotne dotknięcie w górnej części lub na dole ekranu blokady usypia urządzenie</string>
   <!-- Ad Blocker -->
   <string name="adblocker_title">Blokowanie reklam</string>
   <string name="disable_ads_title">Wyłącz reklamy</string>
   <string name="disable_ads_summary">Zmień plik hosts by wyłączyć reklamy</string>
   <!-- Volume Key Rotation -->
   <string name="swap_volume_buttons_title">Zmiana orientacji</string>
-  <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+  <string name="swap_volume_buttons_summary">Zamieniaj przyciski głośności gdy ekran jest obrócony</string>
   <!-- Volume rocker wake -->
   <string name="volume_rocker_wake_title">Wybudzanie klawiszami głośności</string>
-  <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device\nOverrides playback control</string>
+  <string name="volume_rocker_wake_summary">Naciśnięcie przycisków głośności wybudzi urządzenie\n Zastępuje przełączanie utworów</string>
   <!-- Volume rocker music control -->
   <string name="volume_rocker_music_controls_title">Przełączanie utworów</string>
-  <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+  <string name="volume_rocker_music_controls_summary">Przełączaj utwory przyciskami głośności, gdy ekran jest wyłączony</string>
   <!-- Battery options -->
   <string name="battery_title">Bateria</string>
   <string name="battery2_summary">Dostosuj ikony baterii i wartości procentowe</string>
@@ -181,10 +181,10 @@
   <string name="battery_bar_style_title">Wyrównanie paska baterii</string>
   <string name="battery_bar_thickness_title">Grubość paska baterii</string>
   <string name="battery_bar_animate_title">Animacja ładowania</string>
-  <string name="battery_bar_animate_summary">Enable to animate the battery bar while charging</string>
+  <string name="battery_bar_animate_summary">Włącz, aby animować pasek baterii podczas ładowania</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Czcionki zegara</string>
-  <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
+  <string name="lock_clock_font_summary">Zmień domyśłną czcionkę widżetu zegara na ekranie blokady</string>
   <string name="lock_clock_font_dialog_title">Wybierz czcionkę zegara blokady ekranu</string>
   <string name="lock_clock_font_normal">Roboto</string>
   <string name="lock_clock_font_bold">Roboto Bold</string>
@@ -206,7 +206,7 @@
   <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
   <!-- Lockscreen Torch -->
   <string name="keyguard_torch_title">Latarka ekranu blokady</string>
-  <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
+  <string name="keyguard_torch_summary">Przytrzymaj przycisk zasilania przy wyłączonym ekranie, aby włączyć latarkę</string>
   <!-- Statusbar Clock options -->
   <string name="status_bar_title">Pasek stanu</string>
   <string name="status_bar_style_title">Wygląd</string>
@@ -219,7 +219,7 @@
   <string name="status_bar_am_pm_title">AM/PM</string>
   <string name="status_bar_am_pm_info">24-godzinny zegar jest aktywny</string>
   <string name="enable_clock_weekday">Dzień tygodnia</string>
-  <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+  <string name="enable_clock_weekday_summary">Skrócony dzień tygodnia przed zegarem</string>
   <string name="right_clock">Zegar po prawej</string>
   <string name="center_clock">Zegar na środku</string>
   <string name="left_clock">Zegar po lewej</string>
@@ -257,7 +257,7 @@
   <string name="color_default">Domyślnie</string>
   <!-- AOSP MultiWindow -->
   <string name="enable_multi_window">Tryb Wielo-okienkowy</string>
-  <string name="enable_multi_window_summary">Multiple activities on screen at the same time.</string>
+  <string name="enable_multi_window_summary">Wiele czynności na ekranie w tym samym czasie.</string>
   <string name="warning_multi_window_text">Ostrzeżenie: Jest to wysoce eksperymentalna funkcja, która pozwala na wiele działań na ekranie w tym samym czasie poprzez funkcję ostatnich aplikacji. Niektóre aplikacje mogą nie działać poprawnie gdy ta funkcja jest włączona.</string>
   <!-- AOKP custom system animations -->
   <string name="activity_open_title">Otwieranie aktywności</string>
@@ -331,31 +331,31 @@
   <string name="show_network_traffic_1500">1500 ms</string>
   <string name="show_network_traffic_2000">2000 ms</string>
   <string name="network_traffic_autohide">Autoukrywanie</string>
-  <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+  <string name="network_traffic_autohide_summary">Ukryj monitor ruchu sieciowego przy braku aktywności</string>
   <string name="network_traffic_hidearrow">Ukryj strzałki</string>
-  <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
+  <string name="network_traffic_hidearrow_summary">Ukryj strzałki obok we wskaźniku ruchu</string>
   <string name="network_traffic_autohide_threshold">Próg bezczynności</string>
   <string name="ok">OK</string>
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">Nagłówki pory dnia</string>
   <string name="status_bar_custom_header_summary">Włącz obraz w nagłówku panelu powiadomień</string>
   <string name="status_bar_custom_header_default_title">Użyj obrazów Poly HD</string>
-  <string name="status_bar_custom_header_default_summary">Enable for Polygraphic HD images. Disable for original images.</string>
+  <string name="status_bar_custom_header_default_summary">Włącz obrazki poligraficzne wysokiej jakości.</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">Pogoda w rozszerzonym pasku stanu</string>
-  <string name="status_bar_show_weather_summary">Show basic weather in the extended statusbar area</string>
+  <string name="status_bar_show_weather_summary">Pokaż prostą pogodę w obszarze rozszerzonego paska powiadomień</string>
   <!-- LockClock Setting -->
   <string name="weather_settings_title">Ustawienia LockClock</string>
-  <string name="weather_settings_summary">Configure location for weather widget and other settings</string>
+  <string name="weather_settings_summary">Konfiguracja lokalizacji widżetu pogody i inne ustawienia</string>
   <!-- Weather settings -->
   <string name="weather_show_weather_title">Pokaż opcje Pogody</string>
-  <string name="weather_show_weather_summary">Enable to show weather options that go along with LockClock</string>
+  <string name="weather_show_weather_summary">Włącz pokazywanie opcji pogody wraz z LockClock</string>
   <string name="status_bar_show_weather_title">Pogoda w rozszerzonym pasku stanu</string>
-  <string name="status_bar_show_weather_summary">Show basic weather in the extended statusbar area</string>
+  <string name="status_bar_show_weather_summary">Pokaż prostą pogodę w obszarze rozszerzonego paska powiadomień</string>
   <string name="weather_show_location_title">Wyświetl lokalizację</string>
   <string name="weather_show_location_summary">Włącz aby wyświetlać lokalizację</string>
   <string name="weather_condition_icon_title">Ikona stanu</string>
-  <string name="weather_condition_icon_dlg_title">Pick an icon for displaying the weather condition</string>
+  <string name="weather_condition_icon_dlg_title">Wybierz ikonę stanu pogody</string>
   <string name="weather_condition_icon_monochrome_title">Jednokolorowe</string>
   <string name="weather_condition_icon_colored_title">Kolorowe</string>
   <string name="weather_condition_icon_vclouds_title">VClouds</string>
@@ -389,7 +389,7 @@
   <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
   <!-- Status bar brightness control -->
   <string name="status_bar_brightness_control_title">Kontrola jasności</string>
-  <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
+  <string name="status_bar_brightness_control_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
   <string name="status_bar_brightness_control_info">Automatyczna kontrola jasności musi być wyłączona</string>
   <!-- Lockscreen Shortcuts -->
   <string name="lockscreen_targets_title">L/P skrót ekranu blokady</string>
