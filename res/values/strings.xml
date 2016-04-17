@@ -277,10 +277,10 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
+    <string name="arrow_right" translatable="false">→</string>
+    <string name="arrow_down" translatable="false">↓</string>
     <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
+    <string name="hex_hint" translatable="false">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
@@ -312,10 +312,10 @@
     <string name="toast_fade_animation">Fade</string>
     <string name="toast_SlideRight_animation">Slide right</string>
     <string name="toast_SlideLeft_animation">Slide left</string>
-    <string name="toast_Xylon_animation">Xylon</string>
-    <string name="toast_Toko_animation">Toko</string>
-    <string name="toast_Tn_animation">Tn</string>
-    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_Xylon_animation" translatable="false">Xylon</string>
+    <string name="toast_Toko_animation" translatable="false">Toko</string>
+    <string name="toast_Tn_animation" translatable="false">Tn</string>
+    <string name="toast_Honami_animation" translatable="false">Honami</string>
     <string name="toast_FastFade_animation">Fast fade</string>
     <string name="toast_GrowFade_animation">Grow fade</string>
     <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
@@ -396,7 +396,7 @@
     <string name="weather_condition_icon_dlg_title">Pick an icon for displaying the weather condition</string>
     <string name="weather_condition_icon_monochrome_title">Monochrome</string>
     <string name="weather_condition_icon_colored_title">Colored</string>
-    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="weather_condition_icon_vclouds_title" translatable="false">VClouds</string>
     <string name="colors_title">Colors</string>
     <string name="icons_title">Icons</string>
     <string name="text_title">Text</string>
@@ -585,12 +585,10 @@
     <string name="action_entry_default_action">Default settings</string>
     <string name="action_entry_select_app">Select application</string>
     <string name="action_entry_custom_action">Select custom action</string>
-    <string name="action_value_default_action">action_default</string>
-    <string name="action_value_select_app">action_app</string>
-    <string name="action_value_custom_action">action_custom</string>
 
     <string name="action_value_default_action">default</string>
     <string name="action_value_select_app">app</string>
+    <string name="action_value_custom_action">custom</string>
     <string name="action_value_back">task_back</string>
     <string name="action_value_home">task_home</string>
     <string name="action_value_search_assist">task_assist</string>
@@ -954,6 +952,6 @@
     <!-- Header image shadow -->
     <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
     <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
-    <string name="unit_percent">\u0025</string>
+    <string name="unit_percent" translatable="false">\u0025</string>
 
 </resources>
