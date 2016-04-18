@@ -85,7 +85,7 @@
   <string name="qs_brightness_slider_summary">Fényerő csúszka megjelenítése a gyors beállításokban</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Fényerő ikon </string>
-  <string name="brightness_icon_summary">Fényerő ikon megjelenítése a fényerőcsúszka a bal oldalán az automatikus fényerő beállításához</string>
+  <string name="brightness_icon_summary">Fényerő ikon megjelenítése a fényerőcsúszka bal oldalán az automatikus fényerő beállításához</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Teljes képernyős előzmények</string>
   <string name="immersive_recents_summary">Előzmények képernyő megjelenésének módosítása</string>
@@ -249,10 +249,7 @@
   <!-- Color Picker -->
   <string name="dialog_color_picker">Színválasztó</string>
   <string name="press_color_to_apply">Érintse meg a színt az alkalmazáshoz</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
   <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
   <string name="set">Beállít</string>
   <string name="color_default">Alapértelmezett</string>
   <!-- AOSP MultiWindow -->
@@ -281,10 +278,6 @@
   <string name="toast_fade_animation">Halványulás</string>
   <string name="toast_SlideRight_animation">Beúszás jobbról</string>
   <string name="toast_SlideLeft_animation">Beúszás balról</string>
-  <string name="toast_Xylon_animation">Xylon</string>
-  <string name="toast_Toko_animation">Toko</string>
-  <string name="toast_Tn_animation">Tn</string>
-  <string name="toast_Honami_animation">Honami</string>
   <string name="toast_FastFade_animation">Gyors halványulás</string>
   <string name="toast_GrowFade_animation">Növekvő halványulás</string>
   <string name="toast_GrowFadeCenter_animation">Középre halványuló</string>
@@ -358,7 +351,6 @@
   <string name="weather_condition_icon_dlg_title">Időjárás állapothoz vállaszon ikont</string>
   <string name="weather_condition_icon_monochrome_title">Monokróm</string>
   <string name="weather_condition_icon_colored_title">Színes</string>
-  <string name="weather_condition_icon_vclouds_title">VClouds</string>
   <string name="colors_title">Színek</string>
   <string name="icons_title">Ikonok</string>
   <string name="text_title">Szöveg</string>
@@ -531,15 +523,13 @@
   <string name="action_entry_custom_action">Egyéni művelet választása</string>
   <string name="action_value_default_action">alapértelmezett</string>
   <string name="action_value_select_app">alkalmazás</string>
-  <string name="action_value_custom_action">action_custom</string>
-  <string name="action_value_default_action">alapértelmezett</string>
-  <string name="action_value_select_app">alkalmazás</string>
-  <string name="action_value_back">task_back</string>
-  <string name="action_value_home">task_home</string>
-  <string name="action_value_search_assist">task_assist</string>
-  <string name="action_value_recent_apps">task_recents</string>
-  <string name="action_value_voice_search">task_voice_search</string>
-  <string name="action_value_menu">task_menu</string>
+  <string name="action_value_custom_action">custom</string>
+  <string name="action_value_back">Vissza</string>
+  <string name="action_value_home">Kezdőlap</string>
+  <string name="action_value_search_assist">Keresősegéd</string>
+  <string name="action_value_recent_apps">Előzmények</string>
+  <string name="action_value_voice_search">Hangalapú keresés</string>
+  <string name="action_value_menu">Menü</string>
   <!-- Fling -->
   <string name="fling_settings">Fling beállítások</string>
   <string name="fling_interface">Fling gesztus felülete</string>
@@ -869,5 +859,4 @@
   <!-- Header image shadow -->
   <string name="status_bar_custom_header_shadow_title">Fejléc kép árnyéka</string>
   <string name="status_bar_custom_header_shadow_summary">Jobb láthatóság érdekében a világos képek esetén</string>
-  <string name="unit_percent">\u0025</string>
 </resources>

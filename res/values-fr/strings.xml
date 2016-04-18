@@ -249,10 +249,7 @@
   <!-- Color Picker -->
   <string name="dialog_color_picker">Sélecteur de couleur</string>
   <string name="press_color_to_apply">Appuyer sur la couleur pour valider</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
   <string name="hex">Hex :</string>
-  <string name="hex_hint">#ff000000</string>
   <string name="set">Définir</string>
   <string name="color_default">Par défaut</string>
   <!-- AOSP MultiWindow -->
@@ -281,10 +278,6 @@
   <string name="toast_fade_animation">Fondu</string>
   <string name="toast_SlideRight_animation">Glisser vers la droite</string>
   <string name="toast_SlideLeft_animation">Glissez vers la gauche</string>
-  <string name="toast_Xylon_animation">Xylon</string>
-  <string name="toast_Toko_animation">Toko</string>
-  <string name="toast_Tn_animation">Tn</string>
-  <string name="toast_Honami_animation">Honami</string>
   <string name="toast_FastFade_animation">Rapide fade</string>
   <string name="toast_GrowFade_animation">Agrandissement avec fondu</string>
   <string name="toast_GrowFadeCenter_animation">Agrandissement (Centre)</string>
@@ -358,7 +351,6 @@
   <string name="weather_condition_icon_dlg_title">Icônes pour l\'affichage des conditions météo</string>
   <string name="weather_condition_icon_monochrome_title">Monochrome</string>
   <string name="weather_condition_icon_colored_title">Colorée</string>
-  <string name="weather_condition_icon_vclouds_title">VClouds</string>
   <string name="colors_title">Couleurs</string>
   <string name="icons_title">Icônes</string>
   <string name="text_title">Texte</string>
@@ -531,9 +523,7 @@
   <string name="action_entry_custom_action">Action</string>
   <string name="action_value_default_action">Par défaut</string>
   <string name="action_value_select_app">Application</string>
-  <string name="action_value_custom_action">Action</string>
-  <string name="action_value_default_action">Par défaut</string>
-  <string name="action_value_select_app">Application</string>
+  <string name="action_value_custom_action">custom</string>
   <string name="action_value_back">Retour</string>
   <string name="action_value_home">Accueil</string>
   <string name="action_value_search_assist">Google Now On Tap</string>
@@ -869,5 +859,4 @@
   <!-- Header image shadow -->
   <string name="status_bar_custom_header_shadow_title">Ombre</string>
   <string name="status_bar_custom_header_shadow_summary">Appliquer une ombre sur l\'image d\'arrière-plan de l\'en-tête contextuel, pour une meilleure visibilité des images lumineuses</string>
-  <string name="unit_percent">\u0025</string>
 </resources>

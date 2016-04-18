@@ -249,10 +249,7 @@
   <!-- Color Picker -->
   <string name="dialog_color_picker">Farbauswahl</string>
   <string name="press_color_to_apply">Drücken Sie auf die passende Farbe, um diese anzuwenden</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
   <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
   <string name="set">Auswählen</string>
   <string name="color_default">Standard</string>
   <!-- AOSP MultiWindow -->
@@ -281,10 +278,6 @@
   <string name="toast_fade_animation">Ausblenden</string>
   <string name="toast_SlideRight_animation">Nach rechts gleiten</string>
   <string name="toast_SlideLeft_animation">Nach links gleiten</string>
-  <string name="toast_Xylon_animation">Xylon</string>
-  <string name="toast_Toko_animation">Toko</string>
-  <string name="toast_Tn_animation">Tn</string>
-  <string name="toast_Honami_animation">Honami</string>
   <string name="toast_FastFade_animation">Schnell ausblenden</string>
   <string name="toast_GrowFade_animation">Ausblenden und vergrößern</string>
   <string name="toast_GrowFadeCenter_animation">Zentriert ausblenden und vergrößern</string>
@@ -358,7 +351,6 @@
   <string name="weather_condition_icon_dlg_title">Symbole für Wetterkonditionen anzeigen</string>
   <string name="weather_condition_icon_monochrome_title">Einfarbig</string>
   <string name="weather_condition_icon_colored_title">Farbig</string>
-  <string name="weather_condition_icon_vclouds_title">VClouds</string>
   <string name="colors_title">Farben</string>
   <string name="icons_title">Symbole</string>
   <string name="text_title">Text</string>
@@ -471,7 +463,7 @@
   <string name="trigger_width_title">Breite des Auslösers</string>
   <string name="trigger_width_summary">Breite des Auslösebereichs einstellen</string>
   <string name="trigger_top_title">Position des Auslösers</string>
-  <string name="trigger_top_summary">Stelle die vertikale Position ein</string>
+  <string name="trigger_top_summary">Die vertikale Position des Auslösebereichs anpassen</string>
   <string name="trigger_bottom_title">Höhe des Auslösers</string>
   <string name="trigger_bottom_summary">Höhe des Auslösebereichs einstellen</string>
   <string name="picker_activities">Aktivitäten</string>
@@ -487,7 +479,7 @@
   <string name="trigger_width_title">Breite des Auslösers</string>
   <string name="trigger_width_summary">Breite des Auslösebereichs einstellen</string>
   <string name="trigger_top_title">Position des Auslösers</string>
-  <string name="trigger_top_summary">Stelle die vertikale Position ein</string>
+  <string name="trigger_top_summary">Die vertikale Position des Auslösebereichs anpassen</string>
   <string name="trigger_bottom_title">Höhe des Auslösers</string>
   <string name="trigger_bottom_summary">Höhe des Auslösebereichs einstellen</string>
   <!-- Breathing Notifications -->
@@ -529,11 +521,9 @@
   <string name="action_entry_default_action">Standardeinstellungen</string>
   <string name="action_entry_select_app">App auswählen</string>
   <string name="action_entry_custom_action">Benutzerdefinierte Aktion wählen</string>
-  <string name="action_value_default_action">default</string>
-  <string name="action_value_select_app">app</string>
-  <string name="action_value_custom_action">Benutzerdefiniert</string>
-  <string name="action_value_default_action">default</string>
-  <string name="action_value_select_app">app</string>
+  <string name="action_value_default_action">Standard</string>
+  <string name="action_value_select_app">App</string>
+  <string name="action_value_custom_action">custom</string>
   <string name="action_value_back">Zurück</string>
   <string name="action_value_home">Startbildschirm</string>
   <string name="action_value_search_assist">Suchassistent</string>
@@ -869,5 +859,4 @@
   <!-- Header image shadow -->
   <string name="status_bar_custom_header_shadow_title">Schatten</string>
   <string name="status_bar_custom_header_shadow_summary">Bessere Sichtbarkeit bei hellen Bildern</string>
-  <string name="unit_percent">\u0025</string>
 </resources>
