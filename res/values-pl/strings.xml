@@ -523,7 +523,7 @@
   <string name="action_entry_custom_action">Wybierz własną akcję</string>
   <string name="action_value_default_action">domyślny</string>
   <string name="action_value_select_app">aplikacja</string>
-  <string name="action_value_custom_action">custom</string>
+  <string name="action_value_custom_action">Własna</string>
   <string name="action_value_back">task_back</string>
   <string name="action_value_home">task_home</string>
   <string name="action_value_search_assist">task_assist</string>
@@ -541,7 +541,7 @@
   <string name="fling_tap_actions">Gesty dotykania</string>
   <string name="fling_short_swipe_right">Krótkie przeciągnięcie w prawo</string>
   <string name="fling_short_swipe_left">Krótkie przeciągnięcie w lewo</string>
-  <string name="fling_long_swipe_right">Krótkie przeciągnięcie w prawo</string>
+  <string name="fling_long_swipe_right">Długie przeciągnięcie w prawo</string>
   <string name="fling_long_swipe_left">Długie przeciągnięcie w lewo</string>
   <string name="fling_right_up_swipe">Przesunięcie w górę po prawej</string>
   <string name="fling_left_up_swipe">Przesunięcie w górę po lewej</string>

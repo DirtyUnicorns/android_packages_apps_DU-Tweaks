@@ -523,7 +523,7 @@
   <string name="action_entry_custom_action">Egyéni művelet választása</string>
   <string name="action_value_default_action">alapértelmezett</string>
   <string name="action_value_select_app">alkalmazás</string>
-  <string name="action_value_custom_action">custom</string>
+  <string name="action_value_custom_action">egyéni</string>
   <string name="action_value_back">Vissza</string>
   <string name="action_value_home">Kezdőlap</string>
   <string name="action_value_search_assist">Keresősegéd</string>

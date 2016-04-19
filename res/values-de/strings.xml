@@ -523,7 +523,7 @@
   <string name="action_entry_custom_action">Benutzerdefinierte Aktion wählen</string>
   <string name="action_value_default_action">Standard</string>
   <string name="action_value_select_app">App</string>
-  <string name="action_value_custom_action">custom</string>
+  <string name="action_value_custom_action">Benutzerdefiniert</string>
   <string name="action_value_back">Zurück</string>
   <string name="action_value_home">Startbildschirm</string>
   <string name="action_value_search_assist">Suchassistent</string>

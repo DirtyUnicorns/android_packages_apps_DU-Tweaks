@@ -523,7 +523,7 @@
   <string name="action_entry_custom_action">选择自定义动作</string>
   <string name="action_value_default_action">默认</string>
   <string name="action_value_select_app">应用程序</string>
-  <string name="action_value_custom_action">custom</string>
+  <string name="action_value_custom_action">自定义</string>
   <string name="action_value_back">task_back</string>
   <string name="action_value_home">task_home</string>
   <string name="action_value_search_assist">task_assist</string>
