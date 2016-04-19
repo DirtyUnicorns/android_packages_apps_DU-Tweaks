@@ -30,6 +30,7 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -47,6 +48,7 @@ import java.io.DataOutputStream;
 
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String TAG = "MiscTweaks";
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
@@ -72,16 +74,18 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         addPreferencesFromResource(R.xml.misctweaks);
 
         final ContentResolver resolver = getActivity().getContentResolver();
-	final PreferenceScreen prefScreen = getPreferenceScreen();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
 
         //SELinux
         mSelinux = (SwitchPreference) findPreference(SELINUX);
         mSelinux.setOnPreferenceChangeListener(this);
 
         if (CMDProcessor.runShellCommand("getenforce").getStdout().contains("Enforcing")) {
+            Log.d(TAG, "cmdline: selinux:Enforcing");
             mSelinux.setChecked(true);
             mSelinux.setSummary(R.string.selinux_enforcing_title);
         } else {
+            Log.d(TAG, "cmdline: selinux:Permissive");
             mSelinux.setChecked(false);
             mSelinux.setSummary(R.string.selinux_permissive_title);
         }
@@ -167,10 +171,12 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             return true;
         } else if (preference == mSelinux) {
             if (newValue.toString().equals("true")) {
-                CMDProcessor.runSuCommand("setenforce 1");
+                Log.d(TAG, "setenforce 1");
+                CMDProcessor.runShellCommand("echo 1 > /sys/fs/selinux/enforce");
                 mSelinux.setSummary(R.string.selinux_enforcing_title);
             } else if (newValue.toString().equals("false")) {
-                CMDProcessor.runSuCommand("setenforce 0");
+                Log.d(TAG, "setenforce 0");
+                CMDProcessor.runShellCommand("echo 0 > /sys/fs/selinux/enforce");
                 mSelinux.setSummary(R.string.selinux_permissive_title);
             }
             return true;
