@@ -28,14 +28,14 @@
   <string name="animations_category">Animationer</string>
   <string name="battery_category">Batteri</string>
   <string name="download_category">Download Center</string>
-  <string name="expanded_desktop_category">Expanded Desktop</string>
-  <string name="misctweaks_category">Misc. Tweaks</string>
+  <string name="expanded_desktop_category">Utökat skrivbord</string>
+  <string name="misctweaks_category">Div. Tweaks</string>
   <string name="powermenu_category">Power Menu</string>
   <string name="quicksettings_category">Quick Settings</string>
   <string name="recents_category">Senaste</string>
   <string name="statusbar_items_category">Statusbar Items</string>
   <string name="statusbar_notifications_category">Notifications</string>
-  <string name="lockscreen_notifications_category">Lockscreen Notifications</string>
+  <string name="lockscreen_notifications_category">Låsskärms notifikationer</string>
   <string name="wakelockblocker_category">Wakelock Blocker</string>
   <string name="gestures_category">Gestures</string>
   <string name="multitasking_category">Multitasking</string>

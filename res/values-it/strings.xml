@@ -292,21 +292,21 @@
   <string name="listview_wave_right">Onda (a destra)</string>
   <string name="listview_alpha">Trasparenza</string>
   <string name="listview_scale">Ridimensiona</string>
-  <string name="listview_stack_top">Stack (top)</string>
-  <string name="listview_stack_bottom">Stack (bottom)</string>
-  <string name="listview_unfold">Unfold</string>
-  <string name="listview_fold">Fold</string>
-  <string name="listview_translate_left">Translate (left)</string>
-  <string name="listview_translate_right">Translate (right)</string>
+  <string name="listview_stack_top">Impila (sopra)</string>
+  <string name="listview_stack_bottom">Impila (sotto)</string>
+  <string name="listview_unfold">Dispiega</string>
+  <string name="listview_fold">Incrocia</string>
+  <string name="listview_translate_left">Trasla (sinistra)</string>
+  <string name="listview_translate_right">Trasla (Destra)</string>
   <!-- List View interpolator -->
   <string name="listview_interpolator_title">Interpolatore</string>
   <string name="listview_accelerate_interpolator">Accelerare</string>
   <string name="listview_decelerate_interpolator">Decelerare</string>
   <string name="listview_accelerate_decelerate_interpolator">Accelerare e decelerare</string>
   <string name="listview_anticipate_interpolator">Anticipare</string>
-  <string name="listview_overshoot_interpolator">Overshoot</string>
-  <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
-  <string name="listview_bounce_interpolator">Bounce</string>
+  <string name="listview_overshoot_interpolator">Supera</string>
+  <string name="listview_anticipate_overshoot_interpolator">Anticipa e supera</string>
+  <string name="listview_bounce_interpolator">Rimbalzo</string>
   <!-- Network traffic -->
   <string name="traffic_category">Indicatori di Traffico</string>
   <string name="network_traffic_title">Traffico di rete</string>
@@ -325,24 +325,24 @@
   <string name="show_network_traffic_2000">2000 ms</string>
   <string name="network_traffic_autohide">Nascondi automaticamente</string>
   <string name="network_traffic_autohide_summary">Nascondi Indicatore di Traffico quando non c\'è nessuna attività</string>
-  <string name="network_traffic_hidearrow">Hide arrows</string>
-  <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
-  <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+  <string name="network_traffic_hidearrow">Nascondi le frecce</string>
+  <string name="network_traffic_hidearrow_summary">Nascondi le frecce negli indicatori di traffico</string>
+  <string name="network_traffic_autohide_threshold">Soglia di inattività</string>
   <string name="ok">OK</string>
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">Time Contextual Header</string>
   <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
   <string name="status_bar_custom_header_default_title">Utilizza immagini Poly HD</string>
-  <string name="status_bar_custom_header_default_summary">Enable for Polygraphic HD images. Disable for original images.</string>
+  <string name="status_bar_custom_header_default_summary">Abilita per immagini Poly Hd. Disattiva per le immagini originali.</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">Extended statusbar weather</string>
   <string name="status_bar_show_weather_summary">Show basic weather in the extended statusbar area</string>
   <!-- LockClock Setting -->
   <string name="weather_settings_title">Impostazioni LockClock</string>
-  <string name="weather_settings_summary">Configure location for weather widget and other settings</string>
+  <string name="weather_settings_summary">Configura posizione per widget meteo e altre impostazioni</string>
   <!-- Weather settings -->
   <string name="weather_show_weather_title">Mostra opzioni Meteo</string>
-  <string name="weather_show_weather_summary">Enable to show weather options that go along with LockClock</string>
+  <string name="weather_show_weather_summary">Abilita per mostrare le opzioni meteo che vanno con LockClock</string>
   <string name="status_bar_show_weather_title">Extended statusbar weather</string>
   <string name="status_bar_show_weather_summary">Show basic weather in the extended statusbar area</string>
   <string name="weather_show_location_title">Mostra posizione</string>
@@ -521,9 +521,9 @@
   <string name="action_entry_default_action">Impostazioni predefinite</string>
   <string name="action_entry_select_app">Seleziona applicazione</string>
   <string name="action_entry_custom_action">Seleziona azione personalizzata</string>
-  <string name="action_value_default_action">default</string>
+  <string name="action_value_default_action">predefinito</string>
   <string name="action_value_select_app">app</string>
-  <string name="action_value_custom_action">custom</string>
+  <string name="action_value_custom_action">personalizzato</string>
   <string name="action_value_back">task_back</string>
   <string name="action_value_home">task_home</string>
   <string name="action_value_search_assist">task_assist</string>
@@ -544,8 +544,8 @@
   <string name="fling_long_swipe_right">Scorrimento lungo verso destra</string>
   <string name="fling_long_swipe_left">Scorrimento lungo verso sinistra</string>
   <string name="fling_right_up_swipe">Scorrimento verso l\'alto a destra</string>
-  <string name="fling_left_up_swipe">Left side swipe up</string>
-  <string name="fling_single_tap">Single tap right</string>
+  <string name="fling_left_up_swipe">Scorrimento verso l\'alto a sinistra</string>
+  <string name="fling_single_tap">Tap singolo a destra</string>
   <string name="fling_double_tap">Doppio tap a destra</string>
   <string name="fling_long_press">Lunga pressione a destra</string>
   <string name="fling_single_left_tap">Tap singolo a sinistra</string>
@@ -559,15 +559,15 @@
   <string name="down_swipe_title">Swipe in basso</string>
   <string name="long_swipe_reset">Reimposta</string>
   <string name="fling_advanced">Avanzato</string>
-  <string name="fling_long_swipe_title">Long swipe threshold</string>
-  <string name="fling_long_swipe_summary">Fine tune long swipe thresholds based on a percentage of Fling interface width or height</string>
+  <string name="fling_long_swipe_title">Soglia di scorrimento lungo</string>
+  <string name="fling_long_swipe_summary">Mette a punto la soglia di scorrimento lungo basata sull\'altezza o larghezza di Fling</string>
   <string name="fling_trails_enable_title">Enable gesture trails</string>
   <string name="fling_trails_enable_summary">Show a trail on swipe gestures</string>
   <string name="fling_trails_color_title">Trail color</string>
   <string name="fling_appearance">Appearance</string>
   <string name="fling_show_logo_title">Mostra il logo Fling</string>
   <string name="fling_animate_logo_title">Logo animato</string>
-  <string name="fling_animate_logo_summary">Logo animates on touch events</string>
+  <string name="fling_animate_logo_summary">Animazione del logo quando viene toccata la barra di navigazione</string>
   <string name="fling_logo_color">Colore del logo</string>
   <string name="fling_logo_custom_logo_pick_title">Icona del logo personalizzata</string>
   <string name="fling_logo_custom_logo_image_pick_title">Immagine del logo personalizzata</string>
@@ -578,7 +578,7 @@
   <string name="fling_longpress_timeout_label_left">Meno ritardo</string>
   <string name="fling_longpress_timeout_label_right">Più ritardo</string>
   <string name="fling_longpress_title">Long press delay</string>
-  <string name="fling_longpress_summary">Increase or decrease the time it takes to execute a long press</string>
+  <string name="fling_longpress_summary">Aumenta o diminuisce il tempo impiegato per eseguire una pressione prolungata</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Riguardo Pulse</string>
   <string name="pulse_help_policy_notice_summary">Pulse è la brillante visualizzazione dell\'equalizzatore audio sulla barra di navigazione durante la riproduzione musicale. Pulse non funziona con alcune fonti audio durante l\'ascolto sull\'altoparlante del dispositivo</string>
@@ -696,14 +696,14 @@
   <string name="shortcuts_icon_picker_rss">RSS Feed</string>
   <string name="shortcuts_icon_picker_sdcard">Scheda SD</string>
   <string name="shortcuts_icon_picker_search">Cerca</string>
-  <string name="shortcuts_icon_picker_sms">Messaging</string>
-  <string name="shortcuts_icon_picker_tasks">Tasks</string>
-  <string name="shortcuts_icon_picker_terminal">Terminal</string>
+  <string name="shortcuts_icon_picker_sms">Messaggi</string>
+  <string name="shortcuts_icon_picker_tasks">Azioni</string>
+  <string name="shortcuts_icon_picker_terminal">Terminale</string>
   <string name="shortcuts_icon_picker_transit">Transit</string>
   <string name="shortcuts_icon_picker_tv">TV</string>
   <string name="shortcuts_icon_picker_twitter">Twitter</string>
-  <string name="shortcuts_icon_picker_unlock">Unlock</string>
-  <string name="reset_message">Reset all entries to default?</string>
+  <string name="shortcuts_icon_picker_unlock">Sblocca</string>
+  <string name="reset_message">Reimpostare tutte le voci a default?</string>
   <string name="lockscreen_shortcuts_title">Mid-Screen Shortcuts</string>
   <string name="lockscreen_shorcuts_launch_type_title">Shortcut click type</string>
   <string name="lockscreen_shortcuts_single_tap">Click</string>
@@ -718,7 +718,7 @@
   <string name="shortcut_action_power_menu">Menu tasto accensione</string>
   <string name="shortcut_action_recent">App Recenti</string>
   <string name="shortcut_action_power">Screen Off</string>
-  <string name="shortcut_action_search">Search in app</string>
+  <string name="shortcut_action_search">Ricerca nell\'app</string>
   <!-- SlimSizer -->
   <string name="listsystem">list</string>
   <string name="sizer_title">App remover</string>

@@ -704,9 +704,9 @@
   <string name="shortcuts_icon_picker_twitter">Твиттер</string>
   <string name="shortcuts_icon_picker_unlock">Разблокировать</string>
   <string name="reset_message">Сбросить все записи к значениям по умолчанию?</string>
-  <string name="lockscreen_shortcuts_title">Mid-Screen Shortcuts</string>
-  <string name="lockscreen_shorcuts_launch_type_title">Shortcut click type</string>
-  <string name="lockscreen_shortcuts_single_tap">Click</string>
+  <string name="lockscreen_shortcuts_title">Ярлыки середины экрана</string>
+  <string name="lockscreen_shorcuts_launch_type_title">Тип клика на ярлыке</string>
+  <string name="lockscreen_shortcuts_single_tap">Клик</string>
   <string name="lockscreen_shortcuts_double_tap">Двойной тап</string>
   <string name="lockscreen_shortcuts_longpress">Длительное нажатие</string>
   <string name="help">Помощь</string>
