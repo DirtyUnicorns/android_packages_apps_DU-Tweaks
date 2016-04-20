@@ -407,7 +407,7 @@
   <string name="follow_through_title">Внимание</string>
   <string name="follow_through_summary">Изменение плотности экрана может иногда вызывать неправильную работу приложений и/или Play Store отображает приложение как несовместимое с вашим устройством</string>
   <string name="stock_density_title">Изменить на значения по умолчанию</string>
-  <string name="stock_density_summary">Планшеты обычно используют 160 dpi, в то время как новые устройства используют 320 или 480 dpi. Старые устройства использовать 240 dpi</string>
+  <string name="stock_density_summary">Планшеты обычно используют 160 dpi, новые устройства используют 320 или 480 dpi. Старые устройства используют 240 dpi</string>
   <string name="stock_density_changed_summary">"Плотность установлена на: "</string>
   <string name="reboot_title">Перезагрузите устройство</string>
   <string name="reboot_summary">Вам нужно перезагрузить устройство чтобы изменения вступили в силу</string>

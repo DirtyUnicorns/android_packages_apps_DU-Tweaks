@@ -523,7 +523,7 @@
   <string name="action_entry_custom_action">Action</string>
   <string name="action_value_default_action">Par défaut</string>
   <string name="action_value_select_app">Application</string>
-  <string name="action_value_custom_action">custom</string>
+  <string name="action_value_custom_action">Action</string>
   <string name="action_value_back">Retour</string>
   <string name="action_value_home">Accueil</string>
   <string name="action_value_search_assist">Google Now On Tap</string>

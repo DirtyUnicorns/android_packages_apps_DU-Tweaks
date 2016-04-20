@@ -35,7 +35,7 @@
   <string name="recents_category">Ostatnio uruchomione</string>
   <string name="statusbar_items_category">Ikony paska stanu</string>
   <string name="statusbar_notifications_category">Powiadomienia</string>
-  <string name="lockscreen_notifications_category">Powiadomienia na ekranie blokady</string>
+  <string name="lockscreen_notifications_category">Powiadomienia</string>
   <string name="wakelockblocker_category">Blokowanie wybudzeń</string>
   <string name="gestures_category">Gesty</string>
   <string name="multitasking_category">Wielozadaniowość</string>
@@ -59,7 +59,7 @@
   <string name="omniswitch_first_time_message">Upewnij się, że włączyłeś OmniSwitch. Możesz to zrobić w sekcji \"Ustawienia\" poniżej</string>
   <!-- Dialog -->
   <string name="dirtytweaks_dialog_title">Pomóż nam, pomóż sobie!!</string>
-  <string name="dirtytweaks_dialog_message">Niestety nie jesteśmy jasnowidzami!\n\nWięc jeśli znajdziesz buga w którymkolwiek z tych ustawień, prosimy zgłosić to na naszej stronie Jira albo skontaktować się z deweloperami DU z następującymi danymi: \n\n1. Logcat lub Last_Kmsg\n2. Kernel i używane Mody\n3. Innymi przydatnymi informacjami\n\nJeśli nie uda ci się czegoś zgłosić, nie oczekuj że zostanie to naprawione. Pamiętaj, nie jesteśmy magikami, więc zdarza nam się coś przeoczyć.</string>
+  <string name="dirtytweaks_dialog_message">Niestety nie jesteśmy jasnowidzami!\n\nWięc jeśli znajdziesz błąd w którymkolwiek z tych ustawień, prosimy zgłosić to na naszej stronie Jira albo skontaktować się z deweloperami DU z następującymi danymi: \n\n1. Logcat lub Last_Kmsg\n2. Kernel i używane Mody\n3. Innymi przydatnymi informacjami\n\nJeśli nie uda ci się czegoś zgłosić, nie oczekuj że zostanie to naprawione. Pamiętaj, nie jesteśmy magikami, więc zdarza nam się coś przeoczyć.</string>
   <string name="dirtytweaks_dialog_toast">PRZECZYTAJ WSZYSTKO!</string>
   <!-- Toast Icons -->
   <string name="toast_icon_title">Ikona powiadomień toast</string>
@@ -67,10 +67,10 @@
   <!-- Download Center -->
   <string name="gapps_title">Aplikacje Google (GAPPS)</string>
   <string name="gapps_summary">Lista pakietów GAPPS do instalacji w recovery</string>
-  <string name="gapps_credit">Choć paczki GAPPS nie są przez nas kompilowane ze źródeł i nie należą do nikogo poza Google, chcielibyśmy mimo to podziękować kilku osobom za opiekę nad tymi paczkami, czyniąc nasze życie łatwiejszym.\n\nSpecjalne Podziękowania dla Team BlackOut, Michael Banks, TKruzze oraz M. Wasif Chauhdary</string>
+  <string name="gapps_credit">Pomimo to, że paczki GAPPS, nie są kompilowane ze źródeł, ani nie należą do nikogo poza Google, chcemy podziękować kilku osobom, za opiekę nad nimi i upraszczanie naszego życia.\n\nSzczególne podziękowania dla Team BlackOut, Michael Banks, TKruzze oraz M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Szybkie rozwijanie</string>
-  <string name="summary_quick_pulldown">%1$s krawędź paska statusu rozwija panel szybkich ustawień</string>
+  <string name="summary_quick_pulldown">%1$s krawędź paska stanu rozwija panel szybkich ustawień</string>
   <string name="quick_pulldown_off">Wyłączone</string>
   <string name="quick_pulldown_left">Lewa</string>
   <string name="quick_pulldown_right">Prawa</string>
@@ -85,7 +85,7 @@
   <string name="qs_brightness_slider_summary">Pokaż suwak jasności w panelu szybkich ustawień</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Kontrola jasności </string>
-  <string name="brightness_icon_summary">Pokaż ikonę po lewej stronie suwaka regulacji jasności, pozwalającą na sterowanie automatyczną jasnością</string>
+  <string name="brightness_icon_summary">Pokaż ikonę kontroli jasności, po lewej stronie suwaka jasności, aby dostosować automatyczną jasność</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Pełnoekranowe Ostatnio uruchomione</string>
   <string name="immersive_recents_summary">Zmiana widoku ekranu ostatnio uruchomionych</string>
@@ -125,7 +125,7 @@
   <string name="expanded_hide_status">Ukryj pasek stanu</string>
   <string name="expanded_hide_navigation">Ukryj pasek nawigacji</string>
   <string name="expanded_hide_both">Ukryj oba</string>
-  <string name="expanded_nothing_to_show">By dodać własną konfigurację poszczególnych aplikacji dla stanu rozszerzonego, wyłącz opcję \"Włączone dla wszystkich\"</string>
+  <string name="expanded_nothing_to_show">Aby dodać niestandardową konfigurację trybu rozszerzonego dla wybranej aplikacji, wyłącz opcję \"Włączone dla wszystkich\"</string>
   <string name="expanded_desktop_state">Tryb rozszerzony</string>
   <string name="expanded_enabled_for_all">Włączone dla wszystkich</string>
   <string name="expanded_user_configurable">Konfigurowalne przez użytkownika</string>
@@ -151,10 +151,10 @@
   <string name="disable_ads_summary">Zmień plik hosts by wyłączyć reklamy</string>
   <!-- Volume Key Rotation -->
   <string name="swap_volume_buttons_title">Zmiana orientacji</string>
-  <string name="swap_volume_buttons_summary">Zamieniaj przyciski głośności gdy ekran jest obrócony</string>
+  <string name="swap_volume_buttons_summary">Zamieniaj przyciski głośności, gdy ekran jest obrócony</string>
   <!-- Volume rocker wake -->
   <string name="volume_rocker_wake_title">Wybudzanie klawiszami głośności</string>
-  <string name="volume_rocker_wake_summary">Naciśnięcie przycisków głośności wybudzi urządzenie\n Zastępuje przełączanie utworów</string>
+  <string name="volume_rocker_wake_summary">Naciśnięcie przycisków głośności wybudzi urządzenie\nZastępuje Przełączanie utworów</string>
   <!-- Volume rocker music control -->
   <string name="volume_rocker_music_controls_title">Przełączanie utworów</string>
   <string name="volume_rocker_music_controls_summary">Przełączaj utwory przyciskami głośności, gdy ekran jest wyłączony</string>
@@ -254,8 +254,8 @@
   <string name="color_default">Domyślny</string>
   <!-- AOSP MultiWindow -->
   <string name="enable_multi_window">Tryb Wielo-okienkowy</string>
-  <string name="enable_multi_window_summary">Wiele czynności na ekranie w tym samym czasie.</string>
-  <string name="warning_multi_window_text">Ostrzeżenie: Jest to wysoce eksperymentalna funkcja, która pozwala na wiele działań na ekranie w tym samym czasie poprzez funkcję ostatnich aplikacji. Niektóre aplikacje mogą nie działać poprawnie gdy ta funkcja jest włączona.</string>
+  <string name="enable_multi_window_summary">Wiele okien na ekranie w tym samym czasie.</string>
+  <string name="warning_multi_window_text">Ostrzeżenie: Jest to wysoce eksperymentalna funkcja, która pozwala na otworzenie wielu okien w tym samym czasie, poprzez funkcję ostatnich aplikacji. Niektóre aplikacje mogą nie działać poprawnie, gdy ta funkcja jest włączona.</string>
   <!-- AOKP custom system animations -->
   <string name="activity_open_title">Otwieranie aktywności</string>
   <string name="activity_close_title">Zamykanie aktywności</string>
@@ -270,11 +270,11 @@
   <string name="animation_duration_title">Długość animacji</string>
   <string name="title_animation_no_override">Zapobiegaj nadpisaniu animacji przez inne aplikacje</string>
   <string name="summary_animation_no_override">Nie pozwalaj aplikacjom zmieniać animacji przejścia</string>
-  <string name="animation_duration_default">Domyślnie</string>
+  <string name="animation_duration_default">Domyślna</string>
   <!-- Toast Animation -->
   <string name="toast_animation_title">Animacje komunikatu toast</string>
   <string name="toast_none_animation">Żadna</string>
-  <string name="toast_default_animation">Domyślnie</string>
+  <string name="toast_default_animation">Domyślna</string>
   <string name="toast_fade_animation">Zanikanie</string>
   <string name="toast_SlideRight_animation">Przesuń w prawo</string>
   <string name="toast_SlideLeft_animation">Przesuń w lewo</string>
@@ -282,12 +282,12 @@
   <string name="toast_GrowFade_animation">Rosnące zanikanie</string>
   <string name="toast_GrowFadeCenter_animation">Rosnące zanikanie od środka</string>
   <string name="toast_GrowFadeBottom_animation">Rosnące zanikanie od dołu</string>
-  <string name="toast_Translucent_animation">Przezroczyste</string>
+  <string name="toast_Translucent_animation">Przezroczysta</string>
   <string name="toast_SlideLeftRight_animation">Slajd z lewej do prawej</string>
   <string name="toast_SlideRightLeft_animation">Slajd z prawej do lewej</string>
   <!-- List View animation -->
   <string name="listview_animation_title">Animacja</string>
-  <string name="listview_off">Domyślnie</string>
+  <string name="listview_off">Domyślna</string>
   <string name="listview_wave_left">Fala (lewo)</string>
   <string name="listview_wave_right">Fala (prawo)</string>
   <string name="listview_alpha">Przenikanie</string>
@@ -310,13 +310,13 @@
   <!-- Network traffic -->
   <string name="traffic_category">Wskaźnik ruchu sieciowego</string>
   <string name="network_traffic_title">Ruch sieciowy</string>
-  <string name="show_network_traffic_state">Pokaż użycie sieci na pasku stanu</string>
-  <string name="show_network_traffic_unit">Pokaż jednostki</string>
-  <string name="show_network_traffic_frequency">Częstotliwość aktualizacji</string>
+  <string name="show_network_traffic_state">Wskaźnik ruchu sieciowego na pasku stanu</string>
+  <string name="show_network_traffic_unit">Wyświetlana jednostka</string>
+  <string name="show_network_traffic_frequency">Częstotliwość odświeżania</string>
   <string name="show_network_traffic_disable">Wyłączony</string>
   <string name="show_network_traffic_up">Wysłane</string>
   <string name="show_network_traffic_down">Odebrane</string>
-  <string name="show_network_traffic_all">Przychodzące i wychodzące</string>
+  <string name="show_network_traffic_all">Wysłane i odebrane</string>
   <string name="show_network_traffic_bit">Bity na sekundę</string>
   <string name="show_network_traffic_byte">Bajty na sekundę</string>
   <string name="show_network_traffic_500">500 ms</string>
@@ -325,8 +325,8 @@
   <string name="show_network_traffic_2000">2000 ms</string>
   <string name="network_traffic_autohide">Autoukrywanie</string>
   <string name="network_traffic_autohide_summary">Ukryj monitor ruchu sieciowego przy braku aktywności</string>
-  <string name="network_traffic_hidearrow">Ukryj strzałki</string>
-  <string name="network_traffic_hidearrow_summary">Ukryj strzałki obok we wskaźniku ruchu</string>
+  <string name="network_traffic_hidearrow">Strzałki transferu</string>
+  <string name="network_traffic_hidearrow_summary">Ukryj strzałki wskaźnika ruchu</string>
   <string name="network_traffic_autohide_threshold">Próg bezczynności</string>
   <string name="ok">OK</string>
   <!-- Time Contextual Header -->
@@ -335,7 +335,7 @@
   <string name="status_bar_custom_header_default_title">Użyj obrazów Poly HD</string>
   <string name="status_bar_custom_header_default_summary">Włącz wysokiej jakości obrazki poligraficzne.</string>
   <!-- Extended statusbar weather -->
-  <string name="status_bar_show_weather_title">Pogoda w rozwiniętym pasku stanu</string>
+  <string name="status_bar_show_weather_title">Ikona w rozwiniętym pasku stanu</string>
   <string name="status_bar_show_weather_summary">Pokaż prostą pogodę w obszarze rozszerzonego paska powiadomień</string>
   <!-- LockClock Setting -->
   <string name="weather_settings_title">Ustawienia LockClock</string>
@@ -343,7 +343,7 @@
   <!-- Weather settings -->
   <string name="weather_show_weather_title">Pokaż opcje Pogody</string>
   <string name="weather_show_weather_summary">Włącz pokazywanie opcji pogody i LockClock</string>
-  <string name="status_bar_show_weather_title">Pogoda w rozwiniętym pasku stanu</string>
+  <string name="status_bar_show_weather_title">Ikona w rozwiniętym pasku stanu</string>
   <string name="status_bar_show_weather_summary">Pokaż prostą pogodę w obszarze rozszerzonego paska powiadomień</string>
   <string name="weather_show_location_title">Wyświetl lokalizację</string>
   <string name="weather_show_location_summary">Włącz, aby wyświetlać lokalizację</string>
@@ -384,7 +384,7 @@
   <string name="status_bar_brightness_control_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
   <string name="status_bar_brightness_control_info">Automatyczna kontrola jasności musi być wyłączona</string>
   <!-- Lockscreen Shortcuts -->
-  <string name="lockscreen_targets_title">Lewy/Prawy skrót ekranu blokady</string>
+  <string name="lockscreen_targets_title">Lewy i prawy skrót</string>
   <!-- Recents panel settings -->
   <string name="show_clear_all_recents_button_title">Przycisk \"Wyczyść wszystkie\"</string>
   <string name="show_clear_all_recents_button_summary">Pokaż przycisk \"Wyczyść wszystkie\"</string>
@@ -475,7 +475,7 @@
   <string name="app_circle_bar_title">Kołowy pasek aplikacji</string>
   <string name="app_circle_bar_summary">Pokaż kołowy pasek aplikacji po dotknięciu z prawej strony ekranu</string>
   <string name="app_circle_bar_included_apps_title">Włączone aplikacje</string>
-  <string name="app_circle_bar_included_apps_summary">Aplikacje będą wyświetlane w kołowym pasku aplikacji</string>
+  <string name="app_circle_bar_included_apps_summary">Aplikacje w kołowym pasku aplikacji</string>
   <string name="trigger_width_title">Szerokość pola aktywacji</string>
   <string name="trigger_width_summary">Dopasuj szerokość pola aktywacji</string>
   <string name="trigger_top_title">Pozycja pola aktywacji</string>
@@ -484,12 +484,12 @@
   <string name="trigger_bottom_summary">Dopasuj wysokość pola aktywacji</string>
   <!-- Breathing Notifications -->
   <string name="breathing_notifications_title">Animowane powiadomienia</string>
-  <string name="missed_call_breath_title">Animowane powiadomienie o nieodebranych połączeniach</string>
+  <string name="missed_call_breath_title">O nieodebranych połączeniach</string>
   <string name="missed_call_breath_summary">Powiadomienie o nieodebranych połączeniach na pasku stanu będzie animowane</string>
-  <string name="voicemail_breath_title">Animowane powiadomienie o poczcie głosowej</string>
+  <string name="voicemail_breath_title">O poczcie głosowej</string>
   <string name="voicemail_breath_summary">Powiadomienie o poczcie głosowej na pasku stanu będzie animowane</string>
-  <string name="sms_breath_title">Animowane powiadomienie o SMS</string>
-  <string name="sms_breath_summary">Powiadomienie o SMS na pasku stanu będzie animowane</string>
+  <string name="sms_breath_title">O wiadomościach SMS</string>
+  <string name="sms_breath_summary">Powiadomienie o wiadomościach SMS na pasku stanu będzie animowane</string>
   <!-- Navigation Bar -->
   <string name="navbar_interface_title">Interfejs</string>
   <string name="navbar_size">Rozmiar paska nawigacji</string>
@@ -500,7 +500,7 @@
   <string name="navbar_general_title">Zaawansowane</string>
   <string name="navigation_bar_left_title">Tryb leworęczny</string>
   <string name="navigation_bar_left_summary">W trybie poziomym pokaż pasek nawigacji po lewej stronie ekranu</string>
-  <string name="info_pref_note_title">Notatka</string>
+  <string name="info_pref_note_title">Uwaga</string>
   <string name="smartbar_interface">SmartBar</string>
   <string name="icon_pack_picker_dialog_title">Zestawy ikon</string>
   <!-- Hardware button navigation -->
@@ -543,8 +543,8 @@
   <string name="fling_short_swipe_left">Krótkie przeciągnięcie w lewo</string>
   <string name="fling_long_swipe_right">Długie przeciągnięcie w prawo</string>
   <string name="fling_long_swipe_left">Długie przeciągnięcie w lewo</string>
-  <string name="fling_right_up_swipe">Przesunięcie w górę po prawej</string>
-  <string name="fling_left_up_swipe">Przesunięcie w górę po lewej</string>
+  <string name="fling_right_up_swipe">Przeciągnięcie w górę po prawej</string>
+  <string name="fling_left_up_swipe">Przeciągnięcie w górę po lewej</string>
   <string name="fling_single_tap">Dotknięcie po prawej</string>
   <string name="fling_double_tap">Dwukrotne dotknięcie po prawej</string>
   <string name="fling_long_press">Przytrzymanie po prawej</string>
@@ -561,8 +561,8 @@
   <string name="fling_advanced">Zaawansowane</string>
   <string name="fling_long_swipe_title">Próg długiego przeciągania</string>
   <string name="fling_long_swipe_summary">Ustaw próg przeciągnięcia, bazując na procentach szerokości/wysokości interfejsu Fling</string>
-  <string name="fling_trails_enable_title">Włącz ślady gestów</string>
-  <string name="fling_trails_enable_summary">Pokazuj ślady gestów</string>
+  <string name="fling_trails_enable_title">Ślady gestów</string>
+  <string name="fling_trails_enable_summary">Pokazuj ślady przeciągnięcia palcem</string>
   <string name="fling_trails_color_title">Kolor śladu</string>
   <string name="fling_appearance">Wygląd</string>
   <string name="fling_show_logo_title">Pokaż logo Fling</string>
@@ -618,7 +618,7 @@
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Ekran blokady</string>
   <string name="lockscreen_config_title">Opcje ekranu blokady</string>
-  <string name="lockscreen_wallpaper_config_title">Opcje i tapeta ekranu blokady</string>
+  <string name="lockscreen_wallpaper_config_title">Tapeta i opcje</string>
   <string name="lockscreen_wallpaper_set_title">Ustaw nową tapetę</string>
   <string name="lockscreen_wallpaper_clear_title">Ustaw domyślną</string>
   <string name="reset_lockscreen_wallpaper">Przywrócono domyślną tapetę ekranu blokady</string>
@@ -704,7 +704,7 @@
   <string name="shortcuts_icon_picker_twitter">Twitter</string>
   <string name="shortcuts_icon_picker_unlock">Odblokuj</string>
   <string name="reset_message">Zresetować wszystko do domyślnych?</string>
-  <string name="lockscreen_shortcuts_title">Skróty ekranu blokady</string>
+  <string name="lockscreen_shortcuts_title">Skróty aplikacji</string>
   <string name="lockscreen_shorcuts_launch_type_title">Aktywacja skrótu</string>
   <string name="lockscreen_shortcuts_single_tap">Dotknięcie</string>
   <string name="lockscreen_shortcuts_double_tap">Dwukrotne dotknięcie</string>
@@ -751,9 +751,9 @@
   <string name="power_menu_animation_title">Animacja menu zasilania</string>
   <string name="power_menu_animation_summary">Zmień animację otworzenia/zamknięcia menu zasilania</string>
   <string name="power_menu_animation_dialog_title">Animacja menu zasilania</string>
-  <string name="power_menu_animation_aosp">AOSP (domyślne)</string>
+  <string name="power_menu_animation_aosp">AOSP (domyślna)</string>
   <string name="power_menu_animation_bottom">Na dole</string>
-  <string name="power_menu_animation_top">Początek</string>
+  <string name="power_menu_animation_top">Na górze</string>
   <!-- Media art -->
   <string name="media_art_title">Okładka albumu</string>
   <string name="media_art_summary">Wyświetlaj okładkę odtwarzanego albumu na ekranie blokady</string>
@@ -765,12 +765,12 @@
   <string name="fprint_sucess_vib_title">Wibracja uwierzytelniania odcisku palca</string>
   <string name="fprint_sucess_vib_summary">Wibracje po udanym uwierzytelnianiu odcisku palca</string>
   <!-- QS Tiles Columns -->
-  <string name="qs_num_columns_title">Liczba przełączników w rzędzie</string>
+  <string name="qs_num_columns_title">Liczba przełączników</string>
   <string name="qs_num_columns_showing">%1$s przełączników w rzędzie</string>
   <!-- QuickSettings main tiles -->
   <string name="qs_main_tiles_title">Powiększenie pierwszego rzędu</string>
   <string name="qs_main_tiles_summary_on">Dwa główne przełączniki w pierwszym rzędzie</string>
-  <string name="qs_main_tiles_summary_off">3, 4 lub 5 przełączników w każdym rzędzie</string>
+  <string name="qs_main_tiles_summary_off">3, 4 lub 5 przełączników w pierwszym rzędzie</string>
   <!-- Selinux Switch -->
   <string name="selinux_switch_title">Przełącznik trybu SELinux</string>
   <string name="selinux_switch_summary">SELinux to zestaw modyfikacji jądra i narzędzi przestrzeni użytkownika. Zmiana trybu może spowodować niepożądane działania. Używasz tylko na własne ryzyko.</string>
