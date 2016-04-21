@@ -95,7 +95,7 @@
   <string name="immersive_recents_statusbar">Solo barrra di stato</string>
   <string name="immersive_recents_navbar">Solo barra di navigazione</string>
   <!-- Power Menu -->
-  <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
+  <string name="powermenu_lockscreen_title">Mostra menù tasto accensione nella schermata di blocco</string>
   <string name="powermenu_lockscreen_summary">Mostra menù tasto accensione nella schermata di blocco</string>
   <string name="powermenu_power">Menu tasto di accensione</string>
   <string name="powermenu_reboot">Riavvia</string>
@@ -126,7 +126,7 @@
   <string name="expanded_hide_navigation">Nascondi la barra di navigazione</string>
   <string name="expanded_hide_both">Nascondi entrambi</string>
   <string name="expanded_nothing_to_show">Per aggiungere una configurazione personalizzata di schermo esteso per ogni app, disattiva \"Attivo per tutti\"</string>
-  <string name="expanded_desktop_state">Expanded state</string>
+  <string name="expanded_desktop_state">Stato del Desktop esteso</string>
   <string name="expanded_enabled_for_all">Abilitato per tutti</string>
   <string name="expanded_user_configurable">Configurabile dall\'utente</string>
   <!-- Force expanded notifications -->
@@ -331,20 +331,20 @@
   <string name="ok">OK</string>
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">Time Contextual Header</string>
-  <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+  <string name="status_bar_custom_header_summary">Attiva l\'immagine di intestazione nel pannello delle notifiche</string>
   <string name="status_bar_custom_header_default_title">Utilizza immagini Poly HD</string>
   <string name="status_bar_custom_header_default_summary">Abilita per immagini Poly Hd. Disattiva per le immagini originali.</string>
   <!-- Extended statusbar weather -->
-  <string name="status_bar_show_weather_title">Extended statusbar weather</string>
-  <string name="status_bar_show_weather_summary">Show basic weather in the extended statusbar area</string>
+  <string name="status_bar_show_weather_title">Meteo nella barra di stato estesa</string>
+  <string name="status_bar_show_weather_summary">Visualizza meteo di base nella barra di stato estesa</string>
   <!-- LockClock Setting -->
   <string name="weather_settings_title">Impostazioni LockClock</string>
   <string name="weather_settings_summary">Configura posizione per widget meteo e altre impostazioni</string>
   <!-- Weather settings -->
   <string name="weather_show_weather_title">Mostra opzioni Meteo</string>
   <string name="weather_show_weather_summary">Abilita per mostrare le opzioni meteo che vanno con LockClock</string>
-  <string name="status_bar_show_weather_title">Extended statusbar weather</string>
-  <string name="status_bar_show_weather_summary">Show basic weather in the extended statusbar area</string>
+  <string name="status_bar_show_weather_title">Meteo nella barra di stato estesa</string>
+  <string name="status_bar_show_weather_summary">Visualizza meteo di base nella barra di stato estesa</string>
   <string name="weather_show_location_title">Mostra posizione</string>
   <string name="weather_show_location_summary">Attiva per mostrare la posizione</string>
   <string name="weather_condition_icon_title">Icona meteo</string>
@@ -427,11 +427,11 @@
   <string name="media_scanner_on_boot_disabled">Non eseguire scansione multimediale</string>
   <!-- Scrolling Cache -->
   <string name="pref_scrollingcache_title">Scrolling cache</string>
-  <string name="pref_scrollingcache_summary">Scrolling cache may improve scrolling performance at the cost of memory</string>
-  <string name="pref_scrollingcache_force_enable">Force enable</string>
-  <string name="pref_scrollingcache_default_enable">Default enable</string>
-  <string name="pref_scrollingcache_default_disable">Default disable</string>
-  <string name="pref_scrollingcache_force_disable">Force disable</string>
+  <string name="pref_scrollingcache_summary">Scrolling cache può migliorare le prestazioni di scorrimento a discapito della memoria</string>
+  <string name="pref_scrollingcache_force_enable">Forza abilita</string>
+  <string name="pref_scrollingcache_default_enable">Predefinita attiva</string>
+  <string name="pref_scrollingcache_default_disable">Predefinita disabilitata</string>
+  <string name="pref_scrollingcache_force_disable">Forza disabilita</string>
   <!-- Gesture Anywhere -->
   <string name="gesture_anywhere_title">Gesture Ovunque</string>
   <string name="gesture_anywhere_enabled_title">Gesture Ovunque</string>
@@ -609,7 +609,7 @@
   <string name="smartbar_button_animation_ripple">Ripple</string>
   <string name="smartbar_button_animation_spring">Spring</string>
   <string name="smartbar_factory_reset_title">Ripristina a stock</string>
-  <string name="smartbar_factory_reset_confirm">Are you sure you want to reset Smartbar to stock settings?</string>
+  <string name="smartbar_factory_reset_confirm">Sei sicuro di voler ripristinare le impostazioni predefinite di Smartbar?</string>
   <string name="smartbar_ime_action_title">Input method actions</string>
   <string name="smartbar_ime_action_summary">Set what buttons to show when a on-screen keyboard is showing</string>
   <string name="smartbar_ime_action_none">None</string>
@@ -854,9 +854,9 @@
   <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
   <string name="keyguard_statusbar_clock_summary">Enables the statusbar clock in the keyguard on the left side</string>
   <!-- Flashlight notification -->
-  <string name="flashlight_notification_title">Flashlight notification</string>
-  <string name="flashlight_notification_summary">Enable notificiation for when the flashlight is on</string>
+  <string name="flashlight_notification_title">Notifica per la torcia</string>
+  <string name="flashlight_notification_summary">Attiva una notifica per quando la torcia è accesa</string>
   <!-- Header image shadow -->
   <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
-  <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
+  <string name="status_bar_custom_header_shadow_summary">Per una migliore visibilità su immagini luminose</string>
 </resources>

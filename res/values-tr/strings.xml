@@ -17,69 +17,69 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">General UI</string>
+  <string name="generalui_category">Genel arabirimi UI</string>
   <string name="lockscreen_category">Kilit Ekranı</string>
   <string name="statusbar_category">Durum çubuğu</string>
   <string name="navigation_category">Gezinti Tuşları</string>
-  <string name="multitasking_category">Multi-Tasking</string>
+  <string name="multitasking_category">Çoklu görev</string>
   <string name="system_category">Sistem</string>
-  <string name="misc_category">Miscellaneous</string>
+  <string name="misc_category">Çeşitli</string>
   <!-- Categories -->
   <string name="animations_category">Animasyonlar</string>
-  <string name="battery_category">Battery</string>
+  <string name="battery_category">Pil</string>
   <string name="download_category">Download Center</string>
   <string name="expanded_desktop_category">Expanded Desktop</string>
   <string name="misctweaks_category">Misc. Tweaks</string>
   <string name="powermenu_category">Güç menüsü</string>
-  <string name="quicksettings_category">Quick Settings</string>
-  <string name="recents_category">Recents</string>
-  <string name="statusbar_items_category">Statusbar Items</string>
-  <string name="statusbar_notifications_category">Notifications</string>
+  <string name="quicksettings_category">Hızlı Ayarlar</string>
+  <string name="recents_category">Son İşlemler</string>
+  <string name="statusbar_items_category">Durum çubuğu öğeleri</string>
+  <string name="statusbar_notifications_category">Bildirimler</string>
   <string name="lockscreen_notifications_category">Lockscreen Notifications</string>
   <string name="wakelockblocker_category">Wakelock Blocker</string>
   <string name="gestures_category">Gestures</string>
-  <string name="multitasking_category">Multi-Tasking</string>
-  <string name="multiwindow_category">Multi-Window</string>
-  <string name="listview_animations_category">List View Animations</string>
-  <string name="system_animations_category">System Animations</string>
+  <string name="multitasking_category">Çoklu görev</string>
+  <string name="multiwindow_category">Çoklu pencere</string>
+  <string name="listview_animations_category">Liste Görünüm Animasyonları</string>
+  <string name="system_animations_category">Sistem Animasyonları</string>
   <string name="omniswitch_category">OmniSwitch</string>
   <string name="weather_category">Weather Widget</string>
   <string name="breathing_notifications_category">Breathing Notifications</string>
-  <string name="button_settings">Buttons</string>
-  <string name="category_heads_up">Heads Up</string>
-  <string name="lockscreen_colors_fonts_category_title">Colors &amp; Fonts</string>
+  <string name="button_settings">Tuşlar</string>
+  <string name="category_heads_up">Bildirim Pencereleri</string>
+  <string name="lockscreen_colors_fonts_category_title">Renk &amp; Yazı tipleri</string>
   <!-- OmniSwitch -->
-  <string name="aosp_recents_title">AOSP recents</string>
+  <string name="aosp_recents_title">AOSP son uygulamalar</string>
   <string name="omniswitch_recents_title">OmniSwitch recents</string>
   <string name="omniswitch_category">OmniSwitch</string>
   <string name="recents_use_omniswitch_title">Enable omni recents</string>
-  <string name="recents_use_omniswitch_summary">Use OmniSwitch for recents view</string>
-  <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
-  <string name="omniswitch_first_time_title">Information</string>
-  <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
+  <string name="recents_use_omniswitch_summary">Son uygulamalar görünümü için OmniSwitch kullan</string>
+  <string name="omniswitch_start_settings_summary">OmniSwitch ayarlarını aç</string>
+  <string name="omniswitch_first_time_title">Bilgi</string>
+  <string name="omniswitch_first_time_message">OmniSwitch etkinleştirdiğinizden emin olun. \"Ayarlar\"ı kullanarak bunu yapabilirsiniz</string>
   <!-- Dialog -->
   <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
   <string name="dirtytweaks_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a DU developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
   <string name="dirtytweaks_dialog_toast">READ THE WHOLE THING!</string>
   <!-- Toast Icons -->
   <string name="toast_icon_title">Toast icon</string>
-  <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+  <string name="toast_icon_summary">Mesaj(toast) ile bildirim ikonu göster</string>
   <!-- Download Center -->
   <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">List of GAPPS packages to flash in recovery</string>
-  <string name="gapps_credit">Although GAPPS packages are not compiled from source and don\'t belong to nobody but Google, we would still like to take the time to thank a few individuals and team that maintain these packages for all of us and just make things easier for everyone.\n\nSpecial Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
+  <string name="gapps_summary">Kurtarma modunda flaşlanacak GAPPS listesi</string>
+  <string name="gapps_credit">GAPPS paketleri kaynaktan derlenmemiş ve Google dışında kimse için ait değil, biz hala bir kaç kişi ve bu paketleri hepimiz için kullanan ve sadece takım elektrik kesintisi, Michael bankalar, TKruzze ve M. Wasif Chauhdary sayesinde everyone.\n\nSpecial için daha kolay hale takım teşekkür için zaman ayırın istiyorum rağmen</string>
   <!-- Status bar quick qs pulldown -->
-  <string name="title_quick_pulldown">Quick pulldown</string>
+  <string name="title_quick_pulldown">Hızlı aşağı çekme</string>
   <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
   <string name="quick_pulldown_off">Off</string>
   <string name="quick_pulldown_left">Left</string>
   <string name="quick_pulldown_right">Right</string>
-  <string name="smart_pulldown_title">Smart pulldown</string>
-  <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
-  <string name="smart_pulldown_off">Off</string>
-  <string name="smart_pulldown_dismissable">No dismissable</string>
-  <string name="smart_pulldown_persistent">No persistent</string>
-  <string name="smart_pulldown_all">No dismissable or persistent</string>
+  <string name="smart_pulldown_title">Akıllı Aşağı Çekme</string>
+  <string name="smart_pulldown_summary">%1$s bildirim mevcut olduğunda hızlı ayarları aç</string>
+  <string name="smart_pulldown_off">Kapat</string>
+  <string name="smart_pulldown_dismissable">Reddedilemez</string>
+  <string name="smart_pulldown_persistent">Kalıcı değil</string>
+  <string name="smart_pulldown_all">Reddedilemez yada kalıcı</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Brightness slider</string>
   <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
@@ -89,13 +89,13 @@
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Immersive Recents</string>
   <string name="immersive_recents_summary">Change the view of the recents screen</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
+  <string name="immersive_recents_dialog_title">Son uygulamalar görünümü seç</string>
+  <string name="immersive_recents_default">Varsayılan</string>
+  <string name="immersive_recents_fullscreen">Tam Ekran</string>
+  <string name="immersive_recents_statusbar">Durum çubuğu simgesi</string>
+  <string name="immersive_recents_navbar">Yalnızca gezinti çubuğu</string>
   <!-- Power Menu -->
-  <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
+  <string name="powermenu_lockscreen_title">Kilit ekranında Güç menüsü</string>
   <string name="powermenu_lockscreen_summary">Show power menu on the lock screen</string>
   <string name="powermenu_power">Power</string>
   <string name="powermenu_reboot">Reboot</string>
@@ -103,15 +103,15 @@
   <string name="powermenu_screenrecord">Screen Record</string>
   <string name="powermenu_torch">Torch</string>
   <string name="powermenu_airplane">Airplane</string>
-  <string name="powermenu_settings">Settings</string>
-  <string name="powermenu_lockdown">Lock Down</string>
-  <string name="powermenu_soundpanel">Sound Panel</string>
+  <string name="powermenu_settings">Ayarlar</string>
+  <string name="powermenu_lockdown">Kilitle</string>
+  <string name="powermenu_soundpanel">Ses Paneli</string>
   <!-- Advanced reboot options -->
-  <string name="advanced_reboot_title">Advanced reboot</string>
-  <string name="advanced_reboot_summary">Include options in the power menu for rebooting into recovery and bootloader</string>
-  <string name="advanced_reboot_dialog_title">Advanced reboot menu</string>
-  <string name="advanced_reboot_disabled">Disable</string>
-  <string name="advanced_reboot_hide_on_keyguard">Hide on lock screen</string>
+  <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
+  <string name="advanced_reboot_summary">Kurtarma ve bootloader yeniden güç menüsündeki seçenekleri içerir</string>
+  <string name="advanced_reboot_dialog_title">Gelişmiş yeniden başlatma menüsü</string>
+  <string name="advanced_reboot_disabled">Devre dışı bırak</string>
+  <string name="advanced_reboot_hide_on_keyguard">Kilit ekranında gizle</string>
   <string name="advanced_reboot_show_always">Show always</string>
   <!-- Wakelock blocker -->
   <string name="wakelock_blocker_summary">Block system wakelocks</string>
@@ -122,18 +122,18 @@
   <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
   <!-- Expanded desktop -->
   <string name="expanded_hide_nothing">Hide nothing</string>
-  <string name="expanded_hide_status">Hide status bar</string>
-  <string name="expanded_hide_navigation">Hide navigation bar</string>
-  <string name="expanded_hide_both">Hide both</string>
-  <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \"Enabled for all\" to the off position</string>
-  <string name="expanded_desktop_state">Expanded state</string>
-  <string name="expanded_enabled_for_all">Enabled for all</string>
-  <string name="expanded_user_configurable">User configurable</string>
+  <string name="expanded_hide_status">Durum çubuğunu gizle</string>
+  <string name="expanded_hide_navigation">Durum çubuğunu gizle</string>
+  <string name="expanded_hide_both">Her ikisi de gizle</string>
+  <string name="expanded_nothing_to_show">Genişletilmiş durum için bir özel uygulama yapılandırması eklemek için \'Etkin\' için tüm kapalı konuma getirin</string>
+  <string name="expanded_desktop_state">Genişletilmiş durum</string>
+  <string name="expanded_enabled_for_all">Tümü etkin</string>
+  <string name="expanded_user_configurable">Kullanıcı yapılandırılabilir</string>
   <!-- Force expanded notifications -->
-  <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-  <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+  <string name="force_expanded_notifications_title">Genişletilmiş bildirimleri zorla</string>
+  <string name="force_expanded_notifications_summary">Sadece genişletilmiş bildirimleri destekleyen uygulamalar için mevcuttur</string>
   <!-- Disabling immersive mode messages -->
-  <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
+  <string name="disable_immersive_message_title">Sürüklemeli Mesajlar Modunu devredışı bırak</string>
   <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
   <!-- Disabling FC notifications -->
   <string name="disable_fc_notifications_title">Disable FC Notifications</string>
@@ -147,20 +147,20 @@
   <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
   <!-- Ad Blocker -->
   <string name="adblocker_title">Ad blocker</string>
-  <string name="disable_ads_title">Disable Ads</string>
-  <string name="disable_ads_summary">Change hosts file to disable ads</string>
+  <string name="disable_ads_title">Reklamları kapat</string>
+  <string name="disable_ads_summary">Reklamları kapatmak için host dosyasını değiştir</string>
   <!-- Volume Key Rotation -->
-  <string name="swap_volume_buttons_title">Reorient</string>
-  <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+  <string name="swap_volume_buttons_title">Yeniden ata</string>
+  <string name="swap_volume_buttons_summary">Ekran döndürüldüğünde ses tuşlarının yer değiştir</string>
   <!-- Volume rocker wake -->
-  <string name="volume_rocker_wake_title">Volume rocker wake</string>
-  <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device\nOverrides playback control</string>
+  <string name="volume_rocker_wake_title">Ses tuşuyla uyandır</string>
+  <string name="volume_rocker_wake_summary">Ses tuşları ile şarkı kontrolü cihazı uyandırır</string>
   <!-- Volume rocker music control -->
-  <string name="volume_rocker_music_controls_title">Playback control</string>
-  <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+  <string name="volume_rocker_music_controls_title">Çalma kontrolü</string>
+  <string name="volume_rocker_music_controls_summary">Ekran kapalıyken ses tuşlarına uzun basmak şarkıyı değiştirir</string>
   <!-- Battery options -->
-  <string name="battery_title">Battery</string>
-  <string name="battery2_summary">Customize battery icons and percentage</string>
+  <string name="battery_title">Pil</string>
+  <string name="battery2_summary">Pil simgesini ve yüzdesini özelleştirme</string>
   <string name="status_bar_battery_style_title">Battery status style</string>
   <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
   <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
@@ -172,22 +172,22 @@
   <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
   <string name="status_bar_battery_percentage_default">Hidden (default)</string>
   <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-  <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+  <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
   <!-- Battery Bar -->
-  <string name="battery_bar_title">Battery bar</string>
-  <string name="battery_bar">Battery bar location</string>
-  <string name="battery_bar_color">Battery bar color</string>
-  <string name="battery_bar_cat">Battery bar style</string>
+  <string name="battery_bar_title">Pil çubuğu</string>
+  <string name="battery_bar">Pil çubuğunun konumu</string>
+  <string name="battery_bar_color">Pil çubuğu rengi</string>
+  <string name="battery_bar_cat">Pil çubuğu stili</string>
   <string name="battery_bar_style_title">Battery bar alignment</string>
-  <string name="battery_bar_thickness_title">Battery bar thickness</string>
-  <string name="battery_bar_animate_title">Charging animation</string>
-  <string name="battery_bar_animate_summary">Enable to animate the battery bar while charging</string>
+  <string name="battery_bar_thickness_title">Pil çubuğu kalınlığı</string>
+  <string name="battery_bar_animate_title">Şarj animasyonu</string>
+  <string name="battery_bar_animate_summary">Şarj sırasında pil çubuğunun hareketlendirmek için etkinleştir</string>
   <!-- Lock Clock Fonts -->
-  <string name="lock_clock_font_title">Clock Fonts</string>
-  <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
+  <string name="lock_clock_font_title">Saat yazı tipleri</string>
+  <string name="lock_clock_font_summary">Kilit ekranı saat widget varsayılan yazı tipini değiştirme</string>
   <string name="lock_clock_font_dialog_title">Select lock clock font</string>
   <string name="lock_clock_font_normal">Roboto</string>
-  <string name="lock_clock_font_bold">Roboto Bold</string>
+  <string name="lock_clock_font_bold">Roboto kalın</string>
   <string name="lock_clock_font_italic">Roboto Italic</string>
   <string name="lock_clock_font_bold_italic">Roboto Bold Italic</string>
   <string name="lock_clock_font_light_normal">Roboto Light (default)</string>
@@ -199,24 +199,24 @@
   <string name="lock_clock_font_condensed_italic">Roboto Condensed Italic</string>
   <string name="lock_clock_font_condensed_bold_italic">Roboto Condensed Bold Italic</string>
   <string name="lock_clock_font_medium_normal">Roboto Medium</string>
-  <string name="lock_clock_font_medium_italic">Roboto Medium Italic</string>
-  <string name="lock_clock_font_black_normal">Roboto Black</string>
-  <string name="lock_clock_font_black_italic">Roboto Black Italic</string>
-  <string name="lock_clock_font_condensed_light_normal">Roboto Condensed Light</string>
-  <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
+  <string name="lock_clock_font_medium_italic">Roboto orta italik</string>
+  <string name="lock_clock_font_black_normal">Roboto siyah</string>
+  <string name="lock_clock_font_black_italic">Roboto siyah italik</string>
+  <string name="lock_clock_font_condensed_light_normal">Roboto Condensed Açık</string>
+  <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Açık Italik</string>
   <!-- Lockscreen Torch -->
-  <string name="keyguard_torch_title">Lockscreen torch</string>
+  <string name="keyguard_torch_title">Kilit Ekranı El feneri</string>
   <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
   <!-- Statusbar Clock options -->
-  <string name="status_bar_title">Status bar</string>
-  <string name="status_bar_style_title">Style</string>
-  <string name="status_bar_clock">Clock &amp; Date</string>
-  <string name="clock_title_enable">Alignment</string>
-  <string name="clock_enabled">Enabled</string>
-  <string name="clock_disabled">Disabled</string>
-  <string name="status_bar_clock_style_reset">Reset color</string>
-  <string name="status_bar_show_clock_title">Show clock &amp; date</string>
-  <string name="status_bar_am_pm_title">AM/PM</string>
+  <string name="status_bar_title">Durum çubuğu</string>
+  <string name="status_bar_style_title">Stil</string>
+  <string name="status_bar_clock">Saat &amp; Tarih</string>
+  <string name="clock_title_enable">Hizalama</string>
+  <string name="clock_enabled">Etkinleştirildi</string>
+  <string name="clock_disabled">Devre Dışı</string>
+  <string name="status_bar_clock_style_reset">Rengi sıfırla</string>
+  <string name="status_bar_show_clock_title">Saati &amp; tarihi göster</string>
+  <string name="status_bar_am_pm_title">ÖÖ/ÖS</string>
   <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
   <string name="enable_clock_weekday">Day of the week</string>
   <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
@@ -234,21 +234,21 @@
   <string name="clock_date_right">Right of time</string>
   <string name="clock_date_left">Left of time</string>
   <string name="am_pm_clock_normal">Normal font size</string>
-  <string name="am_pm_clock_small">Small font size</string>
+  <string name="am_pm_clock_small">Küçük yazı boyutu</string>
   <string name="am_pm_clock_none">Don\'t show</string>
-  <string name="clock_date_display_none">Don\'t show</string>
-  <string name="clock_date_display_small">Small font size</string>
-  <string name="clock_date_display_normal">Normal font size</string>
+  <string name="clock_date_display_none">Gösterme</string>
+  <string name="clock_date_display_small">Küçük font boyutu</string>
+  <string name="clock_date_display_normal">Normal font boyutu</string>
   <string name="clock_date_style_normal">Normal</string>
-  <string name="clock_date_style_lowercase">Lowercase</string>
-  <string name="clock_date_style_uppercase">Uppercase</string>
-  <string name="clock_date_format_custom">Custom java format</string>
-  <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
-  <string name="default_string">Default</string>
-  <string name="reset">Reset</string>
+  <string name="clock_date_style_lowercase">Küçük harf</string>
+  <string name="clock_date_style_uppercase">Büyük harf</string>
+  <string name="clock_date_format_custom">Özel java biçimi</string>
+  <string name="status_bar_clock_style_reset_message">Saatin rengi sıfırlansın mı?</string>
+  <string name="default_string">Varsayılan</string>
+  <string name="reset">Sıfırla</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Color Picker</string>
-  <string name="press_color_to_apply">Press on color below to apply</string>
+  <string name="dialog_color_picker">Renk Seçici</string>
+  <string name="press_color_to_apply">Rengi uygulamak için basın</string>
   <string name="hex">Hex:</string>
   <string name="set">Set</string>
   <string name="color_default">Default</string>

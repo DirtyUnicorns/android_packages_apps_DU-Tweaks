@@ -361,7 +361,7 @@
   <string name="quick_settings_vibrate_summary">Вибрировать при касании плитки</string>
   <!-- Quick settings disable on lockscreen -->
   <string name="block_on_secure_keyguard_title">Отключить быстрые настройки</string>
-  <string name="block_on_secure_keyguard_summary">Disables quick settings in the keyguard for a secure lock only</string>
+  <string name="block_on_secure_keyguard_summary">Отключение быстрых настроек экрана блокировки только для безопасной блокировки</string>
   <!-- Carrier Label -->
   <string name="carrier_options">Имя оператора</string>
   <string name="custom_carrier_label_title">Установить имя оператора</string>
@@ -523,7 +523,7 @@
   <string name="action_entry_custom_action">Выбрать пользовательское действие</string>
   <string name="action_value_default_action">По умолчанию</string>
   <string name="action_value_select_app">Приложение</string>
-  <string name="action_value_custom_action">custom</string>
+  <string name="action_value_custom_action">пользовательская</string>
   <string name="action_value_back">назад</string>
   <string name="action_value_home">домой</string>
   <string name="action_value_search_assist">поисковый помощник</string>
@@ -669,8 +669,8 @@
   <string name="shortcuts_icon_picker_facebook">Facebook</string>
   <string name="shortcuts_icon_picker_favorite">Избранные</string>
   <string name="shortcuts_icon_picker_file_browser">Файл-менеджер</string>
-  <string name="shortcuts_icon_picker_file_browser2">File Browser Alternate</string>
-  <string name="shortcuts_icon_picker_fitness">Fitness</string>
+  <string name="shortcuts_icon_picker_file_browser2">Альтернативный файл-менеджер</string>
+  <string name="shortcuts_icon_picker_fitness">Фитнес</string>
   <string name="shortcuts_icon_picker_gallery">Галерея</string>
   <string name="shortcuts_icon_picker_gears">Gears</string>
   <string name="shortcuts_icon_picker_google_small">Googlе</string>
@@ -679,9 +679,9 @@
   <string name="shortcuts_icon_picker_help">Помощь</string>
   <string name="shortcuts_icon_picker_joystick">Джойстик</string>
   <string name="shortcuts_icon_picker_key">Ключи/аккаунты</string>
-  <string name="shortcuts_icon_picker_laptop">Laptop</string>
+  <string name="shortcuts_icon_picker_laptop">Ноутбук</string>
   <string name="shortcuts_icon_picker_notes">Примечания</string>
-  <string name="shortcuts_icon_picker_luggage">Travel</string>
+  <string name="shortcuts_icon_picker_luggage">Путешествие</string>
   <string name="shortcuts_icon_picker_maps">Карты</string>
   <string name="shortcuts_icon_picker_market">Магазин</string>
   <string name="shortcuts_icon_picker_movie">Фильмы</string>
