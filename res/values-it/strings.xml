@@ -62,7 +62,7 @@
   <string name="dirtytweaks_dialog_message">Purtroppo non siamo maghi! \n\nQuindi se trovi un bug con una di queste impostazioni, sei pregato di aprire un ticket su Jira o di contattare uno sviluppatore DU con le seguenti informazioni\n\n1. Logcat o Last_Kmsg\n2. Kernel e Mods usate\n3. Informazioni utili\n\nSe non si segnalano i problemi, non aspettatevi che vengano riparati. Ricordate, non siamo maghi perciò ci possiamo dimenticare di qualcosa.</string>
   <string name="dirtytweaks_dialog_toast">LEGGI TUTTO!</string>
   <!-- Toast Icons -->
-  <string name="toast_icon_title">Toast icon</string>
+  <string name="toast_icon_title">Icona toast</string>
   <string name="toast_icon_summary">Visualizzare l\'icona dell\'applicazione corrispondente al toast</string>
   <!-- Download Center -->
   <string name="gapps_title">Google Apps (GAPPS)</string>
@@ -272,7 +272,7 @@
   <string name="summary_animation_no_override">Impedisce alle app di sovrascrivere le transizioni</string>
   <string name="animation_duration_default">Default</string>
   <!-- Toast Animation -->
-  <string name="toast_animation_title">Toast animation</string>
+  <string name="toast_animation_title">Animazione toast</string>
   <string name="toast_none_animation">Nessuna</string>
   <string name="toast_default_animation">Default</string>
   <string name="toast_fade_animation">Dissolvenza</string>
@@ -524,12 +524,12 @@
   <string name="action_value_default_action">predefinito</string>
   <string name="action_value_select_app">app</string>
   <string name="action_value_custom_action">personalizzato</string>
-  <string name="action_value_back">task_back</string>
-  <string name="action_value_home">task_home</string>
-  <string name="action_value_search_assist">task_assist</string>
-  <string name="action_value_recent_apps">task_recents</string>
-  <string name="action_value_voice_search">task_voice_search</string>
-  <string name="action_value_menu">task_menu</string>
+  <string name="action_value_back">indietro</string>
+  <string name="action_value_home">home</string>
+  <string name="action_value_search_assist">assistente</string>
+  <string name="action_value_recent_apps">recenti</string>
+  <string name="action_value_voice_search">ricerca vocale</string>
+  <string name="action_value_menu">menu</string>
   <!-- Fling -->
   <string name="fling_settings">Impostazioni Fling</string>
   <string name="fling_interface">Fling</string>
@@ -561,10 +561,10 @@
   <string name="fling_advanced">Avanzato</string>
   <string name="fling_long_swipe_title">Soglia di scorrimento lungo</string>
   <string name="fling_long_swipe_summary">Mette a punto la soglia di scorrimento lungo basata sull\'altezza o larghezza di Fling</string>
-  <string name="fling_trails_enable_title">Enable gesture trails</string>
-  <string name="fling_trails_enable_summary">Show a trail on swipe gestures</string>
-  <string name="fling_trails_color_title">Trail color</string>
-  <string name="fling_appearance">Appearance</string>
+  <string name="fling_trails_enable_title">Tracce gesture visibili</string>
+  <string name="fling_trails_enable_summary">Mostra una traccia durante gli swipe delle gesture</string>
+  <string name="fling_trails_color_title">Colore traccia</string>
+  <string name="fling_appearance">Aspetto</string>
   <string name="fling_show_logo_title">Mostra il logo Fling</string>
   <string name="fling_animate_logo_title">Logo animato</string>
   <string name="fling_animate_logo_summary">Animazione del logo quando viene toccata la barra di navigazione</string>
@@ -577,7 +577,7 @@
   <string name="fling_ripple_color">Colore increspatura</string>
   <string name="fling_longpress_timeout_label_left">Meno ritardo</string>
   <string name="fling_longpress_timeout_label_right">Più ritardo</string>
-  <string name="fling_longpress_title">Long press delay</string>
+  <string name="fling_longpress_title">Ritardo pressione prolungata</string>
   <string name="fling_longpress_summary">Aumenta o diminuisce il tempo impiegato per eseguire una pressione prolungata</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Riguardo Pulse</string>
@@ -598,32 +598,32 @@
   <!-- SmartBar -->
   <string name="smartbar_category">SmartBar</string>
   <string name="smartbar_settings_title">Impostazioni SmartBar</string>
-  <string name="smartbar_editor_title">Toggle button editor</string>
-  <string name="smartbar_editor_summary">Medium press and drag to change position. Long press to show edit menu. Button position may be changed while menu is showing.</string>
-  <string name="smartbar_context_menu_position_title">Context buttons layout position</string>
-  <string name="smartbar_context_menu_position_summary">Set the position of contextual buttons such as menu and ime selector</string>
+  <string name="smartbar_editor_title">Attiva/disattiva editor pulsanti</string>
+  <string name="smartbar_editor_summary">Tieni premuto e trascina per cambiare la posizione. Tieni premuto a lungo per visualizzare il menu di modifica. La posizione del pulsante potrebbe cambiare durante la visualizzazione del menu.</string>
+  <string name="smartbar_context_menu_position_title">Posizione pulsanti contestuali</string>
+  <string name="smartbar_context_menu_position_summary">Imposta la posizione dei pulsanti contestuali come il tasto menu e il selettore ime</string>
   <string name="smartbar_right">Destra</string>
   <string name="smartbar_left">Sinistra</string>
   <string name="smartbar_button_animation_title">Animazione al tocco del pulsante</string>
-  <string name="smartbar_button_animation_summary">Set the animation style of the primary buttons when they are pressed</string>
-  <string name="smartbar_button_animation_ripple">Ripple</string>
-  <string name="smartbar_button_animation_spring">Spring</string>
+  <string name="smartbar_button_animation_summary">Imposta lo stile dell\'animazione alla pressione dei tasti principali</string>
+  <string name="smartbar_button_animation_ripple">Ondulazione</string>
+  <string name="smartbar_button_animation_spring">Molla</string>
   <string name="smartbar_factory_reset_title">Ripristina a stock</string>
   <string name="smartbar_factory_reset_confirm">Sei sicuro di voler ripristinare le impostazioni predefinite di Smartbar?</string>
-  <string name="smartbar_ime_action_title">Input method actions</string>
-  <string name="smartbar_ime_action_summary">Set what buttons to show when a on-screen keyboard is showing</string>
-  <string name="smartbar_ime_action_none">None</string>
-  <string name="smartbar_ime_action_arrows">Input arrows</string>
-  <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
+  <string name="smartbar_ime_action_title">Azioni del metodo di inserimento</string>
+  <string name="smartbar_ime_action_summary">Imposta quali pulsanti mostrare durante la digitazione</string>
+  <string name="smartbar_ime_action_none">Nessuno</string>
+  <string name="smartbar_ime_action_arrows">Frecce di posizione</string>
+  <string name="smartbar_ime_action_switcher">Cambia tastiera</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Schermata di blocco</string>
-  <string name="lockscreen_config_title">Lockscreen configs</string>
-  <string name="lockscreen_wallpaper_config_title">Lockscreen Wall/Config</string>
+  <string name="lockscreen_config_title">Impostazioni schermata di blocco</string>
+  <string name="lockscreen_wallpaper_config_title">Sfondo schermata di blocco</string>
   <string name="lockscreen_wallpaper_set_title">Imposta nuovo sfondo</string>
   <string name="lockscreen_wallpaper_clear_title">Torna allo sfondo di default</string>
-  <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
+  <string name="reset_lockscreen_wallpaper">Sfondo originale ripsristinato</string>
   <!-- Slim lockscreen shortcuts -->
-  <string name="shortcut_action_none">None</string>
+  <string name="shortcut_action_none">Nessuno</string>
   <string name="shortcut_action_longpress">Pressione prolungata:</string>
   <string name="shortcut_action_select_action_longpress">Scegli l\'azione per una pressione prolungata:</string>
   <string name="shortcut_action_select_action">Scegli azione:</string>
@@ -641,9 +641,9 @@
   <string name="shortcut_action_help_button">pulsante</string>
   <string name="shortcut_action_help_app">app</string>
   <string name="shortcut_action_help_icon">, mentre si selezione l\'icona appariranno le opzioni di personalizzazione</string>
-  <string name="shortcut_action_help_main">To add a %1$s, select the Add icon. Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right. Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
-  <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
-  <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Removing every %1$s in the list will disable the second pie layer entirely.</string>
+  <string name="shortcut_action_help_main">Per aggiungere una %1$s, seleziona l\'icona Aggiungi. Una volta che la %1$s è stata aggiunta, selezionando l\'icona sarà possibile modificare il suo target.%2$s\n\nPer rimuovere la %1$s, è sufficiente uno swipe orizzontale verso destra o sinistra. Per riordinare le scorciatoie presenti nella lista, trascina verticalmente il pulsante posto a sinistra.%2$s\n\nPer cancellare la selezione o riportare le impostazioni predefinite, seleziona Reimposta.</string>
+  <string name="shortcut_action_help_delete_last_entry">Rimuovere ogni %1$s presente nella lista disattiverà completamente questa funzione.</string>
+  <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Rimuovere ogni %1$s presente nella lista disattiverà il secondo livello della Pie.</string>
   <string name="shortcuts_applications">Applicazioni</string>
   <string name="shortcuts_select_custom_app_title">Seleziona un\'applicazione personalizzata</string>
   <string name="shortcuts_icon_picker_type">Seleziona il tipo di icona:</string>
@@ -699,13 +699,13 @@
   <string name="shortcuts_icon_picker_sms">Messaggi</string>
   <string name="shortcuts_icon_picker_tasks">Azioni</string>
   <string name="shortcuts_icon_picker_terminal">Terminale</string>
-  <string name="shortcuts_icon_picker_transit">Transit</string>
+  <string name="shortcuts_icon_picker_transit">Trasporto</string>
   <string name="shortcuts_icon_picker_tv">TV</string>
   <string name="shortcuts_icon_picker_twitter">Twitter</string>
   <string name="shortcuts_icon_picker_unlock">Sblocca</string>
   <string name="reset_message">Reimpostare tutte le voci a default?</string>
-  <string name="lockscreen_shortcuts_title">Mid-Screen Shortcuts</string>
-  <string name="lockscreen_shorcuts_launch_type_title">Shortcut click type</string>
+  <string name="lockscreen_shortcuts_title">Scorciatoie al centro</string>
+  <string name="lockscreen_shorcuts_launch_type_title">Tipo di click scorciatoia</string>
   <string name="lockscreen_shortcuts_single_tap">Click</string>
   <string name="lockscreen_shortcuts_double_tap">Doppio tap</string>
   <string name="lockscreen_shortcuts_longpress">Pressione prolungata</string>
@@ -717,11 +717,11 @@
   <string name="shortcut_action_ime">Apri selettore IME</string>
   <string name="shortcut_action_power_menu">Menu tasto accensione</string>
   <string name="shortcut_action_recent">App Recenti</string>
-  <string name="shortcut_action_power">Screen Off</string>
+  <string name="shortcut_action_power">Spegni schermo</string>
   <string name="shortcut_action_search">Ricerca nell\'app</string>
   <!-- SlimSizer -->
-  <string name="listsystem">list</string>
-  <string name="sizer_title">App remover</string>
+  <string name="listsystem">elenco</string>
+  <string name="sizer_title">Rimozione app</string>
   <string name="caution">Attenzione!</string>
   <string name="sizer_message_startup">Questo strumento consente di eliminare le applicazioni di sistema. Usare con cautela ed eliminare solo le apps che sai siano sicure ad essere rimosse.</string>
   <string name="cancel">Annulla</string>
@@ -743,62 +743,62 @@
   <string name="tomahawk_music_player_summary">Un lettore musicale open source con grande sviluppo e molte caratteristiche</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Task Manager</string>
-  <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area</string>
+  <string name="enable_task_manager_summary">Attiva/disattiva pulsante task manager quando la barra di stato è espansa</string>
   <!-- Heads Up button -->
-  <string name="enable_headsup_button_extended_statusbar_title">Extended statusbar button</string>
-  <string name="enable_headsup_button_extended_statusbar_summary">Enable/Disable action for the heads up button in the expanded statusbar area</string>
+  <string name="enable_headsup_button_extended_statusbar_title">Tasto sulla barra di stato</string>
+  <string name="enable_headsup_button_extended_statusbar_summary">Attiva/disattiva tasto heads up nella barra di stato espansa</string>
   <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Power menu animation</string>
-  <string name="power_menu_animation_summary">Change the enter/exit animation of the power menu</string>
-  <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+  <string name="power_menu_animation_title">Animazione menu spegnimento</string>
+  <string name="power_menu_animation_summary">Modifica l\'animazione per l\'entrata e l\'uscita dal menu di spegnimento</string>
+  <string name="power_menu_animation_dialog_title">Scegli animazione menu di spegnimento</string>
   <string name="power_menu_animation_aosp">AOSP (default)</string>
   <string name="power_menu_animation_bottom">In basso</string>
   <string name="power_menu_animation_top">In alto</string>
   <!-- Media art -->
-  <string name="media_art_title">Media cover art</string>
-  <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+  <string name="media_art_title">Copertina media</string>
+  <string name="media_art_summary">Attiva la visualizzazione della copertina dei file multimediali nella schermata di blocco</string>
   <!-- Lockscreen notification count -->
-  <string name="lockscreen_maxnotif_title">Lockscreen notification count</string>
-  <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
+  <string name="lockscreen_maxnotif_title">Numero notifiche schermata di blocco</string>
+  <string name="lockscreen_maxnotif_sumary">Limita il numero massimo di notifiche nella schermata di blocco</string>
   <string name="lockscreen_maxnotif_config">Numero max di notifiche sulla schermata di sblocco</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Autenticazione tramite impronta con vibrazione</string>
-  <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+  <string name="fprint_sucess_vib_summary">Vibra all\'avvenuta autenticazione tramite impronta digitale</string>
   <!-- QS Tiles Columns -->
   <string name="qs_num_columns_title">Numero di tiles per riga</string>
-  <string name="qs_num_columns_showing">%1$s tiles per row showing</string>
+  <string name="qs_num_columns_showing">%1$s di tile per riga</string>
   <!-- QuickSettings main tiles -->
   <string name="qs_main_tiles_title">Ingrandisci prima riga</string>
   <string name="qs_main_tiles_summary_on">Due tile principali nella prima riga</string>
   <string name="qs_main_tiles_summary_off">3, 4 o 5 tile per riga</string>
   <!-- Selinux Switch -->
-  <string name="selinux_switch_title">Selinux Switch options</string>
+  <string name="selinux_switch_title">Opzioni cambio Selinux</string>
   <string name="selinux_switch_summary">SELinux è un insieme di modifiche del kernel. La modifica della modalità può causare effetti indesiderati. Utilizzare a proprio rischio.</string>
   <string name="selinux_title">Modalità di SElinux</string>
   <string name="selinux_permissive_title">Permissivo</string>
   <string name="selinux_enforcing_title">Applicazione</string>
   <string name="selinux_permissive_toast_title">SELinux impostato su permissivo</string>
   <!-- Hide Lockscreen clock, date & alarm -->
-  <string name="hide_lockscreen_items_title">Lockscreen items</string>
+  <string name="hide_lockscreen_items_title">Elementi schermata di blocco</string>
   <string name="hide_lockscreen_clock_title">Orologio</string>
-  <string name="hide_lockscreen_clock_summary">Show lockscreen clock</string>
-  <string name="hide_lockscreen_date_title">Date</string>
-  <string name="hide_lockscreen_date_summary">Show lockscreen date</string>
+  <string name="hide_lockscreen_clock_summary">Mostra orologio nella schermata di blocco</string>
+  <string name="hide_lockscreen_date_title">Data</string>
+  <string name="hide_lockscreen_date_summary">Mostra data nella schermata di blocco</string>
   <string name="hide_lockscreen_alarm_title">Sveglia</string>
-  <string name="hide_lockscreen_alarm_summary">Show lockscreen alarm</string>
+  <string name="hide_lockscreen_alarm_summary">Mostra sveglia nella schermata di blocco</string>
   <!-- Lockscreen Bouncer -->
-  <string name="ls_bouncer_title">Secure lockscreen bouncer</string>
-  <string name="ls_bouncer_summary">Open lockscreen directly to pin/pattern/password when there are %1$s notifications present</string>
-  <string name="ls_bouncer_on">On (default)</string>
-  <string name="ls_bouncer_on_summary">Stock bouncer behavior</string>
-  <string name="ls_bouncer_off">Off</string>
-  <string name="ls_bouncer_off_summary">Open Lockscreen directly to pin/pattern/password</string>
-  <string name="ls_bouncer_dismissable">No dismissable</string>
-  <string name="ls_bouncer_persistent">No persistent</string>
-  <string name="ls_bouncer_all">No dismissable or persistent</string>
+  <string name="ls_bouncer_title">Sblocco sicuro</string>
+  <string name="ls_bouncer_summary">Apri direttamente il riquadro di pin/sequenza/password nella schermata di blocco se ci sono %1$s notifiche presenti</string>
+  <string name="ls_bouncer_on">Attivo (predefinito)</string>
+  <string name="ls_bouncer_on_summary">Sblocco predefinito</string>
+  <string name="ls_bouncer_off">Disattivato</string>
+  <string name="ls_bouncer_off_summary">Apri la schermata di blocco direttamente con pin/sequenza/password</string>
+  <string name="ls_bouncer_dismissable">Non removibili</string>
+  <string name="ls_bouncer_persistent">Non persistenti</string>
+  <string name="ls_bouncer_all">Non removibili o persistenti</string>
   <!-- Lockscreen Alpha -->
-  <string name="lockscreen_alpha">Lockscreen alpha</string>
-  <string name="lockscreen_security_alpha">Lockscreen bouncer alpha</string>
+  <string name="lockscreen_alpha">Trasparenza schermata di blocco</string>
+  <string name="lockscreen_security_alpha">Trasparenza riquadro di sblocco</string>
   <!-- Heads Up -->
   <string name="heads_up_notifications">Heads Up</string>
   <string name="summary_heads_up_enabled">Le notifiche pop-up sono attivate</string>
@@ -807,14 +807,14 @@
   <string name="add_heads_up_package">Aggiungi applicazione</string>
   <string name="add_heads_up_dnd_summary">Non mostrare le notifiche Heads up nelle seguenti applicazioni</string>
   <string name="add_heads_up_blacklist_summary">Non mostrare le notifiche Heads up per le seguenti applicazioni</string>
-  <string name="add_heads_up_whitelist_summary">Post all notification from these applications to heads up</string>
+  <string name="add_heads_up_whitelist_summary">Consenti tutte le notifiche heads aup da queste applicazioni</string>
   <string name="heads_up_dnd_title">Non disturbare</string>
-  <string name="heads_up_blacklist_title">Blacklist</string>
-  <string name="heads_up_whitelist_title">Whitelist</string>
-  <string name="heads_up_contains_key">Already added this application to the list</string>
+  <string name="heads_up_blacklist_title">Lista nera</string>
+  <string name="heads_up_whitelist_title">Lista consentiti</string>
+  <string name="heads_up_contains_key">Questa applicazione è stata già aggiunta alla lista</string>
   <!-- Heads Up Timeout -->
-  <string name="heads_up_time_out_title">Time out</string>
-  <string name="heads_up_time_out_summary">Notification will show for <xliff:g id="number">%d</xliff:g> seconds</string>
+  <string name="heads_up_time_out_title">Tempo di visualizzazione</string>
+  <string name="heads_up_time_out_summary">La notifica rimarrà visibile per <xliff:g id="number">%d</xliff:g> secondi</string>
   <string name="heads_up_time_out_2sec">2 secondi</string>
   <string name="heads_up_time_out_4sec">4 secondi</string>
   <string name="heads_up_time_out_5sec">5 secondi</string>
@@ -838,12 +838,12 @@
   <string name="recents_max_apps_title">Numero massimo di applicazioni consentite</string>
   <string name="recent_panel_scale_title">Dimensioni</string>
   <string name="recent_panel_expanded_mode_title">Modalità estesa</string>
-  <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
+  <string name="recent_panel_expanded_mode_summary">Anteprima espansa per le applicazioni recenti</string>
   <string name="recent_panel_expanded_mode_auto">Automatico (predefinito)</string>
   <string name="recent_panel_expanded_mode_always">Sempre</string>
   <string name="recent_panel_expanded_mode_never">Mai</string>
-  <string name="recent_panel_show_topmost_title">Show topmost task</string>
-  <string name="recent_panel_show_topmost_summary">Don\'t exclude the topmost task in recents view</string>
+  <string name="recent_panel_show_topmost_title">Visualizza attività in primo piano</string>
+  <string name="recent_panel_show_topmost_summary">Non esclude l\'app in primo piano nel pannello delle app recenti</string>
   <string name="recent_panel_bg_color_title">Colore di sfondo del pannello</string>
   <string name="recent_card_bg_color_title">Colore di sfondo delle schede</string>
   <string name="recent_card_text_color_title">Colore del testo delle schede</string>
@@ -851,12 +851,12 @@
   <string name="recent_panel_lefty_mode_title">Visualizza sul lato sinistro</string>
   <string name="recent_panel_lefty_mode_summary">Mostra il pannello delle app recenti sul lato sinistro</string>
   <!-- Keyguard Statusbar Clock -->
-  <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
-  <string name="keyguard_statusbar_clock_summary">Enables the statusbar clock in the keyguard on the left side</string>
+  <string name="keyguard_statusbar_clock_title">Orologio nella barra di stato della schermata di blocco</string>
+  <string name="keyguard_statusbar_clock_summary">Visualizza orologio nella barra di stato della schermata di blocco sul lato sinistro</string>
   <!-- Flashlight notification -->
   <string name="flashlight_notification_title">Notifica per la torcia</string>
   <string name="flashlight_notification_summary">Attiva una notifica per quando la torcia è accesa</string>
   <!-- Header image shadow -->
-  <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
+  <string name="status_bar_custom_header_shadow_title">Ombreggiatura immagine intestazione</string>
   <string name="status_bar_custom_header_shadow_summary">Per una migliore visibilità su immagini luminose</string>
 </resources>

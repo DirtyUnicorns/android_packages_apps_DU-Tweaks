@@ -87,7 +87,7 @@
   <string name="brightness_icon_title">Значок яркости</string>
   <string name="brightness_icon_summary">Показать значок яркости слева от ползунка управления яркостью, чтобы настроить Авто яркость</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
+  <string name="immersive_recents_title">Расширенные недавние</string>
   <string name="immersive_recents_summary">Изменить вид экрана Недавних</string>
   <string name="immersive_recents_dialog_title">Выбрать вид Недавних</string>
   <string name="immersive_recents_default">По умолчанию</string>
