@@ -20,7 +20,7 @@
   <string name="generalui_category">Interfaccia Generale</string>
   <string name="lockscreen_category">Schermata di blocco</string>
   <string name="statusbar_category">Barra di Stato</string>
-  <string name="navigation_category">Barra di Navigazione</string>
+  <string name="navigation_category">Barra di navigazione</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="system_category">Sistema</string>
   <string name="misc_category">Varie</string>
@@ -30,13 +30,13 @@
   <string name="download_category">Area Download</string>
   <string name="expanded_desktop_category">Desktop Esteso</string>
   <string name="misctweaks_category">Tweaks vari</string>
-  <string name="powermenu_category">Menu Tasto Accensione</string>
+  <string name="powermenu_category">Menu tasto accensione</string>
   <string name="quicksettings_category">Quick Settings</string>
-  <string name="recents_category">App Recenti</string>
-  <string name="statusbar_items_category">Elementi Barra di Stato</string>
+  <string name="recents_category">App recenti</string>
+  <string name="statusbar_items_category">Elementi barra di stato</string>
   <string name="statusbar_notifications_category">Notifiche</string>
-  <string name="lockscreen_notifications_category">Notifiche sulla schermata di sblocco</string>
-  <string name="wakelockblocker_category">Wakelock Blocker</string>
+  <string name="lockscreen_notifications_category">Notifiche sulla schermata di blocco</string>
+  <string name="wakelockblocker_category">Blocco wakelock</string>
   <string name="gestures_category">Gesture</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Multi-Window</string>
@@ -330,7 +330,7 @@
   <string name="network_traffic_autohide_threshold">Soglia di inattività</string>
   <string name="ok">OK</string>
   <!-- Time Contextual Header -->
-  <string name="status_bar_custom_header_title">Time Contextual Header</string>
+  <string name="status_bar_custom_header_title">Intestazione contestuale al tempo</string>
   <string name="status_bar_custom_header_summary">Attiva l\'immagine di intestazione nel pannello delle notifiche</string>
   <string name="status_bar_custom_header_default_title">Utilizza immagini Poly HD</string>
   <string name="status_bar_custom_header_default_summary">Abilita per immagini Poly Hd. Disattiva per le immagini originali.</string>
@@ -483,13 +483,13 @@
   <string name="trigger_bottom_title">Altezza area attivazione</string>
   <string name="trigger_bottom_summary">Regola l\'altezza dell\'area di attivazione</string>
   <!-- Breathing Notifications -->
-  <string name="breathing_notifications_title">Breathing notifications</string>
-  <string name="missed_call_breath_title">Breathing Chiamata Persa</string>
-  <string name="missed_call_breath_summary">Le notifiche di chiamata avranno un effetto di respirazione nella barra di stato</string>
-  <string name="voicemail_breath_title">Breathing Messaggio Vocale</string>
-  <string name="voicemail_breath_summary">Le notifiche di messaggi vocali avranno un effetto di respirazione nella barra di stato</string>
-  <string name="sms_breath_title">Breathing SMS</string>
-  <string name="sms_breath_summary">Le notifiche sms avranno un effetto di respirazione nella barra di stato</string>
+  <string name="breathing_notifications_title">Notifiche pulsanti</string>
+  <string name="missed_call_breath_title">Chiamate perse pulsanti</string>
+  <string name="missed_call_breath_summary">Dà alle notifiche delle chiamate perse nella barra di stato un effetto pulsante</string>
+  <string name="voicemail_breath_title">Messaggi vocali pulsanti</string>
+  <string name="voicemail_breath_summary">Dà alle notifiche dei messaggi vocali nella barra di stato un effetto pulsante</string>
+  <string name="sms_breath_title">SMS pulsanti</string>
+  <string name="sms_breath_summary">Dà alle notifiche degli SMS nella barra di stato un effetto pulsante</string>
   <!-- Navigation Bar -->
   <string name="navbar_interface_title">Interfaccia</string>
   <string name="navbar_size">Dimensione Barra di Navigazione</string>
@@ -599,7 +599,7 @@
   <string name="smartbar_category">SmartBar</string>
   <string name="smartbar_settings_title">Impostazioni SmartBar</string>
   <string name="smartbar_editor_title">Attiva/disattiva editor pulsanti</string>
-  <string name="smartbar_editor_summary">Tieni premuto e trascina per cambiare la posizione. Tieni premuto a lungo per visualizzare il menu di modifica. La posizione del pulsante potrebbe cambiare durante la visualizzazione del menu.</string>
+  <string name="smartbar_editor_summary">Tieni premuto e trascina per cambiare la posizione. Tieni premuto a lungo per visualizzare il menu di modifica. La posizione del pulsante potrebbe cambiare durante la visualizzazione del menu</string>
   <string name="smartbar_context_menu_position_title">Posizione pulsanti contestuali</string>
   <string name="smartbar_context_menu_position_summary">Imposta la posizione dei pulsanti contestuali come il tasto menu e il selettore ime</string>
   <string name="smartbar_right">Destra</string>
@@ -618,7 +618,7 @@
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Schermata di blocco</string>
   <string name="lockscreen_config_title">Impostazioni schermata di blocco</string>
-  <string name="lockscreen_wallpaper_config_title">Sfondo schermata di blocco</string>
+  <string name="lockscreen_wallpaper_config_title">Sfondo della schermata di blocco</string>
   <string name="lockscreen_wallpaper_set_title">Imposta nuovo sfondo</string>
   <string name="lockscreen_wallpaper_clear_title">Torna allo sfondo di default</string>
   <string name="reset_lockscreen_wallpaper">Sfondo originale ripsristinato</string>
@@ -641,7 +641,7 @@
   <string name="shortcut_action_help_button">pulsante</string>
   <string name="shortcut_action_help_app">app</string>
   <string name="shortcut_action_help_icon">, mentre si selezione l\'icona appariranno le opzioni di personalizzazione</string>
-  <string name="shortcut_action_help_main">Per aggiungere una %1$s, seleziona l\'icona Aggiungi. Una volta che la %1$s è stata aggiunta, selezionando l\'icona sarà possibile modificare il suo target.%2$s\n\nPer rimuovere la %1$s, è sufficiente uno swipe orizzontale verso destra o sinistra. Per riordinare le scorciatoie presenti nella lista, trascina verticalmente il pulsante posto a sinistra.%2$s\n\nPer cancellare la selezione o riportare le impostazioni predefinite, seleziona Reimposta.</string>
+  <string name="shortcut_action_help_main">Per aggiungere una %1$s, seleziona l\'icona Aggiungi. Una volta che la %1$s è stata aggiunta, selezionando l\'icona sarà possibile modificare il suo target.\n\nPer rimuovere la %1$s, è sufficiente uno swipe orizzontale verso destra o sinistra. Per riordinare le scorciatoie presenti nella lista, trascina verticalmente il pulsante posto a sinistra.\n\nPer cancellare la selezione o riportare le impostazioni predefinite, seleziona Reimposta.</string>
   <string name="shortcut_action_help_delete_last_entry">Rimuovere ogni %1$s presente nella lista disattiverà completamente questa funzione.</string>
   <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Rimuovere ogni %1$s presente nella lista disattiverà il secondo livello della Pie.</string>
   <string name="shortcuts_applications">Applicazioni</string>
@@ -737,7 +737,7 @@
   <string name="sizer_message_filesuccess">Profilo creato.</string>
   <string name="sizer_message_filefail">Impossibile creare il profilo.</string>
   <string name="sizer_message_noselect">Niente selezionato.</string>
-  <string name="system_app_remover">Sistem App Remover</string>
+  <string name="system_app_remover">Rimozione app di sistema</string>
   <!-- Tomahawk Music Player -->
   <string name="tomahawk_music_player_title">Lettore musicale Tomahawk</string>
   <string name="tomahawk_music_player_summary">Un lettore musicale open source con grande sviluppo e molte caratteristiche</string>
@@ -760,7 +760,7 @@
   <!-- Lockscreen notification count -->
   <string name="lockscreen_maxnotif_title">Numero notifiche schermata di blocco</string>
   <string name="lockscreen_maxnotif_sumary">Limita il numero massimo di notifiche nella schermata di blocco</string>
-  <string name="lockscreen_maxnotif_config">Numero max di notifiche sulla schermata di sblocco</string>
+  <string name="lockscreen_maxnotif_config">Numero max di notifiche sulla schermata di blocco</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Autenticazione tramite impronta con vibrazione</string>
   <string name="fprint_sucess_vib_summary">Vibra all\'avvenuta autenticazione tramite impronta digitale</string>

@@ -30,56 +30,56 @@
   <string name="download_category">Download Center</string>
   <string name="expanded_desktop_category">Utökat skrivbord</string>
   <string name="misctweaks_category">Div. Tweaks</string>
-  <string name="powermenu_category">Power Menu</string>
-  <string name="quicksettings_category">Quick Settings</string>
+  <string name="powermenu_category">Avstängningsmeny</string>
+  <string name="quicksettings_category">Snabbinställningar</string>
   <string name="recents_category">Senaste</string>
-  <string name="statusbar_items_category">Statusbar Items</string>
-  <string name="statusbar_notifications_category">Notifications</string>
+  <string name="statusbar_items_category">Statusfältets objekt</string>
+  <string name="statusbar_notifications_category">Notiser</string>
   <string name="lockscreen_notifications_category">Låsskärms notifikationer</string>
   <string name="wakelockblocker_category">Wakelock Blocker</string>
-  <string name="gestures_category">Gestures</string>
+  <string name="gestures_category">Gester</string>
   <string name="multitasking_category">Multitasking</string>
-  <string name="multiwindow_category">Multi-Window</string>
+  <string name="multiwindow_category">Multi-fönster</string>
   <string name="listview_animations_category">List View Animations</string>
-  <string name="system_animations_category">System Animations</string>
+  <string name="system_animations_category">Systemanimationer</string>
   <string name="omniswitch_category">OmniSwitch</string>
-  <string name="weather_category">Weather Widget</string>
+  <string name="weather_category">Väderwidget</string>
   <string name="breathing_notifications_category">Breathing Notifications</string>
-  <string name="button_settings">Buttons</string>
+  <string name="button_settings">Knappar</string>
   <string name="category_heads_up">Heads Up</string>
-  <string name="lockscreen_colors_fonts_category_title">Colors &amp; Fonts</string>
+  <string name="lockscreen_colors_fonts_category_title">Färger &amp; teckensnitt</string>
   <!-- OmniSwitch -->
-  <string name="aosp_recents_title">AOSP recents</string>
-  <string name="omniswitch_recents_title">OmniSwitch recents</string>
+  <string name="aosp_recents_title">AOSP senaste</string>
+  <string name="omniswitch_recents_title">OmniSwitch senaste</string>
   <string name="omniswitch_category">OmniSwitch</string>
-  <string name="recents_use_omniswitch_title">Enable omni recents</string>
-  <string name="recents_use_omniswitch_summary">Use OmniSwitch for recents view</string>
-  <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
+  <string name="recents_use_omniswitch_title">Aktivera omni senaste</string>
+  <string name="recents_use_omniswitch_summary">Använd OmniSwitch för vyn senaste</string>
+  <string name="omniswitch_start_settings_summary">Öppna OmniSwitch inställningar</string>
   <string name="omniswitch_first_time_title">Information</string>
-  <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
+  <string name="omniswitch_first_time_message">Kontrollera att du har aktiverat OmniSwitch. Du kan göra detta genom att använda \"Inställningar\" nedan</string>
   <!-- Dialog -->
-  <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
-  <string name="dirtytweaks_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a DU developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
-  <string name="dirtytweaks_dialog_toast">READ THE WHOLE THING!</string>
+  <string name="dirtytweaks_dialog_title">Hjälp oss att hjälpa dig!!</string>
+  <string name="dirtytweaks_dialog_message">Tyvärr är vi inte trollkarlar! \n\nSå om du hittar ett fel med någon av dessa inställningar, vänligen öppna upp ett ärende på Jira eller kontakta en DU-utvecklare (på engelska) med följande.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nOm du undviker att rapportera något, förvänta dig inte att saker skall fixas. Kom ihåg, vi är inte trollkarlar så vi missar saker.</string>
+  <string name="dirtytweaks_dialog_toast">LÄS HELA!</string>
   <!-- Toast Icons -->
-  <string name="toast_icon_title">Toast icon</string>
-  <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+  <string name="toast_icon_title">Toast-ikonen</string>
+  <string name="toast_icon_summary">Visa app-ikonen tillhörande toasten</string>
   <!-- Download Center -->
   <string name="gapps_title">Google Apps (GAPPS)</string>
   <string name="gapps_summary">Lista över GAPPS paket att flasha i recovery</string>
-  <string name="gapps_credit">Although GAPPS packages are not compiled from source and don\'t belong to nobody but Google, we would still like to take the time to thank a few individuals and team that maintain these packages for all of us and just make things easier for everyone.\n\nSpecial Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
+  <string name="gapps_credit">Även om GAPPS-paketet inte har skapats från grunden och inte tillhör någon annan än Google, vill vi ändå ta oss tid att tacka några individer och team som upprätthåller dessa paket och bara göra saker lättare för oss alla.\n\nSpeciellt tack till Team BlackOut, Michael Banks, TKruzze och M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
-  <string name="title_quick_pulldown">Quick pulldown</string>
-  <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
-  <string name="quick_pulldown_off">Off</string>
-  <string name="quick_pulldown_left">Left</string>
-  <string name="quick_pulldown_right">Right</string>
-  <string name="smart_pulldown_title">Smart pulldown</string>
-  <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
-  <string name="smart_pulldown_off">Off</string>
-  <string name="smart_pulldown_dismissable">No dismissable</string>
-  <string name="smart_pulldown_persistent">No persistent</string>
-  <string name="smart_pulldown_all">No dismissable or persistent</string>
+  <string name="title_quick_pulldown">Snabb neddragning</string>
+  <string name="summary_quick_pulldown">%1$s kant av statusfältet drar ned snabbinställningar</string>
+  <string name="quick_pulldown_off">Av</string>
+  <string name="quick_pulldown_left">Vänster</string>
+  <string name="quick_pulldown_right">Höger</string>
+  <string name="smart_pulldown_title">Smart neddragning</string>
+  <string name="smart_pulldown_summary">Öppna snabbinställningar när det finns %1$s notiser närvarande</string>
+  <string name="smart_pulldown_off">Av</string>
+  <string name="smart_pulldown_dismissable">Inga avfärdbara</string>
+  <string name="smart_pulldown_persistent">Inga permanenta</string>
+  <string name="smart_pulldown_all">Inga avfärdbara eller permanenta</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Brightness slider</string>
   <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
@@ -90,9 +90,9 @@
   <string name="immersive_recents_title">Immersive Recents</string>
   <string name="immersive_recents_summary">Change the view of the recents screen</string>
   <string name="immersive_recents_dialog_title">Select recents view</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
+  <string name="immersive_recents_default">Standard</string>
+  <string name="immersive_recents_fullscreen">Helskärm</string>
+  <string name="immersive_recents_statusbar">Endast statusfält</string>
   <string name="immersive_recents_navbar">Navbar only</string>
   <!-- Power Menu -->
   <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
@@ -144,44 +144,44 @@
   <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
   <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
   <string name="double_tap_to_sleep_lockscreen_title">DT2S on Lockscreen</string>
-  <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
+  <string name="double_tap_to_sleep_lockscreen_summary">Dubbeltryck på den övre tredjedelen eller botten av låsskärmen att försätta enheten i viloläge</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Ad blocker</string>
-  <string name="disable_ads_title">Disable Ads</string>
+  <string name="adblocker_title">Reklamblockerare</string>
+  <string name="disable_ads_title">Inaktivera reklam</string>
   <string name="disable_ads_summary">Change hosts file to disable ads</string>
   <!-- Volume Key Rotation -->
-  <string name="swap_volume_buttons_title">Reorient</string>
-  <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+  <string name="swap_volume_buttons_title">Ändra håll</string>
+  <string name="swap_volume_buttons_summary">Växla volymknappar när skärmen är roterad</string>
   <!-- Volume rocker wake -->
-  <string name="volume_rocker_wake_title">Volume rocker wake</string>
-  <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device\nOverrides playback control</string>
+  <string name="volume_rocker_wake_title">Väck med volymknappar</string>
+  <string name="volume_rocker_wake_summary">Att trycka på volymknapparna kommer att väcka enheten\nåsidosätter uppspelningskontroll</string>
   <!-- Volume rocker music control -->
-  <string name="volume_rocker_music_controls_title">Playback control</string>
-  <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+  <string name="volume_rocker_music_controls_title">Uppspelningskontroll</string>
+  <string name="volume_rocker_music_controls_summary">Långtryck på volymknapparna med skärmen av kommer att hoppa mellan musikspår</string>
   <!-- Battery options -->
-  <string name="battery_title">Battery</string>
-  <string name="battery2_summary">Customize battery icons and percentage</string>
-  <string name="status_bar_battery_style_title">Battery status style</string>
-  <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-  <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
-  <string name="status_bar_battery_style_circle">Circle</string>
-  <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+  <string name="battery_title">Batteri</string>
+  <string name="battery2_summary">Anpassa batteriikonerna och procent</string>
+  <string name="status_bar_battery_style_title">Stil på batteristatus</string>
+  <string name="status_bar_battery_style_icon_portrait">Ikon i porträttläge</string>
+  <string name="status_bar_battery_style_icon_landscape">Ikon i landskapsläge</string>
+  <string name="status_bar_battery_style_circle">Cirkel</string>
+  <string name="status_bar_battery_style_dotted_circle">Prickad cirkel</string>
   <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Hidden</string>
-  <string name="status_bar_battery_percentage_title">Show battery percentage</string>
-  <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
-  <string name="status_bar_battery_percentage_default">Hidden (default)</string>
-  <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-  <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+  <string name="status_bar_battery_style_hidden">Dold</string>
+  <string name="status_bar_battery_percentage_title">Visa batteriprocent</string>
+  <string name="status_bar_battery_percentage_dialog_title">Batteriprocent</string>
+  <string name="status_bar_battery_percentage_default">Dold (standard)</string>
+  <string name="status_bar_battery_percentage_text_inside">Inuti ikonen</string>
+  <string name="status_bar_battery_percentage_text_next">Bredvid ikonen</string>
   <!-- Battery Bar -->
-  <string name="battery_bar_title">Battery bar</string>
-  <string name="battery_bar">Battery bar location</string>
-  <string name="battery_bar_color">Battery bar color</string>
-  <string name="battery_bar_cat">Battery bar style</string>
+  <string name="battery_bar_title">Batteristreck</string>
+  <string name="battery_bar">Batteristreckets placering</string>
+  <string name="battery_bar_color">Batteristreckets färg</string>
+  <string name="battery_bar_cat">Batteristreckets stil</string>
   <string name="battery_bar_style_title">Battery bar alignment</string>
-  <string name="battery_bar_thickness_title">Battery bar thickness</string>
-  <string name="battery_bar_animate_title">Charging animation</string>
-  <string name="battery_bar_animate_summary">Enable to animate the battery bar while charging</string>
+  <string name="battery_bar_thickness_title">Batteristreckets tjocklek</string>
+  <string name="battery_bar_animate_title">Laddningsanimation</string>
+  <string name="battery_bar_animate_summary">Aktivera för att animera batteristrecket under laddning</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Clock Fonts</string>
   <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
