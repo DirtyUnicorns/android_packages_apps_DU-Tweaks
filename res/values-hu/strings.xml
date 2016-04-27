@@ -450,7 +450,7 @@
   <string name="ga_save_success">Gesztus mentve: %s</string>
   <string name="ga_rename_action">OK</string>
   <string name="ga_cancel_action">Mégsem</string>
-  <string name="ga_gestures_loading">Loading gestures\u2026</string>
+  <string name="ga_gestures_loading">Gesztusok betöltése\u2026</string>
   <string name="ga_gestures_empty">Nincs gesztus</string>
   <string name="ga_gestures_activity">Gesztusok</string>
   <string name="ga_gestures_edit">Szerkesztés</string>
@@ -728,7 +728,7 @@
   <string name="sizer_message_delete">Biztosan törölni szeretnéd ezt az alkalmazást?</string>
   <string name="btn_delete">Kiválasztottak törlése most!</string>
   <string name="delete_progress_title">Törlés</string>
-  <string name="delete_progress">Selected files are being deleted\u2026</string>
+  <string name="delete_progress">Kijelölt fájlok törlése folyamatban\u2026</string>
   <string name="delete_success">Törölve</string>
   <string name="delete_fail">Törlés sikertelen</string>
   <string name="btn_profile">Profil</string>
