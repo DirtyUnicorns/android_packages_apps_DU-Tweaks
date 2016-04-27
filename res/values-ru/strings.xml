@@ -450,7 +450,7 @@
   <string name="ga_save_success">Жест сохранён</string>
   <string name="ga_rename_action">ОК</string>
   <string name="ga_cancel_action">Отмена.</string>
-  <string name="ga_gestures_loading">Загрузка жестов...</string>
+  <string name="ga_gestures_loading">Loading gestures\u2026</string>
   <string name="ga_gestures_empty">Нет жестов</string>
   <string name="ga_gestures_activity">Жесты</string>
   <string name="ga_gestures_edit">Изменить</string>
@@ -728,7 +728,7 @@
   <string name="sizer_message_delete">Вы точно хотите удалить выбранное приложение?</string>
   <string name="btn_delete">Сейчас же удалить выбранные приложения!</string>
   <string name="delete_progress_title">Идет удаление</string>
-  <string name="delete_progress">Выбранные файлы удаляются...</string>
+  <string name="delete_progress">Selected files are being deleted\u2026</string>
   <string name="delete_success">Удалено</string>
   <string name="delete_fail">Невозможно удалить</string>
   <string name="btn_profile">Профиль</string>

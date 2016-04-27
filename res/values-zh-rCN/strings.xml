@@ -450,7 +450,7 @@
   <string name="ga_save_success">手势已保存在%s</string>
   <string name="ga_rename_action">完成</string>
   <string name="ga_cancel_action">取消</string>
-  <string name="ga_gestures_loading">正在加载手势...</string>
+  <string name="ga_gestures_loading">Loading gestures\u2026</string>
   <string name="ga_gestures_empty">没有手势</string>
   <string name="ga_gestures_activity">手势</string>
   <string name="ga_gestures_edit">编辑</string>
@@ -728,7 +728,7 @@
   <string name="sizer_message_delete">您确定要删除这个应用程序吗？</string>
   <string name="btn_delete">立即删除选定的应用程序 ！</string>
   <string name="delete_progress_title">正在删除</string>
-  <string name="delete_progress">正在删除选定的应用程序...</string>
+  <string name="delete_progress">Selected files are being deleted\u2026</string>
   <string name="delete_success">已删除</string>
   <string name="delete_fail">无法删除</string>
   <string name="btn_profile">配置文件</string>
