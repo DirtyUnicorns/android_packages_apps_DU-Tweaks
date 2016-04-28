@@ -43,4 +43,45 @@
             android:summary="@string/eos_fling_lavalamp_summary"
             android:dependency="eos_fling_show_pulse" />
 
+        <PreferenceCategory
+            android:key="pulse_advanced_key"
+            android:title="@string/pulse_advanced_category">
+
+        <ListPreference
+            android:key="pulse_custom_dimen"
+            android:title="@string/pulse_custom_dimen"
+            android:entries="@array/pulse_custom_dimen_entries"
+            android:entryValues="@array/pulse_custom_dimen_values"
+            android:dependency="eos_fling_show_pulse" />
+
+        <ListPreference
+            android:key="pulse_custom_div"
+            android:title="@string/pulse_custom_div"
+            android:entries="@array/pulse_custom_div_entries"
+            android:entryValues="@array/pulse_custom_div_values"
+            android:dependency="eos_fling_show_pulse" />
+
+        <ListPreference
+            android:key="pulse_filled_block_size"
+            android:title="@string/pulse_filled_block_size"
+            android:entries="@array/pulse_filled_block_size_entries"
+            android:entryValues="@array/pulse_filled_block_size_values"
+            android:dependency="eos_fling_show_pulse" />
+
+        <ListPreference
+            android:key="pulse_empty_block_size"
+            android:title="@string/pulse_empty_block_size"
+            android:entries="@array/pulse_empty_block_size_entries"
+            android:entryValues="@array/pulse_empty_block_size_values"
+            android:dependency="eos_fling_show_pulse" />
+
+        <ListPreference
+            android:key="pulse_custom_fudge_factor"
+            android:title="@string/pulse_custom_fudge_factor"
+            android:entries="@array/pulse_custom_fudge_factor_entries"
+            android:entryValues="@array/pulse_custom_fudge_factor_values"
+            android:dependency="eos_fling_show_pulse" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
