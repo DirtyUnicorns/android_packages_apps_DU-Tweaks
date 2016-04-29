@@ -95,8 +95,6 @@ public class ActionListViewSettings extends ListFragment implements
 
     private static final int DEFAULT_MAX_ACTION_NUMBER = 5;
 
-    public static final int REQUEST_PICK_CUSTOM_ICON = 1000;
-
     private int mActionMode;
     private int mMaxAllowedActions;
     private boolean mUseAppPickerOnly;
@@ -354,23 +352,6 @@ public class ActionListViewSettings extends ListFragment implements
                     || requestCode == SlimShortcutPickerHelper.REQUEST_PICK_APPLICATION
                     || requestCode == SlimShortcutPickerHelper.REQUEST_CREATE_SHORTCUT) {
                 mPicker.onActivityResult(requestCode, resultCode, data);
-
-            } else if (requestCode == REQUEST_PICK_CUSTOM_ICON && mPendingIndex != -1) {
-                if (mImageTmp.length() == 0 || !mImageTmp.exists()) {
-                    mPendingIndex = -1;
-                    Toast.makeText(mActivity,
-                            getResources().getString(R.string.shortcut_image_not_valid),
-                            Toast.LENGTH_LONG).show();
-                    return;
-                }
-                File image = new File(mActivity.getFilesDir() + File.separator
-                        + "shortcut_" + System.currentTimeMillis() + ".png");
-                String path = image.getAbsolutePath();
-                mImageTmp.renameTo(image);
-                image.setReadable(true, false);
-                updateAction(null, null, path, mPendingIndex, false);
-                mPendingIndex = -1;
-            }
         } else {
             if (mImageTmp.exists()) {
                 mImageTmp.delete();
@@ -380,6 +361,7 @@ public class ActionListViewSettings extends ListFragment implements
             mPendingIndex = -1;
         }
         super.onActivityResult(requestCode, resultCode, data);
+        }
     }
 
     private void updateAction(String action, String description, String icon,
@@ -864,31 +846,6 @@ public class ActionListViewSettings extends ListFragment implements
                                         }
                                     });
                                     holoDialog.show();
-                                    break;
-                                case 2: // Custom user icon
-                                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT, null);
-                                    intent.setType("image/*");
-                                    intent.putExtra("crop", "true");
-                                    intent.putExtra("scale", true);
-                                    intent.putExtra("outputFormat",
-                                        Bitmap.CompressFormat.PNG.toString());
-                                    intent.putExtra("aspectX", 100);
-                                    intent.putExtra("aspectY", 100);
-                                    intent.putExtra("outputX", 100);
-                                    intent.putExtra("outputY", 100);
-                                    try {
-                                        getOwner().mImageTmp.createNewFile();
-                                        getOwner().mImageTmp.setWritable(true, false);
-                                        intent.putExtra(MediaStore.EXTRA_OUTPUT,
-                                            Uri.fromFile(getOwner().mImageTmp));
-                                        intent.putExtra("return-data", false);
-                                        getOwner().startActivityForResult(
-                                            intent, REQUEST_PICK_CUSTOM_ICON);
-                                    } catch (IOException e) {
-                                        e.printStackTrace();
-                                    } catch (ActivityNotFoundException e) {
-                                        e.printStackTrace();
-                                    }
                                     break;
                             }
                         }

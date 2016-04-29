@@ -720,7 +720,6 @@
     <string name="shortcuts_icon_picker_type">Select icon type:</string>
     <string name="shortcuts_icon_default">Default</string>
     <string name="shortcuts_icon_presets">System icons</string>
-    <string name="shortcuts_icon_custom">Gallery</string>
     <string name="shortcuts_icon_picker_choose_icon_title">Choose icon</string>
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
