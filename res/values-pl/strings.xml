@@ -450,7 +450,7 @@
   <string name="ga_save_success">Gest zapisany w %s</string>
   <string name="ga_rename_action">OK</string>
   <string name="ga_cancel_action">Anuluj</string>
-  <string name="ga_gestures_loading">Loading gestures\u2026</string>
+  <string name="ga_gestures_loading">Ładowanie gestów\u2026</string>
   <string name="ga_gestures_empty">Brak gestów</string>
   <string name="ga_gestures_activity">Gesty</string>
   <string name="ga_gestures_edit">Edytuj</string>
@@ -728,7 +728,7 @@
   <string name="sizer_message_delete">Czy na pewno chcesz usunąć tę aplikację?</string>
   <string name="btn_delete">Usuń teraz wybrane aplikacje!</string>
   <string name="delete_progress_title">Usuwanie</string>
-  <string name="delete_progress">Selected files are being deleted\u2026</string>
+  <string name="delete_progress">Wybrane pliki są usuwane\u2026</string>
   <string name="delete_success">Usunięty</string>
   <string name="delete_fail">Nie można usunąć</string>
   <string name="btn_profile">Profil</string>
