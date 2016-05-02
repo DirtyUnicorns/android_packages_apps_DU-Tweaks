@@ -34,6 +34,7 @@ import android.preference.SeekBarPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
+import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 import com.android.internal.util.du.DuUtils;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
@@ -42,10 +43,14 @@ import com.android.settings.Utils;
 public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
+    private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
     private static final String POWERMENU_TORCH = "powermenu_torch";
+    private static final String POWER_REBOOT_DIALOG_DIM = "power_reboot_dialog_dim";
 
     private ListPreference mAdvancedReboot;
+    private ListPreference mPowerMenuAnimations;
     private SwitchPreference mPowermenuTorch;
+    private SeekBarPreferenceCham mPowerRebootDialogDim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,6 +67,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
         mAdvancedReboot.setOnPreferenceChangeListener(this);
 
+        mPowerMenuAnimations = (ListPreference) findPreference(POWER_MENU_ANIMATIONS);
+        mPowerMenuAnimations.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
+        mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+        mPowerMenuAnimations.setOnPreferenceChangeListener(this);
+
         mPowermenuTorch = (SwitchPreference) findPreference(POWERMENU_TORCH);
         mPowermenuTorch.setOnPreferenceChangeListener(this);
         if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
@@ -70,6 +81,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         mPowermenuTorch.setChecked((Settings.System.getInt(resolver,
                 Settings.System.POWERMENU_TORCH, 0) == 1));
         }
+
+        mPowerRebootDialogDim = (SeekBarPreferenceCham) prefScreen.findPreference(POWER_REBOOT_DIALOG_DIM);
+        int powerRebootDialogDim = Settings.System.getInt(resolver,
+                Settings.System.POWER_REBOOT_DIALOG_DIM, 50);
+        mPowerRebootDialogDim.setValue(powerRebootDialogDim / 1);
+        mPowerRebootDialogDim.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -94,10 +111,21 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                     Integer.valueOf((String) newValue));
             mAdvancedReboot.setValue(String.valueOf(newValue));
             mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
+        } else if (preference == mPowerMenuAnimations) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS,
+                    Integer.valueOf((String) newValue));
+            mPowerMenuAnimations.setValue(String.valueOf(newValue));
+            mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+            return true;
         } else if (preference == mPowermenuTorch) {
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.POWERMENU_TORCH, checked ? 1:0);
+            return true;
+        } else if (preference == mPowerRebootDialogDim) {
+            int alpha = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.POWER_REBOOT_DIALOG_DIM, alpha * 1);
             return true;
         }
         return false;
