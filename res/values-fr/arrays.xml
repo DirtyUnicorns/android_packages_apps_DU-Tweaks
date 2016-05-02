@@ -28,11 +28,6 @@
         <item>En dessous de la barre de navigation</item>
     </string-array>
 
-    <string-array name="battery_bar_style_entries">
-        <item>Normale</item>
-        <item>Centrée et reflétée</item>
-    </string-array>
-
     <!-- SlimSizer -->
     <string-array name="slimsizer_profile_array">
         <item >Charger un profil</item>

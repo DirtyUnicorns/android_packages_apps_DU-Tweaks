@@ -32,11 +32,6 @@
         <item>Unter der Navigationsleiste</item>
     </string-array>
 
-    <string-array name="battery_bar_style_entries">
-        <item>Regulär</item>
-        <item>Zentriert-gespiegelt</item>
-    </string-array>
-
     <!-- SlimSizer -->
     <string-array name="slimsizer_profile_array">
         <item >Profil laden</item>

@@ -184,6 +184,8 @@
   <string name="battery_bar_thickness_title">Dicke</string>
   <string name="battery_bar_animate_title">Ladeanimation</string>
   <string name="battery_bar_animate_summary">Aktiviert die Ladeanimation beim Laden des Geräts</string>
+  <string name="battery_bar_style_regular">Regulär</string>
+  <string name="battery_bar_style_center_mirrored">Zentriert-gespiegelt</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Sperrbildschirm-Schriftart</string>
   <string name="lock_clock_font_summary">Ändert die Schriftart der Uhr auf dem Sperrbildschirm</string>

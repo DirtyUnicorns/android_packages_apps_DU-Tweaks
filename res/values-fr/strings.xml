@@ -184,6 +184,8 @@
   <string name="battery_bar_thickness_title">Épaisseur</string>
   <string name="battery_bar_animate_title">Animation lors de la charge</string>
   <string name="battery_bar_animate_summary">Animer la barre de batterie pendant la charge</string>
+  <string name="battery_bar_style_regular">Normale</string>
+  <string name="battery_bar_style_center_mirrored">Centrée et reflétée</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Police d\'écriture de l\'horloge</string>
   <string name="lock_clock_font_summary">Modifier la police d\'écriture de l\'horloge de l\'écran de déverrouillage</string>

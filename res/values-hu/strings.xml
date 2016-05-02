@@ -184,6 +184,8 @@
   <string name="battery_bar_thickness_title">Akkumulátor sáv vastagság</string>
   <string name="battery_bar_animate_title">Töltési animáció</string>
   <string name="battery_bar_animate_summary">Akkumulátor sáv animálásának engedélyezése töltés közben</string>
+  <string name="battery_bar_style_regular">Szokásos</string>
+  <string name="battery_bar_style_center_mirrored">Középen tükrözött</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Óra betűtípusok</string>
   <string name="lock_clock_font_summary">A zárképernyő óra alapértelmezett betűtípusának változtatása</string>
