@@ -739,7 +739,6 @@
     <string-array name="icon_types">
         <item>@string/shortcuts_icon_default</item>
         <item>@string/shortcuts_icon_presets</item>
-        <item>@string/shortcuts_icon_custom</item>
     </string-array>
 
     <string-array name="shortcut_icon_picker_labels">
