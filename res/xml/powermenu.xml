@@ -18,12 +18,6 @@
     android:title="@string/powermenu_category" >
 
          <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-            android:key="power_menu_lockscreen"
-            android:title="@string/powermenu_lockscreen_title"
-            android:summary="@string/powermenu_lockscreen_summary"
-            android:defaultValue="true" />
-
-         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="powermenu_power"
             android:title="@string/powermenu_power"
             android:defaultValue="true" />
@@ -77,5 +71,35 @@
             android:key="powermenu_soundpanel"
             android:title="@string/powermenu_soundpanel"
             android:defaultValue="true" />
+
+        <!-- Additional options -->
+        <PreferenceCategory
+            android:key="powermenu_options_category"
+            android:title="@string/powermenu_options" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="power_menu_lockscreen"
+            android:title="@string/powermenu_lockscreen_title"
+            android:summary="@string/powermenu_lockscreen_summary"
+            android:defaultValue="true" />
+
+         <ListPreference
+            android:key="power_menu_animations"
+            android:title="@string/power_menu_animation_title"
+            android:dialogTitle="@string/power_menu_animation_dialog_title"
+            android:entries="@array/power_menu_animations_entries"
+            android:entryValues="@array/power_menu_animations_values"
+            android:summary="@string/power_menu_animation_summary"
+            android:persistent="false" />
+
+         <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+            android:key="power_reboot_dialog_dim"
+            android:title="@string/powermenu_dialog_dim"
+            android:max="100"
+            settings:minimum="0"
+            settings:interval="1"
+            settings:unitsLeft=""
+            settings:unitsRight="%"
+            android:persistent="false" />
 
 </PreferenceScreen>
