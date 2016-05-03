@@ -17,7 +17,7 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">General UI</string>
+  <string name="generalui_category">Geral</string>
   <string name="lockscreen_category">Lockscreen</string>
   <string name="statusbar_category">Status Bar</string>
   <string name="navigation_category">Navigation</string>
