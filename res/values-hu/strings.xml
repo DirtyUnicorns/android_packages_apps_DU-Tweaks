@@ -106,8 +106,8 @@
   <string name="powermenu_settings">Beállítások</string>
   <string name="powermenu_lockdown">Lezárás</string>
   <string name="powermenu_soundpanel">Hang panel</string>
-  <string name="powermenu_options">Additional options</string>
-  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
+  <string name="powermenu_options">További beállítások</string>
+  <string name="powermenu_dialog_dim">Dimenzió</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Sperciális újraindítás</string>
   <string name="advanced_reboot_summary">A kikapcsoló menü tratalmazza a következő újraindításokat: recovery és bootloader</string>
