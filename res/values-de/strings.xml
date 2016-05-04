@@ -106,6 +106,8 @@
   <string name="powermenu_settings">Einstellungen</string>
   <string name="powermenu_lockdown">Sperren</string>
   <string name="powermenu_soundpanel">Benachrichtigungsmodus</string>
+  <string name="powermenu_options">Additional options</string>
+  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Erweiterter Neustart</string>
   <string name="advanced_reboot_summary">Fügt dem Neustartmenü Optionen für den Neustart in die Recovery und den Bootloader hinzu</string>
@@ -634,14 +636,14 @@
   <string name="shortcut_action_max">Maximale Einträge erreicht!</string>
   <string name="shortcut_action_warning">Warnung!</string>
   <string name="shortcut_action_warning_message">Es ist nicht möglich den letzten Eintrag zu löschen!</string>
-  <string name="shortcut_action_disable_message">Diese Funktion ist deaktiviert da keine Verknüpfung festgelegt ist.\nFüge einen Eintrag hinzu um diese Funktion zu aktivieren.\nÜber das Menü erhälst du weiter Informationen.</string>
+  <string name="shortcut_action_disable_message">Diese Funktion ist deaktiviert, da keine Verknüpfung festgelegt ist.\nFüge einen Eintrag hinzu, um diese Funktion zu aktivieren.\nÜber das Menü erhälst du weitere Informationen.</string>
   <string name="shortcut_image_not_valid">Die gewählte App hat kein gültiges Symbol oder erlaubt keinen Bildzuschnitt. Verwenden Sie eine andere App</string>
   <string name="shortcut_duplicate_entry">Die ausgewählte Aktion kann nicht zweimal hinzugefügt werden</string>
   <string name="shortcut_action_help_shortcut">Verknüpfung</string>
   <string name="shortcut_action_help_button">Schalter</string>
   <string name="shortcut_action_help_app">App</string>
   <string name="shortcut_action_help_icon">\nTippen Sie auf das rechte Symbol um es das Verknüpfungssymbol anzupassen.</string>
-  <string name="shortcut_action_help_main">Zum hinzufügen von Verknüpfungen, wählen Sie das + Symbol. Wenn eine Verknüpfung hinzugefügt ist, können Sie durch ein Tippen auf den Listeneintrag die Aktion ändern.\n\nZum Entfernen von Verknüpfungen, wischen Sie auf dem Listeneintrag nach links oder rechts. Zum Ordnen halten Sie auf das linke Symbol und ziehen Sie anschließend die Verknüpfung an die gewünschte Stelle.\n\nUm die Verknüpfungen zurückzusetzen wählen Sie den Zurücksetzen-Eintrag im Menü.</string>
+  <string name="shortcut_action_help_main">Um Verknüpfungen hinzuzufügen, wählen Sie das + Symbol. Wenn eine Verknüpfung hinzugefügt wurde, können Sie durch ein Tippen auf den Listeneintrag die Aktion ändern.\n\nZum Entfernen von Verknüpfungen, wischen Sie auf dem Listeneintrag nach links oder rechts. Zum Ordnen halten Sie das linke Symbol und ziehen Sie anschließend die Verknüpfung an die gewünschte Stelle.\n\nUm die Verknüpfungen zurückzusetzen, wählen Sie den Zurücksetzen-Eintrag im Menü.</string>
   <string name="shortcut_action_help_delete_last_entry">Durch das Zurücksetzen wird die Funktion wieder deaktiviert.</string>
   <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Entfernen aller %1$s in der Liste wird den zweiten Pie Layer entfernen.</string>
   <string name="shortcuts_applications">Anwendungen</string>
@@ -649,7 +651,6 @@
   <string name="shortcuts_icon_picker_type">Symbol-Typ auswählen:</string>
   <string name="shortcuts_icon_default">Standard</string>
   <string name="shortcuts_icon_presets">System-Symbole</string>
-  <string name="shortcuts_icon_custom">Gallerie</string>
   <string name="shortcuts_icon_picker_choose_icon_title">Symbol auswählen</string>
   <string name="shortcuts_icon_picker_alarm">Wecker</string>
   <string name="shortcuts_icon_picker_andy">Andy</string>

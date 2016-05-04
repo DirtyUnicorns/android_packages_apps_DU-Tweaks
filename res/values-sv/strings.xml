@@ -40,7 +40,7 @@
   <string name="gestures_category">Gester</string>
   <string name="multitasking_category">Multitasking</string>
   <string name="multiwindow_category">Multi-fönster</string>
-  <string name="listview_animations_category">List View Animations</string>
+  <string name="listview_animations_category">ListVy Animation</string>
   <string name="system_animations_category">Systemanimationer</string>
   <string name="omniswitch_category">OmniSwitch</string>
   <string name="weather_category">Väderwidget</string>
@@ -106,6 +106,8 @@
   <string name="powermenu_settings">Settings</string>
   <string name="powermenu_lockdown">Lock Down</string>
   <string name="powermenu_soundpanel">Sound Panel</string>
+  <string name="powermenu_options">Additional options</string>
+  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Advanced reboot</string>
   <string name="advanced_reboot_summary">Inkludera alternativ i power menyn för omstart in till recovery och bootloader</string>
@@ -649,7 +651,6 @@
   <string name="shortcuts_icon_picker_type">Select icon type:</string>
   <string name="shortcuts_icon_default">Default</string>
   <string name="shortcuts_icon_presets">System icons</string>
-  <string name="shortcuts_icon_custom">Gallery</string>
   <string name="shortcuts_icon_picker_choose_icon_title">Choose icon</string>
   <string name="shortcuts_icon_picker_alarm">Alarm</string>
   <string name="shortcuts_icon_picker_andy">Andy</string>

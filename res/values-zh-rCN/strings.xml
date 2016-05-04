@@ -106,6 +106,8 @@
   <string name="powermenu_settings">设置</string>
   <string name="powermenu_lockdown">锁定设备</string>
   <string name="powermenu_soundpanel">声音面板</string>
+  <string name="powermenu_options">Additional options</string>
+  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">高级重启</string>
   <string name="advanced_reboot_summary">在电源菜单中包含重启到 Revcovery 和 Bootloader 的选项</string>
@@ -649,7 +651,6 @@
   <string name="shortcuts_icon_picker_type">选择图标类型：</string>
   <string name="shortcuts_icon_default">默认</string>
   <string name="shortcuts_icon_presets">系统图标</string>
-  <string name="shortcuts_icon_custom">图库</string>
   <string name="shortcuts_icon_picker_choose_icon_title">选择图标</string>
   <string name="shortcuts_icon_picker_alarm">闹钟</string>
   <string name="shortcuts_icon_picker_andy">Andy</string>

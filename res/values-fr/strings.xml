@@ -106,6 +106,8 @@
   <string name="powermenu_settings">Paramètres</string>
   <string name="powermenu_lockdown">Verrouiller</string>
   <string name="powermenu_soundpanel">Panneau de volume</string>
+  <string name="powermenu_options">Additional options</string>
+  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Redémarrage avancé</string>
   <string name="advanced_reboot_summary">Permet de redémarrer dans le recovery et le bootloader</string>
@@ -649,7 +651,6 @@
   <string name="shortcuts_icon_picker_type">Sélectionner le modèle d\'icône :</string>
   <string name="shortcuts_icon_default">Par défaut</string>
   <string name="shortcuts_icon_presets">Icônes système</string>
-  <string name="shortcuts_icon_custom">Galerie</string>
   <string name="shortcuts_icon_picker_choose_icon_title">Sélectionner l\'icône</string>
   <string name="shortcuts_icon_picker_alarm">Alarme</string>
   <string name="shortcuts_icon_picker_andy">Andy</string>

@@ -106,6 +106,8 @@
   <string name="powermenu_settings">Настройки</string>
   <string name="powermenu_lockdown">Заблокировать</string>
   <string name="powermenu_soundpanel">Звуковая панель</string>
+  <string name="powermenu_options">Additional options</string>
+  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Расширеная перезагрузка</string>
   <string name="advanced_reboot_summary">Включить отображение настроек для загрузки в рекавери и бутлоадер в меню управления питанием</string>
@@ -649,7 +651,6 @@
   <string name="shortcuts_icon_picker_type">Выберите тип значка:</string>
   <string name="shortcuts_icon_default">По умолчанию</string>
   <string name="shortcuts_icon_presets">Системные значки</string>
-  <string name="shortcuts_icon_custom">Галерея</string>
   <string name="shortcuts_icon_picker_choose_icon_title">Выберите значок</string>
   <string name="shortcuts_icon_picker_alarm">Сигнал</string>
   <string name="shortcuts_icon_picker_andy">Энди</string>

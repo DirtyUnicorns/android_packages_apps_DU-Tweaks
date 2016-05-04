@@ -106,6 +106,8 @@
   <string name="powermenu_settings">Beállítások</string>
   <string name="powermenu_lockdown">Lezárás</string>
   <string name="powermenu_soundpanel">Hang panel</string>
+  <string name="powermenu_options">Additional options</string>
+  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Sperciális újraindítás</string>
   <string name="advanced_reboot_summary">A kikapcsoló menü tratalmazza a következő újraindításokat: recovery és bootloader</string>
@@ -649,7 +651,6 @@
   <string name="shortcuts_icon_picker_type">Ikon típusának választása:</string>
   <string name="shortcuts_icon_default">Alapértelmezett</string>
   <string name="shortcuts_icon_presets">Rendszer ikonok</string>
-  <string name="shortcuts_icon_custom">Galéria</string>
   <string name="shortcuts_icon_picker_choose_icon_title">Ikon választása</string>
   <string name="shortcuts_icon_picker_alarm">Ébresztő</string>
   <string name="shortcuts_icon_picker_andy">Andy</string>
