@@ -32,11 +32,6 @@
         <item>Navigációs sáv alja</item>
     </string-array>
 
-    <string-array name="battery_bar_style_entries">
-        <item>Szokásos</item>
-        <item>Középen tükrözött</item>
-    </string-array>
-
     <!-- SlimSizer -->
     <string-array name="slimsizer_profile_array">
         <item >Profil betöltése</item>
