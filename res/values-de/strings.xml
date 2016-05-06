@@ -106,8 +106,8 @@
   <string name="powermenu_settings">Einstellungen</string>
   <string name="powermenu_lockdown">Sperren</string>
   <string name="powermenu_soundpanel">Benachrichtigungsmodus</string>
-  <string name="powermenu_options">Additional options</string>
-  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
+  <string name="powermenu_options">Zusätzliche Optionen</string>
+  <string name="powermenu_dialog_dim">Dialog-Hintergrund dimmen</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Erweiterter Neustart</string>
   <string name="advanced_reboot_summary">Fügt dem Neustartmenü Optionen für den Neustart in die Recovery und den Bootloader hinzu</string>
