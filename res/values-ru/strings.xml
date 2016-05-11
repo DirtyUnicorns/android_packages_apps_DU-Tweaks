@@ -106,8 +106,8 @@
   <string name="powermenu_settings">Настройки</string>
   <string name="powermenu_lockdown">Заблокировать</string>
   <string name="powermenu_soundpanel">Звуковая панель</string>
-  <string name="powermenu_options">Additional options</string>
-  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
+  <string name="powermenu_options">Дополнительные настройки</string>
+  <string name="powermenu_dialog_dim">Количество затемнения экрана за диалогом</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Расширеная перезагрузка</string>
   <string name="advanced_reboot_summary">Включить отображение настроек для загрузки в рекавери и бутлоадер в меню управления питанием</string>
@@ -179,11 +179,16 @@
   <string name="battery_bar_title">Полоса батареи</string>
   <string name="battery_bar">Расположение полосы батареи</string>
   <string name="battery_bar_color">Цвет полосы батареи</string>
+  <string name="battery_bar_charging_color">Battery bar charging color</string>
+  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
   <string name="battery_bar_cat">Стиль полосы батареи</string>
   <string name="battery_bar_style_title">Выравнивание полосы батареи</string>
   <string name="battery_bar_thickness_title">Толщина полосы батареи</string>
   <string name="battery_bar_animate_title">Анимация зарядки</string>
   <string name="battery_bar_animate_summary">Включить анимацию полосы батареи во время зарядки</string>
+  <string name="battery_bar_style_regular">Regular</string>
+  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+  <string name="battery_bar_style_reversed">Reversed</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Шрифт часов</string>
   <string name="lock_clock_font_summary">Изменить шрифт виджета часов по умолчанию на экране блокировки</string>
@@ -452,7 +457,7 @@
   <string name="ga_save_success">Жест сохранён</string>
   <string name="ga_rename_action">ОК</string>
   <string name="ga_cancel_action">Отмена.</string>
-  <string name="ga_gestures_loading">Loading gestures\u2026</string>
+  <string name="ga_gestures_loading">Загрузка жестов\u2026</string>
   <string name="ga_gestures_empty">Нет жестов</string>
   <string name="ga_gestures_activity">Жесты</string>
   <string name="ga_gestures_edit">Изменить</string>
@@ -673,7 +678,7 @@
   <string name="shortcuts_icon_picker_file_browser2">Альтернативный файл-менеджер</string>
   <string name="shortcuts_icon_picker_fitness">Фитнес</string>
   <string name="shortcuts_icon_picker_gallery">Галерея</string>
-  <string name="shortcuts_icon_picker_gears">Gears</string>
+  <string name="shortcuts_icon_picker_gears">Шестерни</string>
   <string name="shortcuts_icon_picker_google_small">Googlе</string>
   <string name="shortcuts_icon_picker_gplus">Google+</string>
   <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
@@ -689,10 +694,10 @@
   <string name="shortcuts_icon_picker_music">Музыка</string>
   <string name="shortcuts_icon_picker_nav">Навигация</string>
   <string name="shortcuts_icon_picker_phone">Телефон</string>
-  <string name="shortcuts_icon_picker_package">Package</string>
+  <string name="shortcuts_icon_picker_package">Пакет</string>
   <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
-  <string name="shortcuts_icon_picker_play">Play</string>
-  <string name="shortcuts_icon_picker_pocket">Pocket</string>
+  <string name="shortcuts_icon_picker_play">Прослушать</string>
+  <string name="shortcuts_icon_picker_pocket">Карман</string>
   <string name="shortcuts_icon_picker_quicksettings">Быстрые настройки</string>
   <string name="shortcuts_icon_picker_rss">RSS подписка</string>
   <string name="shortcuts_icon_picker_sdcard">SD-карта</string>
@@ -700,7 +705,7 @@
   <string name="shortcuts_icon_picker_sms">Сообщения</string>
   <string name="shortcuts_icon_picker_tasks">Задачи</string>
   <string name="shortcuts_icon_picker_terminal">Терминал</string>
-  <string name="shortcuts_icon_picker_transit">Transit</string>
+  <string name="shortcuts_icon_picker_transit">Транзит</string>
   <string name="shortcuts_icon_picker_tv">ТВ</string>
   <string name="shortcuts_icon_picker_twitter">Твиттер</string>
   <string name="shortcuts_icon_picker_unlock">Разблокировать</string>
@@ -729,7 +734,7 @@
   <string name="sizer_message_delete">Вы точно хотите удалить выбранное приложение?</string>
   <string name="btn_delete">Сейчас же удалить выбранные приложения!</string>
   <string name="delete_progress_title">Идет удаление</string>
-  <string name="delete_progress">Selected files are being deleted\u2026</string>
+  <string name="delete_progress">Выбранные файлы будут удалены\u2026</string>
   <string name="delete_success">Удалено</string>
   <string name="delete_fail">Невозможно удалить</string>
   <string name="btn_profile">Профиль</string>
@@ -788,10 +793,10 @@
   <string name="hide_lockscreen_alarm_title">Будильник</string>
   <string name="hide_lockscreen_alarm_summary">Показать будильник на экране блокировки</string>
   <!-- Lockscreen Bouncer -->
-  <string name="ls_bouncer_title">Secure lockscreen bouncer</string>
+  <string name="ls_bouncer_title">Безопасное подпрыгивание экрана блокировки</string>
   <string name="ls_bouncer_summary">Открыть экран блокировки непосредственно на PIN/Графический ключ/Пароль, когда присутствуют уведомления</string>
   <string name="ls_bouncer_on">Включен (по умолчанию)</string>
-  <string name="ls_bouncer_on_summary">Stock bouncer behavior</string>
+  <string name="ls_bouncer_on_summary">Обычное поведение</string>
   <string name="ls_bouncer_off">Выключен</string>
   <string name="ls_bouncer_off_summary">Открыть экран блокировки непосредственно на PIN/Графический ключ/Пароль</string>
   <string name="ls_bouncer_dismissable">Не удаляемые</string>
@@ -799,7 +804,7 @@
   <string name="ls_bouncer_all">Без удаляемых или постоянных</string>
   <!-- Lockscreen Alpha -->
   <string name="lockscreen_alpha">Прозрачность экрана блокировки</string>
-  <string name="lockscreen_security_alpha">Lockscreen bouncer alpha</string>
+  <string name="lockscreen_security_alpha">Прозрачность подпрыгивания</string>
   <!-- Heads Up -->
   <string name="heads_up_notifications">Уведомления \"поверх\"</string>
   <string name="summary_heads_up_enabled">Всплывающие уведомления включены</string>

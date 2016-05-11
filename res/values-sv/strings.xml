@@ -179,11 +179,16 @@
   <string name="battery_bar_title">Batteristreck</string>
   <string name="battery_bar">Batteristreckets placering</string>
   <string name="battery_bar_color">Batteristreckets färg</string>
+  <string name="battery_bar_charging_color">Battery bar charging color</string>
+  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
   <string name="battery_bar_cat">Batteristreckets stil</string>
   <string name="battery_bar_style_title">Battery bar alignment</string>
   <string name="battery_bar_thickness_title">Batteristreckets tjocklek</string>
   <string name="battery_bar_animate_title">Laddningsanimation</string>
   <string name="battery_bar_animate_summary">Aktivera för att animera batteristrecket under laddning</string>
+  <string name="battery_bar_style_regular">Regular</string>
+  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+  <string name="battery_bar_style_reversed">Reversed</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Clock Fonts</string>
   <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>

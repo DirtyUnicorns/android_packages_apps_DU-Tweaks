@@ -179,11 +179,16 @@
   <string name="battery_bar_title">Barra de batería</string>
   <string name="battery_bar">Ubicación de la barra de batería</string>
   <string name="battery_bar_color">Color de la barra de batería</string>
+  <string name="battery_bar_charging_color">Battery bar charging color</string>
+  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
   <string name="battery_bar_cat">Estilo de la barra de batería</string>
   <string name="battery_bar_style_title">Alineación de la barra de batería</string>
   <string name="battery_bar_thickness_title">Grosor de la barra de batería</string>
   <string name="battery_bar_animate_title">Animación de carga</string>
   <string name="battery_bar_animate_summary">Habilitar para animar la barra de la batería durante la carga</string>
+  <string name="battery_bar_style_regular">Regular</string>
+  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+  <string name="battery_bar_style_reversed">Reversed</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Fuentes de reloj</string>
   <string name="lock_clock_font_summary">Cambiar la fuente predeterminada del widget de reloj de la pantalla de bloqueo</string>

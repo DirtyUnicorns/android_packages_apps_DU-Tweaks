@@ -106,8 +106,8 @@
   <string name="powermenu_settings">Impostazioni</string>
   <string name="powermenu_lockdown">Blocco</string>
   <string name="powermenu_soundpanel">Pannello Suoni</string>
-  <string name="powermenu_options">Additional options</string>
-  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
+  <string name="powermenu_options">Opzioni aggiuntive</string>
+  <string name="powermenu_dialog_dim">Oscuramento sfondo</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Riavvio Avanzato</string>
   <string name="advanced_reboot_summary">Includi opzioni nel Menu Avvio per riavviare in Recovery e Bootloader</string>
@@ -179,11 +179,16 @@
   <string name="battery_bar_title">Battery bar</string>
   <string name="battery_bar">Posizione Battery bar</string>
   <string name="battery_bar_color">Colore Battery bar</string>
+  <string name="battery_bar_charging_color">Battery bar charging color</string>
+  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
   <string name="battery_bar_cat">Stile Battery bar</string>
   <string name="battery_bar_style_title">Allineamento Battery bar</string>
   <string name="battery_bar_thickness_title">Spessore Battery bar</string>
   <string name="battery_bar_animate_title">Animazione caricamento</string>
   <string name="battery_bar_animate_summary">Abilita per animare la Battery bar durante la carica</string>
+  <string name="battery_bar_style_regular">Regular</string>
+  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+  <string name="battery_bar_style_reversed">Reversed</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Caratteri orologio</string>
   <string name="lock_clock_font_summary">Modifica il carattere di default del widget dell\'orologio nella lockscreen</string>

@@ -179,11 +179,16 @@
   <string name="battery_bar_title">Pil çubuğu</string>
   <string name="battery_bar">Pil çubuğunun konumu</string>
   <string name="battery_bar_color">Pil çubuğu rengi</string>
+  <string name="battery_bar_charging_color">Battery bar charging color</string>
+  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
   <string name="battery_bar_cat">Pil çubuğu stili</string>
   <string name="battery_bar_style_title">Battery bar alignment</string>
   <string name="battery_bar_thickness_title">Pil çubuğu kalınlığı</string>
   <string name="battery_bar_animate_title">Şarj animasyonu</string>
   <string name="battery_bar_animate_summary">Şarj sırasında pil çubuğunun hareketlendirmek için etkinleştir</string>
+  <string name="battery_bar_style_regular">Regular</string>
+  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+  <string name="battery_bar_style_reversed">Reversed</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Saat yazı tipleri</string>
   <string name="lock_clock_font_summary">Kilit ekranı saat widget varsayılan yazı tipini değiştirme</string>

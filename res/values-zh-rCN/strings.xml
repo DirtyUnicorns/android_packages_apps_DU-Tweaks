@@ -179,11 +179,16 @@
   <string name="battery_bar_title">电量条</string>
   <string name="battery_bar">电量条位置</string>
   <string name="battery_bar_color">电量条颜色</string>
+  <string name="battery_bar_charging_color">Battery bar charging color</string>
+  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
   <string name="battery_bar_cat">电量条风格</string>
   <string name="battery_bar_style_title">电量条对齐方式</string>
   <string name="battery_bar_thickness_title">电量条厚度</string>
   <string name="battery_bar_animate_title">充电动画</string>
   <string name="battery_bar_animate_summary">启用在电池充电时电量条的动画</string>
+  <string name="battery_bar_style_regular">Regular</string>
+  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+  <string name="battery_bar_style_reversed">Reversed</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">时钟字体</string>
   <string name="lock_clock_font_summary">更改锁屏界面时钟小部件的默认字体</string>

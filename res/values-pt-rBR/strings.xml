@@ -21,48 +21,48 @@
   <string name="lockscreen_category">Tela de bloqueio</string>
   <string name="statusbar_category">Barra de status</string>
   <string name="navigation_category">Navegação</string>
-  <string name="multitasking_category">Multi-Tasking</string>
+  <string name="multitasking_category">Multitarefas</string>
   <string name="system_category">Sistema</string>
   <string name="misc_category">Diversos</string>
   <!-- Categories -->
   <string name="animations_category">Animações</string>
   <string name="battery_category">Bateria</string>
   <string name="download_category">Centro de Download</string>
-  <string name="expanded_desktop_category">Expanded Desktop</string>
-  <string name="misctweaks_category">Misc. Tweaks</string>
-  <string name="powermenu_category">Power Menu</string>
+  <string name="expanded_desktop_category">Área de trabalho expandida</string>
+  <string name="misctweaks_category">Ajustes diversos</string>
+  <string name="powermenu_category">Menu do botão Liga/Desliga</string>
   <string name="quicksettings_category">Configurações rápidas</string>
   <string name="recents_category">Recentes</string>
-  <string name="statusbar_items_category">Statusbar Items</string>
+  <string name="statusbar_items_category">Itens da barra de status</string>
   <string name="statusbar_notifications_category">Notificações</string>
   <string name="lockscreen_notifications_category">Notificações na tela de bloqueio</string>
   <string name="wakelockblocker_category">Bloqueador de Wakelock</string>
   <string name="gestures_category">Gestos</string>
-  <string name="multitasking_category">Multi-Tasking</string>
-  <string name="multiwindow_category">Multi-Window</string>
-  <string name="listview_animations_category">List View Animations</string>
-  <string name="system_animations_category">System Animations</string>
+  <string name="multitasking_category">Multitarefas</string>
+  <string name="multiwindow_category">Múltiplas Janelas</string>
+  <string name="listview_animations_category">Animação de Visualização de Lista</string>
+  <string name="system_animations_category">Animações do sistema</string>
   <string name="omniswitch_category">OmniSwitch</string>
-  <string name="weather_category">Weather Widget</string>
-  <string name="breathing_notifications_category">Breathing Notifications</string>
-  <string name="button_settings">Buttons</string>
-  <string name="category_heads_up">Heads Up</string>
-  <string name="lockscreen_colors_fonts_category_title">Colors &amp; Fonts</string>
+  <string name="weather_category">Widget do tempo</string>
+  <string name="breathing_notifications_category">Notificações de respiração</string>
+  <string name="button_settings">Botões</string>
+  <string name="category_heads_up">Notificações pop-up</string>
+  <string name="lockscreen_colors_fonts_category_title">Cores &amp; Fontes</string>
   <!-- OmniSwitch -->
-  <string name="aosp_recents_title">AOSP recents</string>
-  <string name="omniswitch_recents_title">OmniSwitch recents</string>
+  <string name="aosp_recents_title">AOSP recentes</string>
+  <string name="omniswitch_recents_title">Recentes do OmniSwitch</string>
   <string name="omniswitch_category">OmniSwitch</string>
-  <string name="recents_use_omniswitch_title">Enable omni recents</string>
-  <string name="recents_use_omniswitch_summary">Use OmniSwitch for recents view</string>
+  <string name="recents_use_omniswitch_title">Habilitar Omni Recentes</string>
+  <string name="recents_use_omniswitch_summary">Use OmniSwitch para exibir recentes</string>
   <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
   <string name="omniswitch_first_time_title">Information</string>
   <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
   <!-- Dialog -->
-  <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
-  <string name="dirtytweaks_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a DU developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
-  <string name="dirtytweaks_dialog_toast">READ THE WHOLE THING!</string>
+  <string name="dirtytweaks_dialog_title">Ajude-nos, ajuda você!!</string>
+  <string name="dirtytweaks_dialog_message">Infelizmente não somos magos!\n\nEntão se você encontrar um bug com qualquer uma dessas configurações, por favor, abra um ticket no Jira ou entre em contato com um desenvolvedor DU com os seguintes dados.\n\n1. Logcat ou Last_Kmsg\n2. Kernel e Mods usados\n3. Outras Informações úteis\n\nSe você deixar de relatar algo, não espere que as coisas sejam corrigidas sozinhas. Lembre-se, nós não somos magos, também deixamos coisas passarem.</string>
+  <string name="dirtytweaks_dialog_toast">LEIA TUDO!</string>
   <!-- Toast Icons -->
-  <string name="toast_icon_title">Toast icon</string>
+  <string name="toast_icon_title">Ícone do Toast</string>
   <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
   <!-- Download Center -->
   <string name="gapps_title">Google Apps (GAPPS)</string>
@@ -179,11 +179,16 @@
   <string name="battery_bar_title">Battery bar</string>
   <string name="battery_bar">Battery bar location</string>
   <string name="battery_bar_color">Battery bar color</string>
+  <string name="battery_bar_charging_color">Battery bar charging color</string>
+  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
   <string name="battery_bar_cat">Battery bar style</string>
   <string name="battery_bar_style_title">Battery bar alignment</string>
   <string name="battery_bar_thickness_title">Battery bar thickness</string>
   <string name="battery_bar_animate_title">Charging animation</string>
   <string name="battery_bar_animate_summary">Enable to animate the battery bar while charging</string>
+  <string name="battery_bar_style_regular">Regular</string>
+  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+  <string name="battery_bar_style_reversed">Reversed</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Clock Fonts</string>
   <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>

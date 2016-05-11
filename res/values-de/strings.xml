@@ -179,13 +179,16 @@
   <string name="battery_bar_title">Akkuleiste</string>
   <string name="battery_bar">Position der Akkuleiste</string>
   <string name="battery_bar_color">Farbe</string>
+  <string name="battery_bar_charging_color">Battery bar charging color</string>
+  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
   <string name="battery_bar_cat">Stil</string>
   <string name="battery_bar_style_title">Ausrichtung</string>
   <string name="battery_bar_thickness_title">Dicke</string>
   <string name="battery_bar_animate_title">Ladeanimation</string>
   <string name="battery_bar_animate_summary">Aktiviert die Ladeanimation beim Laden des Geräts</string>
-  <string name="battery_bar_style_regular">Regulär</string>
-  <string name="battery_bar_style_center_mirrored">Zentriert-gespiegelt</string>
+  <string name="battery_bar_style_regular">Regular</string>
+  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+  <string name="battery_bar_style_reversed">Reversed</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Sperrbildschirm-Schriftart</string>
   <string name="lock_clock_font_summary">Ändert die Schriftart der Uhr auf dem Sperrbildschirm</string>
