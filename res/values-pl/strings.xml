@@ -179,16 +179,16 @@
   <string name="battery_bar_title">Pasek baterii</string>
   <string name="battery_bar">Lokalizacja paska baterii</string>
   <string name="battery_bar_color">Kolor paska baterii</string>
-  <string name="battery_bar_charging_color">Battery bar charging color</string>
-  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+  <string name="battery_bar_charging_color">Kolor podczas ładowania</string>
+  <string name="battery_bar_battery_low_color">Kolor, gdy słaba bateria</string>
   <string name="battery_bar_cat">Styl paska baterii</string>
   <string name="battery_bar_style_title">Wyrównanie paska baterii</string>
   <string name="battery_bar_thickness_title">Rozmiar paska baterii</string>
   <string name="battery_bar_animate_title">Animacja ładowania</string>
   <string name="battery_bar_animate_summary">Włącz animację paska baterii podczas ładowania</string>
-  <string name="battery_bar_style_regular">Regular</string>
-  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-  <string name="battery_bar_style_reversed">Reversed</string>
+  <string name="battery_bar_style_regular">Zwykły</string>
+  <string name="battery_bar_style_center_mirrored">Wyśrodkowany</string>
+  <string name="battery_bar_style_reversed">Odwrócony</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Czcionka zegara</string>
   <string name="lock_clock_font_summary">Zmień domyśłną czcionkę widżetu zegara na ekranie blokady</string>
