@@ -37,11 +37,9 @@ import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 public class ContextualHeaders extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PREF_CUSTOM_HEADER = "status_bar_custom_header";
-    private static final String PREF_CUSTOM_HEADER_DEFAULT = "status_bar_custom_header_default";
     private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
 
     private SwitchPreference mCustomHeader;
-    private SwitchPreference mCustomHeaderDefault;
     private SeekBarPreferenceCham mHeaderShadow;
 
     @Override
@@ -57,11 +55,6 @@ public class ContextualHeaders extends SettingsPreferenceFragment implements OnP
         mCustomHeader.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1));
         mCustomHeader.setOnPreferenceChangeListener(this);
-
-        mCustomHeaderDefault = (SwitchPreference) prefSet.findPreference(PREF_CUSTOM_HEADER_DEFAULT);
-        mCustomHeaderDefault.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, 0) == 1));
-        mCustomHeaderDefault.setOnPreferenceChangeListener(this);
 
         mHeaderShadow = (SeekBarPreferenceCham) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
         int headerShadow = Settings.System.getInt(resolver,
@@ -86,10 +79,6 @@ public class ContextualHeaders extends SettingsPreferenceFragment implements OnP
       if (preference == mCustomHeader) {
          Settings.System.putInt(getContentResolver(),
                  Settings.System.STATUS_BAR_CUSTOM_HEADER,
-                 (Boolean) newValue ? 1 : 0);
-      } else if (preference == mCustomHeaderDefault) {
-         Settings.System.putInt(getContentResolver(),
-                 Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT,
                  (Boolean) newValue ? 1 : 0);
       } else if (preference == mHeaderShadow) {
          int headerShadow = (Integer) newValue;

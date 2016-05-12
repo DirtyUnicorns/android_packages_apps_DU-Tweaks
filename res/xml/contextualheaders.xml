@@ -25,13 +25,6 @@
          android:summary="@string/status_bar_custom_header_summary"
          android:defaultValue="false"/>
 
-    <SwitchPreference
-         android:key="status_bar_custom_header_default"
-         android:title="@string/status_bar_custom_header_default_title"
-         android:summary="@string/status_bar_custom_header_default_summary"
-         android:dependency="status_bar_custom_header"
-         android:defaultValue="false"/>
-
     <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
          android:key="status_bar_custom_header_shadow"
          android:title="@string/status_bar_custom_header_shadow_title"
