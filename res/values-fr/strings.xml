@@ -179,16 +179,16 @@
   <string name="battery_bar_title">Barre de batterie</string>
   <string name="battery_bar">Emplacement</string>
   <string name="battery_bar_color">Couleur</string>
-  <string name="battery_bar_charging_color">Battery bar charging color</string>
-  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+  <string name="battery_bar_charging_color">Couleur lors de la charge</string>
+  <string name="battery_bar_battery_low_color">Couleur de batterie faible</string>
   <string name="battery_bar_cat">Style</string>
   <string name="battery_bar_style_title">Alignement</string>
   <string name="battery_bar_thickness_title">Épaisseur</string>
   <string name="battery_bar_animate_title">Animation lors de la charge</string>
   <string name="battery_bar_animate_summary">Animer la barre de batterie pendant la charge</string>
-  <string name="battery_bar_style_regular">Regular</string>
-  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-  <string name="battery_bar_style_reversed">Reversed</string>
+  <string name="battery_bar_style_regular">Normale</string>
+  <string name="battery_bar_style_center_mirrored">Centrée et reflétée</string>
+  <string name="battery_bar_style_reversed">Inversée</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Police d\'écriture de l\'horloge</string>
   <string name="lock_clock_font_summary">Modifier la police d\'écriture de l\'horloge de l\'écran de déverrouillage</string>
