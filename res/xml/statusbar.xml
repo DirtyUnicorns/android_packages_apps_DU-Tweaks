@@ -27,4 +27,10 @@
             android:layout="@layout/preference_statusbar_notifications"
             android:title="@string/statusbar_notifications_category" />
 
+         <Preference
+            android:key="quicksettings"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.QuickSettings"
+            android:layout="@layout/preference_systemui_tuner_qs"
+            android:title="@string/quicksettings_category" />
+
 </PreferenceScreen>
