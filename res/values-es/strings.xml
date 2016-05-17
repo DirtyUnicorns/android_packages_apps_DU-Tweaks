@@ -179,16 +179,16 @@
   <string name="battery_bar_title">Barra de batería</string>
   <string name="battery_bar">Ubicación de la barra de batería</string>
   <string name="battery_bar_color">Color de la barra de batería</string>
-  <string name="battery_bar_charging_color">Battery bar charging color</string>
-  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+  <string name="battery_bar_charging_color">Color de barra de bateria mientras carga</string>
+  <string name="battery_bar_battery_low_color">Color de barra de bateria en bateria baja</string>
   <string name="battery_bar_cat">Estilo de la barra de batería</string>
   <string name="battery_bar_style_title">Alineación de la barra de batería</string>
   <string name="battery_bar_thickness_title">Grosor de la barra de batería</string>
   <string name="battery_bar_animate_title">Animación de carga</string>
   <string name="battery_bar_animate_summary">Habilitar para animar la barra de la batería durante la carga</string>
-  <string name="battery_bar_style_regular">Regular</string>
-  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-  <string name="battery_bar_style_reversed">Reversed</string>
+  <string name="battery_bar_style_regular">Normal</string>
+  <string name="battery_bar_style_center_mirrored">Centro-reflejada</string>
+  <string name="battery_bar_style_reversed">Invertido</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Fuentes de reloj</string>
   <string name="lock_clock_font_summary">Cambiar la fuente predeterminada del widget de reloj de la pantalla de bloqueo</string>
@@ -262,7 +262,7 @@
   <!-- AOSP MultiWindow -->
   <string name="enable_multi_window">Modo multiventana</string>
   <string name="enable_multi_window_summary">Múltiples actividades en pantalla al mismo tiempo.</string>
-  <string name="warning_multi_window_text">WARNING: This is a highly experimental feature that allows multiple activities on-screen at the same time through the Recent apps UI. Some apps may crash or not function correctly when used with this feature.</string>
+  <string name="warning_multi_window_text">ADVERTENCIA: Esta es una función experimental que permite realizar varias actividades en la pantalla al mismo tiempo a través de la interfaz de usuario de aplicaciones recientes. Es posible que algunas aplicaciones se bloqueen o no funcionen correctamente cuando se utilicen con esta función.</string>
   <!-- AOKP custom system animations -->
   <string name="activity_open_title">Animación de abrir actividad</string>
   <string name="activity_close_title">Animación de cerrar actividad</string>
@@ -270,8 +270,8 @@
   <string name="task_close_title">Animación al cerrar tarea</string>
   <string name="task_move_to_front_title">Mover al frente</string>
   <string name="task_move_to_back_title">Mover hacia atrás</string>
-  <string name="wallpaper_open_title">Wallpaper open animation</string>
-  <string name="wallpaper_close_title">Wallpaper close animation</string>
+  <string name="wallpaper_open_title">Animación al abrir fondo de pantalla</string>
+  <string name="wallpaper_close_title">Animación al cerrar fondo de pantalla</string>
   <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
   <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
   <string name="animation_duration_title">Duración de la animación</string>
@@ -492,10 +492,10 @@
   <!-- Breathing Notifications -->
   <string name="breathing_notifications_title">Respiración de notificaciones</string>
   <string name="missed_call_breath_title">Respiración en Llamada Perdida</string>
-  <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
+  <string name="missed_call_breath_summary">Le dará un efecto de respiración en las notificaciones de llamadas perdidas en la barra de estado</string>
   <string name="voicemail_breath_title">Respiración en Correo de voz</string>
-  <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
-  <string name="sms_breath_title">Breathing SMS</string>
+  <string name="voicemail_breath_summary">Le dará un efecto de respiración en las notificaciones de correo de voz en la barra de estado</string>
+  <string name="sms_breath_title">Respiración en SMS</string>
   <string name="sms_breath_summary">Will give your SMS notifications a breathing effect in the statusbar</string>
   <!-- Navigation Bar -->
   <string name="navbar_interface_title">Interfaz</string>
@@ -569,7 +569,7 @@
   <string name="fling_long_swipe_title">Umbral de deslizamiento largo</string>
   <string name="fling_long_swipe_summary">Fine tune long swipe thresholds based on a percentage of Fling interface width or height</string>
   <string name="fling_trails_enable_title">Activar recorrido del deslizamiento</string>
-  <string name="fling_trails_enable_summary">Show a trail on swipe gestures</string>
+  <string name="fling_trails_enable_summary">Mostrar el camino en gestos swipe</string>
   <string name="fling_trails_color_title">Color de Estela</string>
   <string name="fling_appearance">Apariencia</string>
   <string name="fling_show_logo_title">Mostrar logo de Fling</string>
@@ -745,7 +745,7 @@
   <string name="sizer_message_noselect">Nada seleccionado.</string>
   <string name="system_app_remover">Eliminador de aplicaciones del sistema</string>
   <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk\'s Music Player</string>
+  <string name="tomahawk_music_player_title">Reproductor de música Tomahawk</string>
   <string name="tomahawk_music_player_summary">Un reproductor de música android de código abierto con gran desarrollo y características</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Administrador de tareas</string>
@@ -866,6 +866,6 @@
   <string name="status_bar_custom_header_shadow_title">Sombra de la imagen de cabecera</string>
   <string name="status_bar_custom_header_shadow_summary">Para una mejor visibilidad en imágenes brillantes</string>
   <!-- Current on Lockscreen -->
-  <string name="lock_screen_show_current">Charging current</string>
-  <string name="lock_screen_show_current_summary">Show charging current rate on lock screen</string>
+  <string name="lock_screen_show_current">Carga corriente</string>
+  <string name="lock_screen_show_current_summary">Mostrar la carga actual en la pantalla de bloqueo</string>
 </resources>

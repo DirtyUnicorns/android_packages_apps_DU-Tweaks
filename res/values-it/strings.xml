@@ -179,16 +179,16 @@
   <string name="battery_bar_title">Battery bar</string>
   <string name="battery_bar">Posizione Battery bar</string>
   <string name="battery_bar_color">Colore Battery bar</string>
-  <string name="battery_bar_charging_color">Battery bar charging color</string>
-  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+  <string name="battery_bar_charging_color">Colore in ricarica Battery bar</string>
+  <string name="battery_bar_battery_low_color">Colore livello batteria basso Battery bar</string>
   <string name="battery_bar_cat">Stile Battery bar</string>
   <string name="battery_bar_style_title">Allineamento Battery bar</string>
   <string name="battery_bar_thickness_title">Spessore Battery bar</string>
   <string name="battery_bar_animate_title">Animazione caricamento</string>
   <string name="battery_bar_animate_summary">Abilita per animare la Battery bar durante la carica</string>
-  <string name="battery_bar_style_regular">Regular</string>
-  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-  <string name="battery_bar_style_reversed">Reversed</string>
+  <string name="battery_bar_style_regular">Normale</string>
+  <string name="battery_bar_style_center_mirrored">Al centro-specchiato</string>
+  <string name="battery_bar_style_reversed">Invertito</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Caratteri orologio</string>
   <string name="lock_clock_font_summary">Modifica il carattere di default del widget dell\'orologio nella lockscreen</string>
@@ -866,6 +866,6 @@
   <string name="status_bar_custom_header_shadow_title">Ombreggiatura immagine intestazione</string>
   <string name="status_bar_custom_header_shadow_summary">Per una migliore visibilità su immagini luminose</string>
   <!-- Current on Lockscreen -->
-  <string name="lock_screen_show_current">Charging current</string>
-  <string name="lock_screen_show_current_summary">Show charging current rate on lock screen</string>
+  <string name="lock_screen_show_current">Corrente di carica</string>
+  <string name="lock_screen_show_current_summary">Mostra il tasso di corrente di carica nella schermata di blocco</string>
 </resources>

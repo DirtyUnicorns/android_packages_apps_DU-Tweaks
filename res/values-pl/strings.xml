@@ -866,6 +866,6 @@
   <string name="status_bar_custom_header_shadow_title">Cień obrazu nagłówka</string>
   <string name="status_bar_custom_header_shadow_summary">Dla lepszej widoczności przy jasnych obrazach</string>
   <!-- Current on Lockscreen -->
-  <string name="lock_screen_show_current">Charging current</string>
-  <string name="lock_screen_show_current_summary">Show charging current rate on lock screen</string>
+  <string name="lock_screen_show_current">Jednostka napięcia</string>
+  <string name="lock_screen_show_current_summary">Pokaż jednostkę napięcia na ekranie blokady podczas ładowania</string>
 </resources>

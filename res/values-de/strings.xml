@@ -35,7 +35,7 @@
   <string name="recents_category">Anwendungsverlauf</string>
   <string name="statusbar_items_category">Statusleisten-Symbole</string>
   <string name="statusbar_notifications_category">Benachrichtigungen</string>
-  <string name="lockscreen_notifications_category">Sperrbildschirm-Benachrichtigungen</string>
+  <string name="lockscreen_notifications_category">Benachrichtigungen</string>
   <string name="wakelockblocker_category">Wakelocks blockieren</string>
   <string name="gestures_category">Gesten</string>
   <string name="multitasking_category">Multi-Tasking</string>
@@ -179,8 +179,8 @@
   <string name="battery_bar_title">Akkuleiste</string>
   <string name="battery_bar">Position der Akkuleiste</string>
   <string name="battery_bar_color">Farbe</string>
-  <string name="battery_bar_charging_color">Akkuleisten-Farbe beim Ladevorgang</string>
-  <string name="battery_bar_battery_low_color">Akkuleisten-Farbe bei niedrigem Akkustand</string>
+  <string name="battery_bar_charging_color">Farbe beim Ladevorgang</string>
+  <string name="battery_bar_battery_low_color">Farbe bei niedrigem Akkustand</string>
   <string name="battery_bar_cat">Stil</string>
   <string name="battery_bar_style_title">Ausrichtung</string>
   <string name="battery_bar_thickness_title">Dicke</string>
@@ -212,8 +212,8 @@
   <string name="lock_clock_font_condensed_light_normal">Roboto gestaucht, leicht</string>
   <string name="lock_clock_font_condensed_light_italic">Roboto gestaucht, leicht, kursiv</string>
   <!-- Lockscreen Torch -->
-  <string name="keyguard_torch_title">Sperrbildschirm-Taschenlampe</string>
-  <string name="keyguard_torch_summary">Langes Drücken des Power-Buttons, während der Bilschirm ausgeschaltet ist, schaltet die Taschenlampe ein</string>
+  <string name="keyguard_torch_title">Taschenlampe</string>
+  <string name="keyguard_torch_summary">Langes Drücken des Power-Buttons, während der Bildschirm ausgeschaltet ist, schaltet die Taschenlampe ein</string>
   <!-- Statusbar Clock options -->
   <string name="status_bar_title">Statusleiste</string>
   <string name="status_bar_style_title">Stil</string>
@@ -624,8 +624,8 @@
   <string name="smartbar_ime_action_switcher">Tastatur-Umschalter</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Sperrbildschirm</string>
-  <string name="lockscreen_config_title">Sperrbildschirm Konfiguration</string>
-  <string name="lockscreen_wallpaper_config_title">Sperrbildschirm Hintergrund/Konfig</string>
+  <string name="lockscreen_config_title">Konfiguration</string>
+  <string name="lockscreen_wallpaper_config_title">Hintergrund/Konfiguration</string>
   <string name="lockscreen_wallpaper_set_title">Neuen Hintergrund setzen</string>
   <string name="lockscreen_wallpaper_clear_title">Hintergrund zurücksetzen</string>
   <string name="reset_lockscreen_wallpaper">Sperrbildschirm-Hintergrund wurde zurückgesetzt</string>
@@ -764,7 +764,7 @@
   <string name="media_art_title">Albumcover anzeigen</string>
   <string name="media_art_summary">Aktiviert das Albumcover auf dem Sperrbildschirm bei Musikwiedergabe</string>
   <!-- Lockscreen notification count -->
-  <string name="lockscreen_maxnotif_title">Sperrbildschirm-Benachrichtigungszähler</string>
+  <string name="lockscreen_maxnotif_title">Benachrichtigungszähler</string>
   <string name="lockscreen_maxnotif_sumary">Aktiviert die Anpassung der maximalen Sperrbildschirm-Benachrichtigungen</string>
   <string name="lockscreen_maxnotif_config">Maximale Sperrbildschirm-Benachrichtigungen</string>
   <!-- Fingerprint authentication vibration -->
@@ -803,7 +803,7 @@
   <string name="ls_bouncer_persistent">Keine anhaltenden</string>
   <string name="ls_bouncer_all">Keine verwerfbaren oder anhaltenden</string>
   <!-- Lockscreen Alpha -->
-  <string name="lockscreen_alpha">Sperrbildschirm Alpha</string>
+  <string name="lockscreen_alpha">Alpha</string>
   <string name="lockscreen_security_alpha">Sperrbildschirm-Wächter Alpha</string>
   <!-- Heads Up -->
   <string name="heads_up_notifications">Heads-Up Benachrichtigungen</string>
@@ -866,6 +866,6 @@
   <string name="status_bar_custom_header_shadow_title">Schatten</string>
   <string name="status_bar_custom_header_shadow_summary">Bessere Sichtbarkeit bei hellen Bildern</string>
   <!-- Current on Lockscreen -->
-  <string name="lock_screen_show_current">Charging current</string>
-  <string name="lock_screen_show_current_summary">Show charging current rate on lock screen</string>
+  <string name="lock_screen_show_current">Ladestrom</string>
+  <string name="lock_screen_show_current_summary">Ladestrom auf Sperrbildschirm anzeigen</string>
 </resources>

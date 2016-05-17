@@ -31,72 +31,72 @@
   <string name="expanded_desktop_category">扩展桌面</string>
   <string name="misctweaks_category">杂项调整</string>
   <string name="powermenu_category">电源菜单</string>
-  <string name="quicksettings_category">快速设置</string>
-  <string name="recents_category">最近面板</string>
+  <string name="quicksettings_category">快捷开关</string>
+  <string name="recents_category">近期任务列表</string>
   <string name="statusbar_items_category">状态栏项目</string>
   <string name="statusbar_notifications_category">通知</string>
   <string name="lockscreen_notifications_category">锁屏通知</string>
   <string name="wakelockblocker_category">唤醒锁拦截器</string>
   <string name="gestures_category">手势</string>
   <string name="multitasking_category">多任务</string>
-  <string name="multiwindow_category">多窗口模式</string>
+  <string name="multiwindow_category">分屏模式</string>
   <string name="listview_animations_category">列表视图动画</string>
   <string name="system_animations_category">系统动画</string>
-  <string name="omniswitch_category">Omni切换</string>
+  <string name="omniswitch_category">OmniSwitch 设置</string>
   <string name="weather_category">天气小部件</string>
   <string name="breathing_notifications_category">呼吸通知</string>
   <string name="button_settings">按钮</string>
   <string name="category_heads_up">浮动通知</string>
   <string name="lockscreen_colors_fonts_category_title">颜色 &amp; 字体</string>
   <!-- OmniSwitch -->
-  <string name="aosp_recents_title">AOSP 最近任务</string>
-  <string name="omniswitch_recents_title">OmniSwitch 最近任务</string>
-  <string name="omniswitch_category">Omni切换</string>
-  <string name="recents_use_omniswitch_title">启用 Omni 最近任务</string>
-  <string name="recents_use_omniswitch_summary">使用 OmniSwitch 作为最近任务视图</string>
+  <string name="aosp_recents_title">AOSP 近期任务列表</string>
+  <string name="omniswitch_recents_title">OmniSwitch 近期任务列表</string>
+  <string name="omniswitch_category">OmniSwitch 设置</string>
+  <string name="recents_use_omniswitch_title">启用 OmniSwitch</string>
+  <string name="recents_use_omniswitch_summary">使用 OmniSwitch 作为首选近期任务列表</string>
   <string name="omniswitch_start_settings_summary">打开 OmniSwitch 设置</string>
-  <string name="omniswitch_first_time_title">信息</string>
-  <string name="omniswitch_first_time_message">请确认已启用 OmniSwitch 。您可以点击下方的“设置”来完成此操作。</string>
+  <string name="omniswitch_first_time_title">消息</string>
+  <string name="omniswitch_first_time_message">若想启用 OmniSwitch，您需要在 “OmniSwitch 设置” 中开启 OmniSwitch 主开关来完成此操作。</string>
   <!-- Dialog -->
   <string name="dirtytweaks_dialog_title">帮助我们团队也是帮助您！！</string>
-  <string name="dirtytweaks_dialog_message">很抱歉，我们不是天才！\n\n所以如果您发现这些设置中任何一项存在 Bug ，请通过 Jira 提交 Bug 或者联系 DU 团队的开发者。记得提交 Bug 的同时附带以下内容。\n\n 1. Logcat 日志或者 Last_Kmsg 内核日志\n 2. 正在使用的内核和 Xposed 模块\n 3. 其它有帮助的信息\n\n 如果您没有成功反馈存在的问题，不要指望问题会得到解决。请记住我们不是天才，因此我们难免会忽略一些事。</string>
+  <string name="dirtytweaks_dialog_message">很抱歉，我们并不是天才！\n\n所以，如果您在这些设置中发现了缺陷，请通过 Jira 来提交给我们，或者联系 DU 团队的开发者。提交缺陷的同时，记得附带以下内容：\n\n 1. Logcat 日志或者 Last_Kmsg 内核日志\n 2. 正在使用的内核和 Xposed 模块\n 3. 其它能帮助我们重现缺陷的信息\n\n 如果您没有成功反馈以上信息，您发现的缺陷可能不会被修复。请记住，我们不是天才，我们难免会忽略一些事情。</string>
   <string name="dirtytweaks_dialog_toast">请阅读所有内容！</string>
   <!-- Toast Icons -->
-  <string name="toast_icon_title">提示图标</string>
-  <string name="toast_icon_summary">显示弹出Toast的应用程序的图标</string>
+  <string name="toast_icon_title">显示 Toast 应用图标</string>
+  <string name="toast_icon_summary">在 Toast 提示框显示时显示相关的应用程序图标</string>
   <!-- Download Center -->
-  <string name="gapps_title">Google 应用 (GAPPS)</string>
-  <string name="gapps_summary">可以在 Recovery 中刷入的 GAPPS 包列表</string>
-  <string name="gapps_credit">尽管 GAPPS 包不是从源码编译并且不属于除 Google 以外的任何人，我们仍然要花一些时间来感谢一些为我们维护这些包的个人和团队，他们让一些事情对于大家来说更加简单。\n\n特别感谢：Team BlackOut、Michael Banks、TKruzze 和 M. Wasif Chauhdary</string>
+  <string name="gapps_title">Google 应用包 (GAPPS)</string>
+  <string name="gapps_summary">可以在 Recovery 中刷入的 GAPPS 应用包</string>
+  <string name="gapps_credit">尽管 GAPPS 应用包不是从源码编译的并且不属于除 Google 以外的任何人，我们仍然要花一些时间来感谢这些为我们维护这些应用包的个人和团队。因为有他们的努力，才让一些繁琐的事情变得更加简单。\n\n特别感谢：Team BlackOut、Michael Banks、TKruzze 以及 M. Wasif Chauhdary。</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">快速下拉</string>
-  <string name="summary_quick_pulldown">从状态栏的%1$s边缘拉下时直接开启快速设置面板</string>
-  <string name="quick_pulldown_off">关闭</string>
+  <string name="summary_quick_pulldown">从屏幕顶部的%1$s下拉时直接开启快捷开关面板</string>
+  <string name="quick_pulldown_off">不使用快速下拉</string>
   <string name="quick_pulldown_left">左侧</string>
   <string name="quick_pulldown_right">右侧</string>
   <string name="smart_pulldown_title">智能下拉</string>
-  <string name="smart_pulldown_summary">当有%1$s的通知时打开快速设置</string>
-  <string name="smart_pulldown_off">关闭</string>
-  <string name="smart_pulldown_dismissable">无可清除通知</string>
-  <string name="smart_pulldown_persistent">无持久通知</string>
-  <string name="smart_pulldown_all">无可清除或持久通知</string>
+  <string name="smart_pulldown_summary">当%1$s打开快捷开关面板</string>
+  <string name="smart_pulldown_off">不使用智能下拉</string>
+  <string name="smart_pulldown_dismissable">没有可清除通知时</string>
+  <string name="smart_pulldown_persistent">没有持久通知时</string>
+  <string name="smart_pulldown_all">没有可清除或者持久通知时</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">亮度滑块</string>
-  <string name="qs_brightness_slider_summary">在快速设置面板中显示亮度滑块</string>
+  <string name="qs_brightness_slider_summary">在快捷开关面板中显示亮度滑块</string>
   <!-- Quick Settings brightness icon -->
-  <string name="brightness_icon_title">亮度图标 </string>
-  <string name="brightness_icon_summary">在亮度滑块左侧显示亮度图标用于调节自动亮度</string>
+  <string name="brightness_icon_title">自动亮度图标 </string>
+  <string name="brightness_icon_summary">在亮度滑块左侧显示一个图标用于调节是否开启自动调节亮度功能</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">沉浸最近任务</string>
-  <string name="immersive_recents_summary">更改最近任务视图</string>
-  <string name="immersive_recents_dialog_title">选择最近任务视图</string>
-  <string name="immersive_recents_default">默认</string>
-  <string name="immersive_recents_fullscreen">全屏</string>
-  <string name="immersive_recents_statusbar">仅显示状态栏</string>
-  <string name="immersive_recents_navbar">仅显示导航栏</string>
+  <string name="immersive_recents_title">沉浸模式</string>
+  <string name="immersive_recents_summary">更改近期任务列表的视图</string>
+  <string name="immersive_recents_dialog_title">选择近期任务列表视图</string>
+  <string name="immersive_recents_default">不使用沉浸模式 (默认)</string>
+  <string name="immersive_recents_fullscreen">全屏沉浸模式</string>
+  <string name="immersive_recents_statusbar">只显示状态栏</string>
+  <string name="immersive_recents_navbar">只显示导航栏</string>
   <!-- Power Menu -->
   <string name="powermenu_lockscreen_title">锁屏电源菜单</string>
-  <string name="powermenu_lockscreen_summary">锁定屏幕时显示电源菜单</string>
+  <string name="powermenu_lockscreen_summary">允许在锁定屏幕中开启电源菜单</string>
   <string name="powermenu_power">关机</string>
   <string name="powermenu_reboot">重启</string>
   <string name="powermenu_screenshot">屏幕截图</string>
@@ -106,69 +106,69 @@
   <string name="powermenu_settings">设置</string>
   <string name="powermenu_lockdown">锁定设备</string>
   <string name="powermenu_soundpanel">声音面板</string>
-  <string name="powermenu_options">Additional options</string>
-  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
+  <string name="powermenu_options">附加选项</string>
+  <string name="powermenu_dialog_dim">对话框背景变暗程度</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">高级重启</string>
-  <string name="advanced_reboot_summary">在电源菜单中包含重启到 Revcovery 和 Bootloader 的选项</string>
+  <string name="advanced_reboot_summary">在电源菜单中显示重启到 Revcovery 和 Bootloader 的选项</string>
   <string name="advanced_reboot_dialog_title">高级重启菜单</string>
   <string name="advanced_reboot_disabled">关闭</string>
   <string name="advanced_reboot_hide_on_keyguard">在锁屏界面隐藏</string>
   <string name="advanced_reboot_show_always">始终显示</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_summary">拦截系统唤醒锁</string>
+  <string name="wakelock_blocker_summary">拦截系统唤醒锁。唤醒锁是一种锁的机制，当系统存在一个或以上的有效的唤醒锁时，系统将不能进入深度休眠，但仍可以进入浅层休眠。唤醒锁保证了在屏幕关闭时，一些程序仍能正常运行，如播放音乐等。拦截唤醒锁能减少耗电，但可能导致一些程序不能正常运行。</string>
   <string name="wakelock_blocker_save">保存​​</string>
-  <string name="wakelock_list_header">可用唤醒锁</string>
+  <string name="wakelock_list_header">可用的唤醒锁</string>
   <string name="wakelock_blocker_reload">重新加载</string>
   <string name="wakelock_blocker_warning_title">谨慎使用</string>
-  <string name="wakelock_blocker_warning">拦截唤醒锁可能导致系统不稳定、崩溃或数据丢失。</string>
+  <string name="wakelock_blocker_warning">拦截唤醒锁可能导致系统不稳定、崩溃或甚至数据丢失！</string>
   <!-- Expanded desktop -->
   <string name="expanded_hide_nothing">不隐藏</string>
   <string name="expanded_hide_status">隐藏状态栏</string>
   <string name="expanded_hide_navigation">隐藏导航栏</string>
   <string name="expanded_hide_both">同时隐藏</string>
-  <string name="expanded_nothing_to_show">要添加对于单个应用的扩展屏幕自定义设置，请关闭“为全部应用启用”选项</string>
+  <string name="expanded_nothing_to_show">若要对特定的应用设定不同的扩展屏幕设置，请关闭“为全部应用启用”选项</string>
   <string name="expanded_desktop_state">扩展桌面状态</string>
   <string name="expanded_enabled_for_all">为全部应用启用</string>
   <string name="expanded_user_configurable">用户配置</string>
   <!-- Force expanded notifications -->
-  <string name="force_expanded_notifications_title">强制扩展通知</string>
-  <string name="force_expanded_notifications_summary">仅可用于支持扩展通知的应用</string>
+  <string name="force_expanded_notifications_title">强制使用扩展通知</string>
+  <string name="force_expanded_notifications_summary">该选项仅可用于支持扩展通知的应用</string>
   <!-- Disabling immersive mode messages -->
-  <string name="disable_immersive_message_title">禁用沉浸模式的通知消息</string>
-  <string name="disable_immersive_message_summary">这将隐藏所有在沉浸模式下的通知</string>
+  <string name="disable_immersive_message_title">禁用沉浸模式下的消息通知</string>
+  <string name="disable_immersive_message_summary">这将隐藏所有在沉浸模式下的消息通知</string>
   <!-- Disabling FC notifications -->
   <string name="disable_fc_notifications_title">禁用强制关闭通知</string>
-  <string name="disable_fc_notifications_summary">将隐藏所有强制关闭的通知</string>
+  <string name="disable_fc_notifications_summary">这将隐藏所有应用无响应时出现的强制关闭的通知</string>
   <!-- Double tap to sleep -->
-  <string name="double_tap_to_sleep_title">双击状态栏睡眠</string>
+  <string name="double_tap_to_sleep_title">双击状态栏以睡眠</string>
   <string name="double_tap_to_sleep_summary">连续点按状态栏两次来使设备睡眠</string>
-  <string name="double_tap_sleep_nav_bar_title">双击导航栏睡眠</string>
+  <string name="double_tap_sleep_nav_bar_title">双击导航栏以睡眠</string>
   <string name="double_tap_sleep_nav_bar_summary">连续点按导航栏两次来使设备睡眠</string>
-  <string name="double_tap_to_sleep_lockscreen_title">双击锁屏界面睡眠</string>
+  <string name="double_tap_to_sleep_lockscreen_title">双击锁屏界面以睡眠</string>
   <string name="double_tap_to_sleep_lockscreen_summary">连续点按锁屏界面上方或下方快捷方式区域来使设备睡眠</string>
   <!-- Ad Blocker -->
   <string name="adblocker_title">广告拦截</string>
-  <string name="disable_ads_title">禁止广告</string>
-  <string name="disable_ads_summary">修改 hosts 文件以禁用广告</string>
+  <string name="disable_ads_title">拦截广告</string>
+  <string name="disable_ads_summary">通过修改 hosts 文件以拦截广告</string>
   <!-- Volume Key Rotation -->
-  <string name="swap_volume_buttons_title">重新调整</string>
-  <string name="swap_volume_buttons_summary">旋转屏幕时交换音量按键的布局</string>
+  <string name="swap_volume_buttons_title">跟随屏幕方向调整音量按钮布局</string>
+  <string name="swap_volume_buttons_summary">旋转屏幕时根据屏幕方向调整音量按键的布局</string>
   <!-- Volume rocker wake -->
-  <string name="volume_rocker_wake_title">音量键唤醒</string>
-  <string name="volume_rocker_wake_summary">按下音量键将会唤醒设备\n将会覆盖播放控制</string>
+  <string name="volume_rocker_wake_title">通过音量键唤醒设备</string>
+  <string name="volume_rocker_wake_summary">锁屏状态下通过按下音量键来唤醒设备\n开启时将覆盖“播放控制”选项</string>
   <!-- Volume rocker music control -->
   <string name="volume_rocker_music_controls_title">播放控制</string>
-  <string name="volume_rocker_music_controls_summary">当屏幕关闭时，长按音量键来跳转音乐曲目</string>
+  <string name="volume_rocker_music_controls_summary">屏幕关闭时，长按音量键来切换不同曲目</string>
   <!-- Battery options -->
   <string name="battery_title">电池选项</string>
   <string name="battery2_summary">自定义电量图标和百分比</string>
-  <string name="status_bar_battery_style_title">电池状态样式</string>
+  <string name="status_bar_battery_style_title">电量图标样式</string>
   <string name="status_bar_battery_style_icon_portrait">纵向图标</string>
-  <string name="status_bar_battery_style_icon_landscape">卧式图标</string>
+  <string name="status_bar_battery_style_icon_landscape">横向图标</string>
   <string name="status_bar_battery_style_circle">环形</string>
   <string name="status_bar_battery_style_dotted_circle">环形虚线</string>
-  <string name="status_bar_battery_style_text">文字</string>
+  <string name="status_bar_battery_style_text">百分比</string>
   <string name="status_bar_battery_style_hidden">隐藏</string>
   <string name="status_bar_battery_percentage_title">显示电量百分比</string>
   <string name="status_bar_battery_percentage_dialog_title">电量百分比</string>
@@ -179,53 +179,53 @@
   <string name="battery_bar_title">电量条</string>
   <string name="battery_bar">电量条位置</string>
   <string name="battery_bar_color">电量条颜色</string>
-  <string name="battery_bar_charging_color">Battery bar charging color</string>
-  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+  <string name="battery_bar_charging_color">电量条颜色 (充电时)</string>
+  <string name="battery_bar_battery_low_color">电量条颜色 (低电量时)</string>
   <string name="battery_bar_cat">电量条风格</string>
   <string name="battery_bar_style_title">电量条对齐方式</string>
   <string name="battery_bar_thickness_title">电量条厚度</string>
   <string name="battery_bar_animate_title">充电动画</string>
   <string name="battery_bar_animate_summary">启用在电池充电时电量条的动画</string>
-  <string name="battery_bar_style_regular">Regular</string>
-  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-  <string name="battery_bar_style_reversed">Reversed</string>
+  <string name="battery_bar_style_regular">居左</string>
+  <string name="battery_bar_style_center_mirrored">居中</string>
+  <string name="battery_bar_style_reversed">居右</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">时钟字体</string>
   <string name="lock_clock_font_summary">更改锁屏界面时钟小部件的默认字体</string>
   <string name="lock_clock_font_dialog_title">选择锁屏时钟字体</string>
   <string name="lock_clock_font_normal">Roboto</string>
-  <string name="lock_clock_font_bold">Roboto粗体</string>
-  <string name="lock_clock_font_italic">Roboto斜体</string>
-  <string name="lock_clock_font_bold_italic">Roboto粗斜体</string>
-  <string name="lock_clock_font_light_normal">Roboto轻体 (默认)</string>
-  <string name="lock_clock_font_light_italic">Roboto轻斜体</string>
-  <string name="lock_clock_font_thin_normal">Roboto薄</string>
-  <string name="lock_clock_font_thin_italic">Roboto薄斜体</string>
-  <string name="lock_clock_font_condensed_normal">Roboto简明</string>
-  <string name="lock_clock_font_condensed_bold">Roboto简明粗体</string>
-  <string name="lock_clock_font_condensed_italic">Roboto简明斜体</string>
-  <string name="lock_clock_font_condensed_bold_italic">Roboto简明粗斜体</string>
-  <string name="lock_clock_font_medium_normal">Roboto中型</string>
-  <string name="lock_clock_font_medium_italic">Roboto中型斜体</string>
-  <string name="lock_clock_font_black_normal">Roboto黑体</string>
-  <string name="lock_clock_font_black_italic">Roboto黑斜体</string>
-  <string name="lock_clock_font_condensed_light_normal">Roboto简明轻体</string>
-  <string name="lock_clock_font_condensed_light_italic">Roboto简明轻斜体</string>
+  <string name="lock_clock_font_bold">Roboto Bold</string>
+  <string name="lock_clock_font_italic">Roboto Italic</string>
+  <string name="lock_clock_font_bold_italic">Roboto Bold Italic</string>
+  <string name="lock_clock_font_light_normal">Roboto Light (默认)</string>
+  <string name="lock_clock_font_light_italic">Roboto Light Italic</string>
+  <string name="lock_clock_font_thin_normal">Roboto Thin</string>
+  <string name="lock_clock_font_thin_italic">Roboto Thin Italic</string>
+  <string name="lock_clock_font_condensed_normal">Roboto Condensed</string>
+  <string name="lock_clock_font_condensed_bold">Roboto Condensed Bold</string>
+  <string name="lock_clock_font_condensed_italic">Roboto Condensed Italic</string>
+  <string name="lock_clock_font_condensed_bold_italic">Roboto Condensed Bold Italic</string>
+  <string name="lock_clock_font_medium_normal">Roboto Medium</string>
+  <string name="lock_clock_font_medium_italic">Roboto Medium Italic</string>
+  <string name="lock_clock_font_black_normal">Roboto Black</string>
+  <string name="lock_clock_font_black_italic">Roboto Black Italic</string>
+  <string name="lock_clock_font_condensed_light_normal">Roboto Condensed Light</string>
+  <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
   <!-- Lockscreen Torch -->
   <string name="keyguard_torch_title">锁屏手电筒</string>
-  <string name="keyguard_torch_summary">锁定屏幕时长按电源按钮打开手电筒</string>
+  <string name="keyguard_torch_summary">屏幕锁定时长按电源按钮开启手电筒</string>
   <!-- Statusbar Clock options -->
   <string name="status_bar_title">状态栏</string>
   <string name="status_bar_style_title">样式</string>
   <string name="status_bar_clock">时钟和日期</string>
   <string name="clock_title_enable">对齐方式</string>
   <string name="clock_enabled">已启用</string>
-  <string name="clock_disabled">未启用</string>
+  <string name="clock_disabled">已禁用</string>
   <string name="status_bar_clock_style_reset">重置颜色</string>
   <string name="status_bar_show_clock_title">显示时钟和日期</string>
   <string name="status_bar_am_pm_title">上午/下午</string>
   <string name="status_bar_am_pm_info">24 小时制时钟已启用</string>
-  <string name="enable_clock_weekday">起始日</string>
+  <string name="enable_clock_weekday">星期开始日</string>
   <string name="enable_clock_weekday_summary">在时间前显示简写星期</string>
   <string name="right_clock">右侧</string>
   <string name="center_clock">中心</string>
@@ -236,7 +236,7 @@
   <string name="clock_date_style">日期样式</string>
   <string name="clock_date_position">日期位置</string>
   <string name="clock_date_format">日期格式</string>
-  <string name="clock_date_string_edittext_title">日期格式必须如：MM/dd/yy</string>
+  <string name="clock_date_string_edittext_title">只能填写日期格式 如: MM/dd/yy</string>
   <string name="clock_date_string_edittext_summary">输入字符</string>
   <string name="clock_date_right">时钟右侧</string>
   <string name="clock_date_left">时钟左侧</string>
@@ -249,27 +249,27 @@
   <string name="clock_date_style_normal">常规</string>
   <string name="clock_date_style_lowercase">小写</string>
   <string name="clock_date_style_uppercase">大写</string>
-  <string name="clock_date_format_custom">自定义 java 格式</string>
+  <string name="clock_date_format_custom">输入自定义的 java 时间格式</string>
   <string name="status_bar_clock_style_reset_message">重置时钟颜色？</string>
   <string name="default_string">默认</string>
   <string name="reset">重置</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">颜色选择器</string>
+  <string name="dialog_color_picker">取色器</string>
   <string name="press_color_to_apply">点击下面的颜色以应用</string>
   <string name="hex">十六进制：</string>
   <string name="set">设置</string>
   <string name="color_default">默认</string>
   <!-- AOSP MultiWindow -->
-  <string name="enable_multi_window">多窗口模式</string>
+  <string name="enable_multi_window">分屏模式</string>
   <string name="enable_multi_window_summary">在同一屏幕上同时进行多个活动。</string>
-  <string name="warning_multi_window_text">警告：这是一个高度实验性功能，允许通过最近任务界面同时在屏幕上进行多项活动。一些应用在和此功能同时使用时可能崩溃或无法正常工作。</string>
+  <string name="warning_multi_window_text">警告：这是一个高度实验性功能，它允许您通过近期任务列表界面开启同时在屏幕上显示多个应用的功能。一些应用在此功能下可能会崩溃或无法正常工作。</string>
   <!-- AOKP custom system animations -->
   <string name="activity_open_title">活动项打开动画</string>
   <string name="activity_close_title">活动项关闭动画</string>
   <string name="task_open_title">任务打开动画</string>
   <string name="task_close_title">任务关闭动画</string>
-  <string name="task_move_to_front_title">移动到前台动画</string>
-  <string name="task_move_to_back_title">移动到后台动画</string>
+  <string name="task_move_to_front_title">移到前台动画</string>
+  <string name="task_move_to_back_title">移到后台动画</string>
   <string name="wallpaper_open_title">壁纸打开动画</string>
   <string name="wallpaper_close_title">壁纸关闭动画</string>
   <string name="wallpaper_intra_open_title">壁纸内部打开动画</string>
@@ -279,7 +279,7 @@
   <string name="summary_animation_no_override">防止应用覆盖切换效果</string>
   <string name="animation_duration_default">默认</string>
   <!-- Toast Animation -->
-  <string name="toast_animation_title">Toast 提示动画</string>
+  <string name="toast_animation_title">Toast 提示框动画</string>
   <string name="toast_none_animation">无</string>
   <string name="toast_default_animation">默认</string>
   <string name="toast_fade_animation">淡入淡出</string>
@@ -338,9 +338,9 @@
   <string name="ok">好的</string>
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">时间头部图像</string>
-  <string name="status_bar_custom_header_summary">启用通知面板头部图像</string>
-  <string name="status_bar_custom_header_default_title">使用 Poly HD 图像</string>
-  <string name="status_bar_custom_header_default_summary">启用以使用 Polygraphic HD 图像。关闭使用默认图像</string>
+  <string name="status_bar_custom_header_summary">在通知面板的头部显示图像</string>
+  <string name="status_bar_custom_header_default_title">使用 Poly HD 风格的图像</string>
+  <string name="status_bar_custom_header_default_summary">启用以使用 Polygraphic HD 样式的图像而非默认图像</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">扩展状态栏天气</string>
   <string name="status_bar_show_weather_summary">在扩展的状态栏区域中显示基本天气信息</string>
@@ -365,10 +365,10 @@
   <string name="reset_values_message">要重置值吗？</string>
   <!-- QuickSettings haptic feedback -->
   <string name="quick_settings_vibrate_title">触摸时振动</string>
-  <string name="quick_settings_vibrate_summary">触摸瓷块时震动</string>
+  <string name="quick_settings_vibrate_summary">触摸快捷开关瓷块时进行震动反馈</string>
   <!-- Quick settings disable on lockscreen -->
-  <string name="block_on_secure_keyguard_title">禁用快捷设置</string>
-  <string name="block_on_secure_keyguard_summary">有安全锁屏时在锁屏界面禁用快捷设置</string>
+  <string name="block_on_secure_keyguard_title">锁屏禁用快捷开关</string>
+  <string name="block_on_secure_keyguard_summary">在设定了设备安全性的锁定屏幕中禁用快捷开关</string>
   <!-- Carrier Label -->
   <string name="carrier_options">运营商标签</string>
   <string name="custom_carrier_label_title">自定义运营商标签</string>
@@ -380,22 +380,22 @@
   <string name="show_carrier_statusbar">仅在状态栏显示</string>
   <string name="show_carrier_enabled">同时显示</string>
   <!-- Recents Search Bar -->
-  <string name="recents_show_searchbar">最近任务搜索栏</string>
-  <string name="recents_searchbar_summary_enabled">最近任务界面的搜索栏已启用</string>
-  <string name="recents_searchbar_summary_disabled">最近任务界面的搜索栏已禁用</string>
+  <string name="recents_show_searchbar">近期任务列表搜索栏</string>
+  <string name="recents_searchbar_summary_enabled">显示近期任务列表视图的搜索栏</string>
+  <string name="recents_searchbar_summary_disabled">隐藏近期任务列表视图的搜索栏</string>
   <!-- Notification Count in Statusbar -->
   <string name="status_bar_notif_count_title">显示通知计数</string>
   <string name="status_bar_notif_count_summary">显示待处理的通知的数量</string>
   <!-- Status bar brightness control -->
   <string name="status_bar_brightness_control_title">亮度控制</string>
   <string name="status_bar_brightness_control_summary">在状态栏上滑动来调整亮度</string>
-  <string name="status_bar_brightness_control_info">必须禁用自动调节亮度</string>
+  <string name="status_bar_brightness_control_info">必须禁用自动调节亮度才能设置该选项</string>
   <!-- Lockscreen Shortcuts -->
   <string name="lockscreen_targets_title">底部左/右快捷方式</string>
   <!-- Recents panel settings -->
-  <string name="show_clear_all_recents_button_title">清除全部按钮</string>
-  <string name="show_clear_all_recents_button_summary">显示清除全部按钮</string>
-  <string name="recents_clear_all_location_title">清除所有按钮位置</string>
+  <string name="show_clear_all_recents_button_title">“一键清除”按钮</string>
+  <string name="show_clear_all_recents_button_summary">显示“一键清除”按钮</string>
+  <string name="recents_clear_all_location_title">“一键清除”按钮位置</string>
   <string name="recents_clear_all_location_top_right">右上方</string>
   <string name="recents_clear_all_location_top_left">左上方</string>
   <string name="recents_clear_all_location_top_center">顶部居中</string>
@@ -404,27 +404,27 @@
   <string name="recents_clear_all_location_bottom_center">底部居中</string>
   <!-- Statusbar DU logo -->
   <string name="status_bar_du_logo_title">DU 标志</string>
-  <string name="status_bar_du_logo_summary">在状态栏左侧启用DU 标志</string>
+  <string name="status_bar_du_logo_summary">在状态栏左侧显示 DU 标志</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">警告</string>
-  <string name="su_dialog_error_message">出现错误。\n\n请检查 Root 权限。要启用 Root 权限，请到超级用户设置。</string>
+  <string name="su_dialog_error_message">出现错误。\n\n请检查 Root 权限。要启用 Root 权限，请转到“超级用户”设置中进行设置。</string>
   <string name="lcd_density_title">LCD 密度</string>
   <string name="lcd_density_category">选项</string>
   <string name="follow_through_title">警告</string>
-  <string name="follow_through_summary">更改默认的 LCD 密度有时会导致特定的应用程序不能正常工作或 Google Play 商店显示应用与您的设备不兼容</string>
-  <string name="stock_density_title">更改为官方值</string>
-  <string name="stock_density_summary">平板电脑通常使用 160 dpi 而高端设备使用 320 或 480 dpi 。旧一些的设备使用 240 dpi</string>
+  <string name="follow_through_summary">更改默认的 LCD 密度有时会导致特定的应用程序不能正常工作并且(或者)在 Google Play 商店中某些应用会显示与您的设备不兼容。</string>
+  <string name="stock_density_title">更改为预设值</string>
+  <string name="stock_density_summary">平板电脑通常使用 160 dpi 而高端设备使用 320 或 480 dpi，一些老旧设备使用 240 dpi。</string>
   <string name="stock_density_changed_summary">"密度设置为： "</string>
   <string name="reboot_title">重启设备</string>
-  <string name="reboot_summary">您需要重新启动手机更改才会生效</string>
-  <string name="custom_density_title">更改为你喜欢的任意数值</string>
+  <string name="reboot_summary">您需要重新启动手机才能使设置生效</string>
+  <string name="custom_density_title">更改为自定义数值</string>
   <string name="custom_density_summary_invalid">"无效的DPI！"</string>
   <string name="custom_density">自定义</string>
   <string name="set_custom_density_title">设置自定义DPI</string>
   <string name="set_custom_density_set">确定</string>
   <string name="custom_density_dialog_title">警告 ！</string>
-  <string name="custom_density_dialog_summary">更改默认的 LCD 密度有时会导致特定的应用程序不能正常工作或 Google Play 商店显示应用与您的设备不兼容</string>
+  <string name="custom_density_dialog_summary">更改默认的 LCD 密度有时会导致特定的应用程序不能正常工作并且(或者)在 Google Play 商店中某些应用会显示与您的设备不兼容。</string>
   <string name="custom_density_dialog_button_got">了解！</string>
   <string name="custom_density_dialog_button_reboot">立即重启</string>
   <!-- MediaScanner behavior on boot -->
@@ -434,7 +434,7 @@
   <string name="media_scanner_on_boot_disabled">不要扫描媒体</string>
   <!-- Scrolling Cache -->
   <string name="pref_scrollingcache_title">滚动缓存</string>
-  <string name="pref_scrollingcache_summary">滚动缓存以消耗更多内存为代价提高滚动性能</string>
+  <string name="pref_scrollingcache_summary">开启能提高滚动性能，但会消耗更多内存</string>
   <string name="pref_scrollingcache_force_enable">强制启用</string>
   <string name="pref_scrollingcache_default_enable">默认启用</string>
   <string name="pref_scrollingcache_default_disable">默认禁用</string>
@@ -866,6 +866,6 @@
   <string name="status_bar_custom_header_shadow_title">顶部图片阴影</string>
   <string name="status_bar_custom_header_shadow_summary">明亮图像时有更好的可视性</string>
   <!-- Current on Lockscreen -->
-  <string name="lock_screen_show_current">Charging current</string>
-  <string name="lock_screen_show_current_summary">Show charging current rate on lock screen</string>
+  <string name="lock_screen_show_current">充电电量</string>
+  <string name="lock_screen_show_current_summary">在锁屏显示当前已充入的毫安电量</string>
 </resources>
