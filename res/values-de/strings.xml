@@ -167,13 +167,12 @@
   <string name="status_bar_battery_style_icon_portrait">Symbol (Hochformat)</string>
   <string name="status_bar_battery_style_icon_landscape">Symbol (Querformat)</string>
   <string name="status_bar_battery_style_circle">Kreis</string>
-  <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
   <string name="status_bar_battery_style_text">Text</string>
   <string name="status_bar_battery_style_hidden">Versteckt</string>
   <string name="status_bar_battery_percentage_title">Prozentanzeige</string>
   <string name="status_bar_battery_percentage_dialog_title">Prozentanzeige</string>
   <string name="status_bar_battery_percentage_default">Versteckt (Standard)</string>
-  <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
+  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
   <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">Akkuleiste</string>

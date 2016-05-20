@@ -63,74 +63,76 @@
   <string name="dirtytweaks_dialog_toast">LEIA TUDO!</string>
   <!-- Toast Icons -->
   <string name="toast_icon_title">Ícone do Toast</string>
-  <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+  <string name="toast_icon_summary">Exibir o ícone do aplicativo correspondente ao popup</string>
   <!-- Download Center -->
   <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">List of GAPPS packages to flash in recovery</string>
+  <string name="gapps_summary">Lista de pacotes GAPPS para flash em modo recuperação</string>
   <string name="gapps_credit">Embora os pacotes do GAPPS (Apps do Google) não são compilados da fonte, pois pertencem ao Google, nós gostaríamos de agradecer a algumas pessoas e equipes que mantém esses pacotes para todos, tornando as coisas mais fáceis.\n\nAgradecimento Especial para Team BlackOut, Michael Banks, TKruzze e M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Puxar rápido para baixo</string>
   <string name="summary_quick_pulldown">Puxar para baixao borda %1$s da barra de status para acessar Quick Settings</string>
   <string name="quick_pulldown_off">Desligar</string>
-  <string name="quick_pulldown_left">Left</string>
-  <string name="quick_pulldown_right">Right</string>
-  <string name="smart_pulldown_title">Smart pulldown</string>
-  <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
+  <string name="quick_pulldown_left">Esquerda</string>
+  <string name="quick_pulldown_right">Direita</string>
+  <string name="smart_pulldown_title">Deslizar para baixo inteligente</string>
+  <string name="smart_pulldown_summary">Abrir configurações rápidas quando houverem %1$s notificações presentes</string>
   <string name="smart_pulldown_off">Desligar</string>
   <string name="smart_pulldown_dismissable">Não dispensável</string>
   <string name="smart_pulldown_persistent">Não persistente</string>
-  <string name="smart_pulldown_all">No dismissable or persistent</string>
+  <string name="smart_pulldown_all">Não dispensável ou persistente</string>
   <!-- Quick Settings brightness slider -->
-  <string name="qs_brightness_slider_title">Brightness slider</string>
-  <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+  <string name="qs_brightness_slider_title">Controle de brilho</string>
+  <string name="qs_brightness_slider_summary">Mostrar o controle deslizante de brilho no painel de configurações rápidas</string>
   <!-- Quick Settings brightness icon -->
-  <string name="brightness_icon_title">Brightness icon </string>
-  <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+  <string name="brightness_icon_title">Brilho </string>
+  <string name="brightness_icon_summary">Mostrar um ícone de brilho a esquerda do controle deslizante de brilho para ajustar o auto-brilho</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Change the view of the recents screen</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
+  <string name="immersive_recents_title">Imersivas Recentes</string>
+  <string name="immersive_recents_summary">Alterar a exibição das telas recentes</string>
+  <string name="immersive_recents_dialog_title">Selecionar visualização recente</string>
+  <string name="immersive_recents_default">Padrão</string>
+  <string name="immersive_recents_fullscreen">Tela cheia</string>
+  <string name="immersive_recents_statusbar">Apenas Barra de status</string>
+  <string name="immersive_recents_navbar">Apenas Navbar</string>
   <!-- Power Menu -->
-  <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
-  <string name="powermenu_lockscreen_summary">Show power menu on the lock screen</string>
-  <string name="powermenu_power">Power</string>
-  <string name="powermenu_reboot">Reboot</string>
-  <string name="powermenu_screenshot">Screenshot</string>
-  <string name="powermenu_screenrecord">Screen Record</string>
-  <string name="powermenu_torch">Torch</string>
-  <string name="powermenu_airplane">Airplane</string>
-  <string name="powermenu_settings">Settings</string>
-  <string name="powermenu_lockdown">Lock Down</string>
-  <string name="powermenu_soundpanel">Sound Panel</string>
-  <string name="powermenu_options">Additional options</string>
-  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
+  <string name="powermenu_lockscreen_title">Menu de energia na tela de bloqueio</string>
+  <string name="powermenu_lockscreen_summary">Menu de energia na tela de bloqueio</string>
+  <string name="powermenu_power">Energia</string>
+  <string name="powermenu_reboot">Reiniciar</string>
+  <string name="powermenu_screenshot">Captura de tela</string>
+  <string name="powermenu_screenrecord">Gravação da tela</string>
+  <string name="powermenu_torch">Lanterna</string>
+  <string name="powermenu_airplane">Avião</string>
+  <string name="powermenu_settings">Configurações</string>
+  <string name="powermenu_lockdown">Bloquear</string>
+  <string name="powermenu_soundpanel">Painel de som</string>
+  <string name="powermenu_options">Opções adicionais</string>
+  <string name="powermenu_dialog_dim">Brilho de fundo</string>
   <!-- Advanced reboot options -->
-  <string name="advanced_reboot_title">Advanced reboot</string>
-  <string name="advanced_reboot_summary">Include options in the power menu for rebooting into recovery and bootloader</string>
+  <string name="advanced_reboot_title">Reiniciar avançado</string>
+  <string name="advanced_reboot_summary">Inclua opções no menu para poder reiniciar em recuperação e bootloader</string>
   <string name="advanced_reboot_dialog_title">Advanced reboot menu</string>
-  <string name="advanced_reboot_disabled">Disable</string>
+  <string name="advanced_reboot_disabled">Desativar</string>
   <string name="advanced_reboot_hide_on_keyguard">Hide on lock screen</string>
-  <string name="advanced_reboot_show_always">Show always</string>
+  <string name="advanced_reboot_show_always">Mostrar sempre</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_summary">Block system wakelocks</string>
-  <string name="wakelock_blocker_save">Save</string>
-  <string name="wakelock_list_header">Available wakelocks</string>
-  <string name="wakelock_blocker_reload">Reload</string>
+  <string name="wakelock_blocker_summary">Sistema de bloqueio de wakelocks.
+
+Wakelock é uma função que permite que alguns aplicativos impeçam o dispositivo de entrar em standby completo (Diminuir o brilho da tela, desligar a tela, diminuir as frequências da CPU) executando atividades sem interação com o usuário. O sistema de bloqueio de wakelocks permite ao usuário bloquear esses aplicativos para que não utilizem wakelock, fazendo com que o dispositivo gaste menos energia pois irá impedir a execução do aplicativo em standby, porém isso poderá fazer com que o aplicativo não funcione adequadamente.</string>
+  <string name="wakelock_blocker_save">Salvar</string>
+  <string name="wakelock_list_header">Wakelocks disponíveis</string>
+  <string name="wakelock_blocker_reload">Recarregar</string>
   <string name="wakelock_blocker_warning_title">Proceed with caution</string>
   <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
   <!-- Expanded desktop -->
-  <string name="expanded_hide_nothing">Hide nothing</string>
-  <string name="expanded_hide_status">Hide status bar</string>
+  <string name="expanded_hide_nothing">Não ocultar nada</string>
+  <string name="expanded_hide_status">Ocultar a barra de status</string>
   <string name="expanded_hide_navigation">Hide navigation bar</string>
-  <string name="expanded_hide_both">Hide both</string>
-  <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \"Enabled for all\" to the off position</string>
-  <string name="expanded_desktop_state">Expanded state</string>
-  <string name="expanded_enabled_for_all">Enabled for all</string>
-  <string name="expanded_user_configurable">User configurable</string>
+  <string name="expanded_hide_both">Ocultar ambos</string>
+  <string name="expanded_nothing_to_show">Para adicionar uma configuração de aplicativo personalizado para estado expandido, a opção \"Ativado para todos\" deve estar desativada</string>
+  <string name="expanded_desktop_state">Estado expandido</string>
+  <string name="expanded_enabled_for_all">Ativado para todos</string>
+  <string name="expanded_user_configurable">Configurável pelo usuário</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
   <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
@@ -138,42 +140,41 @@
   <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
   <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
   <!-- Disabling FC notifications -->
-  <string name="disable_fc_notifications_title">Disable FC Notifications</string>
-  <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
+  <string name="disable_fc_notifications_title">Desabilitar notificações de FC</string>
+  <string name="disable_fc_notifications_summary">Isto esconderá todas as notificações de fechamento forçado</string>
   <!-- Double tap to sleep -->
-  <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
-  <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
-  <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
+  <string name="double_tap_to_sleep_title">DT2S na barra de status</string>
+  <string name="double_tap_to_sleep_summary">Toque duplo na barra de status para colocar o dispositivo para dormir</string>
+  <string name="double_tap_sleep_nav_bar_title">DT2S na barra de navegação</string>
   <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
   <string name="double_tap_to_sleep_lockscreen_title">DT2S on Lockscreen</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
   <!-- Ad Blocker -->
   <string name="adblocker_title">Ad blocker</string>
   <string name="disable_ads_title">Disable Ads</string>
-  <string name="disable_ads_summary">Change hosts file to disable ads</string>
+  <string name="disable_ads_summary">Alterar o arquivo hosts para desativar anúncios</string>
   <!-- Volume Key Rotation -->
-  <string name="swap_volume_buttons_title">Reorient</string>
-  <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+  <string name="swap_volume_buttons_title">Reorientar</string>
+  <string name="swap_volume_buttons_summary">Inverter botões de volume quando rotacionar a tela</string>
   <!-- Volume rocker wake -->
-  <string name="volume_rocker_wake_title">Volume rocker wake</string>
+  <string name="volume_rocker_wake_title">Acordar com as teclas de volume</string>
   <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device\nOverrides playback control</string>
   <!-- Volume rocker music control -->
   <string name="volume_rocker_music_controls_title">Playback control</string>
   <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
   <!-- Battery options -->
-  <string name="battery_title">Battery</string>
-  <string name="battery2_summary">Customize battery icons and percentage</string>
-  <string name="status_bar_battery_style_title">Battery status style</string>
-  <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-  <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
-  <string name="status_bar_battery_style_circle">Circle</string>
-  <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+  <string name="battery_title">Bateria</string>
+  <string name="battery2_summary">Personalizar os ícones e a percentual da bateria</string>
+  <string name="status_bar_battery_style_title">Estilo do ícone da bateria</string>
+  <string name="status_bar_battery_style_icon_portrait">Ícone retrato</string>
+  <string name="status_bar_battery_style_icon_landscape">Ícone paisagem</string>
+  <string name="status_bar_battery_style_circle">Círculo</string>
   <string name="status_bar_battery_style_text">Text</string>
   <string name="status_bar_battery_style_hidden">Hidden</string>
   <string name="status_bar_battery_percentage_title">Show battery percentage</string>
   <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
   <string name="status_bar_battery_percentage_default">Hidden (default)</string>
-  <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
   <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">Battery bar</string>
@@ -279,7 +280,7 @@
   <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
   <string name="animation_duration_default">Default</string>
   <!-- Toast Animation -->
-  <string name="toast_animation_title">Toast animation</string>
+  <string name="toast_animation_title">Animações Popup</string>
   <string name="toast_none_animation">None</string>
   <string name="toast_default_animation">Default</string>
   <string name="toast_fade_animation">Fade</string>

@@ -167,13 +167,12 @@
   <string name="status_bar_battery_style_icon_portrait">Icona verticale</string>
   <string name="status_bar_battery_style_icon_landscape">Icona orizzontale</string>
   <string name="status_bar_battery_style_circle">Cerchio</string>
-  <string name="status_bar_battery_style_dotted_circle">Cerchio tratteggiato</string>
   <string name="status_bar_battery_style_text">Testo</string>
   <string name="status_bar_battery_style_hidden">Nascosta</string>
   <string name="status_bar_battery_percentage_title">Mostra percentuale batteria</string>
   <string name="status_bar_battery_percentage_dialog_title">Percentuale batteria</string>
   <string name="status_bar_battery_percentage_default">Nascosta (predefinito)</string>
-  <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
+  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
   <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">Battery bar</string>

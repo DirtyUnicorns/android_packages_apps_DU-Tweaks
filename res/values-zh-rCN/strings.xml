@@ -167,13 +167,12 @@
   <string name="status_bar_battery_style_icon_portrait">纵向图标</string>
   <string name="status_bar_battery_style_icon_landscape">横向图标</string>
   <string name="status_bar_battery_style_circle">环形</string>
-  <string name="status_bar_battery_style_dotted_circle">环形虚线</string>
   <string name="status_bar_battery_style_text">百分比</string>
   <string name="status_bar_battery_style_hidden">隐藏</string>
   <string name="status_bar_battery_percentage_title">显示电量百分比</string>
   <string name="status_bar_battery_percentage_dialog_title">电量百分比</string>
   <string name="status_bar_battery_percentage_default">隐藏 (默认)</string>
-  <string name="status_bar_battery_percentage_text_inside">图标内</string>
+  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
   <string name="status_bar_battery_percentage_text_next">图标旁</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">电量条</string>

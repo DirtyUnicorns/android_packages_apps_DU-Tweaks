@@ -107,7 +107,7 @@
   <string name="powermenu_lockdown">Bloquear</string>
   <string name="powermenu_soundpanel">Panel de sonido</string>
   <string name="powermenu_options">Opciones adicionales</string>
-  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
+  <string name="powermenu_dialog_dim">Cantidad de difuminacion del dialogo de fondo</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Reinicio avanzado</string>
   <string name="advanced_reboot_summary">Incluir opciones para reiniciar en modo Recovery y Bootloader en el menú de apagado</string>
@@ -167,13 +167,12 @@
   <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
   <string name="status_bar_battery_style_icon_landscape">Icono horizontal</string>
   <string name="status_bar_battery_style_circle">Círculo</string>
-  <string name="status_bar_battery_style_dotted_circle">Círculo punteado</string>
   <string name="status_bar_battery_style_text">Texto</string>
   <string name="status_bar_battery_style_hidden">Oculto</string>
   <string name="status_bar_battery_percentage_title">Mostrar porcentaje de batería</string>
   <string name="status_bar_battery_percentage_dialog_title">Porcentaje de batería</string>
   <string name="status_bar_battery_percentage_default">Oculto (por defecto)</string>
-  <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
+  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
   <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">Barra de batería</string>
@@ -272,8 +271,8 @@
   <string name="task_move_to_back_title">Mover hacia atrás</string>
   <string name="wallpaper_open_title">Animación al abrir fondo de pantalla</string>
   <string name="wallpaper_close_title">Animación al cerrar fondo de pantalla</string>
-  <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
-  <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
+  <string name="wallpaper_intra_open_title">Animación abierta entre fondos de pantalla</string>
+  <string name="wallpaper_intra_close_title">Animación cerrada entre fondos de pantalla</string>
   <string name="animation_duration_title">Duración de la animación</string>
   <string name="title_animation_no_override">Evitar anulaciones de apps</string>
   <string name="summary_animation_no_override">Evitar que las aplicaciones reemplacen las transiciones</string>
@@ -496,7 +495,7 @@
   <string name="voicemail_breath_title">Respiración en Correo de voz</string>
   <string name="voicemail_breath_summary">Le dará un efecto de respiración en las notificaciones de correo de voz en la barra de estado</string>
   <string name="sms_breath_title">Respiración en SMS</string>
-  <string name="sms_breath_summary">Will give your SMS notifications a breathing effect in the statusbar</string>
+  <string name="sms_breath_summary">Le dara un efecto de respiro a tus notificaciones en la barra de estado</string>
   <!-- Navigation Bar -->
   <string name="navbar_interface_title">Interfaz</string>
   <string name="navbar_size">Tamaño de la barra</string>
@@ -567,7 +566,7 @@
   <string name="long_swipe_reset">Restablecer</string>
   <string name="fling_advanced">Avanzado</string>
   <string name="fling_long_swipe_title">Umbral de deslizamiento largo</string>
-  <string name="fling_long_swipe_summary">Fine tune long swipe thresholds based on a percentage of Fling interface width or height</string>
+  <string name="fling_long_swipe_summary">Afinar umbral para arrastre largo basado en un porcentaje de la interface de altura o largo de Fling</string>
   <string name="fling_trails_enable_title">Activar recorrido del deslizamiento</string>
   <string name="fling_trails_enable_summary">Mostrar el camino en gestos swipe</string>
   <string name="fling_trails_color_title">Color de Estela</string>
@@ -595,7 +594,7 @@
   <string name="fling_show_pulse_summary">Visualización de audio en la barra de navegación</string>
   <string name="fling_pulse_color">Color de Pulse</string>
   <string name="eos_fling_lavalamp_title">Encienda la lámpara de Lava</string>
-  <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
+  <string name="eos_fling_lavalamp_summary">Pulso anima una suave mezcla de colores tipo lampara de lava</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Tamaño de la barra</string>
   <string name="portrait_title">Altura en vertical</string>
@@ -606,7 +605,7 @@
   <string name="smartbar_category">SmartBar</string>
   <string name="smartbar_settings_title">Ajustes de SmartBar</string>
   <string name="smartbar_editor_title">Conmutar editor de botones</string>
-  <string name="smartbar_editor_summary">Medium press and drag to change position. Long press to show edit menu. Button position may be changed while menu is showing.</string>
+  <string name="smartbar_editor_summary">Presion de medio tiempo y arrastra para cambiar posicion. Presiona prolongadamente para mostrar el menu de edicion. La posicion de los botones puede ser cambiada cuando el menu se esta mostrando.</string>
   <string name="smartbar_context_menu_position_title">Posición de botones contextuales</string>
   <string name="smartbar_context_menu_position_summary">Establecer la posición de los botones contextuales tales como el menú y el selector de teclado</string>
   <string name="smartbar_right">Derecha</string>
@@ -793,10 +792,10 @@
   <string name="hide_lockscreen_alarm_title">Alarma</string>
   <string name="hide_lockscreen_alarm_summary">Mostrar alarma en la pantalla de bloqueo</string>
   <!-- Lockscreen Bouncer -->
-  <string name="ls_bouncer_title">Secure lockscreen bouncer</string>
+  <string name="ls_bouncer_title">Bouncer de pantalla de bloqueo seguro</string>
   <string name="ls_bouncer_summary">Abrir pantalla de bloqueo directamente al pin/patrón/contraseña cuando no hay notificaciones</string>
   <string name="ls_bouncer_on">Activado (por defecto)</string>
-  <string name="ls_bouncer_on_summary">Stock bouncer behavior</string>
+  <string name="ls_bouncer_on_summary">Comportamiento predeterminado del bouncer</string>
   <string name="ls_bouncer_off">Apagado</string>
   <string name="ls_bouncer_off_summary">Abrir pantalla de desbloqueo directo con pin/patrón/contraseña</string>
   <string name="ls_bouncer_dismissable">No descartables</string>
