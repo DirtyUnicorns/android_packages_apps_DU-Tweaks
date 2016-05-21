@@ -338,8 +338,6 @@
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">Intestazione contestuale al tempo</string>
   <string name="status_bar_custom_header_summary">Attiva l\'immagine di intestazione nel pannello delle notifiche</string>
-  <string name="status_bar_custom_header_default_title">Utilizza immagini Poly HD</string>
-  <string name="status_bar_custom_header_default_summary">Abilita per immagini Poly Hd. Disattiva per le immagini originali.</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">Meteo nella barra di stato estesa</string>
   <string name="status_bar_show_weather_summary">Visualizza meteo di base nella barra di stato estesa</string>
