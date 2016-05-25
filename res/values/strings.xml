@@ -569,6 +569,7 @@
     <string name="info_pref_note_title">Note</string>
     <string name="smartbar_interface">SmartBar</string>
     <string name="icon_pack_picker_dialog_title">Icon packs</string>
+    <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
 
     <!-- Hardware button navigation -->
     <string name="hardware_keys_volume_keys_title">Volume rocker</string>
