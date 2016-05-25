@@ -338,8 +338,6 @@
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">Заголовок панели уведомлений</string>
   <string name="status_bar_custom_header_summary">Отображение пользовательского изображения в открытой строке состояния</string>
-  <string name="status_bar_custom_header_default_title">Использовать PolyHD изображения</string>
-  <string name="status_bar_custom_header_default_summary">Включите для изображений PolyHD. Отключить для оригиналов.</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">Погода в раскрытой строке состояния</string>
   <string name="status_bar_show_weather_summary">Показать основные погодные условия в расширенной области строки состояния</string>

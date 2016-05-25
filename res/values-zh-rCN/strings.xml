@@ -338,8 +338,6 @@
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">时间头部图像</string>
   <string name="status_bar_custom_header_summary">在通知面板的头部显示图像</string>
-  <string name="status_bar_custom_header_default_title">使用 Poly HD 风格的图像</string>
-  <string name="status_bar_custom_header_default_summary">启用以使用 Polygraphic HD 样式的图像而非默认图像</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">扩展状态栏天气</string>
   <string name="status_bar_show_weather_summary">在扩展的状态栏区域中显示基本天气信息</string>

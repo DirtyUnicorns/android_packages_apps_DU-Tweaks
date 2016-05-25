@@ -172,7 +172,7 @@
   <string name="status_bar_battery_percentage_title">Afficher le pourcentage restant de batterie</string>
   <string name="status_bar_battery_percentage_dialog_title">Pourcentage</string>
   <string name="status_bar_battery_percentage_default">Masqué (Par défaut)</string>
-  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
+  <string name="status_bar_battery_percentage_text_inside">Dans l\'icône (Sauf lors de la charge)</string>
   <string name="status_bar_battery_percentage_text_next">Après l\'icône</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">Barre de batterie</string>
@@ -338,8 +338,6 @@
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">En-tête contextuel</string>
   <string name="status_bar_custom_header_summary">Afficher une image d\'arrière-plan sur le volet des notifications</string>
-  <string name="status_bar_custom_header_default_title">Images HD Polygraphiques</string>
-  <string name="status_bar_custom_header_default_summary">Activer pour utiliser les images HD Polygraphiques. Désactiver pour utiliser les images d\'origine.</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">Météo sur la barre d\'état étendue</string>
   <string name="status_bar_show_weather_summary">Afficher les informations météo dans la barre d\'état étendue</string>
@@ -617,7 +615,7 @@
   <string name="smartbar_factory_reset_title">Réinitialiser les paramètres</string>
   <string name="smartbar_factory_reset_confirm">Revenir à la configuration d\'origine de SmartBar\u00A0?</string>
   <string name="smartbar_ime_action_title">Modes de saisie</string>
-  <string name="smartbar_ime_action_summary">Définir les boutons à afficher lors de l\'affichage du clavier</string>
+  <string name="smartbar_ime_action_summary">Définir les boutons supplémentaires du clavier à afficher</string>
   <string name="smartbar_ime_action_none">Aucun</string>
   <string name="smartbar_ime_action_arrows">Touches de direction</string>
   <string name="smartbar_ime_action_switcher">Sélecteur de clavier</string>

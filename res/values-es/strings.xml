@@ -338,8 +338,6 @@
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">Encabezado contextual</string>
   <string name="status_bar_custom_header_summary">Habilitar cabecera personalizada en el panel de notificaciones</string>
-  <string name="status_bar_custom_header_default_title">Usar imagenes PolyHD</string>
-  <string name="status_bar_custom_header_default_summary">Habilita Polygraphic HD images. Desactiva las originales.</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">Tiempo en barra de estado extendido</string>
   <string name="status_bar_show_weather_summary">Mostrar el tiempo básico en el área de la barra de estado extendida</string>

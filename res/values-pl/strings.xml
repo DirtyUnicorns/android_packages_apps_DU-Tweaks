@@ -172,7 +172,7 @@
   <string name="status_bar_battery_percentage_title">Pokaż procent baterii</string>
   <string name="status_bar_battery_percentage_dialog_title">Procent baterii</string>
   <string name="status_bar_battery_percentage_default">Ukryte (domyślnie)</string>
-  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
+  <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony (bez ładowania)</string>
   <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">Pasek baterii</string>
@@ -338,8 +338,6 @@
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">Nagłówek pory dnia</string>
   <string name="status_bar_custom_header_summary">Włącz obraz w nagłówku panelu powiadomień</string>
-  <string name="status_bar_custom_header_default_title">Użyj obrazów Poly HD</string>
-  <string name="status_bar_custom_header_default_summary">Włącz wysokiej jakości obrazki poligraficzne.</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">Ikona w rozwiniętym pasku stanu</string>
   <string name="status_bar_show_weather_summary">Pokaż prostą pogodę w obszarze rozszerzonego paska powiadomień</string>

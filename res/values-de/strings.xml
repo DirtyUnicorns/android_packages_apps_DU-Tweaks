@@ -172,7 +172,7 @@
   <string name="status_bar_battery_percentage_title">Prozentanzeige</string>
   <string name="status_bar_battery_percentage_dialog_title">Prozentanzeige</string>
   <string name="status_bar_battery_percentage_default">Versteckt (Standard)</string>
-  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
+  <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols (nicht ladend)</string>
   <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">Akkuleiste</string>
@@ -338,8 +338,6 @@
   <!-- Time Contextual Header -->
   <string name="status_bar_custom_header_title">Zeitbasierter Hintergrund</string>
   <string name="status_bar_custom_header_summary">Ersetzt den Hintergrund der oberen Benachrichtigungsleiste durch Bilder</string>
-  <string name="status_bar_custom_header_default_title">Polygon-Bilder</string>
-  <string name="status_bar_custom_header_default_summary">Ersetzt den Hintergrund durch Polygon-Bilder</string>
   <!-- Extended statusbar weather -->
   <string name="status_bar_show_weather_title">Wetter in erweiterter Statusleiste</string>
   <string name="status_bar_show_weather_summary">Zeigt das Wetter in der erweiterten Statusleiste an</string>
