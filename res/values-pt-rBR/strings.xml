@@ -111,9 +111,9 @@
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Reiniciar avançado</string>
   <string name="advanced_reboot_summary">Inclua opções no menu para poder reiniciar em recuperação e bootloader</string>
-  <string name="advanced_reboot_dialog_title">Advanced reboot menu</string>
+  <string name="advanced_reboot_dialog_title">Menu Avançado reinicialização</string>
   <string name="advanced_reboot_disabled">Desativar</string>
-  <string name="advanced_reboot_hide_on_keyguard">Hide on lock screen</string>
+  <string name="advanced_reboot_hide_on_keyguard">Ocultar na tela de bloqueio</string>
   <string name="advanced_reboot_show_always">Mostrar sempre</string>
   <!-- Wakelock blocker -->
   <string name="wakelock_blocker_summary">Sistema de bloqueio de wakelocks.
@@ -122,20 +122,20 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="wakelock_blocker_save">Salvar</string>
   <string name="wakelock_list_header">Wakelocks disponíveis</string>
   <string name="wakelock_blocker_reload">Recarregar</string>
-  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_warning_title">Prossiga com cautela</string>
+  <string name="wakelock_blocker_warning">Bloquear wakelocks têm o potencial de causar instabilidade, travamentos ou perda de dados</string>
   <!-- Expanded desktop -->
   <string name="expanded_hide_nothing">Não ocultar nada</string>
   <string name="expanded_hide_status">Ocultar a barra de status</string>
-  <string name="expanded_hide_navigation">Hide navigation bar</string>
+  <string name="expanded_hide_navigation">Ocultar a barra de navegação</string>
   <string name="expanded_hide_both">Ocultar ambos</string>
   <string name="expanded_nothing_to_show">Para adicionar uma configuração de aplicativo personalizado para estado expandido, a opção \"Ativado para todos\" deve estar desativada</string>
   <string name="expanded_desktop_state">Estado expandido</string>
   <string name="expanded_enabled_for_all">Ativado para todos</string>
   <string name="expanded_user_configurable">Configurável pelo usuário</string>
   <!-- Force expanded notifications -->
-  <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-  <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+  <string name="force_expanded_notifications_title">Forçar notificações expandidas</string>
+  <string name="force_expanded_notifications_summary">Disponivel apenas para apps que suportam notificações expandidas</string>
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
   <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
@@ -151,7 +151,7 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
   <!-- Ad Blocker -->
   <string name="adblocker_title">Ad blocker</string>
-  <string name="disable_ads_title">Disable Ads</string>
+  <string name="disable_ads_title">Desativar anúncios</string>
   <string name="disable_ads_summary">Alterar o arquivo hosts para desativar anúncios</string>
   <!-- Volume Key Rotation -->
   <string name="swap_volume_buttons_title">Reorientar</string>
@@ -160,8 +160,8 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="volume_rocker_wake_title">Acordar com as teclas de volume</string>
   <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device\nOverrides playback control</string>
   <!-- Volume rocker music control -->
-  <string name="volume_rocker_music_controls_title">Playback control</string>
-  <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+  <string name="volume_rocker_music_controls_title">Controle de reprodução</string>
+  <string name="volume_rocker_music_controls_summary">Quando a tela estiver desligada, segurar os botões de volume avançam ou retrocedem músicas</string>
   <!-- Battery options -->
   <string name="battery_title">Bateria</string>
   <string name="battery2_summary">Personalizar os ícones e a percentual da bateria</string>
@@ -509,6 +509,7 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="info_pref_note_title">Note</string>
   <string name="smartbar_interface">SmartBar</string>
   <string name="icon_pack_picker_dialog_title">Icon packs</string>
+  <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
   <!-- Hardware button navigation -->
   <string name="hardware_keys_volume_keys_title">Volume rocker</string>
   <string name="hardware_keys_home_key_title">Home button</string>
@@ -867,4 +868,15 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <!-- Current on Lockscreen -->
   <string name="lock_screen_show_current">Charging current</string>
   <string name="lock_screen_show_current_summary">Show charging current rate on lock screen</string>
+  <!-- Tiles animation style  -->
+  <string name="qs_tile_animation_style_title">Tiles animation style</string>
+  <string name="qs_tile_animation_duration_title">Tiles animation duration</string>
+  <string name="qs_tile_animation_style_off">no animation</string>
+  <string name="qs_tile_animation_style_flip">flip</string>
+  <string name="qs_tile_animation_style_rotate">rotate</string>
+  <string name="qs_tile_animation_duration_low">low</string>
+  <string name="qs_tile_animation_duration_default">default</string>
+  <string name="qs_tile_animation_duration_fast">fast</string>
+  <string name="qs_set_animation_style">Animation is set to %1$s</string>
+  <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
 </resources>
