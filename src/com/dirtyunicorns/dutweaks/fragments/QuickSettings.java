@@ -46,12 +46,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
+    private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
 
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
     private ListPreference mNumColumns;
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
+    private ListPreference mTileAnimationInterpolator;
     private SwitchPreference mBlockOnSecureKeyguard;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
@@ -103,7 +105,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                 UserHandle.USER_CURRENT);
         mTileAnimationStyle.setValue(String.valueOf(tileAnimationStyle));
         updateTileAnimationStyleSummary(tileAnimationStyle);
-        updateAnimTileDuration(tileAnimationStyle);
+        updateAnimTileStyle(tileAnimationStyle);
         mTileAnimationStyle.setOnPreferenceChangeListener(this);
 
         mTileAnimationDuration = (ListPreference) findPreference(PREF_TILE_ANIM_DURATION);
@@ -113,6 +115,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         mTileAnimationDuration.setValue(String.valueOf(tileAnimationDuration));
         updateTileAnimationDurationSummary(tileAnimationDuration);
         mTileAnimationDuration.setOnPreferenceChangeListener(this);
+
+        mTileAnimationInterpolator = (ListPreference) findPreference(PREF_TILE_ANIM_INTERPOLATOR);
+        int tileAnimationInterpolator = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.ANIM_TILE_INTERPOLATOR, 0,
+                UserHandle.USER_CURRENT);
+        mTileAnimationInterpolator.setValue(String.valueOf(tileAnimationInterpolator));
+        updateTileAnimationInterpolatorSummary(tileAnimationInterpolator);
+        mTileAnimationInterpolator.setOnPreferenceChangeListener(this);
 
     }
 
@@ -163,13 +173,19 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             Settings.System.putIntForUser(getContentResolver(), Settings.System.ANIM_TILE_STYLE,
                     tileAnimationStyle, UserHandle.USER_CURRENT);
             updateTileAnimationStyleSummary(tileAnimationStyle);
-            updateAnimTileDuration(tileAnimationStyle);
+            updateAnimTileStyle(tileAnimationStyle);
             return true;
         } else if (preference == mTileAnimationDuration) {
             int tileAnimationDuration = Integer.valueOf((String) objValue);
             Settings.System.putIntForUser(getContentResolver(), Settings.System.ANIM_TILE_DURATION,
                     tileAnimationDuration, UserHandle.USER_CURRENT);
             updateTileAnimationDurationSummary(tileAnimationDuration);
+            return true;
+        } else if (preference == mTileAnimationInterpolator) {
+            int tileAnimationInterpolator = Integer.valueOf((String) objValue);
+            Settings.System.putIntForUser(getContentResolver(), Settings.System.ANIM_TILE_INTERPOLATOR,
+                    tileAnimationInterpolator, UserHandle.USER_CURRENT);
+            updateTileAnimationInterpolatorSummary(tileAnimationInterpolator);
             return true;
         }
         return false;
@@ -193,12 +209,20 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         mTileAnimationDuration.setSummary(getResources().getString(R.string.qs_set_animation_duration, prefix));
     }
 
-    private void updateAnimTileDuration(int tileAnimationStyle) {
+    private void updateTileAnimationInterpolatorSummary(int tileAnimationInterpolator) {
+        String prefix = (String) mTileAnimationInterpolator.getEntries()[mTileAnimationInterpolator.findIndexOfValue(String
+                .valueOf(tileAnimationInterpolator))];
+        mTileAnimationInterpolator.setSummary(getResources().getString(R.string.qs_set_animation_interpolator, prefix));
+    }
+
+    private void updateAnimTileStyle(int tileAnimationStyle) {
         if (mTileAnimationDuration != null) {
             if (tileAnimationStyle == 0) {
                 mTileAnimationDuration.setSelectable(false);
+                mTileAnimationInterpolator.setSelectable(false);
             } else {
                 mTileAnimationDuration.setSelectable(true);
+                mTileAnimationInterpolator.setSelectable(true);
             }
         }
     }
