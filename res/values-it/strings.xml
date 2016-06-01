@@ -507,7 +507,7 @@
   <string name="info_pref_note_title">Nota</string>
   <string name="smartbar_interface">SmartBar</string>
   <string name="icon_pack_picker_dialog_title">Pacchetti icone</string>
-  <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
+  <string name="invalid_icon_from_uri">Impossibile caricare l\'immagine dal provider di contenuti</string>
   <!-- Hardware button navigation -->
   <string name="hardware_keys_volume_keys_title">Bilanciere del volume</string>
   <string name="hardware_keys_home_key_title">Tasto Home</string>
@@ -867,14 +867,14 @@
   <string name="lock_screen_show_current">Corrente di carica</string>
   <string name="lock_screen_show_current_summary">Mostra il tasso di corrente di carica nella schermata di blocco</string>
   <!-- Tiles animation style  -->
-  <string name="qs_tile_animation_style_title">Tiles animation style</string>
-  <string name="qs_tile_animation_duration_title">Tiles animation duration</string>
-  <string name="qs_tile_animation_style_off">no animation</string>
-  <string name="qs_tile_animation_style_flip">flip</string>
-  <string name="qs_tile_animation_style_rotate">rotate</string>
-  <string name="qs_tile_animation_duration_low">low</string>
-  <string name="qs_tile_animation_duration_default">default</string>
-  <string name="qs_tile_animation_duration_fast">fast</string>
-  <string name="qs_set_animation_style">Animation is set to %1$s</string>
-  <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+  <string name="qs_tile_animation_style_title">Stile animazione tiles</string>
+  <string name="qs_tile_animation_duration_title">Durata animazione tiles</string>
+  <string name="qs_tile_animation_style_off">Nessuna animazione</string>
+  <string name="qs_tile_animation_style_flip">Capovolgi</string>
+  <string name="qs_tile_animation_style_rotate">Ruota</string>
+  <string name="qs_tile_animation_duration_low">Basso</string>
+  <string name="qs_tile_animation_duration_default">Predefinita</string>
+  <string name="qs_tile_animation_duration_fast">Veloce</string>
+  <string name="qs_set_animation_style">Animazione impostata su %1$s</string>
+  <string name="qs_set_animation_duration">Durata dell\'animazione impostata a %1$s</string>
 </resources>

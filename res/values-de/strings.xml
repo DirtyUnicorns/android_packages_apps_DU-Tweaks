@@ -35,7 +35,7 @@
   <string name="recents_category">Anwendungsverlauf</string>
   <string name="statusbar_items_category">Statusleisten-Symbole</string>
   <string name="statusbar_notifications_category">Benachrichtigungen</string>
-  <string name="lockscreen_notifications_category">Benachrichtigungen</string>
+  <string name="lockscreen_notifications_category">Sperrbildschirm-Benachrichtigungen</string>
   <string name="wakelockblocker_category">Wakelocks blockieren</string>
   <string name="gestures_category">Gesten</string>
   <string name="multitasking_category">Multi-Tasking</string>
@@ -59,7 +59,7 @@
   <string name="omniswitch_first_time_message">Stellen Sie sicher, dass OmniSwitch aktiviert ist, um es als Anwendungsverlauf verwenden zu können.</string>
   <!-- Dialog -->
   <string name="dirtytweaks_dialog_title">Helfen Sie uns, und wir helfen Ihnen!</string>
-  <string name="dirtytweaks_dialog_message">Leider können wir nicht zaubern! \n\nWenn Sie einen Fehler finden, eröffnen Sie bitte ein Ticket auf Jira oder wenden Sie sich an einen DU-Entwickler.\n\n1. Logcat oder Last_Kmsg\n2. Kernel und verwendete Mods\n3. Nützliche Informationen\n\nWenn Sie keine Fehler berichten, erwarten Sie bitte keine Dinge die behoben werden können.</string>
+  <string name="dirtytweaks_dialog_message">Leider können wir nicht zaubern! \n\nWenn Sie einen Fehler finden, eröffnen Sie bitte ein Ticket auf Jira oder wenden Sie sich an einen DU-Entwickler.\n\n1. Logcat oder Last_Kmsg\n2. Kernel und verwendete Mods\n3. Nützliche Informationen\n\nErwarten Sie bitte nicht, dass wir Fehler beheben können, wenn Sie uns keine Fehlerberichte senden. Noch einmal, wir können nicht zaubern und übersehen also auch mal etwas.</string>
   <string name="dirtytweaks_dialog_toast">LESEN SIE ALLES DURCH!</string>
   <!-- Toast Icons -->
   <string name="toast_icon_title">Toast-Symbol</string>
@@ -76,7 +76,7 @@
   <string name="quick_pulldown_right">Rechte</string>
   <string name="smart_pulldown_title">Intelligentes Öffnen</string>
   <string name="smart_pulldown_summary">Direktes öffnen der Schnelleinstellungen wenn %1$s Benachtichtigungen vorliegen</string>
-  <string name="smart_pulldown_off">Deaktiviert</string>
+  <string name="smart_pulldown_off">Aus</string>
   <string name="smart_pulldown_dismissable">Keine löschbaren</string>
   <string name="smart_pulldown_persistent">Keine dauerhaften</string>
   <string name="smart_pulldown_all">Keine löschbaren oder dauerhaften</string>
@@ -212,7 +212,7 @@
   <string name="lock_clock_font_condensed_light_italic">Roboto gestaucht, leicht, kursiv</string>
   <!-- Lockscreen Torch -->
   <string name="keyguard_torch_title">Taschenlampe</string>
-  <string name="keyguard_torch_summary">Langes Drücken des Power-Buttons, während der Bildschirm ausgeschaltet ist, schaltet die Taschenlampe ein</string>
+  <string name="keyguard_torch_summary">Langes Drücken des Power-Buttons während der Bildschirm ausgeschaltet ist, schaltet die Taschenlampe ein</string>
   <!-- Statusbar Clock options -->
   <string name="status_bar_title">Statusleiste</string>
   <string name="status_bar_style_title">Stil</string>
@@ -507,7 +507,7 @@
   <string name="info_pref_note_title">Notiz</string>
   <string name="smartbar_interface">SmartBar</string>
   <string name="icon_pack_picker_dialog_title">Symbolpakete</string>
-  <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
+  <string name="invalid_icon_from_uri">Nicht in der Lage, Bild vom Inhalts-Anbieter zu laden</string>
   <!-- Hardware button navigation -->
   <string name="hardware_keys_volume_keys_title">Lautstärke-Taste</string>
   <string name="hardware_keys_home_key_title">Home-Taste</string>
@@ -867,14 +867,14 @@
   <string name="lock_screen_show_current">Ladestrom</string>
   <string name="lock_screen_show_current_summary">Ladestrom auf Sperrbildschirm anzeigen</string>
   <!-- Tiles animation style  -->
-  <string name="qs_tile_animation_style_title">Tiles animation style</string>
-  <string name="qs_tile_animation_duration_title">Tiles animation duration</string>
-  <string name="qs_tile_animation_style_off">no animation</string>
-  <string name="qs_tile_animation_style_flip">flip</string>
-  <string name="qs_tile_animation_style_rotate">rotate</string>
-  <string name="qs_tile_animation_duration_low">low</string>
-  <string name="qs_tile_animation_duration_default">default</string>
-  <string name="qs_tile_animation_duration_fast">fast</string>
-  <string name="qs_set_animation_style">Animation is set to %1$s</string>
-  <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+  <string name="qs_tile_animation_style_title">Animationsstil der Kacheln</string>
+  <string name="qs_tile_animation_duration_title">Animationsdauer der Kacheln</string>
+  <string name="qs_tile_animation_style_off">Keine Animation</string>
+  <string name="qs_tile_animation_style_flip">Umdrehen</string>
+  <string name="qs_tile_animation_style_rotate">Rotieren</string>
+  <string name="qs_tile_animation_duration_low">Langsam</string>
+  <string name="qs_tile_animation_duration_default">Standard</string>
+  <string name="qs_tile_animation_duration_fast">Schnell</string>
+  <string name="qs_set_animation_style">Animation ist auf %1$s gesetzt</string>
+  <string name="qs_set_animation_duration">Dauer der Animation ist auf %1$s gesetzt</string>
 </resources>

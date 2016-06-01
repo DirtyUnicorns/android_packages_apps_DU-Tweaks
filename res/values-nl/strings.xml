@@ -507,7 +507,7 @@
   <string name="info_pref_note_title">Notitie</string>
   <string name="smartbar_interface">SmartBar</string>
   <string name="icon_pack_picker_dialog_title">Pictogrammenpakketten</string>
-  <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
+  <string name="invalid_icon_from_uri">Kan afbeelding niet laden van content provider</string>
   <!-- Hardware button navigation -->
   <string name="hardware_keys_volume_keys_title">Volume rocker</string>
   <string name="hardware_keys_home_key_title">Thuisknop</string>
@@ -867,14 +867,14 @@
   <string name="lock_screen_show_current">Laadstroom</string>
   <string name="lock_screen_show_current_summary">Toon huidige laadstroom op vergrendelscherm</string>
   <!-- Tiles animation style  -->
-  <string name="qs_tile_animation_style_title">Tiles animation style</string>
-  <string name="qs_tile_animation_duration_title">Tiles animation duration</string>
-  <string name="qs_tile_animation_style_off">no animation</string>
+  <string name="qs_tile_animation_style_title">Tegels animatie stijl</string>
+  <string name="qs_tile_animation_duration_title">Tegels animatie lengte</string>
+  <string name="qs_tile_animation_style_off">geen animatie</string>
   <string name="qs_tile_animation_style_flip">flip</string>
-  <string name="qs_tile_animation_style_rotate">rotate</string>
-  <string name="qs_tile_animation_duration_low">low</string>
-  <string name="qs_tile_animation_duration_default">default</string>
-  <string name="qs_tile_animation_duration_fast">fast</string>
-  <string name="qs_set_animation_style">Animation is set to %1$s</string>
-  <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+  <string name="qs_tile_animation_style_rotate">draai</string>
+  <string name="qs_tile_animation_duration_low">laag</string>
+  <string name="qs_tile_animation_duration_default">standaard</string>
+  <string name="qs_tile_animation_duration_fast">snel</string>
+  <string name="qs_set_animation_style">Animatie is ingesteld op %1$s</string>
+  <string name="qs_set_animation_duration">Animatie lengte is ingesteld op %1$s</string>
 </resources>

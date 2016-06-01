@@ -137,8 +137,8 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="force_expanded_notifications_title">Forçar notificações expandidas</string>
   <string name="force_expanded_notifications_summary">Disponivel apenas para apps que suportam notificações expandidas</string>
   <!-- Disabling immersive mode messages -->
-  <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
-  <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+  <string name="disable_immersive_message_title">Desabilitar mensagens de modo imersivo</string>
+  <string name="disable_immersive_message_summary">Isto irá esconder todas as mensagens de modo imerso</string>
   <!-- Disabling FC notifications -->
   <string name="disable_fc_notifications_title">Desabilitar notificações de FC</string>
   <string name="disable_fc_notifications_summary">Isto esconderá todas as notificações de fechamento forçado</string>
@@ -146,8 +146,8 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="double_tap_to_sleep_title">DT2S na barra de status</string>
   <string name="double_tap_to_sleep_summary">Toque duplo na barra de status para colocar o dispositivo para dormir</string>
   <string name="double_tap_sleep_nav_bar_title">DT2S na barra de navegação</string>
-  <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
-  <string name="double_tap_to_sleep_lockscreen_title">DT2S on Lockscreen</string>
+  <string name="double_tap_sleep_nav_bar_summary">Toque duplo na barra de navegação para desligar a tela</string>
+  <string name="double_tap_to_sleep_lockscreen_title">DT2S na Lockscreen</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
   <!-- Ad Blocker -->
   <string name="adblocker_title">Ad blocker</string>
@@ -158,7 +158,7 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="swap_volume_buttons_summary">Inverter botões de volume quando rotacionar a tela</string>
   <!-- Volume rocker wake -->
   <string name="volume_rocker_wake_title">Acordar com as teclas de volume</string>
-  <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device\nOverrides playback control</string>
+  <string name="volume_rocker_wake_summary">Pressionar as teclas de volume vai acordar seu controle de reprodução de device\nOverrides</string>
   <!-- Volume rocker music control -->
   <string name="volume_rocker_music_controls_title">Controle de reprodução</string>
   <string name="volume_rocker_music_controls_summary">Quando a tela estiver desligada, segurar os botões de volume avançam ou retrocedem músicas</string>
@@ -169,8 +169,8 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="status_bar_battery_style_icon_portrait">Ícone retrato</string>
   <string name="status_bar_battery_style_icon_landscape">Ícone paisagem</string>
   <string name="status_bar_battery_style_circle">Círculo</string>
-  <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Hidden</string>
+  <string name="status_bar_battery_style_text">Texto</string>
+  <string name="status_bar_battery_style_hidden">Oculto</string>
   <string name="status_bar_battery_percentage_title">Show battery percentage</string>
   <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
   <string name="status_bar_battery_percentage_default">Hidden (default)</string>
@@ -828,34 +828,34 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="heads_up_time_out_8sec">8 seconds</string>
   <string name="heads_up_time_out_10sec">10 seconds</string>
   <!-- Lockscreen Colors -->
-  <string name="lockscreen_colors_title">Lockscreen colors</string>
-  <string name="lockscreen_owner_info_color">Owner info</string>
-  <string name="lockscreen_alarm_color">Alarm</string>
-  <string name="lockscreen_clock_color">Clock</string>
-  <string name="lockscreen_clock_date_color">Date</string>
-  <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
-  <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
-  <string name="yes">YES</string>
+  <string name="lockscreen_colors_title">Cores da tela de bloqueio</string>
+  <string name="lockscreen_owner_info_color">Informações do proprietário</string>
+  <string name="lockscreen_alarm_color">Alarme</string>
+  <string name="lockscreen_clock_color">Relógio</string>
+  <string name="lockscreen_clock_date_color">Data</string>
+  <string name="lockscreen_colors_reset_title">Redefinir todas as cores de tela de bloqueio</string>
+  <string name="lockscreen_colors_reset_message">Tem certeza de que deseja redefinir todas as configurações para o padrão?</string>
+  <string name="yes">SIM</string>
   <!-- Recent panel -->
-  <string name="slim_recents_enable_title">Enable slim recents</string>
-  <string name="slim_recents_enable_summary">Use Slim Recents for recents view</string>
+  <string name="slim_recents_enable_title">Habilitar recentes Slim</string>
+  <string name="slim_recents_enable_summary">Use Slim Recents para exibição de recentes</string>
   <string name="slim_recents_title">Slim Recents</string>
-  <string name="show_running_tasks_title">Only show running apps</string>
-  <string name="recents_max_apps_title">Max allowed apps</string>
-  <string name="recent_panel_scale_title">Size</string>
-  <string name="recent_panel_expanded_mode_title">Expanded mode</string>
-  <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
-  <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
-  <string name="recent_panel_expanded_mode_always">Always</string>
-  <string name="recent_panel_expanded_mode_never">Never</string>
+  <string name="show_running_tasks_title">Mostrar apenas apps em execução</string>
+  <string name="recents_max_apps_title">Máximo de apps permitidos</string>
+  <string name="recent_panel_scale_title">Tamanho</string>
+  <string name="recent_panel_expanded_mode_title">Modo expandido</string>
+  <string name="recent_panel_expanded_mode_summary">Modo de visualização expandida de aplicativos recentes</string>
+  <string name="recent_panel_expanded_mode_auto">Automático (padrão)</string>
+  <string name="recent_panel_expanded_mode_always">Sempre</string>
+  <string name="recent_panel_expanded_mode_never">Nunca</string>
   <string name="recent_panel_show_topmost_title">Show topmost task</string>
   <string name="recent_panel_show_topmost_summary">Don\'t exclude the topmost task in recents view</string>
-  <string name="recent_panel_bg_color_title">Panel background color</string>
-  <string name="recent_card_bg_color_title">Card background color</string>
-  <string name="recent_card_text_color_title">Card text color</string>
+  <string name="recent_panel_bg_color_title">Cor de fundo do painel</string>
+  <string name="recent_card_bg_color_title">Cor de fundo dos cartões</string>
+  <string name="recent_card_text_color_title">Cor do texto dos cartões</string>
   <!-- ATTENTION: RTL languages need to replace left with right -->
-  <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
-  <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+  <string name="recent_panel_lefty_mode_title">Mostrar no canto esquerdo</string>
+  <string name="recent_panel_lefty_mode_summary">Mostrar painel de aplicativos recentes na borda esquerda</string>
   <!-- Keyguard Statusbar Clock -->
   <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
   <string name="keyguard_statusbar_clock_summary">Enables the statusbar clock in the keyguard on the left side</string>

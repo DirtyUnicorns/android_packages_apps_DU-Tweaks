@@ -507,7 +507,7 @@
   <string name="info_pref_note_title">Megjegyzés</string>
   <string name="smartbar_interface">SmartBar</string>
   <string name="icon_pack_picker_dialog_title">Ikon csomagok</string>
-  <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
+  <string name="invalid_icon_from_uri">Nem sikerült betölteni a képet a tartalomszolgáltatótól</string>
   <!-- Hardware button navigation -->
   <string name="hardware_keys_volume_keys_title">Hangerőgomb</string>
   <string name="hardware_keys_home_key_title">Kezdőlap gomb</string>
@@ -867,14 +867,14 @@
   <string name="lock_screen_show_current">Töltőáram</string>
   <string name="lock_screen_show_current_summary">Töltőáram mértékének megjelenítése a zárképernyőn</string>
   <!-- Tiles animation style  -->
-  <string name="qs_tile_animation_style_title">Tiles animation style</string>
-  <string name="qs_tile_animation_duration_title">Tiles animation duration</string>
-  <string name="qs_tile_animation_style_off">no animation</string>
-  <string name="qs_tile_animation_style_flip">flip</string>
-  <string name="qs_tile_animation_style_rotate">rotate</string>
-  <string name="qs_tile_animation_duration_low">low</string>
-  <string name="qs_tile_animation_duration_default">default</string>
-  <string name="qs_tile_animation_duration_fast">fast</string>
-  <string name="qs_set_animation_style">Animation is set to %1$s</string>
-  <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+  <string name="qs_tile_animation_style_title">Csempék animációs stílusa</string>
+  <string name="qs_tile_animation_duration_title">Csempe animáció időtartama</string>
+  <string name="qs_tile_animation_style_off">nincs animáció</string>
+  <string name="qs_tile_animation_style_flip">megfordítás</string>
+  <string name="qs_tile_animation_style_rotate">forgatás</string>
+  <string name="qs_tile_animation_duration_low">lassú</string>
+  <string name="qs_tile_animation_duration_default">alapértelmezett</string>
+  <string name="qs_tile_animation_duration_fast">gyors</string>
+  <string name="qs_set_animation_style">Animáció beállítvaerre: %1$s</string>
+  <string name="qs_set_animation_duration">Animációs időtartam beállítva erre: %1$s</string>
 </resources>

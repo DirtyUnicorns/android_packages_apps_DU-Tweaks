@@ -78,8 +78,8 @@
   <string name="smart_pulldown_summary">當有 %1$s個 通知時直接開啟快速設定</string>
   <string name="smart_pulldown_off">關閉</string>
   <string name="smart_pulldown_dismissable">沒有可清除的通知時</string>
-  <string name="smart_pulldown_persistent">沒有持續性的通知時</string>
-  <string name="smart_pulldown_all">沒有可清除或持續性的通知時</string>
+  <string name="smart_pulldown_persistent">沒有持續型的通知時</string>
+  <string name="smart_pulldown_all">沒有可清除或持續型的通知時</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">亮度滑桿</string>
   <string name="qs_brightness_slider_summary">在快速設定面板中顯示亮度滑桿</string>
@@ -490,17 +490,17 @@
   <string name="breathing_notifications_title">呼吸效果通知</string>
   <string name="missed_call_breath_title">未接來電通知呼吸效果</string>
   <string name="missed_call_breath_summary">位於狀態列的未接來電通知將會擁有呼吸效果</string>
-  <string name="voicemail_breath_title">語音信箱通知呼吸效果</string>
-  <string name="voicemail_breath_summary">位於狀態列的語音信箱通知將會擁有呼吸效果</string>
+  <string name="voicemail_breath_title">語音留言通知呼吸效果</string>
+  <string name="voicemail_breath_summary">位於狀態列的語音留言通知將會擁有呼吸效果</string>
   <string name="sms_breath_title">簡訊通知呼吸效果</string>
   <string name="sms_breath_summary">位於狀態列的簡訊通知將會擁有呼吸效果</string>
   <!-- Navigation Bar -->
   <string name="navbar_interface_title">介面</string>
-  <string name="navbar_size">導航列大小</string>
-  <string name="navbar_mode">導航列模式</string>
+  <string name="navbar_size">導覽列大小</string>
+  <string name="navbar_mode">導覽列模式</string>
   <string name="navbar_visibility">啟用導覽列</string>
   <string name="navigationbar_settings_title">導覽列</string>
-  <string name="navigationbar_settings_summary">自訂導航列樣式和行為</string>
+  <string name="navigationbar_settings_summary">自訂導覽列樣式和行為</string>
   <string name="navbar_general_title">進階</string>
   <string name="navigation_bar_left_title">左撇子模式</string>
   <string name="navigation_bar_left_summary">橫向模式下將導覽列置於螢幕左側</string>
@@ -586,16 +586,16 @@
   <string name="fling_longpress_summary">增加或減少執行長按所需的時間</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">關於「律動」</string>
-  <string name="pulse_help_policy_notice_summary">「律動」是一個會在音樂撥放時顯示的欄型智慧音樂視覺效果。使用手機喇叭時，「律動」在一些音訊來源下可能無法運作。</string>
+  <string name="pulse_help_policy_notice_summary">「律動」是一個會在音樂播放時顯示的欄型智慧音樂視覺效果。使用裝置喇叭時，「律動」在一些音訊來源下可能無法運作。</string>
   <string name="pulse_settings">律動</string>
-  <string name="pulse_settings_summary">導航列音樂視覺效果</string>
+  <string name="pulse_settings_summary">導覽列音樂視覺效果</string>
   <string name="fling_show_pulse_title">顯示「律動」</string>
-  <string name="fling_show_pulse_summary">在導航列上顯示音樂視覺效果</string>
+  <string name="fling_show_pulse_summary">在導覽列上顯示音樂視覺效果</string>
   <string name="fling_pulse_color">「律動」顏色</string>
   <string name="eos_fling_lavalamp_title">開啟熔岩燈模式</string>
   <string name="eos_fling_lavalamp_summary">「律動」會產生類似熔岩燈的色彩變換</string>
   <!-- Navbar height -->
-  <string name="navigation_bar_size_title">導航列高度</string>
+  <string name="navigation_bar_size_title">導覽列高度</string>
   <string name="portrait_title">縱向高度</string>
   <string name="land_vert_title">橫向寬度</string>
   <string name="land_hor_title">橫向高度</string>
@@ -798,8 +798,8 @@
   <string name="ls_bouncer_off">關閉</string>
   <string name="ls_bouncer_off_summary">Open Lockscreen directly to pin/pattern/password</string>
   <string name="ls_bouncer_dismissable">沒有可清除的通知時</string>
-  <string name="ls_bouncer_persistent">沒有持續性的通知時</string>
-  <string name="ls_bouncer_all">沒有可清除或持續性的通知時</string>
+  <string name="ls_bouncer_persistent">沒有持續型的通知時</string>
+  <string name="ls_bouncer_all">沒有可清除或持續型的通知時</string>
   <!-- Lockscreen Alpha -->
   <string name="lockscreen_alpha">鎖定畫面透明度</string>
   <string name="lockscreen_security_alpha">Lockscreen bouncer alpha</string>
@@ -867,14 +867,14 @@
   <string name="lock_screen_show_current">充電電流</string>
   <string name="lock_screen_show_current_summary">在鎖定畫面上顯示充電電流</string>
   <!-- Tiles animation style  -->
-  <string name="qs_tile_animation_style_title">Tiles animation style</string>
-  <string name="qs_tile_animation_duration_title">Tiles animation duration</string>
-  <string name="qs_tile_animation_style_off">no animation</string>
-  <string name="qs_tile_animation_style_flip">flip</string>
-  <string name="qs_tile_animation_style_rotate">rotate</string>
-  <string name="qs_tile_animation_duration_low">low</string>
-  <string name="qs_tile_animation_duration_default">default</string>
-  <string name="qs_tile_animation_duration_fast">fast</string>
-  <string name="qs_set_animation_style">Animation is set to %1$s</string>
-  <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+  <string name="qs_tile_animation_style_title">圖塊動畫樣式</string>
+  <string name="qs_tile_animation_duration_title">圖塊動畫速度</string>
+  <string name="qs_tile_animation_style_off">無動畫</string>
+  <string name="qs_tile_animation_style_flip">翻轉</string>
+  <string name="qs_tile_animation_style_rotate">旋轉</string>
+  <string name="qs_tile_animation_duration_low">慢</string>
+  <string name="qs_tile_animation_duration_default">預設</string>
+  <string name="qs_tile_animation_duration_fast">快</string>
+  <string name="qs_set_animation_style">動畫設定為 %1$s</string>
+  <string name="qs_set_animation_duration">動畫速度設定為 %1$s</string>
 </resources>
