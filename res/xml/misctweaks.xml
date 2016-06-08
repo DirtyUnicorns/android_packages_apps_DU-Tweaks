@@ -98,4 +98,22 @@
             android:title="@string/selinux_title"
             android:defaultValue="false" />
 
+        <PreferenceCategory
+            android:key="screenshot_category"
+            android:title="@string/screenshot_cat_title">
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="screenshot_crop_and_share"
+            android:title="@string/screenshot_crop_and_share_title"
+            android:summary="@string/screenshot_crop_and_share_summary"
+            android:defaultValue="false" />
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="screenshot_crop_behavior"
+            android:title="@string/screenshot_crop_behavior_title"
+            android:summary="@string/screenshot_crop_behavior_summary"
+            android:defaultValue="false" />
+
+        </PreferenceCategory>
+
 </PreferenceScreen>
