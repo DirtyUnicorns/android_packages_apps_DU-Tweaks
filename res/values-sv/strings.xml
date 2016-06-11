@@ -44,7 +44,7 @@
   <string name="system_animations_category">Systemanimationer</string>
   <string name="omniswitch_category">OmniSwitch</string>
   <string name="weather_category">Väderwidget</string>
-  <string name="breathing_notifications_category">Breathing Notifications</string>
+  <string name="breathing_notifications_category">Andandes notifikationer</string>
   <string name="button_settings">Knappar</string>
   <string name="category_heads_up">Heads Up</string>
   <string name="lockscreen_colors_fonts_category_title">Färger &amp; teckensnitt</string>
@@ -81,11 +81,11 @@
   <string name="smart_pulldown_persistent">Inga permanenta</string>
   <string name="smart_pulldown_all">Inga avfärdbara eller permanenta</string>
   <!-- Quick Settings brightness slider -->
-  <string name="qs_brightness_slider_title">Brightness slider</string>
-  <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+  <string name="qs_brightness_slider_title">Ljusstyrkereglaget</string>
+  <string name="qs_brightness_slider_summary">Visa en ljusstyrkereglage i panelen snabbainställningar</string>
   <!-- Quick Settings brightness icon -->
-  <string name="brightness_icon_title">Brightness icon </string>
-  <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+  <string name="brightness_icon_title">Ljusstyrka-ikonen </string>
+  <string name="brightness_icon_summary">Visa en ljusstyrkeikon till vänster om ljusstyrkasskjutreglaget för att justera auto-ljusstyrka</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Immersive Recents</string>
   <string name="immersive_recents_summary">Change the view of the recents screen</string>
@@ -98,38 +98,38 @@
   <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
   <string name="powermenu_lockscreen_summary">Show power menu on the lock screen</string>
   <string name="powermenu_power">Power</string>
-  <string name="powermenu_reboot">Reboot</string>
-  <string name="powermenu_screenshot">Screenshot</string>
-  <string name="powermenu_screenrecord">Screen Record</string>
-  <string name="powermenu_torch">Torch</string>
-  <string name="powermenu_airplane">Airplane</string>
-  <string name="powermenu_settings">Settings</string>
-  <string name="powermenu_lockdown">Lock Down</string>
-  <string name="powermenu_soundpanel">Sound Panel</string>
-  <string name="powermenu_options">Additional options</string>
+  <string name="powermenu_reboot">Starta om</string>
+  <string name="powermenu_screenshot">Skärmbild</string>
+  <string name="powermenu_screenrecord">Skärminspelning</string>
+  <string name="powermenu_torch">Ficklampa</string>
+  <string name="powermenu_airplane">Flygplan</string>
+  <string name="powermenu_settings">Inställningar</string>
+  <string name="powermenu_lockdown">Lås nu</string>
+  <string name="powermenu_soundpanel">Ljudpanel</string>
+  <string name="powermenu_options">Ytterligare alternativ</string>
   <string name="powermenu_dialog_dim">Dialog dim background amount</string>
   <!-- Advanced reboot options -->
-  <string name="advanced_reboot_title">Advanced reboot</string>
+  <string name="advanced_reboot_title">Avancerad omstart</string>
   <string name="advanced_reboot_summary">Inkludera alternativ i power menyn för omstart in till recovery och bootloader</string>
-  <string name="advanced_reboot_dialog_title">Advanced reboot menu</string>
-  <string name="advanced_reboot_disabled">Disable</string>
-  <string name="advanced_reboot_hide_on_keyguard">Hide on lock screen</string>
-  <string name="advanced_reboot_show_always">Show always</string>
+  <string name="advanced_reboot_dialog_title">Avancerad omstartsmeny</string>
+  <string name="advanced_reboot_disabled">Inaktivera</string>
+  <string name="advanced_reboot_hide_on_keyguard">Göm vid låsskärm</string>
+  <string name="advanced_reboot_show_always">Visa alltid</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_summary">Block system wakelocks</string>
-  <string name="wakelock_blocker_save">Save</string>
-  <string name="wakelock_list_header">Available wakelocks</string>
-  <string name="wakelock_blocker_reload">Reload</string>
-  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
+  <string name="wakelock_blocker_summary">Blockera wakelocks från systemet</string>
+  <string name="wakelock_blocker_save">Spara</string>
+  <string name="wakelock_list_header">Tillgängliga wakelocks</string>
+  <string name="wakelock_blocker_reload">Återladda</string>
+  <string name="wakelock_blocker_warning_title">Fortsätt med försiktighet</string>
   <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
   <!-- Expanded desktop -->
   <string name="expanded_hide_nothing">Hide nothing</string>
   <string name="expanded_hide_status">Hide status bar</string>
   <string name="expanded_hide_navigation">Hide navigation bar</string>
-  <string name="expanded_hide_both">Hide both</string>
+  <string name="expanded_hide_both">Dölj bägge</string>
   <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \"Enabled for all\" to the off position</string>
   <string name="expanded_desktop_state">Expanded state</string>
-  <string name="expanded_enabled_for_all">Enabled for all</string>
+  <string name="expanded_enabled_for_all">Aktiverad för allt</string>
   <string name="expanded_user_configurable">User configurable</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
@@ -141,9 +141,9 @@
   <string name="disable_fc_notifications_title">Disable FC Notifications</string>
   <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
   <!-- Double tap to sleep -->
-  <string name="double_tap_to_sleep_title">DT2S on Statusbar</string>
+  <string name="double_tap_to_sleep_title">DT2S på statusbar</string>
   <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
-  <string name="double_tap_sleep_nav_bar_title">DT2S on Navbar</string>
+  <string name="double_tap_sleep_nav_bar_title">DT2S på navbar</string>
   <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
   <string name="double_tap_to_sleep_lockscreen_title">DT2S on Lockscreen</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Dubbeltryck på den övre tredjedelen eller botten av låsskärmen att försätta enheten i viloläge</string>
@@ -594,6 +594,60 @@
   <string name="fling_pulse_color">Pulse color</string>
   <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
   <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
+  <string name="pulse_advanced_category">Advanced</string>
+  <!-- Pulse config -->
+  <string name="pulse_custom_dimen">Bar width</string>
+  <string name="pulse_dimen0">Default</string>
+  <string name="pulse_dimen1">7dp</string>
+  <string name="pulse_dimen2">8dp</string>
+  <string name="pulse_dimen3">9dp</string>
+  <string name="pulse_dimen4">10dp</string>
+  <string name="pulse_dimen5">11dp</string>
+  <string name="pulse_dimen6">12dp</string>
+  <string name="pulse_dimen7">13dp</string>
+  <string name="pulse_dimen8">15dp</string>
+  <string name="pulse_dimen9">16dp</string>
+  <string name="pulse_dimen10">17dp</string>
+  <string name="pulse_dimen11">18dp</string>
+  <string name="pulse_dimen12">19dp</string>
+  <string name="pulse_dimen13">20dp</string>
+  <string name="pulse_dimen14">21dp</string>
+  <string name="pulse_dimen15">22dp</string>
+  <string name="pulse_dimen16">23dp</string>
+  <string name="pulse_dimen17">24dp</string>
+  <string name="pulse_dimen18">25dp</string>
+  <string name="pulse_dimen19">26dp</string>
+  <string name="pulse_custom_div">Bar spacing</string>
+  <string name="default_div">Default</string>
+  <string name="pulse_block_category">Default</string>
+  <string name="pulse_block_category_title">Block size</string>
+  <string name="pulse_aggression">Power</string>
+  <string name="div1">12</string>
+  <string name="div2">14</string>
+  <string name="div3">18</string>
+  <string name="div4">20</string>
+  <string name="div5">22</string>
+  <string name="div6">24</string>
+  <string name="div7">26</string>
+  <string name="div8">28</string>
+  <string name="default_fill">Default</string>
+  <string name="default_pulse_empty">Default</string>
+  <string name="pulse_filled_block_size">Block size</string>
+  <string name="pulse_empty_block_size">Block spacing</string>
+  <string name="pulse_fill1">5dp</string>
+  <string name="pulse_fill2">6dp</string>
+  <string name="pulse_fill3">7dp</string>
+  <string name="pulse_fill4">8dp</string>
+  <string name="pulse_empty1">2dp</string>
+  <string name="pulse_empty2">3dp</string>
+  <string name="pulse_empty3">4dp</string>
+  <string name="pulse_empty4">0dp</string>
+  <string name="factor0">Normal</string>
+  <string name="factor1">Relaxed</string>
+  <string name="factor2">Slow</string>
+  <string name="factor3">Hyper</string>
+  <string name="factor4">Insane</string>
+  <string name="pulse_custom_fudge_factor">Visualizer sanity level</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Bar size</string>
   <string name="portrait_title">Portrait height</string>
@@ -867,14 +921,31 @@
   <string name="lock_screen_show_current">Charging current</string>
   <string name="lock_screen_show_current_summary">Show charging current rate on lock screen</string>
   <!-- Tiles animation style  -->
+  <string name="quicksettings_tiles_category">Tile animation options</string>
   <string name="qs_tile_animation_style_title">Tiles animation style</string>
   <string name="qs_tile_animation_duration_title">Tiles animation duration</string>
-  <string name="qs_tile_animation_style_off">no animation</string>
-  <string name="qs_tile_animation_style_flip">flip</string>
-  <string name="qs_tile_animation_style_rotate">rotate</string>
-  <string name="qs_tile_animation_duration_low">low</string>
-  <string name="qs_tile_animation_duration_default">default</string>
-  <string name="qs_tile_animation_duration_fast">fast</string>
-  <string name="qs_set_animation_style">Animation is set to %1$s</string>
-  <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+  <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
+  <string name="qs_tile_animation_style_off">No animation</string>
+  <string name="qs_tile_animation_style_flip">Flip</string>
+  <string name="qs_tile_animation_style_rotate">Rotate</string>
+  <string name="qs_tile_animation_duration_low">Low</string>
+  <string name="qs_tile_animation_duration_default">Default</string>
+  <string name="qs_tile_animation_duration_fast">Fast</string>
+  <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+  <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+  <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+  <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+  <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+  <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+  <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+  <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+  <string name="qs_set_animation_style">%1$s</string>
+  <string name="qs_set_animation_duration">%1$s</string>
+  <string name="qs_set_animation_interpolator">%1$s</string>
+  <!-- Screenshot crop and share -->
+  <string name="screenshot_cat_title">Screenshot Options</string>
+  <string name="screenshot_crop_and_share_title">Crop &amp; share</string>
+  <string name="screenshot_crop_and_share_summary">Show an editor window after taking a screenshot in order to do some operations like cropping, saving or sharing</string>
+  <string name="screenshot_crop_behavior_title">Crop mode</string>
+  <string name="screenshot_crop_behavior_summary">Always use the cropped image inside the cropping area, even if the apply button hasn\'t been pressed</string>
 </resources>
