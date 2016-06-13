@@ -591,15 +591,15 @@
     <string name="action_entry_select_app">Select application</string>
     <string name="action_entry_custom_action">Select custom action</string>
 
-    <string name="action_value_default_action">default</string>
-    <string name="action_value_select_app">app</string>
-    <string name="action_value_custom_action">custom</string>
-    <string name="action_value_back">task_back</string>
-    <string name="action_value_home">task_home</string>
-    <string name="action_value_search_assist">task_assist</string>
-    <string name="action_value_recent_apps">task_recents</string>
-    <string name="action_value_voice_search">task_voice_search</string>
-    <string name="action_value_menu">task_menu</string>
+    <string name="action_value_default_action" translatable="false">default</string>
+    <string name="action_value_select_app" translatable="false">app</string>
+    <string name="action_value_custom_action" translatable="false">custom</string>
+    <string name="action_value_back" translatable="false">task_back</string>
+    <string name="action_value_home" translatable="false">task_home</string>
+    <string name="action_value_search_assist" translatable="false">task_assist</string>
+    <string name="action_value_recent_apps" translatable="false">task_recents</string>
+    <string name="action_value_voice_search" translatable="false">task_voice_search</string>
+    <string name="action_value_menu" translatable="false">task_menu</string>
 
     <!-- Fling -->
     <string name="fling_settings">Fling settings</string>
@@ -691,14 +691,14 @@
     <string name="pulse_block_category">Default</string>
     <string name="pulse_block_category_title">Block size</string>
     <string name="pulse_aggression">Power</string>
-    <string name="div1">12</string>
-    <string name="div2">14</string>
-    <string name="div3">18</string>
-    <string name="div4">20</string>
-    <string name="div5">22</string>
-    <string name="div6">24</string>
-    <string name="div7">26</string>
-    <string name="div8">28</string>
+    <string name="div1" translatable="false">12</string>
+    <string name="div2" translatable="false">14</string>
+    <string name="div3" translatable="false">18</string>
+    <string name="div4" translatable="false">20</string>
+    <string name="div5" translatable="false">22</string>
+    <string name="div6" translatable="false">24</string>
+    <string name="div7" translatable="false">26</string>
+    <string name="div8" translatable="false">28</string>
 
     <string name="default_fill">Default</string>
     <string name="default_pulse_empty">Default</string>
@@ -1039,9 +1039,9 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
-    <string name="qs_set_animation_style">%1$s</string>
-    <string name="qs_set_animation_duration">%1$s</string>
-    <string name="qs_set_animation_interpolator">%1$s</string>
+    <string name="qs_set_animation_style" translatable="false">%1$s</string>
+    <string name="qs_set_animation_duration" translatable="false">%1$s</string>
+    <string name="qs_set_animation_interpolator" translatable="false">%1$s</string>
 
     <!-- Screenshot crop and share -->
     <string name="screenshot_cat_title">Screenshot Options</string>
