@@ -145,6 +145,11 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     }
 
     @Override
+    protected boolean usesExtendedActionsList() {
+        return true;
+    }
+
+    @Override
     protected int getMetricsCategory() {
         return MetricsEvent.DIRTYTWEAKS;
     }
