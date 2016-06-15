@@ -526,15 +526,6 @@
   <string name="action_entry_default_action">Standardeinstellungen</string>
   <string name="action_entry_select_app">App auswählen</string>
   <string name="action_entry_custom_action">Benutzerdefinierte Aktion wählen</string>
-  <string name="action_value_default_action">Standard</string>
-  <string name="action_value_select_app">App</string>
-  <string name="action_value_custom_action">Benutzerdefiniert</string>
-  <string name="action_value_back">Zurück</string>
-  <string name="action_value_home">Startbildschirm</string>
-  <string name="action_value_search_assist">Suchassistent</string>
-  <string name="action_value_recent_apps">Letzte Apps</string>
-  <string name="action_value_voice_search">Sprachsuche</string>
-  <string name="action_value_menu">Menü</string>
   <!-- Fling -->
   <string name="fling_settings">Fling-Einstellungen</string>
   <string name="fling_interface">Fling</string>
@@ -594,10 +585,10 @@
   <string name="fling_pulse_color">Farbe</string>
   <string name="eos_fling_lavalamp_title">Lavalampe einschalten</string>
   <string name="eos_fling_lavalamp_summary">Pulse wechselt automatisch die Farben in einem Lavalampenstil</string>
-  <string name="pulse_advanced_category">Advanced</string>
+  <string name="pulse_advanced_category">Erweitert</string>
   <!-- Pulse config -->
-  <string name="pulse_custom_dimen">Bar width</string>
-  <string name="pulse_dimen0">Default</string>
+  <string name="pulse_custom_dimen">Leisten-Breite</string>
+  <string name="pulse_dimen0">Standard</string>
   <string name="pulse_dimen1">7dp</string>
   <string name="pulse_dimen2">8dp</string>
   <string name="pulse_dimen3">9dp</string>
@@ -614,26 +605,18 @@
   <string name="pulse_dimen14">21dp</string>
   <string name="pulse_dimen15">22dp</string>
   <string name="pulse_dimen16">23dp</string>
-  <string name="pulse_dimen17">24dp</string>
+  <string name="pulse_dimen17">24 dp</string>
   <string name="pulse_dimen18">25dp</string>
   <string name="pulse_dimen19">26dp</string>
-  <string name="pulse_custom_div">Bar spacing</string>
-  <string name="default_div">Default</string>
-  <string name="pulse_block_category">Default</string>
-  <string name="pulse_block_category_title">Block size</string>
+  <string name="pulse_custom_div">Leisten-Abstand</string>
+  <string name="default_div">Standard</string>
+  <string name="pulse_block_category">Standard</string>
+  <string name="pulse_block_category_title">Blockgröße</string>
   <string name="pulse_aggression">Power</string>
-  <string name="div1">12</string>
-  <string name="div2">14</string>
-  <string name="div3">18</string>
-  <string name="div4">20</string>
-  <string name="div5">22</string>
-  <string name="div6">24</string>
-  <string name="div7">26</string>
-  <string name="div8">28</string>
-  <string name="default_fill">Default</string>
-  <string name="default_pulse_empty">Default</string>
-  <string name="pulse_filled_block_size">Block size</string>
-  <string name="pulse_empty_block_size">Block spacing</string>
+  <string name="default_fill">Standard</string>
+  <string name="default_pulse_empty">Standard</string>
+  <string name="pulse_filled_block_size">Blockgröße</string>
+  <string name="pulse_empty_block_size">Blockabstände</string>
   <string name="pulse_fill1">5dp</string>
   <string name="pulse_fill2">6dp</string>
   <string name="pulse_fill3">7dp</string>
@@ -643,11 +626,11 @@
   <string name="pulse_empty3">4dp</string>
   <string name="pulse_empty4">0dp</string>
   <string name="factor0">Normal</string>
-  <string name="factor1">Relaxed</string>
-  <string name="factor2">Slow</string>
+  <string name="factor1">Entspannt</string>
+  <string name="factor2">Langsam</string>
   <string name="factor3">Hyper</string>
-  <string name="factor4">Insane</string>
-  <string name="pulse_custom_fudge_factor">Visualizer sanity level</string>
+  <string name="factor4">Verrückt</string>
+  <string name="pulse_custom_fudge_factor">Visualisierungslevel</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Leistenhöhe</string>
   <string name="portrait_title">Höhe im Hochformat</string>
@@ -939,13 +922,10 @@
   <string name="qs_tile_animation_interpolator_overshootInterpolator">Überschwingen</string>
   <string name="qs_tile_animation_interpolator_anticipateInterpolator">Vorraussehen</string>
   <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Vorraussehend Überschwingen</string>
-  <string name="qs_set_animation_style">%1$s</string>
-  <string name="qs_set_animation_duration">%1$s</string>
-  <string name="qs_set_animation_interpolator">%1$s</string>
   <!-- Screenshot crop and share -->
-  <string name="screenshot_cat_title">Screenshot Options</string>
-  <string name="screenshot_crop_and_share_title">Crop &amp; share</string>
-  <string name="screenshot_crop_and_share_summary">Show an editor window after taking a screenshot in order to do some operations like cropping, saving or sharing</string>
-  <string name="screenshot_crop_behavior_title">Crop mode</string>
-  <string name="screenshot_crop_behavior_summary">Always use the cropped image inside the cropping area, even if the apply button hasn\'t been pressed</string>
+  <string name="screenshot_cat_title">Bildschirmfoto-Optionen</string>
+  <string name="screenshot_crop_and_share_title">Zuschneiden &amp; teilen</string>
+  <string name="screenshot_crop_and_share_summary">Ein Bearbeitungs-Fenster nach der Aufnahme eines Bildschirmfotos anzeigen, um einige Operationen wie Zuschneiden, Speichern oder Teilen durchzuführen</string>
+  <string name="screenshot_crop_behavior_title">Crop-Modus</string>
+  <string name="screenshot_crop_behavior_summary">Immer das zugeschnittene Bild innerhalb des Schnittbereichs verwenden, auch wenn die Schaltfläche \"Anwenden\" noch nicht gedrückt wurde</string>
 </resources>

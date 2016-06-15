@@ -526,15 +526,6 @@
   <string name="action_entry_default_action">Default settings</string>
   <string name="action_entry_select_app">Select application</string>
   <string name="action_entry_custom_action">Select custom action</string>
-  <string name="action_value_default_action">default</string>
-  <string name="action_value_select_app">app</string>
-  <string name="action_value_custom_action">custom</string>
-  <string name="action_value_back">task_back</string>
-  <string name="action_value_home">task_home</string>
-  <string name="action_value_search_assist">task_assist</string>
-  <string name="action_value_recent_apps">task_recents</string>
-  <string name="action_value_voice_search">task_voice_search</string>
-  <string name="action_value_menu">task_menu</string>
   <!-- Fling -->
   <string name="fling_settings">Fling settings</string>
   <string name="fling_interface">Fling</string>
@@ -622,14 +613,6 @@
   <string name="pulse_block_category">Default</string>
   <string name="pulse_block_category_title">Block size</string>
   <string name="pulse_aggression">Power</string>
-  <string name="div1">12</string>
-  <string name="div2">14</string>
-  <string name="div3">18</string>
-  <string name="div4">20</string>
-  <string name="div5">22</string>
-  <string name="div6">24</string>
-  <string name="div7">26</string>
-  <string name="div8">28</string>
   <string name="default_fill">Default</string>
   <string name="default_pulse_empty">Default</string>
   <string name="pulse_filled_block_size">Block size</string>
@@ -939,9 +922,6 @@
   <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
   <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
   <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
-  <string name="qs_set_animation_style">%1$s</string>
-  <string name="qs_set_animation_duration">%1$s</string>
-  <string name="qs_set_animation_interpolator">%1$s</string>
   <!-- Screenshot crop and share -->
   <string name="screenshot_cat_title">Screenshot Options</string>
   <string name="screenshot_crop_and_share_title">Crop &amp; share</string>
