@@ -73,7 +73,7 @@ public class ActionFragment extends SettingsPreferenceFragment implements
         if (uri == null) {
             return;
         }
-        findAndUpdatePreference(new ActionConfig(getActivity(), uri));
+        findAndUpdatePreference(new ActionConfig(getActivity(), uri), mHolderTag);
     }
 
     @Override
@@ -146,7 +146,7 @@ public class ActionFragment extends SettingsPreferenceFragment implements
         if (uri == null) {
             return;
         } else if (uri.equals(getString(R.string.action_value_default_action))) {
-            findAndUpdatePreference(null);
+            findAndUpdatePreference(null, mHolderTag);
         } else if (uri.equals(getString(R.string.action_value_select_app))) {
             mPicker.pickShortcut(null, null, getId());
         } else if (uri.equals(getString(R.string.action_value_custom_action))) {
@@ -154,7 +154,7 @@ public class ActionFragment extends SettingsPreferenceFragment implements
         }
     }
 
-    private void findAndUpdatePreference(ActionConfig action) {
+    protected void findAndUpdatePreference(ActionConfig action, String tag) {
         for (ActionPreference pref : mPrefHolder) {
             if (pref.getTag().equals(mHolderTag)) {
                 if (action == null) {
@@ -205,7 +205,7 @@ public class ActionFragment extends SettingsPreferenceFragment implements
         final DialogInterface.OnClickListener l = new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
-                findAndUpdatePreference(adapter.getItem(item));
+                findAndUpdatePreference(adapter.getItem(item), mHolderTag);
                 dialog.dismiss();
             }
         };

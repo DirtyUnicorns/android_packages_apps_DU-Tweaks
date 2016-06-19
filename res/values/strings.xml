@@ -40,6 +40,7 @@
     <string name="lockscreen_notifications_category">Lockscreen Notifications</string>
     <string name="wakelockblocker_category">Wakelock Blocker</string>
     <string name="gestures_category">Gestures</string>
+    <string name="doubletap_gestures_category">Double tap gestures</string>
     <string name="multitasking_category">Multi-Tasking</string>
     <string name="multiwindow_category">Multi-Window</string>
     <string name="listview_animations_category">List View Animations</string>
@@ -522,7 +523,6 @@
     <string name="ga_gestures_rename_title">Rename gesture</string>
     <string name="ga_gestures_rename_label">Gesture name</string>
     <string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
-    <string name="trigger_category">Trigger region</string>
     <string name="trigger_width_title">Trigger width</string>
     <string name="trigger_width_summary">Adjust the width of the trigger area</string>
     <string name="trigger_top_title">Trigger position</string>
@@ -1049,5 +1049,9 @@
     <string name="screenshot_crop_and_share_summary">Show an editor window after taking a screenshot in order to do some operations like cropping, saving or sharing</string>
     <string name="screenshot_crop_behavior_title">Crop mode</string>
     <string name="screenshot_crop_behavior_summary">Always use the cropped image inside the cropping area, even if the apply button hasn\'t been pressed</string>
+
+    <!-- Three finger swipe gesture -->
+    <string name="three_finger_gesture_info">After selecting a target from below, swipe vertically with 3 fingers in a single motion from top to bottom to trigger the action you selected.</string>
+    <string name="three_finger_swipe_gesture_title">Three finger swipe gesture</string>
 
 </resources>

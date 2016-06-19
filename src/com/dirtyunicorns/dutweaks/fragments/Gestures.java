@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The ChameleonOS Project
+ * Copyright (C) 2016 The Dirty Unicorns project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,24 +18,39 @@
 package com.dirtyunicorns.dutweaks.fragments;
 
 import android.app.ActionBar;
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.os.Bundle;
-import android.preference.ListPreference;
+import android.os.Handler;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.preference.ListPreference;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
+import android.text.TextUtils;
 import android.view.Gravity;
+
 import com.android.settings.R;
 import com.android.internal.logging.MetricsLogger;
+import com.android.internal.utils.du.ActionHandler;
+import com.android.internal.utils.du.Config;
+import com.android.internal.utils.du.Config.ActionConfig;
+import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
+import com.dirtyunicorns.dutweaks.preference.ActionPreference;
 import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
-public class GestureAnywhereSettings extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
-    private static final String TAG = "GestureAnywhereSettings";
+public class Gestures extends ActionFragment implements OnPreferenceChangeListener {
 
+    private static final String TAG = "Gestures";
+
+    private static final String THREE_FINGER_GESTURE = "three_finger_gesture_action";
     private static final String KEY_ENABLED = "gesture_anywhere_enabled";
     private static final String KEY_POSITION = "gesture_anywhere_position";
     private static final String KEY_GESTURES = "gesture_anywhere_gestures";
@@ -42,8 +58,10 @@ public class GestureAnywhereSettings extends SettingsPreferenceFragment implemen
     private static final String KEY_TRIGGER_TOP = "gesture_anywhere_trigger_top";
     private static final String KEY_TRIGGER_BOTTOM = "gesture_anywhere_trigger_bottom";
 
-    private SwitchPreference mEnabledPref;
     private ListPreference mPositionPref;
+    private ActionPreference mThreeFingerSwipeGestures;
+    private SwitchPreference mEnabledPref;
+
     private SeekBarPreferenceCham mTriggerWidthPref;
     private SeekBarPreferenceCham mTriggerTopPref;
     private SeekBarPreferenceCham mTriggerBottomPref;
@@ -54,14 +72,20 @@ public class GestureAnywhereSettings extends SettingsPreferenceFragment implemen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.gesture_anywhere);
+        addPreferencesFromResource(R.xml.gestures);
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        mThreeFingerSwipeGestures = (ActionPreference) findPreference(THREE_FINGER_GESTURE);
+        mThreeFingerSwipeGestures.setTag(THREE_FINGER_GESTURE);
+        mThreeFingerSwipeGestures.setActionConfig(getSwipeThreeFingerGestures());
+        mThreeFingerSwipeGestures.setDefaultActionConfig(new ActionConfig(getActivity()));
 
         mEnabledPref = (SwitchPreference) findPreference(KEY_ENABLED);
         mEnabledPref.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.GESTURE_ANYWHERE_ENABLED, 0) == 1));
         mEnabledPref.setOnPreferenceChangeListener(this);
 
-        PreferenceScreen prefSet = getPreferenceScreen();
         mPositionPref = (ListPreference) prefSet.findPreference(KEY_POSITION);
         mPositionPref.setOnPreferenceChangeListener(this);
         int position = Settings.System.getInt(getContentResolver(),
@@ -99,7 +123,7 @@ public class GestureAnywhereSettings extends SettingsPreferenceFragment implemen
         super.onStart();
         final ActionBar bar = getActivity().getActionBar();
         mPreviousTitle = bar.getTitle();
-        bar.setTitle(R.string.gesture_anywhere_title);
+        bar.setTitle(R.string.gestures_category);
     }
 
     @Override
@@ -138,9 +162,37 @@ public class GestureAnywhereSettings extends SettingsPreferenceFragment implemen
     }
 
     @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        boolean value;
-        return true;
+    protected void findAndUpdatePreference(ActionConfig action, String tag) {
+        if (TextUtils.equals(THREE_FINGER_GESTURE, tag)) {
+            ActionConfig newAction;
+            if (action == null) {
+                newAction = mThreeFingerSwipeGestures.getDefaultActionConfig();
+            } else {
+                newAction = action;
+            }
+            mThreeFingerSwipeGestures.setActionConfig(newAction);
+            setSwipeThreeFingerGestures(newAction);
+        } else {
+            super.findAndUpdatePreference(action, tag);
+        }
+    }
+
+    private ActionConfig getSwipeThreeFingerGestures() {
+        ButtonConfig config = ButtonConfig.getButton(mContext,
+                Settings.Secure.THREE_FINGER_GESTURE, true);
+        ActionConfig action;
+        if (config == null) {
+            action = new ActionConfig(getActivity());
+        } else {
+            action = config.getActionConfig(ActionConfig.PRIMARY);
+        }
+        return action;
+    }
+
+    private void setSwipeThreeFingerGestures(ActionConfig action) {
+        ButtonConfig config = new ButtonConfig(getActivity());
+        config.setActionConfig(action, ActionConfig.PRIMARY);
+        ButtonConfig.setButton(getActivity(), config, Settings.Secure.THREE_FINGER_GESTURE, true);
     }
 
     private void updatePositionSummary(int value) {

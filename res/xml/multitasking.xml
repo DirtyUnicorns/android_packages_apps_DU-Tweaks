@@ -23,11 +23,11 @@
             android:layout="@layout/preference_appcirclebar"
             android:title="@string/app_circle_bar_title" />
 
-         <PreferenceScreen
-            android:key="gesture_anywhere"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereSettings"
-            android:layout="@layout/preference_gestureanywhere"
-            android:title="@string/gesture_anywhere_title" />
+         <Preference
+            android:key="gestures"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Gestures"
+            android:layout="@layout/preference_gestures"
+            android:title="@string/gestures_category" />
 
          <Preference
             android:key="multitwindow"

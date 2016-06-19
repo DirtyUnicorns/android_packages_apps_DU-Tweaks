@@ -66,22 +66,6 @@
             android:summary="@string/fprint_sucess_vib_summary"
             android:defaultValue="true" />
 
-        <PreferenceCategory
-            android:key="gestures_category"
-            android:title="@string/gestures_category" />
-
-        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_gesture"
-            android:title="@string/double_tap_to_sleep_title"
-            android:summary="@string/double_tap_to_sleep_summary"
-            android:defaultValue="false" />
-
-        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_lock_screen"
-            android:title="@string/double_tap_to_sleep_lockscreen_title"
-            android:summary="@string/double_tap_to_sleep_lockscreen_summary"
-            android:defaultValue="false" />
-
         <!-- SELinux -->
         <PreferenceCategory
             android:key="selinux_switch_category"
