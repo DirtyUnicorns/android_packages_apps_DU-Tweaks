@@ -88,15 +88,15 @@
   <string name="brightness_icon_summary">Visa en ljusstyrkeikon till vänster om ljusstyrkasskjutreglaget för att justera auto-ljusstyrka</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Change the view of the recents screen</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
+  <string name="immersive_recents_summary">Ändra vyn på nyligen skärmen</string>
+  <string name="immersive_recents_dialog_title">Välj nyligen vyn</string>
   <string name="immersive_recents_default">Standard</string>
   <string name="immersive_recents_fullscreen">Helskärm</string>
   <string name="immersive_recents_statusbar">Endast statusfält</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
+  <string name="immersive_recents_navbar">Endast navbar</string>
   <!-- Power Menu -->
-  <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
-  <string name="powermenu_lockscreen_summary">Show power menu on the lock screen</string>
+  <string name="powermenu_lockscreen_title">Power-menyn på låsskärmen</string>
+  <string name="powermenu_lockscreen_summary">Visa power-menyn på låsskärmen</string>
   <string name="powermenu_power">Power</string>
   <string name="powermenu_reboot">Starta om</string>
   <string name="powermenu_screenshot">Skärmbild</string>
@@ -107,7 +107,7 @@
   <string name="powermenu_lockdown">Lås nu</string>
   <string name="powermenu_soundpanel">Ljudpanel</string>
   <string name="powermenu_options">Ytterligare alternativ</string>
-  <string name="powermenu_dialog_dim">Dialog dim background amount</string>
+  <string name="powermenu_dialog_dim">Dialogrutan dim bakgrund mängd</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Avancerad omstart</string>
   <string name="advanced_reboot_summary">Inkludera alternativ i power menyn för omstart in till recovery och bootloader</string>
@@ -121,36 +121,36 @@
   <string name="wakelock_list_header">Tillgängliga wakelocks</string>
   <string name="wakelock_blocker_reload">Återladda</string>
   <string name="wakelock_blocker_warning_title">Fortsätt med försiktighet</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_warning">Att blockera wakelocks kan orsaka instabilitet, kraschar eller dataförlust</string>
   <!-- Expanded desktop -->
-  <string name="expanded_hide_nothing">Hide nothing</string>
-  <string name="expanded_hide_status">Hide status bar</string>
-  <string name="expanded_hide_navigation">Hide navigation bar</string>
+  <string name="expanded_hide_nothing">Dölj ingenting</string>
+  <string name="expanded_hide_status">Dölj statusfält</string>
+  <string name="expanded_hide_navigation">Dölja navigeringsfältet</string>
   <string name="expanded_hide_both">Dölj bägge</string>
-  <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \"Enabled for all\" to the off position</string>
-  <string name="expanded_desktop_state">Expanded state</string>
+  <string name="expanded_nothing_to_show">För att lägga till en anpassad per-app konfiguration för utökad staten, ange \"Aktiverad för alla\" till läge off</string>
+  <string name="expanded_desktop_state">Utökat tillstånd</string>
   <string name="expanded_enabled_for_all">Aktiverad för allt</string>
-  <string name="expanded_user_configurable">User configurable</string>
+  <string name="expanded_user_configurable">Modifierbar</string>
   <!-- Force expanded notifications -->
-  <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-  <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+  <string name="force_expanded_notifications_title">Tvinga utökade meddelanden</string>
+  <string name="force_expanded_notifications_summary">Endast tillgängligt för appar som stödjer utökade meddelanden</string>
   <!-- Disabling immersive mode messages -->
-  <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
-  <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+  <string name="disable_immersive_message_title">Inaktivera uppslukande läge meddelanden</string>
+  <string name="disable_immersive_message_summary">Detta kommer att dölja alla uppslukande läge meddelanden</string>
   <!-- Disabling FC notifications -->
-  <string name="disable_fc_notifications_title">Disable FC Notifications</string>
-  <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
+  <string name="disable_fc_notifications_title">Inaktivera FC meddelanden</string>
+  <string name="disable_fc_notifications_summary">Detta kommer att dölja alla tvinga stäng meddelanden</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">DT2S på statusbar</string>
-  <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_summary">Dubbeltryck på statusfältet för att lägga enheten i viloläge</string>
   <string name="double_tap_sleep_nav_bar_title">DT2S på navbar</string>
-  <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
-  <string name="double_tap_to_sleep_lockscreen_title">DT2S on Lockscreen</string>
+  <string name="double_tap_sleep_nav_bar_summary">Dubbeltryck på navigeringsfältet för att lägga enheten i viloläge</string>
+  <string name="double_tap_to_sleep_lockscreen_title">DT2S på låsskärmen</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Dubbeltryck på den övre tredjedelen eller botten av låsskärmen att försätta enheten i viloläge</string>
   <!-- Ad Blocker -->
   <string name="adblocker_title">Reklamblockerare</string>
   <string name="disable_ads_title">Inaktivera reklam</string>
-  <string name="disable_ads_summary">Change hosts file to disable ads</string>
+  <string name="disable_ads_summary">Ändra hosts filen för att inaktivera annonser</string>
   <!-- Volume Key Rotation -->
   <string name="swap_volume_buttons_title">Ändra håll</string>
   <string name="swap_volume_buttons_summary">Växla volymknappar när skärmen är roterad</string>
@@ -172,41 +172,41 @@
   <string name="status_bar_battery_percentage_title">Visa batteriprocent</string>
   <string name="status_bar_battery_percentage_dialog_title">Batteriprocent</string>
   <string name="status_bar_battery_percentage_default">Dold (standard)</string>
-  <string name="status_bar_battery_percentage_text_inside">Inside the icon (not charging)</string>
+  <string name="status_bar_battery_percentage_text_inside">Inuti ikonen (laddar ej)</string>
   <string name="status_bar_battery_percentage_text_next">Bredvid ikonen</string>
   <!-- Battery Bar -->
   <string name="battery_bar_title">Batteristreck</string>
   <string name="battery_bar">Batteristreckets placering</string>
   <string name="battery_bar_color">Batteristreckets färg</string>
-  <string name="battery_bar_charging_color">Battery bar charging color</string>
-  <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+  <string name="battery_bar_charging_color">Batterifältets laddnings färg</string>
+  <string name="battery_bar_battery_low_color">Batterifältets låg batteri färg</string>
   <string name="battery_bar_cat">Batteristreckets stil</string>
-  <string name="battery_bar_style_title">Battery bar alignment</string>
+  <string name="battery_bar_style_title">Batterifältets placering</string>
   <string name="battery_bar_thickness_title">Batteristreckets tjocklek</string>
   <string name="battery_bar_animate_title">Laddningsanimation</string>
   <string name="battery_bar_animate_summary">Aktivera för att animera batteristrecket under laddning</string>
-  <string name="battery_bar_style_regular">Regular</string>
-  <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-  <string name="battery_bar_style_reversed">Reversed</string>
+  <string name="battery_bar_style_regular">Vanlig</string>
+  <string name="battery_bar_style_center_mirrored">Center-speglad</string>
+  <string name="battery_bar_style_reversed">Omvänd</string>
   <!-- Lock Clock Fonts -->
-  <string name="lock_clock_font_title">Clock Fonts</string>
-  <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
-  <string name="lock_clock_font_dialog_title">Select lock clock font</string>
+  <string name="lock_clock_font_title">Klockans teckensnitt</string>
+  <string name="lock_clock_font_summary">Ändra standardtypsnittet för låsskärmens klocka widget</string>
+  <string name="lock_clock_font_dialog_title">Välj lås klockans teckensnitt</string>
   <string name="lock_clock_font_normal">Roboto</string>
-  <string name="lock_clock_font_bold">Roboto Bold</string>
-  <string name="lock_clock_font_italic">Roboto Italic</string>
-  <string name="lock_clock_font_bold_italic">Roboto Bold Italic</string>
-  <string name="lock_clock_font_light_normal">Roboto Light (default)</string>
-  <string name="lock_clock_font_light_italic">Roboto Light Italic</string>
-  <string name="lock_clock_font_thin_normal">Roboto Thin</string>
-  <string name="lock_clock_font_thin_italic">Roboto Thin Italic</string>
-  <string name="lock_clock_font_condensed_normal">Roboto Condensed</string>
-  <string name="lock_clock_font_condensed_bold">Roboto Condensed Bold</string>
-  <string name="lock_clock_font_condensed_italic">Roboto Condensed Italic</string>
-  <string name="lock_clock_font_condensed_bold_italic">Roboto Condensed Bold Italic</string>
+  <string name="lock_clock_font_bold">Roboto fet</string>
+  <string name="lock_clock_font_italic">Roboto kursiv</string>
+  <string name="lock_clock_font_bold_italic">Roboto fet kursiv</string>
+  <string name="lock_clock_font_light_normal">Roboto ljus (standard)</string>
+  <string name="lock_clock_font_light_italic">Roboto ljus kursiv</string>
+  <string name="lock_clock_font_thin_normal">Roboto tunn</string>
+  <string name="lock_clock_font_thin_italic">Roboto tunn kursiv</string>
+  <string name="lock_clock_font_condensed_normal">Roboto kondenserad</string>
+  <string name="lock_clock_font_condensed_bold">Roboto kondenserad fet</string>
+  <string name="lock_clock_font_condensed_italic">Roboto kondenserad kursiv</string>
+  <string name="lock_clock_font_condensed_bold_italic">Roboto kondenserad fet kursiv</string>
   <string name="lock_clock_font_medium_normal">Roboto Medium</string>
-  <string name="lock_clock_font_medium_italic">Roboto Medium Italic</string>
-  <string name="lock_clock_font_black_normal">Roboto Black</string>
+  <string name="lock_clock_font_medium_italic">Roboto medium kursiv</string>
+  <string name="lock_clock_font_black_normal">Roboto svart</string>
   <string name="lock_clock_font_black_italic">Roboto Black Italic</string>
   <string name="lock_clock_font_condensed_light_normal">Roboto Condensed Light</string>
   <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
@@ -260,22 +260,22 @@
   <string name="color_default">Default</string>
   <!-- AOSP MultiWindow -->
   <string name="enable_multi_window">Multi-window mode</string>
-  <string name="enable_multi_window_summary">Multiple activities on screen at the same time.</string>
-  <string name="warning_multi_window_text">WARNING: This is a highly experimental feature that allows multiple activities on-screen at the same time through the Recent apps UI. Some apps may crash or not function correctly when used with this feature.</string>
+  <string name="enable_multi_window_summary">Flera aktiviteter på skärmen samtidigt.</string>
+  <string name="warning_multi_window_text">VARNING: Detta är en högst experimentella funktion som tillåter flera aktiviteter på skärmen samtidigt genom de senaste appar UI. Vissa appar kan krascha eller inte fungerar korrekt när de används med den här funktionen.</string>
   <!-- AOKP custom system animations -->
-  <string name="activity_open_title">Activity open animation</string>
-  <string name="activity_close_title">Activity close animation</string>
-  <string name="task_open_title">Task open animation</string>
-  <string name="task_close_title">Task close animation</string>
-  <string name="task_move_to_front_title">Move to front animation</string>
-  <string name="task_move_to_back_title">Move to back animation</string>
-  <string name="wallpaper_open_title">Wallpaper open animation</string>
-  <string name="wallpaper_close_title">Wallpaper close animation</string>
+  <string name="activity_open_title">Aktivitet öppna-animation</string>
+  <string name="activity_close_title">Aktivitet stäng-animation</string>
+  <string name="task_open_title">Uppgift öppna-animation</string>
+  <string name="task_close_title">Uppgift stäng-animation</string>
+  <string name="task_move_to_front_title">Flytta till framsidan animation</string>
+  <string name="task_move_to_back_title">Flytta till baksidan animation</string>
+  <string name="wallpaper_open_title">Bakgrundsbild öppna-animation</string>
+  <string name="wallpaper_close_title">Bakgrundsbild stäng-animation</string>
   <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
   <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
-  <string name="animation_duration_title">Animation duration</string>
-  <string name="title_animation_no_override">Prevent app overrides</string>
-  <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
+  <string name="animation_duration_title">Animation längd</string>
+  <string name="title_animation_no_override">Förhindra app åsidosättningar</string>
+  <string name="summary_animation_no_override">Hindra appar från att åsidosätta övergång</string>
   <string name="animation_duration_default">Default</string>
   <!-- Toast Animation -->
   <string name="toast_animation_title">Toast animation</string>

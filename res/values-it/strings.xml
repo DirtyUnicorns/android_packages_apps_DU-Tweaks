@@ -31,13 +31,13 @@
   <string name="expanded_desktop_category">Desktop Esteso</string>
   <string name="misctweaks_category">Tweaks vari</string>
   <string name="powermenu_category">Menu tasto accensione</string>
-  <string name="quicksettings_category">Quick Settings</string>
+  <string name="quicksettings_category">Impostazioni rapide</string>
   <string name="recents_category">App recenti</string>
   <string name="statusbar_items_category">Elementi barra di stato</string>
   <string name="statusbar_notifications_category">Notifiche</string>
   <string name="lockscreen_notifications_category">Notifiche sulla schermata di blocco</string>
   <string name="wakelockblocker_category">Blocco wakelock</string>
-  <string name="gestures_category">Gesture</string>
+  <string name="gestures_category">Gesti</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Multi-Window</string>
   <string name="listview_animations_category">Animazioni List View</string>
@@ -69,19 +69,19 @@
   <string name="gapps_summary">Elenco dei pacchetti GAPPS da flashare in recovery</string>
   <string name="gapps_credit">Anche se le GAPPS non vengono compilate da sorgente e non appartengono a nessuno se non a Google, vorremmo ringraziare un paio di individui e team che mantengono questi pacchetti per tutti noi e rendono le cose più facili per tutti.\n\n Ringraziamento speciale al Team BlackOut, Michael Banks, TKruzze e Chauhdary M. Wasif</string>
   <!-- Status bar quick qs pulldown -->
-  <string name="title_quick_pulldown">Comparsa rapida Quick Settings</string>
-  <string name="summary_quick_pulldown">Il bordo a %1$s della barra di stato fa scendere le Impostazioni Veloci</string>
+  <string name="title_quick_pulldown">Discesa rapida</string>
+  <string name="summary_quick_pulldown">Il bordo a %1$s della barra di stato fa scendere le Impostazioni rapide</string>
   <string name="quick_pulldown_off">Non attiva</string>
   <string name="quick_pulldown_left">Sinistra</string>
   <string name="quick_pulldown_right">Destra</string>
-  <string name="smart_pulldown_title">Comparsa intelligente Quick Settings</string>
+  <string name="smart_pulldown_title">Discesa intelligente</string>
   <string name="smart_pulldown_summary">Apri le impostazioni rapide quando ci sono %1$s notifiche presenti</string>
   <string name="smart_pulldown_off">Non attiva</string>
   <string name="smart_pulldown_dismissable">Non rimovibile</string>
   <string name="smart_pulldown_persistent">Non persistente</string>
   <string name="smart_pulldown_all">Non rimovibile o persistente</string>
   <!-- Quick Settings brightness slider -->
-  <string name="qs_brightness_slider_title">Slider per la luminosità</string>
+  <string name="qs_brightness_slider_title">Cursore luminosità</string>
   <string name="qs_brightness_slider_summary">Mostra un cursore di luminosità nel pannello delle impostazioni rapide</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Icona luminosità </string>
@@ -90,7 +90,7 @@
   <string name="immersive_recents_title">Recenti Immersivi</string>
   <string name="immersive_recents_summary">Modificare la visualizzazione della schermata dei recenti</string>
   <string name="immersive_recents_dialog_title">Selezione visualizzazione recenti</string>
-  <string name="immersive_recents_default">Default</string>
+  <string name="immersive_recents_default">Predefinito</string>
   <string name="immersive_recents_fullscreen">Schermo intero</string>
   <string name="immersive_recents_statusbar">Solo barrra di stato</string>
   <string name="immersive_recents_navbar">Solo barra di navigazione</string>
@@ -175,16 +175,16 @@
   <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona (non in carica)</string>
   <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
   <!-- Battery Bar -->
-  <string name="battery_bar_title">Battery bar</string>
-  <string name="battery_bar">Posizione Battery bar</string>
-  <string name="battery_bar_color">Colore Battery bar</string>
-  <string name="battery_bar_charging_color">Colore in ricarica Battery bar</string>
-  <string name="battery_bar_battery_low_color">Colore livello batteria basso Battery bar</string>
-  <string name="battery_bar_cat">Stile Battery bar</string>
-  <string name="battery_bar_style_title">Allineamento Battery bar</string>
-  <string name="battery_bar_thickness_title">Spessore Battery bar</string>
+  <string name="battery_bar_title">Barra batteria</string>
+  <string name="battery_bar">Posizione barra batteria</string>
+  <string name="battery_bar_color">Colore barra batteria</string>
+  <string name="battery_bar_charging_color">Colore di ricarica della barra batteria</string>
+  <string name="battery_bar_battery_low_color">Colore basso livello di carica della barra batteria</string>
+  <string name="battery_bar_cat">Stile barra batteria</string>
+  <string name="battery_bar_style_title">Allineamento barra batteria</string>
+  <string name="battery_bar_thickness_title">Spessore barra batteria</string>
   <string name="battery_bar_animate_title">Animazione caricamento</string>
-  <string name="battery_bar_animate_summary">Abilita per animare la Battery bar durante la carica</string>
+  <string name="battery_bar_animate_summary">Abilita per animare la barra della batteria durante la carica</string>
   <string name="battery_bar_style_regular">Normale</string>
   <string name="battery_bar_style_center_mirrored">Al centro-specchiato</string>
   <string name="battery_bar_style_reversed">Invertito</string>
@@ -388,7 +388,7 @@
   <string name="status_bar_brightness_control_summary">Regola la luminosità facendo scorrere il dito sulla barra di stato</string>
   <string name="status_bar_brightness_control_info">La luminosità automatica deve essere disabilitata</string>
   <!-- Lockscreen Shortcuts -->
-  <string name="lockscreen_targets_title">Scorciatoie S/D Inferiori</string>
+  <string name="lockscreen_targets_title">Scorciatoie angoli inferiori</string>
   <!-- Recents panel settings -->
   <string name="show_clear_all_recents_button_title">Pulsante cancella tutto</string>
   <string name="show_clear_all_recents_button_summary">Mostra il pulsante cancella tutto</string>
@@ -461,7 +461,7 @@
   <string name="ga_gestures_delete">Elimina</string>
   <string name="ga_gestures_delete_success">Gesto cancellato</string>
   <string name="ga_gestures_rename_title">Rinomina il gesto</string>
-  <string name="ga_gestures_rename_label">Nome della gesture</string>
+  <string name="ga_gestures_rename_label">Nome del gesto</string>
   <string name="ga_gestures_error_loading">Impossibile caricare %s. Assicuratevi di avere spazio di archiviazione disponibile.</string>
   <string name="trigger_category">Area di attivazione</string>
   <string name="trigger_width_title">Largehezza area di attivazione</string>
@@ -515,7 +515,7 @@
   <string name="hardware_keys_assist_key_title">Tasto Cerca</string>
   <string name="hardware_keys_appswitch_key_title">Tasto App Recenti</string>
   <string name="hardware_keys_back_key_title">Tasto Indietro</string>
-  <string name="hardware_keys_double_tap_summary">Imposta azione doppio tap</string>
+  <string name="hardware_keys_double_tap_summary">Imposta azione doppio tocco</string>
   <string name="hardware_keys_single_tap_summary">Imposta azione singolo tap</string>
   <string name="hardware_keys_long_press_summary">Imposta azione pressione prolungata app recenti</string>
   <string name="hardware_keys_single_tap_title">Azione singolo tap</string>
@@ -533,8 +533,8 @@
   <string name="fling_back_home_policy">Indietro e Home devono essere impostati in ogni momento. Per modificare l\'assegnazione di indietro o home, imposta prima l\'assegnazione desiderata</string>
   <string name="fling_split_bar_policy">Quando è assegnata solamente un\'azione a destra o a sinistra, l\'azione viene applicata a tutta la barra</string>
   <string name="fling_def_summary">Nessuna azione impostata</string>
-  <string name="fling_swipe_actions">Gesture di scorrimento</string>
-  <string name="fling_tap_actions">Gesture di tocco</string>
+  <string name="fling_swipe_actions">Gesto di scorrimento</string>
+  <string name="fling_tap_actions">Gesto al tocco</string>
   <string name="fling_short_swipe_right">Scorrimento corto verso destra</string>
   <string name="fling_short_swipe_left">Scorrimento corto verso sinistra</string>
   <string name="fling_long_swipe_right">Scorrimento lungo verso destra</string>
@@ -542,10 +542,10 @@
   <string name="fling_right_up_swipe">Scorrimento verso l\'alto a destra</string>
   <string name="fling_left_up_swipe">Scorrimento verso l\'alto a sinistra</string>
   <string name="fling_single_tap">Tap singolo a destra</string>
-  <string name="fling_double_tap">Doppio tap a destra</string>
+  <string name="fling_double_tap">Doppio tocco a destra</string>
   <string name="fling_long_press">Lunga pressione a destra</string>
   <string name="fling_single_left_tap">Tap singolo a sinistra</string>
-  <string name="fling_double_left_tap">Doppio tap a sinistra</string>
+  <string name="fling_double_left_tap">Doppio tocco a sinistra</string>
   <string name="fling_long_left_press">Lunga pressione a sinistra</string>
   <string name="long_swipe_portrait_title">Ritratto</string>
   <string name="long_swipe_landscape_title">Orizzontale</string>
@@ -558,7 +558,7 @@
   <string name="fling_long_swipe_title">Soglia di scorrimento lungo</string>
   <string name="fling_long_swipe_summary">Mette a punto la soglia di scorrimento lungo basata sull\'altezza o larghezza di Fling</string>
   <string name="fling_trails_enable_title">Tracce gesture visibili</string>
-  <string name="fling_trails_enable_summary">Mostra una traccia durante gli swipe delle gesture</string>
+  <string name="fling_trails_enable_summary">Mostra una traccia durante lo scorrimento dei gesti</string>
   <string name="fling_trails_color_title">Colore traccia</string>
   <string name="fling_appearance">Aspetto</string>
   <string name="fling_show_logo_title">Mostra il logo Fling</string>
@@ -662,7 +662,7 @@
   <string name="lockscreen_config_title">Impostazioni schermata di blocco</string>
   <string name="lockscreen_wallpaper_config_title">Sfondo della schermata di blocco</string>
   <string name="lockscreen_wallpaper_set_title">Imposta nuovo sfondo</string>
-  <string name="lockscreen_wallpaper_clear_title">Torna allo sfondo di default</string>
+  <string name="lockscreen_wallpaper_clear_title">Torna allo sfondo predefinito</string>
   <string name="reset_lockscreen_wallpaper">Sfondo originale ripsristinato</string>
   <!-- Slim lockscreen shortcuts -->
   <string name="shortcut_action_none">Nessuno</string>
@@ -746,9 +746,9 @@
   <string name="shortcuts_icon_picker_unlock">Sblocca</string>
   <string name="reset_message">Reimpostare tutte le voci a default?</string>
   <string name="lockscreen_shortcuts_title">Scorciatoie al centro</string>
-  <string name="lockscreen_shorcuts_launch_type_title">Tipo di click scorciatoia</string>
+  <string name="lockscreen_shorcuts_launch_type_title">Tipo di tocco sulla scorciatoia</string>
   <string name="lockscreen_shortcuts_single_tap">Click</string>
-  <string name="lockscreen_shortcuts_double_tap">Doppio tap</string>
+  <string name="lockscreen_shortcuts_double_tap">Doppio tocco</string>
   <string name="lockscreen_shortcuts_longpress">Pressione prolungata</string>
   <string name="help">Guida</string>
   <string name="shortcut_action_app">App personalizzata</string>
@@ -901,10 +901,10 @@
   <string name="status_bar_custom_header_shadow_title">Ombreggiatura immagine intestazione</string>
   <string name="status_bar_custom_header_shadow_summary">Per una migliore visibilità su immagini luminose</string>
   <!-- Current on Lockscreen -->
-  <string name="lock_screen_show_current">Corrente di carica</string>
-  <string name="lock_screen_show_current_summary">Mostra il tasso di corrente di carica nella schermata di blocco</string>
+  <string name="lock_screen_show_current">Carica corrente</string>
+  <string name="lock_screen_show_current_summary">Mostra la percentuale di carica nella schermata di blocco</string>
   <!-- Tiles animation style  -->
-  <string name="quicksettings_tiles_category">Opzioni animazione tiles</string>
+  <string name="quicksettings_tiles_category">Opzioni animazione Tile</string>
   <string name="qs_tile_animation_style_title">Stile animazione tiles</string>
   <string name="qs_tile_animation_duration_title">Durata animazione tiles</string>
   <string name="qs_tile_animation_interpolator_title">Interpolatore animazione tiles</string>

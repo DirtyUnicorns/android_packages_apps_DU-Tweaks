@@ -388,7 +388,7 @@
   <string name="status_bar_brightness_control_summary">在狀態列上左右滑動以調整亮度</string>
   <string name="status_bar_brightness_control_info">必須停用自動亮度</string>
   <!-- Lockscreen Shortcuts -->
-  <string name="lockscreen_targets_title">底部 左/右 捷徑</string>
+  <string name="lockscreen_targets_title">底部左/右捷徑</string>
   <!-- Recents panel settings -->
   <string name="show_clear_all_recents_button_title">全部清除按鈕</string>
   <string name="show_clear_all_recents_button_summary">顯示全部清除按鈕</string>
@@ -907,7 +907,7 @@
   <string name="quicksettings_tiles_category">圖塊動畫選項</string>
   <string name="qs_tile_animation_style_title">圖塊動畫樣式</string>
   <string name="qs_tile_animation_duration_title">圖塊動畫速度</string>
-  <string name="qs_tile_animation_interpolator_title">圖塊動畫內插氣 (interpolator)</string>
+  <string name="qs_tile_animation_interpolator_title">圖塊動畫內插器 (interpolator)</string>
   <string name="qs_tile_animation_style_off">無動畫</string>
   <string name="qs_tile_animation_style_flip">翻轉</string>
   <string name="qs_tile_animation_style_rotate">旋轉</string>

@@ -413,8 +413,8 @@
   <string name="stock_density_title">Значения по умолчанию</string>
   <string name="stock_density_summary">Планшеты обычно используют 160 dpi, новые устройства используют 320 или 480 dpi. Старые устройства используют 240 dpi</string>
   <string name="stock_density_changed_summary">"Плотность установлена на: "</string>
-  <string name="reboot_title">Перезагрузите устройство</string>
-  <string name="reboot_summary">Вам нужно перезагрузить устройство чтобы изменения вступили в силу</string>
+  <string name="reboot_title">Перезагрузка</string>
+  <string name="reboot_summary">Вам нужно перезагрузить устройство, чтобы изменения вступили в силу</string>
   <string name="custom_density_title">Выбрать любое другое значение</string>
   <string name="custom_density_summary_invalid">"НЕВЕРНАЯ ПЛОТНОСТЬ ЭКРАНА!"</string>
   <string name="custom_density">пользовательская</string>
@@ -583,8 +583,8 @@
   <string name="fling_show_pulse_title">Включить Pulse</string>
   <string name="fling_show_pulse_summary">Включить визуализацию звука на панели навигации</string>
   <string name="fling_pulse_color">Цвет Pulse</string>
-  <string name="eos_fling_lavalamp_title">Включить Лава Лампу</string>
-  <string name="eos_fling_lavalamp_summary">Пульс показывает анимацию плавного сочетания цветов Лава Лампы</string>
+  <string name="eos_fling_lavalamp_title">Включить \"Лава Лампу\"</string>
+  <string name="eos_fling_lavalamp_summary">Включить плавно меняющиеся цвета визуализатора Pulse</string>
   <string name="pulse_advanced_category">Расширенные настройки</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Ширина</string>
@@ -872,9 +872,9 @@
   <string name="lockscreen_colors_reset_message">Вы уверены, что хотите вернуть цвета по умолчанию?</string>
   <string name="yes">ДА</string>
   <!-- Recent panel -->
-  <string name="slim_recents_enable_title">Включить Slim Recents</string>
+  <string name="slim_recents_enable_title">Включить недавние Slim</string>
   <string name="slim_recents_enable_summary">Использовать Slim Recents для просмотра недавних</string>
-  <string name="slim_recents_title">Slim Recents</string>
+  <string name="slim_recents_title">Недавние Slim</string>
   <string name="show_running_tasks_title">Показывать только запущенные приложения</string>
   <string name="recents_max_apps_title">Максимальное количество приложений</string>
   <string name="recent_panel_scale_title">Размер</string>
@@ -905,7 +905,7 @@
   <string name="lock_screen_show_current_summary">Показывать зарядный ток на экране блокировки</string>
   <!-- Tiles animation style  -->
   <string name="quicksettings_tiles_category">Настройки анимации плиток</string>
-  <string name="qs_tile_animation_style_title">Стиль анимации плитки</string>
+  <string name="qs_tile_animation_style_title">Стиль анимации</string>
   <string name="qs_tile_animation_duration_title">Длительность анимации плитки</string>
   <string name="qs_tile_animation_interpolator_title">Интерполяция анимации плиток</string>
   <string name="qs_tile_animation_style_off">Без анимации</string>
