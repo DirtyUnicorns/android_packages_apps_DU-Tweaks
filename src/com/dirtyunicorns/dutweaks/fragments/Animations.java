@@ -62,6 +62,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
+    private static final String KEY_DT_TABS_EFFECT = "tabs_effect";
 
     ListPreference mActivityOpenPref;
     ListPreference mActivityClosePref;
@@ -76,6 +77,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     ListPreference mToastAnimation;
     ListPreference mListViewAnimation;
     ListPreference mListViewInterpolator;
+    ListPreference mListViewTabsEffect;
     AnimBarPreference mAnimationDuration;
     SwitchPreference mAnimNoOverride;
 
@@ -192,6 +194,13 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
         mAnimationDuration = (AnimBarPreference) findPreference(ANIMATION_DURATION);
         mAnimationDuration.setInitValue((int) (defaultDuration));
         mAnimationDuration.setOnPreferenceChangeListener(this);
+
+        mListViewTabsEffect = (ListPreference) findPreference(KEY_DT_TABS_EFFECT);
+        int tabsEffect = Settings.System.getInt(getContentResolver(),
+                Settings.System.DIRTY_TWEAKS_TABS_EFFECT, 0);
+        mListViewTabsEffect.setValue(String.valueOf(tabsEffect));
+        mListViewTabsEffect.setSummary(mListViewTabsEffect.getEntry());
+        mListViewTabsEffect.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -284,6 +293,13 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LISTVIEW_INTERPOLATOR, value);
             mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
+            return true;
+        } else if (preference == mListViewTabsEffect) {
+            int value = Integer.valueOf((String) newValue);
+            int index = mListViewTabsEffect.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                     Settings.System.DIRTY_TWEAKS_TABS_EFFECT, value);
+            mListViewTabsEffect.setSummary(mListViewTabsEffect.getEntries()[index]);
             return true;
         }
         preference.setSummary(getProperSummary(preference));
