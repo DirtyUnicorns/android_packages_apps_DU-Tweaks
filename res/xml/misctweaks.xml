@@ -22,6 +22,12 @@
             android:summary="@string/status_bar_brightness_control_summary"
             android:title="@string/status_bar_brightness_control_title" />
 
+        <SwitchPreference
+            android:key="adblocker_disable_ads"
+            android:title="@string/disable_ads_title"
+            android:summary="@string/disable_ads_summary"
+            android:persistent="false" />
+
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="enable_task_manager"
             android:title="@string/enable_task_manager_title"
@@ -73,7 +79,6 @@
 
         <Preference
             android:key="selinux_switch"
-            android:title="@string/selinux_switch_title"
             android:summary="@string/selinux_switch_summary"
             android:selectable="false"/>
 
@@ -96,7 +101,8 @@
             android:key="screenshot_crop_behavior"
             android:title="@string/screenshot_crop_behavior_title"
             android:summary="@string/screenshot_crop_behavior_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            android:dependency="screenshot_crop_and_share" />
 
         </PreferenceCategory>
 

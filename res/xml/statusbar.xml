@@ -34,22 +34,16 @@
             android:title="@string/carrier_options" />
 
          <Preference
-            android:key="contextual_headers"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.ContextualHeaders"
-            android:layout="@layout/preference_contextualheaders"
-            android:title="@string/status_bar_custom_header_title" />
-
-         <Preference
-            android:key="du_logo"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.DuLogo"
-            android:layout="@layout/preference_dulogo"
-            android:title="@string/status_bar_du_logo_title" />
-
-         <Preference
             android:key="statusbarclock"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarClock"
             android:layout="@layout/preference_statusbarclock"
             android:title="@string/status_bar_clock" />
+
+         <Preference
+            android:key="statusbar_notifications"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
+            android:layout="@layout/preference_statusbar_notifications"
+            android:title="@string/statusbar_notifications_category" />
 
          <Preference
             android:key="quicksettings"
@@ -68,11 +62,11 @@
          </PreferenceScreen>
 
          <Preference
-            android:key="statusbar_notifications"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
-            android:layout="@layout/preference_statusbar_notifications"
-            android:title="@string/statusbar_notifications_category" />
- 
+            android:key="contextual_headers"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.ContextualHeaders"
+            android:layout="@layout/preference_contextualheaders"
+            android:title="@string/status_bar_custom_header_title" />
+
 	 <Preference
             android:key="traffic"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.Traffic"

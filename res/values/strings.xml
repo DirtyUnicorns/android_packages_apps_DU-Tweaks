@@ -18,39 +18,36 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Tabs -->
-    <string name="generalui_category">General UI</string>
+    <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="statusbar_category">Status Bar</string>
     <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-Tasking</string>
-    <string name="system_category">System</string>
-    <string name="misc_category">Miscellaneous</string>
 
     <!-- Categories -->
     <string name="animations_category">Animations</string>
     <string name="battery_category">Battery</string>
-    <string name="download_category">Download Center</string>
-    <string name="expanded_desktop_category">Expanded Desktop</string>
-    <string name="misctweaks_category">Misc. Tweaks</string>
-    <string name="powermenu_category">Power Menu</string>
-    <string name="quicksettings_category">Quick Settings</string>
+    <string name="expanded_desktop_category">Expanded desktop</string>
+    <string name="misctweaks_category">Misc. tweaks</string>
+    <string name="powermenu_category">Power menu</string>
+    <string name="quicksettings_category">Quick settings</string>
     <string name="recents_category">Recents</string>
-    <string name="statusbar_items_category">Statusbar Items</string>
+    <string name="statusbar_items_category">Statusbar items</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="lockscreen_notifications_category">Lockscreen Notifications</string>
-    <string name="wakelockblocker_category">Wakelock Blocker</string>
+    <string name="wakelockblocker_category">Wakelock blocker</string>
     <string name="gestures_category">Gestures</string>
     <string name="doubletap_gestures_category">Double tap gestures</string>
     <string name="multitasking_category">Multi-Tasking</string>
-    <string name="multiwindow_category">Multi-Window</string>
+    <string name="multiwindow_category">Multi-window</string>
     <string name="listview_animations_category">List View Animations</string>
     <string name="system_animations_category">System Animations</string>
-    <string name="omniswitch_category">OmniSwitch</string>
-    <string name="weather_category">Weather Widget</string>
+    <string name="omniswitch_category">Omni switch</string>
+    <string name="weather_category">Weather widget</string>
     <string name="breathing_notifications_category">Breathing Notifications</string>
     <string name="button_settings">Buttons</string>
-    <string name="category_heads_up">Heads Up</string>
-    <string name="lockscreen_colors_fonts_category_title">Colors &amp; Fonts</string>
+    <string name="category_heads_up">Heads up</string>
+    <string name="lockscreen_colors_fonts_category_title">Colors &amp; fonts</string>
 
     <!-- OmniSwitch -->
     <string name="aosp_recents_title">AOSP recents</string>
@@ -70,11 +67,6 @@
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast icon</string>
     <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
-
-    <!-- Download Center -->
-    <string name="gapps_title">Google Apps (GAPPS)</string>
-    <string name="gapps_summary">List of GAPPS packages to flash in recovery</string>
-    <string name="gapps_credit">Although GAPPS packages are not compiled from source and don\'t belong to nobody but Google, we would still like to take the time to thank a few individuals and team that maintain these packages for all of us and just make things easier for everyone.\n\nSpecial Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
 
     <!-- Status bar quick qs pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
@@ -171,7 +163,6 @@
     <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
 
     <!-- Ad Blocker -->
-    <string name="adblocker_title">Ad blocker</string>
     <string name="disable_ads_title">Disable Ads</string>
     <string name="disable_ads_summary">Change hosts file to disable ads</string>
 
@@ -247,7 +238,7 @@
     <!-- Statusbar Clock options -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_style_title">Style</string>
-    <string name="status_bar_clock">Clock &amp; Date</string>
+    <string name="status_bar_clock">Clock &amp; date</string>
     <string name="clock_title_enable">Alignment</string>
     <string name="clock_enabled">Enabled</string>
     <string name="clock_disabled">Disabled</string>
@@ -359,7 +350,7 @@
     <string name="listview_bounce_interpolator">Bounce</string>
 
     <!-- Network traffic -->
-    <string name="traffic_category">Traffic Indicators</string>
+    <string name="traffic_category">Traffic indicators</string>
     <string name="network_traffic_title">Network traffic</string>
     <string name="show_network_traffic_state">Status bar traffic monitor</string>
     <string name="show_network_traffic_unit">Display unit</string>
@@ -382,7 +373,7 @@
     <string name="ok">OK</string>
 
     <!-- Time Contextual Header -->
-    <string name="status_bar_custom_header_title">Time Contextual Header</string>
+    <string name="status_bar_custom_header_title">Time contextual header</string>
     <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
 
     <!-- Extended statusbar weather -->
@@ -420,7 +411,7 @@
     <string name="block_on_secure_keyguard_summary">Disables quick settings in the keyguard for a secure lock only</string>
 
     <!-- Carrier Label -->
-    <string name="carrier_options">Carrier Label</string>
+    <string name="carrier_options">Carrier label</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
@@ -445,7 +436,7 @@
     <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
 
     <!-- Lockscreen Shortcuts -->
-    <string name="lockscreen_targets_title">Bottom L/R Shortcuts</string>
+    <string name="lockscreen_targets_title">Bottom L/R shortcuts</string>
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all button</string>
@@ -458,15 +449,11 @@
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
-    <!-- Statusbar DU logo -->
-    <string name="status_bar_du_logo_title">DU logo</string>
-    <string name="status_bar_du_logo_summary">Enable to show DU logo on the left side of statusbar</string>
-
     <!-- Density Changer -->
     <string name="dpi">DPI</string>
     <string name="su_dialog_error_title">Warning</string>
     <string name="su_dialog_error_message">An error occurred.\n\nPlease check for root access. To activate go into superuser settings and enable root access.</string>
-    <string name="lcd_density_title">LCD Density</string>
+    <string name="lcd_density_title">LCD density</string>
     <string name="lcd_density_category">Options</string>
     <string name="follow_through_title">Warning</string>
     <string name="follow_through_summary">Changing your default LCD density can sometimes cause certain apps to not function properly and/or the playstore to show apps being incompatible with your device</string>
@@ -564,7 +551,7 @@
     <string name="navbar_size">Bar size</string>
     <string name="navbar_mode">Navigation mode</string>
     <string name="navbar_visibility">Enable navigation bar</string>
-    <string name="navigationbar_settings_title">Navigation Bar</string>
+    <string name="navigationbar_settings_title">Navigation bar</string>
     <string name="navigationbar_settings_summary">Customize navigation style and behavior</string>
     <string name="navbar_general_title">Advanced</string>
     <string name="navigation_bar_left_title">Left-handed mode</string>
@@ -763,7 +750,7 @@
     <!-- Lock screen wallpaper -->
     <string name="lockscreen_category_title">Lockscreen</string>
     <string name="lockscreen_config_title">Lockscreen configs</string>
-    <string name="lockscreen_wallpaper_config_title">Lockscreen Wall/Config</string>
+    <string name="lockscreen_wallpaper_config_title">Wallpaper / Misc. config</string>
     <string name="lockscreen_wallpaper_set_title">Set new wallpaper</string>
     <string name="lockscreen_wallpaper_clear_title">Return to default</string>
     <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
@@ -849,7 +836,7 @@
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Unlock</string>
     <string name="reset_message">Reset all entries to default?</string>
-    <string name="lockscreen_shortcuts_title">Mid-Screen Shortcuts</string>
+    <string name="lockscreen_shortcuts_title">Mid-screen shortcuts</string>
     <string name="lockscreen_shorcuts_launch_type_title">Shortcut click type</string>
     <string name="lockscreen_shortcuts_single_tap">Click</string>
     <string name="lockscreen_shortcuts_double_tap">Double tap</string>
@@ -883,11 +870,7 @@
     <string name="sizer_message_filesuccess">Created profile.</string>
     <string name="sizer_message_filefail">Failed to create profile.</string>
     <string name="sizer_message_noselect">Nothing selected.</string>
-    <string name="system_app_remover">System App Remover</string>
-
-    <!-- Tomahawk Music Player -->
-    <string name="tomahawk_music_player_title">Tomahawk\'s Music Player</string>
-    <string name="tomahawk_music_player_summary">An open source android music player with great development and features</string>
+    <string name="system_app_remover">System app remover</string>
 
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Task Manager</string>

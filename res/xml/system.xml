@@ -33,6 +33,18 @@
             android:layout="@layout/preference_expanded_desktop"
             android:title="@string/expanded_desktop_category" />
 
+         <PreferenceScreen
+            android:key="density_changer"
+            android:title="@string/lcd_density_title"
+            android:layout="@layout/preference_density"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Density" />
+
+         <Preference
+            android:key="misctweaks"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.MiscTweaks"
+            android:layout="@layout/preference_misctweaks"
+            android:title="@string/misctweaks_category" />
+
          <Preference
             android:key="powermenu"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.PowerMenu"
@@ -50,11 +62,5 @@
             android:fragment="com.dirtyunicorns.dutweaks.fragments.WakelockBlocker"
             android:layout="@layout/preference_wakelockblocker"
             android:title="@string/wakelockblocker_category" />
-
-         <PreferenceScreen
-            android:key="adblocker"
-            android:title="@string/adblocker_title"
-            android:layout="@layout/preference_adblocker"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.AdBlocker_Settings" />
 
 </PreferenceScreen>

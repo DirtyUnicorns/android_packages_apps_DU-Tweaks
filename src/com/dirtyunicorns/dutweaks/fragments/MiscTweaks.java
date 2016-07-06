@@ -46,6 +46,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.DataOutputStream;
 
+import com.dirtyunicorns.dutweaks.fragments.AdBlocker_Helpers;
+
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "MiscTweaks";
@@ -57,6 +59,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String ENABLE_TASK_MANAGER = "enable_task_manager";
     private static final String SELINUX = "selinux";
     private static final String FLASHLIGHT_NOTIFICATION = "flashlight_notification";
+    private static final String ADBLOCKER_DISABLE_ADS = "adblocker_disable_ads";
 
     private FingerprintManager mFingerprintManager;
     private ListPreference mMsob;
@@ -66,6 +69,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private SwitchPreference mEnableTaskManager;
     private SwitchPreference mSelinux;
     private SwitchPreference mFlashlightNotification;
+    private SwitchPreference mAdBlockerDisableAds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -133,6 +137,10 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         if (!mFingerprintManager.isHardwareDetected()){
             prefScreen.removePreference(mFingerprintVib);
         }
+
+        mAdBlockerDisableAds = (SwitchPreference) findPreference(ADBLOCKER_DISABLE_ADS);
+        mAdBlockerDisableAds.setChecked((Settings.System.getInt(resolver,
+                Settings.System.ADBLOCKER_DISABLE_ADS, 0) == 1));
     }
 
     @Override
@@ -151,6 +159,12 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
                     value ? 1 : 0);
+            return true;
+        } else if (preference == mAdBlockerDisableAds) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ADBLOCKER_DISABLE_ADS, checked ? 1:0);
+            AdBlocker_Helpers.checkStatus(getActivity());
             return true;
         } else if (preference == mMsob) {
             Settings.System.putInt(getActivity().getContentResolver(),

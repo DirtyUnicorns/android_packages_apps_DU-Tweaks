@@ -30,6 +30,12 @@
             android:title="@string/gestures_category" />
 
          <Preference
+            android:key="heads_up_enabled"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings"
+            android:layout="@layout/preference_headsup"
+            android:title="@string/category_heads_up" />
+
+         <Preference
             android:key="multitwindow"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.MultiWindow"
             android:layout="@layout/preference_multiwindow"
@@ -50,12 +56,6 @@
             android:fragment="com.dirtyunicorns.dutweaks.fragments.Recents"
             android:layout="@layout/preference_recents"
             android:title="@string/recents_category" />
-
-         <Preference
-            android:key="heads_up_enabled"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings"
-            android:layout="@layout/preference_headsup"
-            android:title="@string/category_heads_up" />
 
 </PreferenceScreen>
 

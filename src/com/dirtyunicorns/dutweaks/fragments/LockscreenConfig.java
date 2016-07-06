@@ -41,7 +41,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
-public class LockscreenWallpaperConfig extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class LockscreenConfig extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     public static final int IMAGE_PICK = 1;
 
@@ -51,6 +51,7 @@ public class LockscreenWallpaperConfig extends SettingsPreferenceFragment implem
     private static final String KEYGUARD_TOGGLE_TORCH = "keyguard_toggle_torch";
     private static final String LOCKSCREEN_ALPHA = "lockscreen_alpha";
     private static final String LOCKSCREEN_SECURITY_ALPHA = "lockscreen_security_alpha";
+    private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
 
     private ListPreference mLsBouncer;
     private Preference mSetWallpaper;
@@ -58,18 +59,25 @@ public class LockscreenWallpaperConfig extends SettingsPreferenceFragment implem
     private SwitchPreference mKeyguardTorch;
     private SeekBarPreferenceCham mLsAlpha;
     private SeekBarPreferenceCham mLsSecurityAlpha;
+    private SeekBarPreferenceCham mMaxKeyguardNotifConfig;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.lockscreen_wallpaper_config);
+        addPreferencesFromResource(R.xml.lockscreen_config);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
+
+        mMaxKeyguardNotifConfig = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
+        int kgconf = Settings.System.getInt(resolver,
+                Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 5);
+        mMaxKeyguardNotifConfig.setValue(kgconf);
+        mMaxKeyguardNotifConfig.setOnPreferenceChangeListener(this);
 
         mSetWallpaper = (Preference) findPreference(KEY_WALLPAPER_SET);
         mClearWallpaper = (Preference) findPreference(KEY_WALLPAPER_CLEAR);
@@ -118,6 +126,11 @@ public class LockscreenWallpaperConfig extends SettingsPreferenceFragment implem
             int lockbouncer = Integer.valueOf((String) newValue);
             Settings.System.putInt(resolver, Settings.System.LOCKSCREEN_BOUNCER, lockbouncer);
             updateBouncerSummary(lockbouncer);
+            return true;
+        } else if (preference == mMaxKeyguardNotifConfig) {
+            int kgconf = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, kgconf);
             return true;
         } else if  (preference == mKeyguardTorch) {
             boolean checked = ((SwitchPreference)preference).isChecked();

@@ -47,14 +47,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.android.internal.util.du.DeviceUtils;
-import com.dirtyunicorns.dutweaks.tabs.GeneralUI;
+import com.dirtyunicorns.dutweaks.tabs.System;
 import com.dirtyunicorns.dutweaks.tabs.Lockscreen;
 import com.dirtyunicorns.dutweaks.tabs.StatusBar;
 import com.dirtyunicorns.dutweaks.tabs.Navigation;
 import com.dirtyunicorns.dutweaks.tabs.MultiTasking;
-import com.dirtyunicorns.dutweaks.tabs.System;
-import com.dirtyunicorns.dutweaks.tabs.Misc;
 import com.dirtyunicorns.dutweaks.PagerSlidingTabStrip;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -105,10 +102,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
     @Override
     public void onResume() {
         super.onResume();
-
-        if (!DeviceUtils.isTablet(getActivity())) {
-            mContainer.setPadding(30, 30, 30, 30);
-        }
+        mContainer.setPadding(30, 30, 30, 30);
     }
 
     @Override
@@ -178,13 +172,11 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new GeneralUI();
+            frags[0] = new System();
             frags[1] = new Lockscreen();
             frags[2] = new StatusBar();
             frags[3] = new Navigation();
             frags[4] = new MultiTasking();
-            frags[5] = new System();
-            frags[6] = new Misc();
         }
 
         @Override
@@ -205,25 +197,12 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
     private String[] getTitles() {
         String titleString[];
-        if (!DeviceUtils.isPhone(getActivity())) {
         titleString = new String[]{
-                    getString(R.string.generalui_category),
+                    getString(R.string.system_category),
                     getString(R.string.lockscreen_category),
                     getString(R.string.statusbar_category),
                     getString(R.string.navigation_category),
-                    getString(R.string.multitasking_category),
-                    getString(R.string.system_category),
-	            getString(R.string.misc_category)};
-        } else {
-        titleString = new String[]{
-                    getString(R.string.generalui_category),
-                    getString(R.string.lockscreen_category),
-                    getString(R.string.statusbar_category),
-                    getString(R.string.navigation_category),
-                    getString(R.string.multitasking_category),
-                    getString(R.string.system_category),
-	            getString(R.string.misc_category)};
-        }
+                    getString(R.string.multitasking_category)};
         return titleString;
     }
 }

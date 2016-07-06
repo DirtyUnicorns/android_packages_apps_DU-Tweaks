@@ -20,6 +20,20 @@
     android:title="@string/lockscreen_category"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  
+         <PreferenceScreen
+              android:title="@string/lockscreen_targets_title"
+              android:layout="@layout/preference_lockscreen_shortcuts" >
+              <intent
+                  android:targetPackage="com.android.systemui"
+                  android:targetClass="com.android.systemui.du.LockscreenShortcutsActivity" />
+         </PreferenceScreen>
+
+         <PreferenceScreen
+            android:key="lockscreen_colors_fonts"
+            android:title="@string/lockscreen_colors_fonts_category_title"
+            android:layout="@layout/preference_lockscreencolorsfonts"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenColorsFonts" />
 
          <PreferenceScreen
                  android:key="lockscreen_shortcuts"
@@ -34,36 +48,16 @@
          </PreferenceScreen>
 
          <PreferenceScreen
-              android:title="@string/lockscreen_targets_title"
-              android:layout="@layout/preference_lockscreen_shortcuts" >
-              <intent
-                  android:targetPackage="com.android.systemui"
-                  android:targetClass="com.android.systemui.du.LockscreenShortcutsActivity" />
-         </PreferenceScreen>
-
-         <PreferenceScreen
-            android:key="lockscreen_wallpaper_config"
+            android:key="lockscreen__config"
             android:title="@string/lockscreen_wallpaper_config_title"
             android:layout="@layout/preference_lockscreenwp"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenWallpaperConfig" />
-
-         <Preference
-            android:key="lockscreen_notifications"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenNotifications"
-            android:layout="@layout/preference_lockscreen_notifications"
-            android:title="@string/lockscreen_notifications_category" />
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenConfig" />
 
          <Preference
             android:key="weather"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.Weather"
             android:layout="@layout/preference_weather"
             android:title="@string/weather_category" />
-
-         <PreferenceScreen
-            android:key="lockscreen_colors_fonts"
-            android:title="@string/lockscreen_colors_fonts_category_title"
-            android:layout="@layout/preference_lockscreencolorsfonts"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockscreenColorsFonts" />
 
 </PreferenceScreen>
 

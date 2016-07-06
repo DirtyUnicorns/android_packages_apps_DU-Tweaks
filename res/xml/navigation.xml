@@ -21,16 +21,16 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <Preference
-            android:key="navigation_options"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.NavbarSettings"
-            android:layout="@layout/preference_navigation"
-            android:title="@string/navigationbar_settings_title" />
-
          <PreferenceScreen
             android:key="button_settings"
             android:title="@string/button_settings"
             android:layout="@layout/preference_buttons"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.ButtonSettings" />
+
+         <Preference
+            android:key="navigation_options"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.NavbarSettings"
+            android:layout="@layout/preference_navigation"
+            android:title="@string/navigationbar_settings_title" />
 
 </PreferenceScreen>
