@@ -154,17 +154,23 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     }
 
     @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if  (preference == mAdBlockerDisableAds) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ADBLOCKER_DISABLE_ADS, checked ? 1:0);
+            AdBlocker_Helpers.checkStatus(getActivity());
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mStatusBarBrightnessControl) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
                     value ? 1 : 0);
-            return true;
-        } else if (preference == mAdBlockerDisableAds) {
-            boolean checked = ((SwitchPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.ADBLOCKER_DISABLE_ADS, checked ? 1:0);
-            AdBlocker_Helpers.checkStatus(getActivity());
             return true;
         } else if (preference == mMsob) {
             Settings.System.putInt(getActivity().getContentResolver(),
