@@ -853,12 +853,6 @@
         <item>**null**</item>
     </string-array>
 
-    <!-- SlimSizer -->
-    <string-array name="slimsizer_profile_array">
-        <item >Load Profile</item>
-        <item >Save Profile</item>
-    </string-array>
-
     <!-- Power menu Animations  -->
     <string-array name="power_menu_animations_entries">
         <item>@string/power_menu_animation_aosp</item>
