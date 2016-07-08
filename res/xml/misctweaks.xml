@@ -22,11 +22,10 @@
             android:summary="@string/status_bar_brightness_control_summary"
             android:title="@string/status_bar_brightness_control_title" />
 
-        <SwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="adblocker_disable_ads"
             android:title="@string/disable_ads_title"
-            android:summary="@string/disable_ads_summary"
-            android:persistent="false" />
+            android:summary="@string/disable_ads_summary" />
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="enable_task_manager"
