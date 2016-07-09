@@ -69,7 +69,6 @@ public class SystemappRemover extends Fragment {
         safetyList.add("CertInstaller.apk");
         safetyList.add("DrmProvider.apk");
         safetyList.add("PackageInstaller.apk");
-        safetyList.add("Superuser.apk");
         safetyList.add("TelephonyProvider.apk");
         safetyList.add("ContactsProvider.apk");
         safetyList.add("DefaultContainerService.apk");
@@ -100,6 +99,11 @@ public class SystemappRemover extends Fragment {
         final ListView lv = (ListView) getView().findViewById(R.string.listsystem);
         lv.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         lv.setAdapter(adapter);
+
+        View footer = LayoutInflater.from(getActivity()).inflate(R.layout.empty_list_entry_footer, lv, false);
+        lv.addFooterView(footer);
+        lv.setFooterDividersEnabled(false);
+        footer.setOnClickListener(null);
 
         fabButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
