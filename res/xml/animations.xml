@@ -18,6 +18,13 @@
     android:title="@string/animations_category" >
 
         <ListPreference
+            android:key="tabs_effect"
+            android:title="@string/tabs_effect_title"
+            android:entries="@array/tabs_effect_entries"
+            android:entryValues="@array/tabs_effect_values"
+            android:persistent="false" />
+
+        <ListPreference
             android:key="toast_animation"
             android:title="@string/toast_animation_title"
             android:entries="@array/toast_animation_entries"
