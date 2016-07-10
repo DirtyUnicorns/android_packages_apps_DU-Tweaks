@@ -33,6 +33,8 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
+import com.android.internal.utils.du.DUActionUtils;
+
 public class ExpandedDesktopExtraPrefs extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener{
     private static final String KEY_EXPANDED_DESKTOP_STYLE = "expanded_desktop_style";
@@ -55,9 +57,18 @@ public class ExpandedDesktopExtraPrefs extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.expanded_desktop_prefs);
-        mExpandedDesktopStyle = getExpandedDesktopStyle();
-        createPreferences();
+
+        boolean showing = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.NAVIGATION_BAR_VISIBLE,
+                DUActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
+
+        int mode = Settings.Secure.getInt(getContentResolver(), Settings.Secure.NAVIGATION_BAR_MODE, 0);
+
+        if (mode == 2) {
+           addPreferencesFromResource(R.xml.expanded_desktop_prefs);
+           mExpandedDesktopStyle = getExpandedDesktopStyle();
+           createPreferences();
+        }
     }
 
     @Override
