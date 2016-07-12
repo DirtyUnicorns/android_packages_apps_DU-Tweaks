@@ -57,7 +57,7 @@
   <string name="omniswitch_first_time_message">OmniSwitch etkinleştirdiğinizden emin olun. \"Ayarlar\"ı kullanarak bunu yapabilirsiniz</string>
   <!-- Dialog -->
   <string name="dirtytweaks_dialog_title">Bize Yardımınız Size De Yarar!!</string>
-  <string name="dirtytweaks_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a DU developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
+  <string name="dirtytweaks_dialog_message">Malesef biz büyücü değiliz!\n\nYani eğer ayarlarınızda bir hata ile karşılaşırsanız, lütfen Jirada bilet açıp DU geliştiricileri ile bağlantıya geçip şu bilgileri iletin.\n\n1. Logcat veya Last_Kmsg\n2. Kernel ve kullanılan Modlar\n3. Kullanışlı bilgi.\n\nEğer bunlardan birini eksin verirseniz, hatanızın düzelmesini beklemeyin. Hatırlayın biz büyücü değiliz o yüzden bazı şeyleri gözden kaçırabiliriz.</string>
   <string name="dirtytweaks_dialog_toast">HER ŞEYİ OKUYUN!</string>
   <!-- Toast Icons -->
   <string name="toast_icon_title">Toast simgesi</string>
@@ -79,9 +79,9 @@
   <string name="qs_brightness_slider_summary">Hızlı ayarlar panelinde parlaklık ayarı göster</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Parlaklık Simgesi </string>
-  <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+  <string name="brightness_icon_summary">Parlaklık kaydırıcının yanında otomatik parlaklığı ayarlamak için bir ikon göster</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
+  <string name="immersive_recents_title">Immersive Son kullanılanlar</string>
   <string name="immersive_recents_summary">Son kullanılanlar ekranı görünümünü değiştirme</string>
   <string name="immersive_recents_dialog_title">Son uygulamalar görünümü seç</string>
   <string name="immersive_recents_default">Varsayılan</string>
@@ -110,12 +110,12 @@
   <string name="advanced_reboot_hide_on_keyguard">Kilit ekranında gizle</string>
   <string name="advanced_reboot_show_always">Her zaman göster</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_summary">Block system wakelocks</string>
+  <string name="wakelock_blocker_summary">Sistem uyandırma kiliylerini engelle</string>
   <string name="wakelock_blocker_save">Kaydet</string>
-  <string name="wakelock_list_header">Available wakelocks</string>
+  <string name="wakelock_list_header">Mevcut uyandırma kilitleri</string>
   <string name="wakelock_blocker_reload">Yenile</string>
   <string name="wakelock_blocker_warning_title">Dikkatli devam edin</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_warning">Uyandırma kilitlerini engelleme, istikrarsızlık, çökme veya veri kaybına neden olma potansiyeline sahiptir unutmayın</string>
   <!-- Expanded desktop -->
   <string name="expanded_hide_nothing">Hiçbir şey gizleme</string>
   <string name="expanded_hide_status">Durum çubuğunu gizle</string>
@@ -125,21 +125,21 @@
   <string name="expanded_desktop_state">Genişletilmiş durum</string>
   <string name="expanded_enabled_for_all">Tümü etkin</string>
   <string name="expanded_user_configurable">Kullanıcı yapılandırılabilir</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">Genişletilmiş masaüstü stili</string>
+  <string name="expanded_desktop_style_description">Geçerli Genişletilmiş masaüstünü seçin</string>
+  <string name="expanded_desktop_title">Genişletilmiş masaüstü seçeneklerini</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Genişletilmiş bildirimleri zorla</string>
   <string name="force_expanded_notifications_summary">Sadece genişletilmiş bildirimleri destekleyen uygulamalar için mevcuttur</string>
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Sürüklemeli Mesajlar Modunu devredışı bırak</string>
-  <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+  <string name="disable_immersive_message_summary">Bütün Sürüklemeli Mesaj Modu iletilerini gizle</string>
   <!-- Disabling FC notifications -->
   <string name="disable_fc_notifications_title">Kapatmaya Zorla Bildirimleri Devre dışı bırak</string>
   <string name="disable_fc_notifications_summary">Zorla kapatılan bildirimleri gizlenecek</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">Durum çubuğunda DT2S</string>
-  <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_summary">Aygıtı uykuya geçirmek için durum çubuğuna iki kez dokun</string>
   <string name="double_tap_sleep_nav_bar_title">Gezinti çubuğunda DT2S</string>
   <string name="double_tap_sleep_nav_bar_summary">Cihazı uyutmak için gezinti çubuğuna çift dokunun</string>
   <string name="double_tap_to_sleep_lockscreen_title">Kilit ekranında DT2S</string>
@@ -163,7 +163,7 @@
   <string name="status_bar_battery_style_icon_portrait">Dikey simge</string>
   <string name="status_bar_battery_style_icon_landscape">Yatay simge</string>
   <string name="status_bar_battery_style_circle">Daire</string>
-  <string name="status_bar_battery_style_text">Text</string>
+  <string name="status_bar_battery_style_text">Yazı</string>
   <string name="status_bar_battery_style_hidden">Gizli</string>
   <string name="status_bar_battery_percentage_title">Pil yüzdesini göster</string>
   <string name="status_bar_battery_percentage_dialog_title">Pil yüzdesi</string>

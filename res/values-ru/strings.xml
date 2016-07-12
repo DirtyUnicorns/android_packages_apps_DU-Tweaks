@@ -125,9 +125,9 @@
   <string name="expanded_desktop_state">Расширенный экран</string>
   <string name="expanded_enabled_for_all">Включить для всех</string>
   <string name="expanded_user_configurable">Настраивается пользователем</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">Режим расширенного экрана</string>
+  <string name="expanded_desktop_style_description">Расширенный экран по умолчанию</string>
+  <string name="expanded_desktop_title">Настройки расширенного экрана</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Принудительно разворачивать уведомления</string>
   <string name="force_expanded_notifications_summary">Доступно только для приложений, поддерживающих расширенные уведомления</string>
@@ -408,7 +408,7 @@
   <string name="stock_density_changed_summary">"Плотность установлена на: "</string>
   <string name="reboot_title">Перезагрузка</string>
   <string name="reboot_summary">Вам нужно перезагрузить устройство, чтобы изменения вступили в силу</string>
-  <string name="custom_density_title">Выбрать любое другое значение</string>
+  <string name="custom_density_title">Выбрать своё значение</string>
   <string name="custom_density_summary_invalid">"НЕВЕРНАЯ ПЛОТНОСТЬ ЭКРАНА!"</string>
   <string name="custom_density">пользовательская</string>
   <string name="set_custom_density_title">Установить пользовательскую плотность экрана</string>
@@ -649,15 +649,15 @@
   <string name="smartbar_ime_action_none">Ничего</string>
   <string name="smartbar_ime_action_arrows">Стрелки ввода</string>
   <string name="smartbar_ime_action_switcher">Переключатель клавиатуры</string>
-  <string name="smartbar_backup_current_config_title">Save profile</string>
-  <string name="smartbar_restore_config_title">Restore profile</string>
-  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
-  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
-  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
-  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
-  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
-  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
-  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
+  <string name="smartbar_backup_current_config_title">Сохранить профиль</string>
+  <string name="smartbar_restore_config_title">Восстановить профиль</string>
+  <string name="smartbar_config_name_edit_dialog_title">Имя профиля Smartbar</string>
+  <string name="smartbar_config_name_edit_dialog_message">Введите название или оставьте поле пустым</string>
+  <string name="smartbar_config_dialog_title">Профили Smartbar</string>
+  <string name="smartbar_config_backup_success_toast">Профиль Smartbar успешно сохранен</string>
+  <string name="smartbar_config_restore_success_toast">Профиль Smartbar успешно восстановлен</string>
+  <string name="smartbar_config_backup_error_toast">Ошибка при сохранении профиля Smartbar</string>
+  <string name="smartbar_config_restore_error_toast">Ошибка при восстановлении профиля Smartbar</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Экран блокировки</string>
   <string name="lockscreen_config_title">Конфигурация экрана блокировки</string>
@@ -765,8 +765,8 @@
   <string name="system_app_remover">Удаление системных приложений</string>
   <string name="listsystem">список</string>
   <string name="cancel">Отмена</string>
-  <string name="message_delete">Are you sure you want to delete this app?</string>
-  <string name="message_noselect">Nothing selected</string>
+  <string name="message_delete">Вы точно хотите удалить выбранное приложение?</string>
+  <string name="message_noselect">Ничего не выбрано</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Диспетчер задач</string>
   <string name="enable_task_manager_summary">Включить/отключить кнопку диспетчера задач в заголовке</string>
@@ -917,22 +917,22 @@
   <string name="three_finger_gesture_info">После выбора действия, проведите по вертикали тремя пальцами одним движением сверху вниз, чтобы выполнить его.</string>
   <string name="three_finger_swipe_gesture_title">Жест тремя пальцами</string>
   <!-- DirtyTweaks tabs slide effects -->
-  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
-  <string name="effect_default">Default</string>
-  <string name="effect_accordion">Accordion</string>
-  <string name="effect_background_to_foreground">Background to foreground</string>
-  <string name="effect_cube_in">Cube in</string>
-  <string name="effect_cube_out">Cube out</string>
-  <string name="effect_depth_page">Depth page</string>
-  <string name="effect_flip_horizontal">Flip horizontal</string>
-  <string name="effect_flip_vertical">Flip vertical</string>
-  <string name="effect_foreground_to_background">Foreground to background</string>
-  <string name="effect_rotate_down">Rotate down</string>
-  <string name="effect_rotate_up">Rotate up</string>
-  <string name="effect_scale_in_out">Scale in out</string>
-  <string name="effect_stack">Stack</string>
-  <string name="effect_tablet">Tablet</string>
-  <string name="effect_zoom_in">Zoom in</string>
-  <string name="effect_zoom_out_slide">Zoom out slide</string>
-  <string name="effect_zoom_out">Zoom out</string>
+  <string name="tabs_effect_title">Анимация вкладок настроек Dirty</string>
+  <string name="effect_default">По умолчанию</string>
+  <string name="effect_accordion">Аккордеон</string>
+  <string name="effect_background_to_foreground">Фон на передний план</string>
+  <string name="effect_cube_in">Внутри куба</string>
+  <string name="effect_cube_out">Снаружи куба</string>
+  <string name="effect_depth_page">Углубление</string>
+  <string name="effect_flip_horizontal">Переворот по горизонтали</string>
+  <string name="effect_flip_vertical">Переворот по вертикали</string>
+  <string name="effect_foreground_to_background">Передний план в фон</string>
+  <string name="effect_rotate_down">Поворот вниз</string>
+  <string name="effect_rotate_up">Поворот вверх</string>
+  <string name="effect_scale_in_out">Вылет</string>
+  <string name="effect_stack">Друг на друга</string>
+  <string name="effect_tablet">Планшетный</string>
+  <string name="effect_zoom_in">Увеличение</string>
+  <string name="effect_zoom_out_slide">Уменьшение слайдом</string>
+  <string name="effect_zoom_out">Уменьшение</string>
 </resources>

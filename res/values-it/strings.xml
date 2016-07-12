@@ -125,9 +125,9 @@
   <string name="expanded_desktop_state">Stato del Desktop esteso</string>
   <string name="expanded_enabled_for_all">Abilitato per tutti</string>
   <string name="expanded_user_configurable">Configurabile dall\'utente</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">Stile desktop esteso</string>
+  <string name="expanded_desktop_style_description">Scegli lo stile predefinito del desktop esteso</string>
+  <string name="expanded_desktop_title">Impostazioni desktop esteso</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Forza notifiche estese</string>
   <string name="force_expanded_notifications_summary">Disponibile solo per le applicazioni che supportano le notifiche estese</string>
@@ -649,15 +649,15 @@
   <string name="smartbar_ime_action_none">Nessuno</string>
   <string name="smartbar_ime_action_arrows">Frecce di posizione</string>
   <string name="smartbar_ime_action_switcher">Cambia tastiera</string>
-  <string name="smartbar_backup_current_config_title">Save profile</string>
-  <string name="smartbar_restore_config_title">Restore profile</string>
-  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
-  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
-  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
-  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
-  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
-  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
-  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
+  <string name="smartbar_backup_current_config_title">Salva profilo</string>
+  <string name="smartbar_restore_config_title">Ripristinare il profilo</string>
+  <string name="smartbar_config_name_edit_dialog_title">Nome del profilo SmartBar</string>
+  <string name="smartbar_config_name_edit_dialog_message">Immettere un nome oppure lasciare vuoto</string>
+  <string name="smartbar_config_dialog_title">Profili SmartBar</string>
+  <string name="smartbar_config_backup_success_toast">Profilo SmartBar salvato correttamente</string>
+  <string name="smartbar_config_restore_success_toast">Profilo SmartBar ripristinato correttamente</string>
+  <string name="smartbar_config_backup_error_toast">Errore salvataggio del profilo Smartbar</string>
+  <string name="smartbar_config_restore_error_toast">Errore ripristino del profilo Smartbar</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Schermata di blocco</string>
   <string name="lockscreen_config_title">Impostazioni schermata di blocco</string>
@@ -765,8 +765,8 @@
   <string name="system_app_remover">Rimozione app di sistema</string>
   <string name="listsystem">elenco</string>
   <string name="cancel">Annulla</string>
-  <string name="message_delete">Are you sure you want to delete this app?</string>
-  <string name="message_noselect">Nothing selected</string>
+  <string name="message_delete">Sei sicuro di che voler eliminare questa applicazione?</string>
+  <string name="message_noselect">Nessuna selezione</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Task Manager</string>
   <string name="enable_task_manager_summary">Attiva/disattiva pulsante task manager quando la barra di stato è espansa</string>
@@ -917,22 +917,22 @@
   <string name="three_finger_gesture_info">Dopo aver selezionato un segno dal basso, scorri verticalmente con 3 dita in un unico movimento dall\'alto verso il basso per attivare l\'azione selezionata.</string>
   <string name="three_finger_swipe_gesture_title">Gesto tre dita</string>
   <!-- DirtyTweaks tabs slide effects -->
-  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
-  <string name="effect_default">Default</string>
-  <string name="effect_accordion">Accordion</string>
-  <string name="effect_background_to_foreground">Background to foreground</string>
-  <string name="effect_cube_in">Cube in</string>
-  <string name="effect_cube_out">Cube out</string>
-  <string name="effect_depth_page">Depth page</string>
-  <string name="effect_flip_horizontal">Flip horizontal</string>
-  <string name="effect_flip_vertical">Flip vertical</string>
-  <string name="effect_foreground_to_background">Foreground to background</string>
-  <string name="effect_rotate_down">Rotate down</string>
-  <string name="effect_rotate_up">Rotate up</string>
-  <string name="effect_scale_in_out">Scale in out</string>
-  <string name="effect_stack">Stack</string>
+  <string name="tabs_effect_title">Effetto di transizione schede Tweaks</string>
+  <string name="effect_default">Predefinito</string>
+  <string name="effect_accordion">Fisarmonica</string>
+  <string name="effect_background_to_foreground">Sfondo in primo piano</string>
+  <string name="effect_cube_in">Cubo interno</string>
+  <string name="effect_cube_out">Cubo esterno</string>
+  <string name="effect_depth_page">Pagina di profondità</string>
+  <string name="effect_flip_horizontal">Rifletti orizzontalmente</string>
+  <string name="effect_flip_vertical">Rifletti verticalmente</string>
+  <string name="effect_foreground_to_background">Sfondo in primo piano</string>
+  <string name="effect_rotate_down">Ruotazione verso il basso</string>
+  <string name="effect_rotate_up">Ruotazione verso l\'alto</string>
+  <string name="effect_scale_in_out">Scala indietro</string>
+  <string name="effect_stack">Pila</string>
   <string name="effect_tablet">Tablet</string>
-  <string name="effect_zoom_in">Zoom in</string>
-  <string name="effect_zoom_out_slide">Zoom out slide</string>
-  <string name="effect_zoom_out">Zoom out</string>
+  <string name="effect_zoom_in">Zoom avanti</string>
+  <string name="effect_zoom_out_slide">Zoom indietro diapositiva</string>
+  <string name="effect_zoom_out">Zoom indietro</string>
 </resources>
