@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">Allmänna UI</string>
+  <string name="system_category">System</string>
   <string name="lockscreen_category">Låsskärm</string>
   <string name="statusbar_category">Statusfält</string>
   <string name="navigation_category">Navigering</string>
   <string name="multitasking_category">Multitasking</string>
-  <string name="system_category">System</string>
-  <string name="misc_category">Övrigt</string>
   <!-- Categories -->
   <string name="animations_category">Animationer</string>
   <string name="battery_category">Batteri</string>
-  <string name="download_category">Download Center</string>
   <string name="expanded_desktop_category">Utökat skrivbord</string>
   <string name="misctweaks_category">Div. Tweaks</string>
   <string name="powermenu_category">Avstängningsmeny</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Låsskärms notifikationer</string>
   <string name="wakelockblocker_category">Wakelock Blocker</string>
   <string name="gestures_category">Gester</string>
+  <string name="doubletap_gestures_category">Dubbeltryck gester</string>
   <string name="multitasking_category">Multitasking</string>
   <string name="multiwindow_category">Multi-fönster</string>
   <string name="listview_animations_category">ListVy Animation</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Toast-ikonen</string>
   <string name="toast_icon_summary">Visa app-ikonen tillhörande toasten</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">Lista över GAPPS paket att flasha i recovery</string>
-  <string name="gapps_credit">Även om GAPPS-paketet inte har skapats från grunden och inte tillhör någon annan än Google, vill vi ändå ta oss tid att tacka några individer och team som upprätthåller dessa paket och bara göra saker lättare för oss alla.\n\nSpeciellt tack till Team BlackOut, Michael Banks, TKruzze och M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Snabb neddragning</string>
   <string name="summary_quick_pulldown">%1$s kant av statusfältet drar ned snabbinställningar</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">Utökat tillstånd</string>
   <string name="expanded_enabled_for_all">Aktiverad för allt</string>
   <string name="expanded_user_configurable">Modifierbar</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Tvinga utökade meddelanden</string>
   <string name="force_expanded_notifications_summary">Endast tillgängligt för appar som stödjer utökade meddelanden</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">DT2S på låsskärmen</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Dubbeltryck på den övre tredjedelen eller botten av låsskärmen att försätta enheten i viloläge</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Reklamblockerare</string>
   <string name="disable_ads_title">Inaktivera reklam</string>
   <string name="disable_ads_summary">Ändra hosts filen för att inaktivera annonser</string>
   <!-- Volume Key Rotation -->
@@ -215,49 +211,49 @@
   <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
   <!-- Statusbar Clock options -->
   <string name="status_bar_title">Status bar</string>
-  <string name="status_bar_style_title">Style</string>
+  <string name="status_bar_style_title">Stil</string>
   <string name="status_bar_clock">Clock &amp; Date</string>
   <string name="clock_title_enable">Alignment</string>
-  <string name="clock_enabled">Enabled</string>
-  <string name="clock_disabled">Disabled</string>
-  <string name="status_bar_clock_style_reset">Reset color</string>
-  <string name="status_bar_show_clock_title">Show clock &amp; date</string>
+  <string name="clock_enabled">Aktiverad</string>
+  <string name="clock_disabled">Inaktiverad</string>
+  <string name="status_bar_clock_style_reset">Återställ färg</string>
+  <string name="status_bar_show_clock_title">Visa tid &amp; datum</string>
   <string name="status_bar_am_pm_title">AM/PM</string>
-  <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-  <string name="enable_clock_weekday">Day of the week</string>
-  <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-  <string name="right_clock">Right clock</string>
-  <string name="center_clock">Center clock</string>
-  <string name="left_clock">Left clock</string>
-  <string name="dont_show">Don\'t show</string>
-  <string name="clock_date_display">Date</string>
-  <string name="clock_date_display_summary">Display custom date before the clock</string>
-  <string name="clock_date_style">Date style</string>
-  <string name="clock_date_position">Date position</string>
-  <string name="clock_date_format">Date format</string>
-  <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-  <string name="clock_date_string_edittext_summary">Enter string</string>
-  <string name="clock_date_right">Right of time</string>
-  <string name="clock_date_left">Left of time</string>
-  <string name="am_pm_clock_normal">Normal font size</string>
-  <string name="am_pm_clock_small">Small font size</string>
-  <string name="am_pm_clock_none">Don\'t show</string>
-  <string name="clock_date_display_none">Don\'t show</string>
-  <string name="clock_date_display_small">Small font size</string>
-  <string name="clock_date_display_normal">Normal font size</string>
-  <string name="clock_date_style_normal">Normal</string>
-  <string name="clock_date_style_lowercase">Lowercase</string>
-  <string name="clock_date_style_uppercase">Uppercase</string>
-  <string name="clock_date_format_custom">Custom java format</string>
-  <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
-  <string name="default_string">Default</string>
-  <string name="reset">Reset</string>
+  <string name="status_bar_am_pm_info">24-timmars klocka är aktiverad</string>
+  <string name="enable_clock_weekday">Veckodag</string>
+  <string name="enable_clock_weekday_summary">Förkortad veckodag innan klockan</string>
+  <string name="right_clock">Klocka till höger</string>
+  <string name="center_clock">Centrerad klocka</string>
+  <string name="left_clock">Klocka till vänster</string>
+  <string name="dont_show">Visa inte</string>
+  <string name="clock_date_display">Datum</string>
+  <string name="clock_date_display_summary">Visa anpassade datum före klockan</string>
+  <string name="clock_date_style">Datumstil</string>
+  <string name="clock_date_position">Datumposition</string>
+  <string name="clock_date_format">Datumformat</string>
+  <string name="clock_date_string_edittext_title">Måste vara i datumformat t. ex. MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">Ange sträng</string>
+  <string name="clock_date_right">Höger om tid</string>
+  <string name="clock_date_left">Vänster om tid</string>
+  <string name="am_pm_clock_normal">Normal teckenstorlek</string>
+  <string name="am_pm_clock_small">Liten teckenstorlek</string>
+  <string name="am_pm_clock_none">Visa inte</string>
+  <string name="clock_date_display_none">Visa inte</string>
+  <string name="clock_date_display_small">Liten teckenstorlek</string>
+  <string name="clock_date_display_normal">Normal teckenstorlek</string>
+  <string name="clock_date_style_normal">Normalt</string>
+  <string name="clock_date_style_lowercase">Gemener</string>
+  <string name="clock_date_style_uppercase">Versaler</string>
+  <string name="clock_date_format_custom">Anpassat javaformat</string>
+  <string name="status_bar_clock_style_reset_message">Återställ klockans färg?</string>
+  <string name="default_string">Förvalt</string>
+  <string name="reset">Återställ</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Color Picker</string>
-  <string name="press_color_to_apply">Press on color below to apply</string>
+  <string name="dialog_color_picker">Färgväljare</string>
+  <string name="press_color_to_apply">Tryck på färgen under för att tillämpa</string>
   <string name="hex">Hex:</string>
-  <string name="set">Set</string>
-  <string name="color_default">Default</string>
+  <string name="set">Ställ in</string>
+  <string name="color_default">Förvalt</string>
   <!-- AOSP MultiWindow -->
   <string name="enable_multi_window">Multi-window mode</string>
   <string name="enable_multi_window_summary">Flera aktiviteter på skärmen samtidigt.</string>
@@ -318,20 +314,20 @@
   <string name="network_traffic_title">Network traffic</string>
   <string name="show_network_traffic_state">Status bar traffic monitor</string>
   <string name="show_network_traffic_unit">Display unit</string>
-  <string name="show_network_traffic_frequency">Update interval</string>
-  <string name="show_network_traffic_disable">Disabled</string>
-  <string name="show_network_traffic_up">Outgoing</string>
-  <string name="show_network_traffic_down">Incoming</string>
-  <string name="show_network_traffic_all">Outgoing and incoming</string>
-  <string name="show_network_traffic_bit">Bits per second</string>
-  <string name="show_network_traffic_byte">Bytes per second</string>
+  <string name="show_network_traffic_frequency">Uppdateringsintervall</string>
+  <string name="show_network_traffic_disable">Inaktiverad</string>
+  <string name="show_network_traffic_up">Utgående</string>
+  <string name="show_network_traffic_down">Inkommande</string>
+  <string name="show_network_traffic_all">Utgående och inkommande</string>
+  <string name="show_network_traffic_bit">Bits per sekund</string>
+  <string name="show_network_traffic_byte">Bytes per sekund</string>
   <string name="show_network_traffic_500">500 ms</string>
   <string name="show_network_traffic_1000">1000 ms</string>
   <string name="show_network_traffic_1500">1500 ms</string>
   <string name="show_network_traffic_2000">2000 ms</string>
-  <string name="network_traffic_autohide">Auto hide</string>
-  <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-  <string name="network_traffic_hidearrow">Hide arrows</string>
+  <string name="network_traffic_autohide">Dölj automatiskt</string>
+  <string name="network_traffic_autohide_summary">Dölja trafikmonitor när det inte finns någon aktivitet</string>
+  <string name="network_traffic_hidearrow">Dölj pilar</string>
   <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
   <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
   <string name="ok">OK</string>
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">Bottom right</string>
   <string name="recents_clear_all_location_bottom_left">Bottom left</string>
   <string name="recents_clear_all_location_bottom_center">Bottom center</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">DU logo</string>
-  <string name="status_bar_du_logo_summary">Enable to show DU logo on the left side of statusbar</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">Warning</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">Rename gesture</string>
   <string name="ga_gestures_rename_label">Gesture name</string>
   <string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
-  <string name="trigger_category">Trigger region</string>
   <string name="trigger_width_title">Trigger width</string>
   <string name="trigger_width_summary">Adjust the width of the trigger area</string>
   <string name="trigger_top_title">Trigger position</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">None</string>
   <string name="smartbar_ime_action_arrows">Input arrows</string>
   <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Lockscreen</string>
   <string name="lockscreen_config_title">Lockscreen configs</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">Recents</string>
   <string name="shortcut_action_power">Screen Off</string>
   <string name="shortcut_action_search">Search in app</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">list</string>
-  <string name="sizer_title">App remover</string>
-  <string name="caution">Caution!</string>
-  <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
-  <string name="cancel">Cancel</string>
-  <string name="sizer_message_delete">Are you sure you want to delete this app?</string>
-  <string name="btn_delete">Delete selected APPs now!</string>
-  <string name="delete_progress_title">Deleting</string>
-  <string name="delete_progress">Selected files are being deleted\u2026</string>
-  <string name="delete_success">Deleted</string>
-  <string name="delete_fail">Unable to delete</string>
-  <string name="btn_profile">Profile</string>
-  <string name="sizer_message_sdnowrite">Cannot write to SD Card.</string>
-  <string name="sizer_message_sdnoread">Cannot read SD Card.</string>
-  <string name="sizer_message_filesuccess">Created profile.</string>
-  <string name="sizer_message_filefail">Failed to create profile.</string>
-  <string name="sizer_message_noselect">Nothing selected.</string>
+  <!-- App Remover -->
   <string name="system_app_remover">System App Remover</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk\'s Music Player</string>
-  <string name="tomahawk_music_player_summary">An open source android music player with great development and features</string>
+  <string name="listsystem">list</string>
+  <string name="cancel">Cancel</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Task Manager</string>
   <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area</string>
@@ -928,4 +913,26 @@
   <string name="screenshot_crop_and_share_summary">Show an editor window after taking a screenshot in order to do some operations like cropping, saving or sharing</string>
   <string name="screenshot_crop_behavior_title">Crop mode</string>
   <string name="screenshot_crop_behavior_summary">Always use the cropped image inside the cropping area, even if the apply button hasn\'t been pressed</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">After selecting a target from below, swipe vertically with 3 fingers in a single motion from top to bottom to trigger the action you selected.</string>
+  <string name="three_finger_swipe_gesture_title">Three finger swipe gesture</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>

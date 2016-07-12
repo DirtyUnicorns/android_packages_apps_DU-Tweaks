@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">UI generala</string>
+  <string name="system_category">System</string>
   <string name="lockscreen_category">Ecran de blocare</string>
   <string name="statusbar_category">Status Bar</string>
   <string name="navigation_category">Navigation</string>
   <string name="multitasking_category">Multi-Tasking</string>
-  <string name="system_category">System</string>
-  <string name="misc_category">Miscellaneous</string>
   <!-- Categories -->
   <string name="animations_category">Animations</string>
   <string name="battery_category">Battery</string>
-  <string name="download_category">Download Center</string>
   <string name="expanded_desktop_category">Expanded Desktop</string>
   <string name="misctweaks_category">Misc. Tweaks</string>
   <string name="powermenu_category">Power Menu</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Lockscreen Notifications</string>
   <string name="wakelockblocker_category">Wakelock Blocker</string>
   <string name="gestures_category">Gestures</string>
+  <string name="doubletap_gestures_category">Double tap gestures</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Multi-Window</string>
   <string name="listview_animations_category">List View Animations</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Toast icon</string>
   <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">List of GAPPS packages to flash in recovery</string>
-  <string name="gapps_credit">Although GAPPS packages are not compiled from source and don\'t belong to nobody but Google, we would still like to take the time to thank a few individuals and team that maintain these packages for all of us and just make things easier for everyone.\n\nSpecial Thanks to Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Quick pulldown</string>
   <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">Expanded state</string>
   <string name="expanded_enabled_for_all">Enabled for all</string>
   <string name="expanded_user_configurable">User configurable</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
   <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">DT2S on Lockscreen</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Ad blocker</string>
   <string name="disable_ads_title">Disable Ads</string>
   <string name="disable_ads_summary">Change hosts file to disable ads</string>
   <!-- Volume Key Rotation -->
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">Bottom right</string>
   <string name="recents_clear_all_location_bottom_left">Bottom left</string>
   <string name="recents_clear_all_location_bottom_center">Bottom center</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">DU logo</string>
-  <string name="status_bar_du_logo_summary">Enable to show DU logo on the left side of statusbar</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">Warning</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">Rename gesture</string>
   <string name="ga_gestures_rename_label">Gesture name</string>
   <string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
-  <string name="trigger_category">Trigger region</string>
   <string name="trigger_width_title">Trigger width</string>
   <string name="trigger_width_summary">Adjust the width of the trigger area</string>
   <string name="trigger_top_title">Trigger position</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">None</string>
   <string name="smartbar_ime_action_arrows">Input arrows</string>
   <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Lockscreen</string>
   <string name="lockscreen_config_title">Lockscreen configs</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">Recents</string>
   <string name="shortcut_action_power">Screen Off</string>
   <string name="shortcut_action_search">Search in app</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">list</string>
-  <string name="sizer_title">App remover</string>
-  <string name="caution">Caution!</string>
-  <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
-  <string name="cancel">Cancel</string>
-  <string name="sizer_message_delete">Are you sure you want to delete this app?</string>
-  <string name="btn_delete">Delete selected APPs now!</string>
-  <string name="delete_progress_title">Deleting</string>
-  <string name="delete_progress">Selected files are being deleted\u2026</string>
-  <string name="delete_success">Deleted</string>
-  <string name="delete_fail">Unable to delete</string>
-  <string name="btn_profile">Profile</string>
-  <string name="sizer_message_sdnowrite">Cannot write to SD Card.</string>
-  <string name="sizer_message_sdnoread">Cannot read SD Card.</string>
-  <string name="sizer_message_filesuccess">Created profile.</string>
-  <string name="sizer_message_filefail">Failed to create profile.</string>
-  <string name="sizer_message_noselect">Nothing selected.</string>
+  <!-- App Remover -->
   <string name="system_app_remover">System App Remover</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk\'s Music Player</string>
-  <string name="tomahawk_music_player_summary">An open source android music player with great development and features</string>
+  <string name="listsystem">list</string>
+  <string name="cancel">Cancel</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Task Manager</string>
   <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area</string>
@@ -928,4 +913,26 @@
   <string name="screenshot_crop_and_share_summary">Show an editor window after taking a screenshot in order to do some operations like cropping, saving or sharing</string>
   <string name="screenshot_crop_behavior_title">Crop mode</string>
   <string name="screenshot_crop_behavior_summary">Always use the cropped image inside the cropping area, even if the apply button hasn\'t been pressed</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">After selecting a target from below, swipe vertically with 3 fingers in a single motion from top to bottom to trigger the action you selected.</string>
+  <string name="three_finger_swipe_gesture_title">Three finger swipe gesture</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>

@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">一般介面</string>
+  <string name="system_category">系統</string>
   <string name="lockscreen_category">鎖定畫面</string>
   <string name="statusbar_category">狀態列</string>
   <string name="navigation_category">導覽</string>
   <string name="multitasking_category">多工</string>
-  <string name="system_category">系統</string>
-  <string name="misc_category">其他</string>
   <!-- Categories -->
   <string name="animations_category">動畫</string>
   <string name="battery_category">電池</string>
-  <string name="download_category">下載中心</string>
   <string name="expanded_desktop_category">擴展桌面</string>
   <string name="misctweaks_category">雜項調整</string>
   <string name="powermenu_category">電源功能表</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">鎖定畫面通知</string>
   <string name="wakelockblocker_category">喚醒阻擋</string>
   <string name="gestures_category">手勢</string>
+  <string name="doubletap_gestures_category">雙擊手勢</string>
   <string name="multitasking_category">多工</string>
   <string name="multiwindow_category">多重視窗</string>
   <string name="listview_animations_category">List View 動畫</string>
@@ -64,18 +62,14 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">彈出訊息圖示</string>
   <string name="toast_icon_summary">顯示與彈出訊息相關的應用程式圖示</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google 應用程式 (GAPPS)</string>
-  <string name="gapps_summary">推薦的 GAPPS 刷包</string>
-  <string name="gapps_credit">儘管 GAPPS 刷包並非開源且其內含的應用程式完全屬於 Google，我們依然想花些時間感謝為我們提供和維護護這些刷包的人與團隊，是他們讓事情變得如此簡單。\n\n特別感謝：Team BlackOut、Michael Banks、TKruzze 以及 M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">快速下拉</string>
-  <string name="summary_quick_pulldown">在狀態列的 %1$s側 下拉時直接進入快速設定</string>
+  <string name="summary_quick_pulldown">在狀態列的%1$s側下拉時直接進入快速設定</string>
   <string name="quick_pulldown_off">關閉</string>
   <string name="quick_pulldown_left">左</string>
   <string name="quick_pulldown_right">右</string>
   <string name="smart_pulldown_title">智慧下拉</string>
-  <string name="smart_pulldown_summary">當有 %1$s個 通知時直接開啟快速設定</string>
+  <string name="smart_pulldown_summary">當%1$s直接開啟快速設定</string>
   <string name="smart_pulldown_off">關閉</string>
   <string name="smart_pulldown_dismissable">沒有可清除的通知時</string>
   <string name="smart_pulldown_persistent">沒有持續型的通知時</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">擴展狀態</string>
   <string name="expanded_enabled_for_all">全部擴展</string>
   <string name="expanded_user_configurable">使用者可設定</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">強制擴展通知</string>
   <string name="force_expanded_notifications_summary">僅適用於支援擴展通知的應用程式</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">鎖定畫面雙擊休眠</string>
   <string name="double_tap_to_sleep_lockscreen_summary">輕觸兩下鎖定畫面的上半部或下方的捷徑區域以使裝置進入休眠</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">廣告攔截</string>
   <string name="disable_ads_title">禁用廣告</string>
   <string name="disable_ads_summary">更改 hosts 檔案以禁用廣告</string>
   <!-- Volume Key Rotation -->
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">右下</string>
   <string name="recents_clear_all_location_bottom_left">左下</string>
   <string name="recents_clear_all_location_bottom_center">底部置中</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">DU 標誌</string>
-  <string name="status_bar_du_logo_summary">啟用以在狀態列左側顯示 DU 標誌</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">警告</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">重新命名手勢</string>
   <string name="ga_gestures_rename_label">手勢名稱</string>
   <string name="ga_gestures_error_loading">無法讀取 %s。請確認您擁有可用的儲存空間。</string>
-  <string name="trigger_category">觸發區域</string>
   <string name="trigger_width_title">觸發寬度</string>
   <string name="trigger_width_summary">調整觸發區域的寬度</string>
   <string name="trigger_top_title">觸發位置</string>
@@ -612,7 +604,7 @@
   <string name="default_div">預設</string>
   <string name="pulse_block_category">預設</string>
   <string name="pulse_block_category_title">方塊大小</string>
-  <string name="pulse_aggression">Power</string>
+  <string name="pulse_aggression">強度</string>
   <string name="default_fill">預設</string>
   <string name="default_pulse_empty">預設</string>
   <string name="pulse_filled_block_size">方塊大小</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">無</string>
   <string name="smartbar_ime_action_arrows">輸入箭頭</string>
   <string name="smartbar_ime_action_switcher">鍵盤切換器</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">鎖定畫面</string>
   <string name="lockscreen_config_title">鎖定畫面配置</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">總覽</string>
   <string name="shortcut_action_power">關閉螢幕</string>
   <string name="shortcut_action_search">應用程式内搜尋</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">清單</string>
-  <string name="sizer_title">解除安裝應用程式</string>
-  <string name="caution">注意！</string>
-  <string name="sizer_message_startup">此工具允許您刪除系統應用程式。請謹慎使用，並只刪除您確定能安全移除的應用程式。</string>
-  <string name="cancel">取消</string>
-  <string name="sizer_message_delete">確定要刪除此應用程式？</string>
-  <string name="btn_delete">立即刪除已選擇的應用程式！</string>
-  <string name="delete_progress_title">正在刪除</string>
-  <string name="delete_progress">正在刪除所選的檔案\u2026</string>
-  <string name="delete_success">已刪除</string>
-  <string name="delete_fail">無法刪除</string>
-  <string name="btn_profile">設定檔</string>
-  <string name="sizer_message_sdnowrite">無法寫入 SD 卡。</string>
-  <string name="sizer_message_sdnoread">無法讀取 SD 卡。</string>
-  <string name="sizer_message_filesuccess">已建立設定檔。</string>
-  <string name="sizer_message_filefail">無法建立設定檔。</string>
-  <string name="sizer_message_noselect">尚未選擇。</string>
+  <!-- App Remover -->
   <string name="system_app_remover">移除系統應用程式</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk 的音樂撥放器</string>
-  <string name="tomahawk_music_player_summary">一個擁有許多功能且開源的 Android 音樂撥放器。</string>
+  <string name="listsystem">清單</string>
+  <string name="cancel">取消</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">工作管理員</string>
   <string name="enable_task_manager_summary">啟用/停用擴展狀態列區域中的工作管理員</string>
@@ -831,7 +816,7 @@
   <string name="ls_bouncer_title">直接進入安全性認證畫面</string>
   <string name="ls_bouncer_summary">鎖定畫面%1$s時，直接進入安全性認証畫面</string>
   <string name="ls_bouncer_on">開啟 (預設)</string>
-  <string name="ls_bouncer_on_summary">Stock bouncer behavior</string>
+  <string name="ls_bouncer_on_summary">預設安全性畫面動作</string>
   <string name="ls_bouncer_off">關閉</string>
   <string name="ls_bouncer_off_summary">直接進入安全性認証畫面</string>
   <string name="ls_bouncer_dismissable">沒有可清除的通知時</string>
@@ -839,7 +824,7 @@
   <string name="ls_bouncer_all">沒有可清除或持續型的通知時</string>
   <!-- Lockscreen Alpha -->
   <string name="lockscreen_alpha">鎖定畫面透明度</string>
-  <string name="lockscreen_security_alpha">Lockscreen bouncer alpha</string>
+  <string name="lockscreen_security_alpha">安全性認證畫面透明度</string>
   <!-- Heads Up -->
   <string name="heads_up_notifications">迅速瀏覽通知</string>
   <string name="summary_heads_up_enabled">迅速瀏覽通知已啟用</string>
@@ -928,4 +913,26 @@
   <string name="screenshot_crop_and_share_summary">擷取螢幕畫面後顯示編輯視窗以裁剪、儲存或分享螢幕截圖</string>
   <string name="screenshot_crop_behavior_title">裁剪模式</string>
   <string name="screenshot_crop_behavior_summary">不需按下套用按鈕即直接分享位於裁剪區內的圖片</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">在下方選擇動作後，由上至下同時滑動三根手指以觸發選擇的動作。</string>
+  <string name="three_finger_swipe_gesture_title">三指滑動手勢</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>

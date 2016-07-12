@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">Megjelenés</string>
+  <string name="system_category">Rendszer</string>
   <string name="lockscreen_category">Zárképernyő</string>
   <string name="statusbar_category">Állapotsor</string>
   <string name="navigation_category">Navigáció</string>
   <string name="multitasking_category">Multi-Tasking</string>
-  <string name="system_category">Rendszer</string>
-  <string name="misc_category">Egyebek</string>
   <!-- Categories -->
   <string name="animations_category">Animációk</string>
   <string name="battery_category">Akkumulátor</string>
-  <string name="download_category">Letöltő központ</string>
   <string name="expanded_desktop_category">Kiterjesztett képernyő</string>
   <string name="misctweaks_category">Egyéb trükkök</string>
   <string name="powermenu_category">Kikapcsoló menü</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Zárképernyő értesítések</string>
   <string name="wakelockblocker_category">Wakelock blokkoló</string>
   <string name="gestures_category">Gesztusok</string>
+  <string name="doubletap_gestures_category">Dupla érintéses gesztusok</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Multi-Window</string>
   <string name="listview_animations_category">ListaNézet animáció</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Buborékszöveg ikon</string>
   <string name="toast_icon_summary">A buborékszöveghez tartozó alkalmazás ikonjának megjelenítése</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google alkalmazások (GAPPS)</string>
-  <string name="gapps_summary">Gapps csomagok listája, amit a recoveryvel telepíthet</string>
-  <string name="gapps_credit">Noha a Gapps csomagok nem forrásból összeállítottak, így nem tartoznak senkihez, csak a Google-hez, mégis szeretnénk megköszönni néhány egyénnek és csoportnak, amelyek fenntartják ezeket a csomagokat mindannyiunknak, így megkönnyítve mindenki dolgát.\n\nKülön köszönet: Team BlackOut, Michael Banks, TKruzze és M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Gyors legördítés</string>
   <string name="summary_quick_pulldown">Gyors beállítások megjelenítése az értesítési sáv %1$s oldalán történő lehúzásakor</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">Kiterjesztett állapot</string>
   <string name="expanded_enabled_for_all">Mindenre engedélyezve</string>
   <string name="expanded_user_configurable">Felhasználói beállítás</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Kiterjesztett üzenetek kényszerítése</string>
   <string name="force_expanded_notifications_summary">Csak azon alkalmazásokra érvényes, melyek támogatják azt</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">DT2S a zárképernyőn</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Érintsd meg kétszer a fleső harmadot, vagy az alsó hivatkozási sávot a kijelző kikapcsolásához</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Hírdetés blokkoló</string>
   <string name="disable_ads_title">Hírdetések tiltása</string>
   <string name="disable_ads_summary">Hosztok változtatása a hírdetések tiltásához</string>
   <!-- Volume Key Rotation -->
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">Jobb alul</string>
   <string name="recents_clear_all_location_bottom_left">Bal alul</string>
   <string name="recents_clear_all_location_bottom_center">Alul középen</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">DU logó</string>
-  <string name="status_bar_du_logo_summary">Engedélyezi a DU logó megjelenítését az állapotsor jobb oldalán</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">Figyelmeztetés</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">Gesztus átnevezése</string>
   <string name="ga_gestures_rename_label">Gesztus név</string>
   <string name="ga_gestures_error_loading">Nem tudom betölteni: %s. Győződjön meg róla, hogy a tárolóhely rendelkezésre áll e.</string>
-  <string name="trigger_category">Indítási zóna</string>
   <string name="trigger_width_title">Indítási szélesség</string>
   <string name="trigger_width_summary">Indítási terület szélességének beállítása</string>
   <string name="trigger_top_title">Indítási pozíció</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">Nincs</string>
   <string name="smartbar_ime_action_arrows">Beviteli nyilak</string>
   <string name="smartbar_ime_action_switcher">Billentyűzet váltó</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Zárképernyő</string>
   <string name="lockscreen_config_title">Zárképernyő beállítások</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">Előzmények</string>
   <string name="shortcut_action_power">Képernyő ki</string>
   <string name="shortcut_action_search">Alkalmazáson belüli keresés</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">lista</string>
-  <string name="sizer_title">Alkalmazás eltávolító</string>
-  <string name="caution">Vigyázat!</string>
-  <string name="sizer_message_startup">Ez az eszköz lehetővé teszi, hogy törölje a rendszeralkalmazásokat. Használja óvatosan és csak azon alkalmazásokat törölje, melyekről tudja, hogy biztonságosan eltávolíthatóak.</string>
-  <string name="cancel">Mégsem</string>
-  <string name="sizer_message_delete">Biztosan törölni szeretnéd ezt az alkalmazást?</string>
-  <string name="btn_delete">Kiválasztottak törlése most!</string>
-  <string name="delete_progress_title">Törlés</string>
-  <string name="delete_progress">Kijelölt fájlok törlése folyamatban\u2026</string>
-  <string name="delete_success">Törölve</string>
-  <string name="delete_fail">Törlés sikertelen</string>
-  <string name="btn_profile">Profil</string>
-  <string name="sizer_message_sdnowrite">SD-kártya írási hiba.</string>
-  <string name="sizer_message_sdnoread">SD-kártya olvasási hiba.</string>
-  <string name="sizer_message_filesuccess">Létrehozott profil.</string>
-  <string name="sizer_message_filefail">Profil létrehozása sikertelen.</string>
-  <string name="sizer_message_noselect">Nincs kijelölés.</string>
+  <!-- App Remover -->
   <string name="system_app_remover">Rendszeralkalmazás eltávolító</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk\'s Music Player</string>
-  <string name="tomahawk_music_player_summary">Egy nyílt forráskódú Android zenelejátszó kitűnő fejlesztőkkel és funkciókkal</string>
+  <string name="listsystem">lista</string>
+  <string name="cancel">Mégsem</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Feladatkezelő</string>
   <string name="enable_task_manager_summary">A kiterjesztett állapotsori területen lévő feladatkezelő gombhoz rendelt műveletek engedélyezése/tiltása</string>
@@ -928,4 +913,26 @@
   <string name="screenshot_crop_and_share_summary">A szerkesztő ablak megjelenítése képernyőmentés után, annak érdekében, hogy elvégezhessen bizonyos műveleteket, mint a vágás, mentés és megosztás</string>
   <string name="screenshot_crop_behavior_title">Vágási mód</string>
   <string name="screenshot_crop_behavior_summary">Mindig használja a körülvágási területen belüli képet, még akkor is, ha az alkalmaz gomb nem került megnyomása</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">Miután kiválasztotta a célt alulról, 3 ujját egyetlen mozdulattal húzza függőlegesen fentről lefelé, hogy a kiválasztott művelet aktiválódjon.</string>
+  <string name="three_finger_swipe_gesture_title">Három ujjas csúsztatási gesztusok</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>

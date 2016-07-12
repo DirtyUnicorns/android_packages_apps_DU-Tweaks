@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">Интерфейс</string>
+  <string name="system_category">Системa</string>
   <string name="lockscreen_category">Экран блокировки</string>
   <string name="statusbar_category">Строка состояния</string>
   <string name="navigation_category">Панель навигации</string>
   <string name="multitasking_category">Многозадачость</string>
-  <string name="system_category">Системa</string>
-  <string name="misc_category">Другое</string>
   <!-- Categories -->
   <string name="animations_category">Анимации</string>
   <string name="battery_category">Настройки батареи</string>
-  <string name="download_category">Центр загрузок</string>
   <string name="expanded_desktop_category">Расширенный экран</string>
   <string name="misctweaks_category">Другие настройки</string>
   <string name="powermenu_category">Меню кнопки питания</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Уведомления на экране блокировки</string>
   <string name="wakelockblocker_category">Блокировщик пробуждений</string>
   <string name="gestures_category">Жесты</string>
+  <string name="doubletap_gestures_category">Жесты двойного касания</string>
   <string name="multitasking_category">Многозадачость</string>
   <string name="multiwindow_category">Многооконный режим</string>
   <string name="listview_animations_category">Анимация списков</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Иконка всплывающего уведомления</string>
   <string name="toast_icon_summary">Отображать значок соответствующего приложения на всплывающем уведомлении</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">Список Gapps для установки в рекавери</string>
-  <string name="gapps_credit">Хотя пакеты GAPPS не компилируются из исходников и не принадлежат никому кроме Google, мы все же хотели бы поблагодарить несколько лиц и команд, которые поддерживают эти пакеты для всех нас и делают эти вещи проще для всех.\n\nОсобая благодарность команде BlackOut, Michael Banks, TKruzze и M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Быстрый доступ</string>
   <string name="summary_quick_pulldown">%1$s строки состояния открывает быстрые настройки</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">Расширенный экран</string>
   <string name="expanded_enabled_for_all">Включить для всех</string>
   <string name="expanded_user_configurable">Настраивается пользователем</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Принудительно разворачивать уведомления</string>
   <string name="force_expanded_notifications_summary">Доступно только для приложений, поддерживающих расширенные уведомления</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">DT2S на экране блокировки</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Дважды коснитесь верхней части или в области ярлыков экрана блокировки, чтобы отправить устройство в режим сна</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Блокировка рекламы</string>
   <string name="disable_ads_title">Отключить рекламу</string>
   <string name="disable_ads_summary">Изменить hosts-файл для отключения рекламы</string>
   <!-- Volume Key Rotation -->
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">Внизу справа</string>
   <string name="recents_clear_all_location_bottom_left">Внизу слева</string>
   <string name="recents_clear_all_location_bottom_center">Внизу по центру</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">Логотип DU</string>
-  <string name="status_bar_du_logo_summary">Отображать логотип DU слева в строке состояния</string>
   <!-- Density Changer -->
   <string name="dpi">точек на дюйм</string>
   <string name="su_dialog_error_title">Внимание</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">Переименовать жест</string>
   <string name="ga_gestures_rename_label">Название жеста</string>
   <string name="ga_gestures_error_loading">Невозможно загрузить %s. Убедитесь что у вас достаточно памяти.</string>
-  <string name="trigger_category">Область вызова</string>
   <string name="trigger_width_title">Ширина области вызова</string>
   <string name="trigger_width_summary">Отрегулируйте ширину области вызова</string>
   <string name="trigger_top_title">Позиция области вызова</string>
@@ -577,7 +569,7 @@
   <string name="fling_longpress_summary">Увеличить или уменьшить время, необходимое для длительно нажатия</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">О Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse - это блестящий стиль визуализации звука на панели навигации при воспроизведении музыки. Pulse не работает с некоторыми источниками звука при прослушивании на через динамик устройства</string>
+  <string name="pulse_help_policy_notice_summary">Pulse - это блестящий и стильный визуализатор звука, который отображается на панели навигации при воспроизведении музыки. Pulse не работает с некоторыми источниками звука при прослушивании через динамик устройства</string>
   <string name="pulse_settings">Pulse</string>
   <string name="pulse_settings_summary">Визуализация звука на панели навигации</string>
   <string name="fling_show_pulse_title">Включить Pulse</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">Ничего</string>
   <string name="smartbar_ime_action_arrows">Стрелки ввода</string>
   <string name="smartbar_ime_action_switcher">Переключатель клавиатуры</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Экран блокировки</string>
   <string name="lockscreen_config_title">Конфигурация экрана блокировки</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">Недавние</string>
   <string name="shortcut_action_power">Выключить экран</string>
   <string name="shortcut_action_search">Поиск в приложении</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">список</string>
-  <string name="sizer_title">Удаление приложений</string>
-  <string name="caution">Внимание!</string>
-  <string name="sizer_message_startup">Эта утилита позволяет удалять системные приложения. Используйте с осторожностью и удаляйте только то, что можно удалить без последствий.</string>
-  <string name="cancel">Отмена</string>
-  <string name="sizer_message_delete">Вы точно хотите удалить выбранное приложение?</string>
-  <string name="btn_delete">Сейчас же удалить выбранные приложения!</string>
-  <string name="delete_progress_title">Идет удаление</string>
-  <string name="delete_progress">Выбранные файлы будут удалены\u2026</string>
-  <string name="delete_success">Удалено</string>
-  <string name="delete_fail">Невозможно удалить</string>
-  <string name="btn_profile">Профиль</string>
-  <string name="sizer_message_sdnowrite">Не удается записать на SD карту.</string>
-  <string name="sizer_message_sdnoread">Не удается прочитать SD карту.</string>
-  <string name="sizer_message_filesuccess">Созданный профиль.</string>
-  <string name="sizer_message_filefail">Не удается создать профиль.</string>
-  <string name="sizer_message_noselect">Ничего не выбрано.</string>
+  <!-- App Remover -->
   <string name="system_app_remover">Удаление системных приложений</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Музыкальный плеер Tomahawk</string>
-  <string name="tomahawk_music_player_summary">Музыкальный плеер с открытым исходным кодом, с поддержкой разработчиками и набором дополнительных функций</string>
+  <string name="listsystem">список</string>
+  <string name="cancel">Отмена</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Диспетчер задач</string>
   <string name="enable_task_manager_summary">Включить/отключить кнопку диспетчера задач в заголовке</string>
@@ -906,8 +891,8 @@
   <!-- Tiles animation style  -->
   <string name="quicksettings_tiles_category">Настройки анимации плиток</string>
   <string name="qs_tile_animation_style_title">Стиль анимации</string>
-  <string name="qs_tile_animation_duration_title">Длительность анимации плитки</string>
-  <string name="qs_tile_animation_interpolator_title">Интерполяция анимации плиток</string>
+  <string name="qs_tile_animation_duration_title">Длительность анимации</string>
+  <string name="qs_tile_animation_interpolator_title">Интерполяция анимации</string>
   <string name="qs_tile_animation_style_off">Без анимации</string>
   <string name="qs_tile_animation_style_flip">Переворот</string>
   <string name="qs_tile_animation_style_rotate">Поворот</string>
@@ -925,7 +910,29 @@
   <!-- Screenshot crop and share -->
   <string name="screenshot_cat_title">Настройки скриншота</string>
   <string name="screenshot_crop_and_share_title">Режим обрезки скриншота</string>
-  <string name="screenshot_crop_and_share_summary">Показать окно редактора после создания скриншота для того, чтобы его можно обрезать, сохранить или поделиться</string>
+  <string name="screenshot_crop_and_share_summary">Показать окно редактора после создания скриншота для того, чтобы его можно было обрезать, сохранить или поделиться</string>
   <string name="screenshot_crop_behavior_title">Режим обрезки</string>
   <string name="screenshot_crop_behavior_summary">Всегда использовать обрезанное изображение внутри области обрезки, даже если кнопка применить не была нажата</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">После выбора действия, проведите по вертикали тремя пальцами одним движением сверху вниз, чтобы выполнить его.</string>
+  <string name="three_finger_swipe_gesture_title">Жест тремя пальцами</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>

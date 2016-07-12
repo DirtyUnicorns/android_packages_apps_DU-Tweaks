@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">Interfaz de usuario general</string>
-  <string name="lockscreen_category">Pantalla de bloqueo</string>
-  <string name="statusbar_category">Barra de Estado</string>
-  <string name="navigation_category">Barra de navegación</string>
-  <string name="multitasking_category">Multitarea</string>
   <string name="system_category">Sistema</string>
-  <string name="misc_category">Varios</string>
+  <string name="lockscreen_category">Pantalla de bloqueo</string>
+  <string name="statusbar_category">Barra de estado</string>
+  <string name="navigation_category">Navegación</string>
+  <string name="multitasking_category">Multitarea</string>
   <!-- Categories -->
   <string name="animations_category">Animaciones</string>
   <string name="battery_category">Batería</string>
-  <string name="download_category">Centro de descargas</string>
   <string name="expanded_desktop_category">Escritorio expandido</string>
   <string name="misctweaks_category">Ajustes varios</string>
   <string name="powermenu_category">Menú de apagado</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Notificaciones de la Pantalla de Bloqueo</string>
   <string name="wakelockblocker_category">Bloqueador de Wakelock</string>
   <string name="gestures_category">Gestos</string>
+  <string name="doubletap_gestures_category">Gesto dos toques</string>
   <string name="multitasking_category">Multitarea</string>
   <string name="multiwindow_category">Multiventana</string>
   <string name="listview_animations_category">Animaciones de lista</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Mostrar icono en notificación flotante</string>
   <string name="toast_icon_summary">Mostrar el icono de la aplicación correspondiente con la notificación</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">Lista de GAPPS para flashear en recovery</string>
-  <string name="gapps_credit">Aunque no se compilan de una fuente y no pertenecen a nadie, igual nos gustaría tomar el tiempo para agradecer a las personas y al equipo que mantienen estos paquetes de GAPPS para todos nosotros y facilitar las cosas para cualquiera.\n\nUn agradecimiento especial al equipo BlackOut, Michael Banks, TKruzze y M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Despliegue rápido</string>
   <string name="summary_quick_pulldown">%1$s Borde de la barra de estado baja ajustes rapidos</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">Estado del escritorio expandido</string>
   <string name="expanded_enabled_for_all">Activado para todos</string>
   <string name="expanded_user_configurable">Configurable por el usuario</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Forzar vista de notificaciones expandidas</string>
   <string name="force_expanded_notifications_summary">Sólo disponible para aplicaciones que soporten las notificaciones ampliadas</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">DT2S en la pantalla de bloqueo</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Doble toque en el tercer botón o en el área superior de los accesos directos de la pantalla de bloqueo apagará la pantalla</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Bloqueador de anuncios</string>
   <string name="disable_ads_title">Desactivar anuncios</string>
   <string name="disable_ads_summary">Cambiar el archivo hosts para desactivar los anuncios</string>
   <!-- Volume Key Rotation -->
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">Abajo derecha</string>
   <string name="recents_clear_all_location_bottom_left">Abajo izquierda</string>
   <string name="recents_clear_all_location_bottom_center">Abajo centro</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">Logo DU</string>
-  <string name="status_bar_du_logo_summary">Activar para mostrar logo DU en la parte izquierda de la pantalla</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">Advertencia</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">Cambiar el nombre del gesto</string>
   <string name="ga_gestures_rename_label">Nombre del gesto</string>
   <string name="ga_gestures_error_loading">No se pudo cargar %s. Asegúrese de que tiene espacio de almacenamiento disponible.</string>
-  <string name="trigger_category">Región de activación</string>
   <string name="trigger_width_title">Anchura de activador</string>
   <string name="trigger_width_summary">Ajustar el ancho de la zona de activador</string>
   <string name="trigger_top_title">Posición del activador</string>
@@ -612,7 +604,7 @@
   <string name="default_div">Por Defecto</string>
   <string name="pulse_block_category">Por Defecto</string>
   <string name="pulse_block_category_title">Tamaño del bloque</string>
-  <string name="pulse_aggression">Power</string>
+  <string name="pulse_aggression">Encendido</string>
   <string name="default_fill">Por Defecto</string>
   <string name="default_pulse_empty">Por Defecto</string>
   <string name="pulse_filled_block_size">Tamaño del bloque</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">Nada</string>
   <string name="smartbar_ime_action_arrows">Flechas de entrada</string>
   <string name="smartbar_ime_action_switcher">Conmutador teclado</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Pantalla de bloqueo</string>
   <string name="lockscreen_config_title">Configuraciones de pantalla de bloqueo</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">Recientes</string>
   <string name="shortcut_action_power">Apagar la pantalla</string>
   <string name="shortcut_action_search">Búsqueda en la aplicación</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">lista</string>
-  <string name="sizer_title">Removedor de aplicaciones</string>
-  <string name="caution">Precaución!</string>
-  <string name="sizer_message_startup">Esta herramienta le permite borrar aplicaciones del sistema. Utilice con precaución y sólo eliminar aplicaciones que sabes que son seguras de eliminarse.</string>
-  <string name="cancel">Cancelar</string>
-  <string name="sizer_message_delete">¿Está seguro que desea eliminar esta aplicación?</string>
-  <string name="btn_delete">Borrar aplicaciones seleccionadas ahora!</string>
-  <string name="delete_progress_title">Borrando</string>
-  <string name="delete_progress">Los archivos seleccionados se están eliminando\u2026</string>
-  <string name="delete_success">Borrado</string>
-  <string name="delete_fail">No se puede eliminar</string>
-  <string name="btn_profile">Perfil</string>
-  <string name="sizer_message_sdnowrite">No se permite escribir en la tarjeta SD.</string>
-  <string name="sizer_message_sdnoread">No se puede leer la tarjeta SD.</string>
-  <string name="sizer_message_filesuccess">Perfil creado.</string>
-  <string name="sizer_message_filefail">Fallo creando el perfil.</string>
-  <string name="sizer_message_noselect">Nada seleccionado.</string>
+  <!-- App Remover -->
   <string name="system_app_remover">Eliminador de aplicaciones del sistema</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Reproductor de música Tomahawk</string>
-  <string name="tomahawk_music_player_summary">Un reproductor de música android de código abierto con gran desarrollo y características</string>
+  <string name="listsystem">lista</string>
+  <string name="cancel">Cancelar</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Administrador de tareas</string>
   <string name="enable_task_manager_summary">Habilitar/deshabilitar la acción para el botón de administrador de tareas en el área de la barra de estado</string>
@@ -904,10 +889,10 @@
   <string name="lock_screen_show_current">Carga corriente</string>
   <string name="lock_screen_show_current_summary">Mostrar la carga actual en la pantalla de bloqueo</string>
   <!-- Tiles animation style  -->
-  <string name="quicksettings_tiles_category">Tile animation options</string>
+  <string name="quicksettings_tiles_category">Opciones de animación</string>
   <string name="qs_tile_animation_style_title">Estilo de animación de los tiles</string>
   <string name="qs_tile_animation_duration_title">Duración de la animación de los tiles</string>
-  <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
+  <string name="qs_tile_animation_interpolator_title">Interpolador de la animación de los tiles</string>
   <string name="qs_tile_animation_style_off">Sin animación</string>
   <string name="qs_tile_animation_style_flip">Invertir</string>
   <string name="qs_tile_animation_style_rotate">Rotar</string>
@@ -919,13 +904,35 @@
   <string name="qs_tile_animation_interpolator_decelerateInterpolator">Desacelerar</string>
   <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Acelerar/Desacelerar</string>
   <string name="qs_tile_animation_interpolator_bounceInterpolator">Rebote</string>
-  <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+  <string name="qs_tile_animation_interpolator_overshootInterpolator">Excedido</string>
   <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipar</string>
-  <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+  <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipar exceso</string>
   <!-- Screenshot crop and share -->
-  <string name="screenshot_cat_title">Screenshot Options</string>
-  <string name="screenshot_crop_and_share_title">Crop &amp; share</string>
-  <string name="screenshot_crop_and_share_summary">Show an editor window after taking a screenshot in order to do some operations like cropping, saving or sharing</string>
-  <string name="screenshot_crop_behavior_title">Crop mode</string>
-  <string name="screenshot_crop_behavior_summary">Always use the cropped image inside the cropping area, even if the apply button hasn\'t been pressed</string>
+  <string name="screenshot_cat_title">Opciones de captura de pantalla</string>
+  <string name="screenshot_crop_and_share_title">Cortar y compartir</string>
+  <string name="screenshot_crop_and_share_summary">Mostrar una ventana del editor después de tomar una captura de pantalla para recortar, guardar o compartir</string>
+  <string name="screenshot_crop_behavior_title">Modo de recorte</string>
+  <string name="screenshot_crop_behavior_summary">Siempre usar la imagen recortada dentro del área de recorte, aun si no a pulsado el botón de aplicar</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">Tras seleccionar un objetivo abajo, desliza verticalmente con tres dedos en un solo movimiento de arriba a abajo para ejecutar la acción seleccionada.</string>
+  <string name="three_finger_swipe_gesture_title">Gesto con tres dedos</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>

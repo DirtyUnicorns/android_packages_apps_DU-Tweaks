@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">常规界面</string>
+  <string name="system_category">系统</string>
   <string name="lockscreen_category">锁屏</string>
   <string name="statusbar_category">状态栏</string>
   <string name="navigation_category">导航栏</string>
   <string name="multitasking_category">多任务</string>
-  <string name="system_category">系统</string>
-  <string name="misc_category">其他</string>
   <!-- Categories -->
   <string name="animations_category">动画</string>
   <string name="battery_category">电池选项</string>
-  <string name="download_category">下载中心</string>
   <string name="expanded_desktop_category">扩展桌面</string>
   <string name="misctweaks_category">杂项调整</string>
   <string name="powermenu_category">电源菜单</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">锁屏通知</string>
   <string name="wakelockblocker_category">唤醒锁拦截器</string>
   <string name="gestures_category">手势</string>
+  <string name="doubletap_gestures_category">双击手势</string>
   <string name="multitasking_category">多任务</string>
   <string name="multiwindow_category">分屏模式</string>
   <string name="listview_animations_category">列表视图动画</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">显示 Toast 应用图标</string>
   <string name="toast_icon_summary">在 Toast 提示框显示时显示相关的应用程序图标</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google 应用包 (GAPPS)</string>
-  <string name="gapps_summary">可以在 Recovery 中刷入的 GAPPS 应用包</string>
-  <string name="gapps_credit">尽管 GAPPS 应用包不是从源码编译的并且不属于除 Google 以外的任何人，我们仍然要花一些时间来感谢这些为我们维护这些应用包的个人和团队。因为有他们的努力，才让一些繁琐的事情变得更加简单。\n\n特别感谢：Team BlackOut、Michael Banks、TKruzze 以及 M. Wasif Chauhdary。</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">快速下拉</string>
   <string name="summary_quick_pulldown">从屏幕顶部的%1$s下拉时直接开启快捷开关面板</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">扩展桌面状态</string>
   <string name="expanded_enabled_for_all">为全部应用启用</string>
   <string name="expanded_user_configurable">用户配置</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">强制使用扩展通知</string>
   <string name="force_expanded_notifications_summary">该选项仅可用于支持扩展通知的应用</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">双击锁屏界面以睡眠</string>
   <string name="double_tap_to_sleep_lockscreen_summary">连续点按锁屏界面上方或下方快捷方式区域来使设备睡眠</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">广告拦截</string>
   <string name="disable_ads_title">拦截广告</string>
   <string name="disable_ads_summary">通过修改 hosts 文件以拦截广告</string>
   <!-- Volume Key Rotation -->
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">右下方</string>
   <string name="recents_clear_all_location_bottom_left">左下方</string>
   <string name="recents_clear_all_location_bottom_center">底部居中</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">DU 标志</string>
-  <string name="status_bar_du_logo_summary">在状态栏左侧显示 DU 标志</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">警告</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">重命名手势</string>
   <string name="ga_gestures_rename_label">手势名称</string>
   <string name="ga_gestures_error_loading">无法加载 %s，请确保您有足够的可用存储空间</string>
-  <string name="trigger_category">触发区域</string>
   <string name="trigger_width_title">触发宽度</string>
   <string name="trigger_width_summary">调整触发区域的宽度</string>
   <string name="trigger_top_title">触发位置</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">无</string>
   <string name="smartbar_ime_action_arrows">输入箭头</string>
   <string name="smartbar_ime_action_switcher">键盘切换器</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">锁屏</string>
   <string name="lockscreen_config_title">锁屏配置</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">最近任务</string>
   <string name="shortcut_action_power">关闭屏幕</string>
   <string name="shortcut_action_search">在应用程序中搜索</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">列表</string>
-  <string name="sizer_title">卸载应用</string>
-  <string name="caution">注意！</string>
-  <string name="sizer_message_startup">此工具允许你删除系统应用程序。请谨慎使用，只能删除你知道可以安全删除的应用程序。</string>
-  <string name="cancel">取消</string>
-  <string name="sizer_message_delete">您确定要删除这个应用程序吗？</string>
-  <string name="btn_delete">立即删除选定的应用程序 ！</string>
-  <string name="delete_progress_title">正在删除</string>
-  <string name="delete_progress">正在删除选定的文件...\u2026</string>
-  <string name="delete_success">已删除</string>
-  <string name="delete_fail">无法删除</string>
-  <string name="btn_profile">配置文件</string>
-  <string name="sizer_message_sdnowrite">无法写入到SD卡。</string>
-  <string name="sizer_message_sdnoread">无法读取SD卡。</string>
-  <string name="sizer_message_filesuccess">已创建配置文件。</string>
-  <string name="sizer_message_filefail">未能创建配置文件。</string>
-  <string name="sizer_message_noselect">未选择任何内容。</string>
+  <!-- App Remover -->
   <string name="system_app_remover">系统应用程序卸载器</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk‘s 音乐播放器</string>
-  <string name="tomahawk_music_player_summary">一个开源的安卓音乐播放器，有很好的开发潜力和特点</string>
+  <string name="listsystem">列表</string>
+  <string name="cancel">取消</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">任务管理器</string>
   <string name="enable_task_manager_summary">在扩展状态栏启用或禁用任务管理器按钮</string>
@@ -928,4 +913,26 @@
   <string name="screenshot_crop_and_share_summary">在截取屏幕以后显示编辑窗口，以便于进行裁剪、保存或分享操作</string>
   <string name="screenshot_crop_behavior_title">自动应用裁剪</string>
   <string name="screenshot_crop_behavior_summary">点击保存时，自动应用裁剪区域中选中的图像，即使没有按下 “应用” 按钮</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">在下面选择一个动作以后，使用三指从上往下滑动来触发选中的动作。</string>
+  <string name="three_finger_swipe_gesture_title">三指滑动手势</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>

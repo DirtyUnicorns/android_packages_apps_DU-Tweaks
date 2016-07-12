@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">Allgemein</string>
+  <string name="system_category">System</string>
   <string name="lockscreen_category">Sperrbildschirm</string>
   <string name="statusbar_category">Statusleiste</string>
   <string name="navigation_category">Navigation</string>
   <string name="multitasking_category">Multi-Tasking</string>
-  <string name="system_category">System</string>
-  <string name="misc_category">Sonstiges</string>
   <!-- Categories -->
   <string name="animations_category">Animationen</string>
   <string name="battery_category">Akku</string>
-  <string name="download_category">Download-Center</string>
   <string name="expanded_desktop_category">Erweiterter Desktop</string>
   <string name="misctweaks_category">Verschiedene Einstellungen</string>
   <string name="powermenu_category">Startmenü</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Sperrbildschirm-Benachrichtigungen</string>
   <string name="wakelockblocker_category">Wakelocks blockieren</string>
   <string name="gestures_category">Gesten</string>
+  <string name="doubletap_gestures_category">Doppeltes Tippen (Gesten)</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Mehrfenstermodus</string>
   <string name="listview_animations_category">Listenanmationen</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Toast-Symbol</string>
   <string name="toast_icon_summary">Zeige das zugehörige App-Symbol mit dem Toast an</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">Liste der GAPPS-Pakete, die in der Recovery geflasht werden</string>
-  <string name="gapps_credit">Obwohl GAPPS-Pakete nicht aus einer Quelle kompiliert werden und niemandem außer Google gehören, möchten wir uns trotzdem die Zeit nehmen und einigen Menschen und Teams danken, die diese Pakete für uns alle verwalten, um Dinge einfacher zu gestalten\n\nSpeziellen Dank an Team BlackOut, Michael Banks, TKruzze and M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Schnelles Öffnen</string>
   <string name="summary_quick_pulldown">%1$s Ecke der Statusleiste öffnet Schnelleinstellungen</string>
@@ -95,8 +89,8 @@
   <string name="immersive_recents_statusbar">Nur Statusleiste</string>
   <string name="immersive_recents_navbar">Nur Navigationsleiste</string>
   <!-- Power Menu -->
-  <string name="powermenu_lockscreen_title">Ein/Aus-Menü auf Sperrbildschirm</string>
-  <string name="powermenu_lockscreen_summary">Ein/Aus-Menü bei gesperrtem Display anzeigen</string>
+  <string name="powermenu_lockscreen_title">Startmenü auf Sperrbildschirm</string>
+  <string name="powermenu_lockscreen_summary">Startmenü bei gesperrtem Display anzeigen</string>
   <string name="powermenu_power">Ausschalten</string>
   <string name="powermenu_reboot">Neu starten</string>
   <string name="powermenu_screenshot">Bildschirmfoto</string>
@@ -110,7 +104,7 @@
   <string name="powermenu_dialog_dim">Dialog-Hintergrund dimmen</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Erweiterter Neustart</string>
-  <string name="advanced_reboot_summary">Fügt dem Neustartmenü Optionen für den Neustart in die Recovery und den Bootloader hinzu</string>
+  <string name="advanced_reboot_summary">Optionen für den Neustart in die Recovery und den Bootloader ins Startmenü einfügen</string>
   <string name="advanced_reboot_dialog_title">Erweitertes Neustartmenü</string>
   <string name="advanced_reboot_disabled">Deaktivieren</string>
   <string name="advanced_reboot_hide_on_keyguard">Auf Sperrbildschirm verbergen</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">Erweiterter Status</string>
   <string name="expanded_enabled_for_all">Für alle aktiviert</string>
   <string name="expanded_user_configurable">Benutzereinstellungen</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Erweiterte Benachrichtigungen erzwingen</string>
   <string name="force_expanded_notifications_summary">Nur für Anwendungen nutzbar, die erweiterte Benachrichtigungen unterstützen.</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">DT2S auf Sperrbildschirm</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Tippen Sie zweimal auf den Sperrbildschirm, um das Gerät in den Ruhezustand zu versetzen</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Werbeblocker</string>
   <string name="disable_ads_title">Werbung deaktivieren</string>
   <string name="disable_ads_summary">Wechselt die Host-Datei aus um Werbung zu deaktivieren</string>
   <!-- Volume Key Rotation -->
@@ -212,7 +208,7 @@
   <string name="lock_clock_font_condensed_light_italic">Roboto gestaucht, leicht, kursiv</string>
   <!-- Lockscreen Torch -->
   <string name="keyguard_torch_title">Taschenlampe</string>
-  <string name="keyguard_torch_summary">Langes Drücken des Power-Buttons während der Bildschirm ausgeschaltet ist, schaltet die Taschenlampe ein</string>
+  <string name="keyguard_torch_summary">Langes Drücken des Power-Buttons bei ausgeschaltetem Bildschirm schaltet die Taschenlampe ein</string>
   <!-- Statusbar Clock options -->
   <string name="status_bar_title">Statusleiste</string>
   <string name="status_bar_style_title">Stil</string>
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">Unten rechts</string>
   <string name="recents_clear_all_location_bottom_left">Unten links</string>
   <string name="recents_clear_all_location_bottom_center">Unten mittig</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">Dirty Unicorns-Logo</string>
-  <string name="status_bar_du_logo_summary">Dirty Unicorns-Logo auf der linken Seite der Statusleiste anzeigen</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">Warnung</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">Geste umbenennen</string>
   <string name="ga_gestures_rename_label">Gestenname</string>
   <string name="ga_gestures_error_loading">%s konnte nicht geladen werden. Vergewissern Sie sich, dass der Speicher verfügbar ist.</string>
-  <string name="trigger_category">Auslösebereich</string>
   <string name="trigger_width_title">Breite des Auslösers</string>
   <string name="trigger_width_summary">Breite des Auslösebereichs einstellen</string>
   <string name="trigger_top_title">Position des Auslösers</string>
@@ -515,12 +507,12 @@
   <string name="hardware_keys_assist_key_title">Suche-Taste</string>
   <string name="hardware_keys_appswitch_key_title">Zuletzt-Taste</string>
   <string name="hardware_keys_back_key_title">Zurück-Taste</string>
-  <string name="hardware_keys_double_tap_summary">Doppeltes Drücken, Aktion setzen</string>
-  <string name="hardware_keys_single_tap_summary">Einfaches Drücken, Aktion setzen</string>
+  <string name="hardware_keys_double_tap_summary">Doppeltes Tippen, Aktion setzen</string>
+  <string name="hardware_keys_single_tap_summary">Einfaches Tippen, Aktion setzen</string>
   <string name="hardware_keys_long_press_summary">Langes Drücken, Aktion setzen</string>
-  <string name="hardware_keys_single_tap_title">Einfaches Drücken (Aktion)</string>
+  <string name="hardware_keys_single_tap_title">Einfaches Tippen (Aktion)</string>
   <string name="hardware_keys_long_press_title">Langes Drücken (Aktion)</string>
-  <string name="hardware_keys_double_tap_title">Doppeltes Drücken (Aktion)</string>
+  <string name="hardware_keys_double_tap_title">Doppeltes Tippen (Aktion)</string>
   <!-- Actions dialog and default task values set in ActionPreference xml-->
   <string name="choose_action_title">Aktion auswählen</string>
   <string name="action_entry_default_action">Standardeinstellungen</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">Keine</string>
   <string name="smartbar_ime_action_arrows">Eingabe-Pfeile</string>
   <string name="smartbar_ime_action_switcher">Tastatur-Umschalter</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Sperrbildschirm</string>
   <string name="lockscreen_config_title">Konfiguration</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">Anwendungsverlauf</string>
   <string name="shortcut_action_power">Bildschirm ausschalten</string>
   <string name="shortcut_action_search">In-App Suche</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">Liste</string>
-  <string name="sizer_title">System-App Entferner</string>
-  <string name="caution">Achtung\u00A0!</string>
-  <string name="sizer_message_startup">Dieses Tool hilft bei der Entfernung von Systemanwendungen. Verwenden Sie es mit Vorsicht, und nur für Anwendungen, deren Entfernung sicher ist</string>
-  <string name="cancel">Abbrechen</string>
-  <string name="sizer_message_delete">Diese Anwendung entfernen\u00A0?</string>
-  <string name="btn_delete">Die ausgewählten Anwendungen entfernen\u00A0!</string>
-  <string name="delete_progress_title">Löscht</string>
-  <string name="delete_progress">Ausgewählte Dateien werden gelöscht\u2026</string>
-  <string name="delete_success">Gelöscht</string>
-  <string name="delete_fail">Löschen nicht möglich</string>
-  <string name="btn_profile">Profil</string>
-  <string name="sizer_message_sdnowrite">Kann nicht auf die SD-Karte schreiben</string>
-  <string name="sizer_message_sdnoread">Kann SD-Karte nicht lesen</string>
-  <string name="sizer_message_filesuccess">Profil erstellt</string>
-  <string name="sizer_message_filefail">Profil konnte nicht erstellt werden</string>
-  <string name="sizer_message_noselect">Keine Auswahl</string>
+  <!-- App Remover -->
   <string name="system_app_remover">App-Entferner</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk\'s Musik Player</string>
-  <string name="tomahawk_music_player_summary">Ein Open-Source Android Musik Player mit toller Entwicklung und Funktionen</string>
+  <string name="listsystem">Liste</string>
+  <string name="cancel">Abbrechen</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Task-Manager aktivieren</string>
   <string name="enable_task_manager_summary">Zeigt den Task-Manager in der erweiterten Statusleiste an</string>
@@ -928,4 +913,26 @@
   <string name="screenshot_crop_and_share_summary">Nach der Aufnahme eines Bildschirmfotos einen Editor zum Zuschneiden, Speichern oder Teilen des Bildes anzeigen</string>
   <string name="screenshot_crop_behavior_title">Crop-Modus</string>
   <string name="screenshot_crop_behavior_summary">Immer das zugeschnittene Bild innerhalb des Schnittbereichs verwenden, auch wenn die Schaltfläche \"Anwenden\" noch nicht gedrückt wurde</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">Nach Auswahl eines der u. g. Ziele, mit 3 Fingern gleichzeitig von oben nach unten wischen, um die ausgewählte Aktion auszulösen.</string>
+  <string name="three_finger_swipe_gesture_title">Drei-Finger-Geste</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>

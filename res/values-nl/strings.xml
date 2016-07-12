@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">Algemene UI</string>
+  <string name="system_category">Systeem</string>
   <string name="lockscreen_category">Vergrendelscherm</string>
   <string name="statusbar_category">Statusbalk</string>
   <string name="navigation_category">Navigatie</string>
   <string name="multitasking_category">Multi-Tasking</string>
-  <string name="system_category">Systeem</string>
-  <string name="misc_category">Overige</string>
   <!-- Categories -->
   <string name="animations_category">Animaties</string>
   <string name="battery_category">Accu</string>
-  <string name="download_category">Download Centrum</string>
   <string name="expanded_desktop_category">Uitgebreid Bureaublad</string>
   <string name="misctweaks_category">Overige Tweaks</string>
   <string name="powermenu_category">Power Menu</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Vergrendelscherm meldingen</string>
   <string name="wakelockblocker_category">Wakelock Blocker</string>
   <string name="gestures_category">Gebaren</string>
+  <string name="doubletap_gestures_category">Dubbelklik gebaren</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Multi-Window</string>
   <string name="listview_animations_category">Lijst Weergave Animaties</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Toast pictogram</string>
   <string name="toast_icon_summary">Het app-pictogram dat overeenkomt met de toast weergeven</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google Apps (GAPPS)</string>
-  <string name="gapps_summary">Lijst van GAPPS pakketten om te flashen in recovery</string>
-  <string name="gapps_credit">Hoewel GAPPS pakketten niet zijn samengesteld uit bron en niet tot niemand behalve Google behoren, willen wij toch de tijd nemen om een paar individuen en team dat deze pakketten bijhoud voor ons te bedanken, ze maken dingen alleen maar gemakkelijker voor iedereen.\n\nSpeciale dank aan Team BlackOut, Michael Banks, TKruzze en M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Snelle pulldown</string>
   <string name="summary_quick_pulldown">%1$s kant van de statusbalk laat Quick Settings zien</string>
@@ -131,6 +125,9 @@
   <string name="expanded_desktop_state">Uitbereidbaarheids status</string>
   <string name="expanded_enabled_for_all">Voor alle ingeschakeld</string>
   <string name="expanded_user_configurable">Gebruiker configureerbaar</string>
+  <string name="expanded_desktop_style">Expanded desktop style</string>
+  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+  <string name="expanded_desktop_title">Expanded desktop options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Forceer Uitgebreide Meldingen</string>
   <string name="force_expanded_notifications_summary">Enkel beschikbaar voor apps die uitgebreide meldingen ondersteunen</string>
@@ -148,7 +145,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">DT2S op vergrendelscherm</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Dubbelklik op het bovenste derde of beneden snelkoppeling gebied op het vergrendelscherm om de slaapstand te activeren</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Ad blocker</string>
   <string name="disable_ads_title">Advertenties uitschakelen</string>
   <string name="disable_ads_summary">Verander hosts bestand om advertenties uit te schakelen</string>
   <!-- Volume Key Rotation -->
@@ -399,9 +395,6 @@
   <string name="recents_clear_all_location_bottom_right">Rechtsonder</string>
   <string name="recents_clear_all_location_bottom_left">Linksonder</string>
   <string name="recents_clear_all_location_bottom_center">Middenonder</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">DU logo</string>
-  <string name="status_bar_du_logo_summary">Inschakelen om DU logo aan de linkerkant van de statusbalk te tonen</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">Waarschuwing</string>
@@ -463,7 +456,6 @@
   <string name="ga_gestures_rename_title">Gebaar hernoemen</string>
   <string name="ga_gestures_rename_label">Naam gebaar</string>
   <string name="ga_gestures_error_loading">Kon %s niet laden. Zorg ervoor dat u opslag beschikbaar heeft.</string>
-  <string name="trigger_category">Trigger regio</string>
   <string name="trigger_width_title">Trigger breedte</string>
   <string name="trigger_width_summary">De breedte van het triggergebied aanpassen</string>
   <string name="trigger_top_title">Trigger posistie</string>
@@ -657,6 +649,15 @@
   <string name="smartbar_ime_action_none">Geen</string>
   <string name="smartbar_ime_action_arrows">Input pijlen</string>
   <string name="smartbar_ime_action_switcher">Toetsenbord switcher</string>
+  <string name="smartbar_backup_current_config_title">Save profile</string>
+  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
+  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
+  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
+  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Vergrendelscherm</string>
   <string name="lockscreen_config_title">Vergrendelscherm instellingen</string>
@@ -760,28 +761,12 @@
   <string name="shortcut_action_recent">Recente apps</string>
   <string name="shortcut_action_power">Scherm Uit</string>
   <string name="shortcut_action_search">Zoeken in app</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">lijst</string>
-  <string name="sizer_title">App verwijderaar</string>
-  <string name="caution">Opgelet!</string>
-  <string name="sizer_message_startup">Met dit hulpprogramma kunt u systeem apps verwijderen. Gebruik met voorzichtigheid en alleen apps verwijderen waarvan u weet dat ze veilig verwijderd kunnen worden.</string>
-  <string name="cancel">Annuleren</string>
-  <string name="sizer_message_delete">Weet u zeker dat u deze app wilt verwijderen?</string>
-  <string name="btn_delete">Verwijder geselecteerde APPs nu!</string>
-  <string name="delete_progress_title">Bezig met verwijderen</string>
-  <string name="delete_progress">Geselecteerde bestanden worden verwijderd\u2026</string>
-  <string name="delete_success">Verwijderd</string>
-  <string name="delete_fail">Verwijderen niet mogelijk</string>
-  <string name="btn_profile">Profiel</string>
-  <string name="sizer_message_sdnowrite">Kan niet naar SD-kaart schrijven.</string>
-  <string name="sizer_message_sdnoread">Kan SD-kaart niet lezen.</string>
-  <string name="sizer_message_filesuccess">Profiel aangemaakt.</string>
-  <string name="sizer_message_filefail">Mislukt om profiel te maken.</string>
-  <string name="sizer_message_noselect">Niets geselecteerd.</string>
+  <!-- App Remover -->
   <string name="system_app_remover">Systeem App Verwijderaar</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk\'s Muziek Speler</string>
-  <string name="tomahawk_music_player_summary">Een open source android muziekspeler met grote ontwikkeling en functies</string>
+  <string name="listsystem">lijst</string>
+  <string name="cancel">Annuleren</string>
+  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_noselect">Nothing selected</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Taakbeheer</string>
   <string name="enable_task_manager_summary">Taakbeheer knop in uitgebreide statusbar in-/ uitschakelen</string>
@@ -928,4 +913,26 @@
   <string name="screenshot_crop_and_share_summary">Een bewerker venster weergeven na het nemen van een screenshot om bepaalde bewerkingen, zoals bijsnijden, opslaan of delen uit te voeren</string>
   <string name="screenshot_crop_behavior_title">Bijsnijdmodus</string>
   <string name="screenshot_crop_behavior_summary">Gebruik altijd de bijgesneden afbeelding binnen het bijsnijden gebied, zelfs als de toepassen knop niet is ingedrukt</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">Na het selecteren van een doel hieronder, swipe verticaal met 3 vingers in één beweging van boven naar onder om de actie te triggeren die u geselecteerd hebt.</string>
+  <string name="three_finger_swipe_gesture_title">Drie vingers swipe gebaar</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="effect_default">Default</string>
+  <string name="effect_accordion">Accordion</string>
+  <string name="effect_background_to_foreground">Background to foreground</string>
+  <string name="effect_cube_in">Cube in</string>
+  <string name="effect_cube_out">Cube out</string>
+  <string name="effect_depth_page">Depth page</string>
+  <string name="effect_flip_horizontal">Flip horizontal</string>
+  <string name="effect_flip_vertical">Flip vertical</string>
+  <string name="effect_foreground_to_background">Foreground to background</string>
+  <string name="effect_rotate_down">Rotate down</string>
+  <string name="effect_rotate_up">Rotate up</string>
+  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_stack">Stack</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out">Zoom out</string>
 </resources>
