@@ -79,6 +79,12 @@
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>
 
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+        android:key="qs_location_advanced"
+        android:title="@string/qs_advanced_location_title"
+        android:summary="@string/qs_advanced_location_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="quicksettings_tiles_category"
         android:title="@string/quicksettings_tiles_category">

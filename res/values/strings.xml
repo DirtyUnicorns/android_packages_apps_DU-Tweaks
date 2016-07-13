@@ -1060,4 +1060,8 @@
     <string name="effect_zoom_out_slide">Zoom out slide</string>
     <string name="effect_zoom_out">Zoom out</string>
 
+    <!-- QS location sensors mode -->
+    <string name="qs_advanced_location_title">Advanced location settings</string>
+    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+
 </resources>
