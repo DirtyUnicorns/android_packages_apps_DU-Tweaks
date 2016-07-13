@@ -649,8 +649,8 @@
   <string name="smartbar_ime_action_none">Geen</string>
   <string name="smartbar_ime_action_arrows">Input pijlen</string>
   <string name="smartbar_ime_action_switcher">Toetsenbord switcher</string>
-  <string name="smartbar_backup_current_config_title">Save profile</string>
-  <string name="smartbar_restore_config_title">Restore profile</string>
+  <string name="smartbar_backup_current_config_title">Profiel opslaan</string>
+  <string name="smartbar_restore_config_title">Profiel herstellen</string>
   <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
   <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
   <string name="smartbar_config_dialog_title">Smartbar profiles</string>
@@ -766,7 +766,7 @@
   <string name="listsystem">lijst</string>
   <string name="cancel">Annuleren</string>
   <string name="message_delete">Are you sure you want to delete this app?</string>
-  <string name="message_noselect">Nothing selected</string>
+  <string name="message_noselect">Niets geselecteerd</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Taakbeheer</string>
   <string name="enable_task_manager_summary">Taakbeheer knop in uitgebreide statusbar in-/ uitschakelen</string>
@@ -918,7 +918,7 @@
   <string name="three_finger_swipe_gesture_title">Drie vingers swipe gebaar</string>
   <!-- DirtyTweaks tabs slide effects -->
   <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
-  <string name="effect_default">Default</string>
+  <string name="effect_default">Standaard</string>
   <string name="effect_accordion">Accordion</string>
   <string name="effect_background_to_foreground">Background to foreground</string>
   <string name="effect_cube_in">Cube in</string>
@@ -932,7 +932,7 @@
   <string name="effect_scale_in_out">Scale in out</string>
   <string name="effect_stack">Stack</string>
   <string name="effect_tablet">Tablet</string>
-  <string name="effect_zoom_in">Zoom in</string>
+  <string name="effect_zoom_in">Inzoemen</string>
   <string name="effect_zoom_out_slide">Zoom out slide</string>
-  <string name="effect_zoom_out">Zoom out</string>
+  <string name="effect_zoom_out">Uitzoemen</string>
 </resources>

@@ -125,9 +125,9 @@
   <string name="expanded_desktop_state">Tryb rozszerzony</string>
   <string name="expanded_enabled_for_all">Włączone dla wszystkich</string>
   <string name="expanded_user_configurable">Konfigurowalne przez użytkownika</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">Styl rozszerzonego pulpitu</string>
+  <string name="expanded_desktop_style_description">Wybierz domyślny styl rozszerzonego pulpitu</string>
+  <string name="expanded_desktop_title">Opcje rozszerzonego pulpitu</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Wymuś rozwinięte powiadomienia</string>
   <string name="force_expanded_notifications_summary">Dostępne wyłącznie dla aplikacji, które obsługują rozwijane powiadomienia</string>
@@ -649,15 +649,15 @@
   <string name="smartbar_ime_action_none">Brak</string>
   <string name="smartbar_ime_action_arrows">Strzałki podczas pisania</string>
   <string name="smartbar_ime_action_switcher">Przełącznik klawiatur</string>
-  <string name="smartbar_backup_current_config_title">Save profile</string>
-  <string name="smartbar_restore_config_title">Restore profile</string>
-  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
-  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
-  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
-  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
-  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
-  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
-  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
+  <string name="smartbar_backup_current_config_title">Zapisz ustawienia</string>
+  <string name="smartbar_restore_config_title">Przywróć ustawienia</string>
+  <string name="smartbar_config_name_edit_dialog_title">Nazwa ustawień</string>
+  <string name="smartbar_config_name_edit_dialog_message">Wprowadź nazwę lub pozostaw puste</string>
+  <string name="smartbar_config_dialog_title">Ustawienia SmartBar</string>
+  <string name="smartbar_config_backup_success_toast">Ustawienia SmartBar zapisane pomyślnie</string>
+  <string name="smartbar_config_restore_success_toast">Ustawienia SmartBar przywrócone pomyślnie</string>
+  <string name="smartbar_config_backup_error_toast">Wystąpił błąd podczas zapisywania ustawień SmartBar</string>
+  <string name="smartbar_config_restore_error_toast">Wystąpił błąd podczas przywracania ustawień SmartBar</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Ekran blokady</string>
   <string name="lockscreen_config_title">Opcje ekranu blokady</string>
@@ -765,8 +765,8 @@
   <string name="system_app_remover">Usuwanie aplikacji systemowych</string>
   <string name="listsystem">lista</string>
   <string name="cancel">Anuluj</string>
-  <string name="message_delete">Are you sure you want to delete this app?</string>
-  <string name="message_noselect">Nothing selected</string>
+  <string name="message_delete">Czy na pewno chcesz usunąć tę aplikację?</string>
+  <string name="message_noselect">Nic nie wybrano</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Menadżer zadań</string>
   <string name="enable_task_manager_summary">Włącz/wyłącz działania dla menadżera zadań przy rozwiniętym pasku stanu</string>
@@ -917,22 +917,22 @@
   <string name="three_finger_gesture_info">Po wybraniu akcji, przesunięcie trzema palcami z góry na dół, aktywuje ją.</string>
   <string name="three_finger_swipe_gesture_title">Gest przesunięcia trzema palcami</string>
   <!-- DirtyTweaks tabs slide effects -->
-  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
-  <string name="effect_default">Default</string>
-  <string name="effect_accordion">Accordion</string>
-  <string name="effect_background_to_foreground">Background to foreground</string>
-  <string name="effect_cube_in">Cube in</string>
-  <string name="effect_cube_out">Cube out</string>
-  <string name="effect_depth_page">Depth page</string>
-  <string name="effect_flip_horizontal">Flip horizontal</string>
-  <string name="effect_flip_vertical">Flip vertical</string>
-  <string name="effect_foreground_to_background">Foreground to background</string>
-  <string name="effect_rotate_down">Rotate down</string>
-  <string name="effect_rotate_up">Rotate up</string>
-  <string name="effect_scale_in_out">Scale in out</string>
-  <string name="effect_stack">Stack</string>
+  <string name="tabs_effect_title">Efekt przejścia między kartami DirtyTweaks</string>
+  <string name="effect_default">Domyślny</string>
+  <string name="effect_accordion">Akordeon</string>
+  <string name="effect_background_to_foreground">Tło na pierwszym planie</string>
+  <string name="effect_cube_in">Kostka do wewnątrz</string>
+  <string name="effect_cube_out">Kostka na zewnątrz</string>
+  <string name="effect_depth_page">Głęboka strona</string>
+  <string name="effect_flip_horizontal">Przerzuć w poziomie</string>
+  <string name="effect_flip_vertical">Przerzuć w pionie</string>
+  <string name="effect_foreground_to_background">Pierwszy plan do tła</string>
+  <string name="effect_rotate_down">Obrót w dół</string>
+  <string name="effect_rotate_up">Obrót do góry</string>
+  <string name="effect_scale_in_out">Skaluj na zewnątrz</string>
+  <string name="effect_stack">Stos</string>
   <string name="effect_tablet">Tablet</string>
-  <string name="effect_zoom_in">Zoom in</string>
-  <string name="effect_zoom_out_slide">Zoom out slide</string>
-  <string name="effect_zoom_out">Zoom out</string>
+  <string name="effect_zoom_in">Powiększ</string>
+  <string name="effect_zoom_out_slide">Pomniejsz slajd</string>
+  <string name="effect_zoom_out">Pomniejsz</string>
 </resources>

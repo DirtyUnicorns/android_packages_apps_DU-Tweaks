@@ -127,7 +127,7 @@
   <string name="expanded_user_configurable">Modifierbar</string>
   <string name="expanded_desktop_style">Expanded desktop style</string>
   <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_title">Expanderat skrivbords alternativ</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Tvinga utökade meddelanden</string>
   <string name="force_expanded_notifications_summary">Endast tillgängligt för appar som stödjer utökade meddelanden</string>
@@ -213,7 +213,7 @@
   <string name="status_bar_title">Status bar</string>
   <string name="status_bar_style_title">Stil</string>
   <string name="status_bar_clock">Clock &amp; Date</string>
-  <string name="clock_title_enable">Alignment</string>
+  <string name="clock_title_enable">Placering</string>
   <string name="clock_enabled">Aktiverad</string>
   <string name="clock_disabled">Inaktiverad</string>
   <string name="status_bar_clock_style_reset">Återställ färg</string>
@@ -275,7 +275,7 @@
   <string name="animation_duration_default">Default</string>
   <!-- Toast Animation -->
   <string name="toast_animation_title">Toast animation</string>
-  <string name="toast_none_animation">None</string>
+  <string name="toast_none_animation">Ingen</string>
   <string name="toast_default_animation">Default</string>
   <string name="toast_fade_animation">Fade</string>
   <string name="toast_SlideRight_animation">Slide right</string>
