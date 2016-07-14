@@ -89,6 +89,11 @@
     <string name="brightness_icon_title">Brightness icon </string>
     <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
 
+    <!-- Quick settings columns -->
+    <string name="qs_num_columns_three">Three</string>
+    <string name="qs_num_columns_four">Four</string>
+    <string name="qs_num_columns_five">Five</string>
+
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Immersive Recents</string>
     <string name="immersive_recents_summary">Change the view of the recents screen</string>
@@ -207,6 +212,10 @@
     <string name="battery_bar_style_regular">Regular</string>
     <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
     <string name="battery_bar_style_reversed">Reversed</string>
+    <string name="battery_bar_hide">Hide</string>
+    <string name="battery_bar_statusbar">Statusbar</string>
+    <string name="battery_bar_top_navbar">Top of navbar</string>
+    <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
 
     <!-- Lock Clock Fonts -->
     <string name="lock_clock_font_title">Clock Fonts</string>
