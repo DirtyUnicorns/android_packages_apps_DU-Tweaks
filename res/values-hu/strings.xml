@@ -80,6 +80,10 @@
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Fényerő ikon </string>
   <string name="brightness_icon_summary">Fényerő ikon megjelenítése a fényerőcsúszka bal oldalán az automatikus fényerő beállításához</string>
+  <!-- Quick settings columns -->
+  <string name="qs_num_columns_three">Three</string>
+  <string name="qs_num_columns_four">Four</string>
+  <string name="qs_num_columns_five">Five</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Teljes képernyős előzmények</string>
   <string name="immersive_recents_summary">Előzmények képernyő megjelenésének módosítása</string>
@@ -184,6 +188,10 @@
   <string name="battery_bar_style_regular">Hagyományos</string>
   <string name="battery_bar_style_center_mirrored">Középre-tükrözött</string>
   <string name="battery_bar_style_reversed">Fordított</string>
+  <string name="battery_bar_hide">Hide</string>
+  <string name="battery_bar_statusbar">Statusbar</string>
+  <string name="battery_bar_top_navbar">Top of navbar</string>
+  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Óra betűtípusok</string>
   <string name="lock_clock_font_summary">A zárképernyő óra alapértelmezett betűtípusának változtatása</string>
@@ -571,58 +579,25 @@
   <string name="pulse_help_policy_notice_title">Pulse névjegy</string>
   <string name="pulse_help_policy_notice_summary">Pulse egy hangerősáv stílusú audiovizualizáció a navigációs sávon, ha megy a zene. Pulse néhány audió forrással nem működik, miközben az eszköz hangszóróján hallgatod azt</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigációs sáv audiovizualizáció</string>
+  <string name="pulse_settings_summary">Navigációs sáv audió grafikus hangszínszabályzó</string>
   <string name="fling_show_pulse_title">Pulse megjelenítése</string>
-  <string name="fling_show_pulse_summary">Audiovizualizáció a navigációs sávon</string>
+  <string name="fling_show_pulse_summary">Audió grafikus hangszínszabályzó a navigációs sávon</string>
+  <string name="pulse_render_mode_title">Render mód</string>
+  <string name="pulse_render_mode_fading_bars">Halványuló blokkok</string>
+  <string name="pulse_render_mode_solid_lines">Folytonos vonalak</string>
   <string name="fling_pulse_color">Pulse színe</string>
   <string name="eos_fling_lavalamp_title">Lávalámpa bekapcsolása</string>
   <string name="eos_fling_lavalamp_summary">Pulse lávalámpa stílust animál a színkeverésnél</string>
   <string name="pulse_advanced_category">Haladó</string>
+  <string name="pulse_legacy_mode_advanced_category">Halványuló blokkok üzemmód beállításai</string>
+  <string name="pulse_custom_fudge_factor">Sanity level</string>
+  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
+  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Sáv szélessége</string>
-  <string name="pulse_dimen0">Alapértelmezett</string>
-  <string name="pulse_dimen1">7dp</string>
-  <string name="pulse_dimen2">8dp</string>
-  <string name="pulse_dimen3">9dp</string>
-  <string name="pulse_dimen4">10dp</string>
-  <string name="pulse_dimen5">11dp</string>
-  <string name="pulse_dimen6">12dp</string>
-  <string name="pulse_dimen7">13dp</string>
-  <string name="pulse_dimen8">15dp</string>
-  <string name="pulse_dimen9">16dp</string>
-  <string name="pulse_dimen10">17dp</string>
-  <string name="pulse_dimen11">18dp</string>
-  <string name="pulse_dimen12">19dp</string>
-  <string name="pulse_dimen13">20dp</string>
-  <string name="pulse_dimen14">21dp</string>
-  <string name="pulse_dimen15">22dp</string>
-  <string name="pulse_dimen16">23dp</string>
-  <string name="pulse_dimen17">24dp</string>
-  <string name="pulse_dimen18">25dp</string>
-  <string name="pulse_dimen19">26dp</string>
   <string name="pulse_custom_div">Sáv térköz</string>
-  <string name="default_div">Alapértelmezett</string>
-  <string name="pulse_block_category">Alapértelmezett</string>
-  <string name="pulse_block_category_title">Blokk mérete</string>
-  <string name="pulse_aggression">Intenzitás</string>
-  <string name="default_fill">Alapértelmezett</string>
-  <string name="default_pulse_empty">Alapértelmezett</string>
   <string name="pulse_filled_block_size">Blokk mérete</string>
   <string name="pulse_empty_block_size">Blokk térköz</string>
-  <string name="pulse_fill1">5dp</string>
-  <string name="pulse_fill2">6dp</string>
-  <string name="pulse_fill3">7dp</string>
-  <string name="pulse_fill4">8dp</string>
-  <string name="pulse_empty1">2dp</string>
-  <string name="pulse_empty2">3dp</string>
-  <string name="pulse_empty3">4dp</string>
-  <string name="pulse_empty4">0dp</string>
-  <string name="factor0">Normál</string>
-  <string name="factor1">Laza</string>
-  <string name="factor2">Lassú</string>
-  <string name="factor3">Hyper</string>
-  <string name="factor4">Őrült</string>
-  <string name="pulse_custom_fudge_factor">Vizualizáló érzékenységi szint</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Sáv mérete</string>
   <string name="portrait_title">Álló magasság</string>
@@ -935,4 +910,7 @@
   <string name="effect_zoom_in">Nagyítás</string>
   <string name="effect_zoom_out_slide">Dia csökkentése</string>
   <string name="effect_zoom_out">Kicsinyítés</string>
+  <!-- QS location sensors mode -->
+  <string name="qs_advanced_location_title">Advanced location settings</string>
+  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 </resources>

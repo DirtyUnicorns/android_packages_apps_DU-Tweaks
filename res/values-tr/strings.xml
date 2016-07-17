@@ -80,6 +80,10 @@
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Parlaklık Simgesi </string>
   <string name="brightness_icon_summary">Parlaklık kaydırıcının yanında otomatik parlaklığı ayarlamak için bir ikon göster</string>
+  <!-- Quick settings columns -->
+  <string name="qs_num_columns_three">Three</string>
+  <string name="qs_num_columns_four">Four</string>
+  <string name="qs_num_columns_five">Five</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Immersive Son kullanılanlar</string>
   <string name="immersive_recents_summary">Son kullanılanlar ekranı görünümünü değiştirme</string>
@@ -184,6 +188,10 @@
   <string name="battery_bar_style_regular">Normal</string>
   <string name="battery_bar_style_center_mirrored">Merkez-yansıtmalı</string>
   <string name="battery_bar_style_reversed">Ters</string>
+  <string name="battery_bar_hide">Hide</string>
+  <string name="battery_bar_statusbar">Statusbar</string>
+  <string name="battery_bar_top_navbar">Top of navbar</string>
+  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Saat yazı tipleri</string>
   <string name="lock_clock_font_summary">Kilit ekranı saat widget varsayılan yazı tipini değiştirme</string>
@@ -438,14 +446,14 @@
   <string name="gesture_anywhere_position_right">Sağ kenar</string>
   <string name="gesture_anywhere_gestures_title">Hareketler</string>
   <string name="gesture_anywhere_gestures_summary">Hareketler ekle çıkar veya düzenle</string>
-  <string name="ga_button_add">Add gesture</string>
+  <string name="ga_button_add">Hareket ekle</string>
   <string name="ga_button_reload">Reload</string>
   <string name="ga_button_discard">Discard</string>
-  <string name="ga_button_done">Done</string>
+  <string name="ga_button_done">Tamamlandı</string>
   <string name="ga_prompt_gesture_name">Name</string>
   <string name="ga_error_missing_name">You must enter a name</string>
   <string name="ga_save_success">Gesture saved in %s</string>
-  <string name="ga_rename_action">OK</string>
+  <string name="ga_rename_action">TAMAM</string>
   <string name="ga_cancel_action">İptal</string>
   <string name="ga_gestures_loading">Loading gestures\u2026</string>
   <string name="ga_gestures_empty">No gestures</string>
@@ -569,60 +577,27 @@
   <string name="fling_longpress_summary">Uzun basmayı gerçekleştirmek için gereken süreyi arttırmak yada azaltmak</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Pulse Hakkına</string>
-  <string name="pulse_help_policy_notice_summary">Pulse gezinme çubuğunda parlak ekolayzır çubukları tarzı müzik çalar ses görselleştirmesidir. Pulse cihazın hoparlörü üzerinden dinlerken bazı ses kaynakları ile çalışmaz</string>
+  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Gezinti çubuğu ses görselleştirme</string>
+  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
   <string name="fling_show_pulse_title">Pulse\'yi Göster</string>
-  <string name="fling_show_pulse_summary">Gezinme çubuğunda ses görselleştirme</string>
+  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+  <string name="pulse_render_mode_title">Render mode</string>
+  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+  <string name="pulse_render_mode_solid_lines">Solid lines</string>
   <string name="fling_pulse_color">Pulse rengi</string>
   <string name="eos_fling_lavalamp_title">Lav Lambasını açın</string>
   <string name="eos_fling_lavalamp_summary">Pulse animasyonu pürüzsüz bir lav lambası tarzı renk karışımı animasyonu</string>
   <string name="pulse_advanced_category">Gelişmiş</string>
+  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+  <string name="pulse_custom_fudge_factor">Sanity level</string>
+  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
+  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Bar genişliği</string>
-  <string name="pulse_dimen0">Varsayılan</string>
-  <string name="pulse_dimen1">7dp</string>
-  <string name="pulse_dimen2">8dp</string>
-  <string name="pulse_dimen3">9dp</string>
-  <string name="pulse_dimen4">10dp</string>
-  <string name="pulse_dimen5">11dp</string>
-  <string name="pulse_dimen6">12dp</string>
-  <string name="pulse_dimen7">13dp</string>
-  <string name="pulse_dimen8">15dp</string>
-  <string name="pulse_dimen9">16dp</string>
-  <string name="pulse_dimen10">17dp</string>
-  <string name="pulse_dimen11">18dp</string>
-  <string name="pulse_dimen12">19dp</string>
-  <string name="pulse_dimen13">20dp</string>
-  <string name="pulse_dimen14">21dp</string>
-  <string name="pulse_dimen15">22dp</string>
-  <string name="pulse_dimen16">23dp</string>
-  <string name="pulse_dimen17">24dp</string>
-  <string name="pulse_dimen18">25dp</string>
-  <string name="pulse_dimen19">26dp</string>
   <string name="pulse_custom_div">Çubuk aralığı</string>
-  <string name="default_div">Varsayılan</string>
-  <string name="pulse_block_category">Varsayılan</string>
-  <string name="pulse_block_category_title">Blok Boyutu</string>
-  <string name="pulse_aggression">Güç</string>
-  <string name="default_fill">Varsayılan</string>
-  <string name="default_pulse_empty">Varsayılan</string>
   <string name="pulse_filled_block_size">Blok Boyutu</string>
   <string name="pulse_empty_block_size">Blok Aralığı</string>
-  <string name="pulse_fill1">5dp</string>
-  <string name="pulse_fill2">6dp</string>
-  <string name="pulse_fill3">7dp</string>
-  <string name="pulse_fill4">8dp</string>
-  <string name="pulse_empty1">2dp</string>
-  <string name="pulse_empty2">3dp</string>
-  <string name="pulse_empty3">4dp</string>
-  <string name="pulse_empty4">0dp</string>
-  <string name="factor0">Normal</string>
-  <string name="factor1">Ferah</string>
-  <string name="factor2">Yavaş</string>
-  <string name="factor3">Hiper</string>
-  <string name="factor4">Çılgın</string>
-  <string name="pulse_custom_fudge_factor">Görselleştiricisi Tutarlılık Seviyesi</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Gezinti çubuğu boyutu</string>
   <string name="portrait_title">Dikey yükseklik</string>
@@ -751,9 +726,9 @@
   <string name="lockscreen_shortcuts_single_tap">Click</string>
   <string name="lockscreen_shortcuts_double_tap">Double tap</string>
   <string name="lockscreen_shortcuts_longpress">Longpress</string>
-  <string name="help">Help</string>
+  <string name="help">Yardım</string>
   <string name="shortcut_action_app">Custom app</string>
-  <string name="shortcut_action_home">Home</string>
+  <string name="shortcut_action_home">Ana Ekran</string>
   <string name="shortcut_action_back">Back</string>
   <string name="shortcut_action_menu">Menu</string>
   <string name="shortcut_action_ime">Open IME Switcher</string>
@@ -866,8 +841,8 @@
   <string name="recent_panel_expanded_mode_title">Expanded mode</string>
   <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
   <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
-  <string name="recent_panel_expanded_mode_always">Always</string>
-  <string name="recent_panel_expanded_mode_never">Never</string>
+  <string name="recent_panel_expanded_mode_always">Her zaman</string>
+  <string name="recent_panel_expanded_mode_never">Hiçbir zaman</string>
   <string name="recent_panel_show_topmost_title">Show topmost task</string>
   <string name="recent_panel_show_topmost_summary">Don\'t exclude the topmost task in recents view</string>
   <string name="recent_panel_bg_color_title">Panel background color</string>
@@ -935,4 +910,7 @@
   <string name="effect_zoom_in">Yakınlaştır</string>
   <string name="effect_zoom_out_slide">Zoom out slide</string>
   <string name="effect_zoom_out">Uzaklaştır</string>
+  <!-- QS location sensors mode -->
+  <string name="qs_advanced_location_title">Advanced location settings</string>
+  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 </resources>

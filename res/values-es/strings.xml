@@ -80,6 +80,10 @@
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Icono de brillo </string>
   <string name="brightness_icon_summary">Mostrar un icono de brillo a la izquierda de la barra de brillo para activar el brillo automático</string>
+  <!-- Quick settings columns -->
+  <string name="qs_num_columns_three">Three</string>
+  <string name="qs_num_columns_four">Four</string>
+  <string name="qs_num_columns_five">Five</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Modo inmersivo de recientes</string>
   <string name="immersive_recents_summary">Cambiar la vista de la pantalla de recientes</string>
@@ -184,6 +188,10 @@
   <string name="battery_bar_style_regular">Normal</string>
   <string name="battery_bar_style_center_mirrored">Centro-reflejada</string>
   <string name="battery_bar_style_reversed">Invertido</string>
+  <string name="battery_bar_hide">Hide</string>
+  <string name="battery_bar_statusbar">Statusbar</string>
+  <string name="battery_bar_top_navbar">Top of navbar</string>
+  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Fuentes de reloj</string>
   <string name="lock_clock_font_summary">Cambiar la fuente predeterminada del widget de reloj de la pantalla de bloqueo</string>
@@ -569,60 +577,27 @@
   <string name="fling_longpress_summary">Aumentar o disminuir el tiempo que toma realizar una pulsación larga</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Acerca de Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse es un brillante equalizador en la barra de navegación que aparece en forma de barra cuando la música esta activada. Pulse no funciona con algunas fuentes de audio cuando se escucha con el altavoz del teléfono</string>
+  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Visualización de audio en la barra de navegación</string>
+  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
   <string name="fling_show_pulse_title">Mostrar Pulse</string>
-  <string name="fling_show_pulse_summary">Visualización de audio en la barra de navegación</string>
+  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+  <string name="pulse_render_mode_title">Render mode</string>
+  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+  <string name="pulse_render_mode_solid_lines">Solid lines</string>
   <string name="fling_pulse_color">Color de Pulse</string>
   <string name="eos_fling_lavalamp_title">Encienda la lámpara de Lava</string>
   <string name="eos_fling_lavalamp_summary">Pulso anima una suave mezcla de colores tipo lampara de lava</string>
   <string name="pulse_advanced_category">Ajustes avanzados</string>
+  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+  <string name="pulse_custom_fudge_factor">Sanity level</string>
+  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
+  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Ancho de la barra</string>
-  <string name="pulse_dimen0">Por Defecto</string>
-  <string name="pulse_dimen1">7dp</string>
-  <string name="pulse_dimen2">8dp</string>
-  <string name="pulse_dimen3">9dp</string>
-  <string name="pulse_dimen4">10dp</string>
-  <string name="pulse_dimen5">11dp</string>
-  <string name="pulse_dimen6">12dp</string>
-  <string name="pulse_dimen7">13dp</string>
-  <string name="pulse_dimen8">15dp</string>
-  <string name="pulse_dimen9">16dp</string>
-  <string name="pulse_dimen10">17dp</string>
-  <string name="pulse_dimen11">18dp</string>
-  <string name="pulse_dimen12">19dp</string>
-  <string name="pulse_dimen13">20dp</string>
-  <string name="pulse_dimen14">21dp</string>
-  <string name="pulse_dimen15">22dp</string>
-  <string name="pulse_dimen16">23dp</string>
-  <string name="pulse_dimen17">24dp</string>
-  <string name="pulse_dimen18">25dp</string>
-  <string name="pulse_dimen19">26dp</string>
   <string name="pulse_custom_div">Espacio de la barra</string>
-  <string name="default_div">Por Defecto</string>
-  <string name="pulse_block_category">Por Defecto</string>
-  <string name="pulse_block_category_title">Tamaño del bloque</string>
-  <string name="pulse_aggression">Encendido</string>
-  <string name="default_fill">Por Defecto</string>
-  <string name="default_pulse_empty">Por Defecto</string>
   <string name="pulse_filled_block_size">Tamaño del bloque</string>
   <string name="pulse_empty_block_size">Espacio del bloque</string>
-  <string name="pulse_fill1">5dp</string>
-  <string name="pulse_fill2">6dp</string>
-  <string name="pulse_fill3">7dp</string>
-  <string name="pulse_fill4">8dp</string>
-  <string name="pulse_empty1">2dp</string>
-  <string name="pulse_empty2">3dp</string>
-  <string name="pulse_empty3">4dp</string>
-  <string name="pulse_empty4">0dp</string>
-  <string name="factor0">Normal</string>
-  <string name="factor1">Relajado</string>
-  <string name="factor2">Lento</string>
-  <string name="factor3">Híper</string>
-  <string name="factor4">Bestial</string>
-  <string name="pulse_custom_fudge_factor">Nivel de cordura del visualizador</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Tamaño de la barra</string>
   <string name="portrait_title">Altura en vertical</string>
@@ -935,4 +910,7 @@
   <string name="effect_zoom_in">Zoom in</string>
   <string name="effect_zoom_out_slide">Zoom out slide</string>
   <string name="effect_zoom_out">Zoom out</string>
+  <!-- QS location sensors mode -->
+  <string name="qs_advanced_location_title">Advanced location settings</string>
+  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 </resources>

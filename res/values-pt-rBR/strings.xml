@@ -80,6 +80,10 @@
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Brilho </string>
   <string name="brightness_icon_summary">Mostrar um ícone de brilho a esquerda do controle deslizante de brilho para ajustar o auto-brilho</string>
+  <!-- Quick settings columns -->
+  <string name="qs_num_columns_three">Three</string>
+  <string name="qs_num_columns_four">Four</string>
+  <string name="qs_num_columns_five">Five</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Imersivas Recentes</string>
   <string name="immersive_recents_summary">Alterar a exibição das telas recentes</string>
@@ -127,9 +131,9 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="expanded_desktop_state">Estado expandido</string>
   <string name="expanded_enabled_for_all">Ativado para todos</string>
   <string name="expanded_user_configurable">Configurável pelo usuário</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">Estilo de área de trabalho expandida</string>
+  <string name="expanded_desktop_style_description">Escolher um estilo padrão para a área de trabalho expandida</string>
+  <string name="expanded_desktop_title">Opções da área de trabalho expandida</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Forçar notificações expandidas</string>
   <string name="force_expanded_notifications_summary">Disponivel apenas para apps que suportam notificações expandidas</string>
@@ -186,6 +190,10 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="battery_bar_style_regular">Regular</string>
   <string name="battery_bar_style_center_mirrored">Centro-espelhado</string>
   <string name="battery_bar_style_reversed">Invertida</string>
+  <string name="battery_bar_hide">Hide</string>
+  <string name="battery_bar_statusbar">Statusbar</string>
+  <string name="battery_bar_top_navbar">Top of navbar</string>
+  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Fontes de relógio</string>
   <string name="lock_clock_font_summary">Alterar a fonte padrão do widget de relógio na tela de bloqueio</string>
@@ -571,60 +579,27 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="fling_longpress_summary">Aumentar ou diminuir o tempo que leva para executar um toque longo</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Sobre o Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse é um brilhante equalizador no estilo barra, para visualização de áudio na barra de navegação quando a música toca. Pulse não funciona com algumas fontes de áudio quando a ouvir no altofalante do dispositivo</string>
+  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Visualização do áudio na barra de navegação</string>
+  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
   <string name="fling_show_pulse_title">Mostrar Pulse</string>
-  <string name="fling_show_pulse_summary">Visualização do áudio na barra de navegação</string>
+  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+  <string name="pulse_render_mode_title">Render mode</string>
+  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+  <string name="pulse_render_mode_solid_lines">Solid lines</string>
   <string name="fling_pulse_color">Cor do Pulse</string>
   <string name="eos_fling_lavalamp_title">Acender a lâmpada de lava</string>
   <string name="eos_fling_lavalamp_summary">Animar o Pulse com uma mistura de cor suave com um estilo de lâmpada de lava</string>
   <string name="pulse_advanced_category">Avançado</string>
+  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+  <string name="pulse_custom_fudge_factor">Sanity level</string>
+  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
+  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Largura da barra</string>
-  <string name="pulse_dimen0">Padrão</string>
-  <string name="pulse_dimen1">7dp</string>
-  <string name="pulse_dimen2">8dp</string>
-  <string name="pulse_dimen3">9dp</string>
-  <string name="pulse_dimen4">10dp</string>
-  <string name="pulse_dimen5">11dp</string>
-  <string name="pulse_dimen6">12dp</string>
-  <string name="pulse_dimen7">13dp</string>
-  <string name="pulse_dimen8">15dp</string>
-  <string name="pulse_dimen9">16dp</string>
-  <string name="pulse_dimen10">17dp</string>
-  <string name="pulse_dimen11">18dp</string>
-  <string name="pulse_dimen12">19dp</string>
-  <string name="pulse_dimen13">20dp</string>
-  <string name="pulse_dimen14">21dp</string>
-  <string name="pulse_dimen15">22dp</string>
-  <string name="pulse_dimen16">23dp</string>
-  <string name="pulse_dimen17">24dp</string>
-  <string name="pulse_dimen18">25dp</string>
-  <string name="pulse_dimen19">26dp</string>
   <string name="pulse_custom_div">Barra de espaçamento</string>
-  <string name="default_div">Padrão</string>
-  <string name="pulse_block_category">Padrão</string>
-  <string name="pulse_block_category_title">Tamanho do bloco</string>
-  <string name="pulse_aggression">Força</string>
-  <string name="default_fill">Padrão</string>
-  <string name="default_pulse_empty">Padrão</string>
   <string name="pulse_filled_block_size">Tamanho do bloco</string>
   <string name="pulse_empty_block_size">Espaçamento do bloco</string>
-  <string name="pulse_fill1">5dp</string>
-  <string name="pulse_fill2">6dp</string>
-  <string name="pulse_fill3">7dp</string>
-  <string name="pulse_fill4">8dp</string>
-  <string name="pulse_empty1">2dp</string>
-  <string name="pulse_empty2">3dp</string>
-  <string name="pulse_empty3">4dp</string>
-  <string name="pulse_empty4">0dp</string>
-  <string name="factor0">Normal</string>
-  <string name="factor1">Relaxado</string>
-  <string name="factor2">Lenta</string>
-  <string name="factor3">Hyper</string>
-  <string name="factor4">Insano</string>
-  <string name="pulse_custom_fudge_factor">Visualizador do nível de sanidade</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Tamanho da barra</string>
   <string name="portrait_title">Altura em retrato</string>
@@ -651,15 +626,15 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="smartbar_ime_action_none">Nenhum</string>
   <string name="smartbar_ime_action_arrows">Setas de entrada</string>
   <string name="smartbar_ime_action_switcher">Alternador de teclado</string>
-  <string name="smartbar_backup_current_config_title">Save profile</string>
-  <string name="smartbar_restore_config_title">Restore profile</string>
-  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
-  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
-  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
-  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
-  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
-  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
-  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
+  <string name="smartbar_backup_current_config_title">Salvar Perfil</string>
+  <string name="smartbar_restore_config_title">Restaurar o perfil</string>
+  <string name="smartbar_config_name_edit_dialog_title">Nome do perfil Smartbar</string>
+  <string name="smartbar_config_name_edit_dialog_message">Digite um nome ou deixe em branco</string>
+  <string name="smartbar_config_dialog_title">Perfis da SmartBar</string>
+  <string name="smartbar_config_backup_success_toast">Perfil da SmartBar salvo com sucesso</string>
+  <string name="smartbar_config_restore_success_toast">Perfil da SmartBar restaurado com sucesso</string>
+  <string name="smartbar_config_backup_error_toast">Erro ao salvar o perfil da Smartbar</string>
+  <string name="smartbar_config_restore_error_toast">Erro ao restaurar o perfil da SmartBar</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Tela de bloqueio</string>
   <string name="lockscreen_config_title">Configurações da tela de bloqueio</string>
@@ -767,8 +742,8 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="system_app_remover">System App Remover</string>
   <string name="listsystem">Lista</string>
   <string name="cancel">Cancelar</string>
-  <string name="message_delete">Are you sure you want to delete this app?</string>
-  <string name="message_noselect">Nothing selected</string>
+  <string name="message_delete">Tem certeza que deseja excluir este aplicativo?</string>
+  <string name="message_noselect">Nada selecionado</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Gerenciador de tarefas</string>
   <string name="enable_task_manager_summary">Ativar/desativar a ação para o botão gerenciador de tarefas na área expandida da barra de status</string>
@@ -919,22 +894,25 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="three_finger_gesture_info">Depois de selecionar uma ação abaixo, deslizar verticalmente com 3 dedos em um único movimento de cima para baixo, para executar a ação selecionada.</string>
   <string name="three_finger_swipe_gesture_title">Gesto de deslizar três dedos</string>
   <!-- DirtyTweaks tabs slide effects -->
-  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
-  <string name="effect_default">Default</string>
-  <string name="effect_accordion">Accordion</string>
-  <string name="effect_background_to_foreground">Background to foreground</string>
-  <string name="effect_cube_in">Cube in</string>
-  <string name="effect_cube_out">Cube out</string>
-  <string name="effect_depth_page">Depth page</string>
-  <string name="effect_flip_horizontal">Flip horizontal</string>
-  <string name="effect_flip_vertical">Flip vertical</string>
-  <string name="effect_foreground_to_background">Foreground to background</string>
-  <string name="effect_rotate_down">Rotate down</string>
-  <string name="effect_rotate_up">Rotate up</string>
-  <string name="effect_scale_in_out">Scale in out</string>
-  <string name="effect_stack">Stack</string>
+  <string name="tabs_effect_title">Efeito de transição de abas Dirty Tweaks</string>
+  <string name="effect_default">Padrão</string>
+  <string name="effect_accordion">Acordeão</string>
+  <string name="effect_background_to_foreground">Segundo plano para Primeiro plano</string>
+  <string name="effect_cube_in">Cubo adentro</string>
+  <string name="effect_cube_out">Cubo afora</string>
+  <string name="effect_depth_page">Paginação em profundidade</string>
+  <string name="effect_flip_horizontal">Inverter horizontalmente</string>
+  <string name="effect_flip_vertical">Inverter verticalmente</string>
+  <string name="effect_foreground_to_background">Primeiro plano para Segundo plano</string>
+  <string name="effect_rotate_down">Girar para baixo</string>
+  <string name="effect_rotate_up">Girar para cima</string>
+  <string name="effect_scale_in_out">Diminuir em escala</string>
+  <string name="effect_stack">Pilha</string>
   <string name="effect_tablet">Tablet</string>
-  <string name="effect_zoom_in">Zoom in</string>
-  <string name="effect_zoom_out_slide">Zoom out slide</string>
-  <string name="effect_zoom_out">Zoom out</string>
+  <string name="effect_zoom_in">Aumentar Zoom</string>
+  <string name="effect_zoom_out_slide">Deslize de diminuição de zoom</string>
+  <string name="effect_zoom_out">Diminuir zoom</string>
+  <!-- QS location sensors mode -->
+  <string name="qs_advanced_location_title">Advanced location settings</string>
+  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 </resources>

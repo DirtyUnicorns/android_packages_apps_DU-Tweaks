@@ -80,6 +80,10 @@
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Helligkeits-Symbol </string>
   <string name="brightness_icon_summary">Zeigt ein Symbol für die Helligkeit auf der linken Seite des Helligkeitsreglers, um die Auto-Helligkeit anzupassen</string>
+  <!-- Quick settings columns -->
+  <string name="qs_num_columns_three">Three</string>
+  <string name="qs_num_columns_four">Four</string>
+  <string name="qs_num_columns_five">Five</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Vollbild-Anwendungsverlauf</string>
   <string name="immersive_recents_summary">Ändert die Ansicht des Anwendungsverlaufs</string>
@@ -126,7 +130,7 @@
   <string name="expanded_enabled_for_all">Für alle aktiviert</string>
   <string name="expanded_user_configurable">Benutzereinstellungen</string>
   <string name="expanded_desktop_style">Erweiterter Desktop-Stil</string>
-  <string name="expanded_desktop_style_description">Wählen Sie einen Standard erweiterten Desktop-Stil</string>
+  <string name="expanded_desktop_style_description">Wählen Sie einen Standard-Stil für den erweiterten Desktop aus</string>
   <string name="expanded_desktop_title">Erweiterte Desktop-Optionen</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Erweiterte Benachrichtigungen erzwingen</string>
@@ -184,6 +188,10 @@
   <string name="battery_bar_style_regular">Standard</string>
   <string name="battery_bar_style_center_mirrored">Mittig-gespiegelt</string>
   <string name="battery_bar_style_reversed">Umgekehrt</string>
+  <string name="battery_bar_hide">Hide</string>
+  <string name="battery_bar_statusbar">Statusbar</string>
+  <string name="battery_bar_top_navbar">Top of navbar</string>
+  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Sperrbildschirm-Schriftart</string>
   <string name="lock_clock_font_summary">Ändert die Schriftart der Uhr auf dem Sperrbildschirm</string>
@@ -569,60 +577,27 @@
   <string name="fling_longpress_summary">Erhöht oder verringert die Zeit bei langem Druck bis eine Aktion ausgeführt wird</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Über Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse ist eine brilliante Equalizerleiste zum Visualisieren von Musik auf der Navigationsleiste. Pulse funktioniert nicht mit allen Audioquellen wenn Musik über die Lautsprecher gehört wird</string>
+  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Tonvisualisierung auf der Navigationsleiste</string>
+  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
   <string name="fling_show_pulse_title">Pulse anzeigen</string>
-  <string name="fling_show_pulse_summary">Tonvisualisierung auf der Navigationsleiste</string>
+  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+  <string name="pulse_render_mode_title">Render mode</string>
+  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+  <string name="pulse_render_mode_solid_lines">Solid lines</string>
   <string name="fling_pulse_color">Farbe</string>
   <string name="eos_fling_lavalamp_title">Lavalampe einschalten</string>
   <string name="eos_fling_lavalamp_summary">Pulse wechselt automatisch die Farben in einem Lavalampenstil</string>
   <string name="pulse_advanced_category">Erweitert</string>
+  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+  <string name="pulse_custom_fudge_factor">Sanity level</string>
+  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
+  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Leisten-Breite</string>
-  <string name="pulse_dimen0">Standard</string>
-  <string name="pulse_dimen1">7dp</string>
-  <string name="pulse_dimen2">8dp</string>
-  <string name="pulse_dimen3">9dp</string>
-  <string name="pulse_dimen4">10dp</string>
-  <string name="pulse_dimen5">11dp</string>
-  <string name="pulse_dimen6">12dp</string>
-  <string name="pulse_dimen7">13dp</string>
-  <string name="pulse_dimen8">15dp</string>
-  <string name="pulse_dimen9">16dp</string>
-  <string name="pulse_dimen10">17dp</string>
-  <string name="pulse_dimen11">18dp</string>
-  <string name="pulse_dimen12">19dp</string>
-  <string name="pulse_dimen13">20dp</string>
-  <string name="pulse_dimen14">21dp</string>
-  <string name="pulse_dimen15">22dp</string>
-  <string name="pulse_dimen16">23dp</string>
-  <string name="pulse_dimen17">24 dp</string>
-  <string name="pulse_dimen18">25dp</string>
-  <string name="pulse_dimen19">26dp</string>
   <string name="pulse_custom_div">Leisten-Abstand</string>
-  <string name="default_div">Standard</string>
-  <string name="pulse_block_category">Standard</string>
-  <string name="pulse_block_category_title">Blockgröße</string>
-  <string name="pulse_aggression">Power</string>
-  <string name="default_fill">Standard</string>
-  <string name="default_pulse_empty">Standard</string>
   <string name="pulse_filled_block_size">Blockgröße</string>
   <string name="pulse_empty_block_size">Blockabstände</string>
-  <string name="pulse_fill1">5dp</string>
-  <string name="pulse_fill2">6dp</string>
-  <string name="pulse_fill3">7dp</string>
-  <string name="pulse_fill4">8dp</string>
-  <string name="pulse_empty1">2dp</string>
-  <string name="pulse_empty2">3dp</string>
-  <string name="pulse_empty3">4dp</string>
-  <string name="pulse_empty4">0dp</string>
-  <string name="factor0">Normal</string>
-  <string name="factor1">Entspannt</string>
-  <string name="factor2">Langsam</string>
-  <string name="factor3">Hyper</string>
-  <string name="factor4">Verrückt</string>
-  <string name="pulse_custom_fudge_factor">Visualisierungslevel</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Leistenhöhe</string>
   <string name="portrait_title">Höhe im Hochformat</string>
@@ -651,13 +626,13 @@
   <string name="smartbar_ime_action_switcher">Tastatur-Umschalter</string>
   <string name="smartbar_backup_current_config_title">Profil speichern</string>
   <string name="smartbar_restore_config_title">Profil wiederherstellen</string>
-  <string name="smartbar_config_name_edit_dialog_title">SmartBar Profilname</string>
-  <string name="smartbar_config_name_edit_dialog_message">Geben Sie einen Namen ein oder lassen sie es leer</string>
-  <string name="smartbar_config_dialog_title">SmartBar Profile</string>
-  <string name="smartbar_config_backup_success_toast">Das SmartBar Profil wurde erfolgreich gespeichert</string>
-  <string name="smartbar_config_restore_success_toast">SmartBar Profil erfolgreich wiederhergestellt</string>
-  <string name="smartbar_config_backup_error_toast">Fehler beim Speichern des Smartbar Profil</string>
-  <string name="smartbar_config_restore_error_toast">Fehler beim wiederherstellen des Smartbar Profils</string>
+  <string name="smartbar_config_name_edit_dialog_title">SmartBar-Profilname</string>
+  <string name="smartbar_config_name_edit_dialog_message">Namen eingeben oder leer lassen</string>
+  <string name="smartbar_config_dialog_title">SmartBar-Profile</string>
+  <string name="smartbar_config_backup_success_toast">Das SmartBar-Profil wurde erfolgreich gespeichert</string>
+  <string name="smartbar_config_restore_success_toast">SmartBar-Profil erfolgreich wiederhergestellt</string>
+  <string name="smartbar_config_backup_error_toast">Fehler beim Speichern des Smartbar-Profils</string>
+  <string name="smartbar_config_restore_error_toast">Fehler beim Wiederherstellen des Smartbar-Profils</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Sperrbildschirm</string>
   <string name="lockscreen_config_title">Konfiguration</string>
@@ -917,7 +892,7 @@
   <string name="three_finger_gesture_info">Nach Auswahl eines der u. g. Ziele, mit 3 Fingern gleichzeitig von oben nach unten wischen, um die ausgewählte Aktion auszulösen.</string>
   <string name="three_finger_swipe_gesture_title">Drei-Finger-Geste</string>
   <!-- DirtyTweaks tabs slide effects -->
-  <string name="tabs_effect_title">Dirty Tweaks-Registerkarten Übergangseffekt</string>
+  <string name="tabs_effect_title">Übergangseffekt für Dirty-Tweaks-Registerkarten</string>
   <string name="effect_default">Standard</string>
   <string name="effect_accordion">Akkordeon</string>
   <string name="effect_background_to_foreground">Hintergrund zum Vordergrund</string>
@@ -935,4 +910,7 @@
   <string name="effect_zoom_in">Heranzoomen</string>
   <string name="effect_zoom_out_slide">Folie verkleinern</string>
   <string name="effect_zoom_out">Herauszoomen</string>
+  <!-- QS location sensors mode -->
+  <string name="qs_advanced_location_title">Advanced location settings</string>
+  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 </resources>

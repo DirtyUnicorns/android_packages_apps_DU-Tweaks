@@ -80,6 +80,10 @@
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Helderheid-pictogram </string>
   <string name="brightness_icon_summary">Een helderheid pictogram aan de linkerkant van de schuifregelaar weergeven om auto-helderheid aan te passen</string>
+  <!-- Quick settings columns -->
+  <string name="qs_num_columns_three">Three</string>
+  <string name="qs_num_columns_four">Four</string>
+  <string name="qs_num_columns_five">Five</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Immersive Recenten</string>
   <string name="immersive_recents_summary">De weergave van het recenten scherm wijzigen</string>
@@ -184,6 +188,10 @@
   <string name="battery_bar_style_regular">Normaal</string>
   <string name="battery_bar_style_center_mirrored">Midden-gespiegeld</string>
   <string name="battery_bar_style_reversed">Omgekeerd</string>
+  <string name="battery_bar_hide">Hide</string>
+  <string name="battery_bar_statusbar">Statusbar</string>
+  <string name="battery_bar_top_navbar">Top of navbar</string>
+  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Klok lettertypen</string>
   <string name="lock_clock_font_summary">Het standaardlettertype van de vergrendelscherm klokwidget wijzigen</string>
@@ -569,60 +577,27 @@
   <string name="fling_longpress_summary">Vergroten of verkleinen van de tijd die nodig is voor het uitvoeren van een lange klik</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Over Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is een briljante equalizer bar stijl audio-visualisering in de navigatiebalk als er muziek wordt afgespeeld. Pulse werkt niet met sommige audiobronnen bij het luisteren met de luidspreker van het apparaat</string>
+  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigatiebalk audio visualisatie</string>
+  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
   <string name="fling_show_pulse_title">Toon Pulse</string>
-  <string name="fling_show_pulse_summary">Audio-visualisering op de navigatiebalk</string>
+  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+  <string name="pulse_render_mode_title">Render mode</string>
+  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+  <string name="pulse_render_mode_solid_lines">Solid lines</string>
   <string name="fling_pulse_color">Pulse kleur</string>
   <string name="eos_fling_lavalamp_title">Lavalamp inschakelen</string>
   <string name="eos_fling_lavalamp_summary">Pulse animeert een vloeiende lava lamp stijl kleur mix</string>
   <string name="pulse_advanced_category">Geadvanceerd</string>
+  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+  <string name="pulse_custom_fudge_factor">Sanity level</string>
+  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
+  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Balk breedte</string>
-  <string name="pulse_dimen0">Standaard</string>
-  <string name="pulse_dimen1">7dp</string>
-  <string name="pulse_dimen2">8dp</string>
-  <string name="pulse_dimen3">9dp</string>
-  <string name="pulse_dimen4">10dp</string>
-  <string name="pulse_dimen5">11dp</string>
-  <string name="pulse_dimen6">12dp</string>
-  <string name="pulse_dimen7">13dp</string>
-  <string name="pulse_dimen8">15dp</string>
-  <string name="pulse_dimen9">16dp</string>
-  <string name="pulse_dimen10">17dp</string>
-  <string name="pulse_dimen11">18dp</string>
-  <string name="pulse_dimen12">19dp</string>
-  <string name="pulse_dimen13">20dp</string>
-  <string name="pulse_dimen14">21dp</string>
-  <string name="pulse_dimen15">22dp</string>
-  <string name="pulse_dimen16">23dp</string>
-  <string name="pulse_dimen17">24dp</string>
-  <string name="pulse_dimen18">25dp</string>
-  <string name="pulse_dimen19">26dp</string>
   <string name="pulse_custom_div">Balk afstand</string>
-  <string name="default_div">Standaard</string>
-  <string name="pulse_block_category">Standaard</string>
-  <string name="pulse_block_category_title">Blok grootte</string>
-  <string name="pulse_aggression">Aan/uit</string>
-  <string name="default_fill">Standaard</string>
-  <string name="default_pulse_empty">Standaard</string>
   <string name="pulse_filled_block_size">Blok grootte</string>
   <string name="pulse_empty_block_size">Blok afstand</string>
-  <string name="pulse_fill1">5dp</string>
-  <string name="pulse_fill2">6dp</string>
-  <string name="pulse_fill3">7dp</string>
-  <string name="pulse_fill4">8dp</string>
-  <string name="pulse_empty1">2dp</string>
-  <string name="pulse_empty2">3dp</string>
-  <string name="pulse_empty3">4dp</string>
-  <string name="pulse_empty4">0dp</string>
-  <string name="factor0">Normaal</string>
-  <string name="factor1">Ontspannen</string>
-  <string name="factor2">Langzaam</string>
-  <string name="factor3">Hyper</string>
-  <string name="factor4">Krankzinnig</string>
-  <string name="pulse_custom_fudge_factor">Visualizer gezondheidsniveau</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Balk grootte</string>
   <string name="portrait_title">Portret hoogte</string>
@@ -935,4 +910,7 @@
   <string name="effect_zoom_in">Inzoemen</string>
   <string name="effect_zoom_out_slide">Zoom out slide</string>
   <string name="effect_zoom_out">Uitzoemen</string>
+  <!-- QS location sensors mode -->
+  <string name="qs_advanced_location_title">Advanced location settings</string>
+  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 </resources>
