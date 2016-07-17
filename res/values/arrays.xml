@@ -43,9 +43,9 @@
     </string-array>
 
     <string-array name="qs_num_columns_entries">
-        <item>Three</item>
-        <item>Four</item>
-        <item>Five</item>
+        <item>@string/qs_num_columns_three</item>
+        <item>@string/qs_num_columns_four</item>
+        <item>@string/qs_num_columns_five</item>
     </string-array>
 
     <!-- Immersive Recents -->
@@ -423,10 +423,10 @@
 
     <!-- Battery bar -->
     <string-array name="battery_bar_entries">
-        <item>Hide</item>
-        <item>Statusbar</item>
-        <item>Top of navbar</item>
-        <item>Bottom of navbar</item>
+        <item>@string/battery_bar_hide</item>
+        <item>@string/battery_bar_statusbar</item>
+        <item>@string/battery_bar_top_navbar</item>
+        <item>@string/battery_bar_bottom_navbar</item>
     </string-array>
 
     <string-array name="battery_bar_values" translatable="false">
