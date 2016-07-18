@@ -22,10 +22,6 @@
             android:title="@string/show_running_tasks_title"
             android:defaultValue="false" />
 
-        <PreferenceCategory
-            android:key="stock_recents"
-            android:title="@string/aosp_recents_title" >
-
          <ListPreference
             android:key="immersive_recents"
             android:title="@string/immersive_recents_title"
@@ -34,6 +30,10 @@
             android:entryValues="@array/immersive_recents_values"
             android:summary="@string/power_menu_animation_summary"
             android:persistent="false" />
+
+        <PreferenceCategory
+            android:key="stock_recents"
+            android:title="@string/aosp_recents_title" >
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="recents_show_search_bar"
