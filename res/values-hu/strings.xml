@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">Fényerő ikon </string>
   <string name="brightness_icon_summary">Fényerő ikon megjelenítése a fényerőcsúszka bal oldalán az automatikus fényerő beállításához</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Három</string>
+  <string name="qs_num_columns_four">Négy</string>
+  <string name="qs_num_columns_five">Öt</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Teljes képernyős előzmények</string>
   <string name="immersive_recents_summary">Előzmények képernyő megjelenésének módosítása</string>
@@ -188,10 +188,10 @@
   <string name="battery_bar_style_regular">Hagyományos</string>
   <string name="battery_bar_style_center_mirrored">Középre-tükrözött</string>
   <string name="battery_bar_style_reversed">Fordított</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">Elrejtés</string>
+  <string name="battery_bar_statusbar">Állapotsor</string>
+  <string name="battery_bar_top_navbar">Navigációs sáv tetején</string>
+  <string name="battery_bar_bottom_navbar">Navigációs sáv alján</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Óra betűtípusok</string>
   <string name="lock_clock_font_summary">A zárképernyő óra alapértelmezett betűtípusának változtatása</string>
@@ -590,9 +590,9 @@
   <string name="eos_fling_lavalamp_summary">Pulse lávalámpa stílust animál a színkeverésnél</string>
   <string name="pulse_advanced_category">Haladó</string>
   <string name="pulse_legacy_mode_advanced_category">Halványuló blokkok üzemmód beállításai</string>
-  <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="pulse_custom_fudge_factor">Józan ész szint</string>
+  <string name="lavamp_solid_speed_title">Lávalámpa sebessége</string>
+  <string name="pulse_solid_dimen_category">Folytonos vonalak üzemmód beállításai</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Sáv szélessége</string>
   <string name="pulse_custom_div">Sáv térköz</string>
@@ -911,6 +911,6 @@
   <string name="effect_zoom_out_slide">Dia csökkentése</string>
   <string name="effect_zoom_out">Kicsinyítés</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">Speciális helymeghatározási beállítások</string>
+  <string name="qs_advanced_location_summary">Engedélyezi a helymeghatározás speciális beállításat a gyors beállításokban</string>
 </resources>

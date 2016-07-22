@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">Icono de brillo </string>
   <string name="brightness_icon_summary">Mostrar un icono de brillo a la izquierda de la barra de brillo para activar el brillo automático</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Tres</string>
+  <string name="qs_num_columns_four">Cuatro</string>
+  <string name="qs_num_columns_five">Cinco</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Modo inmersivo de recientes</string>
   <string name="immersive_recents_summary">Cambiar la vista de la pantalla de recientes</string>
@@ -129,9 +129,9 @@
   <string name="expanded_desktop_state">Estado del escritorio expandido</string>
   <string name="expanded_enabled_for_all">Activado para todos</string>
   <string name="expanded_user_configurable">Configurable por el usuario</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">Estilo de escritorio extendido</string>
+  <string name="expanded_desktop_style_description">Escoge un estilo de escritorio extendido</string>
+  <string name="expanded_desktop_title">Opciones del escritorio extendido</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Forzar vista de notificaciones expandidas</string>
   <string name="force_expanded_notifications_summary">Sólo disponible para aplicaciones que soporten las notificaciones ampliadas</string>
@@ -188,10 +188,10 @@
   <string name="battery_bar_style_regular">Normal</string>
   <string name="battery_bar_style_center_mirrored">Centro-reflejada</string>
   <string name="battery_bar_style_reversed">Invertido</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">Ocultar</string>
+  <string name="battery_bar_statusbar">Barra de estado</string>
+  <string name="battery_bar_top_navbar">Parte superior de la barra de navegación</string>
+  <string name="battery_bar_bottom_navbar">Parte inferior de la barra de navegación</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Fuentes de reloj</string>
   <string name="lock_clock_font_summary">Cambiar la fuente predeterminada del widget de reloj de la pantalla de bloqueo</string>
@@ -577,22 +577,22 @@
   <string name="fling_longpress_summary">Aumentar o disminuir el tiempo que toma realizar una pulsación larga</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Acerca de Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+  <string name="pulse_help_policy_notice_summary">Pulse es un ecualizador gráfico de sonido en la barra de navegación cuando suena la música. Pulse no funciona con algunas fuentes de audio cuando se escucha en el altavoz del dispositivo</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+  <string name="pulse_settings_summary">Ecualizador gráfico de la barra de navegación</string>
   <string name="fling_show_pulse_title">Mostrar Pulse</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
+  <string name="fling_show_pulse_summary">Ecualizador gráfico en la barra de navegación</string>
+  <string name="pulse_render_mode_title">Modo de renderizado</string>
+  <string name="pulse_render_mode_fading_bars">Desvanecimiento de bloques</string>
+  <string name="pulse_render_mode_solid_lines">Líneas sólidas</string>
   <string name="fling_pulse_color">Color de Pulse</string>
   <string name="eos_fling_lavalamp_title">Encienda la lámpara de Lava</string>
   <string name="eos_fling_lavalamp_summary">Pulso anima una suave mezcla de colores tipo lampara de lava</string>
   <string name="pulse_advanced_category">Ajustes avanzados</string>
-  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-  <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="pulse_legacy_mode_advanced_category">Ajustes del modo Desvanecimiento de bloques</string>
+  <string name="pulse_custom_fudge_factor">Nivel de cordura</string>
+  <string name="lavamp_solid_speed_title">Velocidad de lámpara de lava</string>
+  <string name="pulse_solid_dimen_category">Ajustes del modo de lineas solidas</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Ancho de la barra</string>
   <string name="pulse_custom_div">Espacio de la barra</string>
@@ -624,15 +624,15 @@
   <string name="smartbar_ime_action_none">Nada</string>
   <string name="smartbar_ime_action_arrows">Flechas de entrada</string>
   <string name="smartbar_ime_action_switcher">Conmutador teclado</string>
-  <string name="smartbar_backup_current_config_title">Save profile</string>
-  <string name="smartbar_restore_config_title">Restore profile</string>
-  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
-  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
-  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
-  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
-  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
-  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
-  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
+  <string name="smartbar_backup_current_config_title">Guarda el perfil</string>
+  <string name="smartbar_restore_config_title">Restaurar perfil</string>
+  <string name="smartbar_config_name_edit_dialog_title">Nombre del perfil de Smartbar</string>
+  <string name="smartbar_config_name_edit_dialog_message">Introduzca nombre o deje en blanco</string>
+  <string name="smartbar_config_dialog_title">Perfiles de Smartbar</string>
+  <string name="smartbar_config_backup_success_toast">Perfil de Smartbar guardado</string>
+  <string name="smartbar_config_restore_success_toast">Perfil de Smartbar restaurado con éxito</string>
+  <string name="smartbar_config_backup_error_toast">Error al guardar el perfil de Smartbar</string>
+  <string name="smartbar_config_restore_error_toast">Error restaurando el perfil de Smartbar</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Pantalla de bloqueo</string>
   <string name="lockscreen_config_title">Configuraciones de pantalla de bloqueo</string>
@@ -740,8 +740,8 @@
   <string name="system_app_remover">Eliminador de aplicaciones del sistema</string>
   <string name="listsystem">lista</string>
   <string name="cancel">Cancelar</string>
-  <string name="message_delete">Are you sure you want to delete this app?</string>
-  <string name="message_noselect">Nothing selected</string>
+  <string name="message_delete">¿Está seguro que desea eliminar esta aplicación?</string>
+  <string name="message_noselect">Nada seleccionado</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Administrador de tareas</string>
   <string name="enable_task_manager_summary">Habilitar/deshabilitar la acción para el botón de administrador de tareas en el área de la barra de estado</string>
@@ -892,25 +892,25 @@
   <string name="three_finger_gesture_info">Tras seleccionar un objetivo abajo, desliza verticalmente con tres dedos en un solo movimiento de arriba a abajo para ejecutar la acción seleccionada.</string>
   <string name="three_finger_swipe_gesture_title">Gesto con tres dedos</string>
   <!-- DirtyTweaks tabs slide effects -->
-  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
-  <string name="effect_default">Default</string>
-  <string name="effect_accordion">Accordion</string>
-  <string name="effect_background_to_foreground">Background to foreground</string>
-  <string name="effect_cube_in">Cube in</string>
-  <string name="effect_cube_out">Cube out</string>
-  <string name="effect_depth_page">Depth page</string>
-  <string name="effect_flip_horizontal">Flip horizontal</string>
-  <string name="effect_flip_vertical">Flip vertical</string>
-  <string name="effect_foreground_to_background">Foreground to background</string>
-  <string name="effect_rotate_down">Rotate down</string>
-  <string name="effect_rotate_up">Rotate up</string>
-  <string name="effect_scale_in_out">Scale in out</string>
-  <string name="effect_stack">Stack</string>
+  <string name="tabs_effect_title">Efecto de transición en las pestañas de las Dirty Tweaks</string>
+  <string name="effect_default">Por Defecto</string>
+  <string name="effect_accordion">Acordeón</string>
+  <string name="effect_background_to_foreground">Desde el fondo hacia adelante</string>
+  <string name="effect_cube_in">Cubo (dentro)</string>
+  <string name="effect_cube_out">Cubo (fuera)</string>
+  <string name="effect_depth_page">Página de profundidad</string>
+  <string name="effect_flip_horizontal">Voltear Horizontalmente</string>
+  <string name="effect_flip_vertical">Voltear verticalmente</string>
+  <string name="effect_foreground_to_background">Desde el frente hacia el fondo</string>
+  <string name="effect_rotate_down">Girar hacia abajo</string>
+  <string name="effect_rotate_up">Girar hacia arriba</string>
+  <string name="effect_scale_in_out">Escalar al salir</string>
+  <string name="effect_stack">Apilar</string>
   <string name="effect_tablet">Tablet</string>
-  <string name="effect_zoom_in">Zoom in</string>
-  <string name="effect_zoom_out_slide">Zoom out slide</string>
-  <string name="effect_zoom_out">Zoom out</string>
+  <string name="effect_zoom_in">Ampliar</string>
+  <string name="effect_zoom_out_slide">Disminuir el zoom al deslizar</string>
+  <string name="effect_zoom_out">Alejar</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">Configuración avanzada de la localización</string>
+  <string name="qs_advanced_location_summary">Activar la configuración avanzada de la localización en los ajustes rápidos</string>
 </resources>

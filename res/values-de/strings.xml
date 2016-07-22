@@ -26,11 +26,11 @@
   <string name="animations_category">Animationen</string>
   <string name="battery_category">Akku</string>
   <string name="expanded_desktop_category">Erweiterter Desktop</string>
-  <string name="misctweaks_category">Verschiedene Einstellungen</string>
+  <string name="misctweaks_category">Verschiedene Optimierungen</string>
   <string name="powermenu_category">Startmenü</string>
   <string name="quicksettings_category">Schnelleinstellungen</string>
   <string name="recents_category">Anwendungsverlauf</string>
-  <string name="statusbar_items_category">Statusleisten-Symbole</string>
+  <string name="statusbar_items_category">Statusleisten-Elemente</string>
   <string name="statusbar_notifications_category">Benachrichtigungen</string>
   <string name="lockscreen_notifications_category">Sperrbildschirm-Benachrichtigungen</string>
   <string name="wakelockblocker_category">Wakelocks blockieren</string>
@@ -38,13 +38,13 @@
   <string name="doubletap_gestures_category">Doppeltes Tippen (Gesten)</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Mehrfenstermodus</string>
-  <string name="listview_animations_category">Listenanmationen</string>
+  <string name="listview_animations_category">Listenanimationen</string>
   <string name="system_animations_category">Systemanimationen</string>
   <string name="omniswitch_category">OmniSwitch</string>
   <string name="weather_category">Wetter</string>
-  <string name="breathing_notifications_category">Pulsierende Benachrichtigungen</string>
+  <string name="breathing_notifications_category">Wiederkehrende Benachrichtigungen</string>
   <string name="button_settings">Tasten</string>
-  <string name="category_heads_up">Heads-Up Benachrichtigungen</string>
+  <string name="category_heads_up">Heads-Up-Benachrichtigungen</string>
   <string name="lockscreen_colors_fonts_category_title">Farben &amp; Schriftarten</string>
   <!-- OmniSwitch -->
   <string name="aosp_recents_title">AOSP-Anwendungsverlauf</string>
@@ -61,7 +61,7 @@
   <string name="dirtytweaks_dialog_toast">LESEN SIE ALLES DURCH!</string>
   <!-- Toast Icons -->
   <string name="toast_icon_title">Toast-Symbol</string>
-  <string name="toast_icon_summary">Zeige das zugehörige App-Symbol mit dem Toast an</string>
+  <string name="toast_icon_summary">Das zugehörige App-Symbol mit dem Toast anzeigen</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Schnelles Öffnen</string>
   <string name="summary_quick_pulldown">%1$s Ecke der Statusleiste öffnet Schnelleinstellungen</string>
@@ -76,18 +76,18 @@
   <string name="smart_pulldown_all">Keine löschbaren oder dauerhaften</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Helligkeitsregler</string>
-  <string name="qs_brightness_slider_summary">Zeigt einen Helligkeitsregler in den Schnelleinstellungen an</string>
+  <string name="qs_brightness_slider_summary">Helligkeitsregler in den Schnelleinstellungen anzeigen</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Helligkeits-Symbol </string>
   <string name="brightness_icon_summary">Zeigt ein Symbol für die Helligkeit auf der linken Seite des Helligkeitsreglers, um die Auto-Helligkeit anzupassen</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Drei</string>
+  <string name="qs_num_columns_four">Vier</string>
+  <string name="qs_num_columns_five">Fünf</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Vollbild-Anwendungsverlauf</string>
-  <string name="immersive_recents_summary">Ändert die Ansicht des Anwendungsverlaufs</string>
-  <string name="immersive_recents_dialog_title">Wähle eine Ansicht</string>
+  <string name="immersive_recents_summary">Ansicht des Anwendungsverlaufs ändern</string>
+  <string name="immersive_recents_dialog_title">Ansicht auswählen</string>
   <string name="immersive_recents_default">Standard</string>
   <string name="immersive_recents_fullscreen">Vollbild</string>
   <string name="immersive_recents_statusbar">Nur Statusleiste</string>
@@ -103,7 +103,7 @@
   <string name="powermenu_airplane">Flugmodus</string>
   <string name="powermenu_settings">Einstellungen</string>
   <string name="powermenu_lockdown">Sperren</string>
-  <string name="powermenu_soundpanel">Benachrichtigungsmodus</string>
+  <string name="powermenu_soundpanel">Ton-Einstellungen</string>
   <string name="powermenu_options">Zusätzliche Optionen</string>
   <string name="powermenu_dialog_dim">Dialog-Hintergrund dimmen</string>
   <!-- Advanced reboot options -->
@@ -129,31 +129,31 @@
   <string name="expanded_desktop_state">Erweiterter Status</string>
   <string name="expanded_enabled_for_all">Für alle aktiviert</string>
   <string name="expanded_user_configurable">Benutzereinstellungen</string>
-  <string name="expanded_desktop_style">Erweiterter Desktop-Stil</string>
-  <string name="expanded_desktop_style_description">Wählen Sie einen Standard-Stil für den erweiterten Desktop aus</string>
-  <string name="expanded_desktop_title">Erweiterte Desktop-Optionen</string>
+  <string name="expanded_desktop_style">Aussehen des erweiterten Desktops</string>
+  <string name="expanded_desktop_style_description">Voreinstellung für das Aussehen des erweiterten Desktop auswählen</string>
+  <string name="expanded_desktop_title">Optionen des erweiterten Desktops</string>
   <!-- Force expanded notifications -->
-  <string name="force_expanded_notifications_title">Erweiterte Benachrichtigungen erzwingen</string>
+  <string name="force_expanded_notifications_title">Benachrichtigungen immer erweitern</string>
   <string name="force_expanded_notifications_summary">Nur für Anwendungen nutzbar, die erweiterte Benachrichtigungen unterstützen.</string>
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Immersive-Benachrichtigungen deaktivieren</string>
   <string name="disable_immersive_message_summary">Dadurch werden alle Benachrichtigungen im Immersive-Modus ausgeblendet</string>
   <!-- Disabling FC notifications -->
   <string name="disable_fc_notifications_title">FC-Benachrichtigungen deaktivieren</string>
-  <string name="disable_fc_notifications_summary">Verbirgt alle FC-Meldungen</string>
+  <string name="disable_fc_notifications_summary">Dadurch werden alle Benachrichtigungen zu Programmabstürzen (force close) unterdrückt</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">DT2S auf der Statusleiste</string>
   <string name="double_tap_to_sleep_summary">Tippen Sie zweimal auf die Statusleiste, um das Gerät in den Ruhezustand zu versetzen</string>
   <string name="double_tap_sleep_nav_bar_title">DT2S auf Navigationsleiste</string>
   <string name="double_tap_sleep_nav_bar_summary">Tippen Sie zweimal auf die Navigationsleiste, um das Gerät in den Ruhezustand zu versetzen</string>
   <string name="double_tap_to_sleep_lockscreen_title">DT2S auf Sperrbildschirm</string>
-  <string name="double_tap_to_sleep_lockscreen_summary">Tippen Sie zweimal auf den Sperrbildschirm, um das Gerät in den Ruhezustand zu versetzen</string>
+  <string name="double_tap_to_sleep_lockscreen_summary">Tippen Sie zweimal auf das obere Drittel oder die untere Verknüpfungsreihe des Sperrbildschirms, um das Gerät in den Ruhezustand zu versetzen</string>
   <!-- Ad Blocker -->
   <string name="disable_ads_title">Werbung deaktivieren</string>
-  <string name="disable_ads_summary">Wechselt die Host-Datei aus um Werbung zu deaktivieren</string>
+  <string name="disable_ads_summary">Hosts-Datei austauschen, um Werbung zu deaktivieren</string>
   <!-- Volume Key Rotation -->
   <string name="swap_volume_buttons_title">Ausrichtung</string>
-  <string name="swap_volume_buttons_summary">Tausche die Position der Lautstärketasten, wenn der im Querformat ist</string>
+  <string name="swap_volume_buttons_summary">Funktion der Lautstärketasten bei Bildschirmdrehung vertauschen</string>
   <!-- Volume rocker wake -->
   <string name="volume_rocker_wake_title">Wecken mit Lautstärketaste</string>
   <string name="volume_rocker_wake_summary">Drücken der Lautstärketaste weckt Ihr Gerät\nÜberschreibt die Wiedergabesteuerung</string>
@@ -162,7 +162,7 @@
   <string name="volume_rocker_music_controls_summary">Bei ausgeschaltetem Bildschirm wird durch langes Drücken der Lautstärketaste der Musiktitel gewechselt</string>
   <!-- Battery options -->
   <string name="battery_title">Akku</string>
-  <string name="battery2_summary">Akku-Symbol und Prozentanzeige anpassen</string>
+  <string name="battery2_summary">Ladestandsanzeige und Akkusymbol anpassen</string>
   <string name="status_bar_battery_style_title">Stil des Akkusymbols</string>
   <string name="status_bar_battery_style_icon_portrait">Symbol (Hochformat)</string>
   <string name="status_bar_battery_style_icon_landscape">Symbol (Querformat)</string>
@@ -188,14 +188,14 @@
   <string name="battery_bar_style_regular">Standard</string>
   <string name="battery_bar_style_center_mirrored">Mittig-gespiegelt</string>
   <string name="battery_bar_style_reversed">Umgekehrt</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">Ausblenden</string>
+  <string name="battery_bar_statusbar">Statusleiste</string>
+  <string name="battery_bar_top_navbar">Über der Navigationsleiste</string>
+  <string name="battery_bar_bottom_navbar">Unter der Navigationsleiste</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Sperrbildschirm-Schriftart</string>
   <string name="lock_clock_font_summary">Ändert die Schriftart der Uhr auf dem Sperrbildschirm</string>
-  <string name="lock_clock_font_dialog_title">Wähle die Schriftart der Uhr</string>
+  <string name="lock_clock_font_dialog_title">Schriftart auswählen</string>
   <string name="lock_clock_font_normal">Roboto</string>
   <string name="lock_clock_font_bold">Roboto fett</string>
   <string name="lock_clock_font_italic">Roboto kursiv</string>
@@ -577,22 +577,22 @@
   <string name="fling_longpress_summary">Erhöht oder verringert die Zeit bei langem Druck bis eine Aktion ausgeführt wird</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Über Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+  <string name="pulse_help_policy_notice_summary">Pulse ist ein brillianter Equalizer zum Visualisieren von Musik auf der Navigationsleiste. Pulse funktioniert nicht mit allen Audioquellen, wenn Musik über die Lautsprecher gehört wird</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+  <string name="pulse_settings_summary">Grafischer Navigationsleisten-Equalizer</string>
   <string name="fling_show_pulse_title">Pulse anzeigen</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
+  <string name="fling_show_pulse_summary">Grafischer Audio-Equalizer in der Navigationsleiste</string>
+  <string name="pulse_render_mode_title">Darstellungsart</string>
+  <string name="pulse_render_mode_fading_bars">Verblassende Blöcke</string>
+  <string name="pulse_render_mode_solid_lines">Durchgezogene Linien</string>
   <string name="fling_pulse_color">Farbe</string>
   <string name="eos_fling_lavalamp_title">Lavalampe einschalten</string>
   <string name="eos_fling_lavalamp_summary">Pulse wechselt automatisch die Farben in einem Lavalampenstil</string>
   <string name="pulse_advanced_category">Erweitert</string>
-  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-  <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="pulse_legacy_mode_advanced_category">Einstellungen für verblassende Blöcke</string>
+  <string name="pulse_custom_fudge_factor">Vernünftiger Pegel</string>
+  <string name="lavamp_solid_speed_title">Lavalampen-Geschwindigkeit</string>
+  <string name="pulse_solid_dimen_category">Einstellungen für durchgezogene Linien</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Leisten-Breite</string>
   <string name="pulse_custom_div">Leisten-Abstand</string>
@@ -911,6 +911,6 @@
   <string name="effect_zoom_out_slide">Folie verkleinern</string>
   <string name="effect_zoom_out">Herauszoomen</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">Erweiterte Standorteinstellungen</string>
+  <string name="qs_advanced_location_summary">Erweiterte Einstellungen für den Standort in den Schnelleinstellungen aktivieren</string>
 </resources>

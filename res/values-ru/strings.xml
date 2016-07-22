@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">Значок яркости</string>
   <string name="brightness_icon_summary">Показать значок включения авто-яркости слева от регулятора</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Три</string>
+  <string name="qs_num_columns_four">Четыре</string>
+  <string name="qs_num_columns_five">Пять</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Расширенные недавние</string>
   <string name="immersive_recents_summary">Расширенный вид в недавних</string>
@@ -188,10 +188,10 @@
   <string name="battery_bar_style_regular">Обычное</string>
   <string name="battery_bar_style_center_mirrored">По центру (зеркально)</string>
   <string name="battery_bar_style_reversed">В обратную сторону</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">Скрыта</string>
+  <string name="battery_bar_statusbar">Строка состояния</string>
+  <string name="battery_bar_top_navbar">Сверху панели навигации</string>
+  <string name="battery_bar_bottom_navbar">Снизу панели навигации</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Шрифт часов</string>
   <string name="lock_clock_font_summary">Изменить шрифт виджета часов на экране блокировки</string>
@@ -577,22 +577,22 @@
   <string name="fling_longpress_summary">Увеличить или уменьшить время, необходимое для длительно нажатия</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">О Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+  <string name="pulse_help_policy_notice_summary">Pulse - это блестящий и стильный визуализатор звука, который отображается на панели навигации при воспроизведении музыки. Pulse не работает с некоторыми источниками звука при прослушивании через динамик устройства</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+  <string name="pulse_settings_summary">Аудио визуализация панели навигации</string>
   <string name="fling_show_pulse_title">Включить Pulse</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
+  <string name="fling_show_pulse_summary">Включить визуализацию аудио в панели навигации</string>
+  <string name="pulse_render_mode_title">Режим визуализации</string>
+  <string name="pulse_render_mode_fading_bars">Затухающие блоки</string>
+  <string name="pulse_render_mode_solid_lines">Сплошные линии</string>
   <string name="fling_pulse_color">Цвет Pulse</string>
   <string name="eos_fling_lavalamp_title">Включить \"Лава Лампу\"</string>
   <string name="eos_fling_lavalamp_summary">Включить плавно меняющиеся цвета визуализатора Pulse</string>
   <string name="pulse_advanced_category">Расширенные настройки</string>
-  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-  <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="pulse_legacy_mode_advanced_category">Настройки затухающих блоков</string>
+  <string name="pulse_custom_fudge_factor">Уровень безумия</string>
+  <string name="lavamp_solid_speed_title">Скорость  \"Лава Лампы\"</string>
+  <string name="pulse_solid_dimen_category">Настройки сплошных линий</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Ширина</string>
   <string name="pulse_custom_div">Интервал</string>
@@ -911,6 +911,6 @@
   <string name="effect_zoom_out_slide">Уменьшение слайдом</string>
   <string name="effect_zoom_out">Уменьшение</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">Расширенные настройки местоположения</string>
+  <string name="qs_advanced_location_summary">Включить расширенные настройки для местоположения в быстрых настройках</string>
 </resources>

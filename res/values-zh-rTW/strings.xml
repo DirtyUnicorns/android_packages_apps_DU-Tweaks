@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">亮度圖示</string>
   <string name="brightness_icon_summary">在亮度滑桿左邊顯示一個亮度圖示以用來調整是否開啟自動亮度</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">三</string>
+  <string name="qs_num_columns_four">四</string>
+  <string name="qs_num_columns_five">五</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">沉浸式總覽</string>
   <string name="immersive_recents_summary">變更總覽畫面樣式</string>
@@ -129,9 +129,9 @@
   <string name="expanded_desktop_state">擴展狀態</string>
   <string name="expanded_enabled_for_all">全部擴展</string>
   <string name="expanded_user_configurable">使用者可設定</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">擴展桌面樣式</string>
+  <string name="expanded_desktop_style_description">選擇預設擴展桌面樣式</string>
+  <string name="expanded_desktop_title">擴展桌面選項</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">強制擴展通知</string>
   <string name="force_expanded_notifications_summary">僅適用於支援擴展通知的應用程式</string>
@@ -188,8 +188,8 @@
   <string name="battery_bar_style_regular">一般</string>
   <string name="battery_bar_style_center_mirrored">中心對稱</string>
   <string name="battery_bar_style_reversed">反向</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
+  <string name="battery_bar_hide">隱藏</string>
+  <string name="battery_bar_statusbar">狀態列</string>
   <string name="battery_bar_top_navbar">Top of navbar</string>
   <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
   <!-- Lock Clock Fonts -->

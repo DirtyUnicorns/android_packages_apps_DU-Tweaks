@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">Kontrola jasności </string>
   <string name="brightness_icon_summary">Pokaż ikonę kontroli jasności, po lewej stronie suwaka jasności, aby dostosować automatyczną jasność</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Trzy</string>
+  <string name="qs_num_columns_four">Cztery</string>
+  <string name="qs_num_columns_five">Pięć</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Pełnoekranowe Ostatnio uruchomione</string>
   <string name="immersive_recents_summary">Zmiana widoku ekranu ostatnio uruchomionych</string>
@@ -188,10 +188,10 @@
   <string name="battery_bar_style_regular">Zwykły</string>
   <string name="battery_bar_style_center_mirrored">Wyśrodkowany</string>
   <string name="battery_bar_style_reversed">Odwrócony</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">Ukryj</string>
+  <string name="battery_bar_statusbar">Pasek stanu</string>
+  <string name="battery_bar_top_navbar">Góra paska nawigacji</string>
+  <string name="battery_bar_bottom_navbar">Dół paska nawigacji</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Czcionka zegara</string>
   <string name="lock_clock_font_summary">Zmień domyśłną czcionkę widżetu zegara na ekranie blokady</string>
@@ -577,22 +577,22 @@
   <string name="fling_longpress_summary">Zwiększ lub zmniejsz czas potrzebny na wykrycie długiego przytrzymania</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">O Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+  <string name="pulse_help_policy_notice_summary">Pulse jest genialną wizualizacją odtwarzanego dźwięku na pasku nawigacji. Pulse nie działa z niektórymi odtwarzaczami podczas odtwarzania przez głośnik urządzenia</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+  <string name="pulse_settings_summary">Wizualizacja audio na pasku nawigacji</string>
   <string name="fling_show_pulse_title">Pokaż Pulse</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
+  <string name="fling_show_pulse_summary">Wizualizacja korektora graficznego dźwięku na pasku nawigacji</string>
+  <string name="pulse_render_mode_title">Tryb renderowania</string>
+  <string name="pulse_render_mode_fading_bars">Zanikanie bloków</string>
+  <string name="pulse_render_mode_solid_lines">Linie ciągłe</string>
   <string name="fling_pulse_color">Kolor Pulse</string>
   <string name="eos_fling_lavalamp_title">Włącz lampę lawową</string>
   <string name="eos_fling_lavalamp_summary">Zmiana kolorów animacji Pulse w stylu lamp lawowych</string>
   <string name="pulse_advanced_category">Zaawansowane</string>
-  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-  <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="pulse_legacy_mode_advanced_category">Ustawienia trybu zanikania</string>
+  <string name="pulse_custom_fudge_factor">Poziom szaleństwa</string>
+  <string name="lavamp_solid_speed_title">Prędkość lampy z lawą</string>
+  <string name="pulse_solid_dimen_category">Ustawienia trybu linii ciągłych</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Szerokość</string>
   <string name="pulse_custom_div">Odstęp</string>
@@ -911,6 +911,6 @@
   <string name="effect_zoom_out_slide">Pomniejsz slajd</string>
   <string name="effect_zoom_out">Pomniejsz</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">Zaawansowane ustawienia lokalizacji</string>
+  <string name="qs_advanced_location_summary">Włącz zaawansowane ustawienia lokalizacji w Szybkich Ustawieniach</string>
 </resources>

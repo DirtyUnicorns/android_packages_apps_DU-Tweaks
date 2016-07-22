@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">Icona luminosità </string>
   <string name="brightness_icon_summary">Visualizza un\'icona di luminosità a sinistra dello slider per la luminosità per regolare la luminosità automatica</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Tre</string>
+  <string name="qs_num_columns_four">Quattro</string>
+  <string name="qs_num_columns_five">Cinque</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Recenti Immersivi</string>
   <string name="immersive_recents_summary">Modificare la visualizzazione della schermata dei recenti</string>
@@ -188,10 +188,10 @@
   <string name="battery_bar_style_regular">Normale</string>
   <string name="battery_bar_style_center_mirrored">Al centro-specchiato</string>
   <string name="battery_bar_style_reversed">Invertito</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">Nascondi</string>
+  <string name="battery_bar_statusbar">Barra di stato</string>
+  <string name="battery_bar_top_navbar">Sopra la barra di navigazione</string>
+  <string name="battery_bar_bottom_navbar">Sotto la barra di navigazione</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Caratteri orologio</string>
   <string name="lock_clock_font_summary">Modifica il carattere di default del widget dell\'orologio nella lockscreen</string>
@@ -577,22 +577,22 @@
   <string name="fling_longpress_summary">Aumenta o diminuisce il tempo impiegato per eseguire una pressione prolungata</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Riguardo Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+  <string name="pulse_help_policy_notice_summary">Pulse è un brillante equalizzatore grafico audio visualizzato sulla barra di navigazione durante la riproduzione musicale. Pulse non funziona con alcune fonti audio durante l\'ascolto sull\'altoparlante del dispositivo</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+  <string name="pulse_settings_summary">Equalizzatore grafico audio barra di navigazione</string>
   <string name="fling_show_pulse_title">Mostra Pulse</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
+  <string name="fling_show_pulse_summary">Equalizzatore grafico audio sulla barra di navigazione</string>
+  <string name="pulse_render_mode_title">Modalità Rendering</string>
+  <string name="pulse_render_mode_fading_bars">Dissolvenza blocchi</string>
+  <string name="pulse_render_mode_solid_lines">Linee continue</string>
   <string name="fling_pulse_color">Colore di Pulse</string>
   <string name="eos_fling_lavalamp_title">Abilita Lampada di Lava</string>
   <string name="eos_fling_lavalamp_summary">Pulse mescola e cambia colore come una lampada di lava</string>
   <string name="pulse_advanced_category">Avanzate</string>
-  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-  <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="pulse_legacy_mode_advanced_category">Impostazioni della modalità dissolvenza blocchi</string>
+  <string name="pulse_custom_fudge_factor">Livello di buon senso</string>
+  <string name="lavamp_solid_speed_title">Velocità Lava Lamp</string>
+  <string name="pulse_solid_dimen_category">Impostazioni della modalità linee continue</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Larghezza barra</string>
   <string name="pulse_custom_div">Spaziatura della barra</string>
@@ -911,6 +911,6 @@
   <string name="effect_zoom_out_slide">Zoom indietro diapositiva</string>
   <string name="effect_zoom_out">Zoom indietro</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">Impostazioni di posizione avanzata</string>
+  <string name="qs_advanced_location_summary">Attivare le impostazioni avanzate per la posizione nelle impostazioni rapide</string>
 </resources>

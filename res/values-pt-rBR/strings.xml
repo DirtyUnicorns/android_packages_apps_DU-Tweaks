@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">Brilho </string>
   <string name="brightness_icon_summary">Mostrar um ícone de brilho a esquerda do controle deslizante de brilho para ajustar o auto-brilho</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Três</string>
+  <string name="qs_num_columns_four">Quatro</string>
+  <string name="qs_num_columns_five">Cinco</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Imersivas Recentes</string>
   <string name="immersive_recents_summary">Alterar a exibição das telas recentes</string>
@@ -190,10 +190,10 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="battery_bar_style_regular">Regular</string>
   <string name="battery_bar_style_center_mirrored">Centro-espelhado</string>
   <string name="battery_bar_style_reversed">Invertida</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">Ocultar</string>
+  <string name="battery_bar_statusbar">Barra de status</string>
+  <string name="battery_bar_top_navbar">Parte superior da barra de navegação</string>
+  <string name="battery_bar_bottom_navbar">Parte inferior da barra de navegação</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Fontes de relógio</string>
   <string name="lock_clock_font_summary">Alterar a fonte padrão do widget de relógio na tela de bloqueio</string>
@@ -579,22 +579,22 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="fling_longpress_summary">Aumentar ou diminuir o tempo que leva para executar um toque longo</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Sobre o Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+  <string name="pulse_help_policy_notice_summary">Pulse é um equalizador gráfico de áudio na barra de navegação quando a música toca. Pulse não funciona com algumas fontes de áudio ao ouvir pelo alto-falante do dispositivo</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+  <string name="pulse_settings_summary">Equalizador gráfico de áudio da barra de navegação</string>
   <string name="fling_show_pulse_title">Mostrar Pulse</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
+  <string name="fling_show_pulse_summary">Equalizador gráfico de áudio na barra de navegação</string>
+  <string name="pulse_render_mode_title">Modo de Renderização</string>
+  <string name="pulse_render_mode_fading_bars">Blocos de desvanecimento</string>
+  <string name="pulse_render_mode_solid_lines">Linhas sólidas</string>
   <string name="fling_pulse_color">Cor do Pulse</string>
   <string name="eos_fling_lavalamp_title">Acender a lâmpada de lava</string>
   <string name="eos_fling_lavalamp_summary">Animar o Pulse com uma mistura de cor suave com um estilo de lâmpada de lava</string>
   <string name="pulse_advanced_category">Avançado</string>
-  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-  <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="pulse_legacy_mode_advanced_category">Configurações de modo de blocos de desvanecimento</string>
+  <string name="pulse_custom_fudge_factor">Nível de sanidade</string>
+  <string name="lavamp_solid_speed_title">Velocidade de lâmpada de lava</string>
+  <string name="pulse_solid_dimen_category">Configurações do modo de linhas sólidas</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Largura da barra</string>
   <string name="pulse_custom_div">Barra de espaçamento</string>
@@ -913,6 +913,6 @@ Wakelock é uma função que permite que alguns aplicativos impeçam o dispositi
   <string name="effect_zoom_out_slide">Deslize de diminuição de zoom</string>
   <string name="effect_zoom_out">Diminuir zoom</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">Configurações avançadas de localização</string>
+  <string name="qs_advanced_location_summary">Ativar as configurações avançadas de localização em Configurações Rápidas</string>
 </resources>
