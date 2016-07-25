@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">自动亮度图标 </string>
   <string name="brightness_icon_summary">在亮度滑块左侧显示一个图标用于调节是否开启自动调节亮度功能</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">3</string>
+  <string name="qs_num_columns_four">4</string>
+  <string name="qs_num_columns_five">5</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">沉浸模式</string>
   <string name="immersive_recents_summary">更改近期任务列表的视图</string>
@@ -129,9 +129,9 @@
   <string name="expanded_desktop_state">扩展桌面状态</string>
   <string name="expanded_enabled_for_all">为全部应用启用</string>
   <string name="expanded_user_configurable">用户配置</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">扩展桌面</string>
+  <string name="expanded_desktop_style_description">选择默认扩展桌面</string>
+  <string name="expanded_desktop_title">扩展桌面设置</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">强制使用扩展通知</string>
   <string name="force_expanded_notifications_summary">该选项仅可用于支持扩展通知的应用</string>
@@ -188,10 +188,10 @@
   <string name="battery_bar_style_regular">居左</string>
   <string name="battery_bar_style_center_mirrored">居中</string>
   <string name="battery_bar_style_reversed">居右</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">隐藏</string>
+  <string name="battery_bar_statusbar">状态栏</string>
+  <string name="battery_bar_top_navbar">导航栏顶部</string>
+  <string name="battery_bar_bottom_navbar">导航栏底部</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">时钟字体</string>
   <string name="lock_clock_font_summary">更改锁屏界面时钟小部件的默认字体</string>
@@ -312,7 +312,7 @@
   <string name="listview_interpolator_title">插值器</string>
   <string name="listview_accelerate_interpolator">加速</string>
   <string name="listview_decelerate_interpolator">减速</string>
-  <string name="listview_accelerate_decelerate_interpolator">加速和减速</string>
+  <string name="listview_accelerate_decelerate_interpolator">先加速后减速</string>
   <string name="listview_anticipate_interpolator">预留</string>
   <string name="listview_overshoot_interpolator">越界</string>
   <string name="listview_anticipate_overshoot_interpolator">预留和越界</string>
@@ -577,22 +577,22 @@
   <string name="fling_longpress_summary">增加或减少执行长按的时间</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">关于Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+  <string name="pulse_help_policy_notice_summary">Pulse 是一种在播放音乐时，位于导航栏的智能均衡器式的音频显示方式。当使用扬声器时， Pulse 在某些音源下可能不工作</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+  <string name="pulse_settings_summary">导航栏均衡器式的音频显示方式</string>
   <string name="fling_show_pulse_title">显示Pulse</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
+  <string name="fling_show_pulse_summary">位于导航栏的均衡器式的音频显示方式</string>
+  <string name="pulse_render_mode_title">渲染模式</string>
+  <string name="pulse_render_mode_fading_bars">虚线</string>
+  <string name="pulse_render_mode_solid_lines">实线</string>
   <string name="fling_pulse_color">Pulse颜色</string>
-  <string name="eos_fling_lavalamp_title">霓虹灯</string>
+  <string name="eos_fling_lavalamp_title">开启霓虹灯</string>
   <string name="eos_fling_lavalamp_summary">可视化样式以平滑的霓虹灯风格颜色混合</string>
   <string name="pulse_advanced_category">高级</string>
-  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-  <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="pulse_legacy_mode_advanced_category">虚线模式设置</string>
+  <string name="pulse_custom_fudge_factor">理智水平</string>
+  <string name="lavamp_solid_speed_title">霓虹灯速度</string>
+  <string name="pulse_solid_dimen_category">实线模式设置</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">块宽度</string>
   <string name="pulse_custom_div">块间距</string>
@@ -624,15 +624,15 @@
   <string name="smartbar_ime_action_none">无</string>
   <string name="smartbar_ime_action_arrows">输入箭头</string>
   <string name="smartbar_ime_action_switcher">键盘切换器</string>
-  <string name="smartbar_backup_current_config_title">Save profile</string>
-  <string name="smartbar_restore_config_title">Restore profile</string>
-  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
-  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
-  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
-  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
-  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
-  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
-  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
+  <string name="smartbar_backup_current_config_title">保存配置文件</string>
+  <string name="smartbar_restore_config_title">恢复配置文件</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar 配置文件名称</string>
+  <string name="smartbar_config_name_edit_dialog_message">请输入名称或留空</string>
+  <string name="smartbar_config_dialog_title">Smartbar 配置文件</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar 配置文件已成功保存</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar 配置文件已成功恢复</string>
+  <string name="smartbar_config_backup_error_toast">在保存 Smartbar 配置文件时出错</string>
+  <string name="smartbar_config_restore_error_toast">在恢复 Smartbar 配置文件时出错</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">锁屏</string>
   <string name="lockscreen_config_title">锁屏配置</string>
@@ -690,7 +690,7 @@
   <string name="shortcuts_icon_picker_fitness">健身</string>
   <string name="shortcuts_icon_picker_gallery">图库</string>
   <string name="shortcuts_icon_picker_gears">Gears</string>
-  <string name="shortcuts_icon_picker_google_small">谷歌</string>
+  <string name="shortcuts_icon_picker_google_small">Google</string>
   <string name="shortcuts_icon_picker_gplus">Google+</string>
   <string name="shortcuts_icon_picker_gtalk">环聊</string>
   <string name="shortcuts_icon_picker_help">帮助</string>
@@ -740,8 +740,8 @@
   <string name="system_app_remover">系统应用程序卸载器</string>
   <string name="listsystem">列表</string>
   <string name="cancel">取消</string>
-  <string name="message_delete">Are you sure you want to delete this app?</string>
-  <string name="message_noselect">Nothing selected</string>
+  <string name="message_delete">您确定要删除此应用程序吗？</string>
+  <string name="message_noselect">未选择任何内容</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">任务管理器</string>
   <string name="enable_task_manager_summary">在扩展状态栏启用或禁用任务管理器按钮</string>
@@ -867,7 +867,7 @@
   <string name="quicksettings_tiles_category">快捷开关动画选项</string>
   <string name="qs_tile_animation_style_title">动画样式</string>
   <string name="qs_tile_animation_duration_title">动画持续时长</string>
-  <string name="qs_tile_animation_interpolator_title">缓动函数</string>
+  <string name="qs_tile_animation_interpolator_title">瓷砖动画插值器</string>
   <string name="qs_tile_animation_style_off">无动画</string>
   <string name="qs_tile_animation_style_flip">翻转</string>
   <string name="qs_tile_animation_style_rotate">旋转</string>
@@ -877,11 +877,11 @@
   <string name="qs_tile_animation_interpolator_linearInterpolator">线性</string>
   <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速</string>
   <string name="qs_tile_animation_interpolator_decelerateInterpolator">减速</string>
-  <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">先快后慢</string>
+  <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">先加速后减速</string>
   <string name="qs_tile_animation_interpolator_bounceInterpolator">弹跳</string>
   <string name="qs_tile_animation_interpolator_overshootInterpolator">越界</string>
   <string name="qs_tile_animation_interpolator_anticipateInterpolator">预留</string>
-  <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">预留 越界</string>
+  <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">预留和越界</string>
   <!-- Screenshot crop and share -->
   <string name="screenshot_cat_title">屏幕快照选项</string>
   <string name="screenshot_crop_and_share_title">裁剪&amp; 分享</string>
@@ -892,25 +892,25 @@
   <string name="three_finger_gesture_info">在下面选择一个动作以后，使用三指从上往下滑动来触发选中的动作。</string>
   <string name="three_finger_swipe_gesture_title">三指滑动手势</string>
   <!-- DirtyTweaks tabs slide effects -->
-  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
-  <string name="effect_default">Default</string>
-  <string name="effect_accordion">Accordion</string>
-  <string name="effect_background_to_foreground">Background to foreground</string>
-  <string name="effect_cube_in">Cube in</string>
-  <string name="effect_cube_out">Cube out</string>
-  <string name="effect_depth_page">Depth page</string>
-  <string name="effect_flip_horizontal">Flip horizontal</string>
-  <string name="effect_flip_vertical">Flip vertical</string>
-  <string name="effect_foreground_to_background">Foreground to background</string>
-  <string name="effect_rotate_down">Rotate down</string>
-  <string name="effect_rotate_up">Rotate up</string>
-  <string name="effect_scale_in_out">Scale in out</string>
-  <string name="effect_stack">Stack</string>
-  <string name="effect_tablet">Tablet</string>
-  <string name="effect_zoom_in">Zoom in</string>
-  <string name="effect_zoom_out_slide">Zoom out slide</string>
-  <string name="effect_zoom_out">Zoom out</string>
+  <string name="tabs_effect_title">Dirty Tweaks 选项卡切换效果</string>
+  <string name="effect_default">不使用沉浸模式 (默认)</string>
+  <string name="effect_accordion">可折叠的</string>
+  <string name="effect_background_to_foreground">从背景到前景</string>
+  <string name="effect_cube_in">立方体内部</string>
+  <string name="effect_cube_out">立方体外部</string>
+  <string name="effect_depth_page">溶解</string>
+  <string name="effect_flip_horizontal">水平翻转</string>
+  <string name="effect_flip_vertical">垂直翻转</string>
+  <string name="effect_foreground_to_background">从前景到背景</string>
+  <string name="effect_rotate_down">向下旋转</string>
+  <string name="effect_rotate_up">向上旋转</string>
+  <string name="effect_scale_in_out">缩放</string>
+  <string name="effect_stack">堆叠</string>
+  <string name="effect_tablet">平板</string>
+  <string name="effect_zoom_in">放大</string>
+  <string name="effect_zoom_out_slide">滑动缩小</string>
+  <string name="effect_zoom_out">缩小</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">高级位置设置</string>
+  <string name="qs_advanced_location_summary">启用快速设置中的高级位置信息设置</string>
 </resources>

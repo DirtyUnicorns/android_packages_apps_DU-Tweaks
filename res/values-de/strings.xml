@@ -618,7 +618,7 @@
   <string name="smartbar_button_animation_ripple">Standard</string>
   <string name="smartbar_button_animation_spring">Sprungfeder</string>
   <string name="smartbar_factory_reset_title">Zurücksetzen</string>
-  <string name="smartbar_factory_reset_confirm">Bist du dir sicher das du Smartbar in den Ausgangszustand zurücksetzen möchtest?</string>
+  <string name="smartbar_factory_reset_confirm">Sind Sie sicher, dass die Smartbar in den Ausgangszustand zurückgesetzt werden soll?</string>
   <string name="smartbar_ime_action_title">Eingabemethoden-Aktionen</string>
   <string name="smartbar_ime_action_summary">Festlegen, welche Tasten angezeigt werden, wenn eine On-Screen-Tastatur angezeigt wird</string>
   <string name="smartbar_ime_action_none">Keine</string>
@@ -652,7 +652,7 @@
   <string name="shortcut_action_max">Maximale Einträge erreicht!</string>
   <string name="shortcut_action_warning">Warnung!</string>
   <string name="shortcut_action_warning_message">Es ist nicht möglich den letzten Eintrag zu löschen!</string>
-  <string name="shortcut_action_disable_message">Diese Funktion ist deaktiviert, da keine Verknüpfung festgelegt ist.\nFüge einen Eintrag hinzu, um diese Funktion zu aktivieren.\nÜber das Menü erhälst du weitere Informationen.</string>
+  <string name="shortcut_action_disable_message">Diese Funktion ist deaktiviert, da keine Verknüpfung festgelegt ist.\nFügen Sie einen Eintrag hinzu, um diese Funktion zu aktivieren.\nWeitere Informationen s. Menü.</string>
   <string name="shortcut_image_not_valid">Die gewählte App hat kein gültiges Symbol oder erlaubt keinen Bildzuschnitt. Verwenden Sie eine andere App</string>
   <string name="shortcut_duplicate_entry">Die ausgewählte Aktion kann nicht zweimal hinzugefügt werden</string>
   <string name="shortcut_action_help_shortcut">Verknüpfung</string>
@@ -844,13 +844,13 @@
   <string name="recent_panel_expanded_mode_always">Immer</string>
   <string name="recent_panel_expanded_mode_never">Nie</string>
   <string name="recent_panel_show_topmost_title">Aktuelle App anzeigen</string>
-  <string name="recent_panel_show_topmost_summary">Zeigt die aktuell geöffnete App mit im Anwendungsverlauf an</string>
+  <string name="recent_panel_show_topmost_summary">Auch die aktuell geöffnete App im Anwendungsverlauf anzeigen</string>
   <string name="recent_panel_bg_color_title">Hintergrundfarbe</string>
   <string name="recent_card_bg_color_title">Kartenhintergrundfarbe</string>
   <string name="recent_card_text_color_title">Kartentextfarbe</string>
   <!-- ATTENTION: RTL languages need to replace left with right -->
   <string name="recent_panel_lefty_mode_title">Auf der linken Seite anzeigen</string>
-  <string name="recent_panel_lefty_mode_summary">Zeigt den Anwendungsverlauf auf der linken Seite an</string>
+  <string name="recent_panel_lefty_mode_summary">Anwendungsverlauf am linken Rand anzeigen</string>
   <!-- Keyguard Statusbar Clock -->
   <string name="keyguard_statusbar_clock_title">Sperrbildschirm-Statusleistenuhr</string>
   <string name="keyguard_statusbar_clock_summary">Zeigt die Uhrzeit auf der linken Seite der Statusleiste an während der Sperrbildschirm aktiv ist</string>
@@ -886,7 +886,7 @@
   <string name="screenshot_cat_title">Bildschirmfoto-Optionen</string>
   <string name="screenshot_crop_and_share_title">Zuschneiden &amp; teilen</string>
   <string name="screenshot_crop_and_share_summary">Nach der Aufnahme eines Bildschirmfotos einen Editor zum Zuschneiden, Speichern oder Teilen des Bildes anzeigen</string>
-  <string name="screenshot_crop_behavior_title">Crop-Modus</string>
+  <string name="screenshot_crop_behavior_title">Bildschnitt</string>
   <string name="screenshot_crop_behavior_summary">Immer das zugeschnittene Bild innerhalb des Schnittbereichs verwenden, auch wenn die Schaltfläche \"Anwenden\" noch nicht gedrückt wurde</string>
   <!-- Three finger swipe gesture -->
   <string name="three_finger_gesture_info">Nach Auswahl eines der u. g. Ziele, mit 3 Fingern gleichzeitig von oben nach unten wischen, um die ausgewählte Aktion auszulösen.</string>
