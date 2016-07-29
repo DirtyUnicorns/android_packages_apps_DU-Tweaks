@@ -1025,4 +1025,7 @@
     <string name="qs_advanced_location_title">Advanced location settings</string>
     <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 
+    <!-- Navbar buttons transparency -->
+    <string name="navbar_buttons_alpha_title">Buttons transparency</string>
+
 </resources>
