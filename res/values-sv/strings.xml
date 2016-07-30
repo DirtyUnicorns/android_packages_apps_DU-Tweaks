@@ -31,9 +31,9 @@
   <string name="quicksettings_category">Snabbinställningar</string>
   <string name="recents_category">Senaste</string>
   <string name="statusbar_items_category">Statusfältets objekt</string>
-  <string name="statusbar_notifications_category">Notiser</string>
-  <string name="lockscreen_notifications_category">Låsskärms notifikationer</string>
-  <string name="wakelockblocker_category">Wakelock Blocker</string>
+  <string name="statusbar_notifications_category">Aviseringar</string>
+  <string name="lockscreen_notifications_category">Låsskärmsaviseringar</string>
+  <string name="wakelockblocker_category">Wakelock Blockerare</string>
   <string name="gestures_category">Gester</string>
   <string name="doubletap_gestures_category">Dubbeltryck gester</string>
   <string name="multitasking_category">Multitasking</string>
@@ -42,7 +42,7 @@
   <string name="system_animations_category">Systemanimationer</string>
   <string name="omniswitch_category">OmniSwitch</string>
   <string name="weather_category">Väderwidget</string>
-  <string name="breathing_notifications_category">Andandes notifikationer</string>
+  <string name="breathing_notifications_category">Andandes aviseringer</string>
   <string name="button_settings">Knappar</string>
   <string name="category_heads_up">Heads Up</string>
   <string name="lockscreen_colors_fonts_category_title">Färger &amp; teckensnitt</string>
@@ -91,7 +91,7 @@
   <string name="immersive_recents_default">Standard</string>
   <string name="immersive_recents_fullscreen">Helskärm</string>
   <string name="immersive_recents_statusbar">Endast statusfält</string>
-  <string name="immersive_recents_navbar">Endast navbar</string>
+  <string name="immersive_recents_navbar">Endast navfält</string>
   <!-- Power Menu -->
   <string name="powermenu_lockscreen_title">Power-menyn på låsskärmen</string>
   <string name="powermenu_lockscreen_summary">Visa power-menyn på låsskärmen</string>
@@ -144,7 +144,7 @@
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">DT2S på statusfält</string>
   <string name="double_tap_to_sleep_summary">Dubbeltryck på statusfältet för att lägga enheten i viloläge</string>
-  <string name="double_tap_sleep_nav_bar_title">DT2S på navbar</string>
+  <string name="double_tap_sleep_nav_bar_title">DT2S på navfält</string>
   <string name="double_tap_sleep_nav_bar_summary">Dubbeltryck på navigeringsfältet för att lägga enheten i viloläge</string>
   <string name="double_tap_to_sleep_lockscreen_title">DT2S på låsskärmen</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Dubbeltryck på den övre tredjedelen eller botten av låsskärmen att försätta enheten i viloläge</string>
@@ -190,8 +190,8 @@
   <string name="battery_bar_style_reversed">Omvänd</string>
   <string name="battery_bar_hide">Dölj</string>
   <string name="battery_bar_statusbar">Statusfält</string>
-  <string name="battery_bar_top_navbar">Toppen av navbar</string>
-  <string name="battery_bar_bottom_navbar">Under navbar</string>
+  <string name="battery_bar_top_navbar">Toppen av navfält</string>
+  <string name="battery_bar_bottom_navbar">Under navfält</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Klockans teckensnitt</string>
   <string name="lock_clock_font_summary">Ändra standardtypsnittet för låsskärmens klocka widget</string>
@@ -366,7 +366,7 @@
   <string name="reset_values_message">Återställa värdena?</string>
   <!-- QuickSettings haptic feedback -->
   <string name="quick_settings_vibrate_title">Vibrera vid tryck</string>
-  <string name="quick_settings_vibrate_summary">Vibrera när du trycker på tiles</string>
+  <string name="quick_settings_vibrate_summary">Vibrera när du trycker på en ruta</string>
   <!-- Quick settings disable on lockscreen -->
   <string name="block_on_secure_keyguard_title">Inaktivera snabbinställningar</string>
   <string name="block_on_secure_keyguard_summary">Inaktiverar snabbinställningar i låsskärm för ett säkert lås</string>
@@ -496,10 +496,10 @@
   <string name="sms_breath_summary">Ger dina SMS aviseringer en andningseffekt i statusfältet</string>
   <!-- Navigation Bar -->
   <string name="navbar_interface_title">Gränssnitt</string>
-  <string name="navbar_size">Bar storlek</string>
+  <string name="navbar_size">Fält storlek</string>
   <string name="navbar_mode">Navigeringsläge</string>
-  <string name="navbar_visibility">Aktivera navigationsbar</string>
-  <string name="navigationbar_settings_title">Navigation Bar</string>
+  <string name="navbar_visibility">Aktivera navigeringsfält</string>
+  <string name="navigationbar_settings_title">Navigeringsfält</string>
   <string name="navigationbar_settings_summary">Anpassa navigering stil och funktion</string>
   <string name="navbar_general_title">Advancerat</string>
   <string name="navigation_bar_left_title">Vänsterhänt läge</string>
@@ -531,7 +531,7 @@
   <string name="fling_interface">Fling</string>
   <string name="fling_enable_title">Aktivera Fling</string>
   <string name="fling_back_home_policy">Tillbaka och Hem skall ställas in hela tiden. Du kan ändra Tillbaka eller Hem tilldelning, ange önskad tilldelning först</string>
-  <string name="fling_split_bar_policy">When only a right or left action is assigned, the action applies to the full bar</string>
+  <string name="fling_split_bar_policy">När endast höger eller vänster åtgärder tilldelas, gäller åtgärden till hela navigeringsfälten</string>
   <string name="fling_def_summary">Inga åtgärder valda</string>
   <string name="fling_swipe_actions">Svepgester</string>
   <string name="fling_tap_actions">Tryck gester</string>
@@ -599,7 +599,7 @@
   <string name="pulse_filled_block_size">Blockstorlek</string>
   <string name="pulse_empty_block_size">Block avstånd</string>
   <!-- Navbar height -->
-  <string name="navigation_bar_size_title">Bar storlek</string>
+  <string name="navigation_bar_size_title">Fält storlek</string>
   <string name="portrait_title">Stående höjd</string>
   <string name="land_vert_title">Liggande bredd</string>
   <string name="land_hor_title">Liggande höjd</string>
@@ -608,21 +608,21 @@
   <string name="smartbar_category">Smartbar</string>
   <string name="smartbar_settings_title">Smartbar inställningar</string>
   <string name="smartbar_editor_title">Växla knappredigeraren</string>
-  <string name="smartbar_editor_summary">Medium press and drag to change position. Long press to show edit menu. Button position may be changed while menu is showing.</string>
-  <string name="smartbar_context_menu_position_title">Context buttons layout position</string>
-  <string name="smartbar_context_menu_position_summary">Set the position of contextual buttons such as menu and ime selector</string>
+  <string name="smartbar_editor_summary">Medium tryck och dra för att ändra position. Lång tryck för att visa redigeringsmenyn. Knappens position kan ändras medan menyn visas.</string>
+  <string name="smartbar_context_menu_position_title">Kontext knappars placering</string>
+  <string name="smartbar_context_menu_position_summary">Ange position av kontextuella knappar som menyn och ime väljare</string>
   <string name="smartbar_right">Höger</string>
   <string name="smartbar_left">Vänster</string>
   <string name="smartbar_button_animation_title">Knapp trycks animation</string>
-  <string name="smartbar_button_animation_summary">Set the animation style of the primary buttons when they are pressed</string>
+  <string name="smartbar_button_animation_summary">Ställa in animation stil av primära knappar när de trycks</string>
   <string name="smartbar_button_animation_ripple">Rippel</string>
   <string name="smartbar_button_animation_spring">Fjädra</string>
   <string name="smartbar_factory_reset_title">Återställa till standard</string>
-  <string name="smartbar_factory_reset_confirm">Are you sure you want to reset Smartbar to stock settings?</string>
+  <string name="smartbar_factory_reset_confirm">Är du säker att du vill återställa Smartbar till standard?</string>
   <string name="smartbar_ime_action_title">Inmatningsmetod åtgärder</string>
-  <string name="smartbar_ime_action_summary">Set what buttons to show when a on-screen keyboard is showing</string>
+  <string name="smartbar_ime_action_summary">Ange vilka knappar som syns när en skärmtangentbord visas</string>
   <string name="smartbar_ime_action_none">Inga</string>
-  <string name="smartbar_ime_action_arrows">Input arrows</string>
+  <string name="smartbar_ime_action_arrows">Inmatningspilar</string>
   <string name="smartbar_ime_action_switcher">Tangentbord växlar</string>
   <string name="smartbar_backup_current_config_title">Spara profil</string>
   <string name="smartbar_restore_config_title">Återställ profil</string>
@@ -635,40 +635,40 @@
   <string name="smartbar_config_restore_error_toast">Fel vid återställning av Smartbar profil</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Låsskärm</string>
-  <string name="lockscreen_config_title">Lockscreen configs</string>
+  <string name="lockscreen_config_title">Låsskärmskonfiguration</string>
   <string name="lockscreen_wallpaper_config_title">Lockscreen Wall/Config</string>
-  <string name="lockscreen_wallpaper_set_title">Set new wallpaper</string>
+  <string name="lockscreen_wallpaper_set_title">Ange ny bakgrundsbild</string>
   <string name="lockscreen_wallpaper_clear_title">Återgå till standard</string>
-  <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
+  <string name="reset_lockscreen_wallpaper">Låsskärmens bakgrundsbild återställd till standard</string>
   <!-- Slim lockscreen shortcuts -->
   <string name="shortcut_action_none">Inga</string>
   <string name="shortcut_action_longpress">Långtryck:</string>
-  <string name="shortcut_action_select_action_longpress">Choose longpress action:</string>
-  <string name="shortcut_action_select_action">Choose action:</string>
-  <string name="shortcut_action_select_action_newaction">Choose new action:</string>
+  <string name="shortcut_action_select_action_longpress">Välj långtrycks åtgärd:</string>
+  <string name="shortcut_action_select_action">Välj åtgärd:</string>
+  <string name="shortcut_action_select_action_newaction">Välj ny åtgärd:</string>
   <string name="shortcut_action_reset">Återställ</string>
   <string name="shortcut_action_add">Lägg till</string>
-  <string name="shortcut_action_reset_message">Reset all entries to default?</string>
-  <string name="shortcut_action_max">Maximum entries size has been reached</string>
+  <string name="shortcut_action_reset_message">Återställ alla poster till standard?</string>
+  <string name="shortcut_action_max">Maximum post storlek har uppnåtts</string>
   <string name="shortcut_action_warning">Varning</string>
-  <string name="shortcut_action_warning_message">It is not possible to delete last entry</string>
-  <string name="shortcut_action_disable_message">Disabled\nAdd an entry to enable this feature</string>
-  <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app.</string>
-  <string name="shortcut_duplicate_entry">The chosen action cannot be added twice</string>
+  <string name="shortcut_action_warning_message">Det går inte att ta bort sista posten</string>
+  <string name="shortcut_action_disable_message">Inaktiverad\nLägga till en post för att aktivera denna funktion</string>
+  <string name="shortcut_image_not_valid">Den valda app returnerade inte en giltig ikon eller stöder inte bild beskärning. Använda en annan app.</string>
+  <string name="shortcut_duplicate_entry">Den valda åtgärden kan inte läggas till två gånger</string>
   <string name="shortcut_action_help_shortcut">genväg</string>
   <string name="shortcut_action_help_button">knapp</string>
   <string name="shortcut_action_help_app">app</string>
-  <string name="shortcut_action_help_icon">, while selecting the icon will bring up customization options</string>
-  <string name="shortcut_action_help_main">To add a %1$s, select the Add icon. Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right. Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
-  <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
-  <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Removing every %1$s in the list will disable the second pie layer entirely.</string>
+  <string name="shortcut_action_help_icon">, medan att välja ikonen vill den dra upp anpassningsalternativ</string>
+  <string name="shortcut_action_help_main">Lägg till en %1$s, markera ikonen lägg till. När en %1$s har lagts till, ändras radens focus%2$s\n\nFör att ta bort en %1$s svep raden vågrätt åt vänster eller höger. Ordna en %1$s i listan genom att vertikalt dra ankaret på vänster sida.\n\nFör att rensa eller återställa standard, Välj ikonen återställ.</string>
+  <string name="shortcut_action_help_delete_last_entry">Ta bort varje %1$s i listan kommer att inaktivera funktionen helt.</string>
+  <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Ta bort varje %1$s i listan kommer att inaktivera det andra cirkel lagret helt.</string>
   <string name="shortcuts_applications">Applikationer</string>
-  <string name="shortcuts_select_custom_app_title">Select custom application</string>
-  <string name="shortcuts_icon_picker_type">Select icon type:</string>
+  <string name="shortcuts_select_custom_app_title">Välj anpassad applikation</string>
+  <string name="shortcuts_icon_picker_type">Välj ikontyp:</string>
   <string name="shortcuts_icon_default">Standard</string>
   <string name="shortcuts_icon_presets">Systemikoner</string>
   <string name="shortcuts_icon_picker_choose_icon_title">Välj ikon</string>
-  <string name="shortcuts_icon_picker_alarm">Larm</string>
+  <string name="shortcuts_icon_picker_alarm">Alarm</string>
   <string name="shortcuts_icon_picker_andy">Andy</string>
   <string name="shortcuts_icon_picker_battery">Batteri</string>
   <string name="shortcuts_icon_picker_browser">Webbläsare</string>
@@ -757,65 +757,65 @@
   <string name="power_menu_animation_top">Överst</string>
   <!-- Media art -->
   <string name="media_art_title">Media omslagsbild</string>
-  <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+  <string name="media_art_summary">Aktivera media omslagsbilder på låsskärm</string>
   <!-- Lockscreen notification count -->
-  <string name="lockscreen_maxnotif_title">Lockscreen notification count</string>
-  <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
-  <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
+  <string name="lockscreen_maxnotif_title">Låsskärm aviseringsräknare</string>
+  <string name="lockscreen_maxnotif_sumary">Aktivera justering av max låsskärmsaviseringar</string>
+  <string name="lockscreen_maxnotif_config">Max låsskärmsaviseringar</string>
   <!-- Fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
-  <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+  <string name="fprint_sucess_vib_title">Fingeravtrycksautentisering vibration</string>
+  <string name="fprint_sucess_vib_summary">Vibrera på lyckad fingeravtrycksautentisering</string>
   <!-- QS Tiles Columns -->
-  <string name="qs_num_columns_title">Number of tiles per row</string>
-  <string name="qs_num_columns_showing">%1$s tiles per row showing</string>
+  <string name="qs_num_columns_title">Antal rutor per rad</string>
+  <string name="qs_num_columns_showing">%1$s rutor per rad visas</string>
   <!-- QuickSettings main tiles -->
-  <string name="qs_main_tiles_title">Enlarge first row</string>
-  <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
-  <string name="qs_main_tiles_summary_off">3, 4 or 5 tiles on each row</string>
+  <string name="qs_main_tiles_title">Förstora första raden</string>
+  <string name="qs_main_tiles_summary_on">Två stora rutor på den första raden</string>
+  <string name="qs_main_tiles_summary_off">3, 4 eller 5 rutor på varje rad</string>
   <!-- Selinux Switch -->
-  <string name="selinux_switch_title">Selinux Switch options</string>
-  <string name="selinux_switch_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk.</string>
+  <string name="selinux_switch_title">Selinux Brytar alternativ</string>
+  <string name="selinux_switch_summary">SELinux är en uppsättning av kernel ändringar och user-space verktyg. Ändring kan orsaka oönskade effekter. Använd på egen risk.</string>
   <string name="selinux_title">Selinux-läge</string>
   <string name="selinux_permissive_title">Tillåtande</string>
   <string name="selinux_enforcing_title">Genomdrivande</string>
   <string name="selinux_permissive_toast_title">Selinux inställd till tillåtande</string>
   <!-- Hide Lockscreen clock, date & alarm -->
-  <string name="hide_lockscreen_items_title">Lockscreen items</string>
+  <string name="hide_lockscreen_items_title">Låsskärmsobjekt</string>
   <string name="hide_lockscreen_clock_title">Klocka</string>
-  <string name="hide_lockscreen_clock_summary">Show lockscreen clock</string>
+  <string name="hide_lockscreen_clock_summary">Visa låsskärmsklocka</string>
   <string name="hide_lockscreen_date_title">Datum</string>
-  <string name="hide_lockscreen_date_summary">Show lockscreen date</string>
-  <string name="hide_lockscreen_alarm_title">Larm</string>
-  <string name="hide_lockscreen_alarm_summary">Show lockscreen alarm</string>
+  <string name="hide_lockscreen_date_summary">Visa låsskärmsdatum</string>
+  <string name="hide_lockscreen_alarm_title">Alarm</string>
+  <string name="hide_lockscreen_alarm_summary">Visa låsskärmsalarm</string>
   <!-- Lockscreen Bouncer -->
-  <string name="ls_bouncer_title">Secure lockscreen bouncer</string>
-  <string name="ls_bouncer_summary">Open lockscreen directly to pin/pattern/password when there are %1$s notifications present</string>
+  <string name="ls_bouncer_title">Säkert låsskärm bouncer</string>
+  <string name="ls_bouncer_summary">Öppna låsskärm direkt till pin/mönster/lösenord när det finns %1$s aviseringar närvarande</string>
   <string name="ls_bouncer_on">På (standard)</string>
-  <string name="ls_bouncer_on_summary">Stock bouncer behavior</string>
+  <string name="ls_bouncer_on_summary">Standard bouncer beteende</string>
   <string name="ls_bouncer_off">Av</string>
-  <string name="ls_bouncer_off_summary">Open Lockscreen directly to pin/pattern/password</string>
-  <string name="ls_bouncer_dismissable">No dismissable</string>
-  <string name="ls_bouncer_persistent">No persistent</string>
-  <string name="ls_bouncer_all">No dismissable or persistent</string>
+  <string name="ls_bouncer_off_summary">Öppna Låsskärm direkt till pin/mönster/lösenord</string>
+  <string name="ls_bouncer_dismissable">Inga avfärdbara</string>
+  <string name="ls_bouncer_persistent">Inga permanenta</string>
+  <string name="ls_bouncer_all">Inga avfärdbara eller permanenta</string>
   <!-- Lockscreen Alpha -->
-  <string name="lockscreen_alpha">Lockscreen alpha</string>
-  <string name="lockscreen_security_alpha">Lockscreen bouncer alpha</string>
+  <string name="lockscreen_alpha">Låsskärm alpha</string>
+  <string name="lockscreen_security_alpha">Låsskärm bouncer alpha</string>
   <!-- Heads Up -->
   <string name="heads_up_notifications">Heads Up</string>
-  <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-  <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-  <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
+  <string name="summary_heads_up_enabled">Pop-up aviseringar är aktiverade</string>
+  <string name="summary_heads_up_disabled">Pop-up aviseringar är inaktiverade</string>
+  <string name="heads_up_disabled_notice">För att tillåta appar att visa interaktiva aviseringar i en pop-up ruta på din skärm, aktivera heads up.</string>
   <string name="add_heads_up_package">Lägg till app</string>
-  <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
-  <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
-  <string name="add_heads_up_whitelist_summary">Post all notification from these applications to heads up</string>
+  <string name="add_heads_up_dnd_summary">Visa inte heads up i de här apparna</string>
+  <string name="add_heads_up_blacklist_summary">Visa inte heads up från de här apparna</string>
+  <string name="add_heads_up_whitelist_summary">Skicka alla aviseringar från dessa applikationer till heads up</string>
   <string name="heads_up_dnd_title">Stör ej</string>
   <string name="heads_up_blacklist_title">Svartlista</string>
   <string name="heads_up_whitelist_title">Vitlista</string>
-  <string name="heads_up_contains_key">Already added this application to the list</string>
+  <string name="heads_up_contains_key">Denna applikation har redan blivit tillagt i listan</string>
   <!-- Heads Up Timeout -->
   <string name="heads_up_time_out_title">Time out</string>
-  <string name="heads_up_time_out_summary">Notification will show for <xliff:g id="number">%d</xliff:g> seconds</string>
+  <string name="heads_up_time_out_summary">Aviseringen kommer att visas i <xliff:g id="number">%d </xliff:g> sekunder</string>
   <string name="heads_up_time_out_2sec">2 sekunder</string>
   <string name="heads_up_time_out_4sec">4 sekunder</string>
   <string name="heads_up_time_out_5sec">5 sekunder</string>
@@ -823,13 +823,13 @@
   <string name="heads_up_time_out_8sec">8 sekunder</string>
   <string name="heads_up_time_out_10sec">10 sekunder</string>
   <!-- Lockscreen Colors -->
-  <string name="lockscreen_colors_title">Lockscreen colors</string>
+  <string name="lockscreen_colors_title">Låsskärmsfärger</string>
   <string name="lockscreen_owner_info_color">Ägarinformation</string>
   <string name="lockscreen_alarm_color">Alarm</string>
   <string name="lockscreen_clock_color">Klocka</string>
   <string name="lockscreen_clock_date_color">Datum</string>
-  <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
-  <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
+  <string name="lockscreen_colors_reset_title">Återställa låsskärmsfärger</string>
+  <string name="lockscreen_colors_reset_message">Är du säker på att du vill återställa dessa färger till standard?</string>
   <string name="yes">JA</string>
   <!-- Recent panel -->
   <string name="slim_recents_enable_title">Aktivera slim recents</string>
@@ -852,8 +852,8 @@
   <string name="recent_panel_lefty_mode_title">Visa på vänsterkanten</string>
   <string name="recent_panel_lefty_mode_summary">Visa de senaste apps panel vänsterkant</string>
   <!-- Keyguard Statusbar Clock -->
-  <string name="keyguard_statusbar_clock_title">Låsskärm statusrad klocka</string>
-  <string name="keyguard_statusbar_clock_summary">Aktiverar statusbar klockan i låsskärm på vänster sida</string>
+  <string name="keyguard_statusbar_clock_title">Låsskärm statusfält klocka</string>
+  <string name="keyguard_statusbar_clock_summary">Aktiverar statusfält klockan i låsskärm på vänster sida</string>
   <!-- Flashlight notification -->
   <string name="flashlight_notification_title">Ficklampa avisering</string>
   <string name="flashlight_notification_summary">Aktivera avisering för när ficklampan är på</string>
@@ -864,10 +864,10 @@
   <string name="lock_screen_show_current">Laddningsström</string>
   <string name="lock_screen_show_current_summary">Visa ladningsström hastighet på låsskärm</string>
   <!-- Tiles animation style  -->
-  <string name="quicksettings_tiles_category">Tile animeringsalternativ</string>
-  <string name="qs_tile_animation_style_title">Tile animationsstil</string>
-  <string name="qs_tile_animation_duration_title">Tile animationslängd</string>
-  <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
+  <string name="quicksettings_tiles_category">Animeringsalternativ för rutor</string>
+  <string name="qs_tile_animation_style_title">Animationsstil för rutor</string>
+  <string name="qs_tile_animation_duration_title">Animationslängd för rutor</string>
+  <string name="qs_tile_animation_interpolator_title">Animationsinterpolator för rutor</string>
   <string name="qs_tile_animation_style_off">Ingen animering</string>
   <string name="qs_tile_animation_style_flip">Vänd</string>
   <string name="qs_tile_animation_style_rotate">Rotera</string>

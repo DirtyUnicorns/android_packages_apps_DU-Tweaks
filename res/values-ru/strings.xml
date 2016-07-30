@@ -590,7 +590,7 @@
   <string name="eos_fling_lavalamp_summary">Включить плавно меняющиеся цвета визуализатора Pulse</string>
   <string name="pulse_advanced_category">Расширенные настройки</string>
   <string name="pulse_legacy_mode_advanced_category">Настройки затухающих блоков</string>
-  <string name="pulse_custom_fudge_factor">Уровень безумия</string>
+  <string name="pulse_custom_fudge_factor">Уровень чувствительности</string>
   <string name="lavamp_solid_speed_title">Скорость  \"Лава Лампы\"</string>
   <string name="pulse_solid_dimen_category">Настройки сплошных линий</string>
   <!-- Pulse config -->
