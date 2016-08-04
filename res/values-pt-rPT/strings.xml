@@ -17,14 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="system_category">System</string>
-  <string name="lockscreen_category">Lockscreen</string>
-  <string name="statusbar_category">Status Bar</string>
+  <string name="system_category">Sistema</string>
+  <string name="lockscreen_category">Ecrã de bloqueio</string>
+  <string name="statusbar_category">Barra de Estado</string>
   <string name="navigation_category">Navigation</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <!-- Categories -->
   <string name="animations_category">Animations</string>
-  <string name="battery_category">Battery</string>
+  <string name="battery_category">Bateria</string>
   <string name="expanded_desktop_category">Expanded Desktop</string>
   <string name="misctweaks_category">Misc. Tweaks</string>
   <string name="powermenu_category">Power Menu</string>

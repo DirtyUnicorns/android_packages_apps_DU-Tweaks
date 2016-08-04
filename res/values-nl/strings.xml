@@ -81,9 +81,9 @@
   <string name="brightness_icon_title">Helderheid-pictogram </string>
   <string name="brightness_icon_summary">Een helderheid pictogram aan de linkerkant van de schuifregelaar weergeven om auto-helderheid aan te passen</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Drie</string>
+  <string name="qs_num_columns_four">Vier</string>
+  <string name="qs_num_columns_five">Vijf</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Immersive Recenten</string>
   <string name="immersive_recents_summary">De weergave van het recenten scherm wijzigen</string>
@@ -129,9 +129,9 @@
   <string name="expanded_desktop_state">Uitbereidbaarheids status</string>
   <string name="expanded_enabled_for_all">Voor alle ingeschakeld</string>
   <string name="expanded_user_configurable">Gebruiker configureerbaar</string>
-  <string name="expanded_desktop_style">Expanded desktop style</string>
-  <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-  <string name="expanded_desktop_title">Expanded desktop options</string>
+  <string name="expanded_desktop_style">Uitgebreid bureaublad stijl</string>
+  <string name="expanded_desktop_style_description">Kies dat een standaard uitgebreid bureaublad stijl</string>
+  <string name="expanded_desktop_title">Uitgebreid bureaublad opties</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Forceer Uitgebreide Meldingen</string>
   <string name="force_expanded_notifications_summary">Enkel beschikbaar voor apps die uitgebreide meldingen ondersteunen</string>
@@ -188,10 +188,10 @@
   <string name="battery_bar_style_regular">Normaal</string>
   <string name="battery_bar_style_center_mirrored">Midden-gespiegeld</string>
   <string name="battery_bar_style_reversed">Omgekeerd</string>
-  <string name="battery_bar_hide">Hide</string>
-  <string name="battery_bar_statusbar">Statusbar</string>
-  <string name="battery_bar_top_navbar">Top of navbar</string>
-  <string name="battery_bar_bottom_navbar">Bottom of navbar</string>
+  <string name="battery_bar_hide">Verbergen</string>
+  <string name="battery_bar_statusbar">Statusbalk</string>
+  <string name="battery_bar_top_navbar">Bovenkant van de navigatiebalk</string>
+  <string name="battery_bar_bottom_navbar">Onderkant van de navigatiebalk</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Klok lettertypen</string>
   <string name="lock_clock_font_summary">Het standaardlettertype van de vergrendelscherm klokwidget wijzigen</string>
@@ -577,22 +577,22 @@
   <string name="fling_longpress_summary">Vergroten of verkleinen van de tijd die nodig is voor het uitvoeren van een lange klik</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_title">Over Pulse</string>
-  <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+  <string name="pulse_help_policy_notice_summary">Puls is een briljante grafische audio equalizer op de navigatiebalk wanneer muziek wordt gespeeld. Pulse werkt niet met sommige audio bronnen bij het luisteren via apparaat luidspreker</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+  <string name="pulse_settings_summary">Navigatiebalk grafische audio equalizer</string>
   <string name="fling_show_pulse_title">Toon Pulse</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
+  <string name="fling_show_pulse_summary">Grafische audio equalizer op de navigatiebalk</string>
+  <string name="pulse_render_mode_title">Rendermodus</string>
+  <string name="pulse_render_mode_fading_bars">Vervagende blokken</string>
+  <string name="pulse_render_mode_solid_lines">Ononderbroken lijnen</string>
   <string name="fling_pulse_color">Pulse kleur</string>
   <string name="eos_fling_lavalamp_title">Lavalamp inschakelen</string>
   <string name="eos_fling_lavalamp_summary">Pulse animeert een vloeiende lava lamp stijl kleur mix</string>
   <string name="pulse_advanced_category">Geadvanceerd</string>
-  <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+  <string name="pulse_legacy_mode_advanced_category">Vervangende blokken modus instellingen</string>
   <string name="pulse_custom_fudge_factor">Sanity level</string>
-  <string name="lavamp_solid_speed_title">Lava Lamp speed</string>
-  <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+  <string name="lavamp_solid_speed_title">Lava Lamp snelheid</string>
+  <string name="pulse_solid_dimen_category">Ononderbroken lijnen modus instellingen</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Balk breedte</string>
   <string name="pulse_custom_div">Balk afstand</string>
@@ -626,13 +626,13 @@
   <string name="smartbar_ime_action_switcher">Toetsenbord switcher</string>
   <string name="smartbar_backup_current_config_title">Profiel opslaan</string>
   <string name="smartbar_restore_config_title">Profiel herstellen</string>
-  <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
-  <string name="smartbar_config_name_edit_dialog_message">Enter name or leave blank</string>
-  <string name="smartbar_config_dialog_title">Smartbar profiles</string>
-  <string name="smartbar_config_backup_success_toast">Smartbar profile successfully saved</string>
-  <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
-  <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
-  <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profiel naam</string>
+  <string name="smartbar_config_name_edit_dialog_message">Voer naam in of laat leeg</string>
+  <string name="smartbar_config_dialog_title">Smartbar profielen</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profiel opgeslagen</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profiel hersteld</string>
+  <string name="smartbar_config_backup_error_toast">Fout bij het opslaan van Smartbar profiel</string>
+  <string name="smartbar_config_restore_error_toast">Fout bij het herstellen van Smartbar profiel</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Vergrendelscherm</string>
   <string name="lockscreen_config_title">Vergrendelscherm instellingen</string>
@@ -740,7 +740,7 @@
   <string name="system_app_remover">Systeem App Verwijderaar</string>
   <string name="listsystem">lijst</string>
   <string name="cancel">Annuleren</string>
-  <string name="message_delete">Are you sure you want to delete this app?</string>
+  <string name="message_delete">Weet u zeker dat u deze app wilt verwijderen?</string>
   <string name="message_noselect">Niets geselecteerd</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Taakbeheer</string>
@@ -892,25 +892,25 @@
   <string name="three_finger_gesture_info">Na het selecteren van een doel hieronder, swipe verticaal met 3 vingers in één beweging van boven naar onder om de actie te triggeren die u geselecteerd hebt.</string>
   <string name="three_finger_swipe_gesture_title">Drie vingers swipe gebaar</string>
   <!-- DirtyTweaks tabs slide effects -->
-  <string name="tabs_effect_title">Dirty Tweaks tabs transition effect</string>
+  <string name="tabs_effect_title">Dirty Tweaks tabbladen overgangseffect</string>
   <string name="effect_default">Standaard</string>
-  <string name="effect_accordion">Accordion</string>
-  <string name="effect_background_to_foreground">Background to foreground</string>
-  <string name="effect_cube_in">Cube in</string>
-  <string name="effect_cube_out">Cube out</string>
-  <string name="effect_depth_page">Depth page</string>
-  <string name="effect_flip_horizontal">Flip horizontal</string>
-  <string name="effect_flip_vertical">Flip vertical</string>
-  <string name="effect_foreground_to_background">Foreground to background</string>
-  <string name="effect_rotate_down">Rotate down</string>
-  <string name="effect_rotate_up">Rotate up</string>
-  <string name="effect_scale_in_out">Scale in out</string>
+  <string name="effect_accordion">Accordeon</string>
+  <string name="effect_background_to_foreground">Achtergrond naar voorgrond</string>
+  <string name="effect_cube_in">Kubus-in</string>
+  <string name="effect_cube_out">Kubus-uit</string>
+  <string name="effect_depth_page">Diepte pagina</string>
+  <string name="effect_flip_horizontal">Horizontaal spiegelen</string>
+  <string name="effect_flip_vertical">Verticaal spiegelen</string>
+  <string name="effect_foreground_to_background">Voorgrond naar achtergrond</string>
+  <string name="effect_rotate_down">Naar beneden draaien</string>
+  <string name="effect_rotate_up">Naar boven draaien</string>
+  <string name="effect_scale_in_out">Schaal in out</string>
   <string name="effect_stack">Stack</string>
   <string name="effect_tablet">Tablet</string>
   <string name="effect_zoom_in">Inzoemen</string>
-  <string name="effect_zoom_out_slide">Zoom out slide</string>
+  <string name="effect_zoom_out_slide">Zoom uit schuiven</string>
   <string name="effect_zoom_out">Uitzoemen</string>
   <!-- QS location sensors mode -->
-  <string name="qs_advanced_location_title">Advanced location settings</string>
-  <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+  <string name="qs_advanced_location_title">Geavanceerde locatie instellingen</string>
+  <string name="qs_advanced_location_summary">Geavanceerde instellingen voor locatie in quick settings inschakelen</string>
 </resources>
