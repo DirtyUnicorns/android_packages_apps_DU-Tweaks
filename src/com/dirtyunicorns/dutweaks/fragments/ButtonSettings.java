@@ -34,6 +34,7 @@
 package com.dirtyunicorns.dutweaks.fragments;
 
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
@@ -45,14 +46,17 @@ import com.android.settings.R;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.utils.du.ActionConstants;
+import com.android.internal.utils.du.DUActionUtils;
 
 public class ButtonSettings extends ActionFragment implements OnPreferenceChangeListener {
 
+    private static final String HWKEY_DISABLE = "hardware_keys_disable";
     private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
 
     // category keys
+    private static final String CATEGORY_HWKEY = "hardware_keys";
     private static final String CATEGORY_BACK = "back_key";
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_MENU = "menu_key";
@@ -74,6 +78,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     private SwitchPreference mSwapVolumeButtons;
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
+    private SwitchPreference mHwKeyDisable;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,6 +86,21 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         addPreferencesFromResource(R.xml.button_settings);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        final boolean needsNavbar = DUActionUtils.hasNavbarByDefault(getActivity());
+        final PreferenceCategory hwkeyCat = (PreferenceCategory) prefScreen
+                .findPreference(CATEGORY_HWKEY);
+        int keysDisabled = 0;
+        if (!needsNavbar) {
+            mHwKeyDisable = (SwitchPreference) findPreference(HWKEY_DISABLE);
+            mHwKeyDisable.setOnPreferenceChangeListener(this);
+            keysDisabled = Settings.Secure.getIntForUser(getContentResolver(),
+                    Settings.Secure.HARDWARE_KEYS_DISABLE, 0,
+                    UserHandle.USER_CURRENT);
+            mHwKeyDisable.setChecked(keysDisabled != 0);
+        } else {
+            prefScreen.removePreference(hwkeyCat);
+        }
 
         // bits for hardware keys present on device
         final int deviceKeys = getResources().getInteger(
@@ -151,6 +171,9 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
 
         // let super know we can load ActionPreferences
         onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.HWKEYS));
+
+        // load preferences first
+        setActionPreferencesEnabled(keysDisabled == 0);
     }
 
     @Override
@@ -184,6 +207,12 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_MUSIC_CONTROLS,
                     value ? 1 : 0);
+            return true;
+        } else if (preference == mHwKeyDisable) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
+                    value ? 1 : 0);
+            setActionPreferencesEnabled(!value);
             return true;
         }
         return false;

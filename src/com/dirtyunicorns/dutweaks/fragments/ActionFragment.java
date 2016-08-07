@@ -164,6 +164,12 @@ public class ActionFragment extends SettingsPreferenceFragment implements
     protected void onActionPolicyEnforced(ArrayList<ActionPreference> prefs) {
     }
 
+    protected void setActionPreferencesEnabled(boolean enabled) {
+        for (ActionPreference pref : mPrefHolder) {
+            pref.setEnabled(enabled);
+        }
+    }
+
     /**
      * load our button lists and ActionPreferences map button action targets from preference keys
      * and defaults config maps subclass is required to set desired Defaults interface int
