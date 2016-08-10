@@ -37,10 +37,10 @@
   <string name="gestures_category">Gesti</string>
   <string name="doubletap_gestures_category">Gesti doppio tocco </string>
   <string name="multitasking_category">Multi-Tasking</string>
-  <string name="multiwindow_category">Multi-Window</string>
+  <string name="multiwindow_category">Multi-finestra</string>
   <string name="listview_animations_category">Animazioni List View</string>
   <string name="system_animations_category">Animazioni di sistema</string>
-  <string name="omniswitch_category">OmniSwitch</string>
+  <string name="omniswitch_category">Omni switch</string>
   <string name="weather_category">Widget meteo</string>
   <string name="breathing_notifications_category">Notifiche pulsanti</string>
   <string name="button_settings">Pulsanti</string>
@@ -156,7 +156,7 @@
   <string name="swap_volume_buttons_summary">Scambia tasti volume quando lo schermo è ruotato</string>
   <!-- Volume rocker wake -->
   <string name="volume_rocker_wake_title">Risveglio con tasti volume</string>
-  <string name="volume_rocker_wake_summary">Premendo i tasti del volume si risveglierà il device\nNon tiene conto del controllo della riproduzione</string>
+  <string name="volume_rocker_wake_summary">Premendo i tasti del volume si risveglierà il dispositivo\nNon tiene conto del controllo della riproduzione</string>
   <!-- Volume rocker music control -->
   <string name="volume_rocker_music_controls_title">Controllo riproduzione</string>
   <string name="volume_rocker_music_controls_summary">Quando lo schermo è spento, la pressione prolungata dei tasti volume cambia traccia</string>
@@ -216,7 +216,7 @@
   <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
   <!-- Lockscreen Torch -->
   <string name="keyguard_torch_title">Torcia schermata di blocco</string>
-  <string name="keyguard_torch_summary">Tenete premuto il pulsante di accensione a lungo mentre lo schermo è spento per accendere la torcia</string>
+  <string name="keyguard_torch_summary">Tieni premuto il pulsante di accensione a lungo mentre lo schermo è spento per accendere la torcia</string>
   <!-- Statusbar Clock options -->
   <string name="status_bar_title">Barra di stato</string>
   <string name="status_bar_style_title">Stile</string>
@@ -254,16 +254,16 @@
   <string name="clock_date_style_uppercase">Maiuscolo</string>
   <string name="clock_date_format_custom">Formato Java personalizzato</string>
   <string name="status_bar_clock_style_reset_message">Ripristina il colore dell\'orologio?</string>
-  <string name="default_string">Default</string>
+  <string name="default_string">Predefinito</string>
   <string name="reset">Ripristina</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Seleziona colore</string>
   <string name="press_color_to_apply">Premi sul colore sottostante per applicare</string>
   <string name="hex">Hex:</string>
   <string name="set">Imposta</string>
-  <string name="color_default">Default</string>
+  <string name="color_default">Predefinito</string>
   <!-- AOSP MultiWindow -->
-  <string name="enable_multi_window">Modalità Multi-window</string>
+  <string name="enable_multi_window">Modalità multi-finestra</string>
   <string name="enable_multi_window_summary">Molteplici attività sullo schermo allo stesso tempo.</string>
   <string name="warning_multi_window_text">Attenzione: Questa è una caratteristica altamente sperimentale che permette molteplici attività sullo schermo allo stesso tempo attraverso l\'app recenti dell\'interfaccia utente. Alcune app potrebbero bloccarsi o non funzionare correttamente quando vengono utilizzate con questa funzionalità.</string>
   <!-- AOKP custom system animations -->
@@ -278,13 +278,13 @@
   <string name="wallpaper_intra_open_title">Animazione con sfondo aperto</string>
   <string name="wallpaper_intra_close_title">Animazione con sfondo chiuso</string>
   <string name="animation_duration_title">Durata animazione</string>
-  <string name="title_animation_no_override">Impedire l\'override di app</string>
+  <string name="title_animation_no_override">Previeni sovrascrizioni dalle app</string>
   <string name="summary_animation_no_override">Impedisce alle app di sovrascrivere le transizioni</string>
-  <string name="animation_duration_default">Default</string>
+  <string name="animation_duration_default">Predefinito</string>
   <!-- Toast Animation -->
   <string name="toast_animation_title">Animazione toast</string>
   <string name="toast_none_animation">Nessuna</string>
-  <string name="toast_default_animation">Default</string>
+  <string name="toast_default_animation">Predefinito</string>
   <string name="toast_fade_animation">Dissolvenza</string>
   <string name="toast_SlideRight_animation">Scorri a destra</string>
   <string name="toast_SlideLeft_animation">Scorri a sinistra</string>
@@ -366,7 +366,7 @@
   <string name="reset_values_message">Reimpostare i valori?</string>
   <!-- QuickSettings haptic feedback -->
   <string name="quick_settings_vibrate_title">Vibra al tocco</string>
-  <string name="quick_settings_vibrate_summary">Vibra quando vengono toccati i tiles</string>
+  <string name="quick_settings_vibrate_summary">Vibra quando vengono toccati i tile</string>
   <!-- Quick settings disable on lockscreen -->
   <string name="block_on_secure_keyguard_title">Disattiva le impostazioni rapide</string>
   <string name="block_on_secure_keyguard_summary">Disattiva le impostazioni rapide nella schermata di blocco</string>
@@ -521,6 +521,8 @@
   <string name="hardware_keys_single_tap_title">Azione singolo tap</string>
   <string name="hardware_keys_long_press_title">Azione pressione prolungata</string>
   <string name="hardware_keys_double_tap_title">Azione doppio tocco</string>
+  <string name="hardware_keys_category">Navigation buttons</string>
+  <string name="hardware_keys_disable_title">Disable navigation buttons</string>
   <!-- Actions dialog and default task values set in ActionPreference xml-->
   <string name="choose_action_title">Scegli un\'azione</string>
   <string name="action_entry_default_action">Impostazioni predefinite</string>
@@ -665,7 +667,7 @@
   <string name="shortcuts_applications">Applicazioni</string>
   <string name="shortcuts_select_custom_app_title">Seleziona un\'applicazione personalizzata</string>
   <string name="shortcuts_icon_picker_type">Seleziona il tipo di icona:</string>
-  <string name="shortcuts_icon_default">Default</string>
+  <string name="shortcuts_icon_default">Predefinita</string>
   <string name="shortcuts_icon_presets">Icone di sistema</string>
   <string name="shortcuts_icon_picker_choose_icon_title">Scegli l\'icona</string>
   <string name="shortcuts_icon_picker_alarm">Sveglia</string>
@@ -766,7 +768,7 @@
   <string name="fprint_sucess_vib_title">Autenticazione tramite impronta con vibrazione</string>
   <string name="fprint_sucess_vib_summary">Vibra all\'avvenuta autenticazione tramite impronta digitale</string>
   <!-- QS Tiles Columns -->
-  <string name="qs_num_columns_title">Numero di tiles per riga</string>
+  <string name="qs_num_columns_title">Numero di tile per riga</string>
   <string name="qs_num_columns_showing">%1$s di tile per riga</string>
   <!-- QuickSettings main tiles -->
   <string name="qs_main_tiles_title">Ingrandisci prima riga</string>
@@ -864,10 +866,10 @@
   <string name="lock_screen_show_current">Carica corrente</string>
   <string name="lock_screen_show_current_summary">Mostra la percentuale di carica nella schermata di blocco</string>
   <!-- Tiles animation style  -->
-  <string name="quicksettings_tiles_category">Opzioni animazione Tile</string>
-  <string name="qs_tile_animation_style_title">Stile animazione tiles</string>
-  <string name="qs_tile_animation_duration_title">Durata animazione tiles</string>
-  <string name="qs_tile_animation_interpolator_title">Interpolatore animazione tiles</string>
+  <string name="quicksettings_tiles_category">Opzioni animazione tile</string>
+  <string name="qs_tile_animation_style_title">Stile animazione tile</string>
+  <string name="qs_tile_animation_duration_title">Durata animazione tile</string>
+  <string name="qs_tile_animation_interpolator_title">Interpolatore animazione tile</string>
   <string name="qs_tile_animation_style_off">Nessuna animazione</string>
   <string name="qs_tile_animation_style_flip">Capovolgi</string>
   <string name="qs_tile_animation_style_rotate">Ruota</string>
@@ -913,4 +915,6 @@
   <!-- QS location sensors mode -->
   <string name="qs_advanced_location_title">Impostazioni di posizione avanzata</string>
   <string name="qs_advanced_location_summary">Attivare le impostazioni avanzate per la posizione nelle impostazioni rapide</string>
+  <!-- Navbar buttons transparency -->
+  <string name="navbar_buttons_alpha_title">Buttons transparency</string>
 </resources>

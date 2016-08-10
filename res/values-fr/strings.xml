@@ -40,7 +40,7 @@
   <string name="multiwindow_category">Multi-fenêtre</string>
   <string name="listview_animations_category">Animations des listes</string>
   <string name="system_animations_category">Animations système</string>
-  <string name="omniswitch_category">OmniSwitch</string>
+  <string name="omniswitch_category">Omni switch</string>
   <string name="weather_category">Météo</string>
   <string name="breathing_notifications_category">Notifications clignotantes</string>
   <string name="button_settings">Boutons</string>
@@ -71,9 +71,9 @@
   <string name="smart_pulldown_title">Déroulement intelligent</string>
   <string name="smart_pulldown_summary">Ouvrir le Volet des notifications en présence de notifications %1$s</string>
   <string name="smart_pulldown_off">Désactivé</string>
-  <string name="smart_pulldown_dismissable">Non-effaçables</string>
-  <string name="smart_pulldown_persistent">Non-persistantes</string>
-  <string name="smart_pulldown_all">Non-effaçables et non-persistantes</string>
+  <string name="smart_pulldown_dismissable">Persistantes</string>
+  <string name="smart_pulldown_persistent">Effaçables</string>
+  <string name="smart_pulldown_all">Persistantes et effaçables</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Curseur de luminosité</string>
   <string name="qs_brightness_slider_summary">Afficher le curseur de luminosité dans le volet des paramètres</string>
@@ -287,8 +287,8 @@
   <string name="toast_default_animation">Par défaut</string>
   <string name="toast_fade_animation">Fondu</string>
   <string name="toast_SlideRight_animation">Glisser vers la droite</string>
-  <string name="toast_SlideLeft_animation">Glissez vers la gauche</string>
-  <string name="toast_FastFade_animation">Rapide fade</string>
+  <string name="toast_SlideLeft_animation">Glisser vers la gauche</string>
+  <string name="toast_FastFade_animation">Fondu rapide</string>
   <string name="toast_GrowFade_animation">Agrandissement avec fondu</string>
   <string name="toast_GrowFadeCenter_animation">Agrandissement (Centre)</string>
   <string name="toast_GrowFadeBottom_animation">Agrandissement (Bas)</string>
@@ -321,7 +321,7 @@
   <string name="traffic_category">Indicateurs de trafic</string>
   <string name="network_traffic_title">Trafic réseau</string>
   <string name="show_network_traffic_state">Indicateur de vitesse de réseau</string>
-  <string name="show_network_traffic_unit">Afficher l\'unité</string>
+  <string name="show_network_traffic_unit">Unité d\'affichage</string>
   <string name="show_network_traffic_frequency">Intervalle de mise à jour</string>
   <string name="show_network_traffic_disable">Désactivé</string>
   <string name="show_network_traffic_up">Sortant</string>
@@ -521,6 +521,8 @@
   <string name="hardware_keys_single_tap_title">Raccourci Appui simple</string>
   <string name="hardware_keys_long_press_title">Raccourci Appui prolongé</string>
   <string name="hardware_keys_double_tap_title">Raccourci Double appui</string>
+  <string name="hardware_keys_category">Navigation buttons</string>
+  <string name="hardware_keys_disable_title">Disable navigation buttons</string>
   <!-- Actions dialog and default task values set in ActionPreference xml-->
   <string name="choose_action_title">Type de raccourci</string>
   <string name="action_entry_default_action">Par défaut</string>
@@ -613,8 +615,8 @@
   <string name="smartbar_context_menu_position_summary">Définir la position des boutons contextuels tels que le bouton Menu ou le sélecteur de clavier</string>
   <string name="smartbar_right">À droite</string>
   <string name="smartbar_left">À gauche</string>
-  <string name="smartbar_button_animation_title">Animation du bouton</string>
-  <string name="smartbar_button_animation_summary">Définir le mode d\'animation des boutons lorsqu\'ils sont appuyés</string>
+  <string name="smartbar_button_animation_title">Animation des boutons</string>
+  <string name="smartbar_button_animation_summary">Définir le mode d\'animation des boutons</string>
   <string name="smartbar_button_animation_ripple">Ondulation</string>
   <string name="smartbar_button_animation_spring">Rebond</string>
   <string name="smartbar_factory_reset_title">Réinitialiser les paramètres</string>
@@ -913,4 +915,6 @@
   <!-- QS location sensors mode -->
   <string name="qs_advanced_location_title">Localisation</string>
   <string name="qs_advanced_location_summary">Activer les paramètres avancés de localisation dans le volet des paramètres</string>
+  <!-- Navbar buttons transparency -->
+  <string name="navbar_buttons_alpha_title">Buttons transparency</string>
 </resources>

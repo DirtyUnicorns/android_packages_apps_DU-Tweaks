@@ -350,7 +350,7 @@
   <string name="weather_settings_summary">Настроить местоположение и другие параметры виджета</string>
   <!-- Weather settings -->
   <string name="weather_show_weather_title">Показать настройки погоды</string>
-  <string name="weather_show_weather_summary">Показать все доступные настройки LockClock</string>
+  <string name="weather_show_weather_summary">Включить погоду и все доступные для нее настройки</string>
   <string name="status_bar_show_weather_title">Сведения о погоде</string>
   <string name="status_bar_show_weather_summary">Показывать погоду в панели уведомлений</string>
   <string name="weather_show_location_title">Показывать местоположение</string>
@@ -521,6 +521,8 @@
   <string name="hardware_keys_single_tap_title">Установить действие на одно нажатие</string>
   <string name="hardware_keys_long_press_title">Установить действие по долгому нажатию</string>
   <string name="hardware_keys_double_tap_title">Действие по двойному нажатию</string>
+  <string name="hardware_keys_category">Navigation buttons</string>
+  <string name="hardware_keys_disable_title">Disable navigation buttons</string>
   <!-- Actions dialog and default task values set in ActionPreference xml-->
   <string name="choose_action_title">Выберите действие</string>
   <string name="action_entry_default_action">Настройки по умолчанию</string>
@@ -913,4 +915,6 @@
   <!-- QS location sensors mode -->
   <string name="qs_advanced_location_title">Расширенные настройки местоположения</string>
   <string name="qs_advanced_location_summary">Включить расширенные настройки для местоположения в быстрых настройках</string>
+  <!-- Navbar buttons transparency -->
+  <string name="navbar_buttons_alpha_title">Buttons transparency</string>
 </resources>

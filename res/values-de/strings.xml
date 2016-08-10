@@ -521,6 +521,8 @@
   <string name="hardware_keys_single_tap_title">Einfaches Tippen (Aktion)</string>
   <string name="hardware_keys_long_press_title">Langes Drücken (Aktion)</string>
   <string name="hardware_keys_double_tap_title">Doppeltes Tippen (Aktion)</string>
+  <string name="hardware_keys_category">Navigation buttons</string>
+  <string name="hardware_keys_disable_title">Disable navigation buttons</string>
   <!-- Actions dialog and default task values set in ActionPreference xml-->
   <string name="choose_action_title">Aktion auswählen</string>
   <string name="action_entry_default_action">Standardeinstellungen</string>
@@ -913,4 +915,6 @@
   <!-- QS location sensors mode -->
   <string name="qs_advanced_location_title">Erweiterte Standorteinstellungen</string>
   <string name="qs_advanced_location_summary">Erweiterte Einstellungen für den Standort in den Schnelleinstellungen aktivieren</string>
+  <!-- Navbar buttons transparency -->
+  <string name="navbar_buttons_alpha_title">Buttons transparency</string>
 </resources>
