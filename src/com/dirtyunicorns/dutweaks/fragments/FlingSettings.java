@@ -20,6 +20,8 @@ import java.util.ArrayList;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
+import android.preference.CustomSeekBarPreference;
+
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.ActionHandler;
@@ -58,6 +60,7 @@ public class FlingSettings extends ActionFragment implements
     ColorPickerPreference mLogoColor;
     ColorPickerPreference mRippleColor;
     ColorPickerPreference mTrailsColor;
+    CustomSeekBarPreference mTrailsWidth;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -109,6 +112,12 @@ public class FlingSettings extends ActionFragment implements
         mTrailsColor = (ColorPickerPreference) findPreference("eos_fling_trails_color");
         mTrailsColor.setNewPreviewColor(trailsColor);
         mTrailsColor.setOnPreferenceChangeListener(this);
+
+        mTrailsWidth = (CustomSeekBarPreference) findPreference("du_fling_trails_width");
+        int width = Settings.Secure.getIntForUser(getContentResolver(),
+                Settings.Secure.FLING_TRAILS_WIDTH, 15, UserHandle.USER_CURRENT);
+        mTrailsWidth.setValue(width / 1);
+        mTrailsWidth.setOnPreferenceChangeListener(this);
 
         onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.FLING));
     }
@@ -194,6 +203,11 @@ public class FlingSettings extends ActionFragment implements
             int color = ((Integer) newValue).intValue();
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.FLING_TRAILS_COLOR, color);
+            return true;
+        } else if (preference == mTrailsWidth) {
+            int val = (Integer) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                    Settings.Secure.FLING_TRAILS_WIDTH, val * 1, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
