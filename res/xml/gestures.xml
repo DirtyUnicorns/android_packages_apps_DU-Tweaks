@@ -68,37 +68,37 @@
             android:summary="@string/gesture_anywhere_gestures_summary" 
             android:dependency="gesture_anywhere_enabled" />
 
-        <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+        <CustomSeekBarPreference
             android:key="gesture_anywhere_trigger_width"
             android:title="@string/trigger_width_title"
             android:summary="@string/trigger_width_summary"
             android:defaultValue="4"
             android:max="64"
-            settings:min="4"
-            settings:unitsLeft=""
-            settings:unitsRight="px"
+            android:min="4"
+            android:unitsLeft=""
+            android:unitsRight="px"
             android:dependency="gesture_anywhere_enabled" />
 
-        <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+        <CustomSeekBarPreference
             android:key="gesture_anywhere_trigger_top"
             android:title="@string/trigger_top_title"
             android:summary="@string/trigger_top_summary"
             android:defaultValue="0"
             android:max="99"
-            settings:min="0"
-            settings:unitsLeft=""
-            settings:unitsRight="%"
+            android:min="0"
+            android:unitsLeft=""
+            android:unitsRight="%"
             android:dependency="gesture_anywhere_enabled" />
 
-        <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+        <CustomSeekBarPreference
             android:key="gesture_anywhere_trigger_bottom"
             android:title="@string/trigger_bottom_title"
             android:summary="@string/trigger_bottom_summary"
             android:defaultValue="100"
             android:max="100"
-            settings:min="1"
-            settings:unitsLeft=""
-            settings:unitsRight="%"
+            android:min="1"
+            android:unitsLeft=""
+            android:unitsRight="%"
             android:dependency="gesture_anywhere_enabled" />
 
 </PreferenceScreen>

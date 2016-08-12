@@ -37,6 +37,7 @@ import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.preference.CustomSeekBarPreference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -59,14 +60,13 @@ import com.android.internal.utils.du.Config;
 import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
 public class SmartbarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private ListPreference mSmartBarContext;
     private ListPreference mImeActions;
     private ListPreference mButtonAnim;
-    private SeekBarPreferenceCham mButtonsAlpha;
+    private CustomSeekBarPreference mButtonsAlpha;
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int MENU_SAVE = Menu.FIRST + 1;
@@ -107,7 +107,7 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         mButtonAnim.setOnPreferenceChangeListener(this);
 
         mButtonsAlpha =
-                (SeekBarPreferenceCham) findPreference(PREF_NAVBAR_BUTTONS_ALPHA);
+                (CustomSeekBarPreference) findPreference(PREF_NAVBAR_BUTTONS_ALPHA);
         int bAlpha = Settings.Secure.getIntForUser(getContentResolver(),
                 Settings.Secure.NAVBAR_BUTTONS_ALPHA, 255, UserHandle.USER_CURRENT);
         mButtonsAlpha.setValue(bAlpha / 1);

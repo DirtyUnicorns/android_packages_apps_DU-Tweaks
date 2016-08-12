@@ -44,13 +44,13 @@
         android:entryValues="@array/smartbar_button_animation_values"
         android:summary="@string/smartbar_button_animation_summary" />
 
-    <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+    <CustomSeekBarPreference
         android:key="navbar_buttons_alpha"
         android:title="@string/navbar_buttons_alpha_title"
         android:max="255"
-        settings:minimum="0"
-        settings:unitsLeft=""
-        settings:unitsRight=""
+        android:min="0"
+        android:unitsLeft=""
+        android:unitsRight=""
         android:persistent="false" />
 
 

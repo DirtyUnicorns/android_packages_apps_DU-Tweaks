@@ -20,6 +20,7 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.net.TrafficStats;
 import android.os.Bundle;
+import android.preference.CustomSeekBarPreference;
 import android.preference.SwitchPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -31,7 +32,6 @@ import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 import com.android.internal.logging.MetricsLogger;
 
 public class Traffic extends SettingsPreferenceFragment
@@ -51,7 +51,7 @@ public class Traffic extends SettingsPreferenceFragment
     private ListPreference mNetTrafficPeriod;
     private SwitchPreference mNetTrafficAutohide;
     private SwitchPreference mNetTrafficHidearrow;
-    private SeekBarPreferenceCham mNetTrafficAutohideThreshold;
+    private CustomSeekBarPreference mNetTrafficAutohideThreshold;
 
     private int mNetTrafficVal;
     private int MASK_UP;
@@ -86,7 +86,7 @@ public class Traffic extends SettingsPreferenceFragment
         mNetTrafficHidearrow.setOnPreferenceChangeListener(this);
 
         mNetTrafficAutohideThreshold =
-            (SeekBarPreferenceCham) prefSet.findPreference(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
+            (CustomSeekBarPreference) prefSet.findPreference(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
         int netTrafficAutohideThreshold = Settings.System.getInt(getContentResolver(),
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 10);
             mNetTrafficAutohideThreshold.setValue(netTrafficAutohideThreshold / 1);

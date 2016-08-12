@@ -38,7 +38,7 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.RingtonePreference;
-import android.preference.SeekBarPreference;
+import android.preference.CustomSeekBarPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
@@ -54,7 +54,6 @@ import com.android.settings.Utils;
 import com.dirtyunicorns.dutweaks.CMDProcessor;
 import com.dirtyunicorns.dutweaks.Helpers;
 import com.dirtyunicorns.dutweaks.AppMultiSelectListPreference;
-import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
 import java.io.File;
 import java.lang.Thread;
@@ -75,9 +74,9 @@ public class AppCircleBar extends SettingsPreferenceFragment implements
 
     private AppMultiSelectListPreference mIncludedAppCircleBar;
 
-    private SeekBarPreferenceCham mTriggerWidthPref;
-    private SeekBarPreferenceCham mTriggerTopPref;
-    private SeekBarPreferenceCham mTriggerBottomPref;
+    private CustomSeekBarPreference mTriggerWidthPref;
+    private CustomSeekBarPreference mTriggerTopPref;
+    private CustomSeekBarPreference mTriggerBottomPref;
 
 
     @Override
@@ -95,17 +94,17 @@ public class AppCircleBar extends SettingsPreferenceFragment implements
         if (includedApps != null) mIncludedAppCircleBar.setValues(includedApps);
         mIncludedAppCircleBar.setOnPreferenceChangeListener(this);
 
-        mTriggerWidthPref = (SeekBarPreferenceCham) findPreference(KEY_TRIGGER_WIDTH);
+        mTriggerWidthPref = (CustomSeekBarPreference) findPreference(KEY_TRIGGER_WIDTH);
         mTriggerWidthPref.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.APP_CIRCLE_BAR_TRIGGER_WIDTH, 40));
         mTriggerWidthPref.setOnPreferenceChangeListener(this);
 
-        mTriggerTopPref = (SeekBarPreferenceCham) findPreference(KEY_TRIGGER_TOP);
+        mTriggerTopPref = (CustomSeekBarPreference) findPreference(KEY_TRIGGER_TOP);
         mTriggerTopPref.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.APP_CIRCLE_BAR_TRIGGER_TOP, 0));
         mTriggerTopPref.setOnPreferenceChangeListener(this);
 
-        mTriggerBottomPref = (SeekBarPreferenceCham) findPreference(KEY_TRIGGER_BOTTOM);
+        mTriggerBottomPref = (CustomSeekBarPreference) findPreference(KEY_TRIGGER_BOTTOM);
         mTriggerBottomPref.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.APP_CIRCLE_BAR_TRIGGER_HEIGHT, 100));
         mTriggerBottomPref.setOnPreferenceChangeListener(this);

@@ -56,13 +56,13 @@
         android:dependency="network_traffic_state"
         android:defaultValue="false" />
 
-    <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+    <CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold"
         android:max="100"
-        settings:min="0"
-        settings:unitsLeft=""
-        settings:unitsRight="kB/s"
+        android:min="0"
+        android:unitsLeft=""
+        android:unitsRight="kB/s"
         android:dependency="network_traffic_autohide"
         android:persistent="false" />
 

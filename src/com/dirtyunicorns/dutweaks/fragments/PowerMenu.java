@@ -25,16 +25,15 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.preference.ListPreference;
+import android.preference.CustomSeekBarPreference;
 import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.SeekBarPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
-import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 import com.android.internal.util.du.DuUtils;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
@@ -50,7 +49,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
     private ListPreference mAdvancedReboot;
     private ListPreference mPowerMenuAnimations;
     private SwitchPreference mPowermenuTorch;
-    private SeekBarPreferenceCham mPowerRebootDialogDim;
+    private CustomSeekBarPreference mPowerRebootDialogDim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -82,7 +81,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                 Settings.System.POWERMENU_TORCH, 0) == 1));
         }
 
-        mPowerRebootDialogDim = (SeekBarPreferenceCham) prefScreen.findPreference(POWER_REBOOT_DIALOG_DIM);
+        mPowerRebootDialogDim = (CustomSeekBarPreference) prefScreen.findPreference(POWER_REBOOT_DIALOG_DIM);
         int powerRebootDialogDim = Settings.System.getInt(resolver,
                 Settings.System.POWER_REBOOT_DIALOG_DIM, 50);
         mPowerRebootDialogDim.setValue(powerRebootDialogDim / 1);

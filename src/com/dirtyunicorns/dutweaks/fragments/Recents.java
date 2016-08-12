@@ -32,7 +32,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
-import android.preference.SlimSeekBarPreference;
+import android.preference.CustomSeekBarPreference;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
@@ -84,8 +84,8 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
     private PreferenceCategory mOmniRecents;
     private PreferenceCategory mStockRecents;
     private PreferenceCategory mSlimRecents;
-    private SlimSeekBarPreference mMaxApps;
-    private SlimSeekBarPreference mRecentPanelScale;
+    private CustomSeekBarPreference mMaxApps;
+    private CustomSeekBarPreference mRecentPanelScale;
     private SwitchPreference mUseSlimRecents;
     private SwitchPreference mShowRunningTasks;
     private SwitchPreference mRecentsShowTopmost;
@@ -195,9 +195,9 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
                     ((Boolean) newValue) ? 1 : 0);
             return true;
         } else if (preference == mRecentPanelScale) {
-            int value = Integer.parseInt((String) newValue);
+            int val = (Integer) newValue;
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.RECENT_PANEL_SCALE_FACTOR, value);
+                    Settings.System.RECENT_PANEL_SCALE_FACTOR, val * 1);
             return true;
         } else if (preference == mRecentPanelExpandedMode) {
             int value = Integer.parseInt((String) newValue);
@@ -254,9 +254,9 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
                     ((Boolean) newValue) ? 1 : 0);
             return true;
         } else if (preference == mMaxApps) {
-            int value = Integer.parseInt((String) newValue);
+            int val = (Integer) newValue;
             Settings.System.putInt(getContentResolver(),
-                Settings.System.RECENTS_MAX_APPS, value);
+                    Settings.System.RECENTS_MAX_APPS, val * 1);
             return true;
         } else if (preference == mRecentsUseOmniSwitch) {
             boolean value = (Boolean) newValue;
@@ -334,7 +334,7 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
 
         final int recentScale = Settings.System.getInt(getContentResolver(),
                 Settings.System.RECENT_PANEL_SCALE_FACTOR, 100);
-        mRecentPanelScale.setInitValue(recentScale - 60);
+        mRecentPanelScale.setValue(recentScale);
 
         final int recentExpandedMode = Settings.System.getInt(getContentResolver(),
                 Settings.System.RECENT_PANEL_EXPANDED_MODE, 0);
@@ -348,13 +348,11 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
         mShowRunningTasks = (SwitchPreference) findPreference(ONLY_SHOW_RUNNING_TASKS);
         mShowRunningTasks.setOnPreferenceChangeListener(this);
 
-        mMaxApps = (SlimSeekBarPreference) findPreference(RECENTS_MAX_APPS);
+        mMaxApps = (CustomSeekBarPreference) findPreference(RECENTS_MAX_APPS);
         mMaxApps.setOnPreferenceChangeListener(this);
-        mMaxApps.minimumValue(5);
-        mMaxApps.setInitValue(Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.RECENTS_MAX_APPS, ActivityManager.getMaxRecentTasksStatic(),
-                UserHandle.USER_CURRENT) - 5);
-        mMaxApps.disablePercentageValue(true);
+        int maxApps = Settings.System.getInt(getContentResolver(),
+                Settings.System.RECENTS_MAX_APPS, 5);
+        mMaxApps.setValue(maxApps);
 
         // Recent panel background color
         mRecentPanelBgColor =
@@ -411,14 +409,13 @@ public class Recents extends SettingsPreferenceFragment implements DialogCreatab
                 (SwitchPreference) findPreference(RECENT_PANEL_LEFTY_MODE);
         mRecentPanelLeftyMode.setOnPreferenceChangeListener(this);
 
-        mRecentPanelScale =
-                (SlimSeekBarPreference) findPreference(RECENT_PANEL_SCALE);
-        mRecentPanelScale.setInterval(5);
-        mRecentPanelScale.setDefault(100);
-        mRecentPanelScale.minimumValue(60);
+        mRecentPanelScale = (CustomSeekBarPreference) findPreference(RECENT_PANEL_SCALE);
         mRecentPanelScale.setOnPreferenceChangeListener(this);
-        mRecentPanelScale.setInitValue(Settings.System.getInt(getContentResolver(),
-                Settings.System.RECENT_PANEL_SCALE_FACTOR, 100) - 60);
+        int recentsPanelScale = Settings.System.getInt(getContentResolver(),
+                Settings.System.RECENT_PANEL_SCALE_FACTOR, 100);
+        mRecentPanelScale.setValue(recentsPanelScale);
+
+
 
         mRecentPanelExpandedMode =
                 (ListPreference) findPreference(RECENT_PANEL_EXPANDED_MODE);

@@ -21,6 +21,7 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.preference.CustomSeekBarPreference;
 import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
@@ -32,7 +33,6 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.Utils;
-import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
 public class ContextualHeaders extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -40,7 +40,7 @@ public class ContextualHeaders extends SettingsPreferenceFragment implements OnP
     private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
 
     private SwitchPreference mCustomHeader;
-    private SeekBarPreferenceCham mHeaderShadow;
+    private CustomSeekBarPreference mHeaderShadow;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,7 +56,7 @@ public class ContextualHeaders extends SettingsPreferenceFragment implements OnP
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1));
         mCustomHeader.setOnPreferenceChangeListener(this);
 
-        mHeaderShadow = (SeekBarPreferenceCham) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
+        mHeaderShadow = (CustomSeekBarPreference) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
         int headerShadow = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
         mHeaderShadow.setValue(headerShadow);

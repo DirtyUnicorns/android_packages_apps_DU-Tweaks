@@ -92,14 +92,14 @@
             android:summary="@string/power_menu_animation_summary"
             android:persistent="false" />
 
-         <com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham
+         <CustomSeekBarPreference
             android:key="power_reboot_dialog_dim"
             android:title="@string/powermenu_dialog_dim"
             android:max="100"
-            settings:minimum="0"
-            settings:interval="1"
-            settings:unitsLeft=""
-            settings:unitsRight="%"
+            android:min="0"
+            android:interval="1"
+            android:unitsLeft=""
+            android:unitsRight="%"
             android:persistent="false" />
 
 </PreferenceScreen>

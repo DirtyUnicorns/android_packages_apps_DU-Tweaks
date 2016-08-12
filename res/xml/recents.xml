@@ -86,9 +86,10 @@
             android:summary="@string/slim_recents_enable_summary"
             android:defaultValue="false" />
 
-        <SlimSeekBarPreference
+        <CustomSeekBarPreference
             android:key="max_apps"
             android:title="@string/recents_max_apps_title"
+            android:min="5"
             android:dependency="slim_recents" />
 
         <ListPreference
@@ -114,9 +115,12 @@
             android:persistent="true" 
             android:dependency="slim_recents" />
 
-        <SlimSeekBarPreference
+        <CustomSeekBarPreference
             android:key="recent_panel_scale"
-            android:title="@string/recent_panel_scale_title" 
+            android:title="@string/recent_panel_scale_title"
+            android:interval="5"
+            android:defaultValue="100"
+            android:min="60"
             android:dependency="slim_recents" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference

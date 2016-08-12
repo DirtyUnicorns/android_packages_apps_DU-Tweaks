@@ -27,6 +27,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.preference.ListPreference;
+import android.preference.CustomSeekBarPreference;
 import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -39,7 +40,6 @@ import com.android.internal.util.du.DuUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
 public class LockscreenConfig extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -57,9 +57,9 @@ public class LockscreenConfig extends SettingsPreferenceFragment implements OnPr
     private Preference mSetWallpaper;
     private Preference mClearWallpaper;
     private SwitchPreference mKeyguardTorch;
-    private SeekBarPreferenceCham mLsAlpha;
-    private SeekBarPreferenceCham mLsSecurityAlpha;
-    private SeekBarPreferenceCham mMaxKeyguardNotifConfig;
+    private CustomSeekBarPreference mLsAlpha;
+    private CustomSeekBarPreference mLsSecurityAlpha;
+    private CustomSeekBarPreference mMaxKeyguardNotifConfig;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -73,7 +73,7 @@ public class LockscreenConfig extends SettingsPreferenceFragment implements OnPr
         final ContentResolver resolver = getActivity().getContentResolver();
         final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
 
-        mMaxKeyguardNotifConfig = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
+        mMaxKeyguardNotifConfig = (CustomSeekBarPreference) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
         int kgconf = Settings.System.getInt(resolver,
                 Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 5);
         mMaxKeyguardNotifConfig.setValue(kgconf);
@@ -93,13 +93,13 @@ public class LockscreenConfig extends SettingsPreferenceFragment implements OnPr
             prefSet.removePreference(mLsBouncer);
         }
 
-        mLsAlpha = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_ALPHA);
+        mLsAlpha = (CustomSeekBarPreference) findPreference(LOCKSCREEN_ALPHA);
         float alpha = Settings.System.getFloat(resolver,
                 Settings.System.LOCKSCREEN_ALPHA, 0.45f);
         mLsAlpha.setValue((int)(100 * alpha));
         mLsAlpha.setOnPreferenceChangeListener(this);
 
-        mLsSecurityAlpha = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_SECURITY_ALPHA);
+        mLsSecurityAlpha = (CustomSeekBarPreference) findPreference(LOCKSCREEN_SECURITY_ALPHA);
         if (lockPatternUtils.isSecure(MY_USER_ID)) {
         float alpha2 = Settings.System.getFloat(resolver,
                 Settings.System.LOCKSCREEN_SECURITY_ALPHA, 0.75f);

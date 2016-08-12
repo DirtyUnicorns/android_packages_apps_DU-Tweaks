@@ -29,6 +29,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.ListPreference;
+import android.preference.CustomSeekBarPreference;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
@@ -44,7 +45,6 @@ import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.dirtyunicorns.dutweaks.preference.ActionPreference;
-import com.dirtyunicorns.dutweaks.widget.SeekBarPreferenceCham;
 
 public class Gestures extends ActionFragment implements OnPreferenceChangeListener {
 
@@ -62,9 +62,9 @@ public class Gestures extends ActionFragment implements OnPreferenceChangeListen
     private ActionPreference mThreeFingerSwipeGestures;
     private SwitchPreference mEnabledPref;
 
-    private SeekBarPreferenceCham mTriggerWidthPref;
-    private SeekBarPreferenceCham mTriggerTopPref;
-    private SeekBarPreferenceCham mTriggerBottomPref;
+    private CustomSeekBarPreference mTriggerWidthPref;
+    private CustomSeekBarPreference mTriggerTopPref;
+    private CustomSeekBarPreference mTriggerBottomPref;
 
     private CharSequence mPreviousTitle;
 
@@ -93,17 +93,17 @@ public class Gestures extends ActionFragment implements OnPreferenceChangeListen
         mPositionPref.setValue(String.valueOf(position));
         updatePositionSummary(position);
 
-        mTriggerWidthPref = (SeekBarPreferenceCham) findPreference(KEY_TRIGGER_WIDTH);
+        mTriggerWidthPref = (CustomSeekBarPreference) findPreference(KEY_TRIGGER_WIDTH);
         mTriggerWidthPref.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.GESTURE_ANYWHERE_TRIGGER_WIDTH, 40));
         mTriggerWidthPref.setOnPreferenceChangeListener(this);
 
-        mTriggerTopPref = (SeekBarPreferenceCham) findPreference(KEY_TRIGGER_TOP);
+        mTriggerTopPref = (CustomSeekBarPreference) findPreference(KEY_TRIGGER_TOP);
         mTriggerTopPref.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.GESTURE_ANYWHERE_TRIGGER_TOP, 0));
         mTriggerTopPref.setOnPreferenceChangeListener(this);
 
-        mTriggerBottomPref = (SeekBarPreferenceCham) findPreference(KEY_TRIGGER_BOTTOM);
+        mTriggerBottomPref = (CustomSeekBarPreference) findPreference(KEY_TRIGGER_BOTTOM);
         mTriggerBottomPref.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.GESTURE_ANYWHERE_TRIGGER_HEIGHT, 100));
         mTriggerBottomPref.setOnPreferenceChangeListener(this);
