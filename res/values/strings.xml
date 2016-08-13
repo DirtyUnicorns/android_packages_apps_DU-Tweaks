@@ -958,7 +958,7 @@
 
     <!-- Flashlight notification -->
     <string name="flashlight_notification_title">Flashlight notification</string>
-    <string name="flashlight_notification_summary">Enable notificiation for when the flashlight is on</string>
+    <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
 
     <!-- Header image shadow -->
     <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
