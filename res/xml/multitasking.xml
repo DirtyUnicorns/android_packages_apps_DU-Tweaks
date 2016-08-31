@@ -1,61 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
 
-          http://www.apache.org/licenses/LICENSE-2.0
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/multitasking_category" >
-
-         <PreferenceScreen
-            android:key="app_circle_bar"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.AppCircleBar"
-            android:layout="@layout/preference_appcirclebar"
-            android:title="@string/app_circle_bar_title" />
-
-         <Preference
-            android:key="gestures"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Gestures"
-            android:layout="@layout/preference_gestures"
-            android:title="@string/gestures_category" />
-
-         <Preference
-            android:key="heads_up_enabled"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings"
-            android:layout="@layout/preference_headsup"
-            android:title="@string/category_heads_up" />
-
-         <Preference
-            android:key="multitwindow"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.MultiWindow"
-            android:layout="@layout/preference_multiwindow"
-            android:title="@string/multiwindow_category" />
-
-         <PreferenceScreen
-            android:key="omniswitch"
-            android:layout="@layout/preference_omniswitch"
-            android:title="@string/omniswitch_category" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="org.omnirom.omniswitch"
-                android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
-         </PreferenceScreen>
-
-         <Preference
-            android:key="recents"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Recents"
-            android:layout="@layout/preference_recents"
-            android:title="@string/recents_category" />
 
 </PreferenceScreen>
 

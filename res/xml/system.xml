@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -20,47 +20,5 @@
     android:title="@string/system_category"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-         <Preference
-            android:key="animations"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Animations"
-            android:layout="@layout/preference_animations"
-            android:title="@string/animations_category" />
-
-         <Preference
-            android:key="expanded_desktop"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop"
-            android:layout="@layout/preference_expanded_desktop"
-            android:title="@string/expanded_desktop_category" />
-
-         <PreferenceScreen
-            android:key="density_changer"
-            android:title="@string/lcd_density_title"
-            android:layout="@layout/preference_density"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Density" />
-
-         <Preference
-            android:key="misctweaks"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.MiscTweaks"
-            android:layout="@layout/preference_misctweaks"
-            android:title="@string/misctweaks_category" />
-
-         <Preference
-            android:key="powermenu"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.PowerMenu"
-            android:layout="@layout/preference_powermenu"
-            android:title="@string/powermenu_category" />
-
-         <PreferenceScreen
-            android:id="@+id/system_app_remover"
-            android:title="@string/system_app_remover"
-            android:layout="@layout/preference_systemappremover"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.SystemappRemover" />
-
-         <Preference
-            android:key="wakelockblocker"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.WakelockBlocker"
-            android:layout="@layout/preference_wakelockblocker"
-            android:title="@string/wakelockblocker_category" />
 
 </PreferenceScreen>

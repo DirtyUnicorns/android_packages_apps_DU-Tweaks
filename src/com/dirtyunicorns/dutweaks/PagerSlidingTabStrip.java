@@ -60,7 +60,6 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         public void onTabReselected(int position);
     }
 
-    // @formatter:off
     private static final int[] ATTRS = new int[]{
             android.R.attr.textColorPrimary,
             android.R.attr.textSize,
@@ -68,11 +67,9 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
             android.R.attr.paddingLeft,
             android.R.attr.paddingRight,
     };
-    // @formatter:on
 
     private final PagerAdapterObserver adapterObserver = new PagerAdapterObserver();
 
-    //These indexes must be related with the ATTR array above
     private static final int TEXT_COLOR_PRIMARY = 0;
     private static final int TEXT_SIZE_INDEX = 1;
     private static final int TEXT_COLOR_INDEX = 2;
@@ -156,12 +153,11 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         dividerWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dividerWidth, dm);
         tabTextSize = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, tabTextSize, dm);
 
-        // get system attrs (android:textSize and android:textColor)
         TypedArray a = context.obtainStyledAttributes(attrs, ATTRS);
         tabTextSize = a.getDimensionPixelSize(TEXT_SIZE_INDEX, tabTextSize);
         ColorStateList colorStateList = a.getColorStateList(TEXT_COLOR_INDEX);
-        int textPrimaryColor = context.getResources().getColor(com.dirtyunicorns.dutweaks.R.color.material_deep_teal_500);
-        int tabTextColor = context.getResources().getColor(com.dirtyunicorns.dutweaks.R.color.material_deep_teal_500);
+        int textPrimaryColor = context.getResources().getColor(R.color.material_deep_teal_500);
+        int tabTextColor = context.getResources().getColor(R.color.material_deep_teal_500);
 
         underlineColor = textPrimaryColor;
         dividerColor = textPrimaryColor;
@@ -170,10 +166,8 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         int paddingRight = a.getDimensionPixelSize(PADDING_RIGHT_INDEX, padding);
         a.recycle();
 
-        //In case we have the padding they must be equal so we take the biggest
         padding = Math.max(paddingLeft, paddingRight);
 
-        // get custom attrs
         a = context.obtainStyledAttributes(attrs, R.styleable.PagerSlidingTabStrip);
         indicatorColor = a.getColor(R.styleable.PagerSlidingTabStrip_pstsIndicatorColor, indicatorColor);
         underlineColor = a.getColor(R.styleable.PagerSlidingTabStrip_pstsUnderlineColor, underlineColor);
@@ -309,8 +303,6 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
                 if (tabTextColor != null) {
                     tab_title.setTextColor(tabTextColor);
                 }
-                // setAllCaps() is only available from API 14, so the upper case is made manually if we are on a
-                // pre-ICS-build
                 if (textAllCaps) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
                         tab_title.setAllCaps(true);
@@ -330,10 +322,6 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         int newScrollX = tabsContainer.getChildAt(position).getLeft() + offset;
         if (position > 0 || offset > 0) {
 
-            //Half screen offset.
-            //- Either tabs start at the middle of the view scrolling straight away
-            //- Or tabs start at the begging (no padding) scrolling when indicator gets
-            //  to the middle of the view width
             newScrollX -= scrollOffset;
             Pair<Float, Float> lines = getIndicatorCoordinates();
             newScrollX += ((lines.second - lines.first) / 2);
@@ -346,12 +334,10 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
     }
 
     private Pair<Float, Float> getIndicatorCoordinates() {
-        // default: line below current tab
         View currentTab = tabsContainer.getChildAt(currentPosition);
         float lineLeft = currentTab.getLeft();
         float lineRight = currentTab.getRight();
 
-        // if there is an offset, start interpolating left and right coordinates between current and next tab
         if (currentPositionOffset > 0f && currentPosition < tabCount - 1) {
 
             View nextTab = tabsContainer.getChildAt(currentPosition + 1);
@@ -367,9 +353,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         if (isPaddingMiddle || padding > 0) {
-            //Make sure tabContainer is bigger than the HorizontalScrollView to be able to scroll
             tabsContainer.setMinimumWidth(getWidth());
-            //Clipping padding to false to see the tabs while we pass them swiping
             setClipToPadding(false);
         }
 
@@ -411,14 +395,11 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         }
 
         final int height = getHeight();
-        // draw indicator line
         rectPaint.setColor(indicatorColor);
         Pair<Float, Float> lines = getIndicatorCoordinates();
         canvas.drawRect(lines.first + padding, height - indicatorHeight, lines.second + padding, height, rectPaint);
-        // draw underline
         rectPaint.setColor(underlineColor);
         canvas.drawRect(padding, height - underlineHeight, tabsContainer.getWidth() + padding, height, rectPaint);
-        // draw divider
         if (dividerWidth != 0) {
             dividerPaint.setStrokeWidth(dividerWidth);
             dividerPaint.setColor(dividerColor);
@@ -456,15 +437,12 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
             if (state == ViewPager.SCROLL_STATE_IDLE) {
                 scrollToChild(pager.getCurrentItem(), 0);
             }
-            //Full alpha for current item
             View currentTab = tabsContainer.getChildAt(pager.getCurrentItem());
             selected(currentTab);
-            //Half transparent for prev item
             if (pager.getCurrentItem() - 1 >= 0) {
                 View prevTab = tabsContainer.getChildAt(pager.getCurrentItem() - 1);
                 notSelected(prevTab);
             }
-            //Half transparent for next item
             if (pager.getCurrentItem() + 1 <= pager.getAdapter().getCount() - 1) {
                 View nextTab = tabsContainer.getChildAt(pager.getCurrentItem() + 1);
                 notSelected(nextTab);

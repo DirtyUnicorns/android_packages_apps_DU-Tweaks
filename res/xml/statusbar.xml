@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -20,57 +20,5 @@
     android:title="@string/statusbar_category"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-         <Preference
-            android:key="battery"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Battery"
-            android:layout="@layout/preference_battery"
-            android:title="@string/battery_category" />
-
-         <PreferenceScreen
-            android:key="carrierlabel"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.CarrierLabel"
-            android:layout="@layout/preference_carrierlabel"
-            android:title="@string/carrier_options" />
-
-         <Preference
-            android:key="statusbarclock"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarClock"
-            android:layout="@layout/preference_statusbarclock"
-            android:title="@string/status_bar_clock" />
-
-         <Preference
-            android:key="statusbar_notifications"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
-            android:layout="@layout/preference_statusbar_notifications"
-            android:title="@string/statusbar_notifications_category" />
-
-         <Preference
-            android:key="quicksettings"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.QuickSettings"
-            android:layout="@layout/preference_systemui_tuner_qs"
-            android:title="@string/quicksettings_category" />
-
-         <PreferenceScreen
-            android:key="systemui_tuner_statusbar"
-            android:title="@string/statusbar_items_category"
-            android:layout="@layout/preference_systemui_tuner_statusbaritems" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.TunerActivity" />
-         </PreferenceScreen>
-
-         <Preference
-            android:key="contextual_headers"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.ContextualHeaders"
-            android:layout="@layout/preference_contextualheaders"
-            android:title="@string/status_bar_custom_header_title" />
-
-	 <Preference
-            android:key="traffic"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.Traffic"
-            android:layout="@layout/preference_traffic"
-            android:title="@string/traffic_category" />
 
 </PreferenceScreen>
