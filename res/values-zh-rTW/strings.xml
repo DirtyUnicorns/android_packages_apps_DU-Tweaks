@@ -562,6 +562,7 @@
   <string name="fling_trails_enable_title">啟用手勢軌跡</string>
   <string name="fling_trails_enable_summary">滑動時顯示軌跡</string>
   <string name="fling_trails_color_title">軌跡顏色</string>
+  <string name="fling_trails_width_title">Trail width</string>
   <string name="fling_appearance">外觀</string>
   <string name="fling_show_logo_title">顯示掃動手勢標誌</string>
   <string name="fling_animate_logo_title">動畫標誌</string>
@@ -858,7 +859,7 @@
   <string name="keyguard_statusbar_clock_summary">在鎖定畫面中啟用狀態列的左側時鐘</string>
   <!-- Flashlight notification -->
   <string name="flashlight_notification_title">手電筒通知</string>
-  <string name="flashlight_notification_summary">手電筒開啟時顯示通知</string>
+  <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
   <!-- Header image shadow -->
   <string name="status_bar_custom_header_shadow_title">標題圖片陰影</string>
   <string name="status_bar_custom_header_shadow_summary">在使用較明亮的圖片時能有更好的能見度</string>
@@ -917,4 +918,21 @@
   <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
   <!-- Navbar buttons transparency -->
   <string name="navbar_buttons_alpha_title">Buttons transparency</string>
+  <!-- specific tile configurations -->
+  <string name="qstile_advanced_category">Advanced tile options</string>
+  <string name="themes_tile_title">Themes tile components</string>
+  <string name="themes_tile_summary">Theme elements to change when a new theme is selected</string>
+  <!-- Themes tile entries and values -->
+  <string name="themes_tile_mods_style_entry">Style</string>
+  <string name="themes_tile_mods_statusbar_entry">Status bar</string>
+  <string name="themes_tile_mods_headers_entry">Headers</string>
+  <string name="themes_tile_mods_navbar_entry">Navigation bar</string>
+  <string name="themes_tile_mods_launcher_entry">Wallpaper</string>
+  <string name="themes_tile_mods_lockscreen_entry">Lockscreen wallpaper</string>
+  <string name="themes_tile_mods_font_entry">Font</string>
+  <string name="themes_tile_mods_icons_entry">Icons</string>
+  <string name="themes_tile_mods_bootanim_entry">Boot animation</string>
+  <string name="themes_tile_mods_notification_entry">Notifications</string>
+  <string name="themes_tile_mods_alarm_entry">Alarms</string>
+  <string name="themes_tile_mods_ringtone_entry">Ringtones</string>
 </resources>

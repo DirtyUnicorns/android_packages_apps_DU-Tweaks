@@ -17,25 +17,25 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="system_category">System</string>
+  <string name="system_category">Sistem</string>
   <string name="lockscreen_category">Ecran de blocare</string>
-  <string name="statusbar_category">Status Bar</string>
-  <string name="navigation_category">Navigation</string>
+  <string name="statusbar_category">Bara de stare</string>
+  <string name="navigation_category">Navigaţie</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <!-- Categories -->
-  <string name="animations_category">Animations</string>
-  <string name="battery_category">Battery</string>
+  <string name="animations_category">Animații</string>
+  <string name="battery_category">Baterie</string>
   <string name="expanded_desktop_category">Expanded Desktop</string>
   <string name="misctweaks_category">Misc. Tweaks</string>
   <string name="powermenu_category">Power Menu</string>
   <string name="quicksettings_category">Quick Settings</string>
-  <string name="recents_category">Recents</string>
+  <string name="recents_category">Recente</string>
   <string name="statusbar_items_category">Statusbar Items</string>
-  <string name="statusbar_notifications_category">Notifications</string>
-  <string name="lockscreen_notifications_category">Lockscreen Notifications</string>
+  <string name="statusbar_notifications_category">Notificări</string>
+  <string name="lockscreen_notifications_category">Notificări in ecranul de blocare</string>
   <string name="wakelockblocker_category">Wakelock Blocker</string>
-  <string name="gestures_category">Gestures</string>
-  <string name="doubletap_gestures_category">Double tap gestures</string>
+  <string name="gestures_category">Gesturi</string>
+  <string name="doubletap_gestures_category">Gesturi dublu click</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Multi-Window</string>
   <string name="listview_animations_category">List View Animations</string>
@@ -43,7 +43,7 @@
   <string name="omniswitch_category">Omni switch</string>
   <string name="weather_category">Weather Widget</string>
   <string name="breathing_notifications_category">Breathing Notifications</string>
-  <string name="button_settings">Buttons</string>
+  <string name="button_settings">Butoane</string>
   <string name="category_heads_up">Heads Up</string>
   <string name="lockscreen_colors_fonts_category_title">Colors &amp; Fonts</string>
   <!-- OmniSwitch -->
@@ -53,7 +53,7 @@
   <string name="recents_use_omniswitch_title">Enable omni recents</string>
   <string name="recents_use_omniswitch_summary">Use OmniSwitch for recents view</string>
   <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
-  <string name="omniswitch_first_time_title">Information</string>
+  <string name="omniswitch_first_time_title">Informaţii</string>
   <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
   <!-- Dialog -->
   <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
@@ -68,22 +68,22 @@
   <string name="quick_pulldown_off">Off</string>
   <string name="quick_pulldown_left">Left</string>
   <string name="quick_pulldown_right">Right</string>
-  <string name="smart_pulldown_title">Smart pulldown</string>
+  <string name="smart_pulldown_title">Tragere inteligentă</string>
   <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
-  <string name="smart_pulldown_off">Off</string>
-  <string name="smart_pulldown_dismissable">No dismissable</string>
-  <string name="smart_pulldown_persistent">No persistent</string>
-  <string name="smart_pulldown_all">No dismissable or persistent</string>
+  <string name="smart_pulldown_off">Dezactivat</string>
+  <string name="smart_pulldown_dismissable">Nicio revocare</string>
+  <string name="smart_pulldown_persistent">Nicio persistenta</string>
+  <string name="smart_pulldown_all">Nicio revocare sau persistenta</string>
   <!-- Quick Settings brightness slider -->
-  <string name="qs_brightness_slider_title">Brightness slider</string>
+  <string name="qs_brightness_slider_title">Cursor luminozitate</string>
   <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Brightness icon </string>
   <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
   <!-- Quick settings columns -->
-  <string name="qs_num_columns_three">Three</string>
-  <string name="qs_num_columns_four">Four</string>
-  <string name="qs_num_columns_five">Five</string>
+  <string name="qs_num_columns_three">Trei</string>
+  <string name="qs_num_columns_four">Patru</string>
+  <string name="qs_num_columns_five">Cinci</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Immersive Recents</string>
   <string name="immersive_recents_summary">Change the view of the recents screen</string>
@@ -562,6 +562,7 @@
   <string name="fling_trails_enable_title">Enable gesture trails</string>
   <string name="fling_trails_enable_summary">Show a trail on swipe gestures</string>
   <string name="fling_trails_color_title">Trail color</string>
+  <string name="fling_trails_width_title">Trail width</string>
   <string name="fling_appearance">Appearance</string>
   <string name="fling_show_logo_title">Show Fling logo</string>
   <string name="fling_animate_logo_title">Animate logo</string>
@@ -858,7 +859,7 @@
   <string name="keyguard_statusbar_clock_summary">Enables the statusbar clock in the keyguard on the left side</string>
   <!-- Flashlight notification -->
   <string name="flashlight_notification_title">Flashlight notification</string>
-  <string name="flashlight_notification_summary">Enable notificiation for when the flashlight is on</string>
+  <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
   <!-- Header image shadow -->
   <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
   <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
@@ -917,4 +918,21 @@
   <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
   <!-- Navbar buttons transparency -->
   <string name="navbar_buttons_alpha_title">Buttons transparency</string>
+  <!-- specific tile configurations -->
+  <string name="qstile_advanced_category">Advanced tile options</string>
+  <string name="themes_tile_title">Themes tile components</string>
+  <string name="themes_tile_summary">Theme elements to change when a new theme is selected</string>
+  <!-- Themes tile entries and values -->
+  <string name="themes_tile_mods_style_entry">Style</string>
+  <string name="themes_tile_mods_statusbar_entry">Status bar</string>
+  <string name="themes_tile_mods_headers_entry">Headers</string>
+  <string name="themes_tile_mods_navbar_entry">Navigation bar</string>
+  <string name="themes_tile_mods_launcher_entry">Wallpaper</string>
+  <string name="themes_tile_mods_lockscreen_entry">Lockscreen wallpaper</string>
+  <string name="themes_tile_mods_font_entry">Font</string>
+  <string name="themes_tile_mods_icons_entry">Icons</string>
+  <string name="themes_tile_mods_bootanim_entry">Boot animation</string>
+  <string name="themes_tile_mods_notification_entry">Notifications</string>
+  <string name="themes_tile_mods_alarm_entry">Alarms</string>
+  <string name="themes_tile_mods_ringtone_entry">Ringtones</string>
 </resources>
