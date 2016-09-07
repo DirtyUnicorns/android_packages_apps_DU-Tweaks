@@ -17,5 +17,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/misctweaks_category" >
 
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="flashlight_notification"
+            android:title="@string/flashlight_notification_title"
+            android:summary="@string/flashlight_notification_summary"
+            android:defaultValue="false" />
 
 </PreferenceScreen>

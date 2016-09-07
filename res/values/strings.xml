@@ -24,7 +24,7 @@
     <string name="multitasking_category">Multi-Tasking</string>
 
     <!-- Categories -->
-    <string name="powermenu_category">Power Menu</string>
+    <string name="powermenu_category">Power menu</string>
     <string name="misctweaks_category">Misc. tweaks</string>
 
     <!-- Dialog -->
@@ -62,4 +62,9 @@
     <string name="expanded_desktop_style">Expanded desktop style</string>
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
+
+    <!-- Flashlight notification -->
+    <string name="flashlight_notification_title">Flashlight notification</string>
+    <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
+
 </resources>
