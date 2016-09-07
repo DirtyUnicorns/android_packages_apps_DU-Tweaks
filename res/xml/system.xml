@@ -28,6 +28,12 @@
             android:title="@string/expanded_desktop_category" />
 
          <Preference
+            android:key="misctweaks"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.MiscTweaks"
+            android:layout="@layout/preference_misctweaks"
+            android:title="@string/misctweaks_category" />
+
+         <Preference
             android:key="powermenu"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.PowerMenu"
             android:layout="@layout/preference_powermenu"

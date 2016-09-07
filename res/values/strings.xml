@@ -23,13 +23,16 @@
     <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-Tasking</string>
 
+    <!-- Categories -->
+    <string name="powermenu_category">Power Menu</string>
+    <string name="misctweaks_category">Misc. tweaks</string>
+
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
     <string name="dirtytweaks_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a DU developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
     <string name="dirtytweaks_dialog_toast">READ THE WHOLE THING!</string>
 
     <!-- Power Menu -->
-    <string name="powermenu_category">Power Menu</string>
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_power">Power</string>
     <string name="powermenu_reboot">Reboot</string>
