@@ -29,6 +29,7 @@
     <string name="misctweaks_category">Misc. tweaks</string>
     <string name="button_settings">Buttons</string>
     <string name="statusbar_notifications_category">Notifications</string>
+    <string name="expanded_desktop_category">Expanded desktop</string>
 
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
@@ -53,7 +54,6 @@
     <string name="advanced_reboot_show_always">Show always</string>
 
     <!-- Expanded desktop -->
-    <string name="expanded_desktop_category">Expanded Desktop</string>
     <string name="expanded_hide_nothing">Hide nothing</string>
     <string name="expanded_hide_status">Hide status bar</string>
     <string name="expanded_hide_navigation">Hide navigation bar</string>
@@ -93,5 +93,9 @@
     <!-- Disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
 
 </resources>
