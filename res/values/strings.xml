@@ -24,6 +24,7 @@
     <string name="multitasking_category">Multi-Tasking</string>
 
     <!-- Categories -->
+    <string name="recents_category">Recents</string>
     <string name="powermenu_category">Power menu</string>
     <string name="misctweaks_category">Misc. tweaks</string>
     <string name="button_settings">Buttons</string>

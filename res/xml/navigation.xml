@@ -24,6 +24,7 @@
     <PreferenceScreen
         android:key="button_settings"
         android:title="@string/button_settings"
+        android:layout="@layout/preference_buttons"
         android:fragment="com.dirtyunicorns.dutweaks.fragments.ButtonSettings" />
 
 </PreferenceScreen>
