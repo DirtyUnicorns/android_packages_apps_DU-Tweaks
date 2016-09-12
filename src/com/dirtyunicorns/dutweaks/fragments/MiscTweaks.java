@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
@@ -38,8 +39,12 @@ import com.android.settings.Utils;
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String FLASHLIGHT_NOTIFICATION = "flashlight_notification";
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String SCROLLINGCACHE_DEFAULT = "1";
 
     private SwitchPreference mFlashlightNotification;
+    private ListPreference mScrollingCachePref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,6 +63,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mFlashlightNotification.setChecked((Settings.System.getInt(resolver,
                 Settings.System.FLASHLIGHT_NOTIFICATION, 0) == 1));
         }
+
+        mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -77,6 +87,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getActivity().getContentResolver(),
                    Settings.System.FLASHLIGHT_NOTIFICATION, checked ? 1:0);
             return true;
+        } else if (preference == mScrollingCachePref) {
+            if (newValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String)newValue);
+            return true;
+            }
         }
         return false;
     }
