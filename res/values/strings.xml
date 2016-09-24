@@ -29,6 +29,7 @@
     <string name="misctweaks_category">Misc. tweaks</string>
     <string name="button_settings">Buttons</string>
     <string name="statusbar_notifications_category">Notifications</string>
+    <string name="statusbar_items_category">Statusbar items</string>
     <string name="expanded_desktop_category">Expanded desktop</string>
     <string name="quicksettings_category">Quick settings</string>
     <string name="traffic_category">Traffic indicators</string>
