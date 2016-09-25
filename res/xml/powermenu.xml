@@ -18,12 +18,6 @@
     android:title="@string/powermenu_category" >
 
          <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-            android:key="power_menu_lockscreen"
-            android:title="@string/powermenu_lockscreen_title"
-            android:summary="@string/powermenu_lockscreen_summary"
-            android:defaultValue="true" />
-
-         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="powermenu_power"
             android:title="@string/powermenu_power"
             android:defaultValue="true" />
@@ -76,6 +70,17 @@
          <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="powermenu_soundpanel"
             android:title="@string/powermenu_soundpanel"
+            android:defaultValue="true" />
+
+        <!-- Additional options -->
+        <PreferenceCategory
+            android:key="powermenu_options_category"
+            android:title="@string/powermenu_options" />
+
+         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="power_menu_lockscreen"
+            android:title="@string/powermenu_lockscreen_title"
+            android:summary="@string/powermenu_lockscreen_summary"
             android:defaultValue="true" />
 
 </PreferenceScreen>
