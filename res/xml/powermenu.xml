@@ -83,4 +83,12 @@
             android:summary="@string/powermenu_lockscreen_summary"
             android:defaultValue="true" />
 
+         <com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference
+            android:key="power_reboot_dialog_dim"
+            android:title="@string/powermenu_dialog_dim"
+            android:max="100"
+            settings:min="0"
+            settings:units=""
+            android:persistent="false" />
+
 </PreferenceScreen>
