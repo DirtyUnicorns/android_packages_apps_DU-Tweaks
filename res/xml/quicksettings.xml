@@ -22,6 +22,12 @@
         android:title="@string/show_brightness"
         android:defaultValue="true" />
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="quick_settings_vibrate"
+        android:title="@string/quick_settings_vibrate_title"
+        android:summary="@string/quick_settings_vibrate_summary"
+        android:defaultValue="false"/>
+
     <ListPreference
         android:key="quick_pulldown"
         android:title="@string/quick_pulldown_title"
