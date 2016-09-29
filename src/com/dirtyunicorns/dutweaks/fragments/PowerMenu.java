@@ -34,14 +34,17 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.util.du.DuUtils;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
 
 public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
     private static final String KEY_POWERMENU_TORCH = "powermenu_torch";
+    private static final String POWER_REBOOT_DIALOG_DIM = "power_reboot_dialog_dim";
 
     private ListPreference mAdvancedReboot;
     private SwitchPreference mPowermenuTorch;
+    private CustomSeekBarPreference mPowerRebootDialogDim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,6 +69,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         mPowermenuTorch.setChecked((Settings.System.getInt(resolver,
                 Settings.System.POWERMENU_TORCH, 0) == 1));
         }
+
+        mPowerRebootDialogDim = (CustomSeekBarPreference) prefScreen.findPreference(POWER_REBOOT_DIALOG_DIM);
+        int powerRebootDialogDim = Settings.System.getInt(resolver,
+                Settings.System.POWER_REBOOT_DIALOG_DIM, 50);
+        mPowerRebootDialogDim.setValue(powerRebootDialogDim / 1);
+        mPowerRebootDialogDim.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -89,6 +98,11 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.POWERMENU_TORCH, checked ? 1:0);
+            return true;
+        } else if (preference == mPowerRebootDialogDim) {
+            int alpha = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.POWER_REBOOT_DIALOG_DIM, alpha * 1);
             return true;
         }
         return false;
