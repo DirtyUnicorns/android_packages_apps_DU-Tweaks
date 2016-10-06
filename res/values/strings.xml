@@ -243,6 +243,10 @@
     <string name="qs_advanced_data_title">Advanced data tile</string>
     <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
 
+    <!-- Do not disturb switch in volume panel -->
+    <string name="tuner_full_zen_title">Do not disturb switch</string>
+    <string name="tuner_full_zen_summary">Show a do not disturb switch in the volume panel</string>
+
     <!-- Breathing Notifications -->
     <string name="breathing_notifications_title">Breathing notifications</string>
     <string name="missed_call_breath_title">Breathing Missed Call</string>

@@ -18,6 +18,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+        android:key="sysui_show_full_zen"
+        android:title="@string/tuner_full_zen_title"
+        android:summary="@string/tuner_full_zen_summary"
+        android:defaultValue="false"/>
+
     <SwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"
