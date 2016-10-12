@@ -50,6 +50,30 @@
         android:persistent="false" />
 
     <PreferenceCategory
+        android:key="qs_layout_category"
+        android:title="@string/qs_layout_category">
+
+    <ListPreference
+        android:key="qs_rows_portrait"
+        android:title="@string/qs_rows_portrait_title"
+        android:entries="@array/qs_rows_portrait_entries"
+        android:entryValues="@array/qs_rows_portrait_values" />
+
+    <ListPreference
+        android:key="qs_rows_landscape"
+        android:title="@string/qs_rows_landscape_title"
+        android:entries="@array/qs_rows_landscape_entries"
+        android:entryValues="@array/qs_rows_landscape_values" />
+
+    <ListPreference
+        android:key="qs_columns"
+        android:title="@string/qs_columns_title"
+        android:entries="@array/qs_columns_entries"
+        android:entryValues="@array/qs_columns_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="quicksettings_tiles_category"
         android:title="@string/quicksettings_tiles_category">
 
