@@ -16,6 +16,9 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- General strings -->
+    <string name="dirty_tweaks_summary_title">Customize your device</string>
+
     <!-- Tabs -->
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
@@ -54,7 +57,6 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
-
     <string name="brightness_icon_title">Brightness icon </string>
     <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
 
