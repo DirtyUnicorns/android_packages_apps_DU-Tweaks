@@ -17,6 +17,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/recents_category" >
 
+        <PreferenceCategory
+            android:key="stock_recents"
+            android:title="@string/aosp_recents_title" >
+
          <ListPreference
             android:key="immersive_recents"
             android:title="@string/immersive_recents_title"
@@ -25,5 +29,26 @@
             android:entries="@array/immersive_recents_entries"
             android:entryValues="@array/immersive_recents_values"
             android:persistent="false" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="omni_recents"
+            android:title="@string/omniswitch_recents_title" >
+
+        <SwitchPreference
+            android:key="recents_use_omniswitch"
+            android:title="@string/recents_use_omniswitch_title"
+            android:summary="@string/recents_use_omniswitch_summary"
+            android:persistent="false" />
+
+        <Preference
+            android:key="omniswitch_start_settings"
+            android:title="@string/omniswitch_start_settings_title"
+            android:summary="@string/omniswitch_start_settings_summary"
+            android:dependency="recents_use_omniswitch"
+            android:persistent="false" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>
