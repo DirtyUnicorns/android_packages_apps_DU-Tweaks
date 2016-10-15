@@ -41,8 +41,10 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
     private static final String KEY_POWERMENU_TORCH = "powermenu_torch";
     private static final String POWER_REBOOT_DIALOG_DIM = "power_reboot_dialog_dim";
+    private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
 
     private ListPreference mAdvancedReboot;
+    private ListPreference mPowerMenuAnimations;
     private SwitchPreference mPowermenuTorch;
     private CustomSeekBarPreference mPowerRebootDialogDim;
 
@@ -75,6 +77,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                 Settings.System.POWER_REBOOT_DIALOG_DIM, 50);
         mPowerRebootDialogDim.setValue(powerRebootDialogDim / 1);
         mPowerRebootDialogDim.setOnPreferenceChangeListener(this);
+
+        mPowerMenuAnimations = (ListPreference) findPreference(POWER_MENU_ANIMATIONS);
+        mPowerMenuAnimations.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
+        mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+        mPowerMenuAnimations.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -103,6 +111,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
             int alpha = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.POWER_REBOOT_DIALOG_DIM, alpha * 1);
+            return true;
+        } else if (preference == mPowerMenuAnimations) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS,
+                    Integer.valueOf((String) newValue));
+            mPowerMenuAnimations.setValue(String.valueOf(newValue));
+            mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
             return true;
         }
         return false;
