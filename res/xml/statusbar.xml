@@ -22,6 +22,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <Preference
+            android:key="carrier_label"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.CarrierLabel"
+            android:layout="@layout/preference_carrierlabel"
+            android:title="@string/carrier_label_category" />
+
+         <Preference
             android:key="statusbar_notifications"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
             android:layout="@layout/preference_statusbar_notifications"

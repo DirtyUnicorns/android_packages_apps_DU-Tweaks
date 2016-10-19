@@ -39,6 +39,7 @@
     <string name="traffic_category">Traffic indicators</string>
     <string name="breathing_notifications_category">Breathing Notifications</string>
     <string name="omniswitch_category">OmniSwitch</string>
+    <string name="carrier_label_category">Carrier label</string>
 
     <!-- Dialog -->
     <string name="dirtytweaks_dialog_title">Help Us, Help You!!</string>
@@ -204,6 +205,16 @@
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
     <string name="network_traffic_hidearrow">Hide arrows</string>
     <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
+
+    <!-- Custom Carrier Label -->
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Lockscreen only</string>
+    <string name="show_carrier_statusbar">Statusbar only</string>
+    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
 
     <!-- Quick Pulldown-->
     <string name="quick_pulldown_title">Quick pulldown</string>
