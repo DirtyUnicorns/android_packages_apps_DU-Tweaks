@@ -34,6 +34,7 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 
 import com.android.settings.R;
+import com.android.internal.util.du.DuUtils;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -151,6 +152,9 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         if (omniRecents) {
             mOmniRecents.setEnabled(true);
             mStockRecents.setEnabled(false);
+        } else if (!DuUtils.isPackageInstalled(getActivity(), OMNISWITCH_PACKAGE_NAME)) {
+            mOmniRecents.setEnabled(false);
+            mStockRecents.setEnabled(true);
         } else {
             mOmniRecents.setEnabled(true);
             mStockRecents.setEnabled(true);

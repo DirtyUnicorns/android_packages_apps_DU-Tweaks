@@ -21,22 +21,28 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.ListPreference;
-import android.preference.SwitchPreference;
-import android.preference.Preference;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.util.du.DuUtils;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
 public class MultiTasking extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "MultiTasking";
+
+    private static final String KEY_OMNISWITCH = "omniswitch";
+    private static final String KEY_OMNI_SWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
+
+    private PreferenceScreen mOmniSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +51,12 @@ public class MultiTasking extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.multitasking);
 
         ContentResolver resolver = getActivity().getContentResolver();
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        mOmniSwitch = (PreferenceScreen) findPreference(KEY_OMNISWITCH);
+        if (!DuUtils.isPackageInstalled(getActivity(), KEY_OMNI_SWITCH_PACKAGE_NAME)) {
+            prefSet.removePreference(mOmniSwitch);
+        }
     }
 
     @Override
