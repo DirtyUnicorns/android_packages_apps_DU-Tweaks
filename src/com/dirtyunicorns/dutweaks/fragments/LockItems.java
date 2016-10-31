@@ -19,6 +19,7 @@ package com.dirtyunicorns.dutweaks.fragments;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
@@ -38,8 +39,10 @@ import com.android.settings.Utils;
 public class LockItems extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PREF_SHOW_EMERGENCY_BUTTON = "show_emergency_button";
+    private static final String PREF_LOCKSCREEN_BATTERY_INFO = "lockscreen_battery_info";
 
     private SwitchPreference mEmergencyButton;
+    private SwitchPreference mLockscreenBatteryInfo;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -60,6 +63,12 @@ public class LockItems extends SettingsPreferenceFragment implements OnPreferenc
             mEmergencyButton.setOnPreferenceChangeListener(this);
         } else {
             prefSet.removePreference(mEmergencyButton);
+        }
+
+        // We need to remove the lockscreen battery info if the device is not a Qualcomm device
+        mLockscreenBatteryInfo = (SwitchPreference) findPreference(PREF_LOCKSCREEN_BATTERY_INFO);
+        if (Build.BOARD.contains("dragon") || Build.BOARD.contains("shieldtablet")) {
+            prefSet.removePreference(mLockscreenBatteryInfo);
         }
     }
 
