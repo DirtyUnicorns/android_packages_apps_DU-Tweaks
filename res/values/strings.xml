@@ -451,4 +451,9 @@
     <!-- Lockscreen Shortcuts -->
     <string name="lockscreen_targets_title">Bottom L/R shortcuts</string>
 
+    <!-- Optional screenshot type -->
+    <string name="screenshot_type_title">Screenshot type</string>
+    <string name="screenshot_type_fullscreen">Take fullscreen screenshots</string>
+    <string name="screenshot_type_partial">Drag selection on the area you want to take as a screenshot</string>
+
 </resources>

@@ -17,6 +17,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/misctweaks_category" >
 
+        <ListPreference
+            android:entries="@array/screenshot_type_entries"
+            android:entryValues="@array/screenshot_type_values"
+            android:key="screenshot_type"
+            android:title="@string/screenshot_type_title" />
+
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="flashlight_notification"
             android:title="@string/flashlight_notification_title"
