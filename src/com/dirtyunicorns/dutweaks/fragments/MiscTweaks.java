@@ -34,7 +34,8 @@ import com.android.settings.R;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.util.du.DuUtils;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
+
+import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
 
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -44,7 +45,9 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
     private static final String SCROLLINGCACHE_DEFAULT = "1";
     private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
+    private static final String SCREENSHOT_DELAY = "screenshot_delay";
 
+    private CustomSeekBarPreference mScreenshotDelay;
     private SwitchPreference mFlashlightNotification;
     private ListPreference mScreenshotType;
     private ListPreference mScrollingCachePref;
@@ -66,7 +69,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         } else {
         mFlashlightNotification.setChecked((Settings.System.getInt(resolver,
                 Settings.System.FLASHLIGHT_NOTIFICATION, 0) == 1));
-       }
+        }
 
         mMsob = (ListPreference) findPreference(PREF_MEDIA_SCANNER_ON_BOOT);
         mMsob.setValue(String.valueOf(Settings.System.getInt(getActivity().getContentResolver(),
@@ -85,6 +88,12 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mScreenshotType.setValue(String.valueOf(mScreenshotTypeValue));
         mScreenshotType.setSummary(mScreenshotType.getEntry());
         mScreenshotType.setOnPreferenceChangeListener(this);
+
+        mScreenshotDelay = (CustomSeekBarPreference) findPreference(SCREENSHOT_DELAY);
+        int screenshotDelay = Settings.System.getInt(resolver,
+                Settings.System.SCREENSHOT_DELAY, 1000);
+        mScreenshotDelay.setValue(screenshotDelay / 1);
+        mScreenshotDelay.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -123,6 +132,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SCREENSHOT_TYPE, mScreenshotTypeValue);
             mScreenshotType.setValue(String.valueOf(mScreenshotTypeValue));
+            return true;
+        } else if (preference == mScreenshotDelay) {
+            int screenshotDelay = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SCREENSHOT_DELAY, screenshotDelay * 1);
             return true;
         }
         return false;
