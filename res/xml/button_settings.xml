@@ -24,6 +24,12 @@
         android:summary="@string/tuner_full_zen_summary"
         android:defaultValue="false"/>
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="volume_keys_control_media_stream"
+        android:title="@string/volume_keys_control_media_stream_title"
+        android:summary="@string/volume_keys_control_media_stream_summary"
+        android:defaultValue="false" />
+
     <SwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"
