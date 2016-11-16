@@ -22,24 +22,12 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.net.Uri;
-import android.text.Html;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.os.Bundle;
-import android.provider.Settings;
-import android.preference.CheckBoxPreference;
-import android.preference.Preference;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceManager;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.PreferenceScreen;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -57,9 +45,6 @@ import com.android.settings.R;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class DirtyTweaks extends SettingsPreferenceFragment {
 
@@ -120,8 +105,8 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
             case MENU_HELP:
                 showDialogInner(MENU_HELP);
                 Toast.makeText(getActivity(),
-                (R.string.dirtytweaks_dialog_toast),
-                Toast.LENGTH_LONG).show();
+                        (R.string.dirtytweaks_dialog_toast),
+                        Toast.LENGTH_LONG).show();
                 return true;
             default:
                 return false;
@@ -149,15 +134,15 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
             switch (id) {
                 case MENU_HELP:
                     return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.dirtytweaks_dialog_title)
-                    .setMessage(R.string.dirtytweaks_dialog_message)
-                    .setCancelable(false)
-                    .setNegativeButton(R.string.dlg_ok,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    })
-                    .create();
+                            .setTitle(R.string.dirtytweaks_dialog_title)
+                            .setMessage(R.string.dirtytweaks_dialog_message)
+                            .setCancelable(false)
+                            .setNegativeButton(R.string.dlg_ok,
+                                    new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        }
+                                    })
+                            .create();
             }
             throw new IllegalArgumentException("unknown id " + id);
         }
@@ -200,11 +185,11 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.system_category),
-                    getString(R.string.lockscreen_category),
-                    getString(R.string.statusbar_category),
-                    getString(R.string.navigation_category),
-                    getString(R.string.multitasking_category)};
+                getString(R.string.system_category),
+                getString(R.string.lockscreen_category),
+                getString(R.string.statusbar_category),
+                getString(R.string.navigation_category),
+                getString(R.string.multitasking_category)};
         return titleString;
     }
 
