@@ -5,12 +5,10 @@
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version.
-
   This program is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
-
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
@@ -397,5 +395,34 @@
     <string-array name="screenshot_type_values" translatable="false">
         <item>0</item>
         <item>1</item>
+    </string-array>
+
+    <!-- Battery customizations -->
+    <string-array name="status_bar_battery_style_entries" translatable="false">
+        <item>@string/status_bar_battery_style_icon_portrait</item>
+        <item>@string/status_bar_battery_style_icon_landscape</item>
+        <item>@string/status_bar_battery_style_circle</item>
+        <item>@string/status_bar_battery_style_text</item>
+        <item>@string/status_bar_battery_style_hidden</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_style_values" translatable="false">
+        <item>0</item>
+        <item>5</item>
+        <item>2</item>
+        <item>6</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_entries" translatable="false">
+        <item>@string/status_bar_battery_percentage_default</item>
+        <item>@string/status_bar_battery_percentage_text_inside</item>
+        <item>@string/status_bar_battery_percentage_text_next</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 </resources>
