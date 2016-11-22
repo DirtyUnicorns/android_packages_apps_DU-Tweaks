@@ -96,7 +96,7 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         mSmartBarContext.setOnPreferenceChangeListener(this);
 
         int imeVal = Settings.Secure.getIntForUser(getContentResolver(),
-                "smartbar_ime_hint_mode", 1, UserHandle.USER_CURRENT);
+                "smartbar_ime_hint_mode", 0, UserHandle.USER_CURRENT);
         mImeActions = (ListPreference) findPreference("smartbar_ime_action");
         mImeActions.setValue(String.valueOf(imeVal));
         mImeActions.setOnPreferenceChangeListener(this);
@@ -271,8 +271,8 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         mSmartBarContext.setOnPreferenceChangeListener(this);
 
         Settings.Secure.putInt(getContentResolver(),
-                "smartbar_ime_hint_mode", 1);
-        mImeActions.setValue(String.valueOf(1));
+                "smartbar_ime_hint_mode", 0);
+        mImeActions.setValue(String.valueOf(0));
         mImeActions.setOnPreferenceChangeListener(this);
 
         Settings.Secure.putInt(getContentResolver(),
