@@ -35,4 +35,9 @@
         android:entryValues="@array/status_bar_battery_percentage_values"
         android:defaultValue="0" />
 
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+        android:key="status_bar_battery_style_tile"
+        android:title="@string/status_bar_battery_style_tile_title"
+        android:summary="@string/status_bar_battery_style_tile_summary"
+        android:defaultValue="true" />
 </PreferenceScreen>
