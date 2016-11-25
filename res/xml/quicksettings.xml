@@ -66,6 +66,22 @@
         settings:units=""
         android:persistent="false" />
 
+    <com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference
+        android:key="qs_rows_portrait"
+        android:title="@string/qs_rows_portrait_title"
+        settings:max="7"
+        settings:min="1"
+        settings:units=""
+        android:persistent="false" />
+
+    <com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference
+        android:key="qs_rows_landscape"
+        android:title="@string/qs_rows_landscape_title"
+        settings:max="3"
+        settings:min="1"
+        settings:units=""
+        android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
