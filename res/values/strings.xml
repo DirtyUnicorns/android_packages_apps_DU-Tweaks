@@ -113,10 +113,6 @@
     <string name="pref_scrollingcache_default_disable">Default disable</string>
     <string name="pref_scrollingcache_force_disable">Force disable</string>
 
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
-
     <!-- Flashlight notification -->
     <string name="flashlight_notification_title">Flashlight notification</string>
     <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
@@ -259,9 +255,14 @@
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
 
-    <!-- Advanced data tile -->
+    <!-- QS tiles category -->
+    <string name="qs_tiles_category">QS tile options</string>
     <string name="qs_advanced_data_title">Advanced data tile</string>
     <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
+    <string name="qs_music_tile_track_optional_title">Music tile track title</string>
+    <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
 
     <!-- Do not disturb switch in volume panel -->
     <string name="tuner_full_zen_title">Do not disturb switch</string>
