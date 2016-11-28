@@ -263,6 +263,9 @@
     <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
+    <string name="qs_tile_title_visibility_title">QS tile titles</string>
+    <string name="qs_tile_title_visibility_summary_on">QS tiles titles are now visible</string>
+    <string name="qs_tile_title_visibility_summary_off">QS tiles titles are now gone</string>
 
     <!-- Do not disturb switch in volume panel -->
     <string name="tuner_full_zen_title">Do not disturb switch</string>
