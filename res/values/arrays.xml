@@ -425,4 +425,16 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+    <string-array name="text_charging_symbol_entries" translatable="false">
+        <item>@string/text_charging_symbol_default</item>
+        <item>@string/text_charging_symbol_flash</item>
+        <item>@string/text_charging_symbol_tilde</item>
+    </string-array>
+
+    <string-array name="text_charging_symbol_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
