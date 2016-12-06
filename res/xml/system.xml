@@ -33,16 +33,6 @@
             android:layout="@layout/preference_misctweaks"
             android:title="@string/misctweaks_category" />
 
-         <PreferenceScreen
-            android:key="systemui_tuner_nightmode"
-            android:title="@string/nightmode_category"
-            android:layout="@layout/preference_systemui_tuner_nightmode" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NightModeActivity" />
-         </PreferenceScreen>
-
          <Preference
             android:key="powermenu"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.PowerMenu"

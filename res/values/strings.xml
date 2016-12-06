@@ -33,7 +33,6 @@
     <string name="button_settings">Buttons</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="statusbar_items_category">Statusbar items</string>
-    <string name="nightmode_category">Night mode</string>
     <string name="expanded_desktop_category">Expanded desktop</string>
     <string name="quicksettings_category">Quick settings</string>
     <string name="traffic_category">Traffic indicators</string>
@@ -465,9 +464,6 @@
     <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
     <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
     <string name="navbar_buttons_alpha_title">Button transparency</string>
-
-    <!-- Lockscreen Shortcuts -->
-    <string name="lockscreen_targets_title">Bottom L/R shortcuts</string>
 
     <!-- Optional screenshot type -->
     <string name="screenshot_type_title">Screenshot type</string>
