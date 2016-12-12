@@ -47,7 +47,7 @@
         android:title="@string/force_charge_battery_text_title"
         android:summaryOn="@string/force_charge_battery_text_summary_on"
         android:summaryOff="@string/force_charge_battery_text_summary_off"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <ListPreference
         android:key="text_charging_symbol"
