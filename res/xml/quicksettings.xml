@@ -77,6 +77,16 @@
         android:title="@string/qs_night_brightness_toggle_title"
         android:summary="@string/qs_night_brightness_toggle_summary"
         android:defaultValue="false" />
+
+    <ListPreference
+            android:key="qs_night_brightness_value"
+            android:title="@string/qs_night_brightness_value_title"
+            android:dialogTitle="@string/qs_night_brightness_value_dialog"
+            android:entries="@array/qs_night_brightness_value_entries"
+            android:entryValues="@array/qs_night_brightness_value_values"
+            android:summary="%s"
+            android:defaultValue="0"
+            android:dependency="qs_night_brightness_toggle" />
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -38,6 +38,8 @@ import android.view.IWindowManager;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -63,6 +65,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     private static final String PREF_SYSUI_QQS_COUNT = "sysui_qqs_count_key";
     private static final String PREF_QS_DATA_ADVANCED = "qs_data_advanced";
     private static final String PREF_LOCK_QS_DISABLED = "lockscreen_qs_disabled";
+    private static final String QS_NIGHT_BRIGHTNESS_VALUE = "qs_night_brightness_value";
 
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
@@ -74,6 +77,8 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     private CustomSeekBarPreference mSysuiQqsCount;
     private SwitchPreference mQsDataAdvanced;
     private SwitchPreference mLockQsDisabled;
+    private ListPreference mNightBrightValue;
+    private int mNightBrightValueVal;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -163,6 +168,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         } else {
             prefSet.removePreference(mLockQsDisabled);
         }
+
+        mNightBrightValue = (ListPreference) findPreference(QS_NIGHT_BRIGHTNESS_VALUE);
+        mNightBrightValueVal = Settings.Secure.getInt(resolver,
+                Settings.Secure.QS_NIGHT_BRIGHTNESS_VALUE, 0);
+        mNightBrightValue.setValue(Integer.toString(mNightBrightValueVal));
+        mNightBrightValue.setSummary(mNightBrightValue.getEntry());
+        mNightBrightValue.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -235,6 +247,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.LOCK_QS_DISABLED, checked ? 1:0);
+            return true;
+        } else if (preference == mNightBrightValue) {
+            mNightBrightValueVal = Integer.valueOf((String) objValue);
+            index = mNightBrightValue.findIndexOfValue((String) objValue);
+            mNightBrightValue.setSummary(
+                    mNightBrightValue.getEntries()[index]);
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.QS_NIGHT_BRIGHTNESS_VALUE, mNightBrightValueVal);
             return true;
         }
         return false;
