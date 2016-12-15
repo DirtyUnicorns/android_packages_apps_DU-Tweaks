@@ -509,4 +509,8 @@
     <string name="text_charging_symbol_flash">Flash</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
 
+    <!-- Advanced night mode tile -->
+    <string name="qs_night_brightness_toggle_title">Night mode low brightness</string>
+    <string name="qs_night_brightness_toggle_summary">Automatically set low brightness state when enabling night light from the QS tile. Disabling night light will restore the previous state</string>
+
 </resources>

@@ -72,6 +72,11 @@
         android:summary="@string/qs_advanced_data_summary"
         android:defaultValue="false" />
 
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+        android:key="qs_night_brightness_toggle"
+        android:title="@string/qs_night_brightness_toggle_title"
+        android:summary="@string/qs_night_brightness_toggle_summary"
+        android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
