@@ -42,6 +42,7 @@ import com.android.settings.Utils;
 public class Recents extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
+    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
     private static final String OMNISWITCH_START_SETTINGS = "omniswitch_start_settings";
     public static final String OMNISWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
@@ -50,10 +51,13 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String CATEGORY_STOCK_RECENTS = "stock_recents";
     private static final String CATEGORY_OMNI_RECENTS = "omni_recents";
 
+    private ListPreference mRecentsClearAllLocation;
+    private ListPreference mImmersiveRecents;
     private PreferenceCategory mStockRecents;
     private PreferenceCategory mOmniRecents;
-    private ListPreference mImmersiveRecents;
+    private SwitchPreference mRecentsClearAll;
     private SwitchPreference mRecentsUseOmniSwitch;
+
     private Preference mOmniSwitchSettings;
     private boolean mOmniSwitchInitCalled;
 
@@ -74,6 +78,14 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
                 getContentResolver(), Settings.System.IMMERSIVE_RECENTS, 0)));
         mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
         mImmersiveRecents.setOnPreferenceChangeListener(this);
+
+        // clear all recents
+        mRecentsClearAllLocation = (ListPreference) findPreference(RECENTS_CLEAR_ALL_LOCATION);
+        int location = Settings.System.getIntForUser(resolver,
+                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
+        mRecentsClearAllLocation.setValue(String.valueOf(location));
+        mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
+        mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
 
         mRecentsUseOmniSwitch = (SwitchPreference) prefSet.findPreference(RECENTS_USE_OMNISWITCH);
         try {
@@ -117,6 +129,13 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
                     Integer.valueOf((String) newValue));
             mImmersiveRecents.setValue(String.valueOf(newValue));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+            return true;
+        } else if (preference == mRecentsClearAllLocation) {
+            int location = Integer.valueOf((String) newValue);
+            int index = mRecentsClearAllLocation.findIndexOfValue((String) newValue);
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
+            mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
             return true;
         } else if (preference == mRecentsUseOmniSwitch) {
             boolean value = (Boolean) newValue;
