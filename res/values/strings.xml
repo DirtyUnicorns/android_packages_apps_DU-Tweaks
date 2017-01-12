@@ -521,4 +521,19 @@
     <string name="text_charging_symbol_flash">Flash</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
 
+    <!-- QS headers -->
+    <string name="qs_header_category">QS Header options</string>
+    <string name="status_bar_custom_header_title">Custom header image</string>
+    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+    <string name="daylight_header_pack_title">Header image pack</string>
+    <string name="status_bar_custom_header_shadow_title">Shadow header image</string>
+    <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
+    <string name="static_header_provider" translatable="false">static</string>
+    <string name="daylight_header_provider" translatable="false">daylight</string>
+    <string name="static_header_provider_title">Static</string>
+    <string name="daylight_header_provider_title">Dynamic</string>
+    <string name="custom_header_provider_title">Header provider</string>
+    <string name="custom_header_browse_title">Browse installed headers</string>
+    <string name="custom_header_browse_summary">Long press on any image to use for static mode</string>
+
 </resources>
