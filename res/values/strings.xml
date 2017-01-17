@@ -558,4 +558,8 @@
     <string name="heads_up_time_out_8sec">8 seconds</string>
     <string name="heads_up_time_out_10sec">10 seconds</string>
 
+    <!-- One handed mode -->
+    <string name="one_handed_mode_title">One handed mode</string>
+    <string name="one_handed_mode_summary">Allows swiping on the navigation bar to enable one handed mode</string>
+
 </resources>
