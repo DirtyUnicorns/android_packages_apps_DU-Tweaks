@@ -536,4 +536,8 @@
     <string name="custom_header_browse_title">Browse installed headers</string>
     <string name="custom_header_browse_summary">Long press on any image to use for static mode</string>
 
+    <!-- Recents memory bar -->
+    <string name="systemui_recents_mem_display_title">Show memory bar</string>
+    <string name="systemui_recents_mem_display_summary">Display RAM usage under recents view</string>
+
 </resources>
