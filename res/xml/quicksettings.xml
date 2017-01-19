@@ -119,6 +119,12 @@
         android:defaultValue="false" />
 
     <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+        android:key="qs_advanced_wifi"
+        android:title="@string/qs_advanced_wifi_title"
+        android:summary="@string/qs_advanced_wifi_summary"
+        android:defaultValue="false" />
+
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
         android:key="qs_bt_advanced"
         android:title="@string/qs_advanced_bt_title"
         android:summary="@string/qs_advanced_bt_summary"
