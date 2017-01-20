@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2017 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -268,12 +268,8 @@
 
     <!-- QS tiles category -->
     <string name="qs_tiles_category">QS tile options</string>
-    <string name="qs_advanced_data_title">Advanced Data tile</string>
-    <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
-    <string name="qs_advanced_wifi_title">Advanced WiFi tile</string>
-    <string name="qs_advanced_wifi_summary">Enable one tap action to enable or disable WiFi</string>
-    <string name="qs_advanced_bt_title">Advanced Bluetooth tile</string>
-    <string name="qs_advanced_bt_summary">Enable one tap action to enable or disable bluetooth</string>
+    <string name="qs_easy_toggle_title">Advanced QS Easy Toggle</string>
+    <string name="qs_easy_toggle_summary">Enable one tap action to enable or disable mobile data, wifi, and bluetooth</string>
     <string name="qs_music_tile_track_optional_title">Music tile track title</string>
     <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
