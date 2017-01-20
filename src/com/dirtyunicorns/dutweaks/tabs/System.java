@@ -21,22 +21,28 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.ListPreference;
-import android.preference.SwitchPreference;
-import android.preference.Preference;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.provider.Settings;
 
+import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.util.du.DuUtils;
 import com.android.settings.Utils;
 
 public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "System";
+
+    private static final String KEY_MOTOACTIONS = "motoactions";
+    private static final String KEY_MOTO_ACTIONS_PACKAGE_NAME = "com.dirtyunicorns.settings.device";
+
+    private PreferenceScreen mMotoActions;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +51,12 @@ public class System extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.system);
 
         ContentResolver resolver = getActivity().getContentResolver();
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        mMotoActions = (PreferenceScreen) findPreference(KEY_MOTOACTIONS);
+        if (!DuUtils.isPackageInstalled(getActivity(), KEY_MOTO_ACTIONS_PACKAGE_NAME)) {
+            prefSet.removePreference(mMotoActions);
+        }
     }
 
     @Override

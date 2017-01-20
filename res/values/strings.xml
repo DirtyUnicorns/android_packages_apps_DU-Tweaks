@@ -30,6 +30,7 @@
     <string name="recents_category">Recents</string>
     <string name="powermenu_category">Power menu</string>
     <string name="misctweaks_category">Misc. tweaks</string>
+    <string name="motoactions_category">Moto Actions</string>
     <string name="button_settings">Buttons</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="statusbar_items_category">Statusbar items</string>

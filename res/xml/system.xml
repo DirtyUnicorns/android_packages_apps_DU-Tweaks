@@ -33,6 +33,16 @@
             android:layout="@layout/preference_misctweaks"
             android:title="@string/misctweaks_category" />
 
+         <PreferenceScreen
+            android:key="motoactions"
+            android:layout="@layout/preference_motoactions"
+            android:title="@string/motoactions_category" >
+            <intent
+                android:action="com.android.settings.action.EXTRA_SETTINGS"
+                android:targetPackage="com.dirtyunicorns.settings.device"
+                android:targetClass="com.dirtyunicorns.settings.device.TouchscreenGestureSettings" />
+         </PreferenceScreen>
+
          <Preference
             android:key="powermenu"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.PowerMenu"
