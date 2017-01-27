@@ -42,6 +42,7 @@
     <string name="carrier_label_category">Carrier label</string>
     <string name="category_heads_up">Heads up</string>
     <string name="lock_items_category">Lockscreen items</string>
+    <string name="notif_ticker_category">Notification ticker</string>
 
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Immersive recents</string>
@@ -602,6 +603,10 @@
     <string name="emergency_button_title">Emergency button</string>
     <string name="emergency_button_summary_on">Emergency button shown on the lockscreen</string>
     <string name="emergency_button_summary_off">Emergency button hidden on the lockscreen</string>
+
+    <!-- Status bar notification ticker -->
+    <string name="ticker_title">Ticker</string>
+    <string name="ticker_summary">Enable the old status bar notification ticker. Do not use in conjunction with Heads Up.</string>
 
     <!-- Wired headset ringtone audio focus -->
     <string name="wired_ringtone_focus_mode_title">Where to play ringtones from</string>

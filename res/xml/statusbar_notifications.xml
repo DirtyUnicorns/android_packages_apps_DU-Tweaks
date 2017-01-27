@@ -45,6 +45,15 @@
     </PreferenceScreen>
 
     <PreferenceCategory
+        android:title="@string/notif_ticker_category"/>
+
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="status_bar_show_ticker"
+            android:title="@string/ticker_title"
+            android:summary="@string/ticker_summary"
+            android:defaultValue="false" />
+
+    <PreferenceCategory
         android:key="breathing_notifications"
         android:title="@string/breathing_notifications_category">
 

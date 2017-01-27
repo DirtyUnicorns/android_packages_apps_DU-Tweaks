@@ -41,6 +41,7 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
     private static final String SMS_BREATH = "sms_breath";
     private static final String BREATHING_NOTIFICATIONS = "breathing_notifications";
+    private static final String STATUS_BAR_SHOW_TICKER = "status_bar_show_ticker";
 
     private SwitchPreference mEnableNC;
     private SwitchPreference mForceExpanded;
@@ -49,6 +50,7 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
     private SwitchPreference mVoicemailBreath;
     private SwitchPreference mSmsBreath;
     private PreferenceGroup mBreathingNotifications;
+    private SwitchPreference mShowTicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -80,6 +82,12 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         mMissedCallBreath = (SwitchPreference) findPreference(MISSED_CALL_BREATH);
         mVoicemailBreath = (SwitchPreference) findPreference(VOICEMAIL_BREATH);
         mSmsBreath = (SwitchPreference) findPreference(SMS_BREATH);
+
+        mShowTicker = (SwitchPreference) findPreference(STATUS_BAR_SHOW_TICKER);
+        mShowTicker.setOnPreferenceChangeListener(this);
+        int ShowTicker = Settings.System.getInt(getContentResolver(),
+                STATUS_BAR_SHOW_TICKER, 0);
+        mShowTicker.setChecked(ShowTicker != 0);
 
         mBreathingNotifications = (PreferenceGroup) findPreference(BREATHING_NOTIFICATIONS);
 
@@ -148,6 +156,11 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         } else if (preference == mSmsBreath) {
             boolean value = (Boolean) newValue;
             Settings.Global.putInt(getContentResolver(), SMS_BREATH,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mShowTicker) {
+            boolean value = (Boolean) newValue;
+            Settings.Global.putInt(getContentResolver(), STATUS_BAR_SHOW_TICKER,
                     value ? 1 : 0);
             return true;
         }
