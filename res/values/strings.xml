@@ -242,7 +242,7 @@
     <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
 
     <!-- Statusbar Clock options -->
-    <string name="status_bar_clock">Clock &amp; Date</string>
+    <string name="status_bar_clock">Clock &amp; date</string>
     <string name="clock_title_enable">Alignment</string>
     <string name="status_bar_show_clock_title">Show clock &amp; date</string>
     <string name="status_bar_clock_seconds_title">Show seconds</string>
@@ -270,7 +270,7 @@
 
     <!-- QS tiles category -->
     <string name="qs_tiles_category">QS tile options</string>
-    <string name="qs_easy_toggle_title">Advanced QS Easy Toggle</string>
+    <string name="qs_easy_toggle_title">Advanced QS easy toggle</string>
     <string name="qs_easy_toggle_summary">Enable one tap action to enable or disable mobile data, wifi, and bluetooth</string>
     <string name="qs_music_tile_track_optional_title">Music tile track title</string>
     <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
@@ -286,9 +286,9 @@
 
     <!-- Breathing Notifications -->
     <string name="breathing_notifications_title">Breathing notifications</string>
-    <string name="missed_call_breath_title">Breathing Missed Call</string>
+    <string name="missed_call_breath_title">Breathing missed call</string>
     <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
-    <string name="voicemail_breath_title">Breathing Voicemail</string>
+    <string name="voicemail_breath_title">Breathing voicemail</string>
     <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
     <string name="sms_breath_title">Breathing SMS</string>
     <string name="sms_breath_summary">Will give your SMS notifications a breathing effect in the statusbar</string>
@@ -524,7 +524,7 @@
     <string name="text_charging_symbol_tilde">Tilde</string>
 
     <!-- QS headers -->
-    <string name="qs_header_category">QS Header options</string>
+    <string name="qs_header_category">QS header options</string>
     <string name="status_bar_custom_header_title">Custom header image</string>
     <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
     <string name="daylight_header_pack_title">Header image pack</string>
