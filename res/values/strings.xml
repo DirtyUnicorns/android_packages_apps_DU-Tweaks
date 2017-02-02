@@ -41,6 +41,7 @@
     <string name="omniswitch_category">OmniSwitch</string>
     <string name="carrier_label_category">Carrier label</string>
     <string name="category_heads_up">Heads Up</string>
+    <string name="lock_items_category">Lockscreen items</string>
 
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Immersive Recents</string>
