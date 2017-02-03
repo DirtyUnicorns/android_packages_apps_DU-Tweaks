@@ -17,25 +17,15 @@
 */
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.res.Resources;
 import android.graphics.Color;
-import android.net.TrafficStats;
 import android.os.Bundle;
-import android.os.RemoteException;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceGroup;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v14.preference.PreferenceFragment;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.provider.Settings.SettingNotFoundException;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -61,19 +51,19 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
     private static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
 
     private static final int STATUS_BAR_BATTERY_STYLE_PORTRAIT = 0;
-
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
+
+    private int mStatusBarBatteryValue;
+    private int mStatusBarBatteryShowPercentValue;
+    private int mTextChargingSymbolValue;
 
     private ColorPickerPreference mChargeColor;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
-    private int mStatusBarBatteryValue;
-    private int mStatusBarBatteryShowPercentValue;
+    private ListPreference mTextChargingSymbol;
     private SwitchPreference mQsBatteryTitle;
     private SwitchPreference mForceChargeBatteryText;
-    private ListPreference mTextChargingSymbol;
-    private int mTextChargingSymbolValue;
 
     @Override
     protected int getMetricsCategory() {
@@ -85,7 +75,6 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.statusbar_battery_style);
 
-        PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
         mQsBatteryTitle = (SwitchPreference) findPreference(STATUS_BAR_BATTERY_STYLE_TILE);
@@ -107,7 +96,7 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
 
         int chargeColor = Settings.Secure.getInt(resolver,
                 Settings.Secure.STATUS_BAR_CHARGE_COLOR, Color.WHITE);
-        mChargeColor = (ColorPickerPreference) findPreference("status_bar_charge_color");
+        mChargeColor = (ColorPickerPreference) findPreference(STATUS_BAR_CHARGE_COLOR);
         mChargeColor.setNewPreviewColor(chargeColor);
         mChargeColor.setOnPreferenceChangeListener(this);
 
@@ -131,7 +120,6 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
-        // If we didn't handle it, let preferences handle it.
         return super.onPreferenceTreeClick(preference);
     }
 
@@ -165,7 +153,6 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.Secure.putInt(resolver,
                     Settings.Secure.FORCE_CHARGE_BATTERY_TEXT, checked ? 1:0);
-            //enableStatusBarBatteryDependents();
             return true;
         } else if (preference.equals(mChargeColor)) {
             int color = ((Integer) newValue).intValue();
@@ -202,20 +189,12 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
             mQsBatteryTitle.setEnabled(false);
             mChargeColor.setEnabled(true);
             mForceChargeBatteryText.setEnabled(mStatusBarBatteryShowPercentValue == 2 ? false : true);
-            //relying on the mForceChargeBatteryText isChecked state is glitchy
-            //you need to click it twice to update the mTextChargingSymbol setEnabled state
-            //then the mForceChargeBatteryText isChecked state is incorrectly taken inverted
-            //so till a fix let's keep mTextChargingSymbol enabled by default
-            //mTextChargingSymbol.setEnabled((mStatusBarBatteryShowPercentValue == 0 && !mForceChargeBatteryText.isChecked())
-            //|| (mStatusBarBatteryShowPercentValue == 1 && !mForceChargeBatteryText.isChecked()) ? false : true);
             mTextChargingSymbol.setEnabled(true);
         } else {
             mStatusBarBatteryShowPercent.setEnabled(true);
             mQsBatteryTitle.setEnabled(true);
             mChargeColor.setEnabled(true);
             mForceChargeBatteryText.setEnabled(mStatusBarBatteryShowPercentValue == 2 ? false : true);
-            //mTextChargingSymbol.setEnabled((mStatusBarBatteryShowPercentValue == 0 && !mForceChargeBatteryText.isChecked())
-            //|| (mStatusBarBatteryShowPercentValue == 1 && !mForceChargeBatteryText.isChecked()) ? false : true);
             mTextChargingSymbol.setEnabled(true);
         }
     }
@@ -223,8 +202,7 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
-                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
-                        boolean enabled) {
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context, boolean enabled) {
                     ArrayList<SearchIndexableResource> result =
                             new ArrayList<SearchIndexableResource>();
 
