@@ -586,4 +586,8 @@
     <string name="backlight_timeout_30s">30 sec</string>
     <string name="button_brightness_title">Backlight</string>
 
+    <!-- Keyguard Statusbar Clock -->
+    <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
+    <string name="keyguard_statusbar_clock_summary">Show the left statusbar clock on the keyguard</string>
+
 </resources>

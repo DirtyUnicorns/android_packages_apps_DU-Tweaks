@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014-2016 The Dirty Unicorns Project
+<!-- Copyright (C) 2014-2017 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -44,5 +44,10 @@
         android:summaryOn="@string/hide_lockscreen_bottom_shortcuts_summary_on"
         android:summaryOff="@string/hide_lockscreen_bottom_shortcuts_summary_off"
         android:defaultValue="true" />
+
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+        android:key="keyguard_show_clock"
+        android:title="@string/keyguard_statusbar_clock_title"
+        android:summary="@string/keyguard_statusbar_clock_summary" />
 
 </PreferenceScreen>
