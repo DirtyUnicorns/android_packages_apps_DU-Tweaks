@@ -22,35 +22,35 @@
     <!-- Tabs -->
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
-    <string name="statusbar_category">Status Bar</string>
+    <string name="statusbar_category">Status bar</string>
     <string name="navigation_category">Navigation</string>
-    <string name="multitasking_category">Multi-Tasking</string>
+    <string name="multitasking_category">Multitasking</string>
 
     <!-- Categories -->
     <string name="recents_category">Recents</string>
     <string name="powermenu_category">Power menu</string>
-    <string name="misctweaks_category">Misc. tweaks</string>
-    <string name="motoactions_category">Moto Actions</string>
+    <string name="misctweaks_category">Miscellaneous</string>
+    <string name="motoactions_category">Moto actions</string>
     <string name="button_settings">Buttons</string>
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="statusbar_items_category">Statusbar items</string>
     <string name="expanded_desktop_category">Expanded desktop</string>
     <string name="quicksettings_category">Quick settings</string>
     <string name="traffic_category">Traffic indicators</string>
-    <string name="breathing_notifications_category">Breathing Notifications</string>
+    <string name="breathing_notifications_category">Breathing notifications</string>
     <string name="omniswitch_category">OmniSwitch</string>
     <string name="carrier_label_category">Carrier label</string>
-    <string name="category_heads_up">Heads Up</string>
+    <string name="category_heads_up">Heads up</string>
     <string name="lock_items_category">Lockscreen items</string>
 
     <!-- Immersive Recents -->
-    <string name="immersive_recents_title">Immersive Recents</string>
+    <string name="immersive_recents_title">Immersive recents</string>
     <string name="immersive_recents_summary">Change the view of the recents screen</string>
     <string name="immersive_recents_dialog_title">Select recents view</string>
     <string name="immersive_recents_default">Default</string>
-    <string name="immersive_recents_fullscreen">Fullscreen</string>
-    <string name="immersive_recents_statusbar">Statusbar only</string>
-    <string name="immersive_recents_navbar">Navbar only</string>
+    <string name="immersive_recents_fullscreen">Full screen</string>
+    <string name="immersive_recents_statusbar">Status bar</string>
+    <string name="immersive_recents_navbar">Navigation bar</string>
 
     <!-- Clear-All recents FAB -->
     <string name="show_clear_all_recents_button_title">Clear-all FAB</string>
@@ -90,7 +90,7 @@
     <string name="advanced_reboot_summary">Include options in the power menu for rebooting into recovery and bootloader</string>
     <string name="advanced_reboot_dialog_title">Advanced reboot menu</string>
     <string name="advanced_reboot_disabled">Disable</string>
-    <string name="advanced_reboot_hide_on_keyguard">Hide on lock screen</string>
+    <string name="advanced_reboot_hide_on_keyguard">Hide on the lockscreen</string>
     <string name="advanced_reboot_show_always">Show always</string>
 
     <!-- Power menu Animations  -->
@@ -106,7 +106,7 @@
     <string name="expanded_hide_status">Hide status bar</string>
     <string name="expanded_hide_navigation">Hide navigation bar</string>
     <string name="expanded_hide_both">Hide both</string>
-    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set "Enabled for all" to the off position</string>
+    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \u0022Enabled for all\u0022 to the off position</string>
     <string name="expanded_desktop_state">Expanded state</string>
     <string name="expanded_enabled_for_all">Enabled for all</string>
     <string name="expanded_user_configurable">User configurable</string>
@@ -124,7 +124,7 @@
 
     <!-- Flashlight notification -->
     <string name="flashlight_notification_title">Flashlight notification</string>
-    <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
+    <string name="flashlight_notification_summary">Enable notification while the flashlight is on</string>
 
     <!-- Volume key controls media stream -->
     <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
@@ -140,9 +140,9 @@
 
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Playback control</string>
-    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
 
-    <!-- Notification Count in Statusbar -->
+    <!-- Notification Count in Status bar -->
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 
@@ -225,9 +225,9 @@
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
     <string name="show_carrier_title">Carrier label</string>
     <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Lockscreen only</string>
-    <string name="show_carrier_statusbar">Statusbar only</string>
-    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
+    <string name="show_carrier_keyguard">Lockscreen</string>
+    <string name="show_carrier_statusbar">Status bar</string>
+    <string name="show_carrier_enabled">Both</string>
 
     <!-- Quick Pulldown-->
     <string name="quick_pulldown_title">Quick pulldown</string>
@@ -240,9 +240,9 @@
 
     <!-- Lockscreen Torch -->
     <string name="keyguard_torch_title">Lockscreen torch</string>
-    <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
+    <string name="keyguard_torch_summary">Long press the power button while screen is off to turn on the flashlight</string>
 
-    <!-- Statusbar Clock options -->
+    <!-- Status bar Clock options -->
     <string name="status_bar_clock">Clock &amp; date</string>
     <string name="clock_title_enable">Alignment</string>
     <string name="status_bar_show_clock_title">Show clock &amp; date</string>
@@ -272,7 +272,7 @@
     <!-- QS tiles category -->
     <string name="qs_tiles_category">QS tile options</string>
     <string name="qs_easy_toggle_title">Advanced QS easy toggle</string>
-    <string name="qs_easy_toggle_summary">Enable one tap action to enable or disable mobile data, wifi, and bluetooth</string>
+    <string name="qs_easy_toggle_summary">Enable one tap action to enable or disable mobile data, wifi and bluetooth</string>
     <string name="qs_music_tile_track_optional_title">Music tile track title</string>
     <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
@@ -288,25 +288,24 @@
     <!-- Breathing Notifications -->
     <string name="breathing_notifications_title">Breathing notifications</string>
     <string name="missed_call_breath_title">Breathing missed call</string>
-    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
+    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the status bar</string>
     <string name="voicemail_breath_title">Breathing voicemail</string>
-    <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
+    <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the status bar</string>
     <string name="sms_breath_title">Breathing SMS</string>
-    <string name="sms_breath_summary">Will give your SMS notifications a breathing effect in the statusbar</string>
+    <string name="sms_breath_summary">Will give your SMS notifications a breathing effect in the status bar</string>
 
     <!-- OmniSwitch Recents -->
     <string name="aosp_recents_title">AOSP recents</string>
     <string name="omniswitch_recents_title">OmniSwitch recents</string>
-    <string name="recents_use_omniswitch_title">Use for a recents alterative</string>
+    <string name="recents_use_omniswitch_title">Use for a recents alternative</string>
     <string name="recents_use_omniswitch_summary">Use OmniSwitch instead of the default recents view</string>
     <string name="omniswitch_start_settings_title">OmniSwitch settings</string>
     <string name="omniswitch_start_settings_summary">View the settings for OmniSwitch</string>
     <string name="omniswitch_first_time_title">Warning</string>
-    <string name="omniswitch_first_time_message">If using OmniSwitch as recents alterative, make sure you have OmniSwitch enabled</string>
+    <string name="omniswitch_first_time_message">If you\'re using OmniSwitch as a recents alternative, make sure you have OmniSwitch enabled</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="press_color_to_apply">Press on the color below to apply</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -512,10 +511,10 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
     <string name="status_bar_battery_style_tile_title">Custom battery tile style</string>
-    <string name="status_bar_battery_style_tile_summary">Allow to set the same icon style chosen for the statusbar battery</string>
-    <string name="status_bar_charge_color_title">Statusbar battery icon charging color</string>
-    <string name="status_bar_charge_color_summary">Set the color of the statusbar battery icon while charging</string>
-    <string name="force_charge_battery_text_title">Statusbar battery charging percent</string>
+    <string name="status_bar_battery_style_tile_summary">Allow to set the same icon style chosen for the status bar battery</string>
+    <string name="status_bar_charge_color_title">Status bar battery icon charging color</string>
+    <string name="status_bar_charge_color_summary">Set the color of the status bar battery icon while charging</string>
+    <string name="force_charge_battery_text_title">Status bar battery charging percent</string>
     <string name="force_charge_battery_text_summary_on">Show the battery percentage outside the icon while charging</string>
     <string name="force_charge_battery_text_summary_off">Show the battery percentage inside the icon while charging</string>
     <string name="text_charging_symbol_title">Charging symbol near percentage text</string>

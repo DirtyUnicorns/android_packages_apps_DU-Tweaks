@@ -16,32 +16,24 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.app.Activity;
 import android.content.ContentResolver;
-import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.net.TrafficStats;
 import android.os.Bundle;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
 
-
 public class Traffic extends SettingsPreferenceFragment
-    implements OnPreferenceChangeListener {
+        implements OnPreferenceChangeListener {
 
     private static final String TAG = "Traffic";
 
@@ -80,13 +72,13 @@ public class Traffic extends SettingsPreferenceFragment
         mNetTrafficPeriod = (ListPreference) prefSet.findPreference(NETWORK_TRAFFIC_PERIOD);
 
         mNetTrafficAutohide =
-            (SwitchPreference) prefSet.findPreference(NETWORK_TRAFFIC_AUTOHIDE);
+                (SwitchPreference) prefSet.findPreference(NETWORK_TRAFFIC_AUTOHIDE);
         mNetTrafficAutohide.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE, 0) == 1));
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
         mNetTrafficHidearrow =
-            (SwitchPreference) prefSet.findPreference(NETWORK_TRAFFIC_HIDEARROW);
+                (SwitchPreference) prefSet.findPreference(NETWORK_TRAFFIC_HIDEARROW);
         mNetTrafficHidearrow.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.NETWORK_TRAFFIC_HIDEARROW, 0) == 1));
         mNetTrafficHidearrow.setOnPreferenceChangeListener(this);
@@ -123,8 +115,8 @@ public class Traffic extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-       return MetricsEvent.DIRTYTWEAKS;
-   }
+        return MetricsEvent.DIRTYTWEAKS;
+    }
 
     private void updateNetworkTrafficState(int mIndex) {
         if (mIndex <= 0) {

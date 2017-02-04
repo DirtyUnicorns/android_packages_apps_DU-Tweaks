@@ -16,13 +16,9 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.SystemProperties;
-import android.os.UserHandle;
-import android.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -67,8 +63,8 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
             prefScreen.removePreference(mFlashlightNotification);
         } else {
-        mFlashlightNotification.setChecked((Settings.System.getInt(resolver,
-                Settings.System.FLASHLIGHT_NOTIFICATION, 0) == 1));
+            mFlashlightNotification.setChecked((Settings.System.getInt(resolver,
+                    Settings.System.FLASHLIGHT_NOTIFICATION, 0) == 1));
         }
 
         mMsob = (ListPreference) findPreference(PREF_MEDIA_SCANNER_ON_BOOT);
@@ -111,12 +107,12 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         if  (preference == mFlashlightNotification) {
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
-                   Settings.System.FLASHLIGHT_NOTIFICATION, checked ? 1:0);
+                    Settings.System.FLASHLIGHT_NOTIFICATION, checked ? 1:0);
             return true;
         } else if (preference == mScrollingCachePref) {
             if (newValue != null) {
                 SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String)newValue);
-            return true;
+                return true;
             }
         } else if (preference == mMsob) {
             Settings.System.putInt(getActivity().getContentResolver(),

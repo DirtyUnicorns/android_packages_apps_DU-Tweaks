@@ -18,11 +18,8 @@ package com.dirtyunicorns.dutweaks.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.os.UserHandle;
-import android.preference.PreferenceCategory;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
@@ -33,7 +30,6 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
-import com.android.internal.util.du.DuUtils;
 import com.android.settings.Utils;
 
 public class StatusbarNotifications extends SettingsPreferenceFragment implements OnPreferenceChangeListener {

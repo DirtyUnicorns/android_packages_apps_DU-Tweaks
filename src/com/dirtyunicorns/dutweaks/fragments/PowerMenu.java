@@ -16,14 +16,10 @@
 
 package com.dirtyunicorns.dutweaks.fragments;
 
-import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
@@ -68,8 +64,8 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
             prefScreen.removePreference(mPowermenuTorch);
         } else {
-        mPowermenuTorch.setChecked((Settings.System.getInt(resolver,
-                Settings.System.POWERMENU_TORCH, 0) == 1));
+            mPowermenuTorch.setChecked((Settings.System.getInt(resolver,
+                    Settings.System.POWERMENU_TORCH, 0) == 1));
         }
 
         mPowerRebootDialogDim = (CustomSeekBarPreference) prefScreen.findPreference(POWER_REBOOT_DIALOG_DIM);

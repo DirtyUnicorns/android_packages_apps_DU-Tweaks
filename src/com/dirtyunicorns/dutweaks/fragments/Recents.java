@@ -17,11 +17,9 @@
 package com.dirtyunicorns.dutweaks.fragments;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
@@ -47,7 +45,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String OMNISWITCH_START_SETTINGS = "omniswitch_start_settings";
     public static final String OMNISWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
     public static Intent INTENT_OMNISWITCH_SETTINGS = new Intent(Intent.ACTION_MAIN).setClassName(OMNISWITCH_PACKAGE_NAME,
-                                OMNISWITCH_PACKAGE_NAME + ".SettingsActivity");
+            OMNISWITCH_PACKAGE_NAME + ".SettingsActivity");
     private static final String CATEGORY_STOCK_RECENTS = "stock_recents";
     private static final String CATEGORY_OMNI_RECENTS = "omni_recents";
 
@@ -55,7 +53,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private ListPreference mImmersiveRecents;
     private PreferenceCategory mStockRecents;
     private PreferenceCategory mOmniRecents;
-    private SwitchPreference mRecentsClearAll;
     private SwitchPreference mRecentsUseOmniSwitch;
 
     private Preference mOmniSwitchSettings;
@@ -156,12 +153,12 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
 
     private void openOmniSwitchFirstTimeWarning() {
         new AlertDialog.Builder(getActivity())
-            .setTitle(getResources().getString(R.string.omniswitch_first_time_title))
-            .setMessage(getResources().getString(R.string.omniswitch_first_time_message))
-            .setNegativeButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-            }
-        }).show();
+                .setTitle(getResources().getString(R.string.omniswitch_first_time_title))
+                .setMessage(getResources().getString(R.string.omniswitch_first_time_message))
+                .setNegativeButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                    }
+                }).show();
     }
 
     private void updateRecents() {

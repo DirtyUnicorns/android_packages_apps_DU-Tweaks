@@ -255,7 +255,6 @@
   <string name="omniswitch_first_time_title">Attenzione</string>
   <string name="omniswitch_first_time_message">Se si utilizza OmniSwitch per app recenti, assicurarsi di averlo attivato</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Seleziona colore</string>
   <string name="press_color_to_apply">Premi sul colore sottostante per applicare</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>

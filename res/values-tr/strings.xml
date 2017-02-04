@@ -255,7 +255,6 @@
   <string name="omniswitch_first_time_title">Uyarı</string>
   <string name="omniswitch_first_time_message">Son kullanılanlar için OmniSwitch kullanılıyorsa, OmniSwitch\'in etkin olduğundan emin olun</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Renk Seçici</string>
   <string name="press_color_to_apply">Rengi uygulamak için basın</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>

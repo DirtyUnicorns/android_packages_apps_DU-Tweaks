@@ -255,7 +255,6 @@
   <string name="omniswitch_first_time_title">Figyelmeztetés</string>
   <string name="omniswitch_first_time_message">Ha az OmniSwitch kezeli az előzményeket, bizonyosodjon meg róla, hogy engedélyezte azt</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Színválasztó</string>
   <string name="press_color_to_apply">Érintse meg a színt az alkalmazáshoz</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>

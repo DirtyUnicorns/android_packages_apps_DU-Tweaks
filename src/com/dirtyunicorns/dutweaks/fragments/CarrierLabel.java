@@ -26,7 +26,6 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.telephony.TelephonyManager;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.widget.EditText;
@@ -73,7 +72,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 
     private void updateCustomLabelTextSummary() {
         mCustomCarrierLabelText = Settings.System.getString(
-            getContentResolver(), Settings.System.CUSTOM_CARRIER_LABEL);
+                getContentResolver(), Settings.System.CUSTOM_CARRIER_LABEL);
 
         if (TextUtils.isEmpty(mCustomCarrierLabelText)) {
             mCustomCarrierLabel.setSummary(R.string.custom_carrier_label_notset);
@@ -83,16 +82,16 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-		ContentResolver resolver = getActivity().getContentResolver();
+        ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mShowCarrierLabel) {
             int showCarrierLabel = Integer.valueOf((String) newValue);
             int index = mShowCarrierLabel.findIndexOfValue((String) newValue);
             Settings.System.putInt(resolver, Settings.System.
-                STATUS_BAR_SHOW_CARRIER, showCarrierLabel);
+                    STATUS_BAR_SHOW_CARRIER, showCarrierLabel);
             mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
             return true;
-         }
-         return false;
+        }
+        return false;
     }
 
     @Override
@@ -117,8 +116,8 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
                             Intent i = new Intent();
                             i.setAction(Intent.ACTION_CUSTOM_CARRIER_LABEL_CHANGED);
                             getActivity().sendBroadcast(i);
-                }
-            });
+                        }
+                    });
             alert.setNegativeButton(getString(android.R.string.cancel), null);
             alert.show();
         }

@@ -255,7 +255,6 @@
   <string name="omniswitch_first_time_title">Advertencia</string>
   <string name="omniswitch_first_time_message">Si usa el OmniSwitch como alterativa, recientes tienes OmniSwitch habilitado</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Selector de color</string>
   <string name="press_color_to_apply">Presiona el color de abajo para aplicar</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>

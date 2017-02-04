@@ -255,7 +255,6 @@
   <string name="omniswitch_first_time_title">Warnung</string>
   <string name="omniswitch_first_time_message">Wenn OmniSwitch als alterative für Recents verwendet wird, stelle sicher ob OmniSwitch aktiviert ist</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Farbauswahl</string>
   <string name="press_color_to_apply">Drücken Sie auf die passende Farbe, um diese anzuwenden</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>

@@ -255,7 +255,6 @@
   <string name="omniswitch_first_time_title">Waarschuwing</string>
   <string name="omniswitch_first_time_message">Wanneer OmniSwitch wordt gebruikt als alternatief voor recente apps, zorg ervoor dat OmniSwitch is ingeschakeld</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Kleurkiezer</string>
   <string name="press_color_to_apply">Druk op kleur hieronder om toe te passen</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>

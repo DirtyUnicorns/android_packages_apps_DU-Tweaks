@@ -17,33 +17,22 @@
 package com.dirtyunicorns.dutweaks.fragments;
 
 import android.app.ActivityManagerNative;
-import android.content.Context;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import java.util.Locale;
-import android.text.TextUtils;
-import android.view.View;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -170,7 +159,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         mLockQsDisabled = (SwitchPreference) findPreference(PREF_LOCK_QS_DISABLED);
         if (lockPatternUtils.isSecure(MY_USER_ID)) {
             mLockQsDisabled.setChecked((Settings.Secure.getInt(resolver,
-                Settings.Secure.LOCK_QS_DISABLED, 0) == 1));
+                    Settings.Secure.LOCK_QS_DISABLED, 0) == 1));
             mLockQsDisabled.setOnPreferenceChangeListener(this);
         } else {
             prefSet.removePreference(mLockQsDisabled);
@@ -278,7 +267,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             int rowsLandscape = (Integer) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.QS_ROWS_LANDSCAPE, rowsLandscape * 1);
-           return true;
+            return true;
         } else if (preference == mSysuiQqsCount) {
             int SysuiQqsCount = (Integer) objValue;
             Settings.Secure.putInt(getActivity().getContentResolver(),
@@ -301,12 +290,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             int valueIndex = mDaylightHeaderPack.findIndexOfValue(value);
             mDaylightHeaderPack.setSummary(mDaylightHeaderPack.getEntries()[valueIndex]);
             return true;
-         } else if (preference == mHeaderShadow) {
+        } else if (preference == mHeaderShadow) {
             Integer headerShadow = (Integer) objValue;
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, headerShadow);
             return true;
-         } else if (preference == mHeaderProvider) {
+        } else if (preference == mHeaderProvider) {
             String value = (String) objValue;
             Settings.System.putString(getContentResolver(),
                     Settings.System.STATUS_BAR_CUSTOM_HEADER_PROVIDER, value);
@@ -329,7 +318,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                     ? R.string.quick_pulldown_left
                     : R.string.quick_pulldown_right);
             mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
-       }
+        }
     }
 
     private void updateTileAnimationStyleSummary(int tileAnimationStyle) {
