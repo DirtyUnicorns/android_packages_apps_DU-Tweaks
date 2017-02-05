@@ -496,7 +496,7 @@
 
     <!-- Quick Settings on lockscreen -->
     <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable shortcuts and expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding the quick settings on secure lock screens</string>
 
     <!-- Battery customizations -->
     <string name="status_bar_battery_style_category">Battery</string>
@@ -562,13 +562,19 @@
     <string name="one_handed_mode_title">One handed mode</string>
     <string name="one_handed_mode_summary">Allows swiping on the navigation bar to enable one handed mode</string>
 
-    <!-- Hide Lockscreen clock, date, & alarm -->
+    <!-- Hide Lockscreen items -->
     <string name="hide_lockscreen_clock_title">Clock widget</string>
-    <string name="hide_lockscreen_clock_summary">Hide clock widget</string>
+    <string name="hide_lockscreen_clock_summary_on">Clock widget showing on the keyguard</string>
+    <string name="hide_lockscreen_clock_summary_off">Clock widget hidden on the keyguard</string>
     <string name="hide_lockscreen_date_title">Date widget</string>
-    <string name="hide_lockscreen_date_summary">Hide date underneath the clock widget</string>
+    <string name="hide_lockscreen_date_summary_on">Date widget showing on the keyguard</string>
+    <string name="hide_lockscreen_date_summary_off">Date widget hidden on the keyguard</string>
     <string name="hide_lockscreen_alarm_title">Alarm text</string>
-    <string name="hide_lockscreen_alarm_summary">Hide alarm text underneath the clock widget</string>
+    <string name="hide_lockscreen_alarm_summary_on">Alarm text showing on the keyguard</string>
+    <string name="hide_lockscreen_alarm_summary_off">Alarm text hidden on the keyguard</string>
+    <string name="hide_lockscreen_bottom_shortcuts_title">Bottom shortcuts</string>
+    <string name="hide_lockscreen_bottom_shortcuts_summary_on">Bottom shortcuts showing on the keyguard</string>
+    <string name="hide_lockscreen_bottom_shortcuts_summary_off">Bottom shortcuts hidden on the keyguard</string>
 
     <!-- Buttons backlight timeout -->
     <string name="backlight_timeout_title">Buttons backlight timeout</string>

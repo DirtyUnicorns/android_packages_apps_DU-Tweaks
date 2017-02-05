@@ -17,22 +17,32 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lock_items_category" >
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
         android:key="hide_lockscreen_clock"
         android:title="@string/hide_lockscreen_clock_title"
-        android:summary="@string/hide_lockscreen_clock_summary"
+        android:summaryOn="@string/hide_lockscreen_clock_summary_on"
+        android:summaryOff="@string/hide_lockscreen_clock_summary_off"
         android:defaultValue="true" />
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
         android:key="hide_lockscreen_date"
         android:title="@string/hide_lockscreen_date_title"
-        android:summary="@string/hide_lockscreen_date_summary"
+        android:summaryOn="@string/hide_lockscreen_date_summary_on"
+        android:summaryOff="@string/hide_lockscreen_date_summary_off"
         android:defaultValue="true" />
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
         android:key="hide_lockscreen_alarm"
         android:title="@string/hide_lockscreen_alarm_title"
-        android:summary="@string/hide_lockscreen_alarm_summary"
+        android:summaryOn="@string/hide_lockscreen_alarm_summary_on"
+        android:summaryOff="@string/hide_lockscreen_alarm_summary_off"
+        android:defaultValue="true" />
+
+    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+        android:key="hide_lockscreen_shortcuts"
+        android:title="@string/hide_lockscreen_bottom_shortcuts_title"
+        android:summaryOn="@string/hide_lockscreen_bottom_shortcuts_summary_on"
+        android:summaryOff="@string/hide_lockscreen_bottom_shortcuts_summary_off"
         android:defaultValue="true" />
 
 </PreferenceScreen>
