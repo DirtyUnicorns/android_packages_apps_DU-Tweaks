@@ -45,7 +45,7 @@
         android:summaryOff="@string/hide_lockscreen_bottom_shortcuts_summary_off"
         android:defaultValue="true" />
 
-    <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
         android:key="keyguard_show_clock"
         android:title="@string/keyguard_statusbar_clock_title"
         android:summary="@string/keyguard_statusbar_clock_summary" />
