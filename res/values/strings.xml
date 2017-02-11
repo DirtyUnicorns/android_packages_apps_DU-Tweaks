@@ -243,9 +243,9 @@
     <string name="keyguard_torch_summary">Long press the power button while screen is off to turn on the flashlight</string>
 
     <!-- Status bar Clock options -->
-    <string name="status_bar_clock">Clock &amp; date</string>
+    <string name="status_bar_clock">Clock</string>
+    <string name="clock_disabled_notice">When Clock switch is turned on, you can select additional clock options</string>
     <string name="clock_title_enable">Alignment</string>
-    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
     <string name="status_bar_clock_seconds_title">Show seconds</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">24-hour clock is enabled</string>

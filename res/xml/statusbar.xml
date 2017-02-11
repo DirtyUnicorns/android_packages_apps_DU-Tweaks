@@ -33,17 +33,18 @@
             android:layout="@layout/preference_carrierlabel"
             android:title="@string/carrier_label_category" />
 
-         <Preference
-            android:key="statusbar_notifications"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
-            android:layout="@layout/preference_statusbar_notifications"
-            android:title="@string/statusbar_notifications_category" />
 
          <Preference
             android:key="statusbarclock"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarClock"
             android:layout="@layout/preference_statusbarclock"
             android:title="@string/status_bar_clock" />
+
+         <Preference
+            android:key="statusbar_notifications"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.StatusbarNotifications"
+            android:layout="@layout/preference_statusbar_notifications"
+            android:title="@string/statusbar_notifications_category" />
 
          <Preference
             android:key="quicksettings"
