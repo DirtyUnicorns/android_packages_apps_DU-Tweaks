@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/ledsettings_category" >
+
+    <PreferenceScreen
+            android:key="charging_light"
+            android:title="@string/battery_light_settings_title"
+            android:summary="@string/battery_light_settings_summary"
+            android:fragment="com.dirtyunicorns.dutweaks.batterylight.BatteryLightSettings" />
+
+    <PreferenceScreen
+            android:key="notification_light"
+            android:title="@string/notification_light_settings_title"
+            android:summary="@string/notification_light_settings_summary"
+            android:fragment="com.dirtyunicorns.dutweaks.batterylight.NotificationLightSettings" />
+
+</PreferenceScreen>
+

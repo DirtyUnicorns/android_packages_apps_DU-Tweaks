@@ -607,4 +607,107 @@
     <string name="wired_ringtone_focus_mode_title">Where to play ringtones from</string>
     <string name="wired_ringtone_focus_mode_dynamic">Wired headset if connected and playing music</string>
     <string name="wired_ringtone_focus_mode_stock">Speakerphone and headset (default)</string>
+
+    <!-- LED notifications -->
+    <string name="color_picker_dialog_title">Color</string>
+    <string name="battery_light_settings_title">Battery charging light</string>
+    <string name="battery_light_settings_summary">Configure the LED settings for battery charging</string>
+    <string name="notification_light_settings_title">Notifications light</string>
+    <string name="notification_light_settings_summary">Configure the LED settings for notifications</string>
+    <string name="ledsettings_category">LED Lights</string>
+    <string name="batterylight_title">Battery LED settings</string>
+    <string name="battery_light_enable">Enable</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Charged (90%)</string>
+    <string name="battery_light_really_full_color_title">Charged (100%)</string>
+    <string name="edit_battery_settings">Edit battery settings</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="led_color_green">Green</string>
+    <string name="led_color_red">Red</string>
+    <string name="led_color_blue">Blue</string>
+    <string name="ok">OK</string>
+    <string name="advanced">Advanced</string>
+    <string name="profiles_add">Add...</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Edit light settings</string>
+    <string name="pulse_speed_title">Pulse length and speed</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Custom</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Always on</string>
+    <string name="pulse_length_very_short">Very short</string>
+    <string name="pulse_length_short">Short</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Long</string>
+    <string name="pulse_length_very_long">Very long</string>
+    <string name="pulse_speed_very_fast">Very fast</string>
+    <string name="pulse_speed_fast">Fast</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Slow</string>
+    <string name="pulse_speed_very_slow">Very slow</string>
+
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Notification light</string>
+    <string name="notificationlight_title">Notification LED settings</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="notification_light_applist_title">Apps</string>
+    <string name="notification_light_phonelist_title">Phone</string>
+    <string name="notification_light_use_custom">Use custom values</string>
+    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="notification_light_brightness" translatable="false">@string/brightness</string>
+    <string name="notification_light_screen_on">Lights with screen on</string>
+    <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
+    <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
+    <string name="keywords_lights_brightness_level">dim leds brightness</string>
+    <string name="notification_light_automagic">Choose colors automatically</string>
+
+    <!-- Lights settings, LED notification -->
+    <string name="led_notification_title">Light settings</string>
+    <string name="led_notification_text">LED light enabled by settings</string>
+    <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+    <string name="font_sample_text">11:57</string>
+
+    <!-- Add application dialog box title -->
+    <string name="profile_choose_app">Choose app</string>
+    <string name="reset">Reset</string>
+
+    <!-- DU Changelog -->
+    <string name="duchangelog_title">Changelog</string>
+    <string name="duchangelog_summary">Check to see what has changed</string>
+    <string name="duchangelog_weeklies">Changelog - Weeklies</string>
+    <string name="duchangelog_official">Changelog - Official</string>
+    <string name="warning_text">Please note that change logs generated here are summaries of commits merged into our source. For a full and detailed change log is recommended that you visit our github or gerrit.</string>
+    <string name="weeklies">Weeklies</string>
+    <string name="official">Official</string>
+    <string name="changelog_header_version"></string>
+    <string name="changelog_dialog_title">Attention</string>
+    <string name="changelog_dialog_message">Please enable WiFi/Mobile data to download the changelog from our server.</string>
+    <string name="changelog_dialog_ok">OK</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Volume steps</string>
+    <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
+    <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
+    <string name="volume_steps_music_title">Volume steps: Music</string>
+    <string name="volume_steps_notification_title">Volume steps: Notification</string>
+    <string name="volume_steps_ring_title">Volume steps: Ringer</string>
+    <string name="volume_steps_system_title">Volume steps: System</string>
+    <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
+    <string name="volume_steps_reset">Reset</string>
+    <string name="volume_steps_60" translatable="false">60</string>
+    <string name="volume_steps_45" translatable="false">45</string>
+    <string name="volume_steps_30" translatable="false">30</string>
+    <string name="volume_steps_15" translatable="false">15</string>
+    <string name="volume_steps_7" translatable="false">7</string>
+    <string name="volume_steps_5" translatable="false">5</string>
+
 </resources>
