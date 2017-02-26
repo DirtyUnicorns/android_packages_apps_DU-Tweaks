@@ -27,6 +27,16 @@
             android:layout="@layout/preference_expanded_desktop"
             android:title="@string/expanded_desktop_category" />
 
+         <PreferenceScreen
+            android:key="oneplusdoze"
+            android:layout="@layout/preference_oneplusdoze"
+            android:title="@string/oneplusdoze_category" >
+            <intent
+                android:action="com.android.settings.action.EXTRA_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.doze"
+                android:targetClass="com.cyanogenmod.settings.doze.DozeSettings" />
+         </PreferenceScreen>
+
          <Preference
             android:key="misctweaks"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.MiscTweaks"

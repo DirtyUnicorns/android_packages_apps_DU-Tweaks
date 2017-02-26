@@ -42,7 +42,10 @@ public class System extends SettingsPreferenceFragment implements
     private static final String KEY_MOTOACTIONS = "motoactions";
     private static final String KEY_MOTO_ACTIONS_PACKAGE_NAME = "com.dirtyunicorns.settings.device";
 
+    private static final String KEY_ONEPLUSDOZE = "oneplusdoze";
+    private static final String KEY_ONEPLUS_DOZE_PACKAGE_NAME = "com.cyanogenmod.settings.doze";
     private PreferenceScreen mMotoActions;
+    private PreferenceScreen mOneplusDoze;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,10 @@ public class System extends SettingsPreferenceFragment implements
         mMotoActions = (PreferenceScreen) findPreference(KEY_MOTOACTIONS);
         if (!DuUtils.isPackageInstalled(getActivity(), KEY_MOTO_ACTIONS_PACKAGE_NAME)) {
             prefSet.removePreference(mMotoActions);
+        }
+        mOneplusDoze = (PreferenceScreen) findPreference(KEY_ONEPLUSDOZE);
+        if (!DuUtils.isPackageInstalled(getActivity(), KEY_ONEPLUS_DOZE_PACKAGE_NAME)) {
+            prefSet.removePreference(mOneplusDoze);
         }
     }
 
