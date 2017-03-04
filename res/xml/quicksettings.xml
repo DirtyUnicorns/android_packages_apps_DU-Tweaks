@@ -43,6 +43,24 @@
         android:persistent="false" />
 
     <PreferenceCategory
+        android:title="@string/qs_omnijaws_category">
+
+        <PreferenceScreen
+            android:title="@string/weather_config_title"
+            android:summary="@string/weather_config_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.omnirom.omnijaws"
+                    android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
+        </PreferenceScreen>
+
+        <ListPreference
+            android:key="weather_icon_pack"
+            android:title="@string/weather_icon_pack_title"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/qs_header_category">
 
     <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
