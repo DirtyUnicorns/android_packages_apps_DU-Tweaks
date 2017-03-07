@@ -42,7 +42,7 @@
     <string name="carrier_label_category">Carrier label</string>
     <string name="category_heads_up">Heads up</string>
     <string name="lock_items_category">Lockscreen items</string>
-    <string name="oneplusdoze_category">G2 extras</string>
+    <string name="oneplusdoze_category">Device extras</string>
     <string name="notif_ticker_category">Notification ticker</string>
     <string name="qs_omnijaws_category">Weather QS tile</string>
 
