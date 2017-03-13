@@ -283,7 +283,7 @@
     <!-- QS tiles category -->
     <string name="qs_tiles_category">QS tile options</string>
     <string name="qs_easy_toggle_title">Advanced QS easy toggle</string>
-    <string name="qs_easy_toggle_summary">Enable one tap action to enable or disable mobile data, wifi and bluetooth</string>
+    <string name="qs_easy_toggle_summary">Enable one tap action to enable/disable mobile data, wifi, location and bluetooth</string>
     <string name="qs_music_tile_track_optional_title">Music tile track title</string>
     <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
