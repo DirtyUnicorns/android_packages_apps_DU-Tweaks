@@ -253,6 +253,10 @@
     <string name="keyguard_torch_title">Lockscreen torch</string>
     <string name="keyguard_torch_summary">Long press the power button while screen is off to turn on the flashlight</string>
 
+    <!-- Lockscreen Media Art -->
+    <string name="keyguard_media_art_title">Media cover art</string>
+    <string name="keyguard_media_art_summary">Enable media cover art on the lockscreen</string>
+
     <!-- Status bar Clock options -->
     <string name="status_bar_clock">Clock</string>
     <string name="clock_disabled_notice">When Clock switch is turned on, you can select additional clock options</string>

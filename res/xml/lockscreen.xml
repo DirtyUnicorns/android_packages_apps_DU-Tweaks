@@ -21,16 +21,22 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <Preference
+        <Preference
             android:key="lock_items"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.LockItems"
             android:layout="@layout/preference_lock_items"
             android:title="@string/lock_items_category" />
 
-         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="keyguard_toggle_torch"
             android:title="@string/keyguard_torch_title"
             android:summary="@string/keyguard_torch_summary"
             android:defaultValue="false" />
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/keyguard_media_art_title"
+            android:summary="@string/keyguard_media_art_summary"
+            android:defaultValue="true" />
 
 </PreferenceScreen>
