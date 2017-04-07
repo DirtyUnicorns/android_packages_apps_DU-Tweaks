@@ -623,6 +623,9 @@
     <!-- Status bar notification ticker -->
     <string name="ticker_title">Ticker</string>
     <string name="ticker_summary">Enable the old status bar notification ticker. Do not use in conjunction with Heads Up.</string>
+    <string name="ticker_disabled">No ticker</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notifications and music ticker</string>
 
     <!-- Wired headset ringtone audio focus -->
     <string name="wired_ringtone_focus_mode_title">Where to play ringtones from</string>

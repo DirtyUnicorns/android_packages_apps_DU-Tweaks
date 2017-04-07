@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
@@ -50,7 +52,7 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
     private SwitchPreference mVoicemailBreath;
     private SwitchPreference mSmsBreath;
     private PreferenceGroup mBreathingNotifications;
-    private SwitchPreference mShowTicker;
+    private ListPreference mShowTicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,11 +85,14 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
         mVoicemailBreath = (SwitchPreference) findPreference(VOICEMAIL_BREATH);
         mSmsBreath = (SwitchPreference) findPreference(SMS_BREATH);
 
-        mShowTicker = (SwitchPreference) findPreference(STATUS_BAR_SHOW_TICKER);
+
+        mShowTicker = (ListPreference) findPreference(STATUS_BAR_SHOW_TICKER);
         mShowTicker.setOnPreferenceChangeListener(this);
-        int ShowTicker = Settings.System.getInt(getContentResolver(),
-                STATUS_BAR_SHOW_TICKER, 0);
-        mShowTicker.setChecked(ShowTicker != 0);
+        int tickerMode = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_TICKER,
+                0, UserHandle.USER_CURRENT);
+        mShowTicker.setValue(String.valueOf(tickerMode));
+        mShowTicker.setSummary(mShowTicker.getEntry());
 
         mBreathingNotifications = (PreferenceGroup) findPreference(BREATHING_NOTIFICATIONS);
 
@@ -158,10 +163,13 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
             Settings.Global.putInt(getContentResolver(), SMS_BREATH,
                     value ? 1 : 0);
             return true;
-        } else if (preference == mShowTicker) {
-            boolean value = (Boolean) newValue;
-            Settings.Global.putInt(getContentResolver(), STATUS_BAR_SHOW_TICKER,
-                    value ? 1 : 0);
+        } else if (preference.equals(mShowTicker)) {
+            int tickerMode = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_SHOW_TICKER, tickerMode,
+                    UserHandle.USER_CURRENT);
+            int index = mShowTicker.findIndexOfValue((String) newValue);
+            mShowTicker.setSummary(mShowTicker.getEntries()[index]);
             return true;
         }
         return false;
