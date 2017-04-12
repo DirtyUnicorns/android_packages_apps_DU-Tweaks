@@ -41,5 +41,11 @@
             android:layout="@layout/preference_recents"
             android:title="@string/recents_category" />
 
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="always_headsup_dialer"
+            android:title="@string/always_headsup_dialer_title"
+            android:summary="@string/always_headsup_dialer_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
 

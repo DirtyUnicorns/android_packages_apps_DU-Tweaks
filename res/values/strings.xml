@@ -572,6 +572,8 @@
     <string name="summary_heads_up_enabled">Peeking notifications are enabled</string>
     <string name="summary_heads_up_disabled">Peeking notifications are disabled</string>
     <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable peeking notifications.</string>
+    <string name="always_headsup_dialer_title">Force heads up for dialer</string>
+    <string name="always_headsup_dialer_summary">Show heads up for dialer even if heads up is off to avoid fullscreen dialer on incoming calls</string>
 
     <!-- Heads Up timeout -->
     <string name="heads_up_time_out_title">Time out</string>
