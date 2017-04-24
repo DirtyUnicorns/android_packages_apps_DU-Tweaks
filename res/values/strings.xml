@@ -43,7 +43,6 @@
     <string name="category_heads_up">Heads up</string>
     <string name="lock_items_category">Lockscreen items</string>
     <string name="oneplusdoze_category">Device extras</string>
-    <string name="notif_ticker_category">Notification ticker</string>
     <string name="qs_omnijaws_category">Weather QS tile</string>
     <string name="ticker_category">Ticker</string>
 

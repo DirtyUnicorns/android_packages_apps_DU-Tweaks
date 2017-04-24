@@ -21,12 +21,12 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
-import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceGroup;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
@@ -36,6 +36,10 @@ import com.android.settings.Utils;
 
 public class Ticker extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String STATUS_BAR_SHOW_TICKER = "status_bar_show_ticker";
+
+    private ListPreference mShowTicker;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +47,14 @@ public class Ticker extends SettingsPreferenceFragment implements OnPreferenceCh
         addPreferencesFromResource(R.xml.ticker);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        mShowTicker = (ListPreference) findPreference(STATUS_BAR_SHOW_TICKER);
+        mShowTicker.setOnPreferenceChangeListener(this);
+        int tickerMode = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_TICKER,
+                0, UserHandle.USER_CURRENT);
+        mShowTicker.setValue(String.valueOf(tickerMode));
+        mShowTicker.setSummary(mShowTicker.getEntry());
     }
 
     @Override
@@ -55,7 +67,17 @@ public class Ticker extends SettingsPreferenceFragment implements OnPreferenceCh
         super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object value) {
-         return true;
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference.equals(mShowTicker)) {
+            int tickerMode = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_SHOW_TICKER, tickerMode,
+                    UserHandle.USER_CURRENT);
+            int index = mShowTicker.findIndexOfValue((String) newValue);
+            mShowTicker.setSummary(mShowTicker.getEntries()[index]);
+            return true;
+        }
+        return false;
     }
 }
