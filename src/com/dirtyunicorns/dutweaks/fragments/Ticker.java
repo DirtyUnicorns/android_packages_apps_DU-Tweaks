@@ -18,6 +18,7 @@ package com.dirtyunicorns.dutweaks.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
+import android.net.ConnectivityManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -37,8 +38,10 @@ import com.android.settings.Utils;
 public class Ticker extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String STATUS_BAR_SHOW_TICKER = "status_bar_show_ticker";
+    private static final String ALWAYS_HEADSUP_DIALER = "always_headsup_dialer";
 
     private ListPreference mShowTicker;
+    private SwitchPreference mAlwaysHeadsupDialer;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,7 @@ public class Ticker extends SettingsPreferenceFragment implements OnPreferenceCh
         addPreferencesFromResource(R.xml.ticker);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefSet = getPreferenceScreen();
 
         mShowTicker = (ListPreference) findPreference(STATUS_BAR_SHOW_TICKER);
         mShowTicker.setOnPreferenceChangeListener(this);
@@ -55,6 +59,21 @@ public class Ticker extends SettingsPreferenceFragment implements OnPreferenceCh
                 0, UserHandle.USER_CURRENT);
         mShowTicker.setValue(String.valueOf(tickerMode));
         mShowTicker.setSummary(mShowTicker.getEntry());
+
+        mAlwaysHeadsupDialer = (SwitchPreference) findPreference(ALWAYS_HEADSUP_DIALER);
+
+        Context context = getActivity();
+        ConnectivityManager cm = (ConnectivityManager)
+                context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        if(cm.isNetworkSupported(ConnectivityManager.TYPE_MOBILE)) {
+
+            mAlwaysHeadsupDialer.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.ALWAYS_HEADSUP_DIALER, 0) == 1);
+            mAlwaysHeadsupDialer.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mAlwaysHeadsupDialer);
+        }
     }
 
     @Override
@@ -76,6 +95,11 @@ public class Ticker extends SettingsPreferenceFragment implements OnPreferenceCh
                     UserHandle.USER_CURRENT);
             int index = mShowTicker.findIndexOfValue((String) newValue);
             mShowTicker.setSummary(mShowTicker.getEntries()[index]);
+            return true;
+        } else if (preference == mAlwaysHeadsupDialer) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), ALWAYS_HEADSUP_DIALER,
+                    value ? 1 : 0);
             return true;
         }
         return false;
