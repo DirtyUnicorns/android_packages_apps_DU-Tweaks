@@ -63,6 +63,12 @@
          </PreferenceScreen>
 
          <Preference
+            android:key="ticker"
+            android:fragment="com.dirtyunicorns.dutweaks.fragments.Ticker"
+            android:layout="@layout/preference_ticker"
+            android:title="@string/ticker_category" />
+
+         <Preference
             android:key="traffic"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.Traffic"
             android:layout="@layout/preference_traffic"
