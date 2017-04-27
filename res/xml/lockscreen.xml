@@ -39,4 +39,10 @@
             android:summary="@string/keyguard_media_art_summary"
             android:defaultValue="true" />
 
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="fp_unlock_keystore"
+            android:title="@string/fp_unlock_keystore_title"
+            android:summary="@string/fp_unlock_keystore_summary"
+            android:persistent="false" />
+
 </PreferenceScreen>

@@ -18,29 +18,31 @@ package com.dirtyunicorns.dutweaks.tabs;
 
 import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.UserHandle;
-import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+
+import android.hardware.fingerprint.FingerprintManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.util.du.DuUtils;
 
+import com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference;
+
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "Lockscreen";
 
     private static final String KEYGUARD_TOGGLE_TORCH = "keyguard_toggle_torch";
+    private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
 
     private SwitchPreference mKeyguardTorch;
+    private SystemSettingSwitchPreference mFpKeystore;
+
+    private FingerprintManager mFingerprintManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,8 +58,18 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
             prefSet.removePreference(mKeyguardTorch);
         } else {
-        mKeyguardTorch.setChecked((Settings.System.getInt(resolver,
-                Settings.System.KEYGUARD_TOGGLE_TORCH, 0) == 1));
+            mKeyguardTorch.setChecked((Settings.System.getInt(resolver,
+                    Settings.System.KEYGUARD_TOGGLE_TORCH, 0) == 1));
+        }
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFpKeystore = (SystemSettingSwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
+        if (!mFingerprintManager.isHardwareDetected()){
+            prefSet.removePreference(mFpKeystore);
+        } else {
+            mFpKeystore.setChecked((Settings.System.getInt(getContentResolver(),
+                    Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
+            mFpKeystore.setOnPreferenceChangeListener(this);
         }
     }
 
@@ -81,6 +93,11 @@ public class Lockscreen extends SettingsPreferenceFragment implements
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.KEYGUARD_TOGGLE_TORCH, checked ? 1:0);
+            return true;
+        } else if (preference == mFpKeystore) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FP_UNLOCK_KEYSTORE, value ? 1 : 0);
             return true;
         }
         return false;
