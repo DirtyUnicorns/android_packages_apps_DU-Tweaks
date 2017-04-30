@@ -38,9 +38,11 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
     private static final String KEYGUARD_TOGGLE_TORCH = "keyguard_toggle_torch";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
 
     private SwitchPreference mKeyguardTorch;
     private SystemSettingSwitchPreference mFpKeystore;
+    private SystemSettingSwitchPreference mFingerprintVib;
 
     private FingerprintManager mFingerprintManager;
 
@@ -71,6 +73,16 @@ public class Lockscreen extends SettingsPreferenceFragment implements
                     Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
             mFpKeystore.setOnPreferenceChangeListener(this);
         }
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
+        if (!mFingerprintManager.isHardwareDetected()){
+            prefSet.removePreference(mFingerprintVib);
+        } else {
+            mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
+                    Settings.System.FINGERPRINT_SUCCESS_VIB, 0) == 1));
+            mFingerprintVib.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -98,6 +110,11 @@ public class Lockscreen extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FP_UNLOCK_KEYSTORE, value ? 1 : 0);
+            return true;
+        } else if (preference == mFingerprintVib) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FINGERPRINT_SUCCESS_VIB, value ? 1 : 0);
             return true;
         }
         return false;
