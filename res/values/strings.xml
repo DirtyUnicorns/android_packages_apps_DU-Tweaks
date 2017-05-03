@@ -45,6 +45,7 @@
     <string name="oneplusdoze_category">Device extras</string>
     <string name="qs_omnijaws_category">Weather QS tile</string>
     <string name="ticker_category">Ticker</string>
+    <string name="fingerprint_category">Fingerprint prefs</string>
 
     <!-- OmniJaws -->
     <string name="weather_config_title">Weather settings</string>
@@ -736,11 +737,9 @@
     <string name="volume_steps_7" translatable="false">7</string>
     <string name="volume_steps_5" translatable="false">5</string>
 
-    <!-- Fingerprint unlock keystore -->
+    <!-- Fingerprint prefs -->
     <string name="fp_unlock_keystore_title">Fingerprint reboot unlock</string>
     <string name="fp_unlock_keystore_summary">Unlock the device with your fingerprint after a reboot without entering your Pin/Password/Pattern</string>
-
-    <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
 

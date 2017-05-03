@@ -17,26 +17,19 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/lockscreen_category"
-    android:layout="@layout/tab"
+    android:title="@string/fingerprint_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <PreferenceScreen
-            android:key="fingerprint_prefs"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.FingerprintPrefs"
-            android:layout="@layout/preference_fingerprint"
-            android:title="@string/fingerprint_category" />
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="fp_unlock_keystore"
+        android:title="@string/fp_unlock_keystore_title"
+        android:summary="@string/fp_unlock_keystore_summary"
+        android:defaultValue="false" />
 
-        <Preference
-            android:key="lock_items"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.LockItems"
-            android:layout="@layout/preference_lock_items"
-            android:title="@string/lock_items_category" />
-
-        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-            android:key="keyguard_toggle_torch"
-            android:title="@string/keyguard_torch_title"
-            android:summary="@string/keyguard_torch_summary"
-            android:defaultValue="false" />
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:defaultValue="true" />
 
 </PreferenceScreen>

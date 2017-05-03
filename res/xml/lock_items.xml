@@ -57,4 +57,10 @@
         android:summaryOff="@string/emergency_button_summary_off"
         android:defaultValue="true" />
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_media_metadata"
+        android:title="@string/keyguard_media_art_title"
+        android:summary="@string/keyguard_media_art_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
