@@ -30,7 +30,7 @@
   <string name="misctweaks_category">Réglages divers</string>
   <string name="button_settings">Boutons</string>
   <string name="statusbar_notifications_category">Notifications</string>
-  <string name="statusbar_items_category">Éléments de la barre d\'état</string>
+  <string name="statusbar_items_category">Éléments</string>
   <string name="nightmode_category">Mode Nuit</string>
   <string name="expanded_desktop_category">Bureau étendu</string>
   <string name="quicksettings_category">Configuration rapide</string>
@@ -347,7 +347,7 @@
   <string name="pulse_settings">Pulse</string>
   <string name="pulse_settings_summary">Égaliseur audio sur la barre de navigation</string>
   <string name="fling_show_pulse_title">Pulse</string>
-  <string name="fling_show_pulse_summary">Visualisation à l\'aspect d\'un égaliseur audio la barre de navigation</string>
+  <string name="fling_show_pulse_summary">Afficher Pulse sur la barre de navigation</string>
   <string name="pulse_render_mode_title">Mode de rendu</string>
   <string name="pulse_render_mode_fading_bars">Fondu des blocs</string>
   <string name="pulse_render_mode_solid_lines">Lignes pleines</string>
