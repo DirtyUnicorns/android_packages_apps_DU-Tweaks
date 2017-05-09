@@ -645,4 +645,9 @@
   <string name="volume_steps_system_title">Hangerő léptetések: Rendszer</string>
   <string name="volume_steps_voice_call_title">Hangerő léptetések: Hanghívás</string>
   <string name="volume_steps_reset">Visszaállít</string>
+  <!-- Fingerprint prefs -->
+  <string name="fp_unlock_keystore_title">Ujjlenyomat feloldás</string>
+  <string name="fp_unlock_keystore_summary">Újraindítás után az eszköz feloldása az ujjlenyomattal a Pin/Jelszó/Minta megadása nélkül</string>
+  <string name="fprint_sucess_vib_title">Rezgés ujjlenyomat hitelesítésekor</string>
+  <string name="fprint_sucess_vib_summary">Rezgés a sikereses ujjlenyomat hitelesítéskor</string>
 </resources>
