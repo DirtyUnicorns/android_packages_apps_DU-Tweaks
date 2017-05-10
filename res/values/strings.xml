@@ -46,6 +46,7 @@
     <string name="qs_omnijaws_category">Weather QS tile</string>
     <string name="ticker_category">Ticker</string>
     <string name="fingerprint_category">Fingerprint prefs</string>
+    <string name="extended_statusbar_icons_category">Extended statusbar icons</string>
 
     <!-- OmniJaws -->
     <string name="weather_config_title">Weather settings</string>
@@ -80,6 +81,18 @@
     <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
     <string name="brightness_icon_title">Brightness icon </string>
     <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+
+    <!-- Extended statusbar icons -->
+    <string name="qs_settings_icon_title">Settings shortcut</string>
+    <string name="qs_settings_icon_summary">Enable the settings shortcut in the extended statusbar</string>
+    <string name="qs_settings_expanded_title">Expanded settings shortcut</string>
+    <string name="qs_settings_expanded_summary">Hide the settings shortcut while the quick settings area is collpased</string>
+    <string name="qs_edit_title">Edit shortcut</string>
+    <string name="qs_edit_summary">Enable the edit shortcut in the extended statusbar</string>
+    <string name="qs_multiuser_switch_title">Multi user shortcut</string>
+    <string name="qs_multiuser_switch_summary">Enable the multi user shortcut in the extended statusbar</string>
+    <string name="qs_expand_indicator_title">Expand indicator</string>
+    <string name="qs_expand_indicator_summary">Enable the indicator used to expand or collpase the quick settings area</string>
 
     <!-- Power Menu -->
     <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
