@@ -18,6 +18,7 @@ package com.dirtyunicorns.dutweaks.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
@@ -50,9 +51,13 @@ public class FingerprintPrefs extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         mFpKeystore = (SystemSettingSwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
-        mFpKeystore.setChecked((Settings.System.getInt(getContentResolver(),
-               Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
-        mFpKeystore.setOnPreferenceChangeListener(this);
+        if (Build.BOARD.contains("marlin") || Build.BOARD.contains("sailfish")) {
+            prefSet.removePreference(mFpKeystore);
+        } else {
+            mFpKeystore.setChecked((Settings.System.getInt(getContentResolver(),
+                   Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
+            mFpKeystore.setOnPreferenceChangeListener(this);
+        }
 
         mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
         mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
