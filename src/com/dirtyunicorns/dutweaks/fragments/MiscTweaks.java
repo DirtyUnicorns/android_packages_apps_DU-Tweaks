@@ -37,6 +37,7 @@ import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String FLASHLIGHT_NOTIFICATION = "flashlight_notification";
+    private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
     private static final String SCREENSHOT_TYPE = "screenshot_type";
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
@@ -48,6 +49,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
 
     private CustomSeekBarPreference mScreenshotDelay;
     private SwitchPreference mFlashlightNotification;
+    private ListPreference mLaunchPlayerHeadsetConnection;
     private ListPreference mScreenshotType;
     private ListPreference mScrollingCachePref;
     private ListPreference mMsob;
@@ -101,6 +103,13 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mWiredHeadsetRingtoneFocus.setValue(Integer.toString(mWiredHeadsetRingtoneFocusValue));
         mWiredHeadsetRingtoneFocus.setSummary(mWiredHeadsetRingtoneFocus.getEntry());
         mWiredHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
+
+        mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
+        int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
+                Settings.System.HEADSET_CONNECT_PLAYER, 0, UserHandle.USER_CURRENT);
+        mLaunchPlayerHeadsetConnection.setValue(Integer.toString(mLaunchPlayerHeadsetConnectionValue));
+        mLaunchPlayerHeadsetConnection.setSummary(mLaunchPlayerHeadsetConnection.getEntry());
+        mLaunchPlayerHeadsetConnection.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -153,6 +162,14 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
                     mWiredHeadsetRingtoneFocus.getEntries()[index]);
             Settings.Global.putInt(resolver, Settings.Global.WIRED_RINGTONE_FOCUS_MODE,
                     mWiredHeadsetRingtoneFocusValue);
+            return true;
+        } else if (preference == mLaunchPlayerHeadsetConnection) {
+            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) newValue);
+            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) newValue);
+            mLaunchPlayerHeadsetConnection.setSummary(
+                    mLaunchPlayerHeadsetConnection.getEntries()[index]);
+            Settings.System.putIntForUser(resolver, Settings.System.HEADSET_CONNECT_PLAYER,
+                    mLaunchPlayerHeadsetConnectionValue, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
