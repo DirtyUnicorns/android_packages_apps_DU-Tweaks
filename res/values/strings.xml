@@ -47,6 +47,7 @@
     <string name="ticker_category">Ticker</string>
     <string name="fingerprint_category">Fingerprint prefs</string>
     <string name="extended_statusbar_icons_category">Extended statusbar icons</string>
+    <string name="action_options_category">Actions</string>
 
     <!-- OmniJaws -->
     <string name="weather_config_title">Weather settings</string>
