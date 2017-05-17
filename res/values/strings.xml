@@ -767,4 +767,9 @@
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Charging info</string>
     <string name="lockscreen_battery_info_summary">Display charger current, voltage and battery temperature on the lockscreen while charging</string>
+
+    <!-- No navigation notification -->
+    <string name="no_navigation_notif_title">No navigation method reminder</string>
+    <string name="no_navigation_notif_summary">Show a notification when there\'s no navigation method enabled</string>
+
 </resources>

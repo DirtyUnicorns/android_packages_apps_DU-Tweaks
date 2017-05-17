@@ -20,11 +20,14 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.support.v7.preference.ListPreference;
+import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
@@ -41,6 +44,7 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
     private static final String SMS_BREATH = "sms_breath";
     private static final String BREATHING_NOTIFICATIONS = "breathing_notifications";
+    private static final String NO_NAVIGATION_NOTIFICATION = "no_navigation_notification";
 
     private SwitchPreference mEnableNC;
     private SwitchPreference mForceExpanded;
@@ -49,6 +53,7 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
     private SwitchPreference mVoicemailBreath;
     private SwitchPreference mSmsBreath;
     private PreferenceGroup mBreathingNotifications;
+    private SwitchPreference mNoNavigationNotification;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -106,6 +111,13 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
             prefSet.removePreference(mSmsBreath);
             prefSet.removePreference(mBreathingNotifications);
         }
+
+        mNoNavigationNotification = (SwitchPreference) findPreference(NO_NAVIGATION_NOTIFICATION);
+
+        boolean isNavNotificationEnabled = Settings.System.getIntForUser(resolver,
+                Settings.System.NO_NAVIGATION_NOTIFICATION, 1, UserHandle.USER_CURRENT) != 0;
+        mNoNavigationNotification.setChecked(isNavNotificationEnabled);
+        mNoNavigationNotification.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -149,6 +161,12 @@ public class StatusbarNotifications extends SettingsPreferenceFragment implement
             boolean value = (Boolean) newValue;
             Settings.Global.putInt(getContentResolver(), SMS_BREATH,
                     value ? 1 : 0);
+            return true;
+        } else if (preference.equals(mNoNavigationNotification)) {
+            boolean isNavNotificationEnabled = ((Boolean)newValue);
+            Settings.System.putIntForUser(getContentResolver(), Settings.System.NO_NAVIGATION_NOTIFICATION,
+                    isNavNotificationEnabled ? 1 : 0, UserHandle.USER_CURRENT);
+            mNoNavigationNotification.setChecked(isNavNotificationEnabled);
             return true;
         }
         return false;

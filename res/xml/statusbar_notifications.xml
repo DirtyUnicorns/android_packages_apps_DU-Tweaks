@@ -17,7 +17,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/statusbar_notifications_category" >
 
-     <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
         android:key="status_bar_notif_count"
         android:title="@string/status_bar_notif_count_title"
         android:summary="@string/status_bar_notif_count_summary"
@@ -34,37 +34,43 @@
         android:summary="@string/disable_immersive_message_summary"
         android:persistent="false" />
 
+    <SwitchPreference
+        android:key="no_navigation_notification"
+        android:title="@string/no_navigation_notif_title"
+        android:summary="@string/no_navigation_notif_summary" />
+
     <PreferenceScreen
-       android:key="systemui_tuner_pnc"
-       android:title="@string/power_notification_controls_title"
-       android:summary="@string/power_notification_controls_summary" >
-       <intent
-           android:action="android.intent.action.MAIN"
-           android:targetPackage="com.android.systemui"
-           android:targetClass="com.android.systemui.tuner.PNCActivity" />
+        android:key="systemui_tuner_pnc"
+        android:title="@string/power_notification_controls_title"
+        android:summary="@string/power_notification_controls_summary" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.PNCActivity" />
     </PreferenceScreen>
+
 
     <PreferenceCategory
         android:key="breathing_notifications"
         android:title="@string/breathing_notifications_category">
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-        android:key="missed_call_breath"
-        android:title="@string/missed_call_breath_title"
-        android:summary="@string/missed_call_breath_summary"
-        android:persistent="false"/>
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="missed_call_breath"
+            android:title="@string/missed_call_breath_title"
+            android:summary="@string/missed_call_breath_summary"
+            android:persistent="false"/>
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-        android:key="voicemail_breath"
-        android:title="@string/voicemail_breath_title"
-        android:summary="@string/voicemail_breath_summary"
-        android:persistent="false"/>
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="voicemail_breath"
+            android:title="@string/voicemail_breath_title"
+            android:summary="@string/voicemail_breath_summary"
+            android:persistent="false"/>
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-        android:key="sms_breath"
-        android:title="@string/sms_breath_title"
-        android:summary="@string/sms_breath_summary"
-        android:persistent="false"/>
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+            android:key="sms_breath"
+            android:title="@string/sms_breath_title"
+            android:summary="@string/sms_breath_summary"
+            android:persistent="false"/>
 
     </PreferenceCategory>
 
