@@ -29,6 +29,7 @@
     <string name="ticker_category">Notification \"Ticker\"</string>
     <string name="qs_omnijaws_category">Météo</string>
     <string name="extended_statusbar_icons_category">Raccourcis</string>
+    <string name="action_options_category">Actions</string>
 
     <!-- OmniJaws -->
     <string name="weather_config_title">Paramètres météo</string>
@@ -214,6 +215,10 @@
     <string name="qqs_scroll_title">Défilement</string>
     <string name="qqs_scroll_summary">Permettre le défilement des tuiles d\'en-tête</string>
     <string name="qs_small_tiles_title">Tuiles d\'en-tête</string>
+
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">Notification de sécurité</string>
+    <string name="qs_footer_warnings_summary">Afficher une notification lorsque le réseau est contrôlé par une application externe ou un VPN</string>
 
     <!-- Option to show brightness bar in quick settings -->
     <string name="show_brightness">Afficher le curseur de luminosité</string>
@@ -768,11 +773,20 @@
     <string name="fprint_sucess_vib_summary">Vibrer après authentification par empreinte digitale réussie</string>
 
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Lecteur audio</string>
-    <string name="headset_connect_player_summary">Démarrer le lecteur audio par défaut lors de la connexion du casque</string>
+    <string name="headset_connect_player_title">Démarrer le lecteur audio</string>
+    <string name="headset_connect_player_disabled">Désactivé</string>
+    <string name="headset_connect_player_wired">Lorsque le casque filaire est branché</string>
+    <string name="headset_connect_player_bt_no_carkit">Lorsque le casque Bluetooth est connecté (Hormis Kit mains libre)</string>
+    <string name="headset_connect_player_bt">Lorsque le casque Bluetooth est connecté</string>
+    <string name="headset_connect_player_both_no_carkit">Lorsque le casque filaire ou casque Bluetooth est connecté (Hormis Kit mains libre)</string>
+    <string name="headset_connect_player_both">Lorsque le casque filaire ou casque Bluetooth est connecté</string>
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Niveaux de charge</string>
     <string name="lockscreen_battery_info_summary">Afficher les niveaux de la tension et la température de la batterie sur l\'écran de déverrouillage pendant la charge</string>
+
+    <!-- No navigation notification -->
+    <string name="no_navigation_notif_title">Pense-bête</string>
+    <string name="no_navigation_notif_summary">Afficher une notification lorsqu\'aucune méthode de navigation n\'est activée</string>
 
 </resources>
