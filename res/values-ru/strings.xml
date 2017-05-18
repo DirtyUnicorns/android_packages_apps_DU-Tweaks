@@ -753,4 +753,8 @@
   <string name="lockscreen_battery_info_title">Информация о зарядке</string>
   <string name="lockscreen_battery_info_summary">Показывать текущее напряжение и температуру батареи на экране блокировки</string>
 
+  <!-- No navigation notification -->
+  <string name="no_navigation_notif_title">Уведомление об отсутствии способа навигации</string>
+  <string name="no_navigation_notif_summary">Показывать уведомление, когда не активировано ни одного способа навигации</string>
+
 </resources>
