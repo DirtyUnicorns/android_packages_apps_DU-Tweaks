@@ -69,4 +69,17 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="false" />
 
+    <!-- Action options -->
+    <PreferenceCategory
+        android:key="action_options"
+        android:title="@string/action_options_category">
+
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="keyguard_toggle_torch"
+        android:title="@string/keyguard_torch_title"
+        android:summary="@string/keyguard_torch_summary"
+        android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

@@ -23,6 +23,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.PreferenceScreen;
@@ -36,13 +37,19 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import com.android.internal.util.du.DuUtils;
+
 public class LockItems extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PREF_SHOW_EMERGENCY_BUTTON = "show_emergency_button";
     private static final String PREF_LOCKSCREEN_BATTERY_INFO = "lockscreen_battery_info";
+    private static final String KEYGUARD_TOGGLE_TORCH = "keyguard_toggle_torch";
+    private static final String KEY_ACTIONS = "actions";
 
     private SwitchPreference mEmergencyButton;
     private SwitchPreference mLockscreenBatteryInfo;
+    private SwitchPreference mKeyguardTorch;
+    private PreferenceCategory mActions;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -70,6 +77,16 @@ public class LockItems extends SettingsPreferenceFragment implements OnPreferenc
         if (Build.BOARD.contains("dragon") || Build.BOARD.contains("shieldtablet")) {
             prefSet.removePreference(mLockscreenBatteryInfo);
         }
+
+        mActions = (PreferenceCategory) findPreference(KEY_ACTIONS);
+        mKeyguardTorch = (SwitchPreference) findPreference(KEYGUARD_TOGGLE_TORCH);
+        mKeyguardTorch.setOnPreferenceChangeListener(this);
+        if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
+            prefSet.removePreference(mActions);
+        } else {
+        mKeyguardTorch.setChecked((Settings.System.getInt(resolver,
+                Settings.System.KEYGUARD_TOGGLE_TORCH, 0) == 1));
+        }
     }
 
     @Override
@@ -89,6 +106,11 @@ public class LockItems extends SettingsPreferenceFragment implements OnPreferenc
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SHOW_EMERGENCY_BUTTON, checked ? 1:0);
+            return true;
+        } else if  (preference == mKeyguardTorch) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.KEYGUARD_TOGGLE_TORCH, checked ? 1:0);
             return true;
         }
         return false;
