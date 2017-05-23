@@ -32,4 +32,10 @@
         android:summary="@string/fprint_sucess_vib_summary"
         android:defaultValue="true" />
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="quick_pulldown_fp"
+        android:title="@string/quick_pulldown_fp_title"
+        android:summary="@string/quick_pulldown_fp_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
