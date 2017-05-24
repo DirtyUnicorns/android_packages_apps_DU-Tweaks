@@ -48,6 +48,7 @@
   <string name="ticker_category">Вид уведомлений</string>
   <string name="fingerprint_category">Сканер отпечатка пальца</string>
   <string name="extended_statusbar_icons_category">Заголовок быстрых настроек</string>
+  <string name="action_options_category">Действия</string>
 
   <!-- OmniJaws -->
   <string name="weather_config_title">Настройки службы</string>
