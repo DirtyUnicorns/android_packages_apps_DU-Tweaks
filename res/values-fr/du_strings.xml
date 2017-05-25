@@ -149,8 +149,8 @@
     <string name="flashlight_notification_summary">Activer la notification lorsque la lampe de poche est en cours d\'utilisation</string>
 
     <!-- Volume key controls media stream -->
-    <string name="volume_keys_control_media_stream_title">Flux audio \"Multi-média\"</string>
-    <string name="volume_keys_control_media_stream_summary">Utiliser les boutons Volume pour régler uniquement le flux audio \"Multi-média\"</string>
+    <string name="volume_keys_control_media_stream_title">Flux audio \"multimédia\"</string>
+    <string name="volume_keys_control_media_stream_summary">Utiliser les boutons Volume pour régler uniquement le flux audio \"multimédia\"</string>
 
     <!-- Volume Key Rotation -->
     <string name="swap_volume_buttons_title">Réorienter</string>
@@ -320,7 +320,7 @@
     <!-- Advanced data tile -->
     <string name="qs_tiles_category">Options des tuiles</string>
     <string name="qs_easy_toggle_title">Commutateurs rapides</string>
-    <string name="qs_easy_toggle_summary">Activer ou désactiver par simple appui, les Données mobiles, le Wi-Fi, la localisation, et le Bluetooth</string>
+    <string name="qs_easy_toggle_summary">Activer ou désactiver par simple appui, les données mobiles, le Wi-Fi, la localisation, et le Bluetooth</string>
     <string name="qs_advanced_data_title">Tuile de données</string>
     <string name="qs_advanced_data_summary">Activer ou désactiver les données mobiles par appui sur la tuile</string>
     <string name="qs_music_tile_track_optional_title">Titre musical</string>
@@ -538,8 +538,8 @@
     <string name="screenshot_delay_summary">Régler le délai avant la prise de capture d\'écran</string>
 
     <!-- Quick Settings on lockscreen -->
-    <string name="lockscreen_qs_disabled_title">Désactiver Configuration rapide</string>
-    <string name="lockscreen_qs_disabled_summary">Désactiver les tuiles et l\'accès au volet de Configuration rapide sur l\'écran de déverrouillage</string>
+    <string name="lockscreen_qs_disabled_title">Désactiver Configuration rapide si verrouillé</string>
+    <string name="lockscreen_qs_disabled_summary">Désactiver l\'accès au volet de Configuration rapide sur l\'écran de déverrouillage</string>
 
     <!-- Battery customizations -->
     <string name="status_bar_battery_style_category">Batterie</string>
@@ -594,7 +594,7 @@
     <string name="custom_header_browse_summary">Appui prolongé sur une image pour l\'utiliser en mode Persistant</string>
 
     <!-- Recents memory bar -->
-    <string name="systemui_recents_mem_display_title">Mémoire RAM</string>
+    <string name="systemui_recents_mem_display_title">Indicateur de mémoire RAM</string>
     <string name="systemui_recents_mem_display_summary">Afficher le niveau d\'utilisation de la mémoire RAM</string>
 
     <!-- Heads Up -->
@@ -616,8 +616,8 @@
     <string name="heads_up_time_out_10sec">10 secondes</string>
 
     <!-- One handed mode -->
-    <string name="one_handed_mode_title">Une seule main libre</string>
-    <string name="one_handed_mode_summary">Basculer entre la vue réduite et la vue standard, en faisant glisser le doigt sur la barre de navigation</string>
+    <string name="one_handed_mode_title">Mode une seule main</string>
+    <string name="one_handed_mode_summary">Permettre le basculement entre la vue réduite et la vue standard en faisant glisser le doigt sur la barre de navigation</string>
 
     <!-- Hide Lockscreen clock, date, & alarm -->
     <string name="hide_lockscreen_clock_title">Horloge</string>
@@ -662,7 +662,7 @@
     <!-- Wired headset ringtone audio focus -->
     <string name="wired_ringtone_focus_mode_title">Diffusion de la sonnerie du téléphone</string>
     <string name="wired_ringtone_focus_mode_dynamic">Dans les écouteurs du casque branché, lors de l\'écoute de musique</string>
-    <string name="wired_ringtone_focus_mode_stock">Sur le(s) Haut-parleur(s) et dans les écouteurs (Par défaut)</string>
+    <string name="wired_ringtone_focus_mode_stock">Sur le(s) haut-parleur(s) et dans les écouteurs (Par défaut)</string>
 
     <!-- LED notifications -->
     <string name="color_picker_dialog_title">Couleur</string>
@@ -734,7 +734,7 @@
     <string name="profile_choose_app">Sélectionner une application</string>
 
     <!-- DU Changelog -->
-    <string name="duchangelog_title">Du - Notes de version</string>
+    <string name="duchangelog_title">DU - Notes de version</string>
     <string name="duchangelog_summary">Consulter la liste des changements</string>
     <string name="duchangelog_weeklies">Compilations hebdomadaires</string>
     <string name="duchangelog_official">Compilations officielles</string>
@@ -766,11 +766,15 @@
 
     <!-- Fingerprint unlock keystore -->
     <string name="fp_unlock_keystore_title">Redémarrage non sécurisé</string>
-    <string name="fp_unlock_keystore_summary">Déverrouiller l\'appareil par empreinte digitale sans avoir à saisir la code Pin, le mot de passe, ou le schéma, après un redémarrage de l\'appareil</string>
+    <string name="fp_unlock_keystore_summary">Déverrouiller l\'appareil par empreinte digitale sans avoir à saisir la code PIN, le mot de passe, ou le schéma, après un redémarrage de l\'appareil</string>
 
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Authentification</string>
-    <string name="fprint_sucess_vib_summary">Vibrer après authentification par empreinte digitale réussie</string>
+    <string name="fprint_sucess_vib_summary">Vibrer si authentification par empreinte digitale réussie</string>
+
+    <!-- Fingerprint quick pulldown -->
+    <string name="quick_pulldown_fp_title">Volet de Configuration rapide</string>
+    <string name="quick_pulldown_fp_summary">Déployer le volet de Configuration rapide en faisant glisser une seule fois le doigt sur le lecteur d\'empreinte digitale</string>
 
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Démarrer le lecteur audio</string>
@@ -778,12 +782,12 @@
     <string name="headset_connect_player_wired">Lorsque le casque filaire est branché</string>
     <string name="headset_connect_player_bt_no_carkit">Lorsque le casque Bluetooth est connecté (Hormis Kit mains libre)</string>
     <string name="headset_connect_player_bt">Lorsque le casque Bluetooth est connecté</string>
-    <string name="headset_connect_player_both_no_carkit">Lorsque le casque filaire ou casque Bluetooth est connecté (Hormis Kit mains libre)</string>
+    <string name="headset_connect_player_both_no_carkit">Lorsque le casque filaire ou casque Bluetooth est connecté (hormis kit mains-libres)</string>
     <string name="headset_connect_player_both">Lorsque le casque filaire ou casque Bluetooth est connecté</string>
 
     <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Niveaux de charge</string>
-    <string name="lockscreen_battery_info_summary">Afficher les niveaux de la tension et la température de la batterie sur l\'écran de déverrouillage pendant la charge</string>
+    <string name="lockscreen_battery_info_title">Infos sur la charge</string>
+    <string name="lockscreen_battery_info_summary">Afficher l\'intensité et la tension du chargeur, suivi de la température de la batterie sur l\'écran de déverrouillage pendant la charge</string>
 
     <!-- No navigation notification -->
     <string name="no_navigation_notif_title">Pense-bête</string>
