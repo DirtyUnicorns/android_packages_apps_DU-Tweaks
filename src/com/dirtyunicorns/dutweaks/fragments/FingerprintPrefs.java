@@ -67,9 +67,13 @@ public class FingerprintPrefs extends SettingsPreferenceFragment implements
         mFingerprintVib.setOnPreferenceChangeListener(this);
 
         mQuickPulldownFp = (SystemSettingSwitchPreference) findPreference(PREF_QUICK_PULLDOWN_FP);
-        mQuickPulldownFp.setChecked((Settings.System.getInt(getContentResolver(),
+        if (getResources().getBoolean(com.android.internal.R.bool.config_supportSystemNavigationKeys)) {
+            mQuickPulldownFp.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN_FP, 0) == 1));
-        mQuickPulldownFp.setOnPreferenceChangeListener(this);
+            mQuickPulldownFp.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mQuickPulldownFp);
+        }
     }
 
     @Override
