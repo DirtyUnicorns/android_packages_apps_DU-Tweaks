@@ -47,6 +47,7 @@
   <string name="ticker_category">Gördülő értesítés</string>
   <string name="fingerprint_category">Ujjlenyomat beállítások</string>
   <string name="extended_statusbar_icons_category">Kiterjesztett állapotsori ikonok</string>
+  <string name="action_options_category">Műveletek</string>
 
   <!-- OmniJaws -->
   <string name="weather_config_title">Időjárás beállítások</string>
@@ -736,6 +737,8 @@
   <string name="fp_unlock_keystore_summary">Újraindítás után az eszköz feloldása az ujjlenyomattal a Pin/Jelszó/Minta megadása nélkül</string>
   <string name="fprint_sucess_vib_title">Rezgés ujjlenyomat hitelesítésekor</string>
   <string name="fprint_sucess_vib_summary">Rezgés a sikereses ujjlenyomat hitelesítéskor</string>
+  <string name="quick_pulldown_fp_title">Gyors legördítés ujjlenyomattal</string>
+  <string name="quick_pulldown_fp_summary">A gyorsbeállítások panel kibontása az ujjlenyomat-érzékelő egyetlen érintésével</string>
 
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Zenelejátszó indítása</string>
@@ -749,5 +752,9 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Töltés info</string>
   <string name="lockscreen_battery_info_summary">Megjeleníti a töltőfeszültséget és az akkumulátor hőmérsékletét a zárképernyőn töltés közben</string>
+
+  <!-- No navigation notification -->
+  <string name="no_navigation_notif_title">Nincs navigációs mód emlékeztető</string>
+  <string name="no_navigation_notif_summary">Értesítés megjelenítésa, ha nincs navigációs mód engedélyezve</string>
 
 </resources>
