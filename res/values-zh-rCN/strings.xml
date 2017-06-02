@@ -130,7 +130,7 @@
   <string name="expanded_hide_status">隐藏状态栏</string>
   <string name="expanded_hide_navigation">隐藏导航栏</string>
   <string name="expanded_hide_both">隐藏全部</string>
-  <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \"Enabled for all\" to the off position</string>
+  <string name="expanded_nothing_to_show">要想单独对程序设置扩展选项，请关闭\"对全部启用\"这个选项</string>
   <string name="expanded_desktop_state">扩展状态</string>
   <string name="expanded_enabled_for_all">对全部启用</string>
   <string name="expanded_user_configurable">User configurable</string>
@@ -294,8 +294,8 @@
   <string name="clock_date_style">日期风格</string>
   <string name="clock_date_position">日期位置</string>
   <string name="clock_date_format">日期格式</string>
-  <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-  <string name="clock_date_string_edittext_summary">Enter string</string>
+  <string name="clock_date_string_edittext_title">必须使用日期格式 比如:MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">请输入一些文字</string>
   <string name="clock_date_right">在时间右侧</string>
   <string name="clock_date_left">在时间左侧</string>
   <string name="clock_am_pm_date_normal">正常</string>
@@ -303,7 +303,7 @@
   <string name="clock_am_pm_date_none">隐藏</string>
   <string name="clock_date_style_lowercase">小写</string>
   <string name="clock_date_style_uppercase">大写</string>
-  <string name="clock_date_format_custom">Custom java format</string>
+  <string name="clock_date_format_custom">自定义 Java format</string>
   <string name="cancel">取消</string>
   <string name="save">保存</string>
 
@@ -316,7 +316,7 @@
   <string name="quick_settings_vibrate_title">点击时振动</string>
   <string name="quick_settings_vibrate_summary">点击瓷贴时振动</string>
   <string name="qs_tile_title_visibility_title">快捷设置标题</string>
-  <string name="qs_tile_title_visibility_summary_on">快捷设置标题已显示e</string>
+  <string name="qs_tile_title_visibility_summary_on">快捷设置标题已显示</string>
   <string name="qs_tile_title_visibility_summary_off">快捷设置标题已隐藏</string>
 
   <!-- Do not disturb switch in volume panel -->
@@ -348,7 +348,7 @@
   <string name="arrow_down">↓</string>
   <string name="hex">Hex:</string>
   <string name="hex_hint">#ff000000</string>
-  <string name="set">Set</string>
+  <string name="set">确定</string>
   <string name="color_default">默认</string>
 
   <!-- Navigation Bar -->
@@ -552,7 +552,7 @@
   <string name="status_bar_battery_percentage_default">隐藏</string>
   <string name="status_bar_battery_percentage_text_inside">在图标内</string>
   <string name="status_bar_battery_percentage_text_next">在图标右侧</string>
-  <string name="battery_tile_style_title">Battery tile style</string>
+  <string name="battery_tile_style_title">电池瓷砖风格</string>
   <string name="status_bar_battery_style_tile_summary">允许为状态栏电池设置相同的图标样式</string>
   <string name="status_bar_charge_color_title">充电时电池图标颜色</string>
   <string name="status_bar_charge_color_summary">设置充电时状态栏电池图标的颜色</string>
