@@ -71,7 +71,7 @@
             android:title="@string/screenshot_delay_title"
             android:summary="@string/screenshot_delay_summary"
             settings:max="10000"
-            settings:min="100"
+            settings:min="1000"
             settings:interval="100"
             settings:units="ms"
             android:persistent="false" />
