@@ -56,15 +56,6 @@
     <string name="header_weather_summary">Enable notification panel header weather display</string>
     <string name="weather_icon_pack_title">Condition icon pack</string>
 
-    <!-- Immersive Recents -->
-    <string name="immersive_recents_title">Immersive recents</string>
-    <string name="immersive_recents_summary">Change the view of the recents screen</string>
-    <string name="immersive_recents_dialog_title">Select recents view</string>
-    <string name="immersive_recents_default">Default</string>
-    <string name="immersive_recents_fullscreen">Full screen</string>
-    <string name="immersive_recents_statusbar">Status bar</string>
-    <string name="immersive_recents_navbar">Navigation bar</string>
-
     <!-- Clear-All recents FAB -->
     <string name="show_clear_all_recents_button_title">Clear-all FAB</string>
     <string name="show_clear_all_recents_button_summary_on">Show clear all FAB</string>
