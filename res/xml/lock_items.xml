@@ -71,7 +71,7 @@
 
     <!-- Action options -->
     <PreferenceCategory
-        android:key="action_options"
+        android:key="actions"
         android:title="@string/action_options_category">
 
     <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference

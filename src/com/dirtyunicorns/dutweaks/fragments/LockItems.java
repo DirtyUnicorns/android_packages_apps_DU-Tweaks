@@ -80,11 +80,12 @@ public class LockItems extends SettingsPreferenceFragment implements OnPreferenc
 
         mActions = (PreferenceCategory) findPreference(KEY_ACTIONS);
         mKeyguardTorch = (SwitchPreference) findPreference(KEYGUARD_TOGGLE_TORCH);
-        mKeyguardTorch.setOnPreferenceChangeListener(this);
         if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
             prefSet.removePreference(mActions);
+            prefSet.removePreference(mKeyguardTorch);
         } else {
-        mKeyguardTorch.setChecked((Settings.System.getInt(resolver,
+            mKeyguardTorch.setOnPreferenceChangeListener(this);
+            mKeyguardTorch.setChecked((Settings.System.getInt(resolver,
                 Settings.System.KEYGUARD_TOGGLE_TORCH, 0) == 1));
         }
     }
