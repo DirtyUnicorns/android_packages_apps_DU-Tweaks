@@ -38,4 +38,11 @@
         android:summary="@string/quick_pulldown_fp_summary"
         android:defaultValue="false" />
 
+    <ListPreference
+        android:key="fp_swipe_call_actions"
+        android:title="@string/fp_swipe_call_actions_title"
+        android:summary="%s"
+        android:entries="@array/fp_swipe_call_actions_entries"
+        android:entryValues="@array/fp_swipe_call_actions_values"
+        android:defaultValue="0" />
 </PreferenceScreen>

@@ -748,6 +748,10 @@
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <string name="quick_pulldown_fp_title">Fingerprint quick pulldown</string>
     <string name="quick_pulldown_fp_summary">Expand the quick settings panel with only one swipe of the fingerprint sensor</string>
+    <string name="fp_swipe_call_actions_title">Fingerprint call gestures</string>
+    <string name="fp_swipe_call_actions_disabled">Disabled</string>
+    <string name="fp_swipe_call_actions_updown_answer_call">Swipe up or down to respond to incoming calls</string>
+    <string name="fp_swipe_call_actions_up_answer_down_silence">Swipe up to respond to incoming calls, down to silence them</string>
 
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music app</string>
