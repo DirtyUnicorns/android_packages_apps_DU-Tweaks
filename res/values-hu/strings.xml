@@ -739,6 +739,10 @@
   <string name="fprint_sucess_vib_summary">Rezgés a sikereses ujjlenyomat hitelesítéskor</string>
   <string name="quick_pulldown_fp_title">Gyors legördítés ujjlenyomattal</string>
   <string name="quick_pulldown_fp_summary">A gyorsbeállítások panel kibontása az ujjlenyomat-érzékelő egyetlen érintésével</string>
+  <string name="fp_swipe_call_actions_title">Ujjlenyomat hívás gesztusok</string>
+  <string name="fp_swipe_call_actions_disabled">Kikapcsolva</string>
+  <string name="fp_swipe_call_actions_updown_answer_call">Csúsztasson le vagy fel a hívások fogadásához</string>
+  <string name="fp_swipe_call_actions_up_answer_down_silence">Csúsztasson fel a hívás fogadásához, le a némításához</string>
 
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Zenelejátszó indítása</string>
