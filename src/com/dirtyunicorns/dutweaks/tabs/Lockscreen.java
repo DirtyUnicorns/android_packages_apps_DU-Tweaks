@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2016 The Dirty Unicorns Project
+ * Copyright (C) 2014-2017 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +16,14 @@
 
 package com.dirtyunicorns.dutweaks.tabs;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v14.preference.SwitchPreference;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-import android.provider.Settings;
 
 import android.hardware.fingerprint.FingerprintManager;
 
@@ -35,10 +36,6 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
     private static final String FINGERPRINT_PREFS = "fingerprint_prefs";
 
-    private PreferenceScreen mFingerprintPrefs;
-
-    private FingerprintManager mFingerprintManager;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +45,10 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-        mFingerprintPrefs = (PreferenceScreen) findPreference(FINGERPRINT_PREFS);
-        if (!mFingerprintManager.isHardwareDetected()){
+        FingerprintManager mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        PreferenceScreen mFingerprintPrefs = (PreferenceScreen) findPreference(FINGERPRINT_PREFS);
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.USE_FINGERPRINT) == PackageManager.PERMISSION_GRANTED &&
+                !mFingerprintManager.hasEnrolledFingerprints()){
             prefSet.removePreference(mFingerprintPrefs);
         }
     }
