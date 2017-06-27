@@ -552,6 +552,9 @@
     <string name="text_charging_symbol_default">Disabled</string>
     <string name="text_charging_symbol_flash">Flash</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="status_bar_pulse_charging_battery_title">Pulse battery icon when charging</string>
+    <string name="status_bar_pulse_charging_battery_summary_off">Only solid battery style will have pulsing icon</string>
+    <string name="status_bar_pulse_charging_battery_summary_on">All battery styles will show pulsing animation</string>
 
     <!-- QS headers -->
     <string name="qs_header_category">QS header options</string>
