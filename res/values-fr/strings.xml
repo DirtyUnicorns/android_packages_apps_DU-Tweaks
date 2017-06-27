@@ -618,6 +618,18 @@
     <string name="heads_up_time_out_8sec">8 secondes</string>
     <string name="heads_up_time_out_10sec">10 secondes</string>
 
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Veille</string>
+    <string name="heads_up_snooze_summary_one_minute">Mise en veille des notifications d\'une application pendant 1 minute en balayant sa notification flottante vers le haut</string>
+    <string name="heads_up_snooze_summary">Mise en veille des notifications d\'une application pendant <xliff:g id="number">%d</xliff:g> minutes en balayant sa notification flottante vers le haut</string>
+    <string name="heads_up_snooze_disabled_summary">Mise en veille désactivée</string>
+    <string name="heads_up_snooze_1min">1 minute</string>
+    <string name="heads_up_snooze_3min">3 minutes</string>
+    <string name="heads_up_snooze_5min">5 minutes</string>
+    <string name="heads_up_snooze_10min">10 minutes</string>
+    <string name="heads_up_snooze_15min">15 minutes</string>
+    <string name="heads_up_snooze_20min">20 minutes</string>
+
     <!-- One handed mode -->
     <string name="one_handed_mode_title">Mode une seule main</string>
     <string name="one_handed_mode_summary">Permettre le basculement entre la vue réduite et la vue standard en faisant glisser le doigt sur la barre de navigation</string>
