@@ -526,6 +526,12 @@
     <string name="smartbar_config_backup_error_toast">Erreur lors de la sauvegarde du profil</string>
     <string name="smartbar_config_restore_error_toast">Erreur lors de la restauration du profil</string>
     <string name="navbar_buttons_alpha_title">Transparence des boutons</string>
+    <string name="smartbar_longpress_delay_title">Appui prolongé</string>
+    <string name="smartbar_longpress_delay_summary">Délai avant le déclenchement d\'une action par appui prolongé</string>
+    <string name="smartbar_longpress_delay_default">Par défaut (rapide)</string>
+    <string name="smartbar_longpress_delay_normal">Normal</string>
+    <string name="smartbar_longpress_delay_long">Long</string>
+
 
     <!-- Lockscreen Shortcuts -->
     <string name="lockscreen_targets_title">Raccourcis du bas</string>
@@ -553,7 +559,7 @@
     <string name="status_bar_battery_style_solid">Disque</string>
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Masqué</string>
-    <string name="status_bar_battery_percentage_title">Pourcentage</string>
+    <string name="status_bar_battery_percentage_title">Niveau de charge</string>
     <string name="status_bar_battery_percentage_default">Masqué</string>
     <string name="status_bar_battery_percentage_text_inside">Dans l\'icône</string>
     <string name="status_bar_battery_percentage_text_next">Après l\'icône</string>
@@ -562,14 +568,17 @@
     <string name="status_bar_battery_style_tile_summary">Utiliser le même style d\'icône de batterie que celui défini pour la barre d\'état</string>
     <string name="status_bar_charge_color_title">Couleur de l\'icône batterie</string>
     <string name="status_bar_charge_color_summary">Définir la couleur de l\'icône de batterie de la barre d\'état pendant la charge</string>
-    <string name="force_charge_battery_text_title">Pourcentage de charge de la batterie</string>
+    <string name="force_charge_battery_text_title">Niveau de charge</string>
     <string name="force_charge_battery_text_summary_on">Afficher le pourcentage de la batterie en dehors de l\'icône, lors de la charge</string>
     <string name="force_charge_battery_text_summary_off">Afficher le pourcentage de la batterie dans l\'icône, lors de la charge</string>
-    <string name="text_charging_symbol_title">Icône d\'indication de charge</string>
-    <string name="text_charging_symbol_dialog">Icône d\'indication de charge</string>
+    <string name="text_charging_symbol_title">Indicateur de charge</string>
+    <string name="text_charging_symbol_dialog">Indicateur de charge</string>
     <string name="text_charging_symbol_default">Désactivé</string>
     <string name="text_charging_symbol_flash">Éclair</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="status_bar_pulse_charging_battery_title">Indicateur clignotant</string>
+    <string name="status_bar_pulse_charging_battery_summary_off">L\'indicateur clignote uniquement pour le style d\'icône \"Disque\" lors de la charge</string>
+    <string name="status_bar_pulse_charging_battery_summary_on">L\'indicateur clignote pour tous les styles d\'icône lors de la charge</string>
 
     <!-- Clear-All recents FAB -->
     <string name="show_clear_all_recents_button_title">Bouton de fermeture rapide</string>
