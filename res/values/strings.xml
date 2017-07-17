@@ -519,6 +519,7 @@
     <string name="smartbar_longpress_delay_default">Default delay (fast)</string>
     <string name="smartbar_longpress_delay_normal">Normal delay</string>
     <string name="smartbar_longpress_delay_long">Long delay</string>
+    <string name="smartbar_custom_icon_size_title">Custom icon scaling</string>
 
     <!-- Optional screenshot type -->
     <string name="screenshot_type_title">Screenshot type</string>
