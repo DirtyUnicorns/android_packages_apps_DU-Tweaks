@@ -53,10 +53,12 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private static final String REALLY_FULL_COLOR_PREF = "really_full_color";
     private static final String BATTERY_LIGHT_PREF = "battery_light_enabled";
     private static final String BATTERY_PULSE_PREF = "battery_light_pulse";
+    private static final String BATTERY_DND_PREF = "battery_light_allow_on_dnd";
 
     private boolean mMultiColorLed;
     private SystemSettingSwitchPreference mEnabledPref;
     private SystemSettingSwitchPreference mPulsePref;
+    private SystemSettingSwitchPreference mDndPref;
     private PreferenceGroup mColorPrefs;
     private BatteryLightPreference mLowColorPref;
     private BatteryLightPreference mMediumColorPref;
@@ -99,6 +101,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             general.removePreference(prefSet.findPreference(BATTERY_PULSE_PREF));
             prefSet.removePreference(general);
         }
+
+        mDndPref = (SystemSettingSwitchPreference) prefSet.findPreference(BATTERY_DND_PREF);
+        mDndPref.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.BATTERY_LIGHT_ALLOW_ON_DND, 1) == 1);
+        mDndPref.setOnPreferenceChangeListener(this);
 
         // Does the Device support changing battery LED colors?
         if (getResources().getBoolean(com.android.internal.R.bool.config_multiColorBatteryLed)) {
@@ -214,6 +221,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     protected void resetToDefaults() {
         if (mEnabledPref != null) mEnabledPref.setChecked(true);
         if (mPulsePref != null) mPulsePref.setChecked(false);
+        if (mDndPref != null) mDndPref.setChecked(true);
 
         resetColors();
     }
@@ -228,6 +236,10 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BATTERY_LIGHT_PULSE, value ? 1:0);
+        } else if (preference == mDndPref) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BATTERY_LIGHT_ALLOW_ON_DND, value ? 1:0);
         } else {
             BatteryLightPreference lightPref = (BatteryLightPreference) preference;
             updateValues(lightPref.getKey(), lightPref.getColor());
@@ -256,6 +268,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                     if (!res.getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed)) {
                         result.add(BATTERY_LIGHT_PREF);
                         result.add(BATTERY_PULSE_PREF);
+                        result.add(BATTERY_DND_PREF);
                     }
                     if (res.getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed)
                             && !res.getBoolean(com.android.internal.R.bool.config_ledCanPulse)) {

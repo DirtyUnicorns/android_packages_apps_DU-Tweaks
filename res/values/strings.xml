@@ -683,6 +683,7 @@
     <string name="ok">OK</string>
     <string name="advanced">Advanced</string>
     <string name="profiles_add">Add...</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
