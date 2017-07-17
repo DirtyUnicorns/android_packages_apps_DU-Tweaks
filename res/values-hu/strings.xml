@@ -514,6 +514,12 @@
   <string name="smartbar_config_backup_error_toast">Hiba a Smartbar profil mentésekor</string>
   <string name="smartbar_config_restore_error_toast">Hiba a Smartbar profil visszaállításakor</string>
   <string name="navbar_buttons_alpha_title">Gombok áttetszősége</string>
+  <string name="smartbar_longpress_delay_title">Gomb hosszan nyomási késleltetés</string>
+  <string name="smartbar_longpress_delay_summary">Állítsa be, mennyi ideig várjon a rendszer egy hosszan nyomási művelet elindítása előtt</string>
+  <string name="smartbar_longpress_delay_default">Alapértelmezett késleltetés (gyors)</string>
+  <string name="smartbar_longpress_delay_normal">Normál késleltetés</string>
+  <string name="smartbar_longpress_delay_long">Hosszú késleltetés</string>
+  <string name="smartbar_custom_icon_size_title">Egyéni ikonléptékezés</string>
 
   <!-- Optional screenshot type -->
   <string name="screenshot_type_title">Képernyőmentés típusa</string>
@@ -552,6 +558,9 @@
   <string name="text_charging_symbol_default">Letiltva</string>
   <string name="text_charging_symbol_flash">Villám</string>
   <string name="text_charging_symbol_tilde">Hullám</string>
+  <string name="status_bar_pulse_charging_battery_title">Pulzáló akkumulátor ikon töltés közben</string>
+  <string name="status_bar_pulse_charging_battery_summary_off">Csak a kitöltött akkkumulátor esetén lesz lüktető animáció</string>
+  <string name="status_bar_pulse_charging_battery_summary_on">Minden akkumulátor stílus lüktető animációt jelenít meg</string>
 
   <!-- QS headers -->
   <string name="qs_header_category">Gyorsbeállítások fejléc beállítások</string>
@@ -587,6 +596,18 @@
   <string name="heads_up_time_out_6sec">6 másodperc</string>
   <string name="heads_up_time_out_8sec">8 másodperc</string>
   <string name="heads_up_time_out_10sec">10 másodperc</string>
+
+  <!-- Heads up snooze -->
+  <string name="heads_up_snooze_title">Szundi időzítő</string>
+  <string name="heads_up_snooze_summary_one_minute">A lebegő értesítésen felfelé csúsztatva az alkalmazás értesítéseit szundiztatja 1 percig</string>
+  <string name="heads_up_snooze_summary">A lebegő értesítésen felfelé csúsztatva az alkalmazás értesítéseit szundiztatja <xliff:g id="number">%d</xliff:g> percig</string>
+  <string name="heads_up_snooze_disabled_summary">Szundi kikapcsolva</string>
+  <string name="heads_up_snooze_1min">1 perc</string>
+  <string name="heads_up_snooze_3min">3 perc</string>
+  <string name="heads_up_snooze_5min">5 perc</string>
+  <string name="heads_up_snooze_10min">10 perc</string>
+  <string name="heads_up_snooze_15min">15 perc</string>
+  <string name="heads_up_snooze_20min">20 perc</string>
 
   <!-- One handed mode -->
   <string name="one_handed_mode_title">Egykezes üzemmód</string>
@@ -733,6 +754,7 @@
   <string name="volume_steps_reset">Visszaállít</string>
 
   <!-- Fingerprint prefs -->
+  <string name="fingerprint_gestures_category">Gesztusok</string>
   <string name="fp_unlock_keystore_title">Ujjlenyomat feloldás</string>
   <string name="fp_unlock_keystore_summary">Újraindítás után az eszköz feloldása az ujjlenyomattal a Pin/Jelszó/Minta megadása nélkül</string>
   <string name="fprint_sucess_vib_title">Rezgés ujjlenyomat hitelesítésekor</string>
