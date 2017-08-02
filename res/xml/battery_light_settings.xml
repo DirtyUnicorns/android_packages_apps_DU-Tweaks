@@ -32,11 +32,18 @@
             android:dependency="battery_light_enabled"
             android:persistent="false" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="advanced_section"
+        android:title="@string/advanced">
+
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="battery_light_allow_on_dnd"
             android:title="@string/battery_light_allow_on_dnd_title"
             android:dependency="battery_light_enabled"
             android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

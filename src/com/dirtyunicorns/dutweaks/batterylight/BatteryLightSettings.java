@@ -189,7 +189,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         menu.add(0, MENU_RESET, 0, R.string.reset)
                 .setIcon(R.drawable.ic_settings_backup_restore)
                 .setAlphabeticShortcut('r')
-                .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+                .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
     @Override
