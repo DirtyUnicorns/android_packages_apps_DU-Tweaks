@@ -531,7 +531,7 @@
     <string name="smartbar_longpress_delay_default">Par défaut (rapide)</string>
     <string name="smartbar_longpress_delay_normal">Normal</string>
     <string name="smartbar_longpress_delay_long">Long</string>
-
+    <string name="smartbar_custom_icon_size_title">Échelle des icônes</string>
 
     <!-- Lockscreen Shortcuts -->
     <string name="lockscreen_targets_title">Raccourcis du bas</string>
@@ -710,6 +710,7 @@
     <string name="ok">OK</string>
     <string name="advanced">Paramètres avancés</string>
     <string name="profiles_add">Ajouter...</string>
+    <string name="battery_light_allow_on_dnd_title">Activer en mode Ne pas déranger</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Paramètres du voyant</string>
