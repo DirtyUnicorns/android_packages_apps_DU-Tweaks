@@ -505,4 +505,8 @@
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">Scale</string>
 
+    <!-- Lockscreen Media art -->
+    <string name="media_art_title">Full-screen media cover art</string>
+    <string name="media_art_summary">Set full-screen media cover art on the lockscreen</string>
+
 </resources>
