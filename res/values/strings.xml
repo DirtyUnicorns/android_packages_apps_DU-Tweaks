@@ -66,4 +66,11 @@
     <string name="recents_title">Recents</string>
     <string name="recents_summary">Configure OmniSwitch or AOSP recents</string>
 
+    <!-- Power Menu -->
+    <string name="powermenu_reboot_title">Reboot</string>
+    <string name="powermenu_airplane_title">Airplane mode</string>
+    <string name="powermenu_settings_title">Settings</string>
+    <string name="powermenu_lockdown_title">Lock now</string>
+    <string name="powermenu_soundpanel_title">Sound panel</string>
+
 </resources>
