@@ -17,7 +17,7 @@
 package com.dirtyunicorns.tweaks.preferences;
 
 import android.content.Context;
-import android.preference.SwitchPreference;
+import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import android.util.AttributeSet;
 
