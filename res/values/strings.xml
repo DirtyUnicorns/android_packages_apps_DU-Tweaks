@@ -83,4 +83,8 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Show net activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
 </resources>
