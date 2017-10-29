@@ -16,37 +16,37 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="battery_options_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.BatteryOptions"
         android:layout="@layout/battery_options" />
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="carrier_label_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.CarrierLabel"
         android:layout="@layout/carrier_label" />
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="clock_options_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.ClockOptions"
         android:layout="@layout/clock_options" />
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="notifications_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.Notifications"
         android:layout="@layout/notifications" />
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="quick_settings_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.QuickSettings"
         android:layout="@layout/quicksettings" />
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="ticker_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.Ticker"
         android:layout="@layout/ticker" />
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="traffic_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.TrafficIndicators"
         android:layout="@layout/traffic" />

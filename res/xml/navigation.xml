@@ -16,12 +16,12 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="buttons_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.Buttons"
         android:layout="@layout/buttons" />
 
-    <Preference
+    <com.android.settings.applications.LayoutPreference
         android:key="navigation_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.NavigationBar"
         android:layout="@layout/navigationbar" />
