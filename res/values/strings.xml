@@ -43,12 +43,12 @@
     <string name="carrier_label_summary">Customize your statusbar carrier label</string>
     <string name="clock_options_title">Clock options</string>
     <string name="clock_options_summary">Customize your statusbar clock</string>
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Configure the visibility of statusbar items</string>
     <string name="notifications_title">Notifications</string>
     <string name="notifications_summary">Tweaks specific to system notifications</string>
     <string name="quicksettings_title">Quick settings</string>
     <string name="quicksettings_summary">Configure the quick settings with options ranging from headers to weather</string>
-    <string name="statusbar_items_title">Statusbar items</string>
-    <string name="statusbar_items_summary">Configure the visibility of statusbar items</string>
     <string name="ticker_title">Ticker</string>
     <string name="ticker_summary">Enable the statusbar ticker and configure ticker related tweaks</string>
     <string name="traffic_title">Traffic indicators</string>

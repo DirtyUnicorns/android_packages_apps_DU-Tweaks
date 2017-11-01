@@ -27,10 +27,10 @@
         android:background="@color/preference_background_color">
 
         <ImageView
-            android:id="@+id/statusbar_items_imageview"
+            android:id="@+id/icon_manager_imageview"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:src="@drawable/dt_statusbar_items"
+            android:src="@drawable/dt_icon_manager"
             android:scaleType="center"/>
 
     </LinearLayout>
@@ -47,17 +47,17 @@
             android:layout_marginStart="15dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:text="@string/statusbar_items_title" />
+            android:text="@string/icon_manager_title" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginBottom="5dip"
+            android:layout_marginBottom="8dp"
             android:layout_below="@+id/textView1"
             android:textSize="12sp"
-            android:text="@string/statusbar_items_summary" />
+            android:text="@string/icon_manager_summary" />
 
     </RelativeLayout>
 

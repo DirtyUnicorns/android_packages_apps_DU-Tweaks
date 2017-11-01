@@ -32,6 +32,14 @@
         android:layout="@layout/clock_options" />
 
     <com.android.settings.applications.LayoutPreference
+        android:key="icon_manager_title"
+        android:layout="@layout/icon_manager">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    </com.android.settings.applications.LayoutPreference>
+
+    <com.android.settings.applications.LayoutPreference
         android:key="notifications_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.Notifications"
         android:layout="@layout/notifications" />
