@@ -32,7 +32,7 @@
     <bool name="has_fingerprint_prefs">false</bool>
 
     <!-- Whether to display buttons category -->
-    <bool name="has_buttons">false</bool>
+    <bool name="has_buttons">true</bool>
 
     <!-- Whether to display navigation category -->
     <bool name="has_navigation">false</bool>
