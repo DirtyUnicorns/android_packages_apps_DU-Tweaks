@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017 The Dirty Unicorns Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/team_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_team_title"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal" />
+
+                <com.dirtyunicorns.tweaks.helpers.RowLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp">
+
+                    <FrameLayout
+                        android:id="@+id/alex"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/alex_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/alex"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/alex_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alex"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/alex_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/bosko"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/bosko_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/bosko"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/bosko_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Boško"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/bosko_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/bret"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/bret_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/bret"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/bret_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bret"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/bret_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/daniel"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/daniel_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/daniel"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/daniel_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Daniel"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/daniel_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/david"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/david_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/david"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/david_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="David"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/david_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/edwin"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/edwin_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/edwin"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/edwin_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Edwin"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/edwin_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/james"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/james_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/james"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/james_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="James"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/james_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/joshchasky"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/joshchasky_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/joshchasky"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/joshchasky_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Josh Chasky"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/joshchasky_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/joshcorrell"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/joshcorrell_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/joshcorrell"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/joshcorrell_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Josh Correll"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/joshcorrell_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/josip"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/josip_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/josip"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/josip_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Josip"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/josip_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/mark"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/mark_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/mark"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/mark_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mark"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/mark_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/mat"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/mat_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/mat"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/mat_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mat"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/mat_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/nathan"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/nathan_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/nathan"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/nathan_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nathan"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/nathan_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/nick"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/nick_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/nick"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/nick_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nick"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/nick_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/nicolas"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/nicolas_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/nicolas"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/nicolas_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nicolas"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/nicolas_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/sean"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                                android:id="@+id/sean_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/sean"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/sean_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sean"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/sean_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                </com.dirtyunicorns.tweaks.helpers.RowLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</RelativeLayout>
