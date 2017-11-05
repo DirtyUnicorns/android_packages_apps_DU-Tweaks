@@ -196,6 +196,9 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
             int value = Integer.parseInt((String) newValue);
             Settings.System.putInt(getContext().getContentResolver(),
                     Settings.System.RECENT_PANEL_EXPANDED_MODE, value);
+            int index = mRecentPanelExpandedMode.findIndexOfValue((String) newValue);
+            mRecentPanelExpandedMode.setSummary(
+                    mRecentPanelExpandedMode.getEntries()[index]);
             return true;
         } else if (preference == mRecentPanelBgColor) {
             String hex = ColorPickerPreference.convertToARGB(
@@ -251,8 +254,9 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
         mRecentPanelScale.setValue(recentScale);
 
         final int recentExpandedMode = Settings.System.getInt(getContext().getContentResolver(),
-                Settings.System.RECENT_PANEL_EXPANDED_MODE, 0);
+                Settings.System.RECENT_PANEL_EXPANDED_MODE, 1);
         mRecentPanelExpandedMode.setValue(recentExpandedMode + "");
+        mRecentPanelExpandedMode.setSummary(mRecentPanelExpandedMode.getEntry());
     }
 
     private void initializeAllPreferences() {
