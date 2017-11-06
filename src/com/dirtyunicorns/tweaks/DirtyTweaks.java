@@ -16,14 +16,18 @@
 
 package com.dirtyunicorns.tweaks;
 
+import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -107,6 +111,8 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
             }
         });
 
+        setHasOptionsMenu(true);
+
         return view;
     }
 
@@ -155,5 +161,32 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.DIRTYTWEAKS;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, 0, 0, R.string.dialog_team_title);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case 0:
+                final TeamFragment dialog = new TeamFragment();
+                showDialog(this, dialog);
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    public static void showDialog(Fragment context, DialogFragment dialog) {
+        FragmentTransaction ft = context.getChildFragmentManager().beginTransaction();
+        Fragment prev = context.getChildFragmentManager().findFragmentByTag("dialog");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        dialog.show(ft, "dialog");
     }
 }
