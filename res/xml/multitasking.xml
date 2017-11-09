@@ -26,4 +26,9 @@
         android:fragment="com.dirtyunicorns.tweaks.fragments.Recents"
         android:layout="@layout/recents" />
 
+    <com.android.settings.applications.LayoutPreference
+        android:key="ticker_category"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.Ticker"
+        android:layout="@layout/ticker" />
+
 </PreferenceScreen>

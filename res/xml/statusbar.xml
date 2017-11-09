@@ -50,11 +50,6 @@
         android:layout="@layout/quicksettings" />
 
     <com.android.settings.applications.LayoutPreference
-        android:key="ticker_category"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.Ticker"
-        android:layout="@layout/ticker" />
-
-    <com.android.settings.applications.LayoutPreference
         android:key="traffic_category"
         android:fragment="com.dirtyunicorns.tweaks.fragments.TrafficIndicators"
         android:layout="@layout/traffic" />

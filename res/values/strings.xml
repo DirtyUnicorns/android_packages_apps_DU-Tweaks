@@ -145,7 +145,7 @@
     <string name="heads_up_blacklist_dialog_delete_message">Remove selected item?</string>
 
     <!-- Status bar ticker -->
-    <string name="ticker_mode_title">Statusbar notification ticker</string>
+    <string name="ticker_mode_title">Allow notification ticker</string>
     <string name="ticker_disabled">Disabled</string>
     <string name="ticker_enabled">Notification ticker</string>
     <string name="ticker_media_enabled">Notification and music ticker</string>
