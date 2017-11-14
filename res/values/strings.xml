@@ -229,6 +229,10 @@
     <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Bottom shortcuts</string>
     <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Configure the bottom shortcuts in the keyguard</string>
 
+    <!-- Toast icons -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Volume wake</string>
     <string name="volume_rocker_wake_summary">Wake your device up by pressing the volume keys</string>
