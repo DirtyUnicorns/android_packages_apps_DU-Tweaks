@@ -34,11 +34,15 @@ import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.dirtyunicorns.tweaks.preferences.CustomSeekBarPreference;
+
 public class QuickSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String QUICK_PULLDOWN = "quick_pulldown";
+    private static final String PREF_COLUMNS = "qs_layout_columns";
 
     private ListPreference mQuickPulldown;
+    private CustomSeekBarPreference mQsColumns;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,12 +51,20 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
 
         getActivity().getActionBar().setTitle(R.string.quicksettings_title);
 
+        final ContentResolver resolver = getActivity().getContentResolver();
+
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         int quickPulldownValue = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
+
+        mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
+        int columnsQs = Settings.Secure.getInt(resolver,
+                Settings.Secure.QS_LAYOUT_COLUMNS, 3);
+        mQsColumns.setValue(columnsQs);
+        mQsColumns.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -62,6 +74,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
             Settings.System.putIntForUser(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     quickPulldownValue, UserHandle.USER_CURRENT);
             updatePulldownSummary(quickPulldownValue);
+            return true;
+        } else if (preference == mQsColumns) {
+            int qsColumns = (Integer) newValue;
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.QS_LAYOUT_COLUMNS, qsColumns * 1);
             return true;
         }
         return false;

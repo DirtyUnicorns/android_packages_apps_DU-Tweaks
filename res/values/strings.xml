@@ -116,6 +116,10 @@
     <string name="brightness_icon_title">Brightness slider icon</string>
     <string name="brightness_icon_summary">Show a brightness icon to the left of the brightness slider to toggle auto-brightness</string>
 
+    <!-- Quick settings -->
+    <string name="qs_layout_category">Layout</string>
+    <string name="qs_columns_title">Columns</string>
+
     <!-- Clear all recents -->
     <string name="aosp_recents_title">AOSP recents</string>
     <string name="show_clear_all_recents_button_title">Clear-all FAB</string>
