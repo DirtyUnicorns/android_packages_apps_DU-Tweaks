@@ -44,8 +44,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements Prefere
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.miscellaneous);
 
-        getActivity().getActionBar().setTitle(R.string.miscellaneous_title);
-
         ContentResolver resolver = getActivity().getContentResolver();
 
         mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);

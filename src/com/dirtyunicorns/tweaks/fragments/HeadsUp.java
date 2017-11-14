@@ -72,8 +72,6 @@ public class HeadsUp extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.headsup);
 
-        getActivity().getActionBar().setTitle(R.string.headsup_title);
-
         mPackageManager = getPackageManager();
         mPackageAdapter = new PackageListAdapter(getActivity());
 

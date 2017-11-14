@@ -37,8 +37,6 @@ public class FingerprintPrefs extends SettingsPreferenceFragment implements Pref
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.fingerprint_prefs);
-
-        getActivity().getActionBar().setTitle(R.string.fingerprint_prefs_title);
     }
 
     @Override

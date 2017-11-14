@@ -37,8 +37,6 @@ public class LockscreenItems extends SettingsPreferenceFragment implements Prefe
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen_items);
-
-        getActivity().getActionBar().setTitle(R.string.lockscreen_items_title);
     }
 
     @Override

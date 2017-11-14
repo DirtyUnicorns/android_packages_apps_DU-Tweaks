@@ -44,8 +44,6 @@ public class Recents extends SettingsPreferenceFragment implements Preference.On
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.recents);
 
-        getActivity().getActionBar().setTitle(R.string.recents_title);
-
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
 

@@ -25,22 +25,33 @@ import android.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto;
+import com.android.settings.applications.LayoutPreference;
 
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.du.Utils;
 
 public class Lockscreen extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+
+    private static final String FINGERPRINT_PREFS_CATEGORY = "fingerprint_prefs_category";
+    private static final String LOCKSCREEN_ITEMS_CATEGORY = "lockscreen_items_category";
+
+    private LayoutPreference mFingerprintPrefs;
+    private LayoutPreference mLockscreenItems;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen);
 
-        Preference FingerprintPrefs = findPreference("fingerprint_prefs_category");
+        mFingerprintPrefs = (LayoutPreference) findPreference(FINGERPRINT_PREFS_CATEGORY);
+        mFingerprintPrefs.setTitle(R.string.fingerprint_prefs_title);
 
         if (!Utils.hasFingerprintSupport(getContext())) {
-            getPreferenceScreen().removePreference(FingerprintPrefs);
+            getPreferenceScreen().removePreference(mFingerprintPrefs);
         }
+
+        mLockscreenItems = (LayoutPreference) findPreference(LOCKSCREEN_ITEMS_CATEGORY);
+        mLockscreenItems.setTitle(R.string.lockscreen_items_title);
     }
 
     @Override

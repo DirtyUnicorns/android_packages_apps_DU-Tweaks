@@ -37,8 +37,6 @@ public class PowerMenu extends SettingsPreferenceFragment implements Preference.
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.powermenu);
-
-        getActivity().getActionBar().setTitle(R.string.powermenu_title);
     }
 
     @Override

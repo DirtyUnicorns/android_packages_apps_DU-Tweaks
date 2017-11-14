@@ -37,8 +37,6 @@ public class NavigationBar extends SettingsPreferenceFragment implements Prefere
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.navigation_bar);
-
-        getActivity().getActionBar().setTitle(R.string.navigationbar_title);
     }
 
     @Override

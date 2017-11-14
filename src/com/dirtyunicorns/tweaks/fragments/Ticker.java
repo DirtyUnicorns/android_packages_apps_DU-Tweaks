@@ -43,8 +43,6 @@ public class Ticker extends SettingsPreferenceFragment implements Preference.OnP
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.ticker);
 
-        getActivity().getActionBar().setTitle(R.string.ticker_title);
-
         mTickerMode = (ListPreference) findPreference("ticker_mode");
         mTickerMode.setOnPreferenceChangeListener(this);
         int tickerMode = Settings.System.getIntForUser(getContentResolver(),

@@ -37,8 +37,6 @@ public class CarrierLabel extends SettingsPreferenceFragment implements Preferen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.carrier_label);
-
-        getActivity().getActionBar().setTitle(R.string.carrier_label_title);
     }
 
     @Override

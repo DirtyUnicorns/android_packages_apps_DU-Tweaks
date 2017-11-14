@@ -37,8 +37,6 @@ public class BatteryOptions extends SettingsPreferenceFragment implements Prefer
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.battery_options);
-
-        getActivity().getActionBar().setTitle(R.string.battery_options_title);
     }
 
     @Override

@@ -29,12 +29,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.settings.R;
-
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.applications.LayoutPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 
 public class System extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+
+    private static final String MISC_CATEGORY = "miscellaneous_category";
+    private static final String POWERMENU_CATEGORY = "powermenu_category";
+
+    private LayoutPreference mMisc;
+    private LayoutPreference mPowerMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +52,12 @@ public class System extends SettingsPreferenceFragment implements Preference.OnP
         if (!getResources().getBoolean(R.bool.has_device_extras)) {
             getPreferenceScreen().removePreference(DeviceExtras);
         }
+
+        mMisc = (LayoutPreference) findPreference(MISC_CATEGORY);
+        mMisc.setTitle(R.string.miscellaneous_title);
+
+        mPowerMenu = (LayoutPreference) findPreference(POWERMENU_CATEGORY);
+        mPowerMenu.setTitle(R.string.powermenu_title);
     }
 
     @Override

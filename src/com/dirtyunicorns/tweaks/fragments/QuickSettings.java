@@ -49,8 +49,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quick_settings);
 
-        getActivity().getActionBar().setTitle(R.string.quicksettings_title);
-
         final ContentResolver resolver = getActivity().getContentResolver();
 
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);

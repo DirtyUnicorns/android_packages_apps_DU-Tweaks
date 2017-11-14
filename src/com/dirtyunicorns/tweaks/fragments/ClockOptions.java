@@ -37,8 +37,6 @@ public class ClockOptions extends SettingsPreferenceFragment implements Preferen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.clock_options);
-
-        getActivity().getActionBar().setTitle(R.string.clock_options_title);
     }
 
     @Override

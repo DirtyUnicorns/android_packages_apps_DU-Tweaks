@@ -37,8 +37,6 @@ public class Buttons extends SettingsPreferenceFragment implements Preference.On
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.buttons);
-
-        getActivity().getActionBar().setTitle(R.string.buttons_title);
     }
 
     @Override

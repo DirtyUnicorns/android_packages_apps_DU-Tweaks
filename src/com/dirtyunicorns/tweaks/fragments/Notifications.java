@@ -37,8 +37,6 @@ public class Notifications extends SettingsPreferenceFragment implements Prefere
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notifications);
-
-        getActivity().getActionBar().setTitle(R.string.notifications_title);
     }
 
     @Override
