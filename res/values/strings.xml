@@ -215,4 +215,8 @@
     <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Bottom shortcuts</string>
     <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Configure the bottom shortcuts in the keyguard</string>
 
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Volume wake</string>
+    <string name="volume_rocker_wake_summary">Wake your device up by pressing the volume keys</string>
+
 </resources>
