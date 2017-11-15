@@ -58,9 +58,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
 
+        final int defaultMaxQsColumns = getResources().getInteger(
+                R.integer.quick_settings_layout_columns_max_default);
+
         mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
         int columnsQs = Settings.Secure.getInt(resolver,
                 Settings.Secure.QS_LAYOUT_COLUMNS, 3);
+        mQsColumns.setMax(defaultMaxQsColumns);
         mQsColumns.setValue(columnsQs);
         mQsColumns.setOnPreferenceChangeListener(this);
     }

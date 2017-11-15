@@ -31,7 +31,6 @@
         <com.dirtyunicorns.tweaks.preferences.CustomSeekBarPreference
             android:key="qs_layout_columns"
             android:title="@string/qs_columns_title"
-            android:max="6"
             settings:min="3" />
 
     </PreferenceCategory>
