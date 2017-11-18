@@ -125,8 +125,12 @@
     <string name="quick_pulldown_always">Always</string>
 
     <!-- Quick Settings brightness icon -->
-    <string name="brightness_icon_title">Brightness slider icon</string>
-    <string name="brightness_icon_summary">Show a brightness icon to the right of the brightness slider to toggle auto-brightness</string>
+    <string name="brightness_icon_title">Auto-brightness icon</string>
+    <string name="brightness_icon_summary">Show a auto-brightness icon to the right of the brightness slider to toggle auto-brightness</string>
+
+    <!-- Option to show brightness bar in quick settings -->
+    <string name="show_brightness_title">Brightness slider</string>
+    <string name="show_brightness_summary">Show the brightness slider</string>
 
     <!-- Quick settings -->
     <string name="qs_layout_category">Layout</string>
