@@ -109,11 +109,11 @@
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music app on headset connection</string>
     <string name="headset_connect_player_disabled">Disabled</string>
-    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
-    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
-    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
-    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
-    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
+    <string name="headset_connect_player_wired">Wired headset plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">BT headset (no carkit) plugged in</string>
+    <string name="headset_connect_player_bt">BT headset plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">Any headset (no carkit) plugged in</string>
+    <string name="headset_connect_player_both">Any headset plugged in</string>
 
     <!-- Quick Pulldown-->
     <string name="quick_pulldown_title">Quick pulldown</string>
