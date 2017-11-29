@@ -23,6 +23,9 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
@@ -91,12 +94,12 @@ public class BatteryLightPreference extends Preference implements DialogInterfac
     @Override
     protected void onClick() {
         if (mDialog != null && mDialog.isShowing()) return;
-        mDialog = getDialog();
+        mDialog = getDialog(null);
         mDialog.setOnDismissListener(this);
         mDialog.show();
     }
 
-    public Dialog getDialog() {
+    public Dialog getDialog(Bundle state) {
         final BatteryLightDialog d = new BatteryLightDialog(getContext(),
                 0xFF000000 | mColorValue);
 
@@ -117,7 +120,9 @@ public class BatteryLightPreference extends Preference implements DialogInterfac
                 d.switchOffLed();
             }
         });
-
+        if (state != null) {
+            d.onRestoreInstanceState(state);
+        }
         return d;
     }
 
@@ -132,5 +137,63 @@ public class BatteryLightPreference extends Preference implements DialogInterfac
     @Override
     public void onDismiss(DialogInterface dialog) {
         mDialog = null;
+    }
+
+    @Override
+    protected Parcelable onSaveInstanceState() {
+        final Parcelable superState = super.onSaveInstanceState();
+        if (mDialog == null || !mDialog.isShowing()) {
+            return superState;
+        }
+
+        final SavedState myState = new SavedState(superState);
+        myState.dialogBundle = mDialog.onSaveInstanceState();
+        return myState;
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Parcelable state) {
+        if (state == null || !(state instanceof SavedState)) {
+            // Didn't save state for us in onSaveInstanceState
+            super.onRestoreInstanceState(state);
+            return;
+        }
+
+        SavedState myState = (SavedState) state;
+        super.onRestoreInstanceState(myState.getSuperState());
+        mDialog = getDialog(myState.dialogBundle);
+        mDialog.setOnDismissListener(this);
+        mDialog.show();
+    }
+
+    private static class SavedState extends BaseSavedState {
+        Bundle dialogBundle;
+
+        public SavedState(Parcel source) {
+            super(source);
+            dialogBundle = source.readBundle();
+        }
+
+        @Override
+        public void writeToParcel(Parcel dest, int flags) {
+            super.writeToParcel(dest, flags);
+            dest.writeBundle(dialogBundle);
+        }
+
+        public SavedState(Parcelable superState) {
+            super(superState);
+        }
+
+        @SuppressWarnings("unused")
+        public static final Parcelable.Creator<SavedState> CREATOR =
+                new Parcelable.Creator<SavedState>() {
+            public SavedState createFromParcel(Parcel in) {
+                return new SavedState(in);
+            }
+
+            public SavedState[] newArray(int size) {
+                return new SavedState[size];
+            }
+        };
     }
 }

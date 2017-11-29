@@ -160,6 +160,7 @@ public class BatteryLightDialog extends AlertDialog implements
     public Bundle onSaveInstanceState() {
         Bundle state = super.onSaveInstanceState();
         state.putInt(STATE_KEY_COLOR, getColor());
+        dismiss();
         switchOffLed();
         return state;
     }
