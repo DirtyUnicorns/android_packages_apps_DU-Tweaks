@@ -16,29 +16,29 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="powermenu_restart"
         android:title="@string/powermenu_reboot_title"
-        android:defaultValue="true" />
+        android:defaultValue="true" /-->
 
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="powermenu_airplane"
         android:title="@string/powermenu_airplane_title"
-        android:defaultValue="false" />
+        android:defaultValue="false" /-->
 
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="powermenu_settings"
         android:title="@string/powermenu_settings_title"
-        android:defaultValue="false" />
+        android:defaultValue="false" /-->
 
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="powermenu_lockdown"
         android:title="@string/powermenu_lockdown_title"
-        android:defaultValue="false" />
+        android:defaultValue="false" /-->
 
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="powermenu_soundpanel"
         android:title="@string/powermenu_soundpanel_title"
-        android:defaultValue="false" />
+        android:defaultValue="false" /-->
 
 </PreferenceScreen>

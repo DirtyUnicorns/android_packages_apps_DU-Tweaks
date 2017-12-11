@@ -22,10 +22,10 @@
         android:entries="@array/headset_connect_player_entries"
         android:entryValues="@array/headset_connect_player_values" />
 
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false" /-->
 
 </PreferenceScreen>
