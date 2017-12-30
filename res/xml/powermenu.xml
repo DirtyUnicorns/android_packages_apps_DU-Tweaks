@@ -16,29 +16,26 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="powermenu_restart"
+    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+        android:key="powermenu_reboot"
         android:title="@string/powermenu_reboot_title"
-        android:defaultValue="true" /-->
+        android:defaultValue="true" />
 
-    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+        android:key="powermenu_advanced_reboot"
+        android:title="@string/powermenu_advanced_reboot_title"
+        android:summary="@string/powermenu_advanced_reboot_summary"
+        android:dependency="powermenu_reboot"
+        android:defaultValue="false" />
+
+    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+        android:key="powermenu_screenshot"
+        android:title="@string/powermenu_screenshot_title"
+        android:defaultValue="false" />
+
+    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="powermenu_airplane"
         android:title="@string/powermenu_airplane_title"
-        android:defaultValue="false" /-->
-
-    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="powermenu_settings"
-        android:title="@string/powermenu_settings_title"
-        android:defaultValue="false" /-->
-
-    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="powermenu_lockdown"
-        android:title="@string/powermenu_lockdown_title"
-        android:defaultValue="false" /-->
-
-    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="powermenu_soundpanel"
-        android:title="@string/powermenu_soundpanel_title"
-        android:defaultValue="false" /-->
+        android:defaultValue="false" />
 
 </PreferenceScreen>
