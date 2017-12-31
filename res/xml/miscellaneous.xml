@@ -22,10 +22,11 @@
         android:entries="@array/headset_connect_player_entries"
         android:entryValues="@array/headset_connect_player_values" />
 
-    <!--com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="toast_icon"
-        android:title="@string/toast_icon_title"
-        android:summary="@string/toast_icon_summary"
-        android:defaultValue="false" /-->
+    <ListPreference
+        android:key="systemui_theme_style"
+        android:title="@string/systemui_theme_style_title"
+        android:entries="@array/systemui_theme_style_entries"
+        android:entryValues="@array/systemui_theme_style_values"
+        android:persistent="false" />
 
 </PreferenceScreen>
