@@ -218,10 +218,19 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     protected void resetToDefaults() {
         if (mEnabledPref != null) mEnabledPref.setChecked(true);
-        if (mPulsePref != null) mPulsePref.setChecked(false);
         if (mOnlyFullPref != null) mOnlyFullPref.setChecked(false);
 
         resetColors();
+
+        if (mLowColorPref != null) {
+            mLowColorPref.setEnabled(true);
+        }
+        if (mMediumColorPref != null) {
+            mMediumColorPref.setEnabled(true);
+        }
+        if (mFullColorPref != null) {
+            mFullColorPref.setEnabled(true);
+        }
     }
 
     @Override
