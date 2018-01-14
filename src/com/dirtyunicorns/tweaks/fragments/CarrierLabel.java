@@ -50,6 +50,8 @@ public class CarrierLabel extends SettingsPreferenceFragment implements Preferen
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.carrier_label);
 
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.carrier_label_warning_text);
+
         mCustomCarrierLabel = (Preference) findPreference(KEY_CUSTOM_CARRIER_LABEL);
         updateCustomLabelTextSummary();
     }

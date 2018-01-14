@@ -29,6 +29,7 @@
     <!-- Footer warnings -->
     <string name="heads_up_warning_text">Heads up notifications are meant to be used for multitasking while using full screen apps and/or playing games. Just know that while you use heads up notifications, you will not be able to use the ticker feature.</string>
     <string name="ticker_warning_text">The ticker feature is meant to be used as a mulitasking tool and brings a bit of splash of the old times. Just know that while you use the ticker feature, you will not be able to use heads up notifications.</string>
+    <string name="carrier_label_warning_text">Be advised that the custom carrier label is not available in the extended statusbar area, also known as the quick settings area. Also using emojis as your carrier label might cause some visibility issues on lighter backgrounds.</string>
 
     <!-- Categories -->
     <!-- System -->
