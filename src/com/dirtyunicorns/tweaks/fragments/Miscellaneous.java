@@ -44,10 +44,12 @@ public class Miscellaneous extends SettingsPreferenceFragment implements Prefere
     private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
     private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
 
     private ListPreference mLaunchPlayerHeadsetConnection;
     private ListPreference mSystemUIThemeStyle;
     private ListPreference mTorchPowerButton;
+    private ListPreference mScreenOffAnimation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -70,6 +72,13 @@ public class Miscellaneous extends SettingsPreferenceFragment implements Prefere
         mSystemUIThemeStyle.setValue(String.valueOf(systemUIThemeStyle));
         mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntry());
         mSystemUIThemeStyle.setOnPreferenceChangeListener(this);
+
+        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
+        int screenOffStyle = Settings.System.getInt(resolver,
+                Settings.System.SCREEN_OFF_ANIMATION, 0);
+        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
+        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
+        mScreenOffAnimation.setOnPreferenceChangeListener(this);
 
         if (!DUActionUtils.deviceSupportsFlashLight(getContext())) {
             Preference toRemove = prefScreen.findPreference(TORCH_POWER_BUTTON_GESTURE);
@@ -124,6 +133,13 @@ public class Miscellaneous extends SettingsPreferenceFragment implements Prefere
                       }
                 }, 2000);
             }
+            return true;
+        } else if (preference == mScreenOffAnimation) {
+            String value = (String) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf(value));
+            int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
+            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
             return true;
         } else if (preference == mTorchPowerButton) {
             int mTorchPowerButtonValue = Integer.valueOf((String) newValue);
