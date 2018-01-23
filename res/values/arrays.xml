@@ -16,7 +16,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- SystemUI theme -->
+    <!-- System theme -->
     <string-array name="systemui_theme_style_entries" translatable="false">
         <item>@string/systemui_theme_style_auto</item>
         <item>@string/systemui_theme_style_light</item>

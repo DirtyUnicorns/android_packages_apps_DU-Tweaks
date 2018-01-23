@@ -17,7 +17,9 @@
 package com.dirtyunicorns.tweaks.fragments;
 
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
@@ -26,6 +28,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import com.android.internal.utils.du.DUActionUtils;
 import com.android.settings.R;
@@ -33,6 +36,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
+
+import com.dirtyunicorns.tweaks.DirtyTweaks;
 
 public class Miscellaneous extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
@@ -98,6 +103,27 @@ public class Miscellaneous extends SettingsPreferenceFragment implements Prefere
                     Settings.System.SYSTEM_UI_THEME, Integer.valueOf(value));
             int valueIndex = mSystemUIThemeStyle.findIndexOfValue(value);
             mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntries()[valueIndex]);
+            if (valueIndex == 2) {
+                Intent intent2 = new Intent(Intent.ACTION_MAIN);
+                intent2.addCategory(Intent.CATEGORY_HOME);
+                intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent2);
+                Toast.makeText(getContext(), R.string.system_dark_theme_toast_before,
+                    Toast.LENGTH_SHORT).show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                      @Override
+                      public void run() {
+                          Intent intent = new Intent(Intent.ACTION_MAIN);
+                          intent.setClassName("com.android.settings",
+                                "com.android.settings.Settings$MiscellaneousSettingsActivity");
+                          intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                          startActivity(intent);
+                          Toast.makeText(getContext(), R.string.system_dark_theme_toast_after,
+                              Toast.LENGTH_SHORT).show();
+                      }
+                }, 2000);
+            }
             return true;
         } else if (preference == mTorchPowerButton) {
             int mTorchPowerButtonValue = Integer.valueOf((String) newValue);
