@@ -74,13 +74,8 @@ public class Statusbar extends SettingsPreferenceFragment implements Preference.
             mClock.setTitle(R.string.clock_options_title);
         }
 
-        Preference NotificationsOptions = findPreference("notifications_category");
-        if (!getResources().getBoolean(R.bool.has_notifications_options)) {
-            getPreferenceScreen().removePreference(NotificationsOptions);
-        } else {
-            mNotifications = (LayoutPreference) findPreference(NOTIFICATIONS_CATEGORY);
-            mNotifications.setTitle(R.string.notifications_title);
-        }
+        mNotifications = (LayoutPreference) findPreference(NOTIFICATIONS_CATEGORY);
+        mNotifications.setTitle(R.string.notifications_title);
 
         mQuickSettings = (LayoutPreference) findPreference(QUICK_SETTINGS_CATEGORY);
         mQuickSettings.setTitle(R.string.quicksettings_title);

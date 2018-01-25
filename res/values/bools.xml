@@ -25,7 +25,4 @@
     <!-- Whether to display clock options -->
     <bool name="has_clock_options">false</bool>
 
-    <!-- Whether to display notifications options -->
-    <bool name="has_notifications_options">false</bool>
-
 </resources>
