@@ -54,7 +54,7 @@
                 android:targetClass="com.android.systemui.tuner.NavBarActivity" />
         </Preference>
     </PreferenceCategory>
-    
+
     <PreferenceCategory
         android:key="category_navbar_general"
         android:title="@string/navbar_general_title" >
@@ -82,6 +82,7 @@
         <PreferenceScreen
             android:key="pulse_settings"
             android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
             android:fragment="com.dirtyunicorns.tweaks.fragments.PulseSettings" />
 
     </PreferenceCategory>
