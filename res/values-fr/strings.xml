@@ -38,7 +38,7 @@
     <string name="miscellaneous_title">Divers</string>
     <string name="miscellaneous_summary">Réglages qui ne correspondent pas aux autres catégories</string>
     <string name="powermenu_title">Menu Marche/Arrêt</string>
-    <string name="powermenu_summary">Réglages des options du menu Marche/Arrêt telles que la Lampe de poche, le Mode avion ou la capture d\'écran</string>
+    <string name="powermenu_summary">Réglages des options du menu Marche/Arrêt telles que Mode avion ou capture d\'écran</string>
     <!-- Lockscreen -->
     <string name="fingerprint_prefs_title">Empreinte digitale</string>
     <string name="fingerprint_prefs_summary">Réglages spécifiques au lecteur d\'empreintes digitales</string>
@@ -56,13 +56,13 @@
     <string name="notifications_title">Notifications</string>
     <string name="notifications_summary">Réglages spécifiques des notifications système</string>
     <string name="quicksettings_title">Panneau de configuration</string>
-    <string name="quicksettings_summary">Réglages du panneau de configuration avec des options allant des en-têtes contextuels à la météo</string>
+    <string name="quicksettings_summary">Réglages du panneau de configuration</string>
     <string name="statusbar_items_title">Barre d\'état</string>
     <string name="statusbar_items_summary">Réglages des éléments à afficher sur la barre d\'état</string>
     <string name="ticker_title">Aperçu de notification</string>
     <string name="ticker_summary">Réglages de l\'aperçu de notification sur la barre d\'état</string>
-    <string name="traffic_title">Indicateurs de trafic</string>
-    <string name="traffic_summary">Réglages de l\'indicateurs de vitesse de réseau sur la barre d\'état</string>
+    <string name="traffic_title">Indicateur de trafic</string>
+    <string name="traffic_summary">Réglages de l\'indicateur de vitesse de réseau sur la barre d\'état</string>
     <!-- Navigation -->
     <string name="buttons_title">Boutons</string>
     <string name="buttons_summary">Réglages des boutons physiques et du bouton Volume</string>
@@ -74,7 +74,7 @@
     <string name="omniswitch_title">Omniswitch</string>
     <string name="omniswitch_summary">Réglages d\'OmniSwitch</string>
     <string name="recents_title">Applications récentes</string>
-    <string name="recents_summary">Réglages des applications récentes OmniSwitch ou AOSP</string>
+    <string name="recents_summary">Réglages des applications récentes</string>
 
     <!-- Button brightness -->
     <string name="button_backlight_options_category">Rétro-éclairage</string>
@@ -101,9 +101,8 @@
     <string name="systemui_theme_style_auto">Automatique (basé sur le fond d\'écran)</string>
     <string name="systemui_theme_style_light">Clair</string>
     <string name="systemui_theme_style_dark">Foncé</string>
-    <string name="powermenu_settings_title">Paramètres</string>
-    <string name="powermenu_lockdown_title">Verrouiller</string>
-    <string name="powermenu_soundpanel_title">Panneau de volume</string>
+    <string name="system_dark_theme_toast_before">Ajustement du thème en cours\u2026 Veuillez patienter.</string>
+    <string name="system_dark_theme_toast_after">Thème ajusté !</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Sélecteur de couleur</string>
@@ -217,7 +216,7 @@
     <string name="ok">OK</string>
     <string name="reset">Configuration d\'origine</string>
     <string name="advanced">Paramètres avancés</string>
-    <string name="profiles_add">Ajouter...</string>
+    <string name="profiles_add">Ajouter\u2026</string>
     <string name="edit_light_settings">Paramètres du voyant</string>
     <string name="pulse_speed_title">Durée et vitesse d\'impulsion</string>
     <string name="default_time">Normale</string>
@@ -477,5 +476,16 @@
     <string name="torch_power_button_gesture_none">Désactivé</string>
     <string name="torch_power_button_gesture_dt">Double appui sur le bouton Marche/Arrêt</string>
     <string name="torch_power_button_gesture_lp">Appui prolongé sur le bouton Marche/Arrêt</string>
+
+    <!-- Ambient music -->
+    <string name="ambient_display_category">Affichage en mode Veille</string>
+    <string name="force_ambient_for_media_pref_title">Informations de la piste musicale</string>
+    <string name="force_ambient_for_media_pref_summary">Réglages des informations de la piste musicale</string>
+    <string name="ambient_ticker_footer">Afficher les informations de la piste musicale en cours d\'écoute sur l\'écran de déverrouillage, que l\'option  \"Affichage en mode Veille\" soit ou non activée.\n\nLa disposition \"normale\" affiche : les informations de la piste musicale en cours d\'écoute, l\'horloge et la date.\n\nLa disposition \"minimale\" affiche : les informations de la piste musicale en cours d\'écoute centrée sur l\'écran.\n\nL\'option \"forcée\" permet l\'utilisation de cette fonctionnalité si l\'Affichage en mode Veille n\'est pas activée.</string>
+    <string name="force_ambient_for_media_title">Disposition</string>
+    <string name="force_ambient_for_media_off">Désactivé</string>
+    <string name="force_ambient_for_media_on">Normale</string>
+    <string name="force_ambient_for_media_on_forced">Normale (forcée)</string>
+    <string name="force_ambient_for_media_on_forced_clean">Minimale (forcée)</string>
 
 </resources>
