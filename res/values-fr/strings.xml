@@ -382,6 +382,7 @@
     <string name="pulse_render_mode_fading_bars">Fondu des blocs</string>
     <string name="pulse_render_mode_solid_lines">Lignes pleines</string>
     <string name="fling_pulse_color">Couleur de Pulse</string>
+    <string name="fling_pulse_color_summary">Utiliser également cette couleur comme solution de secours pour \"Couleur de Pulse automatique\"</string>
     <string name="eos_fling_lavalamp_title">Lampe Lava</string>
     <string name="eos_fling_lavalamp_summary">Ajoute l\'effet de mélange de couleurs \"Lampe Lava\"</string>
     <string name="pulse_advanced_category">Options avancées</string>
@@ -393,6 +394,8 @@
     <string name="pulse_solid_units_opacity">Opacité des lignes</string>
     <string name="pulse_solid_dimen_category">Lignes pleines</string>
     <string name="pulse_custom_buttons_opacity_title">Opacité des boutons sur Pulse</string>
+    <string name="pulse_auto_color_title">Couleur de Pulse automatique</string>
+    <string name="pulse_auto_color_summary">Utiliser la couleur de l\'illustration du titre musical en cours de lecture. Annule les options \"Lampe Lava\" et \"Opacité des lignes\".</string>
 
     <!-- Pulse config -->
     <string name="pulse_custom_dimen">Largeur des barres</string>
@@ -487,5 +490,21 @@
     <string name="force_ambient_for_media_on">Normale</string>
     <string name="force_ambient_for_media_on_forced">Normale (forcée)</string>
     <string name="force_ambient_for_media_on_forced_clean">Minimale (forcée)</string>
+
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Animation à l\'extinction de l\'écran</string>
+    <string name="screen_off_animation_default">Par défaut</string>
+    <string name="screen_off_animation_crt">Tube cathodique</string>
+    <string name="screen_off_animation_scale">Réduction</string>
+
+    <!-- Lockscreen Media art -->
+    <string name="media_art_title">Illustration du titre musical</string>
+    <string name="media_art_summary">Activer l\'illustration du titre musical en cours de lecture</string>
+
+    <!-- Suppress notification sound/vibration -->
+    <string name="notification_sound_vib_screen_on_title">Son et vibration des notifications si l\'écran est allumé</string>
+    <string name="notification_sound_vib_screen_on_never">Jamais</string>
+    <string name="notification_sound_vib_screen_on_always">Toujours (Par défaut)</string>
+    <string name="notification_sound_vib_screen_on_nomedia">Si aucune lecture de média</string>
 
 </resources>
