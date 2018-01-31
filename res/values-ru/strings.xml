@@ -89,7 +89,6 @@
     <string name="powermenu_advanced_reboot_summary">Включает расширенное меню перезагрузки в режим восстановления, загрузчик, перезапуска интерфейса или запуска горячей перезагрузки</string>
     <string name="powermenu_screenshot_title">Скриншот</string>
     <string name="powermenu_airplane_title">Режим полета</string>
-    <string name="powermenu_category_other">Другое</string>
     <string name="powermenu_lockscreen_title">Меню питания при блокировке</string>
     <string name="powermenu_lockscreen_summary">Включить возможность отображения и использования диалога меню питания во время блокировки экрана</string>
     <string name="powermenu_settings_title">Настройки</string>
@@ -168,6 +167,7 @@
     <string name="recents_clear_all_location_bottom_center">Снизу по центру</string>
 
     <!-- Fingerprint authentication vibration -->
+    <string name="lockscreen_items_other">Другое</string>
     <string name="fprint_sucess_vib_title">Отпечаток пальца</string>
     <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальца</string>
 

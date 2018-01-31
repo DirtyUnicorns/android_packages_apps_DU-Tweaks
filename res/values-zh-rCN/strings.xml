@@ -90,7 +90,6 @@
     <string name="powermenu_advanced_reboot_summary">启用高级菜单选项，可以方便重启到Recovery、BootLoader、重启系统界面或热重启</string>
     <string name="powermenu_screenshot_title">截屏</string>
     <string name="powermenu_airplane_title">飞行模式</string>
-    <string name="powermenu_category_other">其它</string>
     <string name="powermenu_lockscreen_title">锁屏可用</string>
     <string name="powermenu_lockscreen_summary">启用在锁定屏幕上显示和使用电源菜单对话框的功能</string>
 
@@ -183,6 +182,7 @@
     <string name="recents_clear_all_location_bottom_center">底端中心</string>
 
     <!-- Hide Lockscreen clock, date, & alarm -->
+    <string name="lockscreen_items_other">其它</string>
     <string name="hide_lockscreen_clock_title">时钟部件</string>
     <string name="hide_lockscreen_clock_summary">更改时钟小部件的可见性</string>
     <string name="hide_lockscreen_date_title">日期部件</string>

@@ -92,7 +92,6 @@
     <string name="powermenu_advanced_reboot_summary">Activer le menu de redémarrage optimisé permettant un redémarrage vers le \"Recovery\" ou le \"Bootloader\", un redémarrage du \"Interface\", ou un redémarrage \"Hot Reboot\"</string>
     <string name="powermenu_screenshot_title">Capture d\'écran</string>
     <string name="powermenu_airplane_title">Mode Avion</string>
-    <string name="powermenu_category_other">Autre</string>
     <string name="powermenu_lockscreen_title">Écran de déverrouillage</string>
     <string name="powermenu_lockscreen_summary">Activer l\'affichage et l\'utilisation de la boîte de dialogue du menu Marche/Arrêt sur l\'écran de déverrouillage</string>
 
@@ -176,6 +175,7 @@
     <string name="recents_clear_all_location_bottom_center">En bas au milieu</string>
 
     <!-- Hide Lockscreen clock, date, & alarm -->
+    <string name="lockscreen_items_other">Autre</string>
     <string name="hide_lockscreen_clock_title">Horloge</string>
     <string name="hide_lockscreen_clock_summary">Masquer le widget Horloge</string>
     <string name="hide_lockscreen_date_title">Date</string>

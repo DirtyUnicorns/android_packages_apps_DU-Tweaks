@@ -44,7 +44,7 @@
     </Preference>
 
     <PreferenceCategory
-        android:title="@string/powermenu_category_other">
+        android:title="@string/lockscreen_items_other">
 
         <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_media_metadata"
