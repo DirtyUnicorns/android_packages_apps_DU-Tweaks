@@ -52,6 +52,12 @@
             android:summary="@string/media_art_summary"
             android:defaultValue="true" />
 
+        <ListPreference
+            android:key="torch_power_button_gesture"
+            android:title="@string/torch_power_button_gesture_title"
+            android:entries="@array/torch_power_button_gesture_entries"
+            android:entryValues="@array/torch_power_button_gesture_values" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
