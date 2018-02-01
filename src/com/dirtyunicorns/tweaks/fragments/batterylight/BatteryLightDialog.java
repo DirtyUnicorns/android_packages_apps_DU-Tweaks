@@ -19,6 +19,7 @@ package com.dirtyunicorns.tweaks.fragments.batterylight;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PixelFormat;
@@ -72,8 +73,12 @@ public class BatteryLightDialog extends AlertDialog implements
     private LedColorAdapter mLedColorAdapter;
     private boolean mWithAlpha;
 
+    private NotificationManager mNoMan;
+    private Context mContext;
+
     protected BatteryLightDialog(Context context, int initialColor) {
         super(context);
+        mContext = context;
         mWithAlpha = false;
         mMultiColor = getContext().getResources().getBoolean(com.android.internal.R.bool.config_multiColorNotificationLed);
         init(initialColor);
@@ -98,6 +103,9 @@ public class BatteryLightDialog extends AlertDialog implements
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = mInflater.inflate(R.layout.dialog_battery_settings, null);
 
+        mNoMan = (NotificationManager)
+                mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+
         mColorPicker = (ColorPickerView) layout.findViewById(R.id.color_picker_view);
         mHexColorInput = (EditText) layout.findViewById(R.id.hex_color_input);
         mNewColor = (ColorPickerPanelView) layout.findViewById(R.id.color_panel);
@@ -111,6 +119,7 @@ public class BatteryLightDialog extends AlertDialog implements
         mHexColorInput.setOnFocusChangeListener(this);
         setAlphaSliderVisible(mWithAlpha);
         mColorPicker.setColor(color, true);
+        showLed(color);
 
         mColorList = (Spinner) layout.findViewById(R.id.color_list_spinner);
         mLedColorAdapter = new LedColorAdapter(
@@ -151,6 +160,7 @@ public class BatteryLightDialog extends AlertDialog implements
     public Bundle onSaveInstanceState() {
         Bundle state = super.onSaveInstanceState();
         state.putInt(STATE_KEY_COLOR, getColor());
+        switchOffLed();
         return state;
     }
 
@@ -168,6 +178,26 @@ public class BatteryLightDialog extends AlertDialog implements
 
         mNewColor.setColor(color);
         mHexColorInput.setText(String.format(Locale.US, format, color & mask));
+
+        showLed(color);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        switchOffLed();
+    }
+
+    private void showLed(int color) {
+        if (color == 0xFFFFFFFF) {
+            // argb white doesn't work
+            color = 0xffffff;
+        }
+        mNoMan.forceShowLedLight(color);
+    }
+
+    public void switchOffLed() {
+        mNoMan.forceShowLedLight(-1);
     }
 
     public void setAlphaSliderVisible(boolean visible) {

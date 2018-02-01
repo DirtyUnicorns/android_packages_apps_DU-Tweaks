@@ -105,12 +105,18 @@ public class BatteryLightPreference extends Preference implements DialogInterfac
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 mColorValue =  d.getColor() & 0x00FFFFFF; // strip alpha, led does not support it
+                d.switchOffLed();
                 updatePreferenceViews();
                 callChangeListener(this);
             }
         });
         d.setButton(AlertDialog.BUTTON_NEGATIVE, mResources.getString(R.string.cancel),
-                (DialogInterface.OnClickListener) null);
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                d.switchOffLed();
+            }
+        });
 
         return d;
     }
