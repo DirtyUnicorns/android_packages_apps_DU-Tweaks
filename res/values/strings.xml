@@ -162,6 +162,10 @@
     <string name="quick_pulldown_right">Right</string>
     <string name="quick_pulldown_always">Always</string>
 
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">QS footer warnings</string>
+    <string name="qs_footer_warnings_summary">Display a warning at bottom of the QS panel while your network is monitored by external apps or a VPN</string>
+
     <!-- Quick Settings brightness icon -->
     <string name="brightness_icon_title">Auto-brightness icon</string>
     <string name="brightness_icon_summary">Show a auto-brightness icon to the right of the brightness slider to toggle auto-brightness</string>
