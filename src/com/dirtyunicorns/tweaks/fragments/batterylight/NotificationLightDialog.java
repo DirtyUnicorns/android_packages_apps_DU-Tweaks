@@ -85,6 +85,8 @@ public class NotificationLightDialog extends AlertDialog implements
     private int mLedLastSpeedOn;
     private int mLedLastSpeedOff;
 
+    private Context mContext;
+
     /**
      * @param context
      * @param initialColor
@@ -108,6 +110,8 @@ public class NotificationLightDialog extends AlertDialog implements
     protected NotificationLightDialog(Context context, int initialColor, int initialSpeedOn,
             int initialSpeedOff, boolean onOffChangeable) {
         super(context);
+
+        mContext = context;
 
         init(context, initialColor, initialSpeedOn, initialSpeedOff, onOffChangeable);
     }
@@ -209,6 +213,7 @@ public class NotificationLightDialog extends AlertDialog implements
         Bundle state = super.onSaveInstanceState();
         state.putInt(STATE_KEY_COLOR, getColor());
         dismiss();
+        dismissLed();
         return state;
     }
 
@@ -244,6 +249,18 @@ public class NotificationLightDialog extends AlertDialog implements
         }
 
         updateLed();
+    }
+
+    private void showLed(int color, int onTime, int offTime) {
+        if (color == 0xFFFFFFFF) {
+            // argb white doesn't work
+            color = 0xffffff;
+        }
+        mNotificationManager.forcePulseLedLight(color, onTime, offTime);
+    }
+
+    public void switchOffLed() {
+        mNotificationManager.forcePulseLedLight(-1, -1, -1);
     }
 
     public void setAlphaSliderVisible(boolean visible) {
@@ -377,24 +394,11 @@ public class NotificationLightDialog extends AlertDialog implements
         mLedLastSpeedOn = speedOn;
         mLedLastSpeedOff = speedOff;
 
-        final Bundle b = new Bundle();
-        b.putBoolean(Notification.EXTRA_FORCE_SHOW_LIGHTS, true);
-
-        final Notification.Builder builder = new Notification.Builder(getContext());
-        builder.setLights(color, speedOn, speedOff);
-        builder.setExtras(b);
-
-        // Set a notification
-        builder.setSmallIcon(R.drawable.ic_settings_leds);
-        builder.setContentTitle(getContext().getString(R.string.led_notification_title));
-        builder.setContentText(getContext().getString(R.string.led_notification_text));
-        builder.setOngoing(false);
-
-        mNotificationManager.notify(1, builder.build());
+        showLed(color, speedOn, speedOff);
     }
 
     public void dismissLed() {
-        mNotificationManager.cancel(1);
+        switchOffLed();
         // ensure we later reset LED if dialog is
         // hidden and then made visible
         mLedLastColor = 0;

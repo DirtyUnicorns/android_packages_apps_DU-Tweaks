@@ -200,12 +200,18 @@ public class NotificationLightPreference extends Preference implements DialogInt
                 mColorValue =  d.getColor() & 0x00FFFFFF; // strip alpha, led does not support it
                 mOnValue = d.getPulseSpeedOn();
                 mOffValue = d.getPulseSpeedOff();
+                d.switchOffLed();
                 updatePreferenceViews();
                 callChangeListener(this);
             }
         });
         d.setButton(AlertDialog.BUTTON_NEGATIVE, mResources.getString(R.string.cancel),
-                (DialogInterface.OnClickListener) null);
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                d.switchOffLed();
+            }
+        });
 
         if (state != null) {
             d.onRestoreInstanceState(state);
