@@ -30,6 +30,7 @@
     <string name="heads_up_warning_text">Les notifications flottantes sont destinées à être employées comme outil multi-tâche lors de l\'usage d\'applications en plein écran et/ou de jeux. Leur utilisation désactive l\'aperçu de notification sur la barre d\'état.</string>
     <string name="ticker_warning_text">L\'aperçu de notification sur la barre d\'état est destiné à être employé comme outil multi-tâche et procure un sentiment de nostalgie. Son utilisation désactive les notifications flottantes.</string>
     <string name="carrier_label_warning_text">Le libellé opérateur modifié n\'est pas disponible dans le panneau de configuration rapide.\nL\'utilisation de frimousse peut provoquer des problèmes d\'affichage sur des fonds clairs.</string>
+    <string name="lockscreen_torch_warning_text">La fonctionnalité \"Lampe de poche en mode veille\" est uniquement destinée à être utilisée lorsque l\'écran est éteint.\nL\'utilisation de la lampe de poche de manière prolongée décharge la batterie plus rapidement.</string>
 
     <!-- Categories -->
     <!-- System -->
@@ -92,8 +93,13 @@
     <string name="powermenu_advanced_reboot_summary">Activer le menu de redémarrage optimisé permettant un redémarrage vers le \"Recovery\" ou le \"Bootloader\", un redémarrage du \"Interface\", ou un redémarrage \"Hot Reboot\"</string>
     <string name="powermenu_screenshot_title">Capture d\'écran</string>
     <string name="powermenu_airplane_title">Mode Avion</string>
-    <string name="powermenu_lockscreen_title">Écran de déverrouillage</string>
+    <string name="powermenu_category_visibility">Écran de déverrouillage</string>
+    <string name="powermenu_lockscreen_title">Boîte de dialogue du menu Marche/Arrêt</string>
     <string name="powermenu_lockscreen_summary">Activer l\'affichage et l\'utilisation de la boîte de dialogue du menu Marche/Arrêt sur l\'écran de déverrouillage</string>
+    <string name="powermenu_ls_reboot_summary">Options de redémarrage</string>
+    <string name="powermenu_ls_advanced_reboot_summary">Redémarrage optimisé</string>
+    <string name="powermenu_ls_screenshot_summary">Capture d\'écran</string>
+    <string name="powermenu_ls_airplane_summary">Mode Avion</string>
 
     <!-- SystemUI theme -->
     <string name="systemui_theme_style_title">Thème de l\'interface</string>
@@ -146,6 +152,10 @@
     <string name="quick_pulldown_left">gauche</string>
     <string name="quick_pulldown_right">droit</string>
     <string name="quick_pulldown_always">Toujours</string>
+
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">Avertissements de contrôle</string>
+    <string name="qs_footer_warnings_summary">Afficher un avertissement en dessous du panneau de configuration rapide lorsque le réseau est contrôlé par une application externe ou un VPN</string>
 
     <!-- Quick Settings brightness icon -->
     <string name="brightness_icon_title">Icône de luminosité</string>
@@ -506,5 +516,13 @@
     <string name="notification_sound_vib_screen_on_never">Jamais</string>
     <string name="notification_sound_vib_screen_on_always">Toujours (Par défaut)</string>
     <string name="notification_sound_vib_screen_on_nomedia">Si aucune lecture de média</string>
+
+    <string name="less_notification_sounds_title">Sons de notification</string>
+    <string name="less_notification_sounds_summary">Régler l\'intervalle pendant lequel une application peut émettre une notification sonore</string>
+    <string name="less_notification_sounds_default">Valeur définie par l\'application</string>
+    <string name="less_notification_sounds_10s">Toutes les 10 secondes</string>
+    <string name="less_notification_sounds_30s">Toutes les 30 secondes</string>
+    <string name="less_notification_sounds_1m">Chaque minute</string>
+    <string name="less_notification_sounds_2m">Toutes les 2 minutes</string>
 
 </resources>
