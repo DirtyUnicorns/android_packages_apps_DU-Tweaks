@@ -16,14 +16,18 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.android.settings.applications.LayoutPreference
+    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="fingerprint_prefs_category"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.FingerprintPrefs"
-        android:layout="@layout/fingerprint_prefs" />
+        android:icon="@drawable/dt_fingerprint_prefs"
+        android:title="@string/fingerprint_prefs_title"
+        android:summary="@string/fingerprint_prefs_summary"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.FingerprintPrefs" />
 
-    <com.android.settings.applications.LayoutPreference
+    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="lockscreen_items_category"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.LockscreenItems"
-        android:layout="@layout/lockscreen_items" />
+        android:icon="@drawable/dt_lockscreen_items"
+        android:title="@string/lockscreen_items_title"
+        android:summary="@string/lockscreen_items_summary"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.LockscreenItems" />
 
 </PreferenceScreen>

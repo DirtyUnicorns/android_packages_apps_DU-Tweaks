@@ -16,58 +16,37 @@
 
 package com.dirtyunicorns.tweaks.tabs;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.app.Fragment;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceFragment;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.PreferenceFragment;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.applications.LayoutPreference;
-
 import com.android.internal.logging.nano.MetricsProto;
 
 public class System extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
-    private static final String EXPANDED_DESKTOP_CATEGORY = "expanded_desktop_category";
+    private static final String DEVICE_CATEGORY = "device_extras_category";
     private static final String MISC_CATEGORY = "miscellaneous_category";
-    private static final String POWERMENU_CATEGORY = "powermenu_category";
-
-    private LayoutPreference mExpandedDesktop;
-    private LayoutPreference mMisc;
-    private LayoutPreference mPowerMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.system);
 
-        Preference DeviceExtras = findPreference("device_extras_category");
-
+        Preference DeviceExtras = findPreference(DEVICE_CATEGORY);
         if (!getResources().getBoolean(R.bool.has_device_extras)) {
             getPreferenceScreen().removePreference(DeviceExtras);
         }
 
-        mExpandedDesktop = (LayoutPreference) findPreference(EXPANDED_DESKTOP_CATEGORY);
-        mExpandedDesktop.setTitle(R.string.expanded_desktop_title);
-
         Preference MiscOptions = findPreference("miscellaneous_category");
         if (!getResources().getBoolean(R.bool.has_misc_options)) {
             getPreferenceScreen().removePreference(MiscOptions);
-        } else {
-            mMisc = (LayoutPreference) findPreference(MISC_CATEGORY);
-            mMisc.setTitle(R.string.miscellaneous_title);
         }
 
-        mPowerMenu = (LayoutPreference) findPreference(POWERMENU_CATEGORY);
-        mPowerMenu.setTitle(R.string.powermenu_title);
     }
 
     @Override

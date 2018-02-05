@@ -16,72 +16,36 @@
 
 package com.dirtyunicorns.tweaks.tabs;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.app.Fragment;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceFragment;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.PreferenceFragment;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.applications.LayoutPreference;
-
 import com.android.internal.logging.nano.MetricsProto;
 
 public class Statusbar extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String BATTERY_CATEGORY = "battery_options_category";
-    private static final String CARRIER_LABEL_CATEGORY = "carrier_label_category";
     private static final String CLOCK_CATEGORY = "clock_options_category";
-    private static final String NOTIFICATIONS_CATEGORY = "notifications_category";
-    private static final String QUICK_SETTINGS_CATEGORY = "quick_settings_category";
-    private static final String TRAFFIC_CATEGORY = "traffic_category";
-
-    private LayoutPreference mBattery;
-    private LayoutPreference mCarrierLabel;
-    private LayoutPreference mClock;
-    private LayoutPreference mNotifications;
-    private LayoutPreference mQuickSettings;
-    private LayoutPreference mTraffic;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.statusbar);
 
-        Preference BatteryOptions = findPreference("battery_options_category");
+        Preference BatteryOptions = findPreference(BATTERY_CATEGORY);
         if (!getResources().getBoolean(R.bool.has_battery_options)) {
             getPreferenceScreen().removePreference(BatteryOptions);
-        } else {
-            mBattery = (LayoutPreference) findPreference(BATTERY_CATEGORY);
-            mBattery.setTitle(R.string.battery_options_title);
         }
 
-        mCarrierLabel = (LayoutPreference) findPreference(CARRIER_LABEL_CATEGORY);
-        mCarrierLabel.setTitle(R.string.carrier_label_title);
-
-        Preference ClockOptions = findPreference("clock_options_category");
+        Preference ClockOptions = findPreference(CLOCK_CATEGORY);
         if (!getResources().getBoolean(R.bool.has_clock_options)) {
             getPreferenceScreen().removePreference(ClockOptions);
-        } else {
-            mClock = (LayoutPreference) findPreference(CLOCK_CATEGORY);
-            mClock.setTitle(R.string.clock_options_title);
         }
-
-        mNotifications = (LayoutPreference) findPreference(NOTIFICATIONS_CATEGORY);
-        mNotifications.setTitle(R.string.notifications_title);
-
-        mQuickSettings = (LayoutPreference) findPreference(QUICK_SETTINGS_CATEGORY);
-        mQuickSettings.setTitle(R.string.quicksettings_title);
-
-        mTraffic = (LayoutPreference) findPreference(TRAFFIC_CATEGORY);
-        mTraffic.setTitle(R.string.traffic_title);
     }
 
     @Override

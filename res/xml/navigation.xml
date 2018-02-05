@@ -16,14 +16,18 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.android.settings.applications.LayoutPreference
+    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="buttons_category"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.Buttons"
-        android:layout="@layout/buttons" />
+        android:icon="@drawable/dt_buttons"
+        android:title="@string/buttons_title"
+        android:summary="@string/buttons_summary"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.Buttons" />
 
-    <com.android.settings.applications.LayoutPreference
+    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="navigation_category"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.NavigationBar"
-        android:layout="@layout/navigationbar" />
+        android:icon="@drawable/dt_navigationbar"
+        android:title="@string/navigationbar_title"
+        android:summary="@string/navigationbar_summary"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.NavigationBar" />
 
 </PreferenceScreen>

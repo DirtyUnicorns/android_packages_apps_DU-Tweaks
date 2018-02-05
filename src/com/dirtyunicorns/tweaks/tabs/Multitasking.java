@@ -16,47 +16,23 @@
 
 package com.dirtyunicorns.tweaks.tabs;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.app.Fragment;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceFragment;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.PreferenceFragment;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.applications.LayoutPreference;
-
 import com.android.internal.logging.nano.MetricsProto;
 
 public class Multitasking extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
-
-    private static final String HEADS_UP_CATEGORY = "headsup_category";
-    private static final String RECENTS_CATEGORY = "recents_category";
-    private static final String TICKER_CATEGORY = "ticker_category";
-
-    private LayoutPreference mHeadsUp;
-    private LayoutPreference mRecents;
-    private LayoutPreference mTicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.multitasking);
-
-        mHeadsUp = (LayoutPreference) findPreference(HEADS_UP_CATEGORY);
-        mHeadsUp.setTitle(R.string.headsup_title);
-
-        mRecents = (LayoutPreference) findPreference(RECENTS_CATEGORY);
-        mRecents.setTitle(R.string.recents_title);
-
-        mTicker = (LayoutPreference) findPreference(TICKER_CATEGORY);
-        mTicker.setTitle(R.string.ticker_title);
     }
 
     @Override
