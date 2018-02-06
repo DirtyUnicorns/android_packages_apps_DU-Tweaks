@@ -525,4 +525,16 @@
     <string name="less_notification_sounds_1m">Chaque minute</string>
     <string name="less_notification_sounds_2m">Toutes les 2 minutes</string>
 
+    <!-- Expanded desktop -->
+    <string name="expanded_desktop_title">Bureau étendu</string>
+    <string name="expanded_desktop_summary">Réglages de l\'affichage de la barre d\'état et de la barre de navigation par application</string>
+    <string name="expanded_hide_nothing">Ne rien masquer</string>
+    <string name="expanded_hide_status">Masquer la barre d\'état</string>
+    <string name="expanded_hide_navigation">Masquer la barre de navigation</string>
+    <string name="expanded_hide_both">Masquer les deux</string>
+    <string name="expanded_nothing_to_show">Pour ajouter une configuration du bureau étendu par application, désactiver \"Activé pour tout\".</string>
+    <string name="expanded_desktop_state">État</string>
+    <string name="expanded_enabled_for_all">Activé pour tout</string>
+    <string name="expanded_user_configurable">Défini par l\'utilisateur</string>
+
 </resources>
