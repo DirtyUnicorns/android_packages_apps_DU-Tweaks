@@ -528,7 +528,7 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
 
         private final PackageManager mPackageManager;
         private final List<String> launcherResolveInfoList = new ArrayList<String>();
-        private boolean onlyLauncher = true;
+        private boolean onlyLauncher = false;
 
         private ActivityFilter(PackageManager packageManager) {
             this.mPackageManager = packageManager;
