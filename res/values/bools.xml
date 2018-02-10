@@ -16,13 +16,16 @@
 
 <resources>
 
-    <!-- Whether or not a device has device extras -->
-    <bool name="has_device_extras">false</bool>
-
     <!-- Whether to display battery options -->
     <bool name="has_battery_options">false</bool>
 
     <!-- Whether to display clock options -->
     <bool name="has_clock_options">false</bool>
+
+    <!-- Whether or not a device has device extras -->
+    <bool name="has_device_extras">false</bool>
+
+    <!-- Whether to display misc options -->
+    <bool name="has_misc_options">false</bool>
 
 </resources>

@@ -58,8 +58,13 @@ public class System extends SettingsPreferenceFragment implements Preference.OnP
         mExpandedDesktop = (LayoutPreference) findPreference(EXPANDED_DESKTOP_CATEGORY);
         mExpandedDesktop.setTitle(R.string.expanded_desktop_title);
 
-        mMisc = (LayoutPreference) findPreference(MISC_CATEGORY);
-        mMisc.setTitle(R.string.miscellaneous_title);
+        Preference MiscOptions = findPreference("miscellaneous_category");
+        if (!getResources().getBoolean(R.bool.has_misc_options)) {
+            getPreferenceScreen().removePreference(MiscOptions);
+        } else {
+            mMisc = (LayoutPreference) findPreference(MISC_CATEGORY);
+            mMisc.setTitle(R.string.miscellaneous_title);
+        }
 
         mPowerMenu = (LayoutPreference) findPreference(POWERMENU_CATEGORY);
         mPowerMenu.setTitle(R.string.powermenu_title);

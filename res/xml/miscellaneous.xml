@@ -16,22 +16,4 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ListPreference
-        android:key="headset_connect_player"
-        android:title="@string/headset_connect_player_title"
-        android:entries="@array/headset_connect_player_entries"
-        android:entryValues="@array/headset_connect_player_values" />
-
-    <ListPreference
-        android:key="systemui_theme_style"
-        android:title="@string/systemui_theme_style_title"
-        android:entries="@array/systemui_theme_style_entries"
-        android:entryValues="@array/systemui_theme_style_values"
-        android:persistent="false" />
-
-    <ListPreference
-        android:key="screen_off_animation"
-        android:title="@string/screen_off_animation_title"
-        android:entries="@array/screen_off_animation_entries"
-        android:entryValues="@array/screen_off_animation_values" />
 </PreferenceScreen>
