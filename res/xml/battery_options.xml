@@ -30,4 +30,9 @@
         android:entries="@array/battery_percent_entries"
         android:entryValues="@array/battery_percent_values" />
 
+    <com.dirtyunicorns.tweaks.preferences.SecureSettingSwitchPreference
+        android:key="status_bar_big_battery_icon"
+        android:title="@string/large_battery_icon_title"
+        android:summary="@string/large_battery_icon_summary" />
+
 </PreferenceScreen>

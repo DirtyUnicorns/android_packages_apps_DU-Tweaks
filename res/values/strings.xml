@@ -609,4 +609,8 @@
     <string name="battery_percent_outside">Outside</string>
     <string name="battery_percent_inside">Inside</string>
 
+    <!-- Battery icon size -->
+    <string name="large_battery_icon_title">Show large icon</string>
+    <string name="large_battery_icon_summary">Enlarge the battery icon in the status bar</string>
+
 </resources>
