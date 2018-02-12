@@ -592,4 +592,21 @@
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_seconds_title">Show seconds</string>
 
+    <!-- Battery styles -->
+    <string name="battery_style_title">Battery icon style</string>
+    <string name="battery_style_summary">Change the look of the battery icon in the statusbar</string>
+    <string name="battery_style_port">Portrait</string>
+    <string name="battery_style_land">Landscape</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_dotted_circle">Dotted circle</string>
+    <string name="battery_style_text">Text</string>
+    <string name="battery_style_hidden">Hidden</string>
+
+    <!-- Battery percent -->
+    <string name="show_battery_percent_title">Show battery percentage</string>
+    <string name="show_battery_percent_summary">Show battery level percentage near the icon</string>
+    <string name="battery_percent_hidden">Hidden</string>
+    <string name="battery_percent_outside">Outside</string>
+    <string name="battery_percent_inside">Inside</string>
+
 </resources>
