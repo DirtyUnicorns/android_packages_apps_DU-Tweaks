@@ -17,8 +17,14 @@
 package com.dirtyunicorns.tweaks.preferences;
 
 import android.content.Context;
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
+import android.graphics.PorterDuff;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.os.UserHandle;
 import android.support.annotation.VisibleForTesting;
 import android.support.v4.content.res.TypedArrayUtils;
 import android.support.v7.preference.Preference;
@@ -42,8 +48,13 @@ public class CategoryPreference extends Preference {
     private boolean mAllowDividerAbove;
     private boolean mAllowDividerBelow;
 
+    private IOverlayManager mOverlayManager;
+
     public CategoryPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
+
+        mOverlayManager = IOverlayManager.Stub.asInterface(
+                ServiceManager.getService(Context.OVERLAY_SERVICE));
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Preference);
 
@@ -70,6 +81,20 @@ public class CategoryPreference extends Preference {
         holder.itemView.setClickable(selectable);
         holder.setDividerAllowedAbove(mAllowDividerAbove);
         holder.setDividerAllowedBelow(mAllowDividerBelow);
+
+        ImageView imageview = (ImageView) holder.findViewById(android.R.id.icon);
+        imageview.getDrawable().setColorFilter(getContext().getResources().getColor(
+                isUsingWhiteAccent() ? R.color.BottomBarBackgroundColor : android.R.color.white), PorterDuff.Mode.SRC_IN);
     }
 
+    private boolean isUsingWhiteAccent() {
+        OverlayInfo themeInfo = null;
+        try {
+            themeInfo = mOverlayManager.getOverlayInfo("com.accents.white",
+                    UserHandle.USER_CURRENT);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return themeInfo != null && themeInfo.isEnabled();
+    }
 }
