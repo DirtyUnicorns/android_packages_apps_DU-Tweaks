@@ -102,13 +102,18 @@
     <string name="powermenu_ls_airplane_summary">Mode Avion</string>
 
     <!-- SystemUI theme -->
-    <string name="systemui_theme_style_title">Thème de l\'interface</string>
+    <string name="theme_category_title">Thème système</string>
+    <string name="systemui_theme_style_title">Couleur d\'arrière-plan</string>
     <string name="systemui_theme_style_auto">Automatique (basé sur le fond d\'écran)</string>
     <string name="systemui_theme_style_light">Clair</string>
     <string name="systemui_theme_style_dark">Foncé</string>
     <string name="applying_theme_toast">Ajustement du thème en cours\u2026</string>
     <string name="theme_applied_toast">Thème ajusté !</string>
     <string name="substratum_installed_title">Les thèmes système ne sont pas disponibles car Substratum est installé. Désinstaller Substratum pour utiliser les thèmes système à la place.</string>
+    <string name="accent_picker_dialog_title">Choisir une couleur d\'accentuation</string>
+    <string name="theme_accent_picker_title">Couleur d\'accentuation</string>
+    <string name="theme_accent_picker_summary">Choisir la couleur d\'accentuation du thème système</string>
+    <string name="theme_accent_picker_default">Par défaut</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Sélecteur de couleur</string>
@@ -543,7 +548,7 @@
     <string name="status_bar_title">Barre d\'état</string>
     <string name="status_bar_style_title">Style</string>
     <string name="status_bar_clock">Date et heure</string>
-    <string name="clock_title_enable">Position</string>
+    <string name="clock_title_enable">Position de l\'horloge</string>
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
@@ -558,9 +563,12 @@
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Afficher une date personnalisée avant l\'heure</string>
     <string name="clock_date_style">Style de la date</string>
+    <string name="clock_date_position">Position de la date</string>
     <string name="clock_date_format">Format de la date</string>
     <string name="clock_date_string_edittext_title">Doit être au format de date Java \"DateFormat\" par ex : MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Saisir le code</string>
+    <string name="clock_date_right">À droite de l\'horloge</string>
+    <string name="clock_date_left">À gauche de l\'horloge</string>
     <string name="am_pm_clock_normal">Police de taille normale</string>
     <string name="am_pm_clock_small">Police de petite taille</string>
     <string name="am_pm_clock_none">Masqué</string>
