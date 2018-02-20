@@ -79,8 +79,8 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
             "recent_panel_lefty_mode";
     private static final String RECENT_PANEL_SCALE =
             "recent_panel_scale";
-    private static final String RECENT_PANEL_EXPANDED_MODE =
-            "recent_panel_expanded_mode";
+    /*private static final String RECENT_PANEL_EXPANDED_MODE =
+            "recent_panel_expanded_mode";*/
     private static final String RECENT_PANEL_BG_COLOR =
             "recent_panel_bg_color";
     private static final String RECENT_CARD_BG_COLOR =
@@ -103,7 +103,7 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mMaxApps;
     private SystemSettingSwitchPreference mRecentPanelLeftyMode;
     private CustomSeekBarPreference mRecentPanelScale;
-    private ListPreference mRecentPanelExpandedMode;
+    //private ListPreference mRecentPanelExpandedMode;
     private ColorPickerPreference mRecentPanelBgColor;
     private ColorPickerPreference mRecentCardBgColor;
 
@@ -192,14 +192,14 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContext().getContentResolver(),
                 Settings.System.RECENT_PANEL_SCALE_FACTOR, Integer.valueOf(String.valueOf(newValue)));
             return true;
-        } else if (preference == mRecentPanelExpandedMode) {
+        /*} else if (preference == mRecentPanelExpandedMode) {
             int value = Integer.parseInt((String) newValue);
             Settings.System.putInt(getContext().getContentResolver(),
                     Settings.System.RECENT_PANEL_EXPANDED_MODE, value);
             int index = mRecentPanelExpandedMode.findIndexOfValue((String) newValue);
             mRecentPanelExpandedMode.setSummary(
                     mRecentPanelExpandedMode.getEntries()[index]);
-            return true;
+            return true;*/
         } else if (preference == mRecentPanelBgColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
@@ -253,10 +253,10 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
                 Settings.System.RECENT_PANEL_SCALE_FACTOR, 115);
         mRecentPanelScale.setValue(recentScale);
 
-        final int recentExpandedMode = Settings.System.getInt(getContext().getContentResolver(),
+        /*final int recentExpandedMode = Settings.System.getInt(getContext().getContentResolver(),
                 Settings.System.RECENT_PANEL_EXPANDED_MODE, 1);
         mRecentPanelExpandedMode.setValue(recentExpandedMode + "");
-        mRecentPanelExpandedMode.setSummary(mRecentPanelExpandedMode.getEntry());
+        mRecentPanelExpandedMode.setSummary(mRecentPanelExpandedMode.getEntry());*/
     }
 
     private void initializeAllPreferences() {
@@ -299,9 +299,9 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
                 (CustomSeekBarPreference) findPreference(RECENT_PANEL_SCALE);
         mRecentPanelScale.setOnPreferenceChangeListener(this);
 
-        mRecentPanelExpandedMode =
+        /*mRecentPanelExpandedMode =
                 (ListPreference) findPreference(RECENT_PANEL_EXPANDED_MODE);
-        mRecentPanelExpandedMode.setOnPreferenceChangeListener(this);
+        mRecentPanelExpandedMode.setOnPreferenceChangeListener(this);*/
     }
 
     @Override

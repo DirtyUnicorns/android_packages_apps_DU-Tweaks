@@ -26,12 +26,12 @@
             android:max="30"
             android:persistent="false" />
 
-        <ListPreference
+       <!--<ListPreference
             android:key="recent_panel_expanded_mode"
             android:entries="@array/recent_panel_expanded_mode_entries"
             android:entryValues="@array/recent_panel_expanded_mode_values"
             android:title="@string/recent_panel_expanded_mode_title"
-            android:summary="%s" />
+            android:summary="%s" />-->
 
         <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
             android:key="recent_panel_lefty_mode"
