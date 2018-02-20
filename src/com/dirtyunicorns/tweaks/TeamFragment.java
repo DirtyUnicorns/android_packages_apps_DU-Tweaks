@@ -125,16 +125,16 @@ public class TeamFragment extends DialogFragment {
             });
         }
 
-        FrameLayout david = null;
+        FrameLayout drew = null;
         if (view != null) {
-            david = view.findViewById(R.id.david);
+            drew = view.findViewById(R.id.drew);
         }
-        if (david != null) {
-            david.setOnClickListener(new View.OnClickListener() {
+        if (drew != null) {
+            drew.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     try {
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/113279851444921217444"));
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/+AndrewBoren"));
                         startActivity(intent);
                     } catch (ActivityNotFoundException e) {
                         e.printStackTrace();
@@ -305,6 +305,24 @@ public class TeamFragment extends DialogFragment {
             });
         }
 
+        FrameLayout nickreuter = null;
+        if (view != null) {
+            nickreuter = view.findViewById(R.id.nickreuter);
+        }
+        if (nickreuter != null) {
+            nickreuter.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/+NickReuter"));
+                        startActivity(intent);
+                    } catch (ActivityNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        }
+
         FrameLayout nicolas = null;
         if (view != null) {
             nicolas = view.findViewById(R.id.nicolas);
@@ -333,6 +351,24 @@ public class TeamFragment extends DialogFragment {
                 public void onClick(View v) {
                     try {
                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/+Seanhoyt"));
+                        startActivity(intent);
+                    } catch (ActivityNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        }
+
+        FrameLayout will = null;
+        if (view != null) {
+            will = view.findViewById(R.id.will);
+        }
+        if (will != null) {
+            will.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/107452708412699546248"));
                         startActivity(intent);
                     } catch (ActivityNotFoundException e) {
                         e.printStackTrace();
