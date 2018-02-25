@@ -528,6 +528,9 @@
     <string name="media_art_title">Full-screen media cover art</string>
     <string name="media_art_summary">Set full-screen media cover art on the lockscreen</string>
 
+    <!-- DT2S on lockscreen -->
+    <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
+
     <!-- Suppress notification sound/vibration -->
     <string name="notification_sound_vib_screen_on_title">Notifications sound and vibration if screen is on</string>
     <string name="notification_sound_vib_screen_on_never">Never</string>
