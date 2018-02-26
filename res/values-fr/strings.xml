@@ -517,6 +517,9 @@
     <string name="media_art_title">Illustration du titre musical</string>
     <string name="media_art_summary">Activer l\'illustration du titre musical en cours de lecture</string>
 
+    <!-- DT2S on lockscreen -->
+    <string name="double_tap_sleep_lockscreen">Veille par double appui</string>
+
     <!-- Suppress notification sound/vibration -->
     <string name="notification_sound_vib_screen_on_title">Son et vibration des notifications si l\'écran est allumé</string>
     <string name="notification_sound_vib_screen_on_never">Jamais</string>
@@ -580,5 +583,26 @@
     <string name="clock_date_style_uppercase">Majuscule</string>
     <string name="clock_date_format_custom">Personnalisée (format java)</string>
     <string name="status_bar_clock_seconds_title">Afficher les secondes</string>
+
+    <!-- Battery styles -->
+    <string name="battery_style_title">Icône batterie</string>
+    <string name="battery_style_summary">Modifier l\'apparence de l\'icône de la batterie dans la barre d\'état</string>
+    <string name="battery_style_port">Portrait</string>
+    <string name="battery_style_land">Paysage</string>
+    <string name="battery_style_circle">Cercle</string>
+    <string name="battery_style_dotted_circle">Cercle en pointillé</string>
+    <string name="battery_style_text">Texte</string>
+    <string name="battery_style_hidden">Masqué</string>
+
+    <!-- Battery percent -->
+    <string name="show_battery_percent_title">Niveau de charge</string>
+    <string name="show_battery_percent_summary">Afficher le pourcentage de la batterie</string>
+    <string name="battery_percent_hidden">Masqué</string>
+    <string name="battery_percent_outside">À côté de l\'icône</string>
+    <string name="battery_percent_inside">Dans l\'icône</string>
+
+    <!-- Battery icon size -->
+    <string name="large_battery_icon_title">Grande icône</string>
+    <string name="large_battery_icon_summary">Utiliser une grande icône pour la batterie dans la barre d\'état</string>
 
 </resources>
