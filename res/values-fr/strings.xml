@@ -385,7 +385,7 @@
     <string name="fling_longpress_title">Délai d\'appui prolongé</string>
     <string name="fling_longpress_summary">Augmenter ou diminuer délai d\'appui prolongé</string>
     <string name="fling_keyboard_cursors_title">Curseurs dynamiques du clavier</string>
-    <string name="fling_keyboard_cursors_summary">Lorsque le clavier est affiché, les actions par double appui gauche et droit sont remplacées par le contrôle du curseur du clavier</string>
+    <string name="fling_keyboard_cursors_move_summary">Lorsque le clavier est affiché, le contrôle de ses curseurs s\'effectue par appui prolongé gauche ou droite.\nMaintenir l\'appui prolongé pour continuer à déplacer le curseur.\nL\'appui simple sur la barre permet de retourner à l\'écran d\'accueil.</string>
     <string name="fling_logo_opacity_title">Opacité du logo</string>
 
     <!-- Pulse navigation bar music visualizer -->
