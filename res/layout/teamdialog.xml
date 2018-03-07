@@ -76,6 +76,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/alex"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -109,6 +110,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/bosko"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -142,6 +144,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/bret"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -175,6 +178,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/daniel"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -208,6 +212,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/drew"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -241,6 +246,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/edwin"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -274,6 +280,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/james"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -307,6 +314,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/joshchasky"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -340,6 +348,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/joshcorrell"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -373,6 +382,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/josip"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -406,6 +416,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/mark"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -439,6 +450,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/mat"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -472,6 +484,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/nathan"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -505,6 +518,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/nick"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -538,6 +552,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/nickreuter"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -571,6 +586,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/nicolas"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -604,6 +620,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/sean"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 
@@ -637,6 +654,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:src="@drawable/will"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
                                 app:civ_border="true"
                                 app:civ_border_width="3dp" />
 

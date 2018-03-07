@@ -18,6 +18,7 @@
 
     <!-- Dirty Tweaks -->
     <color name="preference_background_color">@*android:color/accent_device_default_light</color>
+    <color name="team_dialog_circle_border_color">@*android:color/accent_device_default_light</color>
 
     <!-- Accent picker -->
     <color name="accent_picker_white_accent">@android:color/white</color>
