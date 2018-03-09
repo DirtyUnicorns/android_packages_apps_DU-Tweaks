@@ -31,6 +31,8 @@
     <string name="ticker_warning_text">L\'aperçu de notification sur la barre d\'état est destiné à être employé comme outil multi-tâche et procure un sentiment de nostalgie. Son utilisation désactive les notifications flottantes.</string>
     <string name="carrier_label_warning_text">Le libellé opérateur personnalisé n\'apparaît pas lors de l\'affichage du panneau de configuration rapide.\nL\'utilisation de frimousse peut provoquer des problèmes d\'affichage sur des fonds clairs.</string>
     <string name="lockscreen_torch_warning_text">La fonctionnalité \"Lampe de poche en mode veille\" est uniquement destinée à être utilisée lorsque l\'écran est éteint.\nL\'utilisation de la lampe de poche de manière prolongée décharge la batterie plus rapidement.</string>
+    <string name="slim_recents_hints_footer">Pour effacer toutes les applications, pincer avec deux doigts sur le panneau des \"Applications récentes Slim\". Pour empêcher une application d\'être effacée, appui prolongé sur son icône pour lui attribuer une étoile.\n\nPour les fonctionnalités supplémentaires telles que l\'écran partagé ou pour forcer l\'arrêt d\'une application, appui prolongé sur l\'onglet de l\'application.</string>
+
 
     <!-- Categories -->
     <!-- System -->
@@ -604,5 +606,43 @@
     <!-- Battery icon size -->
     <string name="large_battery_icon_title">Grande icône</string>
     <string name="large_battery_icon_summary">Utiliser une grande icône pour la batterie dans la barre d\'état</string>
+
+    <!-- Slim Recents panel -->
+    <string name="slim_recents_title">Slim</string>
+    <string name="use_slim_recents_title">Application Slim</string>
+    <string name="use_slim_recents_summary">Utiliser l\'application de Slim au lieu de la vue par défaut pour les applications récentes</string>
+    <string name="slim_recents_settings_title">Paramètres</string>
+    <string name="slim_recents_settings_summary">Réglages de l\'application Slim</string>
+    <string name="recents_max_apps_title">Nombre maximal d\'applications</string>
+    <string name="recent_panel_scale_title">Taille</string>
+    <string name="recent_panel_expanded_mode_title">Affichage étendu</string>
+    <string name="recent_panel_expanded_mode_summary">Mode d\'affichage étendu</string>
+    <string name="recent_panel_expanded_mode_auto">Automatique (Par défaut)</string>
+    <string name="recent_panel_expanded_mode_always">Toujours</string>
+    <string name="recent_panel_expanded_mode_never">Désactivé (rendu rapide)</string>
+    <string name="recent_panel_bg_color_title">Couleur du volet</string>
+    <string name="recent_card_bg_color_title">Couleur de fond</string>
+    <string name="recent_reset_title">Réinitialiser les couleurs</string>
+    <string name="recent_reset_confirm">Réinitialiser les couleurs de l\'application Slim ?</string>
+    <string name="default_auto_string">Par défaut</string>
+    <string name="slim_recents_corner_radius_title">Afficher des cartes aux coins arrondis</string>
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Affichage du panneau à gauche</string>
+    <string name="recent_panel_lefty_mode_summary">Afficher le panneau des applications récentes sur le côté gauche</string>
+    <string name="profile_choose_app">Sélectionner l\'application</string>
+    <string name="dialog_delete_title">Supprimer</string>
+    <string name="dialog_delete_message">Supprimer l\'élément sélectionné ?</string>
+    <string name="slim_blacklist_apps_cat_title">Liste noire</string>
+    <string name="slim_blacklist_apps_title">Applications prohibées</string>
+    <string name="slim_blacklist_apps_summary">Applications à ne pas afficher</string>
+    <string name="slim_blacklist_add_apps_title">Ajouter une application</string>
+    <string name="slim_blacklist_add_apps_summary">Ajouter ou retirer une application</string>
+
+    <!-- AOSP and Slim recents icon pack support -->
+    <string name="recents_icon_pack_title">Paquet d\'icônes</string>
+    <string name="recents_icon_pack_summary">Utiliser un paquet d\'icônes personnalisé</string>
+    <string name="no_iconpacks_summary">Aucun paquet d\'icônes installé</string>
+    <string name="dialog_pick_iconpack_title">Sélectionner un paquet d\'icônes</string>
+    <string name="default_iconpack_title">Icônes par défaut</string>
 
 </resources>
