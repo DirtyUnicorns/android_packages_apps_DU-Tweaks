@@ -13,53 +13,27 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<LinearLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:orientation="vertical"
-    android:layout_marginBottom="10dp">
-
-    <LinearLayout
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/extra_content"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/preference_background_color">
-
-        <ImageView
-            android:id="@+id/expanded_desktop_imageview"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:src="@drawable/dt_expanded_desktop"
-            android:scaleType="center"/>
-
-    </LinearLayout>
-
-    <RelativeLayout
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/user_list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_marginStart="15dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="@string/expanded_desktop_title" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginBottom="8dp"
-            android:layout_below="@+id/textView1"
-            android:textSize="12sp"
-            android:text="@string/expanded_desktop_summary" />
-
-    </RelativeLayout>
-
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:clipToPadding="false" />
+    <TextView
+        android:id="@+id/nothing_to_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?android:textColorPrimary"
+        android:text="@string/expanded_nothing_to_show"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -546,6 +546,7 @@
     <string name="expanded_hide_both">Masquer les deux</string>
     <string name="expanded_nothing_to_show">Pour ajouter une configuration du bureau étendu par application, désactiver \"Activé pour tout\".</string>
     <string name="expanded_desktop_state">État</string>
+    <string name="expanded_enable_for_all">Activer pour tout</string>
     <string name="expanded_enabled_for_all">Activé pour tout</string>
     <string name="expanded_user_configurable">Défini par l\'utilisateur</string>
 

@@ -34,6 +34,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManagerGlobal;
+import android.view.WindowManagerPolicyControl;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
@@ -43,7 +44,6 @@ import android.widget.SectionIndexer;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.view.WindowManagerPolicyControl;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -76,7 +76,6 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
     private AllPackagesAdapter mAllPackagesAdapter;
     private ApplicationsState mApplicationsState;
     private View mEmptyView;
-    private View mProgressBar;
     private ListView mUserListView;
     private FrameLayout mExtraOptions;
     private ApplicationsState.Session mSession;
@@ -121,7 +120,7 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.expanded_desktop_prefs, container, false);
+        return inflater.inflate(R.layout.expanded_desktop, container, false);
     }
 
     @Override
@@ -144,30 +143,26 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mUserListView = (ListView) view.findViewById(R.id.user_list_view);
+        mEmptyView = (TextView) view.findViewById(R.id.nothing_to_show);
         mExtraOptions = (FrameLayout) view.findViewById(R.id.extra_content);
+        mUserListView = (ListView) view.findViewById(R.id.user_list_view);
+
         mUserListView.setAdapter(mAllPackagesAdapter);
         mUserListView.setFastScrollEnabled(true);
         mUserListView.setOnItemClickListener(this);
 
         mSwitchBar = ((SettingsActivity) getActivity()).getSwitchBar();
         mSwitchBar.addOnSwitchChangeListener(this);
-        mSwitchBar.setOnStateOffLabel(R.string.expanded_enabled_for_all);
+        mSwitchBar.setOnStateOffLabel(R.string.expanded_enable_for_all);
         mSwitchBar.setOnStateOnLabel(R.string.expanded_enabled_for_all);
         mSwitchBar.show();
-
-        mEmptyView = view.findViewById(R.id.nothing_to_show);
-        mProgressBar = view.findViewById(R.id.progress_bar);
 
         if (mExpandedDesktopState == STATE_USER_CONFIGURABLE) {
             mSwitchBar.setChecked(false);
             showListView();
-            mExtraOptions.setVisibility(View.GONE);
         } else {
             mSwitchBar.setChecked(true);
-            mProgressBar.setVisibility(View.GONE);
             hideListView();
-            mExtraOptions.setVisibility(View.VISIBLE);
         }
     }
 
@@ -183,7 +178,6 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
         mAllPackagesAdapter.notifyDataSetInvalidated();
         hideListView();
         transactFragment();
-        mExtraOptions.setVisibility(View.VISIBLE);
     }
 
     private void userConfigurableSettings() {
@@ -192,7 +186,6 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
         WindowManagerPolicyControl.reloadFromSetting(getActivity());
         mAllPackagesAdapter.notifyDataSetInvalidated();
         showListView();
-        mExtraOptions.setVisibility(View.GONE);
         removeFragment();
     }
 
@@ -216,11 +209,13 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
     private void hideListView() {
         mUserListView.setVisibility(View.GONE);
         mEmptyView.setVisibility(View.VISIBLE);
+        mExtraOptions.setVisibility(View.VISIBLE);
     }
 
     private void showListView() {
-        mUserListView.setVisibility(View.VISIBLE);
         mEmptyView.setVisibility(View.GONE);
+        mExtraOptions.setVisibility(View.GONE);
+        mUserListView.setVisibility(View.VISIBLE);
     }
 
     private void writeValue(String value) {
@@ -258,7 +253,6 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
     public void onRebuildComplete(ArrayList<ApplicationsState.AppEntry> entries) {
         if (entries != null) {
             handleAppEntries(entries);
-            mAllPackagesAdapter.notifyDataSetChanged();
         }
     }
 
@@ -272,6 +266,15 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
 
     @Override
     public void onAllSizesComputed() {
+    }
+
+    @Override
+    public void onLauncherInfoChanged() {
+    }
+
+    @Override
+    public void onLoadEntriesCompleted() {
+        rebuild();
     }
 
     private void handleAppEntries(List<ApplicationsState.AppEntry> entries) {
@@ -308,10 +311,6 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
         mEntryMap.clear();
         for (ApplicationsState.AppEntry e : entries) {
             mEntryMap.put(e.info.packageName, e);
-        }
-
-        if (mProgressBar != null) {
-            mProgressBar.setVisibility(View.GONE);
         }
 
         if (mExpandedDesktopState != STATE_USER_CONFIGURABLE) {
@@ -595,15 +594,6 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
             }
             return show;
         }
-    }
-
-    @Override
-    public void onLauncherInfoChanged() {
-    }
-
-    @Override
-    public void onLoadEntriesCompleted() {
-        rebuild();
     }
 
     @Override
