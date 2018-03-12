@@ -35,11 +35,11 @@
 
     </PreferenceCategory>
 
-    <!--com.dirtyunicorns.tweaks.preferences.SecureSettingSwitchPreference
+    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
         android:summary="@string/qs_tile_title_visibility_summary"
-        android:defaultValue="true"/-->
+        android:defaultValue="true"/>
 
     <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="qs_footer_warnings"
