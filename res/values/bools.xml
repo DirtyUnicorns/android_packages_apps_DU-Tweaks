@@ -26,6 +26,6 @@
     <bool name="has_device_extras">false</bool>
 
     <!-- Whether to display misc options -->
-    <bool name="has_misc_options">false</bool>
+    <bool name="has_misc_options">true</bool>
 
 </resources>
