@@ -229,6 +229,9 @@
     <string name="ticker_disabled">Désactivé</string>
     <string name="ticker_enabled">Aperçu activé</string>
     <string name="ticker_media_enabled">Aperçu pour les notifications et la musique</string>
+    <string name="ticker_animation_mode_title">Style</string>
+    <string name="ticker_animation_mode_alpha_fade">Fondu</string>
+    <string name="ticker_animation_mode_scroll">Défilement</string>
 
     <!-- Notification light dialogs -->
     <string name="ok">OK</string>
@@ -549,6 +552,9 @@
     <string name="expanded_enable_for_all">Activer pour tout</string>
     <string name="expanded_enabled_for_all">Activé pour tout</string>
     <string name="expanded_user_configurable">Défini par l\'utilisateur</string>
+    <string name="expanded_desktop_style">Style</string>
+    <string name="expanded_desktop_style_description">Régler le style par défaut du bureau étendu</string>
+    <string name="expanded_desktop_options">Options</string>
 
     <!-- Status bar clock options -->
     <string name="status_bar_title">Barre d\'état</string>
