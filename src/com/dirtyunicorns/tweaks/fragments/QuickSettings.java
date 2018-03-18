@@ -40,9 +40,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
 
     private static final String QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_COLUMNS = "qs_layout_columns";
+    private static final String QS_PANEL_ALPHA = "qs_panel_alpha";
 
     private ListPreference mQuickPulldown;
     private CustomSeekBarPreference mQsColumns;
+    private CustomSeekBarPreference mQsPanelAlpha;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,7 +55,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
 
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
-        int quickPulldownValue = Settings.System.getIntForUser(getContentResolver(),
+        int quickPulldownValue = Settings.System.getIntForUser(resolver,
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
@@ -67,6 +69,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
         mQsColumns.setMax(defaultMaxQsColumns);
         mQsColumns.setValue(columnsQs);
         mQsColumns.setOnPreferenceChangeListener(this);
+
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
+        mQsPanelAlpha.setValue(qsPanelAlpha);
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -81,6 +89,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
             int qsColumns = (Integer) newValue;
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.QS_LAYOUT_COLUMNS, qsColumns * 1);
+            return true;
+        } else if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) newValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_ALPHA, bgAlpha,
+                    UserHandle.USER_CURRENT);
             return true;
         }
         return false;
