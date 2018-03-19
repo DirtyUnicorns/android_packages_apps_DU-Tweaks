@@ -18,10 +18,12 @@
 
 package com.dirtyunicorns.tweaks;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.os.UserHandle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,14 +38,21 @@ import com.android.internal.utils.du.ActionHandler;
 import com.android.internal.utils.du.Config.ActionConfig;
 import com.android.settings.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CustomActionListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private Context mContext;
     private List<ActionConfig> mCustomActions = new ArrayList<ActionConfig>();
 
+    private IOverlayManager mOverlayManager;
+
     public CustomActionListAdapter(Context context) {
         mContext = context;
         mInflater = LayoutInflater.from(context);
+        mOverlayManager = IOverlayManager.Stub.asInterface(
+                ServiceManager.getService(Context.OVERLAY_SERVICE));
         reloadActions();
     }
 
@@ -106,7 +115,7 @@ public class CustomActionListAdapter extends BaseAdapter {
 
         ActionConfig config = getItem(position);
         holder.title.setText(config.getLabel());
-        holder.icon.setBackgroundResource(R.drawable.fab_accent);
+        holder.icon.setBackgroundResource(isUsingWhiteAccent() ? R.drawable.fab_white : R.drawable.fab_accent);
         holder.icon.setImageDrawable(config.getDefaultIcon(ctx));
         holder.summary.setVisibility(View.GONE);
 
@@ -118,5 +127,16 @@ public class CustomActionListAdapter extends BaseAdapter {
         TextView title;
         TextView summary;
         ImageView icon;
+    }
+
+    private boolean isUsingWhiteAccent() {
+        OverlayInfo themeInfo = null;
+        try {
+            themeInfo = mOverlayManager.getOverlayInfo("com.accents.white",
+                    UserHandle.USER_CURRENT);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return themeInfo != null && themeInfo.isEnabled();
     }
 }
