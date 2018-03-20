@@ -37,7 +37,7 @@
 
     <PreferenceCategory
         android:key="quick_settings_animations"
-        android:title="@string/animation_title"/>
+        android:title="@string/qs_animation_options_title"/>
 
         <ListPreference
             android:key="qs_tile_animation_style"
@@ -51,6 +51,13 @@
             android:title="@string/qs_tile_animation_duration_title"
             android:entries="@array/qs_tile_animation_duration_entries"
             android:entryValues="@array/qs_tile_animation_duration_values"
+            android:persistent="false" />
+
+        <ListPreference
+            android:key="qs_tile_animation_interpolator"
+            android:title="@string/qs_tile_animation_interpolator_title"
+            android:entries="@array/qs_tile_animation_interpolator_entries"
+            android:entryValues="@array/qs_tile_animation_interpolator_values"
             android:persistent="false" />
 
 </PreferenceScreen>
