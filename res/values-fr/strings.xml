@@ -518,6 +518,11 @@
     <string name="screen_off_animation_crt">Tube cathodique</string>
     <string name="screen_off_animation_scale">Réduction</string>
 
+    <!-- Screenshot editor -->
+    <string name="screenshot_edit_app">Éditeur de capture d\'écran</string>
+    <string name="screenshot_edit_app_summary">Sélectionner l\'éditeur d\'image à utiliser pour modifier les captures d\'écran</string>
+    <string name="screenshot_edit_app_no_editor">Aucun éditeur d\'image disponible</string>
+
     <!-- Lockscreen Media art -->
     <string name="media_art_title">Illustration du titre musical</string>
     <string name="media_art_summary">Activer l\'illustration du titre musical en cours de lecture</string>
@@ -651,5 +656,8 @@
     <string name="no_iconpacks_summary">Aucun paquet d\'icônes installé</string>
     <string name="dialog_pick_iconpack_title">Sélectionner un paquet d\'icônes</string>
     <string name="default_iconpack_title">Icônes par défaut</string>
+
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Opacité</string>
 
 </resources>
