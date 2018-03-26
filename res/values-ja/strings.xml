@@ -69,8 +69,6 @@
     <!-- Multitasking -->
     <string name="headsup_title">ヘッドアップ</string>
     <string name="headsup_summary">ヘッドアップ設定を調整する</string>
-    <string name="omniswitch_title">Omniswitch</string>
-    <string name="omniswitch_summary">OmniSwitch設定オプション</string>
     <string name="recents_title">最近</string>
     <string name="recents_summary">”最近”設定を変更</string>
 

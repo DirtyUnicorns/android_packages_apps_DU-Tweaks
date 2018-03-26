@@ -36,11 +36,11 @@
     <!-- Categories -->
     <!-- System -->
     <string name="device_extras_title">Device extras</string>
-    <string name="device_extras_summary">Tweaks specific to your device</string>
+    <string name="device_extras_summary">Device specific tweaks</string>
     <string name="miscellaneous_title">Miscellaneous</string>
-    <string name="miscellaneous_summary">Tweaks that do not fit in other categories</string>
+    <string name="miscellaneous_summary">Miscellaneous tweaks</string>
     <string name="powermenu_title">Power menu</string>
-    <string name="powermenu_summary">Configure the power menu to include items such as airplane mode or screenshot</string>
+    <string name="powermenu_summary">Configure the power menu on and off the lockscreen with many items</string>
     <!-- Lockscreen -->
     <string name="fingerprint_prefs_title">Fingerprint prefs</string>
     <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>
@@ -71,8 +71,6 @@
     <!-- Multitasking -->
     <string name="headsup_title">Heads up</string>
     <string name="headsup_summary">Configure heads up options</string>
-    <string name="omniswitch_title">Omniswitch</string>
-    <string name="omniswitch_summary">Configure OmniSwitch options</string>
     <string name="recents_title">Recents</string>
     <string name="recents_summary">Configure recents options</string>
 
@@ -108,7 +106,9 @@
     <string name="systemui_theme_style_dark">Dark</string>
     <string name="applying_theme_toast">Applying theme, please wait...</string>
     <string name="theme_applied_toast">Theme applied!</string>
-    <string name="substratum_installed_title">System themes are unavailable because Substratum is installed. Uninstall it if you wish to use these themes instead.</string>
+    <string name="disable_themes_installed_title">System themes are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use these themes instead.</string>
+    <string name="disable_accents_installed_title">Accent picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the accent picker.</string>
+    <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
     <string name="accent_picker_dialog_title">Select an accent color</string>
     <string name="theme_accent_picker_title">Accent color</string>
     <string name="theme_accent_picker_summary">Select system theme accent color</string>
@@ -506,13 +506,13 @@
     <string name="hardware_keys_disable_title">Disable navigation buttons</string>
 
     <!-- Torch Power button gestures -->
-    <string name="torch_power_button_gesture_title">Lockscreen torch</string>
+    <string name="torch_power_button_gesture_title">Screen off torch</string>
     <string name="torch_power_button_gesture_none">Disabled</string>
-    <string name="torch_power_button_gesture_dt">Double tap</string>
-    <string name="torch_power_button_gesture_lp">Long press</string>
+    <string name="torch_power_button_gesture_dt">Double tap power button</string>
+    <string name="torch_power_button_gesture_lp">Long press power button</string>
 
     <!-- Ambient music -->
-    <string name="ambient_display_category">Ambient display options</string>
+    <string name="ambient_display_category">Ambient options</string>
     <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
     <string name="force_ambient_for_media_pref_summary">Configure the Ambient music ticker</string>
     <string name="ambient_ticker_footer">This feature allows for the ability to show the current music track info on the lockscreen with or without Ambient display enabled.\n\nYou can select from two layouts, normal and minimal. While this feature takes advantage of ambient display, it does not depend on it. It can be triggered without having ambient display enabled by using the (forced) options.\n\nNormal view includes the lockscreen clock, date and ticker.\n\nMinimal view includes just the ticker at the center of the screen.</string>
@@ -631,10 +631,10 @@
 
     <!-- Slim Recents panel -->
     <string name="slim_recents_title">Slim recents</string>
-    <string name="use_slim_recents_title">Use alternative recents panel</string>
-    <string name="use_slim_recents_summary">Use Slim Recents instead of the default recents view</string>
+    <string name="use_slim_recents_title">Allow Slim recents</string>
+    <string name="use_slim_recents_summary">Enables Slim recents instead of the default recents view</string>
     <string name="slim_recents_settings_title">Slim recents settings</string>
-    <string name="slim_recents_settings_summary">View the settings for Slim Recents</string>
+    <string name="slim_recents_settings_summary">View the settings for Slim recents</string>
     <string name="recents_max_apps_title">Max allowed apps</string>
     <string name="recent_panel_scale_title">Size</string>
     <string name="recent_panel_expanded_mode_title">Previews expanded mode</string>

@@ -74,8 +74,6 @@
     <!-- Multitasking -->
     <string name="headsup_title">Notifications flottantes</string>
     <string name="headsup_summary">Réglages des notifications flottantes</string>
-    <string name="omniswitch_title">Omniswitch</string>
-    <string name="omniswitch_summary">Réglages d\'OmniSwitch</string>
     <string name="recents_title">Applications récentes</string>
     <string name="recents_summary">Réglages des applications récentes</string>
 

@@ -72,8 +72,6 @@
     <!-- Multitasking -->
     <string name="headsup_title">浮动通知</string>
     <string name="headsup_summary">配置浮动通知选项</string>
-    <string name="omniswitch_title">OmniSwitch</string>
-    <string name="omniswitch_summary">配置OmniSwitch选项</string>
     <string name="recents_title">最近任务</string>
     <string name="recents_summary">配置最近任务选项</string>
 
