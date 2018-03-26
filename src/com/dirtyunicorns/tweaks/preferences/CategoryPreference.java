@@ -84,7 +84,7 @@ public class CategoryPreference extends Preference {
 
         ImageView imageview = (ImageView) holder.findViewById(android.R.id.icon);
         imageview.getDrawable().setColorFilter(getContext().getResources().getColor(
-                isUsingWhiteAccent() ? R.color.BottomBarBackgroundColor : android.R.color.white), PorterDuff.Mode.SRC_IN);
+                isUsingWhiteAccent() ? R.color.dirty_tweaks_light_category_icon_tint : R.color.dirty_tweaks_dark_category_icon_tint), PorterDuff.Mode.SRC_IN);
     }
 
     private boolean isUsingWhiteAccent() {
