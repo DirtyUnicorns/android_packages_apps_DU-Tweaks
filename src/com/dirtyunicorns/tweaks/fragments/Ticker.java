@@ -51,7 +51,6 @@ public class Ticker extends SettingsPreferenceFragment implements Preference.OnP
         int tickerMode = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.STATUS_BAR_SHOW_TICKER,
                 0, UserHandle.USER_CURRENT);
-        updatePrefs();
         mTickerMode.setValue(String.valueOf(tickerMode));
         mTickerMode.setSummary(mTickerMode.getEntry());
 
@@ -62,6 +61,7 @@ public class Ticker extends SettingsPreferenceFragment implements Preference.OnP
                 1, UserHandle.USER_CURRENT);
         mTickerAnimation.setValue(String.valueOf(tickerAnimationMode));
         mTickerAnimation.setSummary(mTickerAnimation.getEntry());
+        updatePrefs();
     }
 
     @Override
@@ -95,7 +95,10 @@ public class Ticker extends SettingsPreferenceFragment implements Preference.OnP
         if (enabled) {
             Settings.System.putInt(resolver,
                 Settings.System.STATUS_BAR_SHOW_TICKER, 0);
+            Settings.System.putInt(resolver,
+                Settings.System.STATUS_BAR_TICKER_ANIMATION_MODE, 1);
             mTickerMode.setEnabled(false);
+            mTickerAnimation.setEnabled(false);
         }
     }
 
