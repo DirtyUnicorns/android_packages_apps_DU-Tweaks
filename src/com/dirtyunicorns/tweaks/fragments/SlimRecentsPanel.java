@@ -19,15 +19,15 @@ package com.dirtyunicorns.tweaks.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.ContentResolver;
+//import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
+//import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
-import android.database.ContentObserver;
+//import android.database.ContentObserver;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -36,7 +36,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.util.Log;
+//import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -188,7 +188,7 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
         if (preference == mRecentPanelLeftyMode) {
             Settings.System.putInt(getContext().getContentResolver(),
                     Settings.System.RECENT_PANEL_GRAVITY,
-                    ((Boolean) newValue) ? Gravity.LEFT : Gravity.RIGHT);
+                    ((Boolean) newValue) ? Gravity.START : Gravity.END);
             return true;
         } else if (preference == mRecentPanelScale) {
             Settings.System.putInt(getContext().getContentResolver(),
@@ -244,7 +244,7 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
 
     private void updateRecentPanelPreferences() {
         final boolean recentLeftyMode = Settings.System.getInt(getContext().getContentResolver(),
-                Settings.System.RECENT_PANEL_GRAVITY, Gravity.RIGHT) == Gravity.LEFT;
+                Settings.System.RECENT_PANEL_GRAVITY, Gravity.END) == Gravity.START;
         mRecentPanelLeftyMode.setChecked(recentLeftyMode);
 
         mMaxApps.setValue(Settings.System.getIntForUser(getContext().getContentResolver(),
