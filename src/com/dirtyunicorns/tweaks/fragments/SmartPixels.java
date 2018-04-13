@@ -19,9 +19,11 @@ package com.dirtyunicorns.tweaks.fragments;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.database.ContentObserver;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
-import android.os.PowerManager;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
@@ -41,10 +43,16 @@ import com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference;
 public class SmartPixels extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SmartPixels";
-
+    private static final String ENABLE = "smart_pixels_enable";
     private static final String ON_POWER_SAVE = "smart_pixels_on_power_save";
 
+    private Handler mHandler = new Handler();
+    private SmartPixelsObserver mSmartPixelsObserver;
+    private SystemSettingSwitchPreference mSmartPixelsEnable;
     private SystemSettingSwitchPreference mSmartPixelsOnPowerSave;
+
+    private boolean mIsSmartPixelsEnabled;
+    private boolean mIsSmartPixelsOnPowerSave;
 
     ContentResolver resolver;
 
@@ -54,21 +62,13 @@ public class SmartPixels extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.smart_pixels);
 
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.smart_pixels_warning_text);
+
         resolver = getActivity().getContentResolver();
 
+        mSmartPixelsEnable = (SystemSettingSwitchPreference) findPreference(ENABLE);
         mSmartPixelsOnPowerSave = (SystemSettingSwitchPreference) findPreference(ON_POWER_SAVE);
-
-        updateDependency();
-
-        PreferenceScreen prefSet = getPreferenceScreen();
-
-        boolean enableSmartPixels = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        Preference SmartPixels = findPreference("smart_pixels");
-
-        if (!enableSmartPixels){
-            prefSet.removePreference(SmartPixels);
-        }
+        mSmartPixelsObserver = new SmartPixelsObserver(mHandler);
     }
 
     @Override
@@ -79,29 +79,58 @@ public class SmartPixels extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
+        if (mSmartPixelsObserver != null) {
+            mSmartPixelsObserver.register();
+        }
     }
 
     @Override
     public void onPause() {
         super.onPause();
+        if (mSmartPixelsObserver != null) {
+            mSmartPixelsObserver.unregister();
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        updateDependency();
         return true;
     }
 
-    private void updateDependency() {
-        boolean mUseOnPowerSave = (Settings.System.getIntForUser(
+    private void updatePreferences() {
+        mIsSmartPixelsEnabled = (Settings.System.getIntForUser(
+                resolver, Settings.System.SMART_PIXELS_ENABLE,
+                0, UserHandle.USER_CURRENT) == 1);
+        mIsSmartPixelsOnPowerSave = (Settings.System.getIntForUser(
                 resolver, Settings.System.SMART_PIXELS_ON_POWER_SAVE,
                 0, UserHandle.USER_CURRENT) == 1);
-        PowerManager pm = (PowerManager)getActivity().getSystemService(Context.POWER_SERVICE);
-        if (pm.isPowerSaveMode() && mUseOnPowerSave) {
-            mSmartPixelsOnPowerSave.setEnabled(false);
-        } else {
-            mSmartPixelsOnPowerSave.setEnabled(true);
-        }
+
+        mSmartPixelsEnable.setChecked(mIsSmartPixelsEnabled);
+        mSmartPixelsOnPowerSave.setChecked(mIsSmartPixelsOnPowerSave);
     }
 
+    private class SmartPixelsObserver extends ContentObserver {
+        public SmartPixelsObserver(Handler handler) {
+            super(handler);
+        }
+
+        public void register() {
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.SMART_PIXELS_ENABLE),
+                    false, this, UserHandle.USER_CURRENT);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.SMART_PIXELS_ON_POWER_SAVE),
+                    false, this, UserHandle.USER_CURRENT);
+        }
+
+        public void unregister() {
+            resolver.unregisterContentObserver(this);
+        }
+
+        @Override
+        public void onChange(boolean selfChange) {
+            super.onChange(selfChange);
+            updatePreferences();
+        }
+    }
 }
