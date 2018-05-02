@@ -14,7 +14,9 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+            android:title="@string/notifications_title" >
 
     <ListPreference
         android:key="notification_sound_vib_screen_on"
@@ -29,4 +31,5 @@
         android:summary="@string/less_notification_sounds_summary"
         android:entries="@array/less_notification_sounds_entries"
         android:entryValues="@array/less_notification_sounds_values" />
+
 </PreferenceScreen>

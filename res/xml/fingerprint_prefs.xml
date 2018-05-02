@@ -14,7 +14,9 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+            android:title="@string/fingerprint_prefs_title" >
 
     <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="fingerprint_success_vib"

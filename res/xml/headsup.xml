@@ -14,7 +14,9 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+            android:title="@string/headsup_title" >
 
     <com.dirtyunicorns.tweaks.preferences.GlobalSettingSwitchPreference
         android:key="heads_up_notifications_enabled"
