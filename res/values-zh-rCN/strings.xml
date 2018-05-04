@@ -29,6 +29,7 @@
   <string name="carrier_label_warning_text">请注意，自定义运营商标签在扩展状态栏区域中不可用，其也被称为快速设置区域。使用 emoji 表情作为您的运营商标签可能会在亮色背景下导致一些可见度问题。</string>
   <string name="lockscreen_torch_warning_text">锁屏手电筒功能只在屏幕关闭时オ能使用。还需注意，长时间打开手电筒会增加耗电。</string>
   <string name="slim_recents_hints_footer">清除所有应用程序，在面板上用两个手指捏合。要阻止应用被清除，请长按其图标以对其进行标记。\n\n对于最近更新特性比如多窗口和终止应用，请长按面板中的应用窗口。\n</string>
+  <string name="smart_pixels_warning_text">智能像素是一种省电功能。根据您决定关闭的像素数量，您可以看到手机续航时间有了显著的改善。为了良好的用户体验，建议您将禁用的像素数量设置为75%。</string>
   <!-- Categories -->
   <!-- System -->
   <string name="device_extras_title">设备附加</string>
@@ -357,6 +358,17 @@
   <string name="fling_keyboard_cursors_title">动态键盘光标操作</string>
   <string name="fling_keyboard_cursors_move_summary">当显示键盘时，长按左键或右键可将指针向左或向右移动。\n长按按键以移动指针，单击按键栏回到主屏幕。</string>
   <string name="fling_logo_opacity_title">Fling logo 不透明度</string>
+  <string name="fling_factory_reset_title">重置默认设置</string>
+  <string name="fling_factory_reset_confirm">你确定重置Smartbar为默认设置?</string>
+  <string name="fling_backup_current_config_title">保存配置文件</string>
+  <string name="fling_restore_config_title">还原配置文件</string>
+  <string name="fling_config_name_edit_dialog_title">Fling 配置文件名称</string>
+  <string name="fling_config_name_edit_dialog_message">输入名称或者留空</string>
+  <string name="fling_config_dialog_title">Fling 配置文件</string>
+  <string name="fling_config_backup_success_toast">Smartbar 配置保存成功</string>
+  <string name="fling_config_restore_success_toast">Smartbar 配置还原成功</string>
+  <string name="fling_config_backup_error_toast">保存 Smartbar 配置文件时出错</string>
+  <string name="fling_config_restore_error_toast">恢复 Smart Bar 配置文件时出错</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">当扬声器正在播放音频时，某些音频脉冲将不能正常工作</string>
   <string name="pulse_settings">Pulse</string>
@@ -625,4 +637,14 @@
   <string name="qs_set_animation_style">%1$s</string>
   <string name="qs_set_animation_duration">%1$s</string>
   <string name="qs_set_animation_interpolator">%1$s</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">智能像素</string>
+  <string name="smart_pixels_summary">通过关闭额外的像素来节省电量</string>
+  <string name="smart_pixels_enable_title">启用智能像素</string>
+  <string name="smart_pixels_enable_summary">减少像素以降低功耗</string>
+  <string name="smart_pixels_on_power_save_title">省电模式时自动启用</string>
+  <string name="smart_pixels_on_power_save_summary">开启省电模式时自动启用智能像素</string>
+  <string name="smart_pixels_percent">要禁用的像素百分比</string>
+  <string name="smart_pixels_shift_title">烧屏保护</string>
+  <string name="smart_pixels_shift_summary">通过经常移动像素来防止 OLED 屏幕的设备发生烧屏</string>
 </resources>

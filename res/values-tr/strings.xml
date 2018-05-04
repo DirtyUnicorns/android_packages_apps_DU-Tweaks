@@ -29,6 +29,7 @@
   <string name="carrier_label_warning_text">Özel operatör etiketinin, hızlı ayar alanı olarak da bilinen genişletilmiş durum çubuğu alanında bulunmaması önerilir. Ayrıca, operatör etiketi olarak ifadeleri kullanmak, aydınlık arka planlarda görünürlük sorunlarına neden olabilir.</string>
   <string name="lockscreen_torch_warning_text">Kilit ekranı el feneri özelliği sadece ekran kapatıldığında kullanılır. Ayrıca el fenerinin uzun bir süre açık kalması pilinizin daha hızlı bitmesine neden olur.</string>
   <string name="slim_recents_hints_footer">Tüm uygulamaları temizlemek için, panelde iki parmağını sıkıştırın.\n\nBirden fazla pencere gibi yeni özellikler veya bir uygulamayı sonlandırmak için paneldeki herhangi bir uygulama penceresine uzun basın.</string>
+  <string name="smart_pixels_warning_text">Akıllı pikseller bir güç tasarrufu özelliğidir. Kaç piksele karar verdiğinize bağlı olarak, pil ömründe önemli bir iyileşme görebilirsiniz. İyi bir kullanıcı deneyimi için devre dışı bırakılmış piksel miktarını yüzde 75 olarak ayarlamanızı öneririz.</string>
   <!-- Categories -->
   <!-- System -->
   <string name="device_extras_title">Cihaz ekstraları</string>
@@ -61,7 +62,7 @@
   <string name="traffic_summary">Durum çubuğundaki ağ trafiği göstergelerini etkinleştirin ve yapılandırın</string>
   <!-- Navigation -->
   <string name="buttons_title">Tuşlar</string>
-  <string name="buttons_summary">Fiziksel tuşları ve/veya ses tuşları ile uyandırma seçeneklerini yapılandırın</string>
+  <string name="buttons_summary">Fiziksel tuşları ve/veya ses tuşları eylemleri seçeneklerini yapılandırın</string>
   <string name="navigationbar_title">Gezinme çubuğu</string>
   <string name="navigationbar_summary">Smartbar, fling veya pulse\'u yapılandırın</string>
   <!-- Multitasking -->
@@ -108,7 +109,7 @@
   <string name="theme_accent_picker_default">Varsayılan</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Renk Seçici</string>
-  <string name="press_color_to_apply">Uygulamak için aşağıdaki renge basın</string>
+  <string name="press_color_to_apply">Uygulamak için aşağıdaki renge dokunun</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>
   <string name="hex">Hex:</string>
@@ -168,7 +169,7 @@
   <string name="qs_tile_title_visibility_title">Kare başlıkları</string>
   <string name="qs_tile_title_visibility_summary">Hızlı ayarlar karelerinin altındaki başlıkları göster</string>
   <!-- Clear all recents -->
-  <string name="aosp_recents_title">AOSP son kullanılanlar</string>
+  <string name="aosp_recents_title">AOSP son uygulamalar</string>
   <string name="show_clear_all_recents_button_title">Tümünü temizle tuşu</string>
   <string name="show_clear_all_recents_button_summary_on">Tümünü temizleme tuşunu göster</string>
   <string name="show_clear_all_recents_button_summary_off">AOSP tümünü temizle tuşunu göster</string>
@@ -256,9 +257,9 @@
   <string name="battery_light_only_full_charge_title">Sadece tam şarj olduğunda yanar</string>
   <string name="battery_light_list_title">Renkler</string>
   <string name="battery_light_low_color_title">Düşük pil</string>
-  <string name="battery_light_medium_color_title">Şarj Oluyor</string>
-  <string name="battery_light_full_color_title">Şarj (%90)</string>
-  <string name="battery_light_really_full_color_title">Şarj (%100)</string>
+  <string name="battery_light_medium_color_title">Şarj oluyor</string>
+  <string name="battery_light_full_color_title">Şarj oluyor (90%)</string>
+  <string name="battery_light_really_full_color_title">Şarj oldu (100%)</string>
   <string name="edit_battery_settings">Pil ayarlarını düzenle</string>
   <string name="led_color_green">Yeşil</string>
   <string name="led_color_red">Kırmızı</string>
@@ -268,9 +269,9 @@
   <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Kilit ekranı alt kısayollarını yapılandır</string>
   <!-- Toast icons -->
   <string name="toast_icon_title">Bildirim simgesi</string>
-  <string name="toast_icon_summary">Bildirim ile ilgili uygulama simgesini göster</string>
+  <string name="toast_icon_summary">Bildirim ile ilgili uygulama simgesini görüntüle</string>
   <!-- Volume rocker wake -->
-  <string name="volume_rocker_wake_title">Ses tuşuyla uyanma</string>
+  <string name="volume_rocker_wake_title">Ses tuşuyla uyandır</string>
   <string name="volume_rocker_wake_summary">Ses tuşlarına basarak cihazınızı uyandırın</string>
   <!-- DUI -->
   <string name="navbar_interface_title">Arayüz</string>
@@ -279,7 +280,7 @@
   <string name="navbar_mode_summary">Cihazınızda hangi gezinme modunun kullanılacağını seçin</string>
   <string name="navbar_visibility">Gezinme çubuğuna izin ver</string>
   <string name="navigationbar_settings_title">Gezinme çubuğu</string>
-  <string name="navigationbar_settings_summary">Gezintme stili ve davranışını özelleştir</string>
+  <string name="navigationbar_settings_summary">Gezinme stilini ve davranışını özelleştirin</string>
   <string name="navbar_general_title">Gelişmiş</string>
   <string name="navigation_bar_left_title">Sol el modu</string>
   <string name="navigation_bar_left_summary">Yatay modda ekranın sol tarafına gezinme çubuğunu yerleştirir</string>
@@ -293,7 +294,7 @@
   <string name="profile_applist_title">Uygulamalar</string>
   <string name="default_string">Varsayılan</string>
   <string name="default_settings">Varsayılan ayarlar</string>
-  <string name="default_settings_summary">Standart AOSP gezinme çubuğu</string>
+  <string name="default_settings_summary">Varsayılan AOSP gezinme çubuğu</string>
   <!-- Actions dialog and default task values set in ActionPreference xml-->
   <string name="choose_action_title">Eylem seçin</string>
   <string name="action_entry_default_action">Varsayılan ayarlar</string>
@@ -301,7 +302,7 @@
   <string name="action_entry_custom_action">Özel eylem seçin</string>
   <!-- Fling -->
   <string name="fling_settings">Fling ayarları</string>
-  <string name="fling_settings_summary">Çok benzersiz ve tamamen uyarlanabilir bir hareket tabanlı gezinme çubuğu</string>
+  <string name="fling_settings_summary">Çok özgün ve tamamen özelleştirilebilir hareket tabanlı bir gezinme çubuğu</string>
   <string name="fling_interface">Fling</string>
   <string name="fling_enable_title">Fling\'i etkinleştir</string>
   <string name="fling_back_home_policy">Geri ve Ana ekran her zaman ayarlanmalıdır. Bir Geri veya Ana ekran atamasını değiştirmek için önce istediğiniz atamayı ayarlayın.\n\nAyrıca, bir çift dokunma eylemi ayarlamak, bir seferlik tek dokunuşu geciktirecektir.</string>
@@ -323,8 +324,8 @@
   <string name="fling_long_left_press">Sol tarafa uzun basma</string>
   <string name="long_swipe_portrait_title">Dikey</string>
   <string name="long_swipe_landscape_title">Yatay</string>
-  <string name="portrait_right_swipe_title">Sağ dikey kaydırma</string>
-  <string name="portrait_left_swipe_title">Sol dikey kaydırma</string>
+  <string name="portrait_right_swipe_title">Sağa dikey kaydırma</string>
+  <string name="portrait_left_swipe_title">Sola dikey kaydırma</string>
   <string name="landscape_right_swipe_title">Yatay sağa kaydırma</string>
   <string name="landscape_left_swipe_title">Yatay sola kaydırma</string>
   <string name="vertical_up_swipe_title">Dikey yukarı kaydırma</string>
@@ -342,27 +343,38 @@
   <string name="fling_appearance">Görünüm</string>
   <string name="fling_show_logo_title">Fling logosu göster</string>
   <string name="fling_animate_logo_title">Logo animasyonu</string>
-  <string name="fling_animate_logo_summary">Donunma etkinliklerinde logo animasyonu</string>
+  <string name="fling_animate_logo_summary">Dokunma hareketlerinde logo animasyonunu hareketlendirir</string>
   <string name="fling_logo_color">Logo rengi</string>
   <string name="fling_logo_custom_logo_pick_title">Özel logo simgesi</string>
   <string name="fling_logo_custom_logo_image_pick_title">Özel logo resmi</string>
   <string name="fling_logo_custom_logo_reset_title">Logo simgesini sıfırla</string>
   <string name="fling_show_ripple_title">Dalgalanma göster</string>
-  <string name="fling_show_ripple_summary">Dokunma etkinliklerinde dalgalanma efekti</string>
+  <string name="fling_show_ripple_summary">Dokunma etkinliklerinde dalgalanma efekti gösterir</string>
   <string name="fling_ripple_color">Dalgalanma rengi</string>
-  <string name="fling_longpress_timeout_label_left">Az gecikme</string>
-  <string name="fling_longpress_timeout_label_right">Daha fazla gecikme</string>
+  <string name="fling_longpress_timeout_label_left">Daha az gecikme</string>
+  <string name="fling_longpress_timeout_label_right">Daha çok gecikme</string>
   <string name="fling_longpress_title">Uzun basma gecikmesi</string>
   <string name="fling_longpress_summary">Uzun dokunma eylemini gerçekleştirmek için gereken süreyi arttırma veya azaltma</string>
   <string name="fling_keyboard_cursors_title">Dinamik klavye imleçleri eylemi</string>
   <string name="fling_keyboard_cursors_move_summary">Klavye açıkken, imleci sola veya sağa taşımak için sola veya sağa uzun basın.\nİmleci hareket ettirmeye devam etmek için uzun basmaya devam edin, ana ekrana gitmek için çubuğa bir kez dokunun.</string>
   <string name="fling_logo_opacity_title">Fling logosu opaklığı</string>
+  <string name="fling_factory_reset_title">Varsayılana sıfırla</string>
+  <string name="fling_factory_reset_confirm">Fling\'i varsayılan ayarlarına sıfırlamak istediğinizden emin misiniz?</string>
+  <string name="fling_backup_current_config_title">Profili kaydet</string>
+  <string name="fling_restore_config_title">Profili geri yükle</string>
+  <string name="fling_config_name_edit_dialog_title">Fling profil adı</string>
+  <string name="fling_config_name_edit_dialog_message">Ad girin veya boş bırakın</string>
+  <string name="fling_config_dialog_title">Fling profilleri</string>
+  <string name="fling_config_backup_success_toast">Fling profili başarıyla kaydedildi</string>
+  <string name="fling_config_restore_success_toast">Fling profili başarıyla geri yüklendi</string>
+  <string name="fling_config_backup_error_toast">Fling profili kaydedilirken hata oluştu</string>
+  <string name="fling_config_restore_error_toast">Fling profili geri yükleme hatası</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse cihaz hoparlörünü dinlerken bazı ses kaynakları ile çalışmayabilir</string>
   <string name="pulse_settings">Pulse</string>
   <string name="pulse_settings_summary">Gezinme çubuğu ses grafiği ekolayzer</string>
   <string name="fling_show_pulse_title">Pulse\'a izin ver</string>
-  <string name="fling_show_pulse_summary">Gezinme çubuğunda ses grafik ekolayzer</string>
+  <string name="fling_show_pulse_summary">Gezinme çubuğunda ses görselleştirmesini gösterir</string>
   <string name="pulse_render_mode_title">İşleme biçimi</string>
   <string name="pulse_render_mode_fading_bars">Solan bloklar</string>
   <string name="pulse_render_mode_solid_lines">Düz çizgiler</string>
@@ -395,7 +407,7 @@
   <!-- SmartBar -->
   <string name="smartbar_category">Smartbar</string>
   <string name="smartbar_settings_title">Smartbar ayarları</string>
-  <string name="smartbar_settings_summary">Tamamen özelleştirilebilir gezinti çubuğu</string>
+  <string name="smartbar_settings_summary">Tamamen özelleştirilebilir gezinme çubuğu</string>
   <string name="smartbar_editor_title">Düzenleme modunu başlat</string>
   <string name="smartbar_editor_summary">Smartbar tuş düzenleyicisini aç</string>
   <string name="smartbar_help_policy_notice_summary">Düzenleyici modundayken konumunu değiştirmek için bir tuşa basın ve sürükleyin veya düzenleme menüsünü görmek için bir tuşa uzunca basın. Menü gösterilirken tuş konumu değiştirilebilir.\n\nBir çift dokunma eylemi ayarlamak, bir seferlik tek dokunuşu geciktirecektir.</string>
@@ -407,15 +419,15 @@
   <string name="smartbar_button_animation_summary">Birincil tuşlara basıldığında animasyon stilini ayarlama</string>
   <string name="smartbar_button_animation_ripple">Dalgalanma</string>
   <string name="smartbar_button_animation_spring">Sıçrama</string>
-  <string name="smartbar_button_animation_flip">Çevir</string>
+  <string name="smartbar_button_animation_flip">Çevirme</string>
   <string name="smartbar_button_animation_pixel">Pixel (tüm tuşlar)</string>
   <string name="smartbar_button_animation_pixel_home">Pixel (Sadece ana ekran tuşu)</string>
-  <string name="smartbar_button_animation_pixel_home_ripple">Pixel (Sadece ana ekran tuşu) ve dalgalanma</string>
+  <string name="smartbar_button_animation_pixel_home_ripple">Pixel (Sadece ana ekran tuşu) ve Dalgalanma</string>
   <string name="smartbar_factory_reset_title">Varsayılana sıfırla</string>
   <string name="smartbar_factory_reset_confirm">Smartbar ayarlarını varsayılan ayarlara sıfırlamak istediğinizden emin misiniz?</string>
   <string name="smartbar_ime_action_title">Giriş yöntemi ve medya eylemleri</string>
   <string name="smartbar_ime_action_summary">Bir ekran klavyesi gösterilirken veya müzik çalınırken hangi tuşların gösterileceğini ayarlayın</string>
-  <string name="smartbar_ime_action_none">Hiç biri</string>
+  <string name="smartbar_ime_action_none">Hiçbiri</string>
   <string name="smartbar_ime_action_arrows">İmleç okları</string>
   <string name="smartbar_ime_action_switcher">Klavye değiştirici</string>
   <string name="smartbar_ime_action_dynamic">Giriş/medya okları</string>
@@ -437,10 +449,10 @@
   <string name="smartbar_custom_icon_size_title">Özel simge ölçeklendirmesi</string>
   <string name="one_handed_mode_title">Tek el modu</string>
   <string name="one_handed_mode_summary">Tek elle kullanılan modu etkinleştirmek için gezinme çubuğunda hızlıca kaydırmaya izin verir</string>
-  <string name="smartbar_double_tap_sleep_title">Uyku için iki kez dokunun</string>
+  <string name="smartbar_double_tap_sleep_title">Uyutmak için iki kez dokunun</string>
   <string name="smartbar_double_tap_sleep_summary">Cihazı uyutmak için gezinme çubuğunun boş bir alanına iki kez dokunun</string>
   <!-- Hardware button navigation -->
-  <string name="hardware_keys_volume_keys_title">Ses tuşuyla uyandır</string>
+  <string name="hardware_keys_volume_keys_title">Ses tuşları eylemleri</string>
   <string name="hardware_keys_home_key_title">Ana ekran tuşu</string>
   <string name="hardware_keys_menu_key_title">Menü tuşu</string>
   <string name="hardware_keys_assist_key_title">Arama tuşu</string>
@@ -448,14 +460,14 @@
   <string name="hardware_keys_back_key_title">Geri tuşu</string>
   <string name="hardware_keys_double_tap_summary">Çift dokunma eylemini ayarlayın</string>
   <string name="hardware_keys_single_tap_summary">Tek dokunma eylemini ayarlayın</string>
-  <string name="hardware_keys_long_press_summary">Uzun basma eylemi ayarla</string>
-  <string name="hardware_keys_single_tap_title">Tek tıklama eylemi</string>
+  <string name="hardware_keys_long_press_summary">Uzun basma eylemi ayarlayın</string>
+  <string name="hardware_keys_single_tap_title">Tek dokunma eylemi</string>
   <string name="hardware_keys_long_press_title">Uzun basma eylemi</string>
   <string name="hardware_keys_double_tap_title">Çift dokuma eylemi</string>
-  <string name="hardware_keys_category">Gezinme çubuğu tuşları</string>
+  <string name="hardware_keys_category">Gezinme tuşları</string>
   <string name="hardware_keys_disable_title">Gezinme çubuğu tuşlarını devre dışı bırak</string>
   <!-- Torch Power button gestures -->
-  <string name="torch_power_button_gesture_title">Kapalı ekran el feneri</string>
+  <string name="torch_power_button_gesture_title">Ekran kapalıyken el feneri</string>
   <string name="torch_power_button_gesture_none">Devre dışı</string>
   <string name="torch_power_button_gesture_dt">Güç tuşuna iki kez bas</string>
   <string name="torch_power_button_gesture_lp">Güç tuşuna uzun bas</string>
@@ -515,7 +527,7 @@
   <string name="status_bar_title">Durum çubuğu</string>
   <string name="status_bar_style_title">Stil</string>
   <string name="status_bar_clock">Saat ve Tarih</string>
-  <string name="clock_title_enable">Hizala</string>
+  <string name="clock_title_enable">Konum</string>
   <string name="clock_enabled">Etkin</string>
   <string name="clock_disabled">Devre dışı</string>
   <string name="status_bar_clock_style_reset">Rengi sıfırla</string>
@@ -536,11 +548,11 @@
   <string name="clock_date_string_edittext_summary">Dize girin</string>
   <string name="clock_date_right">Saatin sağında</string>
   <string name="clock_date_left">Saatin solunda</string>
-  <string name="am_pm_clock_normal">Normal font boyutu</string>
-  <string name="am_pm_clock_small">Küçük yazı boyutu</string>
+  <string name="am_pm_clock_normal">Normal yazı tipi boyutu</string>
+  <string name="am_pm_clock_small">Küçük yazı tipi boyutu</string>
   <string name="am_pm_clock_none">Gösterme</string>
   <string name="clock_date_display_none">Gösterme</string>
-  <string name="clock_date_display_small">Küçük yazı boyutu</string>
+  <string name="clock_date_display_small">Küçük yazı tipi boyutu</string>
   <string name="clock_date_display_normal">Normal yazı tipi boyutu</string>
   <string name="clock_date_style_normal">Normal</string>
   <string name="clock_date_style_lowercase">Küçük harf</string>
@@ -570,7 +582,7 @@
   <string name="use_slim_recents_title">Slim son uygulamalara izin ver</string>
   <string name="use_slim_recents_summary">Varsayılan son uygulamalar görünümü yerine slim son uygulamaları kullan</string>
   <string name="slim_recents_settings_title">Slim son uygulamalar ayarları</string>
-  <string name="slim_recents_settings_summary">Slim son kullanılanlar ayarlarını görüntüle</string>
+  <string name="slim_recents_settings_summary">Slim son uygulamalar ayarlarını görüntüle</string>
   <string name="recents_max_apps_title">İzin verilen maksimum uygulama sayısı</string>
   <string name="recent_panel_scale_title">Boyut</string>
   <string name="recent_panel_expanded_mode_title">Genişletilmiş mod önizleme</string>
@@ -598,7 +610,7 @@
   <!-- AOSP and Slim recents icon pack support -->
   <string name="recents_icon_pack_title">Simge Paketi</string>
   <string name="recents_icon_pack_summary">Paneldeki uygulamalar için özel bir simge paketi uygulayın</string>
-  <string name="no_iconpacks_summary">Yüklü simge paketi yok</string>
+  <string name="no_iconpacks_summary">Yüklü simge paketleri yok</string>
   <string name="dialog_pick_iconpack_title">Simge paketi seçin</string>
   <string name="default_iconpack_title">Varsayılan simgeler</string>
   <!-- QuickSettings Panel Transparency -->
@@ -611,7 +623,7 @@
   <string name="qs_tile_animation_style_off">Animasyon yok</string>
   <string name="qs_tile_animation_style_flip">Çevir</string>
   <string name="qs_tile_animation_style_rotate">Döndür</string>
-  <string name="qs_tile_animation_duration_low">Düşük</string>
+  <string name="qs_tile_animation_duration_low">Yavaş</string>
   <string name="qs_tile_animation_duration_default">Varsayılan</string>
   <string name="qs_tile_animation_duration_fast">Hızlı</string>
   <string name="qs_tile_animation_interpolator_linearInterpolator">Çizgisel</string>
@@ -625,4 +637,14 @@
   <string name="qs_set_animation_style">%1$s</string>
   <string name="qs_set_animation_duration">%1$s</string>
   <string name="qs_set_animation_interpolator">%1$s</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Akıllı Pikseller</string>
+  <string name="smart_pixels_summary">Fazladan pikselleri kapatarak pil tasarrufu sağlayın</string>
+  <string name="smart_pixels_enable_title">Akıllı Pikselleri Etkinleştir</string>
+  <string name="smart_pixels_enable_summary">Güç tüketimini azaltmak için pikselleri kapatın</string>
+  <string name="smart_pixels_on_power_save_title">Pil tasarrufu için otomatik etkinleştir</string>
+  <string name="smart_pixels_on_power_save_summary">Pil tasarrufu etkinleştirildiğinde Akıllı Pikselleri etkinleştirin</string>
+  <string name="smart_pixels_percent">Devre dışı bırakılan piksellerin yüzdesi</string>
+  <string name="smart_pixels_shift_title">Yanma koruması</string>
+  <string name="smart_pixels_shift_summary">OLED cihazlarda yanmaları önler ve sık sık pikselleri kaydırır</string>
 </resources>

@@ -29,6 +29,7 @@
   <string name="carrier_label_warning_text">Tenga en cuenta que la etiqueta del proveedor personalizado no está disponible en el área de la barra de estado extendida, también conocida como área de ajustes rápidos. También el uso de emojis como etiqueta de su proveedor puede causar algunos problemas de visibilidad en fondos más ligeros.</string>
   <string name="lockscreen_torch_warning_text">La función de lintera de la pantalla de bloqueo debe usarse solo cuando la pantalla está apagada. También tenga en cuenta que dejar la linterna encendida durante un período prolongado hará que la batería se agote más rápido.</string>
   <string name="slim_recents_hints_footer">Para borrar todas las aplicaciones, pellizca con dos dedos en el panel. Para bloquear el borrado de una aplicación, mantén pulsado su ícono para marcarla como protagonista. \n\nFor otras funciones recientes como la ventana múltiple o para matar una aplicación, mantén presionada la ventana de la aplicación en el panel.</string>
+  <string name="smart_pixels_warning_text">Smart Pixels es un característica de ahorro de energía. Dependiendo de cuántos píxeles se decide apagar, podría ver una mejoría significativa en la duración de la batería. Para una adecuada experiencia de usuario, recomendamos establecer la cantidad de píxeles deshabilitados en el 75 por ciento.</string>
   <!-- Categories -->
   <!-- System -->
   <string name="device_extras_title">Extras del dispositivo</string>
@@ -357,6 +358,17 @@
   <string name="fling_keyboard_cursors_title">Acción dinámica de cursor</string>
   <string name="fling_keyboard_cursors_move_summary">Cuando se muestre el teclado, realiza una pulsación larga a la izquierda o derecha para mover el cursor.\nMantén la pulsación larga para seguir moviéndolo, toca en la barra para ir a la pantalla de inicio.</string>
   <string name="fling_logo_opacity_title">Opacidad del logo de Fling</string>
+  <string name="fling_factory_reset_title">Restablecer a valores predeterminados</string>
+  <string name="fling_factory_reset_confirm">¿Está seguro que desea restablecer Fling a los valores por defecto?</string>
+  <string name="fling_backup_current_config_title">Guarda el perfil</string>
+  <string name="fling_restore_config_title">Restaurar perfil</string>
+  <string name="fling_config_name_edit_dialog_title">Nombre de Perfil de Fling</string>
+  <string name="fling_config_name_edit_dialog_message">Introduzca el nombre o déjalo en blanco</string>
+  <string name="fling_config_dialog_title">Perfiles de Fling</string>
+  <string name="fling_config_backup_success_toast">Perfil de Fling guardado con éxito</string>
+  <string name="fling_config_restore_success_toast">Perfil de Fling restaurado con éxito</string>
+  <string name="fling_config_backup_error_toast">Error al guardar el perfil de Fling</string>
+  <string name="fling_config_restore_error_toast">Error al restaurar el perfil de Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">La Pulsación no funciona con algunas fuentes de audio cuando escucha en el altavoz del dispositivo</string>
   <string name="pulse_settings">Pulso</string>
@@ -625,4 +637,14 @@
   <string name="qs_set_animation_style">%1$s</string>
   <string name="qs_set_animation_duration">%1$s</string>
   <string name="qs_set_animation_interpolator">%1$s</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Smart pixels</string>
+  <string name="smart_pixels_summary">Ahorra batería apagando píxeles adicionales</string>
+  <string name="smart_pixels_enable_title">Activar Smart Pixels</string>
+  <string name="smart_pixels_enable_summary">Apagar píxeles para reducir el consumo de energía</string>
+  <string name="smart_pixels_on_power_save_title">Activar automáticamente junto con el ahorro de batería</string>
+  <string name="smart_pixels_on_power_save_summary">Activar Smart Pixels cuando se activa el ahorro de batería</string>
+  <string name="smart_pixels_percent">Porcentaje de píxeles a desactivar</string>
+  <string name="smart_pixels_shift_title">Protección contra el quemado</string>
+  <string name="smart_pixels_shift_summary">Previene el quemado en pantallas OLED alternando píxeles</string>
 </resources>

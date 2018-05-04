@@ -29,6 +29,7 @@
   <string name="carrier_label_warning_text">Обратите внимание, что пользовательское название оператора не отображается на панели быстрых настроек. Кроме того, использование эмодзи в названии оператора может вызвать проблемы с отображением на более светлых фонах.</string>
   <string name="lockscreen_torch_warning_text">Фонарик на блокированном устройстве используется только когда экран выключен. Также стоит обратить внимание на то, что, оставляя фонарик включённым, вы увеличиваете расход батареи.</string>
   <string name="slim_recents_hints_footer">Чтобы очистить все приложения, выполните щипок по панели. Чтобы заблокировать очистку приложения, зажмите его иконку, возле нее должна появиться звезда.\n\nДля вызова дополнительных функций, таких как мультиоконный режим или закрытие приложения, удерживайте карточку приложения.</string>
+  <string name="smart_pixels_warning_text">Умные пиксели - средство экономии заряда. В зависимости от того, сколько пикселей вы захотите отключить, это может привести к значительному увеличению времени жизни батареи. Для оптимального пользования устройством, советуем вам установить количество отключённых пикселей на 75%.</string>
   <!-- Categories -->
   <!-- System -->
   <string name="device_extras_title">Доп. настройки устройства</string>
@@ -357,6 +358,17 @@
   <string name="fling_keyboard_cursors_title">Действия курсора динамической клавиатуры</string>
   <string name="fling_keyboard_cursors_move_summary">Когда отображается клавиатура, длительное нажатие на стрелочки влево или вправо перемещает текстовый курсор влево или вправо.\nУдерживайте, тобы продолжить перемещение курсора или нажмите на панель, чтобы перейти к домашнему экрану.</string>
   <string name="fling_logo_opacity_title">Прозрачность логотипа Fling</string>
+  <string name="fling_factory_reset_title">Сбросить к стоковыми настройкам</string>
+  <string name="fling_factory_reset_confirm">Вы действительно хотите сбросить настройки Fling?</string>
+  <string name="fling_backup_current_config_title">Сохранить профиль</string>
+  <string name="fling_restore_config_title">Восстановить профиль</string>
+  <string name="fling_config_name_edit_dialog_title">Имя профиля Fling</string>
+  <string name="fling_config_name_edit_dialog_message">Введите название или оставьте пустым</string>
+  <string name="fling_config_dialog_title">Профили Fling</string>
+  <string name="fling_config_backup_success_toast">Профиль Fling успешно сохранен</string>
+  <string name="fling_config_restore_success_toast">Профиль Fling успешно восстановлен</string>
+  <string name="fling_config_backup_error_toast">Ошибка при сохранении профиля Fling</string>
+  <string name="fling_config_restore_error_toast">Ошибка при восстановлении профиля Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse не работает с некоторыми источниками звука при прослушивании на динамике устройства</string>
   <string name="pulse_settings">Pulse</string>
@@ -516,7 +528,7 @@
   <string name="status_bar_style_title">Стиль</string>
   <string name="status_bar_clock">Часы и дата</string>
   <string name="clock_title_enable">Выравнивание</string>
-  <string name="clock_enabled">Включено</string>
+  <string name="clock_enabled">Включены</string>
   <string name="clock_disabled">Отключено</string>
   <string name="status_bar_clock_style_reset">Сбросить цвет</string>
   <string name="status_bar_show_clock_title">Показывать часы и дату</string>
@@ -625,4 +637,14 @@
   <string name="qs_set_animation_style">%1$s</string>
   <string name="qs_set_animation_duration">%1$s</string>
   <string name="qs_set_animation_interpolator">%1$s</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Умные пиксели</string>
+  <string name="smart_pixels_summary">Экономить батарею, выключая пиксели</string>
+  <string name="smart_pixels_enable_title">Включить умные пиксели</string>
+  <string name="smart_pixels_enable_summary">Выключить пиксели для снижения расхода заряда батареи</string>
+  <string name="smart_pixels_on_power_save_title">Автоматическое включение на заставке</string>
+  <string name="smart_pixels_on_power_save_summary">Включить умные пиксели, когда включена заставка</string>
+  <string name="smart_pixels_percent">Процент выключаемых пикселей</string>
+  <string name="smart_pixels_shift_title">Защита от выгорания</string>
+  <string name="smart_pixels_shift_summary">Предотвращение выгорания на OLED-устройствах благодаря перемещению пикселей с такой частотой</string>
 </resources>

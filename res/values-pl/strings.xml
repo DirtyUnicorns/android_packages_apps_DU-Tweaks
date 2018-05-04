@@ -16,62 +16,63 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- The Team -->
-  <string name="dialog_team_title">The Team</string>
+  <string name="dialog_team_title">Zespół</string>
   <!-- Bottom navigation -->
   <string name="bottom_nav_system_title">System</string>
-  <string name="bottom_nav_lockscreen_title">Lockscreen</string>
-  <string name="bottom_nav_statusbar_title">Statusbar</string>
-  <string name="bottom_nav_navigation_title">Navigation</string>
-  <string name="bottom_nav_multitasking_title">Multitasking</string>
+  <string name="bottom_nav_lockscreen_title">Ekran blokady</string>
+  <string name="bottom_nav_statusbar_title">Pasek stanu</string>
+  <string name="bottom_nav_navigation_title">Nawigacja</string>
+  <string name="bottom_nav_multitasking_title">Wielozadaniowość</string>
   <!-- Footer warnings -->
   <string name="heads_up_warning_text">Heads up notifications are meant to be used for multitasking while using full screen apps and/or playing games. Just know that while you use heads up notifications, you will not be able to use the ticker feature.</string>
   <string name="ticker_warning_text">The ticker feature is meant to be used as a mulitasking tool and brings a bit of splash of the old times. Just know that while you use the ticker feature, you will not be able to use heads up notifications.</string>
   <string name="carrier_label_warning_text">Be advised that the custom carrier label is not available in the extended statusbar area, also known as the quick settings area. Also using emojis as your carrier label might cause some visibility issues on lighter backgrounds.</string>
   <string name="lockscreen_torch_warning_text">The lockscreen torch feature is meant to be used only when the screen is turned off. Also note that leaving your flashlight on for a long period of time will cause your battery to drain faster.</string>
   <string name="slim_recents_hints_footer">To clear all apps, pinch-in with two fingers on the panel. To block an app from being cleared, long press on its icon to star it.\n\nFor additional recents features such as multiwindow or to kill an app, long press on any app window in the panel.</string>
+  <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend you set the amount of disabled pixels at 75 percent.</string>
   <!-- Categories -->
   <!-- System -->
   <string name="device_extras_title">Device extras</string>
   <string name="device_extras_summary">Device specific tweaks</string>
-  <string name="miscellaneous_title">Miscellaneous</string>
+  <string name="miscellaneous_title">Różne</string>
   <string name="miscellaneous_summary">Miscellaneous tweaks</string>
-  <string name="powermenu_title">Power menu</string>
+  <string name="powermenu_title">Menu zasilania</string>
   <string name="powermenu_summary">Configure the power menu on and off the lockscreen with many items</string>
   <!-- Lockscreen -->
   <string name="fingerprint_prefs_title">Fingerprint prefs</string>
   <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>
-  <string name="lockscreen_items_title">Lockscreen items</string>
-  <string name="lockscreen_items_summary">Remove or add items on the lockscreen</string>
+  <string name="lockscreen_items_title">Elementy ekranu blokady</string>
+  <string name="lockscreen_items_summary">Usuń lub dodaj elementy na ekranie blokady</string>
   <!-- Statusbar -->
-  <string name="battery_options_title">Battery options</string>
+  <string name="battery_options_title">Opcje baterii</string>
   <string name="battery_options_summary">Customize the statusbar or QS tile battery</string>
-  <string name="carrier_label_title">Carrier label</string>
+  <string name="carrier_label_title">Etykieta operatora</string>
   <string name="carrier_label_summary">Customize the carrier label on the lockscreen or statusbar</string>
-  <string name="clock_options_title">Clock options</string>
-  <string name="clock_options_summary">Customize your statusbar clock</string>
-  <string name="icon_manager_title">Icon manager</string>
+  <string name="clock_options_title">Opcje zegara</string>
+  <string name="clock_options_summary">Dostosuj zegar na pasku stanu</string>
+  <string name="icon_manager_title">Zarządzanie ikonami</string>
   <string name="icon_manager_summary">Configure the visibility of statusbar items</string>
-  <string name="notifications_title">Notifications</string>
+  <string name="notifications_title">Powiadomienia</string>
   <string name="notifications_summary">Tweaks specific to system notifications</string>
-  <string name="quicksettings_title">Quick settings</string>
+  <string name="quicksettings_title">Szybkie ustawienia</string>
   <string name="quicksettings_summary">Configure the layout of the quick settings area</string>
   <string name="ticker_title">Ticker</string>
   <string name="ticker_summary">Enable the statusbar ticker and configure ticker related tweaks</string>
-  <string name="traffic_title">Traffic indicators</string>
+  <string name="traffic_title">Wskaźnik ruchu sieciowego</string>
   <string name="traffic_summary">Enable and configure the traffic indicators on the statusbar</string>
   <!-- Navigation -->
-  <string name="buttons_title">Buttons</string>
+  <string name="buttons_title">Przyciski</string>
   <string name="buttons_summary">Configure hardware keys and/or volume rocker options</string>
-  <string name="navigationbar_title">Navigation bar</string>
+  <string name="navigationbar_title">Pasek nawigacyjny</string>
   <string name="navigationbar_summary">Configure smartbar, fling or pulse</string>
   <!-- Multitasking -->
-  <string name="headsup_title">Heads up</string>
+  <string name="headsup_title">Powiadomienia \"Heads up\"</string>
   <string name="headsup_summary">Configure heads up options</string>
   <string name="recents_title">Recents</string>
   <string name="recents_summary">Configure recents options</string>
   <!-- Button brightness -->
-  <string name="button_backlight_options_category">Backlight options</string>
-  <string name="button_backlight_enable_title">Allow button backlight</string>
+  <string name="button_backlight_options_category">Opcje podświetlenia</string>
+  <string name="button_backlight_enable_title">Zezwól na podświetlanie przycisków</string>
   <string name="button_link_brightness">Link to screen brightness</string>
   <string name="button_link_brightness_summary">Button backlight brightness will adjust based on the screen\'s brightness level</string>
   <string name="button_manual_brightness">Brightness level</string>
@@ -105,7 +106,7 @@
   <string name="accent_picker_dialog_title">Select an accent color</string>
   <string name="theme_accent_picker_title">Accent color</string>
   <string name="theme_accent_picker_summary">Select system theme accent color</string>
-  <string name="theme_accent_picker_default">Default</string>
+  <string name="theme_accent_picker_default">Domyślny</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Color Picker</string>
   <string name="press_color_to_apply">Press on color below to apply</string>
@@ -113,7 +114,7 @@
   <string name="arrow_down">↓</string>
   <string name="hex">Hex:</string>
   <string name="hex_hint">#ff000000</string>
-  <string name="set">Set</string>
+  <string name="set">Ustaw</string>
   <string name="color_default">Default</string>
   <!-- Network Traffic -->
   <string name="network_traffic_state_title">Show net activity in statusbar</string>
@@ -357,6 +358,17 @@
   <string name="fling_keyboard_cursors_title">Dynamic keyboard cursors action</string>
   <string name="fling_keyboard_cursors_move_summary">When keyboard is showing, long press left or right to move the text cursor to left or right.\nKeep longpressing to keep moving the cursor, single tap on bar to go to home screen.</string>
   <string name="fling_logo_opacity_title">Fling logo opacity</string>
+  <string name="fling_factory_reset_title">Reset to stock</string>
+  <string name="fling_factory_reset_confirm">Are you sure you want to reset Fling to stock settings?</string>
+  <string name="fling_backup_current_config_title">Save profile</string>
+  <string name="fling_restore_config_title">Restore profile</string>
+  <string name="fling_config_name_edit_dialog_title">Fling profile name</string>
+  <string name="fling_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="fling_config_dialog_title">Fling profiles</string>
+  <string name="fling_config_backup_success_toast">Fling profile successfully saved</string>
+  <string name="fling_config_restore_success_toast">Fling profile successfully restored</string>
+  <string name="fling_config_backup_error_toast">Error saving Fling profile</string>
+  <string name="fling_config_restore_error_toast">Error restoring Fling profile</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
   <string name="pulse_settings">Pulse</string>
@@ -625,4 +637,14 @@
   <string name="qs_set_animation_style">%1$s</string>
   <string name="qs_set_animation_duration">%1$s</string>
   <string name="qs_set_animation_interpolator">%1$s</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Smart Pixels</string>
+  <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+  <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
+  <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
+  <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+  <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
+  <string name="smart_pixels_percent">Percent of pixels to disable</string>
+  <string name="smart_pixels_shift_title">Burn-in protection</string>
+  <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
 </resources>

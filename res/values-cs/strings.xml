@@ -29,6 +29,7 @@
   <string name="carrier_label_warning_text">Upozorňujeme, že vlastní název operátora není k dispozici v rozšířené oblasti stavové lišty, známé také jako oblast rychlých nastavení. Používání emoji jako názvu operátora může způsobit problémy s viditelností na světlejších pozadích.</string>
   <string name="lockscreen_torch_warning_text">Funkce svítilny na zamykací obrazovce je určena k použití pouze při vypnuté obrazovce. Také si povšimněte, že delší svícení svítilny způsobí rychlejší vybíjení baterie.</string>
   <string name="slim_recents_hints_footer">Chcete-li vymazat všechny aplikace, přidržte na panelu dva prsty. Chcete-li zabránit vymazání aplikace, dlouze stiskněte její ikonu a označte ji hvězdičkou.\n\nPro další přídavné funkce, například vícenásobné okno nebo ukončení aplikace, podržte dlouze libovolné okno aplikace v panelu.</string>
+  <string name="smart_pixels_warning_text">Smart Pixels je funkce šetřící energii. V závislosti na na tom, kolik pixelů se rozhodnete vypnout, může dojít k výraznému zlepšení životnosti baterie. Pro dobrou efektivitu doporučujeme nastavit počet vypnutých pixelů na 75 procent.</string>
   <!-- Categories -->
   <!-- System -->
   <string name="device_extras_title">Extra funkce zařízení</string>
@@ -357,6 +358,17 @@
   <string name="fling_keyboard_cursors_title">Akce kurzorů dynamické klávesnice</string>
   <string name="fling_keyboard_cursors_move_summary">Když se klávesnice zobrazí, dlouhým stiskem vlevo nebo vpravo přesunete textový kurzor doleva nebo doprava.\nDlouhým stiskem pokračujete v pohybu kurzoru, jedním klepnutím na panel přejdete na domovskou obrazovku.</string>
   <string name="fling_logo_opacity_title">Průhlednost loga Fling</string>
+  <string name="fling_factory_reset_title">Obnovit výchozí</string>
+  <string name="fling_factory_reset_confirm">Opravdu chcete obnovit nastavení Fling?</string>
+  <string name="fling_backup_current_config_title">Uložit profil</string>
+  <string name="fling_restore_config_title">Obnovit profil</string>
+  <string name="fling_config_name_edit_dialog_title">Název profilu Fling</string>
+  <string name="fling_config_name_edit_dialog_message">Zadejte název nebo ponechte prázdné</string>
+  <string name="fling_config_dialog_title">Profily Fling</string>
+  <string name="fling_config_backup_success_toast">Profil Fling byl úspěšně uložen</string>
+  <string name="fling_config_restore_success_toast">Profil Fling byl úspěšně obnoven</string>
+  <string name="fling_config_backup_error_toast">Chyba při ukládání profilu Fling</string>
+  <string name="fling_config_restore_error_toast">Chyba při obnovení profilu Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse nefunguje s některými zvukovými zdroji při poslechu z reproduktoru zařízení</string>
   <string name="pulse_settings">Pulse</string>
@@ -398,7 +410,7 @@
   <string name="smartbar_settings_summary">Plně přizpůsobitelný navigační panel</string>
   <string name="smartbar_editor_title">Spustit režim úprav</string>
   <string name="smartbar_editor_summary">Otevřít editor tlačítek lišty SmartBar</string>
-  <string name="smartbar_help_policy_notice_summary">Když jste v režimu úprav, pro změnu polohy tlačítka jej stiskněte a posuňte, po dlouhém stisknutí se zobrazí menu. Poloha tlačítka může být změněna pokud se menu zobrazuje.\n\nNastavení akce dvojkliku způsobí zpoždění jednoho kliknutí.\"</string>
+  <string name="smartbar_help_policy_notice_summary">Když jste v režimu úprav, pro změnu polohy tlačítka jej stiskněte a posuňte, po dlouhém stisknutí se zobrazí menu. Poloha tlačítka může být změněna pokud se menu zobrazuje.\n\nNastavení akce dvojkliku způsobí zpoždění jednoho kliknutí.</string>
   <string name="smartbar_context_menu_position_title">Pozice kontextových tlačítek</string>
   <string name="smartbar_context_menu_position_summary">Pozice kontextových tlačítek, jako jsou tlačítka pro výběr nabídky nebo klávesnice</string>
   <string name="smartbar_right">Vpravo</string>
@@ -422,7 +434,7 @@
   <string name="smartbar_backup_current_config_title">Uložit profil</string>
   <string name="smartbar_restore_config_title">Obnovit profil</string>
   <string name="smartbar_config_name_edit_dialog_title">Název profilu lišty SmartBar</string>
-  <string name="smartbar_config_name_edit_dialog_message">Zadejte jméno nebo ponechte prázdné</string>
+  <string name="smartbar_config_name_edit_dialog_message">Zadejte název nebo ponechte prázdné</string>
   <string name="smartbar_config_dialog_title">Profily lišty SmartBar</string>
   <string name="smartbar_config_backup_success_toast">Profil lišty SmartBar byl úspěšně uložen</string>
   <string name="smartbar_config_restore_success_toast">Profil lišty SmartBar byl úspěšně obnoven</string>
@@ -440,7 +452,7 @@
   <string name="smartbar_double_tap_sleep_title">Uspat dvojitým poklepáním</string>
   <string name="smartbar_double_tap_sleep_summary">Dvojím poklepáním na prázdné místo navigačního panelu uspat zařízení</string>
   <!-- Hardware button navigation -->
-  <string name="hardware_keys_volume_keys_title">Probudit tlačítky</string>
+  <string name="hardware_keys_volume_keys_title">Tlačítka hlasitosti</string>
   <string name="hardware_keys_home_key_title">Tlačítko Domů</string>
   <string name="hardware_keys_menu_key_title">Tlačítko Menu</string>
   <string name="hardware_keys_assist_key_title">Tlačítko Hledat</string>
@@ -625,4 +637,14 @@
   <string name="qs_set_animation_style">%1$s</string>
   <string name="qs_set_animation_duration">%1$s</string>
   <string name="qs_set_animation_interpolator">%1$s</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Smart Pixels</string>
+  <string name="smart_pixels_summary">Ušetření baterie vypnutím pixelů</string>
+  <string name="smart_pixels_enable_title">Povolit Smart Pixels</string>
+  <string name="smart_pixels_enable_summary">Chcete-li snížit spotřebu energie, vypněte pixely</string>
+  <string name="smart_pixels_on_power_save_title">Automatické zapnutí při spořiči baterie</string>
+  <string name="smart_pixels_on_power_save_summary">Povolit Smart Pixels, pokud je aktivován spořič baterie</string>
+  <string name="smart_pixels_percent">Procenta pixelů k vypnutí</string>
+  <string name="smart_pixels_shift_title">Ochrana před vypálením obrazovky</string>
+  <string name="smart_pixels_shift_summary">Zabraňuje vypalování zařízení OLED častým přepínáním pixelů</string>
 </resources>

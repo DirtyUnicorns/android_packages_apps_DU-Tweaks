@@ -29,6 +29,7 @@
   <string name="carrier_label_warning_text">Le libellé opérateur personnalisé n\'apparaît pas lors de l\'affichage du panneau de configuration rapide.\nL\'utilisation de frimousse peut provoquer des problèmes d\'affichage sur des fonds clairs.</string>
   <string name="lockscreen_torch_warning_text">La fonctionnalité \"Lampe de poche en mode veille\" est uniquement destinée à être utilisée lorsque l\'écran est éteint.\nL\'utilisation de la lampe de poche de manière prolongée décharge la batterie plus rapidement.</string>
   <string name="slim_recents_hints_footer">Pour effacer toutes les applications, pincer avec deux doigts sur le panneau des \"Applications récentes Slim\". Pour empêcher une application d\'être effacée, appui prolongé sur son icône pour lui attribuer une étoile.\n\nPour les fonctionnalités supplémentaires telles que l\'écran partagé ou pour forcer l\'arrêt d\'une application, appui prolongé sur l\'onglet de l\'application.</string>
+  <string name="smart_pixels_warning_text">Smart pixels est une fonctionnalité d\'économie d\'énergie. Selon le nombre de pixels désactivé, une amélioration significative de l\'autonomie de la batterie est perceptible. Pour une expérience utilisateur optimale, il est recommandé de régler le nombre de pixels désactivés à 75%.</string>
   <!-- Categories -->
   <!-- System -->
   <string name="device_extras_title">Spécifiques</string>
@@ -357,6 +358,17 @@
   <string name="fling_keyboard_cursors_title">Curseurs dynamiques du clavier</string>
   <string name="fling_keyboard_cursors_move_summary">Lorsque le clavier est affiché, le contrôle de ses curseurs s\'effectue par appui prolongé gauche ou droite.\nMaintenir l\'appui prolongé pour continuer à déplacer le curseur.\nL\'appui simple sur la barre permet de retourner à l\'écran d\'accueil.</string>
   <string name="fling_logo_opacity_title">Opacité du logo</string>
+  <string name="fling_factory_reset_title">Configuration d\'origine</string>
+  <string name="fling_factory_reset_confirm">Revenir à la configuration d\'origine de Fling ?</string>
+  <string name="fling_backup_current_config_title">Enregistrer le profil</string>
+  <string name="fling_restore_config_title">Restaurer le profil</string>
+  <string name="fling_config_name_edit_dialog_title">Nom du profil</string>
+  <string name="fling_config_name_edit_dialog_message">Saisir un nom ou laisser vide</string>
+  <string name="fling_config_dialog_title">Profils Fling</string>
+  <string name="fling_config_backup_success_toast">Profil Fling enregistré</string>
+  <string name="fling_config_restore_success_toast">Profil Fling restauré</string>
+  <string name="fling_config_backup_error_toast">Erreur lors de la sauvegarde du profil Fling</string>
+  <string name="fling_config_restore_error_toast">Erreur lors de la restauration du profil Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse ne fonctionne pas avec certaines sources audio lors de l\'écoute de musique sur le(s) haut-parleur(s) de l\'appareil</string>
   <string name="pulse_settings">Pulse</string>
@@ -421,13 +433,13 @@
   <string name="smartbar_ime_action_dynamic">Touches de direction du clavier ou du lecteur de musique</string>
   <string name="smartbar_backup_current_config_title">Enregistrer le profil</string>
   <string name="smartbar_restore_config_title">Restaurer le profil</string>
-  <string name="smartbar_config_name_edit_dialog_title">Nom du profil</string>
+  <string name="smartbar_config_name_edit_dialog_title">Nom du profil Smartbar</string>
   <string name="smartbar_config_name_edit_dialog_message">Saisir un nom ou laisser vide</string>
   <string name="smartbar_config_dialog_title">Profils Smartbar</string>
-  <string name="smartbar_config_backup_success_toast">Profil enregistré</string>
-  <string name="smartbar_config_restore_success_toast">Profil restauré</string>
-  <string name="smartbar_config_backup_error_toast">Erreur lors de la sauvegarde du profil</string>
-  <string name="smartbar_config_restore_error_toast">Erreur lors de la restauration du profil</string>
+  <string name="smartbar_config_backup_success_toast">Profil Smartbar enregistré</string>
+  <string name="smartbar_config_restore_success_toast">Profil Smartbar restauré</string>
+  <string name="smartbar_config_backup_error_toast">Erreur lors de la sauvegarde du profil Smartbar</string>
+  <string name="smartbar_config_restore_error_toast">Erreur lors de la restauration du profil Smartbar</string>
   <string name="navbar_buttons_alpha_title">Transparence des boutons</string>
   <string name="smartbar_longpress_delay_title">Appui prolongé</string>
   <string name="smartbar_longpress_delay_summary">Délai avant le déclenchement d\'une action par appui prolongé</string>
@@ -625,4 +637,14 @@
   <string name="qs_set_animation_style">%1$s</string>
   <string name="qs_set_animation_duration">%1$s</string>
   <string name="qs_set_animation_interpolator">%1$s</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Smart Pixels</string>
+  <string name="smart_pixels_summary">Économiser la batterie en désactivant les pixels superflus</string>
+  <string name="smart_pixels_enable_title">Activer</string>
+  <string name="smart_pixels_enable_summary">Désactiver les pixels superflus pour augmenter l\'autonomie de la batterie</string>
+  <string name="smart_pixels_on_power_save_title">Activation automatique</string>
+  <string name="smart_pixels_on_power_save_summary">Activer Smart Pixels lors de l\'utilisation du mode Économiseur de batterie</string>
+  <string name="smart_pixels_percent">Pourcentage de pixels à désactiver</string>
+  <string name="smart_pixels_shift_title">Anti-brûlure d\'écran</string>
+  <string name="smart_pixels_shift_summary">Évite les brûlures d\'écran OLED en déplaçant les pixels de temps en temps</string>
 </resources>
