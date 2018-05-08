@@ -15,16 +15,17 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-            android:title="@string/chooser_activity_blacklist_title" >
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/chooser_activity_blacklist_title" >
 
-        <PreferenceCategory
-                android:title="@string/chooser_activity_blacklist_cat_title"
-                android:key="blacklist_applications" >
-            <Preference
-                android:key="add_blacklist_packages"
-                android:title="@string/chooser_activity_blacklist_pref_title"
-                android:summary="@string/chooser_activity_blacklist_pref_summary" />
+    <PreferenceCategory
+        android:title="@string/chooser_activity_blacklist_cat_title"
+        android:key="blacklist_applications" >
+        <Preference
+            android:key="add_blacklist_packages"
+            android:icon="@drawable/ic_menu_add"
+            android:title="@string/chooser_activity_blacklist_pref_title"
+            android:summary="@string/chooser_activity_blacklist_pref_summary" />
     </PreferenceCategory>
 
 </PreferenceScreen>
