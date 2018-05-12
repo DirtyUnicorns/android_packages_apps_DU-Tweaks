@@ -359,16 +359,16 @@
   <string name="fling_keyboard_cursors_move_summary">当显示键盘时，长按左键或右键可将指针向左或向右移动。\n长按按键以移动指针，单击按键栏回到主屏幕。</string>
   <string name="fling_logo_opacity_title">Fling logo 不透明度</string>
   <string name="fling_factory_reset_title">重置默认设置</string>
-  <string name="fling_factory_reset_confirm">你确定重置Smartbar为默认设置?</string>
+  <string name="fling_factory_reset_confirm">你确定重置 Fling 为默认设置？</string>
   <string name="fling_backup_current_config_title">保存配置文件</string>
   <string name="fling_restore_config_title">还原配置文件</string>
   <string name="fling_config_name_edit_dialog_title">Fling 配置文件名称</string>
   <string name="fling_config_name_edit_dialog_message">输入名称或者留空</string>
   <string name="fling_config_dialog_title">Fling 配置文件</string>
-  <string name="fling_config_backup_success_toast">Smartbar 配置保存成功</string>
-  <string name="fling_config_restore_success_toast">Smartbar 配置还原成功</string>
-  <string name="fling_config_backup_error_toast">保存 Smartbar 配置文件时出错</string>
-  <string name="fling_config_restore_error_toast">恢复 Smart Bar 配置文件时出错</string>
+  <string name="fling_config_backup_success_toast">Fling 配置文件保存成功</string>
+  <string name="fling_config_restore_success_toast">Fling 配置文件还原成功</string>
+  <string name="fling_config_backup_error_toast">保存 Fling 配置文件时出错</string>
+  <string name="fling_config_restore_error_toast">恢复 Fling 配置文件时出错</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">当扬声器正在播放音频时，某些音频脉冲将不能正常工作</string>
   <string name="pulse_settings">Pulse</string>
@@ -466,6 +466,7 @@
   <string name="hardware_keys_double_tap_title">双击操作</string>
   <string name="hardware_keys_category">导航栏按钮</string>
   <string name="hardware_keys_disable_title">禁用导航栏按钮</string>
+  <string name="hardware_keys_wake_title">唤醒设备</string>
   <!-- Torch Power button gestures -->
   <string name="torch_power_button_gesture_title">关屏手电筒</string>
   <string name="torch_power_button_gesture_none">禁用</string>
@@ -647,4 +648,9 @@
   <string name="smart_pixels_percent">要禁用的像素百分比</string>
   <string name="smart_pixels_shift_title">烧屏保护</string>
   <string name="smart_pixels_shift_summary">通过经常移动像素来防止 OLED 屏幕的设备发生烧屏</string>
+  <string name="chooser_activity_blacklist_title">选择器活动黑名单</string>
+  <string name="chooser_activity_blacklist_summary">在点击 \"分享\" 按钮时不显示的应用程序</string>
+  <string name="chooser_activity_blacklist_cat_title">黑名单</string>
+  <string name="chooser_activity_blacklist_pref_title">添加应用程序</string>
+  <string name="chooser_activity_blacklist_pref_summary">点击此处添加应用, 点击已添加的应用程序来删除</string>
 </resources>

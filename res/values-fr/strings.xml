@@ -466,6 +466,7 @@
   <string name="hardware_keys_double_tap_title">Raccourci \"Double appui\"</string>
   <string name="hardware_keys_category">Boutons de navigation</string>
   <string name="hardware_keys_disable_title">Désactiver les boutons physiques</string>
+  <string name="hardware_keys_wake_title">Réveiller l\'appareil</string>
   <!-- Torch Power button gestures -->
   <string name="torch_power_button_gesture_title">Lampe de poche en mode veille</string>
   <string name="torch_power_button_gesture_none">Désactivé</string>
@@ -602,7 +603,7 @@
   <string name="profile_choose_app">Sélectionner l\'application</string>
   <string name="dialog_delete_title">Supprimer</string>
   <string name="dialog_delete_message">Supprimer l\'élément sélectionné ?</string>
-  <string name="slim_blacklist_apps_cat_title">Liste noire</string>
+  <string name="slim_blacklist_apps_cat_title">Liste d\'exclusion</string>
   <string name="slim_blacklist_apps_title">Applications prohibées</string>
   <string name="slim_blacklist_apps_summary">Applications à ne pas afficher</string>
   <string name="slim_blacklist_add_apps_title">Ajouter une application</string>
@@ -647,4 +648,9 @@
   <string name="smart_pixels_percent">Pourcentage de pixels à désactiver</string>
   <string name="smart_pixels_shift_title">Anti-brûlure d\'écran</string>
   <string name="smart_pixels_shift_summary">Évite les brûlures d\'écran OLED en déplaçant les pixels de temps en temps</string>
+  <string name="chooser_activity_blacklist_title">Applications à ne pas afficher</string>
+  <string name="chooser_activity_blacklist_summary">Applications à ne pas afficher lors de l\'utilisation du bouton Partager</string>
+  <string name="chooser_activity_blacklist_cat_title">Liste d\'exclusion</string>
+  <string name="chooser_activity_blacklist_pref_title">Ajouter une application</string>
+  <string name="chooser_activity_blacklist_pref_summary">Ajouter ou retirer une application</string>
 </resources>

@@ -466,6 +466,7 @@
   <string name="hardware_keys_double_tap_title">Akce dvojím poklepáním</string>
   <string name="hardware_keys_category">Tlačítka navigace</string>
   <string name="hardware_keys_disable_title">Zakázat navigační tlačítka</string>
+  <string name="hardware_keys_wake_title">Probudit zařízení</string>
   <!-- Torch Power button gestures -->
   <string name="torch_power_button_gesture_title">Svítilna při vypnuté obrazovce</string>
   <string name="torch_power_button_gesture_none">Zakázáno</string>
@@ -647,4 +648,9 @@
   <string name="smart_pixels_percent">Procenta pixelů k vypnutí</string>
   <string name="smart_pixels_shift_title">Ochrana před vypálením obrazovky</string>
   <string name="smart_pixels_shift_summary">Zabraňuje vypalování zařízení OLED častým přepínáním pixelů</string>
+  <string name="chooser_activity_blacklist_title">Selektor aktivit černé listiny</string>
+  <string name="chooser_activity_blacklist_summary">Aplikace se nezobrazí při klepnutí na tlačítko Sdílet</string>
+  <string name="chooser_activity_blacklist_cat_title">Černá listina</string>
+  <string name="chooser_activity_blacklist_pref_title">Přidat aplikaci</string>
+  <string name="chooser_activity_blacklist_pref_summary">Klepnutím sem přidáte, klepnutím na přidanou aplikaci odstraníte</string>
 </resources>

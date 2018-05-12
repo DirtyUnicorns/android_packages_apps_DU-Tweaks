@@ -466,6 +466,7 @@
   <string name="hardware_keys_double_tap_title">Azione doppio tocco</string>
   <string name="hardware_keys_category">Tasti di navigazione</string>
   <string name="hardware_keys_disable_title">Disabilita tasti di navigazione</string>
+  <string name="hardware_keys_wake_title">Risveglia dispositivo</string>
   <!-- Torch Power button gestures -->
   <string name="torch_power_button_gesture_title">Torcia a schermo spento</string>
   <string name="torch_power_button_gesture_none">Disattivata</string>
@@ -647,4 +648,9 @@
   <string name="smart_pixels_percent">Percentuale di pixel da disattivare</string>
   <string name="smart_pixels_shift_title">Protezione al burn-in</string>
   <string name="smart_pixels_shift_summary">Previene il burn-in su dispositivi OLED spostando ogni tanto i pixel</string>
+  <string name="chooser_activity_blacklist_title">Lista nera Seleziona attività</string>
+  <string name="chooser_activity_blacklist_summary">Applicazioni da non mostrare quando si clicca il pulsante condividi</string>
+  <string name="chooser_activity_blacklist_cat_title">Lista nera</string>
+  <string name="chooser_activity_blacklist_pref_title">Aggiungi applicazione</string>
+  <string name="chooser_activity_blacklist_pref_summary">Tocca qui per aggiungere, tocca l\'app aggiunta per rimuoverla</string>
 </resources>
