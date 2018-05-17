@@ -440,7 +440,7 @@
   <string name="smartbar_config_restore_success_toast">Profil Smartbar restauré</string>
   <string name="smartbar_config_backup_error_toast">Erreur lors de la sauvegarde du profil Smartbar</string>
   <string name="smartbar_config_restore_error_toast">Erreur lors de la restauration du profil Smartbar</string>
-  <string name="navbar_buttons_alpha_title">Transparence des boutons</string>
+  <string name="navbar_buttons_alpha_title">Opacité des boutons</string>
   <string name="smartbar_longpress_delay_title">Appui prolongé</string>
   <string name="smartbar_longpress_delay_summary">Délai avant le déclenchement d\'une action par appui prolongé</string>
   <string name="smartbar_longpress_delay_default">Par défaut (rapide)</string>

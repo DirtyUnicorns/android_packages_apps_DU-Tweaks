@@ -16,13 +16,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- The Team -->
-  <string name="dialog_team_title">The Team</string>
+  <string name="dialog_team_title">A Equipa</string>
   <!-- Bottom navigation -->
-  <string name="bottom_nav_system_title">System</string>
-  <string name="bottom_nav_lockscreen_title">Lockscreen</string>
-  <string name="bottom_nav_statusbar_title">Statusbar</string>
-  <string name="bottom_nav_navigation_title">Navigation</string>
-  <string name="bottom_nav_multitasking_title">Multitasking</string>
+  <string name="bottom_nav_system_title">Sistema</string>
+  <string name="bottom_nav_lockscreen_title">Ecrã de bloqueio</string>
+  <string name="bottom_nav_statusbar_title">Barra de Estado</string>
+  <string name="bottom_nav_navigation_title">Navegação</string>
+  <string name="bottom_nav_multitasking_title">Multitarefa</string>
   <!-- Footer warnings -->
   <string name="heads_up_warning_text">Heads up notifications are meant to be used for multitasking while using full screen apps and/or playing games. Just know that while you use heads up notifications, you will not be able to use the ticker feature.</string>
   <string name="ticker_warning_text">The ticker feature is meant to be used as a mulitasking tool and brings a bit of splash of the old times. Just know that while you use the ticker feature, you will not be able to use heads up notifications.</string>
@@ -41,14 +41,14 @@
   <!-- Lockscreen -->
   <string name="fingerprint_prefs_title">Fingerprint prefs</string>
   <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>
-  <string name="lockscreen_items_title">Lockscreen items</string>
+  <string name="lockscreen_items_title">Itens do ecrã de bloqueio</string>
   <string name="lockscreen_items_summary">Remove or add items on the lockscreen</string>
   <!-- Statusbar -->
-  <string name="battery_options_title">Battery options</string>
+  <string name="battery_options_title">Opções de bateria</string>
   <string name="battery_options_summary">Customize the statusbar or QS tile battery</string>
-  <string name="carrier_label_title">Carrier label</string>
+  <string name="carrier_label_title">Nome da operadora</string>
   <string name="carrier_label_summary">Customize the carrier label on the lockscreen or statusbar</string>
-  <string name="clock_options_title">Clock options</string>
+  <string name="clock_options_title">Opções do relógio</string>
   <string name="clock_options_summary">Customize your statusbar clock</string>
   <string name="icon_manager_title">Icon manager</string>
   <string name="icon_manager_summary">Configure the visibility of statusbar items</string>
@@ -61,14 +61,14 @@
   <string name="traffic_title">Traffic indicators</string>
   <string name="traffic_summary">Enable and configure the traffic indicators on the statusbar</string>
   <!-- Navigation -->
-  <string name="buttons_title">Buttons</string>
+  <string name="buttons_title">Botões</string>
   <string name="buttons_summary">Configure hardware keys and/or volume rocker options</string>
   <string name="navigationbar_title">Navigation bar</string>
   <string name="navigationbar_summary">Configure smartbar, fling or pulse</string>
   <!-- Multitasking -->
-  <string name="headsup_title">Heads up</string>
+  <string name="headsup_title">Notificações pop-up</string>
   <string name="headsup_summary">Configure heads up options</string>
-  <string name="recents_title">Recents</string>
+  <string name="recents_title">Recentes</string>
   <string name="recents_summary">Configure recents options</string>
   <!-- Button brightness -->
   <string name="button_backlight_options_category">Backlight options</string>
@@ -93,13 +93,13 @@
   <string name="powermenu_ls_screenshot_summary">Show the screenshot option on the lockscreen</string>
   <string name="powermenu_ls_airplane_summary">Show the airplane mode option on the lockscreen</string>
   <!-- System theme -->
-  <string name="theme_category_title">System theme</string>
-  <string name="systemui_theme_style_title">Background color</string>
-  <string name="systemui_theme_style_auto">Automatic (wallpaper based)</string>
-  <string name="systemui_theme_style_light">Light</string>
-  <string name="systemui_theme_style_dark">Dark</string>
-  <string name="applying_theme_toast">Applying theme, please wait...</string>
-  <string name="theme_applied_toast">Theme applied!</string>
+  <string name="theme_category_title">Tema do sistema</string>
+  <string name="systemui_theme_style_title">Cor de fundo</string>
+  <string name="systemui_theme_style_auto">Automático (baseado na imagem de fundo)</string>
+  <string name="systemui_theme_style_light">Claro</string>
+  <string name="systemui_theme_style_dark">Escuro</string>
+  <string name="applying_theme_toast">A aplicar o tema. Por favor, aguarde...</string>
+  <string name="theme_applied_toast">Tema aplicado!</string>
   <string name="disable_themes_installed_title">System themes are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use these themes instead.</string>
   <string name="disable_accents_installed_title">Accent picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the accent picker.</string>
   <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
@@ -115,9 +115,9 @@
   <string name="hex">Hex:</string>
   <string name="hex_hint">#ff000000</string>
   <string name="set">Set</string>
-  <string name="color_default">Default</string>
+  <string name="color_default">Padrão</string>
   <!-- Network Traffic -->
-  <string name="network_traffic_state_title">Show net activity in statusbar</string>
+  <string name="network_traffic_state_title">Mostrar a atividade da rede na barra de estado</string>
   <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
   <!-- Volume key controls media stream -->
   <string name="volume_keys_control_media_stream_title">Media volume control</string>
@@ -142,12 +142,12 @@
   <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
   <string name="custom_carrier_label_notset">Custom label currently not set</string>
   <string name="show_carrier_title">Carrier label</string>
-  <string name="show_carrier_disabled">Disabled</string>
-  <string name="show_carrier_keyguard">Lockscreen</string>
-  <string name="show_carrier_statusbar">Status bar</string>
-  <string name="show_carrier_enabled">Both</string>
+  <string name="show_carrier_disabled">Desactivado</string>
+  <string name="show_carrier_keyguard">Ecrã de bloqueio</string>
+  <string name="show_carrier_statusbar">Barra de estado</string>
+  <string name="show_carrier_enabled">Ambos</string>
   <!-- Quick Pulldown-->
-  <string name="quick_pulldown_title">Quick pulldown</string>
+  <string name="quick_pulldown_title">Puxar rápido para baixo</string>
   <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
   <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
   <string name="quick_pulldown_off">Off</string>
@@ -171,9 +171,9 @@
   <!-- Clear all recents -->
   <string name="aosp_recents_title">AOSP recents</string>
   <string name="show_clear_all_recents_button_title">Clear-all FAB</string>
-  <string name="show_clear_all_recents_button_summary_on">Show clear all FAB</string>
+  <string name="show_clear_all_recents_button_summary_on">Mostrar botão \"Limpar Tudo\"</string>
   <string name="show_clear_all_recents_button_summary_off">Show AOSP clear all</string>
-  <string name="recents_clear_all_location_title">Clear all FAB location</string>
+  <string name="recents_clear_all_location_title">Localização do Botão \"Limpar Tudo\"</string>
   <string name="recents_clear_all_location_top_right">Top right</string>
   <string name="recents_clear_all_location_top_left">Top left</string>
   <string name="recents_clear_all_location_top_center">Top center</string>
@@ -181,11 +181,11 @@
   <string name="recents_clear_all_location_bottom_left">Bottom left</string>
   <string name="recents_clear_all_location_bottom_center">Bottom center</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
-  <string name="lockscreen_items_other">Other</string>
-  <string name="hide_lockscreen_clock_title">Clock widget</string>
-  <string name="hide_lockscreen_clock_summary">Change the clock widget\'s visibility</string>
-  <string name="hide_lockscreen_date_title">Date widget</string>
-  <string name="hide_lockscreen_date_summary">Change the date\'s visibility underneath the clock widget</string>
+  <string name="lockscreen_items_other">Outro</string>
+  <string name="hide_lockscreen_clock_title">Widget do relógio</string>
+  <string name="hide_lockscreen_clock_summary">Alterar a visibilidade do widget do relógio</string>
+  <string name="hide_lockscreen_date_title">Widget da data</string>
+  <string name="hide_lockscreen_date_summary">Alterar a visibilidade da data por debaixo do widget do relógio</string>
   <string name="hide_lockscreen_alarm_title">Alarm text</string>
   <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
   <!-- Fingerprint authentication vibration -->
@@ -649,7 +649,7 @@
   <string name="smart_pixels_shift_title">Burn-in protection</string>
   <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
   <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
-  <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on the a Share button</string>
+  <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on the Share button</string>
   <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
   <string name="chooser_activity_blacklist_pref_title">Add app</string>
   <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>

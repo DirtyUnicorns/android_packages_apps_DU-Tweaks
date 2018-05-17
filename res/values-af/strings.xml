@@ -649,7 +649,7 @@
   <string name="smart_pixels_shift_title">Burn-in protection</string>
   <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
   <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
-  <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on the a Share button</string>
+  <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on the Share button</string>
   <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
   <string name="chooser_activity_blacklist_pref_title">Add app</string>
   <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>

@@ -37,7 +37,7 @@
   <string name="miscellaneous_title">Varie</string>
   <string name="miscellaneous_summary">Impostazioni varie</string>
   <string name="powermenu_title">Menù di alimentazione</string>
-  <string name="powermenu_summary">Imposta il menù di spegnimento dentro e fuori la schermata di blocco con molti elementi</string>
+  <string name="powermenu_summary">Imposta il menù di alimentazione dentro e fuori la schermata di blocco con molti elementi</string>
   <!-- Lockscreen -->
   <string name="fingerprint_prefs_title">Configura impronta digitale</string>
   <string name="fingerprint_prefs_summary">Impostazioni specifiche al sensore di impronte digitali</string>
@@ -50,12 +50,12 @@
   <string name="carrier_label_summary">Personalizzare l\'etichetta dell\'operatore sulla schermata di blocco o sulla barra di stato</string>
   <string name="clock_options_title">Opzioni Orologio</string>
   <string name="clock_options_summary">Personalizza orologio nella barra di stato</string>
-  <string name="icon_manager_title">Manager delle icone</string>
+  <string name="icon_manager_title">Gestione delle icone</string>
   <string name="icon_manager_summary">Imposta la visibilità degli elementi nella barra di stato</string>
   <string name="notifications_title">Notifiche</string>
   <string name="notifications_summary">Modifiche specifiche alle notifiche di sistema</string>
   <string name="quicksettings_title">Impostazioni rapide</string>
-  <string name="quicksettings_summary">Imposta il layout delle impostazioni rapide</string>
+  <string name="quicksettings_summary">Configura il pannello delle impostazioni rapide</string>
   <string name="ticker_title">Ticker</string>
   <string name="ticker_summary">Abilita il ticker nella barra di stato e imposta le opzioni del ticker</string>
   <string name="traffic_title">Indicatori di traffico dati</string>
@@ -68,8 +68,8 @@
   <!-- Multitasking -->
   <string name="headsup_title">Heads up</string>
   <string name="headsup_summary">Configura heads up</string>
-  <string name="recents_title">App recenti</string>
-  <string name="recents_summary">Configura applicazioni recenti</string>
+  <string name="recents_title">Recenti</string>
+  <string name="recents_summary">Configura le opzioni dei recenti</string>
   <!-- Button brightness -->
   <string name="button_backlight_options_category">Opzioni retroilluminazione</string>
   <string name="button_backlight_enable_title">Consenti retroilluminazione pulsanti</string>
@@ -86,7 +86,7 @@
   <string name="powermenu_screenshot_title">Cattura schermata</string>
   <string name="powermenu_airplane_title">Modalità aereo</string>
   <string name="powermenu_category_visibility">Opzioni Schermata di Blocco</string>
-  <string name="powermenu_lockscreen_title">Visibilità Sulla Schermata Di Blocco</string>
+  <string name="powermenu_lockscreen_title">Visibilità sulla Schermata di Blocco</string>
   <string name="powermenu_lockscreen_summary">Attiva la possibilità di mostrare il menù di spegnimento nella schermata di blocco</string>
   <string name="powermenu_ls_reboot_summary">Visualizza l\'opzione di riavvio sulla schermata di blocco</string>
   <string name="powermenu_ls_advanced_reboot_summary">Visualizza l\'opzione di riavvio avanzato sulla schermata di blocco</string>
@@ -118,7 +118,7 @@
   <string name="color_default">Predefinito</string>
   <!-- Network Traffic -->
   <string name="network_traffic_state_title">Mostra attività di rete nella barra di stato</string>
-  <string name="network_traffic_autohide_threshold_title">Soglia alla quale nascondere automaticamente l\'attività di rete (KB/s)</string>
+  <string name="network_traffic_autohide_threshold_title">Nascondi soglia per inattività (KB/s)</string>
   <!-- Volume key controls media stream -->
   <string name="volume_keys_control_media_stream_title">Controllo volume multimedia</string>
   <string name="volume_keys_control_media_stream_summary">Forza i tasti del volume a controllare il flusso multimediale</string>
@@ -164,16 +164,16 @@
   <string name="show_brightness_title">Cursore luminosità</string>
   <string name="show_brightness_summary">Mostra la barra del livello della luminosità</string>
   <!-- Quick settings -->
-  <string name="qs_layout_category">Layout</string>
+  <string name="qs_layout_category">Disposizione</string>
   <string name="qs_columns_title">Colonne</string>
   <string name="qs_tile_title_visibility_title">Titolo Tile</string>
-  <string name="qs_tile_title_visibility_summary">Mostra il titolo sotto i tiles</string>
+  <string name="qs_tile_title_visibility_summary">Mostra il titolo sotto i Tile</string>
   <!-- Clear all recents -->
-  <string name="aosp_recents_title">App recenti AOSP</string>
-  <string name="show_clear_all_recents_button_title">Pulsante FAB per chiudere tutto</string>
-  <string name="show_clear_all_recents_button_summary_on">Mostra il pulsante FAB per pulire le app recenti</string>
-  <string name="show_clear_all_recents_button_summary_off">Mostra il tasto AOSP per chiudere tutto</string>
-  <string name="recents_clear_all_location_title">Posizione pulsante FAB</string>
+  <string name="aosp_recents_title">Recenti AOSP</string>
+  <string name="show_clear_all_recents_button_title">Pulsante cancella tutto</string>
+  <string name="show_clear_all_recents_button_summary_on">Mostra il pulsante cancella tutto</string>
+  <string name="show_clear_all_recents_button_summary_off">Mostra il tasto AOSP per cancellare tutto</string>
+  <string name="recents_clear_all_location_title">Posizione pulsante cancella tutto</string>
   <string name="recents_clear_all_location_top_right">In alto a destra</string>
   <string name="recents_clear_all_location_top_left">In alto a sinistra</string>
   <string name="recents_clear_all_location_top_center">In alto al centro</string>
@@ -454,7 +454,7 @@
   <!-- Hardware button navigation -->
   <string name="hardware_keys_volume_keys_title">Tasti del volume</string>
   <string name="hardware_keys_home_key_title">Pulsante Home</string>
-  <string name="hardware_keys_menu_key_title">Tasto Menu</string>
+  <string name="hardware_keys_menu_key_title">Tasto Menù</string>
   <string name="hardware_keys_assist_key_title">Tasto Cerca</string>
   <string name="hardware_keys_appswitch_key_title">Tasto recenti</string>
   <string name="hardware_keys_back_key_title">Tasto Indietro</string>
@@ -573,17 +573,17 @@
   <string name="show_battery_percent_title">Mostra percentuale batteria</string>
   <string name="show_battery_percent_summary">Mostra la percentuale del livello della batteria vicino all\'icona</string>
   <string name="battery_percent_hidden">Nascosto</string>
-  <string name="battery_percent_outside">All\'Esterno</string>
-  <string name="battery_percent_inside">All\'Interno</string>
+  <string name="battery_percent_outside">All\'esterno</string>
+  <string name="battery_percent_inside">All\'interno</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Mostra icona grande</string>
   <string name="large_battery_icon_summary">Allarga l\'icona della batteria nella barra di stato</string>
   <!-- Slim Recents panel -->
-  <string name="slim_recents_title">App recenti Slim</string>
-  <string name="use_slim_recents_title">Attiva App recenti Slim</string>
+  <string name="slim_recents_title">Recenti Slim</string>
+  <string name="use_slim_recents_title">Attiva i recenti Slim</string>
   <string name="use_slim_recents_summary">Utilizza i recenti Slim anziché la visualizzazione predefinita</string>
-  <string name="slim_recents_settings_title">Impostazioni App recenti Slim</string>
-  <string name="slim_recents_settings_summary">Visualizza le impostazioni per le App recenti Slim</string>
+  <string name="slim_recents_settings_title">Impostazioni recenti Slim</string>
+  <string name="slim_recents_settings_summary">Visualizza le impostazioni per i recenti Slim</string>
   <string name="recents_max_apps_title">Numero massimo di applicazioni consentite</string>
   <string name="recent_panel_scale_title">Dimensioni</string>
   <string name="recent_panel_expanded_mode_title">Modalità anteprime estese</string>
@@ -594,12 +594,12 @@
   <string name="recent_panel_bg_color_title">Colore di sfondo del pannello</string>
   <string name="recent_card_bg_color_title">Colore di sfondo delle schede</string>
   <string name="recent_reset_title">Ripristina il colore predefinito</string>
-  <string name="recent_reset_confirm">Sei sicuro di voler ripristinare il colore predefinito delle App recenti Slim?</string>
+  <string name="recent_reset_confirm">Sei sicuro di voler ripristinare il colore predefinito dei recenti Slim?</string>
   <string name="default_auto_string">Predefinito (basato su app)</string>
   <string name="slim_recents_corner_radius_title">Utilizza gli angoli rotondi per i riquadri</string>
   <!-- ATTENTION: RTL languages need to replace left with right -->
   <string name="recent_panel_lefty_mode_title">Visualizza sul lato sinistro</string>
-  <string name="recent_panel_lefty_mode_summary">Mostra il pannello delle applicazioni recenti sul bordo sinistro</string>
+  <string name="recent_panel_lefty_mode_summary">Mostra il pannello dei recenti sul bordo sinistro</string>
   <string name="profile_choose_app">Scegli app</string>
   <string name="dialog_delete_title">Elimina</string>
   <string name="dialog_delete_message">Rimuovere l\'elemento selezionato?</string>

@@ -649,7 +649,7 @@
   <string name="smart_pixels_shift_title">Protecció contra el cremat</string>
   <string name="smart_pixels_shift_summary">Preveu el cremat a pantalles OLED alternant píxels</string>
   <string name="chooser_activity_blacklist_title">Llista negra del selector d\'activitats</string>
-  <string name="chooser_activity_blacklist_summary">Aplicacions que no es mostren quan es toca el botó de compartir</string>
+  <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on the Share button</string>
   <string name="chooser_activity_blacklist_cat_title">Llista negra</string>
   <string name="chooser_activity_blacklist_pref_title">Afegeix aplicació</string>
   <string name="chooser_activity_blacklist_pref_summary">Toqueu aquí per afegir-hi, toqueu l\'aplicació afegida per eliminar-la</string>

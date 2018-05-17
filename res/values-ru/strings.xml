@@ -69,7 +69,7 @@
   <string name="headsup_title">Всплывающие уведомления</string>
   <string name="headsup_summary">Настройка всплывающих уведомлений</string>
   <string name="recents_title">Недавние</string>
-  <string name="recents_summary">Настройка недавно запущенных приложений OmniSwitch или AOSP</string>
+  <string name="recents_summary">Настройка недавно запущенных приложений Slim Recents или AOSP</string>
   <!-- Button brightness -->
   <string name="button_backlight_options_category">Настройки подсветки</string>
   <string name="button_backlight_enable_title">Включить подсветку кнопок</string>
@@ -649,8 +649,8 @@
   <string name="smart_pixels_shift_title">Защита от выгорания</string>
   <string name="smart_pixels_shift_summary">Предотвращение выгорания на OLED-устройствах благодаря перемещению пикселей с такой частотой</string>
   <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
-  <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on the a Share button</string>
-  <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
-  <string name="chooser_activity_blacklist_pref_title">Add app</string>
-  <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>
+  <string name="chooser_activity_blacklist_summary">Не показывать приложения при нажатии на кнопку Поделиться</string>
+  <string name="chooser_activity_blacklist_cat_title">Чёрный список</string>
+  <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
+  <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить его</string>
 </resources>
