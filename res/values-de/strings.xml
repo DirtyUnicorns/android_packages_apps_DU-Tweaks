@@ -440,7 +440,7 @@
   <string name="smartbar_config_restore_success_toast">Smartbar Profil erfolgreich wiederhergestellt</string>
   <string name="smartbar_config_backup_error_toast">Fehler beim Speichern des Smartbar-Profils</string>
   <string name="smartbar_config_restore_error_toast">Fehler beim Wiederherstellen des Smartbar-Profils</string>
-  <string name="navbar_buttons_alpha_title">Transparenz der Schaltflächen</string>
+  <string name="navbar_buttons_alpha_title">Schaltfläche Transparenz</string>
   <string name="smartbar_longpress_delay_title">Verzögerung für langen Druck</string>
   <string name="smartbar_longpress_delay_summary">Einstellen, wie lange das System wartet, bevor die Aktion als \"langer Druck\" erkannt wird</string>
   <string name="smartbar_longpress_delay_default">Standardverzögerung (schnell)</string>

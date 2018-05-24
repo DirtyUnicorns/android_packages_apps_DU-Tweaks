@@ -108,7 +108,7 @@
   <string name="theme_accent_picker_summary">Sistem teması için vurgu rengi seçin</string>
   <string name="theme_accent_picker_default">Varsayılan</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Renk Seçici</string>
+  <string name="dialog_color_picker">Renk seçin</string>
   <string name="press_color_to_apply">Uygulamak için aşağıdaki renge dokunun</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>
@@ -380,19 +380,19 @@
   <string name="pulse_render_mode_solid_lines">Düz çizgiler</string>
   <string name="fling_pulse_color">Pulse rengi</string>
   <string name="fling_pulse_color_summary">Otomatik renk için geri dönüş olarak da kullanılır</string>
-  <string name="eos_fling_lavalamp_title">Lava lambasını aç</string>
-  <string name="eos_fling_lavalamp_summary">Pulse için pürüzsüz bir lava lambası tarzı renk karışımı animasyonu</string>
+  <string name="eos_fling_lavalamp_title">Lav lambasını aç</string>
+  <string name="eos_fling_lavalamp_summary">Pulse için pürüzsüz bir lav lambası tarzı renk karışımı animasyonu</string>
   <string name="pulse_advanced_category">Gelişmiş</string>
   <string name="pulse_legacy_mode_advanced_category">Solan bloklar modu ayarları</string>
   <string name="pulse_custom_fudge_factor">Davranış seviyesi</string>
-  <string name="lavamp_solid_speed_title">Lava lamba hızı</string>
+  <string name="lavamp_solid_speed_title">Lav lambası hızı</string>
   <string name="pulse_solid_units_count">Düz çizgi sayısı</string>
   <string name="pulse_solid_lines_count">Düz çizgi sayısı</string>
   <string name="pulse_solid_units_opacity">Düz çizgi saydamlığı</string>
   <string name="pulse_solid_dimen_category">Düz çizgi modu ayarları</string>
   <string name="pulse_custom_buttons_opacity_title">Smartbar tuşlarının Pulse üzerinde ki saydamlığı</string>
   <string name="pulse_auto_color_title">Otomatik Pulse rengi</string>
-  <string name="pulse_auto_color_summary">Rengi albüm kapaklarıyla senkronize eder. Lava Lambası ve çizgilerinin opaklığını geçersiz kılar.</string>
+  <string name="pulse_auto_color_summary">Rengi albüm kapaklarıyla senkronize eder. Lav Lambası ve çizgilerinin opaklığını geçersiz kılar.</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Çubuk genişliği</string>
   <string name="pulse_custom_div">Çubuk aralığı</string>
@@ -412,7 +412,7 @@
   <string name="smartbar_editor_summary">Smartbar tuş düzenleyicisini aç</string>
   <string name="smartbar_help_policy_notice_summary">Düzenleyici modundayken konumunu değiştirmek için bir tuşa basın ve sürükleyin veya düzenleme menüsünü görmek için bir tuşa uzunca basın. Menü gösterilirken tuş konumu değiştirilebilir.\n\nBir çift dokunma eylemi ayarlamak, bir seferlik tek dokunuşu geciktirecektir.</string>
   <string name="smartbar_context_menu_position_title">Bağlamsal tuşların konum düzeni</string>
-  <string name="smartbar_context_menu_position_summary">Menü ve klavye seçici olarak bağlamsal tuşların konumunu ayarlar</string>
+  <string name="smartbar_context_menu_position_summary">Menü ve klavye seçici gibi bağlamsal tuşların konumunu ayarlama</string>
   <string name="smartbar_right">Sağ</string>
   <string name="smartbar_left">Sol</string>
   <string name="smartbar_button_animation_title">Tuşa dokunma animasyonu</string>
@@ -437,7 +437,7 @@
   <string name="smartbar_config_name_edit_dialog_message">Ad girin veya boş bırakın</string>
   <string name="smartbar_config_dialog_title">Smartbar profilleri</string>
   <string name="smartbar_config_backup_success_toast">Smartbar profili başarıyla kaydedildi</string>
-  <string name="smartbar_config_restore_success_toast">Smartbar profil başarıyla geri yüklendi</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profili başarıyla geri yüklendi</string>
   <string name="smartbar_config_backup_error_toast">Smartbar profili kaydedilirken hata oluştu</string>
   <string name="smartbar_config_restore_error_toast">Smartbar profili geri yüklenirken hata oluştu</string>
   <string name="navbar_buttons_alpha_title">Tuş şeffaflığı</string>

@@ -126,7 +126,7 @@
   <string name="volume_button_music_control_title">播放控制</string>
   <string name="volume_button_music_control_summary">当屏幕关闭时，长按音量键会跳过音乐音轨</string>
   <!-- Volume key rotation -->
-  <string name="swap_volume_buttons_title">重新调整</string>
+  <string name="swap_volume_buttons_title">跟随屏幕方向调整音量按键布局</string>
   <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键按钮</string>
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">耳机连接后打开音乐应用</string>
@@ -440,7 +440,7 @@
   <string name="smartbar_config_restore_success_toast">Smartbar 配置还原成功</string>
   <string name="smartbar_config_backup_error_toast">保存 Smartbar 配置文件时出错</string>
   <string name="smartbar_config_restore_error_toast">恢复 Smart Bar 配置文件时出错</string>
-  <string name="navbar_buttons_alpha_title">按键透明度</string>
+  <string name="navbar_buttons_alpha_title">按钮不透明度</string>
   <string name="smartbar_longpress_delay_title">按键长按延迟</string>
   <string name="smartbar_longpress_delay_summary">设置系统在触发长按动作之前的等待时间</string>
   <string name="smartbar_longpress_delay_default">默认延迟（低）</string>

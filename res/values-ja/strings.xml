@@ -440,7 +440,7 @@
   <string name="smartbar_config_restore_success_toast">スマートバープロファイルは正常に復元されました</string>
   <string name="smartbar_config_backup_error_toast">スマートバープロファイルの保存中にエラーが発生しました。</string>
   <string name="smartbar_config_restore_error_toast">スマートバープロファイルの復元中にエラーが発生しました。</string>
-  <string name="navbar_buttons_alpha_title">ボタンの透明度</string>
+  <string name="navbar_buttons_alpha_title">Button opacity</string>
   <string name="smartbar_longpress_delay_title">ボタン長押しの遅延</string>
   <string name="smartbar_longpress_delay_summary">システムが長押し操作をトリガーするまで待機する時間の設定</string>
   <string name="smartbar_longpress_delay_default">デフォルトの遅延（高速）</string>

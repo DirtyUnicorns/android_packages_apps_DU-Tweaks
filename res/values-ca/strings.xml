@@ -24,8 +24,8 @@
   <string name="bottom_nav_navigation_title">Navegació</string>
   <string name="bottom_nav_multitasking_title">Multitasca</string>
   <!-- Footer warnings -->
-  <string name="heads_up_warning_text">Les notificacions d\'avís estan destinades a utilitzar-se per a la multitasca mentre s\'utilitzen aplicacions de pantalla completa i/o jugar jocs. Sapigueu que mentre utilitzeu notificacions d\'avís, no sereu capaços d\'utilitzar la funció de teleimpressió.</string>
-  <string name="ticker_warning_text">La funció de teleimpressió està destinada per ser utilitzada com una eina de multi-tasca i aporta un aspecte de temps antic. Sàpiga que mentre utilitza la funció de teleimpressió, no serà capaç d\'utilitzar les notificacions d\'avís.</string>
+  <string name="heads_up_warning_text">Les notificacions emergents estan destinades a utilitzar-se per a la multitasca mentre s\'utilitzen aplicacions de pantalla completa i/o jugar jocs. Sapigueu que mentre utilitzeu notificacions d\'avís, no sereu capaços d\'utilitzar la funció de teleimpressió.</string>
+  <string name="ticker_warning_text">La funció de teleimpressió està destinada per ser utilitzada com una eina de multi-tasca i aporta un aspecte de temps antic. Sàpiga que mentre utilitza la funció de teleimpressió, no serà capaç d\'utilitzar les notificacions emergents.</string>
   <string name="carrier_label_warning_text">Tingueu en compte que l\'etiqueta de l\'operador personalitzada no està disponible a la zona de la barra d\'estat estesa, també conegut com l\'àrea de configuració ràpida. Si utilitza emojis com etiqueta d\'operador pot causar alguns problemes de visibilitat sobre fons més clars.</string>
   <string name="lockscreen_torch_warning_text">La funció de torxa de la pantalla de bloqueig està pensada per utilitzar-se només quan la pantalla està apagada. Tingui en compte que deixant la llum del flaix encesa per un període llarg de temps pot causar que la seva bateria s\'esgoti ràpidament.</string>
   <string name="slim_recents_hints_footer">Per tancar totes les aplicacions, toqui amb dos dits sobre el panell. Per evitar que una aplicació sigui tancada, faci un toc llarg sobre la icona per remarcar-la.\n\nPer funcions recents adicionals com la multi-finestra or per matar aplicacions, faci un toc llarg sobre qualsevol finestra d\'aplicació en el panell.</string>
@@ -194,7 +194,7 @@
   <!-- Heads up -->
   <string name="heads_up_title">Permet notificacions emergents</string>
   <string name="heads_up_summary_enabled">Les notificacions emergents estan activades</string>
-  <string name="heads_up_summary_disabled">Notificacions d\'advertència estan desactivades</string>
+  <string name="heads_up_summary_disabled">Notificacions emergents estan desactivades</string>
   <string name="heads_up_blacklist_add_package_title">Afegeix aplicació</string>
   <string name="heads_up_blacklist_add_package_summary">Desactiva les notificacions emergents en aquestes aplicacions</string>
   <string name="heads_up_blacklist_title">Llista negra</string>
@@ -440,7 +440,7 @@
   <string name="smartbar_config_restore_success_toast">Smartbar profile successfully restored</string>
   <string name="smartbar_config_backup_error_toast">Error saving Smartbar profile</string>
   <string name="smartbar_config_restore_error_toast">Error restoring Smartbar profile</string>
-  <string name="navbar_buttons_alpha_title">Button transparency</string>
+  <string name="navbar_buttons_alpha_title">Button opacity</string>
   <string name="smartbar_longpress_delay_title">Button longpress delay</string>
   <string name="smartbar_longpress_delay_summary">Set how long the system will wait before triggering a longpress action</string>
   <string name="smartbar_longpress_delay_default">Default delay (fast)</string>

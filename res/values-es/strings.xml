@@ -440,7 +440,7 @@
   <string name="smartbar_config_restore_success_toast">Perfil de Smartbar restaurado con éxito</string>
   <string name="smartbar_config_backup_error_toast">Error al guardar el perfil de Smartbar</string>
   <string name="smartbar_config_restore_error_toast">Error restaurando el perfil de Smartbar</string>
-  <string name="navbar_buttons_alpha_title">Transparencia de botón</string>
+  <string name="navbar_buttons_alpha_title">Opacidad de los botones</string>
   <string name="smartbar_longpress_delay_title">Retraso de pulsación larga del botón</string>
   <string name="smartbar_longpress_delay_summary">Establece cuánto esperará el sistema antes de desencadenar una acción de pulsación larga</string>
   <string name="smartbar_longpress_delay_default">Retraso por defecto (rapido)</string>
