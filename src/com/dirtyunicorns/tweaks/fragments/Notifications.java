@@ -34,21 +34,12 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class Notifications extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
-    private ListPreference mNoisyNotification;
     private ListPreference mAnnoyingNotification;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notifications);
-
-        mNoisyNotification = (ListPreference) findPreference("notification_sound_vib_screen_on");
-        mNoisyNotification.setOnPreferenceChangeListener(this);
-        int mode = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON,
-                1, UserHandle.USER_CURRENT);
-        mNoisyNotification.setValue(String.valueOf(mode));
-        mNoisyNotification.setSummary(mNoisyNotification.getEntry());
 
         mAnnoyingNotification = (ListPreference) findPreference("less_notification_sounds");
         mAnnoyingNotification.setOnPreferenceChangeListener(this);
@@ -60,15 +51,7 @@ public class Notifications extends SettingsPreferenceFragment implements Prefere
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference.equals(mNoisyNotification)) {
-            int mode = Integer.parseInt(((String) newValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON, mode, UserHandle.USER_CURRENT);
-            int index = mNoisyNotification.findIndexOfValue((String) newValue);
-            mNoisyNotification.setSummary(
-                    mNoisyNotification.getEntries()[index]);
-            return true;
-        } else if (preference.equals(mAnnoyingNotification)) {
+        if (preference.equals(mAnnoyingNotification)) {
             int mode = Integer.parseInt(((String) newValue).toString());
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, mode, UserHandle.USER_CURRENT);

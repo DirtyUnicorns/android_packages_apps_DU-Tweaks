@@ -347,19 +347,6 @@
         <item>2</item>
     </string-array>
 
-    <!-- Suppress notification sound/vibration -->
-    <string-array name="notification_sound_vib_screen_on_entries">
-        <item>@string/notification_sound_vib_screen_on_never</item>
-        <item>@string/notification_sound_vib_screen_on_always</item>
-        <item>@string/notification_sound_vib_screen_on_nomedia</item>
-    </string-array>
-
-    <string-array name="notification_sound_vib_screen_on_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Less Notifications -->
     <string-array name="less_notification_sounds_entries">
         <item>@string/less_notification_sounds_default</item>

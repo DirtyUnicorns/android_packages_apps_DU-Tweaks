@@ -18,12 +18,11 @@
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/notifications_title" >
 
-    <ListPreference
+    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:title="@string/notification_sound_vib_screen_on_title"
-        android:entries="@array/notification_sound_vib_screen_on_entries"
-        android:entryValues="@array/notification_sound_vib_screen_on_values"
-        android:summary="%s" />
+        android:summary="@string/notification_sound_vib_screen_on_summary"
+        android:defaultValue="true" />
 
     <ListPreference
         android:key="less_notification_sounds"
