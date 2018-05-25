@@ -32,4 +32,15 @@
         android:entries="@array/less_notification_sounds_entries"
         android:entryValues="@array/less_notification_sounds_values" />
 
+    <PreferenceCategory
+        android:title="@string/lockscreen_items_other">
+
+        <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+            android:key="wallpaper_notification_shade_wallpaper_tint"
+            android:title="@string/wallpaper_tint_notification_shade"
+            android:summary="@string/wallpaper_tint_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

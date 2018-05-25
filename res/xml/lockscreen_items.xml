@@ -81,6 +81,12 @@
             android:entries="@array/torch_power_button_gesture_entries"
             android:entryValues="@array/torch_power_button_gesture_values" />
 
+        <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+            android:key="wallpaper_keyguard_wallpaper_tint"
+            android:title="@string/wallpaper_tint_keyguard"
+            android:summary="@string/wallpaper_tint_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
