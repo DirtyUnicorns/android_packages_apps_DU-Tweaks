@@ -497,7 +497,7 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Veille par double appui</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Son et vibration des notifications si l\'écran est allumé</string>
+  <string name="notification_sound_vib_screen_on_title">Son de notification si l\'écran est allumé</string>
   <string name="notification_sound_vib_screen_on_never">Jamais</string>
   <string name="notification_sound_vib_screen_on_always">Toujours (Par défaut)</string>
   <string name="notification_sound_vib_screen_on_nomedia">Si aucune lecture de média</string>
