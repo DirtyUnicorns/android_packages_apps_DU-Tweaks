@@ -145,7 +145,7 @@ public class ActionFragment extends SettingsPreferenceFragment implements
                 final DialogInterface.OnClickListener customActionClickListener = new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int item) {
-                        findAndUpdatePreference(adapter.getItem(item), mHolderTag);
+                        findAndUpdatePreference(adapter.getItem(item).action, mHolderTag);
                         dialog.dismiss();
                     }
                 };
