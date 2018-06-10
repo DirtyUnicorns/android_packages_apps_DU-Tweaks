@@ -20,10 +20,9 @@
     <string-array name="lockscreen_clock_selection_entries" translatable="false">
         <item>@string/lockscreen_clock_selection_digital</item>
         <item>@string/lockscreen_clock_selection_digital_bold</item>
-        <item>@string/lockscreen_clock_selection_analog</item>
-        <item>@string/lockscreen_clock_selection_analog_deadpool</item>
         <item>@string/lockscreen_clock_selection_sammy</item>
         <item>@string/lockscreen_clock_selection_sammy_bold</item>
+        <item>@string/lockscreen_clock_selection_analog</item>
     </string-array>
 
     <string-array name="lockscreen_clock_selection_values" translatable="false">
@@ -32,7 +31,6 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
-        <item>5</item>
     </string-array>
 
     <!-- Lockscreen date styles -->
