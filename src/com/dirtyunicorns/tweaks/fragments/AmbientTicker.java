@@ -43,7 +43,7 @@ public class AmbientTicker extends SettingsPreferenceFragment implements
 
         mAmbientTicker = (ListPreference) findPreference("force_ambient_for_media");
         int mode = Settings.System.getIntForUser(resolver,
-                Settings.System.FORCE_AMBIENT_FOR_MEDIA, 0, UserHandle.USER_CURRENT);
+                Settings.System.FORCE_AMBIENT_FOR_MEDIA, 2, UserHandle.USER_CURRENT);
         mAmbientTicker.setValue(Integer.toString(mode));
         mAmbientTicker.setSummary(mAmbientTicker.getEntry());
         mAmbientTicker.setOnPreferenceChangeListener(this);
