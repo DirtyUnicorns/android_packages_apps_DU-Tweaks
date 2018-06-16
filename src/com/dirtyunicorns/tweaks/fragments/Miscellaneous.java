@@ -18,11 +18,7 @@ package com.dirtyunicorns.tweaks.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.ContentResolver;
-import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -41,8 +37,6 @@ import com.android.settings.Utils;
 
 import com.dirtyunicorns.tweaks.preferences.ScreenshotEditPackageListAdapter;
 import com.dirtyunicorns.tweaks.preferences.ScreenshotEditPackageListAdapter.PackageItem;
-
-
 
 public class Miscellaneous extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {

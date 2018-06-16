@@ -19,24 +19,20 @@ package com.dirtyunicorns.tweaks.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-//import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
-//import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
-//import android.database.ContentObserver;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
-import android.provider.Settings;
-//import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -58,11 +54,12 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.List;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+
 import com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference;
 import com.dirtyunicorns.tweaks.preferences.CustomSeekBarPreference;
 
