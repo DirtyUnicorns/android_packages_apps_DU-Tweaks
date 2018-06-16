@@ -29,7 +29,7 @@
   <string name="carrier_label_warning_text">Houd er rekening mee dat het aangepaste providerlabel niet beschikbaar is in het gebied met de uitgebreide statusbalk, ook wel het gebied met snelle instellingen genoemd. Het gebruik van emoji\'s als uw providerlabel kan mogelijk problemen met de zichtbaarheid op lichtere achtergronden veroorzaken.</string>
   <string name="lockscreen_torch_warning_text">De vergrendelscherm zaklamp functie is enkel bedoeld voor gebruik bij uitgeschakeld scherm. Onthou dat het aanlaten van de zaklamp een nadelig gevolg kan hebben op de batterijduur.</string>
   <string name="slim_recents_hints_footer">Om alle apps te ruimen, knijp met twee vingers op het paneel. Als u wilt verhinderen dat een app geruimd wordt, druk lang op het pictogram om te deselecteren.\n\nVoor extra nieuwigheidsfuncties zoals multiwindow of het uitschakelen van een app, druk lang op of sleep het pictogram van een app in het deelvenster.</string>
-  <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend you set the amount of disabled pixels at 75 percent.</string>
+  <string name="smart_pixels_warning_text">Slimme pixels is een energiebesparende functie. Afhankelijk van hoeveel pixels je uitschakelt, zie je een aanzienlijke verbetering van de prestatie van de batterij. Voor een goede gebruikservaring adviseren wij een waarde van 75 procent.</string>
   <!-- Categories -->
   <!-- System -->
   <string name="device_extras_title">Apparaat extras</string>
@@ -76,63 +76,63 @@
   <string name="button_link_brightness">Koppelen aan helderheid scherm</string>
   <string name="button_link_brightness_summary">Achtergrondverlichting van knoppen zal aangepast worden aan de hand van de schermhelderheid</string>
   <string name="button_manual_brightness">Helderheidsniveau</string>
-  <string name="button_timeout_title">Backlight timeout</string>
-  <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-  <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+  <string name="button_timeout_title">Time-out achtergrondverlichting</string>
+  <string name="button_backlight_on_touch_only_title">Achtergrondverlichting bij aanraken</string>
+  <string name="button_backlight_on_touch_only_summary">Achtergrondverlichting van knoppen alleen aan bij aanraken in plaats van altijd aan. Time-out heeft nog steeds invloed op deze functie.</string>
   <!-- Power Menu -->
-  <string name="powermenu_reboot_title">Reboot</string>
-  <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
-  <string name="powermenu_advanced_reboot_summary">Enables the advanced reboot menu for rebooting options such hot, recovery and bootloader. Also adds as an option to restart SystemUI</string>
-  <string name="powermenu_screenshot_title">Screenshot</string>
-  <string name="powermenu_airplane_title">Airplane mode</string>
-  <string name="powermenu_category_visibility">Lockscreen options</string>
-  <string name="powermenu_lockscreen_title">Visibility on the lockscreen</string>
-  <string name="powermenu_lockscreen_summary">Enable the ability to show and use the power menu dialog while on the lockscreen</string>
-  <string name="powermenu_ls_reboot_summary">Show the reboot option on the lockscreen</string>
-  <string name="powermenu_ls_advanced_reboot_summary">Show the advanced reboot option on the lockscreen</string>
-  <string name="powermenu_ls_screenshot_summary">Show the screenshot option on the lockscreen</string>
-  <string name="powermenu_ls_airplane_summary">Show the airplane mode option on the lockscreen</string>
+  <string name="powermenu_reboot_title">Herstart</string>
+  <string name="powermenu_advanced_reboot_title">Geavanceerd herstarten</string>
+  <string name="powermenu_advanced_reboot_summary">Hiermee activeert u het geavanceerd herstarten. Met deze optie kunt u herstarten naar recovery, bootloader en een harde herstart maken. Ook kunt U hiermee de SysteemUI herstarten</string>
+  <string name="powermenu_screenshot_title">Schermafbeelding</string>
+  <string name="powermenu_airplane_title">Vliegtuigmodus</string>
+  <string name="powermenu_category_visibility">Vergrendelscherm Opties</string>
+  <string name="powermenu_lockscreen_title">Zichtbaarheid op het vergrendelscherm</string>
+  <string name="powermenu_lockscreen_summary">Schakel de mogelijkheid in om de aan/uit menu te tonen en te gebruiken op het vergrendelscherm</string>
+  <string name="powermenu_ls_reboot_summary">Toon de herstart optie op het vergrendelscherm</string>
+  <string name="powermenu_ls_advanced_reboot_summary">Toon de geavanceerde herstart optie op het vergrendelscherm</string>
+  <string name="powermenu_ls_screenshot_summary">Toon de schermafdruk optie op het vergrendelscherm</string>
+  <string name="powermenu_ls_airplane_summary">Toon de vliegtuigmodus optie op het vergrendelscherm</string>
   <!-- System theme -->
-  <string name="theme_category_title">System theme</string>
-  <string name="systemui_theme_style_title">Background color</string>
-  <string name="systemui_theme_style_auto">Automatic (wallpaper based)</string>
-  <string name="systemui_theme_style_light">Light</string>
-  <string name="systemui_theme_style_dark">Dark</string>
-  <string name="applying_theme_toast">Applying theme, please wait...</string>
-  <string name="theme_applied_toast">Theme applied!</string>
-  <string name="disable_themes_installed_title">System themes are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use these themes instead.</string>
-  <string name="disable_accents_installed_title">Accent picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the accent picker.</string>
-  <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
-  <string name="accent_picker_dialog_title">Select an accent color</string>
-  <string name="theme_accent_picker_title">Accent color</string>
-  <string name="theme_accent_picker_summary">Select system theme accent color</string>
-  <string name="theme_accent_picker_default">Default</string>
+  <string name="theme_category_title">Systeem thema</string>
+  <string name="systemui_theme_style_title">Achtergrondkleur</string>
+  <string name="systemui_theme_style_auto">Automatisch (gebaseerd op achtergrond)</string>
+  <string name="systemui_theme_style_light">Licht</string>
+  <string name="systemui_theme_style_dark">Donker</string>
+  <string name="applying_theme_toast">Thema wordt toegepast, even geduld...</string>
+  <string name="theme_applied_toast">Thema toegepast!</string>
+  <string name="disable_themes_installed_title">Systeem thema\'s zijn niet beschikbaar als U gebruik maakt van Substratum. Deinstalleer Substratum als U de ingebouwde thema\'s wenst.</string>
+  <string name="disable_accents_installed_title">De accent picker is niet beschikbaar om conflicten met Substratum te voorkomen. Deinstalleer Substratum als U de ingebouwde accent picker wenst.</string>
+  <string name="disable_fonts_installed_title">Font picker is niet beschikbaar om conflicten met Substratum te voorkomen. Verwijder substratum als u wenst gebruik te maken van de ingebouwde font picker.</string>
+  <string name="accent_picker_dialog_title">Selecteer een accentkleur</string>
+  <string name="theme_accent_picker_title">Accentkleur</string>
+  <string name="theme_accent_picker_summary">Selecteer de accentkleur bij het thema</string>
+  <string name="theme_accent_picker_default">Standaard</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Color Picker</string>
-  <string name="press_color_to_apply">Press on color below to apply</string>
+  <string name="dialog_color_picker">Kleurkiezer</string>
+  <string name="press_color_to_apply">Druk op kleur hieronder om toe te passen</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>
   <string name="hex">Hex:</string>
   <string name="hex_hint">#ff000000</string>
-  <string name="set">Set</string>
-  <string name="color_default">Default</string>
+  <string name="set">Instellen</string>
+  <string name="color_default">Standaard</string>
   <!-- Network Traffic -->
-  <string name="network_traffic_state_title">Show net activity in statusbar</string>
-  <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+  <string name="network_traffic_state_title">Netwerkactiviteit weergeven in statusbalk</string>
+  <string name="network_traffic_autohide_threshold_title">Weergavedrempel voor netwerkactiviteit (KB/s)</string>
   <!-- Volume key controls media stream -->
-  <string name="volume_keys_control_media_stream_title">Media volume control</string>
-  <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+  <string name="volume_keys_control_media_stream_title">De controle van het volume van de media</string>
+  <string name="volume_keys_control_media_stream_summary">Forceer volume knoppen om media stream te controleren</string>
   <!-- Volume rocker music control -->
-  <string name="volume_button_music_control_title">Playback control</string>
-  <string name="volume_button_music_control_summary">When the screen is off, long-pressing the volume keys will skip music tracks</string>
+  <string name="volume_button_music_control_title">Afspeel controle</string>
+  <string name="volume_button_music_control_summary">Bij scherm uit, volumeknoppen inhouden om door muzieknummers te navigeren</string>
   <!-- Volume key rotation -->
-  <string name="swap_volume_buttons_title">Reorient</string>
-  <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+  <string name="swap_volume_buttons_title">Wissel volume knoppen</string>
+  <string name="swap_volume_buttons_summary">Volumeknoppen omdraaien indien het scherm gedraaid is</string>
   <!-- Launch music player when headset is connected -->
-  <string name="headset_connect_player_title">Launch music app on headset connection</string>
-  <string name="headset_connect_player_disabled">Disabled</string>
-  <string name="headset_connect_player_wired">Wired headset plugged in</string>
-  <string name="headset_connect_player_bt_no_carkit">BT headset (no carkit) plugged in</string>
+  <string name="headset_connect_player_title">Start muziek app op als een koptelefoon wordt aangesloten</string>
+  <string name="headset_connect_player_disabled">Uitgeschakeld</string>
+  <string name="headset_connect_player_wired">Bluetooth headset is aangesloten</string>
+  <string name="headset_connect_player_bt_no_carkit">Bluetooth headset (geen carkit) is aangesloten</string>
   <string name="headset_connect_player_bt">BT headset plugged in</string>
   <string name="headset_connect_player_both_no_carkit">Eender welke headset (geen carkit) is aangesloten</string>
   <string name="headset_connect_player_both">Eender welke headset is aangesloten</string>
@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Overige</string>
   <string name="hide_lockscreen_clock_title">Klokwidget</string>
   <string name="hide_lockscreen_clock_summary">Zichtbaarheid van de klok widget wijzigen</string>
+  <string name="lockscreen_clock_selection_title">Clock style</string>
+  <string name="lockscreen_clock_selection_digital">Default</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
   <string name="hide_lockscreen_date_title">Datumwidget</string>
   <string name="hide_lockscreen_date_summary">Wijzig de zichtbaarheid van de datum onder de klok widget</string>
+  <string name="lockscreen_date_selection_title">Date style</string>
+  <string name="lockscreen_date_selection_default">Default</string>
+  <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
+  <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
   <string name="hide_lockscreen_alarm_title">Alarmtekst</string>
   <string name="hide_lockscreen_alarm_summary">Wijzig de zichtbaarheid van de alarmtekst onder de klok widget</string>
   <!-- Fingerprint authentication vibration -->
@@ -236,19 +247,19 @@
   <string name="notification_light_general_title">General</string>
   <string name="notification_light_applist_title">Apps</string>
   <string name="notification_light_phonelist_title">Phone</string>
-  <string name="notification_light_use_custom">Use custom values</string>
-  <string name="notification_light_use_custom_summary">Enable to set per app notification colors</string>
-  <string name="notification_light_default_value">Default</string>
-  <string name="notification_light_missed_call_title">Missed call</string>
+  <string name="notification_light_use_custom">Aangepaste waarden gebruiken</string>
+  <string name="notification_light_use_custom_summary">Toestaan om per app notificatiekleuren in te stellen</string>
+  <string name="notification_light_default_value">Standaard</string>
+  <string name="notification_light_missed_call_title">Gemiste oproep</string>
   <string name="notification_light_voicemail_title">Voicemail</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
-  <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
+  <string name="notification_light_screen_on">Meldingsled met scherm aan</string>
+  <string name="notification_light_zen_mode">Meldings led in niet storen modus</string>
+  <string name="notification_light_use_multiple_leds">Meerdere LEDs</string>
   <!-- Notification light settings -->
-  <string name="leds_category_title">LED Options</string>
-  <string name="battery_light_settings">Battery light</string>
-  <string name="led_notification_title">Light settings</string>
-  <string name="led_notification_text">LED light enabled by settings</string>
+  <string name="leds_category_title">LED-instellingen</string>
+  <string name="battery_light_settings">Acculed</string>
+  <string name="led_notification_title">Licht instellingen</string>
+  <string name="led_notification_text">LED-verlichting ingeschakeld door instellingen</string>
   <string name="notification_light_no_apps_summary">Om per app te controleren, activeer \'%1$s\' en klik \'\u002b\' op de menubalk</string>
   <!-- Battery light settings  -->
   <string name="batterylight_title">Batterij LED instellingen</string>
@@ -306,27 +317,27 @@
   <string name="fling_interface">Fling</string>
   <string name="fling_enable_title">Fling inschakelen</string>
   <string name="fling_back_home_policy">Terug en Home moeten altijd worden ingesteld. Om toewijzing van de Terug- of Home-toets te wijzigen stelt u eerst de gewenste toewijzing in.\n\nOok zal het instellen van een dubbeltik-actie leiden tot een klein beetje vertraging bij een enkele tik.</string>
-  <string name="fling_split_bar_policy">When only a right or left action is assigned, the action applies to the full bar.</string>
-  <string name="fling_def_summary">No action set</string>
-  <string name="fling_swipe_actions">Swipe gestures</string>
-  <string name="fling_tap_actions">Tap gestures</string>
-  <string name="fling_short_swipe_right">Right short swipe</string>
-  <string name="fling_short_swipe_left">Left short swipe</string>
-  <string name="fling_long_swipe_right">Right long swipe</string>
-  <string name="fling_long_swipe_left">Left long swipe</string>
-  <string name="fling_right_up_swipe">Right side swipe up</string>
-  <string name="fling_left_up_swipe">Left side swipe up</string>
-  <string name="fling_single_tap">Single tap right</string>
-  <string name="fling_double_tap">Double tap right</string>
-  <string name="fling_long_press">Long press right</string>
-  <string name="fling_single_left_tap">Single tap left</string>
-  <string name="fling_double_left_tap">Double tap left</string>
-  <string name="fling_long_left_press">Long press left</string>
-  <string name="long_swipe_portrait_title">Portrait</string>
-  <string name="long_swipe_landscape_title">Landscape</string>
-  <string name="portrait_right_swipe_title">Portrait right swipe</string>
-  <string name="portrait_left_swipe_title">Portrait left swipe</string>
-  <string name="landscape_right_swipe_title">Landscape right swipe</string>
+  <string name="fling_split_bar_policy">Als alleen een linkse of rechtse actie is toegewezen geldt dit voor de volle breedte</string>
+  <string name="fling_def_summary">Geen actie ingesteld</string>
+  <string name="fling_swipe_actions">Veeg gebaren</string>
+  <string name="fling_tap_actions">Tik gebaren</string>
+  <string name="fling_short_swipe_right">Korte veeg naar rechts</string>
+  <string name="fling_short_swipe_left">Korte veeg naar links</string>
+  <string name="fling_long_swipe_right">Lange veeg naar rechts</string>
+  <string name="fling_long_swipe_left">Lange veeg naar links</string>
+  <string name="fling_right_up_swipe">Rechts omhoog vegen</string>
+  <string name="fling_left_up_swipe">Links omhoog vegen</string>
+  <string name="fling_single_tap">Enkele tik rechts</string>
+  <string name="fling_double_tap">Dubbel tikken rechts</string>
+  <string name="fling_long_press">Lang drukken rechts</string>
+  <string name="fling_single_left_tap">Enkele tik links</string>
+  <string name="fling_double_left_tap">Dubbel tikken links</string>
+  <string name="fling_long_left_press">Lange druk links</string>
+  <string name="long_swipe_portrait_title">Portret</string>
+  <string name="long_swipe_landscape_title">Landschap</string>
+  <string name="portrait_right_swipe_title">Portret veeg rechts</string>
+  <string name="portrait_left_swipe_title">Portret veeg links</string>
+  <string name="landscape_right_swipe_title">Landscape veeg rechts</string>
   <string name="landscape_left_swipe_title">Landscape left swipe</string>
   <string name="vertical_up_swipe_title">Vertical up swipe</string>
   <string name="vertical_down_swipe_title">Vertical down swipe</string>
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Notifications sound and vibration if screen is on</string>
-  <string name="notification_sound_vib_screen_on_never">Never</string>
-  <string name="notification_sound_vib_screen_on_always">Always (default)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">If no media is playing</string>
+  <string name="notification_sound_vib_screen_on_title">Notification sound if screen is on</string>
+  <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Smart notification sounds</string>
   <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Percent of pixels to disable</string>
   <string name="smart_pixels_shift_title">Burn-in protection</string>
   <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
   <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on the Share button</string>
   <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
   <string name="chooser_activity_blacklist_pref_title">Add app</string>
   <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
+  <string name="wallpaper_tint_recents">Recents background tint</string>
+  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
+  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
+  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
 </resources>

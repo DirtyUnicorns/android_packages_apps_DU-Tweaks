@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Egyéb</string>
   <string name="hide_lockscreen_clock_title">Óra modul</string>
   <string name="hide_lockscreen_clock_summary">Az óra modul láthatóságának módosítása</string>
+  <string name="lockscreen_clock_selection_title">Az Óra stílusa</string>
+  <string name="lockscreen_clock_selection_digital">Alapértelmezett</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digitális (félkövér)</string>
+  <string name="lockscreen_clock_selection_analog">Analóg</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analóg (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
   <string name="hide_lockscreen_date_title">Dátum modul</string>
   <string name="hide_lockscreen_date_summary">Az óra alatti dátum láthatóságának módosítása</string>
+  <string name="lockscreen_date_selection_title">A Dátum stílusa</string>
+  <string name="lockscreen_date_selection_default">Alapértelmezett</string>
+  <string name="lockscreen_date_selection_str_box">Félig átlátszó doboz</string>
+  <string name="lockscreen_date_selection_str_round">Félig átlátszó doboz (lekerekített)</string>
   <string name="hide_lockscreen_alarm_title">Ébresztési szöveg</string>
   <string name="hide_lockscreen_alarm_summary">Az óra alatti ébresztési szöveg láthatóságának módosítása</string>
   <!-- Fingerprint authentication vibration -->
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Záróképernyő dupla érintésére alvómódba kerül a készülék</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Értesítések hangja és rezgése, ha a képernyő be van kapcsolva</string>
-  <string name="notification_sound_vib_screen_on_never">Soha</string>
-  <string name="notification_sound_vib_screen_on_always">Mindig (alapértelmezett)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Ha épp nem játszik le médiafájlt</string>
+  <string name="notification_sound_vib_screen_on_title">Értesítéshangok, ha a képernyő be van kapcsolva</string>
+  <string name="notification_sound_vib_screen_on_summary">Értesítéshangok és rezgések lejátszása, ha a képernyő bekapcsolt állapotban van</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Intelligens értesítési hangok</string>
   <string name="less_notification_sounds_summary">Minden alkalmazás értesítési hangját csak egyszer játssza le egy megadott időtartam alatt</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">A képpontok százalékos letiltása</string>
   <string name="smart_pixels_shift_title">Beégés elleni védelem</string>
   <string name="smart_pixels_shift_summary">Beégés elleni védelmet nyújt OLED kijelzőkön képpontok gyakori áthelyezésével</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Megosztási tiltólista</string>
   <string name="chooser_activity_blacklist_summary">A Megosztás gomb megérintésekor nem megjelenítendő alkalmazások</string>
   <string name="chooser_activity_blacklist_cat_title">Tiltólista</string>
   <string name="chooser_activity_blacklist_pref_title">Alkalmazás hozzáadása</string>
   <string name="chooser_activity_blacklist_pref_summary">Koppintson ide az alkalmazás hozzáadásához, vagy érintse meg az eltávolításához</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Kikapcsolómenü-háttérárnyalat</string>
+  <string name="wallpaper_tint_recents">Előzmények-háttérárnyalat</string>
+  <string name="wallpaper_tint_keyguard">Záróképernyő-háttérárnyalat</string>
+  <string name="wallpaper_tint_notification_shade">Értesítésifelület-háttérárnyalat</string>
+  <string name="wallpaper_tint_summary">A kezdőoldal háttérképéhez alkalmazkodó háttérárnyalat alkalmazása</string>
 </resources>

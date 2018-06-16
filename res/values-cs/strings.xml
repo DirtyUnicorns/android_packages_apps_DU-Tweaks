@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Ostatní</string>
   <string name="hide_lockscreen_clock_title">Widget hodin</string>
   <string name="hide_lockscreen_clock_summary">Změna viditelnosti widgetu hodin</string>
+  <string name="lockscreen_clock_selection_title">Styl hodin</string>
+  <string name="lockscreen_clock_selection_digital">Výchozí</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digitální (tučné)</string>
+  <string name="lockscreen_clock_selection_analog">Analogové</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analogové (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (tučné)</string>
   <string name="hide_lockscreen_date_title">Widget data</string>
   <string name="hide_lockscreen_date_summary">Změna viditelnost data pod widgetem hodin</string>
+  <string name="lockscreen_date_selection_title">Styl data</string>
+  <string name="lockscreen_date_selection_default">Výchozí</string>
+  <string name="lockscreen_date_selection_str_box">Poloprůhledný box</string>
+  <string name="lockscreen_date_selection_str_round">Poloprůhledný box (kulatý)</string>
   <string name="hide_lockscreen_alarm_title">Text budíku</string>
   <string name="hide_lockscreen_alarm_summary">Změna viditelnost textu budíku pod widgetem hodin</string>
   <!-- Fingerprint authentication vibration -->
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Dvojitým poklepáním na zamykací obrazovku uspat zařízení</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Zvuky a vibrace oznámení při zapnuté obrazovce</string>
-  <string name="notification_sound_vib_screen_on_never">Nikdy</string>
-  <string name="notification_sound_vib_screen_on_always">Vždy (výchozí)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Pokud se nepřehrávají média</string>
+  <string name="notification_sound_vib_screen_on_title">Zvukové oznámení při zapnuté obrazovce</string>
+  <string name="notification_sound_vib_screen_on_summary">Přehrát zvuk a vibrace pro oznámení při zapnuté obrazovce</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Inteligentní zvuky oznámení</string>
   <string name="less_notification_sounds_summary">Přehrát zvuk oznámení každé aplikace pouze jednou za stanovené časové období</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Procenta pixelů k vypnutí</string>
   <string name="smart_pixels_shift_title">Ochrana před vypálením obrazovky</string>
   <string name="smart_pixels_shift_summary">Zabraňuje vypalování zařízení OLED častým přepínáním pixelů</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Selektor aktivit černé listiny</string>
   <string name="chooser_activity_blacklist_summary">Aplikace se nezobrazí při klepnutí na tlačítko Sdílet</string>
   <string name="chooser_activity_blacklist_cat_title">Černá listina</string>
   <string name="chooser_activity_blacklist_pref_title">Přidat aplikaci</string>
   <string name="chooser_activity_blacklist_pref_summary">Klepnutím sem přidáte, klepnutím na přidanou aplikaci odstraníte</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Odstín pozadí menu napájení</string>
+  <string name="wallpaper_tint_recents">Odstín pozadí nedávných aplikací</string>
+  <string name="wallpaper_tint_keyguard">Odstín pozadí zamykací obrazovky</string>
+  <string name="wallpaper_tint_notification_shade">Odstín pozadí oznámení</string>
+  <string name="wallpaper_tint_summary">Použít odstín pozadí podle tapety domovské obrazovky</string>
 </resources>

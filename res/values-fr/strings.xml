@@ -182,10 +182,21 @@
   <string name="recents_clear_all_location_bottom_center">En bas au milieu</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="lockscreen_items_other">Autre</string>
-  <string name="hide_lockscreen_clock_title">Horloge</string>
+  <string name="hide_lockscreen_clock_title">Widget Horloge</string>
   <string name="hide_lockscreen_clock_summary">Masquer le widget Horloge</string>
+  <string name="lockscreen_clock_selection_title">Style</string>
+  <string name="lockscreen_clock_selection_digital">Par défaut</string>
+  <string name="lockscreen_clock_selection_digital_bold">Numérique (gras)</string>
+  <string name="lockscreen_clock_selection_analog">Analogique</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analogique (Deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (gras)</string>
   <string name="hide_lockscreen_date_title">Date</string>
   <string name="hide_lockscreen_date_summary">Masquer la date du widget Horloge</string>
+  <string name="lockscreen_date_selection_title">Style</string>
+  <string name="lockscreen_date_selection_default">Par défaut</string>
+  <string name="lockscreen_date_selection_str_box">Cadre translucide</string>
+  <string name="lockscreen_date_selection_str_round">Cadre translucide (coins arrondis)</string>
   <string name="hide_lockscreen_alarm_title">Alarme</string>
   <string name="hide_lockscreen_alarm_summary">Masquer l\'alarme du widget Horloge</string>
   <!-- Fingerprint authentication vibration -->
@@ -498,9 +509,7 @@
   <string name="double_tap_sleep_lockscreen">Veille par double appui</string>
   <!-- Suppress notification sound/vibration -->
   <string name="notification_sound_vib_screen_on_title">Son de notification si l\'écran est allumé</string>
-  <string name="notification_sound_vib_screen_on_never">Jamais</string>
-  <string name="notification_sound_vib_screen_on_always">Toujours (Par défaut)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Si aucune lecture de média</string>
+  <string name="notification_sound_vib_screen_on_summary">Émettre un son et des vibrations pour la réception de notifications lorsque l\'écran est allumé</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Sons de notification</string>
   <string name="less_notification_sounds_summary">Régler l\'intervalle pendant lequel une application peut émettre une notification sonore</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Pourcentage de pixels à désactiver</string>
   <string name="smart_pixels_shift_title">Anti-brûlure d\'écran</string>
   <string name="smart_pixels_shift_summary">Évite les brûlures d\'écran OLED en déplaçant les pixels de temps en temps</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Applications à ne pas afficher</string>
   <string name="chooser_activity_blacklist_summary">Applications à ne pas afficher lors de l\'utilisation du bouton Partager</string>
   <string name="chooser_activity_blacklist_cat_title">Liste d\'exclusion</string>
   <string name="chooser_activity_blacklist_pref_title">Ajouter une application</string>
   <string name="chooser_activity_blacklist_pref_summary">Ajouter ou retirer une application</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Couleur d\'arrière-plan</string>
+  <string name="wallpaper_tint_recents">Couleur d\'arrière-plan</string>
+  <string name="wallpaper_tint_keyguard">Couleur d\'arrière-plan</string>
+  <string name="wallpaper_tint_notification_shade">Couleur d\'arrière-plan</string>
+  <string name="wallpaper_tint_summary">Définir la couleur d\'arrière-plan en fonction du fond d\'écran d\'accueil</string>
 </resources>

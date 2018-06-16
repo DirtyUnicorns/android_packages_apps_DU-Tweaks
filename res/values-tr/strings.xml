@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Diğer</string>
   <string name="hide_lockscreen_clock_title">Saat widgeti</string>
   <string name="hide_lockscreen_clock_summary">Saat widget\'inin görünürlüğünü değiştirin</string>
+  <string name="lockscreen_clock_selection_title">Saat stili</string>
+  <string name="lockscreen_clock_selection_digital">Varsayılan</string>
+  <string name="lockscreen_clock_selection_digital_bold">Dijital (kalın)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (kalın)</string>
   <string name="hide_lockscreen_date_title">Tarih widgeti</string>
   <string name="hide_lockscreen_date_summary">Saat widget altında bulunan tarih görünürlülüğünü değiştirin</string>
+  <string name="lockscreen_date_selection_title">Tarih stili</string>
+  <string name="lockscreen_date_selection_default">Varsayılan</string>
+  <string name="lockscreen_date_selection_str_box">Yarı saydam kutu</string>
+  <string name="lockscreen_date_selection_str_round">Yarı saydam kutu (yuvarlak)</string>
   <string name="hide_lockscreen_alarm_title">Alarm metni</string>
   <string name="hide_lockscreen_alarm_summary">Saat widgetının altındaki alarm metninin görünürlüğünü değiştirin</string>
   <!-- Fingerprint authentication vibration -->
@@ -476,7 +487,7 @@
   <string name="ambient_display_category">Ortam seçenekleri</string>
   <string name="force_ambient_for_media_pref_title">Ortam müzik bilgisi</string>
   <string name="force_ambient_for_media_pref_summary">Ortam ekranında müzik bilgisini yapılandırma</string>
-  <string name="ambient_ticker_footer">Bu özellik, Ortam ekranı etkinleştirilmiş veya kilit ekranı üzerinde geçerli müzik parçası bilgisini gösterebilme olanağı sağlar.\n\nNormal ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam ekranından yararlanırken, bu buna bağımlı değildir. (Zorla) seçeneklerini kullanarak ortam ekranı etkinleştirmeden tetiklenebilir.\n\nNormal görünüm, kilit ekranı saati, tarihi ve müzik bilgilerini içerir.\n\nMinimum görünüm, ekranın ortasında sadece müzik bilgisini içerir.</string>
+  <string name="ambient_ticker_footer">Bu özellik, Ortam ekranı etkinleştirilmiş veya kilit ekranı üzerinde geçerli müzik parça bilgisini gösterebilme olanağı sağlar.\n\nNormal ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam ekranından yararlanırken, bu buna bağımlı değildir. (Zorla) seçeneklerini kullanarak ortam ekranı etkinleştirmeden kullanılabilir.\n\nNormal görünüm, kilit ekranı saati, tarihi ve müzik bilgilerini içerir.\n\nMinimum görünüm, ekran ortasında sadece müzik bilgisini içerir.</string>
   <string name="force_ambient_for_media_title">Düzen seçin</string>
   <string name="force_ambient_for_media_off">Devre dışı</string>
   <string name="force_ambient_for_media_on">Normal</string>
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Kilit ekranında uyku moduna geçmek için iki kez dokun</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Ekran açıkken ses ve titreşim bildirimleri</string>
-  <string name="notification_sound_vib_screen_on_never">Asla</string>
-  <string name="notification_sound_vib_screen_on_always">Her zaman (varsayılan)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Hiçbir medya oynatılmıyorsa</string>
+  <string name="notification_sound_vib_screen_on_title">Ekran açıkken bildirim sesi</string>
+  <string name="notification_sound_vib_screen_on_summary">Ekran açıkken bildirimler için ses ve titreşim</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Akıllı bildirim sesleri</string>
   <string name="less_notification_sounds_summary">Her uygulamanın bildirim sesini, belirlenen süre başına yalnızca bir kez çalacak</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Devre dışı bırakılan piksellerin yüzdesi</string>
   <string name="smart_pixels_shift_title">Yanma koruması</string>
   <string name="smart_pixels_shift_summary">OLED cihazlarda yanmaları önler ve sık sık pikselleri kaydırır</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Seçici Etkinlik kara listesi</string>
   <string name="chooser_activity_blacklist_summary">Paylaş tuşuna basıldığında gösterilmeyecek uygulamalar</string>
   <string name="chooser_activity_blacklist_cat_title">Kara liste</string>
   <string name="chooser_activity_blacklist_pref_title">Uygulama ekle</string>
   <string name="chooser_activity_blacklist_pref_summary">Eklemek için buraya dokunun, kaldırmak için eklenen uygulamaya dokunun</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Güç menüsü arkaplan tonu</string>
+  <string name="wallpaper_tint_recents">Son uygulamar arkaplan tonu</string>
+  <string name="wallpaper_tint_keyguard">Kilit ekranı arkaplan tonu</string>
+  <string name="wallpaper_tint_notification_shade">Bildirim gölge tonu</string>
+  <string name="wallpaper_tint_summary">Ana ekran duvar kağıdına dayalı olarak arkaplana renk tonu uygulayın</string>
 </resources>

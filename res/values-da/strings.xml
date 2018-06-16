@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Øvrigt</string>
   <string name="hide_lockscreen_clock_title">Ur-widget</string>
   <string name="hide_lockscreen_clock_summary">Justér synlighed for ur-widget</string>
+  <string name="lockscreen_clock_selection_title">Clock style</string>
+  <string name="lockscreen_clock_selection_digital">Default</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
   <string name="hide_lockscreen_date_title">Dato-widget</string>
   <string name="hide_lockscreen_date_summary">Justér synligheden af datoen under ur-widget\'en</string>
+  <string name="lockscreen_date_selection_title">Date style</string>
+  <string name="lockscreen_date_selection_default">Default</string>
+  <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
+  <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
   <string name="hide_lockscreen_alarm_title">Alarmtekst</string>
   <string name="hide_lockscreen_alarm_summary">Justér synligheden af alarmteksten under ur-widget\'en</string>
   <!-- Fingerprint authentication vibration -->
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Notifications sound and vibration if screen is on</string>
-  <string name="notification_sound_vib_screen_on_never">Never</string>
-  <string name="notification_sound_vib_screen_on_always">Always (default)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">If no media is playing</string>
+  <string name="notification_sound_vib_screen_on_title">Notification sound if screen is on</string>
+  <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Smart notification sounds</string>
   <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Percent of pixels to disable</string>
   <string name="smart_pixels_shift_title">Burn-in protection</string>
   <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
   <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on the Share button</string>
   <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
   <string name="chooser_activity_blacklist_pref_title">Add app</string>
   <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
+  <string name="wallpaper_tint_recents">Recents background tint</string>
+  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
+  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
+  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
 </resources>

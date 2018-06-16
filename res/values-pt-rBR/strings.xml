@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Outros</string>
   <string name="hide_lockscreen_clock_title">Widget do Relógio</string>
   <string name="hide_lockscreen_clock_summary">Altere a visibilidade do widget do relógio</string>
+  <string name="lockscreen_clock_selection_title">Estilo do relógio</string>
+  <string name="lockscreen_clock_selection_digital">Padrão</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (negrito)</string>
+  <string name="lockscreen_clock_selection_analog">Analógico</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analógico (Deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrito)</string>
   <string name="hide_lockscreen_date_title">Widget de data</string>
   <string name="hide_lockscreen_date_summary">Mudar a visibilidade da data debaixo do widget de relógio</string>
+  <string name="lockscreen_date_selection_title">Estilo da data</string>
+  <string name="lockscreen_date_selection_default">Padrão</string>
+  <string name="lockscreen_date_selection_str_box">Caixa semitransparente</string>
+  <string name="lockscreen_date_selection_str_round">Caixa semitransparente (arredondada)</string>
   <string name="hide_lockscreen_alarm_title">Texto de alarme</string>
   <string name="hide_lockscreen_alarm_summary">Mudas a visibilidade do texto de alarme sob o widget de relógio</string>
   <!-- Fingerprint authentication vibration -->
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Toque duplo para desligar a tela na tela de bloqueio</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Notificações de som e vibração se a tela estiver ativada</string>
-  <string name="notification_sound_vib_screen_on_never">Nunca</string>
-  <string name="notification_sound_vib_screen_on_always">Sempre (padrão)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Se nenhuma mídia está tocando</string>
+  <string name="notification_sound_vib_screen_on_title">Notificação sonora se a tela estiver ligada</string>
+  <string name="notification_sound_vib_screen_on_summary">Reproduz um som e vibração para notificações quando a tela está ativada</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Sons de notificações inteligente</string>
   <string name="less_notification_sounds_summary">Tocar som de notificação de cada app apenas uma vez por período de tempo definido</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Porcentagem de pixels a desativar</string>
   <string name="smart_pixels_shift_title">Proteção contra Burn-in</string>
   <string name="smart_pixels_shift_summary">Impede burn-in em dispositivos OLED, deslocando pixels de vez em quando</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Lista negra de atividades do seletor</string>
   <string name="chooser_activity_blacklist_summary">Aplicativos que não são exibidos ao tocar em um botão \"Compartilhar\"</string>
   <string name="chooser_activity_blacklist_cat_title">Lista Negra</string>
   <string name="chooser_activity_blacklist_pref_title">Adicionar aplicativo</string>
   <string name="chooser_activity_blacklist_pref_summary">Toque aqui para adicionar, toque na app adicionado para removê-lo</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Tonalidade de fundo do Menu de energia</string>
+  <string name="wallpaper_tint_recents">Tonalidade de fundo dos Recentes</string>
+  <string name="wallpaper_tint_keyguard">Tonalidade de fundo da Tela de bloqueio</string>
+  <string name="wallpaper_tint_notification_shade">Tonalidade da sombra de Notificação</string>
+  <string name="wallpaper_tint_summary">Aplicar uma tonalidade no fundo com base no papel de parede da tela inicial</string>
 </resources>

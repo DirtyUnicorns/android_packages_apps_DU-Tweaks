@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Otro</string>
   <string name="hide_lockscreen_clock_title">Widget del reloj</string>
   <string name="hide_lockscreen_clock_summary">Cambiar la visibilidad del widget de reloj</string>
+  <string name="lockscreen_clock_selection_title">Estilo de reloj</string>
+  <string name="lockscreen_clock_selection_digital">Predeterminadas</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (negrita)</string>
+  <string name="lockscreen_clock_selection_analog">Analógico</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analógico (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrita)</string>
   <string name="hide_lockscreen_date_title">Widget de la fecha</string>
   <string name="hide_lockscreen_date_summary">Cambiar la visibilidad de la fecha debajo del widget de reloj</string>
+  <string name="lockscreen_date_selection_title">Estilo de la fecha</string>
+  <string name="lockscreen_date_selection_default">Predeterminadas</string>
+  <string name="lockscreen_date_selection_str_box">Caja semitransparente</string>
+  <string name="lockscreen_date_selection_str_round">Caja semitransparente (redondeada)</string>
   <string name="hide_lockscreen_alarm_title">Texto de alarma</string>
   <string name="hide_lockscreen_alarm_summary">Cambiar la visibilidad del texto de alarma debajo del widget de reloj</string>
   <!-- Fingerprint authentication vibration -->
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Toca dos veces para apagar la pantalla en pantalla de bloqueo</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Las notificaciones suenan y vibran si la pantalla está encendida</string>
-  <string name="notification_sound_vib_screen_on_never">Nunca</string>
-  <string name="notification_sound_vib_screen_on_always">Siempre (predeterminado)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Si no hay nada en reproducción</string>
+  <string name="notification_sound_vib_screen_on_title">Sonido de notificación si la pantalla está encendida</string>
+  <string name="notification_sound_vib_screen_on_summary">Reproducir sonido y vibración para las notificaciones cuando la pantalla está encendida</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Sonidos de notificación inteligentes</string>
   <string name="less_notification_sounds_summary">Reproducir el sonido de notificación de cada aplicación sólo una vez durante este periodo de tiempo</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Porcentaje de píxeles a desactivar</string>
   <string name="smart_pixels_shift_title">Protección contra el quemado</string>
   <string name="smart_pixels_shift_summary">Previene el quemado en pantallas OLED alternando píxeles</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Selector de actividades en lista negra</string>
   <string name="chooser_activity_blacklist_summary">Aplicaciones que no se muestran cuando se pulsa el botón de compartir</string>
   <string name="chooser_activity_blacklist_cat_title">Lista negra</string>
   <string name="chooser_activity_blacklist_pref_title">Añadir aplicación</string>
   <string name="chooser_activity_blacklist_pref_summary">Toca aquí para añadir, toca en la aplicación añadida para eliminarla</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Matiz de fondo de menú de apagado</string>
+  <string name="wallpaper_tint_recents">Matiz de fondo de recientes</string>
+  <string name="wallpaper_tint_keyguard">Matiz de fondo de pantalla de bloqueo</string>
+  <string name="wallpaper_tint_notification_shade">Matiz de sombra de notificaciones</string>
+  <string name="wallpaper_tint_summary">Aplicar un tinte de fondo basado en el fondo de pantalla de inicio</string>
 </resources>

@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">其它</string>
   <string name="hide_lockscreen_clock_title">时钟部件</string>
   <string name="hide_lockscreen_clock_summary">更改时钟小部件的可见性</string>
+  <string name="lockscreen_clock_selection_title">时钟样式</string>
+  <string name="lockscreen_clock_selection_digital">默认</string>
+  <string name="lockscreen_clock_selection_digital_bold">数字（粗体）</string>
+  <string name="lockscreen_clock_selection_analog">模拟时钟</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">模拟时钟（死侍）</string>
+  <string name="lockscreen_clock_selection_sammy">竖式时钟</string>
+  <string name="lockscreen_clock_selection_sammy_bold">竖式时钟（粗体）</string>
   <string name="hide_lockscreen_date_title">日期部件</string>
   <string name="hide_lockscreen_date_summary">更改时钟部件下方日期的可见性</string>
+  <string name="lockscreen_date_selection_title">日期样式</string>
+  <string name="lockscreen_date_selection_default">默认</string>
+  <string name="lockscreen_date_selection_str_box">半透明方块</string>
+  <string name="lockscreen_date_selection_str_round">半透明方块（圆角）</string>
   <string name="hide_lockscreen_alarm_title">闹钟文本</string>
   <string name="hide_lockscreen_alarm_summary">更改时钟部件下方闹钟文本的可见性</string>
   <!-- Fingerprint authentication vibration -->
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">锁屏界面双击屏幕休眠</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">屏幕开启时通知声音和震动</string>
-  <string name="notification_sound_vib_screen_on_never">从不</string>
-  <string name="notification_sound_vib_screen_on_always">始终（默认）</string>
-  <string name="notification_sound_vib_screen_on_nomedia">如果没有媒体播放</string>
+  <string name="notification_sound_vib_screen_on_title">屏幕开启时的通知声</string>
+  <string name="notification_sound_vib_screen_on_summary">屏幕开启时播放声音和振动通知</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">智能通知提示音</string>
   <string name="less_notification_sounds_summary">每个应用的通知提示音在设定的时间段内只响一次</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">要禁用的像素百分比</string>
   <string name="smart_pixels_shift_title">烧屏保护</string>
   <string name="smart_pixels_shift_summary">通过经常移动像素来防止 OLED 屏幕的设备发生烧屏</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">选择器活动黑名单</string>
   <string name="chooser_activity_blacklist_summary">在点击 \"分享\" 按钮时不显示的应用程序</string>
   <string name="chooser_activity_blacklist_cat_title">黑名单</string>
   <string name="chooser_activity_blacklist_pref_title">添加应用程序</string>
   <string name="chooser_activity_blacklist_pref_summary">点击此处添加应用, 点击已添加的应用程序来删除</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">电源菜单背景色调</string>
+  <string name="wallpaper_tint_recents">最近任务背景色调</string>
+  <string name="wallpaper_tint_keyguard">锁屏界面背景色调</string>
+  <string name="wallpaper_tint_notification_shade">通知栏阴影色调</string>
+  <string name="wallpaper_tint_summary">根据桌面壁纸对背景应用一种色调</string>
 </resources>

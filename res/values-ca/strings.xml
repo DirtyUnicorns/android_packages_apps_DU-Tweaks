@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Altres</string>
   <string name="hide_lockscreen_clock_title">Widget de rellotge</string>
   <string name="hide_lockscreen_clock_summary">Canvieu la visibilitat del widget del rellotge</string>
+  <string name="lockscreen_clock_selection_title">Estil del rellotge</string>
+  <string name="lockscreen_clock_selection_digital">Predeterminat</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (negreta)</string>
+  <string name="lockscreen_clock_selection_analog">Analògic</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analògic (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (negreta)</string>
   <string name="hide_lockscreen_date_title">Widget de data</string>
   <string name="hide_lockscreen_date_summary">Canvieu la visibilitat de la data per sota del widget del rellotge</string>
+  <string name="lockscreen_date_selection_title">Estil de la data</string>
+  <string name="lockscreen_date_selection_default">Predeterminat</string>
+  <string name="lockscreen_date_selection_str_box">Quadre semitransparent</string>
+  <string name="lockscreen_date_selection_str_round">Quadre semitransparent (rodó)</string>
   <string name="hide_lockscreen_alarm_title">Text de l\'alarma</string>
   <string name="hide_lockscreen_alarm_summary">Canvieu la visibilitat del text de l\'alarma sota el widget del rellotge</string>
   <!-- Fingerprint authentication vibration -->
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Fes dos tocs per apagar a la pantalla de bloqueig</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Les notificacions sonen i vibren si la pantalla està engegada</string>
-  <string name="notification_sound_vib_screen_on_never">Mai</string>
-  <string name="notification_sound_vib_screen_on_always">Sempre (predeterminat)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Si no hi ha res en reproducció</string>
+  <string name="notification_sound_vib_screen_on_title">So de notificació si la pantalla està encesa</string>
+  <string name="notification_sound_vib_screen_on_summary">Sona i vibra per a notificacions quan la pantalla està encesa</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Sons de notificació intel·ligents</string>
   <string name="less_notification_sounds_summary">Reprodueix el so de notificació de cada aplicació només una vegada per cada període de temps establert</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Percentatge de píxels a desactivar</string>
   <string name="smart_pixels_shift_title">Protecció contra el cremat</string>
   <string name="smart_pixels_shift_summary">Preveu el cremat a pantalles OLED alternant píxels</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Llista negra del selector d\'activitats</string>
   <string name="chooser_activity_blacklist_summary">Aplicacions que no es mostren quan es toca el botó de compartir</string>
   <string name="chooser_activity_blacklist_cat_title">Llista negra</string>
   <string name="chooser_activity_blacklist_pref_title">Afegeix aplicació</string>
   <string name="chooser_activity_blacklist_pref_summary">Toqueu aquí per afegir-hi, toqueu l\'aplicació afegida per eliminar-la</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Tint de fons del menú d\'apagat</string>
+  <string name="wallpaper_tint_recents">Tint de fons de recents</string>
+  <string name="wallpaper_tint_keyguard">Tint de fons de la pantalla de bloqueig</string>
+  <string name="wallpaper_tint_notification_shade">Tint de l\'ombra de notificació</string>
+  <string name="wallpaper_tint_summary">Aplicar un tint fons basat en el fons de pantalla a la pantalla d\'inici</string>
 </resources>

@@ -184,8 +184,19 @@
   <string name="lockscreen_items_other">Muu</string>
   <string name="hide_lockscreen_clock_title">Kello widgetti</string>
   <string name="hide_lockscreen_clock_summary">Muuta kellon widgetin näkyvyyttä</string>
+  <string name="lockscreen_clock_selection_title">Kellon tyyli</string>
+  <string name="lockscreen_clock_selection_digital">Oletus</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digitaalinen (Lihavoitu)</string>
+  <string name="lockscreen_clock_selection_analog">Analoginen</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analoginen (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (Lihavoitu)</string>
   <string name="hide_lockscreen_date_title">Päivämäärä widgetti</string>
   <string name="hide_lockscreen_date_summary">Muuta päivämäärän widgetin näkyvyyttä kello widgetin alapuolella</string>
+  <string name="lockscreen_date_selection_title">Päivämäärän tyyli</string>
+  <string name="lockscreen_date_selection_default">Oletus</string>
+  <string name="lockscreen_date_selection_str_box">Läpikuultava laatikko</string>
+  <string name="lockscreen_date_selection_str_round">Läpikuultava laatikko (pyöreä)</string>
   <string name="hide_lockscreen_alarm_title">Herätyksen teksti</string>
   <string name="hide_lockscreen_alarm_summary">Muuta herätyksen tekstin näkyvyyttä kello widgetin alapuolella</string>
   <!-- Fingerprint authentication vibration -->
@@ -497,10 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Tuplanapauta nukkumaan lukitusnäytössä</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Ilmoitusten ääni ja värinä jos näyttö on päällä</string>
-  <string name="notification_sound_vib_screen_on_never">Ei koskaan</string>
-  <string name="notification_sound_vib_screen_on_always">Aina (oletus)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Jos mediaa ei soiteta</string>
+  <string name="notification_sound_vib_screen_on_title">Ilmoituksen ääni jos näyttö on päällä</string>
+  <string name="notification_sound_vib_screen_on_summary">Toista ääni ja värinä ilmoituksille kun näyttö on päällä</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Fiksu ilmoitusääni</string>
   <string name="less_notification_sounds_summary">Rajoita ohjelman ääni-ilmoitukset vain yhteen tietyn ajan sisällä</string>
@@ -648,9 +657,16 @@
   <string name="smart_pixels_percent">Prosenttimääräisesti sammutettavat pikselit</string>
   <string name="smart_pixels_shift_title">Kiinnipalamisen suojaus</string>
   <string name="smart_pixels_shift_summary">Estää kiinnipalamisen OLED laitteilla vaihtamalla käytössä olevia pikseleitä vähän väliä</string>
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Valitsin Aktiviteetin mustalista</string>
   <string name="chooser_activity_blacklist_summary">Sovellukset jotka piilotetaan kun valitset jakamisen toisessa sovelluksessa</string>
   <string name="chooser_activity_blacklist_cat_title">Mustalista</string>
   <string name="chooser_activity_blacklist_pref_title">Lisää sovellus</string>
   <string name="chooser_activity_blacklist_pref_summary">Näpäytä tähän lisätäksesi, näpäytä lisättyä poistaaksesi</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Virtavalikon taustan sävy</string>
+  <string name="wallpaper_tint_recents">Viimeisimmät-taustan sävy</string>
+  <string name="wallpaper_tint_keyguard">Lukitusnäytön taustan sävy</string>
+  <string name="wallpaper_tint_notification_shade">Ilmoituksen varjon sävy</string>
+  <string name="wallpaper_tint_summary">Aseta taustalle sävy taustakuvan perusteella</string>
 </resources>
