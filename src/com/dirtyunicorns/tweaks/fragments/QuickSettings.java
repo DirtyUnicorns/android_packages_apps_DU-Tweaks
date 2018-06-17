@@ -17,10 +17,8 @@
 package com.dirtyunicorns.tweaks.fragments;
 
 import android.content.ContentResolver;
-import android.database.ContentObserver;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.UserHandle;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
