@@ -51,6 +51,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.dirtyunicorns.tweaks.preferences.CustomSeekBarPreference;
+import com.dirtyunicorns.tweaks.preferences.SecureSettingSwitchPreference;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -66,6 +67,7 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
     private ListPreference mButtonLongpressDelay;
     private CustomSeekBarPreference mButtonsAlpha;
     private CustomSeekBarPreference mCustomButtonScaling;
+    private SecureSettingSwitchPreference mDoubleTapToSleep;
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int MENU_SAVE = Menu.FIRST + 1;
@@ -82,6 +84,7 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SMARTBAR_RESTORE = "smartbar_profile_restore";
     private static final String PREF_NAVBAR_BUTTONS_ALPHA = "navbar_buttons_alpha";
     private static final String PREF_SMARTBAR_CUSTOM_ICON_SIZE = "smartbar_custom_icon_size";
+    private static final String PREF_DOUBLE_TAP_TO_SLEEP = "smartbar_doubletap_sleep";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -128,6 +131,12 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
         mCustomButtonScaling.setValue(size);
         mCustomButtonScaling.setOnPreferenceChangeListener(this);
 
+        mDoubleTapToSleep =
+                (SecureSettingSwitchPreference) findPreference(PREF_DOUBLE_TAP_TO_SLEEP);
+        final boolean enabled = Settings.Secure.getIntForUser(getContentResolver(),
+                "smartbar_doubletap_sleep", 0, UserHandle.USER_CURRENT) == 1;
+        mDoubleTapToSleep.setChecked(enabled);
+        mDoubleTapToSleep.setOnPreferenceChangeListener(this);
 
         setHasOptionsMenu(true);
     }
@@ -292,6 +301,11 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putIntForUser(getContentResolver(),
                     "smartbar_custom_icon_size", val, UserHandle.USER_CURRENT);
             return true;
+        } else if (preference == mDoubleTapToSleep) {
+            boolean enabled = ((Boolean) newValue).booleanValue();
+            Settings.Secure.putInt(getContentResolver(),
+                    "smartbar_doubletap_sleep", enabled ? 1 : 0);
+            return true;
         }
         return false;
     }
@@ -323,7 +337,7 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
 
         Settings.Secure.putInt(getContentResolver(),
                 "navbar_buttons_alpha", 255);
-        mButtonsAlpha.setValue(255);
+        mButtonsAlpha.refresh(255);
         mButtonsAlpha.setOnPreferenceChangeListener(this);
 
         Settings.Secure.putInt(getContentResolver(),
@@ -333,8 +347,13 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
 
         Settings.Secure.putInt(getContentResolver(),
                 "smartbar_custom_icon_size", 60);
-        mButtonsAlpha.setValue(60);
-        mButtonsAlpha.setOnPreferenceChangeListener(this);
+        mCustomButtonScaling.refresh(60);
+        mCustomButtonScaling.setOnPreferenceChangeListener(this);
+
+        Settings.Secure.putInt(getContentResolver(),
+                "smartbar_doubletap_sleep", 0);
+        mDoubleTapToSleep.setChecked(true);
+        mDoubleTapToSleep.setOnPreferenceChangeListener(this);
     }
 
     static class ConfigAdapter extends ArrayAdapter<File> {
