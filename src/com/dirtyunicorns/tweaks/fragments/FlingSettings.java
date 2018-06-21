@@ -390,6 +390,21 @@ public class FlingSettings extends ActionFragment implements
         mRippleColor.setOnPreferenceChangeListener(this);
 
         Settings.Secure.putInt(getContentResolver(),
+                Settings.Secure.FLING_TRAILS_ENABLED, 1);
+        mTrailsEnabled.setChecked(true);
+        mTrailsEnabled.setOnPreferenceChangeListener(this);
+
+        Settings.Secure.putInt(getContentResolver(),
+                Settings.Secure.FLING_TRAILS_COLOR, Color.WHITE);
+        mTrailsColor.setNewPreviewColor(Color.WHITE);
+        mTrailsColor.setOnPreferenceChangeListener(this);
+
+        Settings.Secure.putInt(getContentResolver(),
+                Settings.Secure.FLING_TRAILS_WIDTH, 15);
+        mTrailsWidth.refresh(15);
+        mTrailsWidth.setOnPreferenceChangeListener(this);
+
+        Settings.Secure.putInt(getContentResolver(),
                 Settings.Secure.FLING_LONGPRESS_TIMEOUT, 250);
         mLongPressTimeout.refresh(250+100);
         mLongPressTimeout.setOnPreferenceChangeListener(this);
@@ -404,25 +419,27 @@ public class FlingSettings extends ActionFragment implements
         mSwipePortLeft.refresh(mIsTablet ? 30 : 40);
         mSwipePortLeft.setOnPreferenceChangeListener(this);
 
-        Settings.Secure.putInt(getContentResolver(),
-                Settings.Secure.FLING_LONGSWIPE_THRESHOLD_RIGHT_LAND, 25);
-        mSwipeLandRight.refresh(25);
-        mSwipeLandRight.setOnPreferenceChangeListener(this);
+        if (mIsTablet) {
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.FLING_LONGSWIPE_THRESHOLD_RIGHT_LAND, 25);
+            mSwipeLandRight.refresh(25);
+            mSwipeLandRight.setOnPreferenceChangeListener(this);
 
-        Settings.Secure.putInt(getContentResolver(),
-                Settings.Secure.FLING_LONGSWIPE_THRESHOLD_LEFT_LAND, 25);
-        mSwipeLandLeft.refresh(25);
-        mSwipeLandLeft.setOnPreferenceChangeListener(this);
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.FLING_LONGSWIPE_THRESHOLD_LEFT_LAND, 25);
+            mSwipeLandLeft.refresh(25);
+            mSwipeLandLeft.setOnPreferenceChangeListener(this);
+        } else {
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.FLING_LONGSWIPE_THRESHOLD_UP_LAND, 40);
+            mSwipeVertUp.refresh(40);
+            mSwipeVertUp.setOnPreferenceChangeListener(this);
 
-        Settings.Secure.putInt(getContentResolver(),
-                Settings.Secure.FLING_LONGSWIPE_THRESHOLD_UP_LAND, 40);
-        mSwipeVertUp.refresh(40);
-        mSwipeVertUp.setOnPreferenceChangeListener(this);
-
-        Settings.Secure.putInt(getContentResolver(),
-                Settings.Secure.FLING_LONGSWIPE_THRESHOLD_DOWN_LAND, 40);
-        mSwipeVertDown.refresh(40);
-        mSwipeVertDown.setOnPreferenceChangeListener(this);
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.FLING_LONGSWIPE_THRESHOLD_DOWN_LAND, 40);
+            mSwipeVertDown.refresh(40);
+            mSwipeVertDown.setOnPreferenceChangeListener(this);
+        }
 
         Settings.Secure.putInt(getContentResolver(),
                 Settings.Secure.FLING_KEYBOARD_CURSORS, 1);
