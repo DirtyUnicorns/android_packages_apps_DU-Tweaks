@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Estilo de reloj</string>
   <string name="lockscreen_clock_selection_digital">Predeterminadas</string>
   <string name="lockscreen_clock_selection_digital_bold">Digital (negrita)</string>
-  <string name="lockscreen_clock_selection_analog">Analógico</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analógico (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrita)</string>
+  <string name="lockscreen_clock_selection_analog">Analógico</string>
   <string name="hide_lockscreen_date_title">Widget de la fecha</string>
   <string name="hide_lockscreen_date_summary">Cambiar la visibilidad de la fecha debajo del widget de reloj</string>
   <string name="lockscreen_date_selection_title">Estilo de la fecha</string>
-  <string name="lockscreen_date_selection_default">Predeterminadas</string>
+  <string name="lockscreen_date_selection_default_aosp">Predeterminadas</string>
+  <string name="lockscreen_date_selection_default">Predeterminado (tamaño grande)</string>
   <string name="lockscreen_date_selection_str_box">Caja semitransparente</string>
   <string name="lockscreen_date_selection_str_round">Caja semitransparente (redondeada)</string>
   <string name="hide_lockscreen_alarm_title">Texto de alarma</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">Cada 30 segundos</string>
   <string name="less_notification_sounds_1m">Cada minuto</string>
   <string name="less_notification_sounds_2m">Cada 2 minutos</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>
+  <string name="status_bar_notif_count_summary">Mostrar el número de notificaciones pendientes</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Escritorio expandido</string>
   <string name="expanded_desktop_summary">Vista de configuración de la barra de estado y las teclas de navegación por aplicación</string>

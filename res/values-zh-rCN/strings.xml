@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">时钟样式</string>
   <string name="lockscreen_clock_selection_digital">默认</string>
   <string name="lockscreen_clock_selection_digital_bold">数字（粗体）</string>
-  <string name="lockscreen_clock_selection_analog">模拟时钟</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">模拟时钟（死侍）</string>
   <string name="lockscreen_clock_selection_sammy">竖式时钟</string>
   <string name="lockscreen_clock_selection_sammy_bold">竖式时钟（粗体）</string>
+  <string name="lockscreen_clock_selection_analog">模拟时钟</string>
   <string name="hide_lockscreen_date_title">日期部件</string>
   <string name="hide_lockscreen_date_summary">更改时钟部件下方日期的可见性</string>
   <string name="lockscreen_date_selection_title">日期样式</string>
-  <string name="lockscreen_date_selection_default">默认</string>
+  <string name="lockscreen_date_selection_default_aosp">默认</string>
+  <string name="lockscreen_date_selection_default">默认（更大）</string>
   <string name="lockscreen_date_selection_str_box">半透明方块</string>
   <string name="lockscreen_date_selection_str_round">半透明方块（圆角）</string>
   <string name="hide_lockscreen_alarm_title">闹钟文本</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">每 30 秒</string>
   <string name="less_notification_sounds_1m">每分钟</string>
   <string name="less_notification_sounds_2m">每 2 分钟</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">显示通知数量</string>
+  <string name="status_bar_notif_count_summary">显示未读通知数量</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">扩展桌面</string>
   <string name="expanded_desktop_summary">每个应用的状态栏和导航栏视图配置</string>

@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Styl hodin</string>
   <string name="lockscreen_clock_selection_digital">Výchozí</string>
   <string name="lockscreen_clock_selection_digital_bold">Digitální (tučné)</string>
-  <string name="lockscreen_clock_selection_analog">Analogové</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analogové (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (tučné)</string>
+  <string name="lockscreen_clock_selection_analog">Analogové</string>
   <string name="hide_lockscreen_date_title">Widget data</string>
   <string name="hide_lockscreen_date_summary">Změna viditelnost data pod widgetem hodin</string>
   <string name="lockscreen_date_selection_title">Styl data</string>
-  <string name="lockscreen_date_selection_default">Výchozí</string>
+  <string name="lockscreen_date_selection_default_aosp">Výchozí</string>
+  <string name="lockscreen_date_selection_default">Výchozí (větší velikost)</string>
   <string name="lockscreen_date_selection_str_box">Poloprůhledný box</string>
   <string name="lockscreen_date_selection_str_round">Poloprůhledný box (kulatý)</string>
   <string name="hide_lockscreen_alarm_title">Text budíku</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">Každých 30 sekund</string>
   <string name="less_notification_sounds_1m">Každou minutu</string>
   <string name="less_notification_sounds_2m">Každé 2 minuty</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Zobrazit počet oznámení</string>
+  <string name="status_bar_notif_count_summary">Zobrazí počet nezobrazených oznámení</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Rozšířená plocha</string>
   <string name="expanded_desktop_summary">Nastavení stavové lišty a zobrazení navigačních tlačítek podle aplikací</string>

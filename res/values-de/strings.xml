@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Uhr-Stil</string>
   <string name="lockscreen_clock_selection_digital">Standard</string>
   <string name="lockscreen_clock_selection_digital_bold">Digital (Fett)</string>
-  <string name="lockscreen_clock_selection_analog">Analog</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analog (Deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (Fett)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
   <string name="hide_lockscreen_date_title">Datum-Widget</string>
   <string name="hide_lockscreen_date_summary">Sichtbarkeit des Datums unterhalb des Uhr-Widgets anpassen</string>
   <string name="lockscreen_date_selection_title">Datums-Stil</string>
-  <string name="lockscreen_date_selection_default">Standard</string>
+  <string name="lockscreen_date_selection_default_aosp">Standard</string>
+  <string name="lockscreen_date_selection_default">Standard (größer)</string>
   <string name="lockscreen_date_selection_str_box">Halbtransparente Box</string>
   <string name="lockscreen_date_selection_str_round">Halbtransparente Box (Rund)</string>
   <string name="hide_lockscreen_alarm_title">Wecker</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">Alle 30 Sekunden</string>
   <string name="less_notification_sounds_1m">Jede Minute</string>
   <string name="less_notification_sounds_2m">Alle 2 Minuten</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Benachrichtigungszähler anzeigen</string>
+  <string name="status_bar_notif_count_summary">Anzahl der ungelesenen Benachrichtigungen anzeigen</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Erweiterter Startbildschirm</string>
   <string name="expanded_desktop_summary">Konfiguration der Statusleiste und der Navigationstasten-Ansicht pro Anwendung</string>

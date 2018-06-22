@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Az Óra stílusa</string>
   <string name="lockscreen_clock_selection_digital">Alapértelmezett</string>
   <string name="lockscreen_clock_selection_digital_bold">Digitális (félkövér)</string>
-  <string name="lockscreen_clock_selection_analog">Analóg</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analóg (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
+  <string name="lockscreen_clock_selection_analog">Analóg</string>
   <string name="hide_lockscreen_date_title">Dátum modul</string>
   <string name="hide_lockscreen_date_summary">Az óra alatti dátum láthatóságának módosítása</string>
   <string name="lockscreen_date_selection_title">A Dátum stílusa</string>
-  <string name="lockscreen_date_selection_default">Alapértelmezett</string>
+  <string name="lockscreen_date_selection_default_aosp">Alapértelmezett</string>
+  <string name="lockscreen_date_selection_default">Alapértelmezett (nagyobb méret)</string>
   <string name="lockscreen_date_selection_str_box">Félig átlátszó doboz</string>
   <string name="lockscreen_date_selection_str_round">Félig átlátszó doboz (lekerekített)</string>
   <string name="hide_lockscreen_alarm_title">Ébresztési szöveg</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">30 másodpercenként</string>
   <string name="less_notification_sounds_1m">1 percenként</string>
   <string name="less_notification_sounds_2m">2 percenként</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Értesítésszámláló megjelenítése</string>
+  <string name="status_bar_notif_count_summary">Megjeleníti a függőben lévő értesítések számát</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Kiterjesztett képernyő</string>
   <string name="expanded_desktop_summary">Az állapotsor és a navigációs gomb nézetének konfigurálása alkalmazásonként</string>

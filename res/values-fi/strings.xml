@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Kellon tyyli</string>
   <string name="lockscreen_clock_selection_digital">Oletus</string>
   <string name="lockscreen_clock_selection_digital_bold">Digitaalinen (Lihavoitu)</string>
-  <string name="lockscreen_clock_selection_analog">Analoginen</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analoginen (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (Lihavoitu)</string>
+  <string name="lockscreen_clock_selection_analog">Analoginen</string>
   <string name="hide_lockscreen_date_title">Päivämäärä widgetti</string>
   <string name="hide_lockscreen_date_summary">Muuta päivämäärän widgetin näkyvyyttä kello widgetin alapuolella</string>
   <string name="lockscreen_date_selection_title">Päivämäärän tyyli</string>
-  <string name="lockscreen_date_selection_default">Oletus</string>
+  <string name="lockscreen_date_selection_default_aosp">Default</string>
+  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
   <string name="lockscreen_date_selection_str_box">Läpikuultava laatikko</string>
   <string name="lockscreen_date_selection_str_round">Läpikuultava laatikko (pyöreä)</string>
   <string name="hide_lockscreen_alarm_title">Herätyksen teksti</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">30 sekunnin välein</string>
   <string name="less_notification_sounds_1m">Minuutin välein</string>
   <string name="less_notification_sounds_2m">Kahden minuutin välein</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Show notification count</string>
+  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Laajennettu työpöytä</string>
   <string name="expanded_desktop_summary">Per sovellus asetukset tilapalkin ja navigaatiopalkin näkyvyydelle</string>

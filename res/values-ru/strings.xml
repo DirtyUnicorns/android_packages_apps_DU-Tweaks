@@ -184,19 +184,19 @@
   <string name="lockscreen_items_other">Другое</string>
   <string name="hide_lockscreen_clock_title">Виджет часов</string>
   <string name="hide_lockscreen_clock_summary">Изменить видимость виджета часов</string>
-  <string name="lockscreen_clock_selection_title">Clock style</string>
-  <string name="lockscreen_clock_selection_digital">Default</string>
-  <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-  <string name="lockscreen_clock_selection_analog">Analog</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
-  <string name="lockscreen_clock_selection_sammy">Sammy</string>
-  <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+  <string name="lockscreen_clock_selection_title">Стиль часов</string>
+  <string name="lockscreen_clock_selection_digital">По умолчанию</string>
+  <string name="lockscreen_clock_selection_digital_bold">Цифровые (жирный)</string>
+  <string name="lockscreen_clock_selection_sammy">Вертикальные</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Вертикальные (жирные)</string>
+  <string name="lockscreen_clock_selection_analog">Аналоговые</string>
   <string name="hide_lockscreen_date_title">Виджет даты</string>
   <string name="hide_lockscreen_date_summary">Изменить видимость даты под виджетом часов</string>
-  <string name="lockscreen_date_selection_title">Date style</string>
-  <string name="lockscreen_date_selection_default">Default</string>
-  <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
-  <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
+  <string name="lockscreen_date_selection_title">Формат даты</string>
+  <string name="lockscreen_date_selection_default_aosp">По умолчанию</string>
+  <string name="lockscreen_date_selection_default">По умолчанию (большего размера)</string>
+  <string name="lockscreen_date_selection_str_box">Полупрозрачная подложка</string>
+  <string name="lockscreen_date_selection_str_round">Полупрозрачная подложка (скругленная)</string>
   <string name="hide_lockscreen_alarm_title">Текст будильника</string>
   <string name="hide_lockscreen_alarm_summary">Изменить видимость текста будильника под виджетом часов</string>
   <!-- Fingerprint authentication vibration -->
@@ -451,7 +451,7 @@
   <string name="smartbar_config_restore_success_toast">Профиль Smartbar успешно восстановлен</string>
   <string name="smartbar_config_backup_error_toast">Ошибка при сохранении профиля Smartbar</string>
   <string name="smartbar_config_restore_error_toast">Ошибка при восстановлении профиля Smartbar</string>
-  <string name="navbar_buttons_alpha_title">Button opacity</string>
+  <string name="navbar_buttons_alpha_title">Прозрачность кнопок</string>
   <string name="smartbar_longpress_delay_title">Задержка долгого нажатия кнопок</string>
   <string name="smartbar_longpress_delay_summary">Укажите, как долго система будет ждать, прежде чем запускать действие долгого нажатия</string>
   <string name="smartbar_longpress_delay_default">Задержка по умолчанию (быстрая)</string>
@@ -477,7 +477,7 @@
   <string name="hardware_keys_double_tap_title">Действие по двойному нажатию</string>
   <string name="hardware_keys_category">Кнопки панели навигаци</string>
   <string name="hardware_keys_disable_title">Отключить кнопки панели навигации</string>
-  <string name="hardware_keys_wake_title">Wake device</string>
+  <string name="hardware_keys_wake_title">Пробуждение устройства</string>
   <!-- Torch Power button gestures -->
   <string name="torch_power_button_gesture_title">Фонарик при выключенном экране</string>
   <string name="torch_power_button_gesture_none">Отключено</string>
@@ -508,8 +508,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Дважды коснитесь экрана блокировки, чтобы перевести устройство в спящий режим</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Notification sound if screen is on</string>
-  <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+  <string name="notification_sound_vib_screen_on_title">Звуковой сигнал при включенном экране</string>
+  <string name="notification_sound_vib_screen_on_summary">Воспроизведение звука и вибрации для уведомлений при включенном экране</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Звуки \"умных\" уведомлений</string>
   <string name="less_notification_sounds_summary">Проигрывать звук уведомления для каждого приложения только один раз за указанный период</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">Каждые 30 секунд</string>
   <string name="less_notification_sounds_1m">Ежеминутно</string>
   <string name="less_notification_sounds_2m">Каждые 2 минуты</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Показать счетчик уведомлений</string>
+  <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Расширенный экран</string>
   <string name="expanded_desktop_summary">Индивидуальная настройка отображения строки состояния и панели навигации</string>
@@ -658,15 +661,15 @@
   <string name="smart_pixels_shift_title">Защита от выгорания</string>
   <string name="smart_pixels_shift_summary">Предотвращение выгорания на OLED-устройствах благодаря перемещению пикселей с такой частотой</string>
   <!-- Chooser activity blacklist -->
-  <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
+  <string name="chooser_activity_blacklist_title">Добавить активность в черный список</string>
   <string name="chooser_activity_blacklist_summary">Не показывать приложения при нажатии на кнопку Поделиться</string>
   <string name="chooser_activity_blacklist_cat_title">Чёрный список</string>
   <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
   <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить его</string>
   <!-- Wallpaper tint -->
-  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
-  <string name="wallpaper_tint_recents">Recents background tint</string>
-  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
-  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
-  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
+  <string name="wallpaper_tint_power_menu">Затенение фона меню питания</string>
+  <string name="wallpaper_tint_recents">Затенение фона панели недавних приложений</string>
+  <string name="wallpaper_tint_keyguard">Затенение фона экрана блокировки</string>
+  <string name="wallpaper_tint_notification_shade">Затенение фона шторки уведомлений</string>
+  <string name="wallpaper_tint_summary">Применить затенение на обои домашнего экрана</string>
 </resources>

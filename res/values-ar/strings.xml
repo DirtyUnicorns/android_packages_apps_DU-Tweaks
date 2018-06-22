@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">نمط الساعة</string>
   <string name="lockscreen_clock_selection_digital">الأفتراضي</string>
   <string name="lockscreen_clock_selection_digital_bold">رقمي (غامق)</string>
-  <string name="lockscreen_clock_selection_analog">تناظري</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">التناظرية (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">سامي</string>
   <string name="lockscreen_clock_selection_sammy_bold">سامي (غامق)</string>
+  <string name="lockscreen_clock_selection_analog">تناظري</string>
   <string name="hide_lockscreen_date_title">أداة التاريخ</string>
   <string name="hide_lockscreen_date_summary">تغيير درجة الرؤية للتاريخ تحت أداة الساعة</string>
   <string name="lockscreen_date_selection_title">نمط التاريخ</string>
-  <string name="lockscreen_date_selection_default">الأفتراضي</string>
+  <string name="lockscreen_date_selection_default_aosp">الأفتراضي</string>
+  <string name="lockscreen_date_selection_default">الافتراضي (حجم أكبر)</string>
   <string name="lockscreen_date_selection_str_box">مربع شبه شفاف</string>
   <string name="lockscreen_date_selection_str_round">مربع شبه شفاف(مستدير)</string>
   <string name="hide_lockscreen_alarm_title">نص المنبه</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">كل 30 ثانية</string>
   <string name="less_notification_sounds_1m">كل دقيقة</string>
   <string name="less_notification_sounds_2m">كل دقيقتين</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">اظهار عدد الاشعارات</string>
+  <string name="status_bar_notif_count_summary">عرض عدد الإشعارات المعلقة</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">سطح المكتب الموسع</string>
   <string name="expanded_desktop_summary">تهيئة عرض شريط الحالة ومفاتيح التنقل لكل تطبيق</string>
