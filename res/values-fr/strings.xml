@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Style</string>
   <string name="lockscreen_clock_selection_digital">Par défaut</string>
   <string name="lockscreen_clock_selection_digital_bold">Numérique (gras)</string>
-  <string name="lockscreen_clock_selection_analog">Analogique</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analogique (Deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (gras)</string>
+  <string name="lockscreen_clock_selection_analog">Analogique</string>
   <string name="hide_lockscreen_date_title">Date</string>
   <string name="hide_lockscreen_date_summary">Masquer la date du widget Horloge</string>
   <string name="lockscreen_date_selection_title">Style</string>
-  <string name="lockscreen_date_selection_default">Par défaut</string>
+  <string name="lockscreen_date_selection_default_aosp">Par défaut</string>
+  <string name="lockscreen_date_selection_default">Par défaut (grand)</string>
   <string name="lockscreen_date_selection_str_box">Cadre translucide</string>
   <string name="lockscreen_date_selection_str_round">Cadre translucide (coins arrondis)</string>
   <string name="hide_lockscreen_alarm_title">Alarme</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">Toutes les 30 secondes</string>
   <string name="less_notification_sounds_1m">Chaque minute</string>
   <string name="less_notification_sounds_2m">Toutes les 2 minutes</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Notifications en attente</string>
+  <string name="status_bar_notif_count_summary">Afficher le nombre de notifications en attente</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Bureau étendu</string>
   <string name="expanded_desktop_summary">Réglages de l\'affichage de la barre d\'état et de la barre de navigation par application</string>

@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Estilo do relógio</string>
   <string name="lockscreen_clock_selection_digital">Padrão</string>
   <string name="lockscreen_clock_selection_digital_bold">Digital (negrito)</string>
-  <string name="lockscreen_clock_selection_analog">Analógico</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analógico (Deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrito)</string>
+  <string name="lockscreen_clock_selection_analog">Analógico</string>
   <string name="hide_lockscreen_date_title">Widget de data</string>
   <string name="hide_lockscreen_date_summary">Mudar a visibilidade da data debaixo do widget de relógio</string>
   <string name="lockscreen_date_selection_title">Estilo da data</string>
-  <string name="lockscreen_date_selection_default">Padrão</string>
+  <string name="lockscreen_date_selection_default_aosp">Default</string>
+  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
   <string name="lockscreen_date_selection_str_box">Caixa semitransparente</string>
   <string name="lockscreen_date_selection_str_round">Caixa semitransparente (arredondada)</string>
   <string name="hide_lockscreen_alarm_title">Texto de alarme</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">A cada 30 segundos</string>
   <string name="less_notification_sounds_1m">A Cada Minuto</string>
   <string name="less_notification_sounds_2m">A cada 2 minutos</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Show notification count</string>
+  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Área de trabalho expandida</string>
   <string name="expanded_desktop_summary">Configuração por aplicativo da barra de status e da visualização de chave de navegação</string>

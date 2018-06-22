@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Stile orologio</string>
   <string name="lockscreen_clock_selection_digital">Predefinito</string>
   <string name="lockscreen_clock_selection_digital_bold">Digitale (grassetto)</string>
-  <string name="lockscreen_clock_selection_analog">Analogico</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analogico (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (grassetto)</string>
+  <string name="lockscreen_clock_selection_analog">Analogico</string>
   <string name="hide_lockscreen_date_title">Widget data</string>
   <string name="hide_lockscreen_date_summary">Cambia la visibilità della data sotto il widget dell\'orologio</string>
   <string name="lockscreen_date_selection_title">Stile data</string>
-  <string name="lockscreen_date_selection_default">Predefinito</string>
+  <string name="lockscreen_date_selection_default_aosp">Predefinito</string>
+  <string name="lockscreen_date_selection_default">Predefinito (dimensioni maggiori)</string>
   <string name="lockscreen_date_selection_str_box">Riquadro semi-trasparente</string>
   <string name="lockscreen_date_selection_str_round">Riquadro semi-trasparente (tondo)</string>
   <string name="hide_lockscreen_alarm_title">Testo Sveglia</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">Ogni 30 secondi</string>
   <string name="less_notification_sounds_1m">Ogni minuto</string>
   <string name="less_notification_sounds_2m">Ogni 2 minuti</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Visualizza il numero di notifiche</string>
+  <string name="status_bar_notif_count_summary">Mostra il numero di notifiche in sospeso</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Desktop esteso</string>
   <string name="expanded_desktop_summary">Configura la visualizzazione della barra di stato e dei pulsanti di navigazione per singola applicazione</string>

@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Estil del rellotge</string>
   <string name="lockscreen_clock_selection_digital">Predeterminat</string>
   <string name="lockscreen_clock_selection_digital_bold">Digital (negreta)</string>
-  <string name="lockscreen_clock_selection_analog">Analògic</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analògic (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (negreta)</string>
+  <string name="lockscreen_clock_selection_analog">Analògic</string>
   <string name="hide_lockscreen_date_title">Widget de data</string>
   <string name="hide_lockscreen_date_summary">Canvieu la visibilitat de la data per sota del widget del rellotge</string>
   <string name="lockscreen_date_selection_title">Estil de la data</string>
-  <string name="lockscreen_date_selection_default">Predeterminat</string>
+  <string name="lockscreen_date_selection_default_aosp">Default</string>
+  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
   <string name="lockscreen_date_selection_str_box">Quadre semitransparent</string>
   <string name="lockscreen_date_selection_str_round">Quadre semitransparent (rodó)</string>
   <string name="hide_lockscreen_alarm_title">Text de l\'alarma</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">Cada 30 segons</string>
   <string name="less_notification_sounds_1m">Cada minut</string>
   <string name="less_notification_sounds_2m">Cada 2 minuts</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Show notification count</string>
+  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Escriptori ampliat</string>
   <string name="expanded_desktop_summary">Vista de configuració de la barra d\'estat i les tecles de navegació per aplicació</string>

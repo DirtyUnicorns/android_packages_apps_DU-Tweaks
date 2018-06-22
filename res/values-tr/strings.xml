@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Saat stili</string>
   <string name="lockscreen_clock_selection_digital">Varsayılan</string>
   <string name="lockscreen_clock_selection_digital_bold">Dijital (kalın)</string>
-  <string name="lockscreen_clock_selection_analog">Analog</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (kalın)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
   <string name="hide_lockscreen_date_title">Tarih widgeti</string>
   <string name="hide_lockscreen_date_summary">Saat widget altında bulunan tarih görünürlülüğünü değiştirin</string>
   <string name="lockscreen_date_selection_title">Tarih stili</string>
-  <string name="lockscreen_date_selection_default">Varsayılan</string>
+  <string name="lockscreen_date_selection_default_aosp">Varsayılan</string>
+  <string name="lockscreen_date_selection_default">Varsayılan (büyük boy)</string>
   <string name="lockscreen_date_selection_str_box">Yarı saydam kutu</string>
   <string name="lockscreen_date_selection_str_round">Yarı saydam kutu (yuvarlak)</string>
   <string name="hide_lockscreen_alarm_title">Alarm metni</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">30 saniyede bir</string>
   <string name="less_notification_sounds_1m">Her dakikada bir</string>
   <string name="less_notification_sounds_2m">Her 2 dakikada</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Bildirim sayısını göster</string>
+  <string name="status_bar_notif_count_summary">Bekleyen bildirimlerin sayısını görüntüle</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Genişletilmiş masaüstü</string>
   <string name="expanded_desktop_summary">Durum çubuğunun uygulama içi yapılandırması ve gezinme tuşu görünümü</string>

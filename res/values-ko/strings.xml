@@ -187,14 +187,14 @@
   <string name="lockscreen_clock_selection_title">Clock style</string>
   <string name="lockscreen_clock_selection_digital">Default</string>
   <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-  <string name="lockscreen_clock_selection_analog">Analog</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
   <string name="hide_lockscreen_date_title">Date widget</string>
   <string name="hide_lockscreen_date_summary">Change the date\'s visibility underneath the clock widget</string>
   <string name="lockscreen_date_selection_title">Date style</string>
-  <string name="lockscreen_date_selection_default">Default</string>
+  <string name="lockscreen_date_selection_default_aosp">Default</string>
+  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
   <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
   <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
   <string name="hide_lockscreen_alarm_title">Alarm text</string>
@@ -518,6 +518,9 @@
   <string name="less_notification_sounds_30s">Every 30 seconds</string>
   <string name="less_notification_sounds_1m">Every minute</string>
   <string name="less_notification_sounds_2m">Every 2 minutes</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Show notification count</string>
+  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">데스크탑 확장</string>
   <string name="expanded_desktop_summary">Per-app configuration of the status bar and navigation key view</string>
