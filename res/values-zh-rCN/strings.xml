@@ -252,7 +252,7 @@
   <string name="notification_light_default_value">默认</string>
   <string name="notification_light_missed_call_title">未接来电</string>
   <string name="notification_light_voicemail_title">语音信箱</string>
-  <string name="notification_light_screen_on">亮灯时屏幕亮</string>
+  <string name="notification_light_screen_on">在屏幕开启时启用指示灯</string>
   <string name="notification_light_zen_mode">在勿扰模式下启用指示灯</string>
   <string name="notification_light_use_multiple_leds">多个LED</string>
   <!-- Notification light settings -->
@@ -579,6 +579,7 @@
   <string name="battery_style_land">横向</string>
   <string name="battery_style_circle">环形</string>
   <string name="battery_style_dotted_circle">虚线圆圈</string>
+  <string name="battery_style_square">矩形</string>
   <string name="battery_style_text">文本</string>
   <string name="battery_style_hidden">隐藏</string>
   <!-- Battery percent -->

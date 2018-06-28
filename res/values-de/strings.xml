@@ -579,6 +579,7 @@
   <string name="battery_style_land">Querformat</string>
   <string name="battery_style_circle">Kreis</string>
   <string name="battery_style_dotted_circle">Gepunkteter Kreis</string>
+  <string name="battery_style_square">Quadrat</string>
   <string name="battery_style_text">Text</string>
   <string name="battery_style_hidden">Ausgeblendet</string>
   <!-- Battery percent -->

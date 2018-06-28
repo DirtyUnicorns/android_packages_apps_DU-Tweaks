@@ -183,7 +183,7 @@
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="lockscreen_items_other">Autre</string>
   <string name="hide_lockscreen_clock_title">Widget Horloge</string>
-  <string name="hide_lockscreen_clock_summary">Masquer le widget Horloge</string>
+  <string name="hide_lockscreen_clock_summary">Afficher</string>
   <string name="lockscreen_clock_selection_title">Style</string>
   <string name="lockscreen_clock_selection_digital">Par défaut</string>
   <string name="lockscreen_clock_selection_digital_bold">Numérique (gras)</string>
@@ -191,14 +191,14 @@
   <string name="lockscreen_clock_selection_sammy_bold">Sammy (gras)</string>
   <string name="lockscreen_clock_selection_analog">Analogique</string>
   <string name="hide_lockscreen_date_title">Date</string>
-  <string name="hide_lockscreen_date_summary">Masquer la date du widget Horloge</string>
-  <string name="lockscreen_date_selection_title">Style</string>
+  <string name="hide_lockscreen_date_summary">Afficher</string>
+  <string name="lockscreen_date_selection_title">Style du cadre</string>
   <string name="lockscreen_date_selection_default_aosp">Par défaut</string>
   <string name="lockscreen_date_selection_default">Par défaut (grand)</string>
-  <string name="lockscreen_date_selection_str_box">Cadre translucide</string>
-  <string name="lockscreen_date_selection_str_round">Cadre translucide (coins arrondis)</string>
+  <string name="lockscreen_date_selection_str_box">Translucide</string>
+  <string name="lockscreen_date_selection_str_round">Translucide (coins arrondis)</string>
   <string name="hide_lockscreen_alarm_title">Alarme</string>
-  <string name="hide_lockscreen_alarm_summary">Masquer l\'alarme du widget Horloge</string>
+  <string name="hide_lockscreen_alarm_summary">Afficher</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Authentification</string>
   <string name="fprint_sucess_vib_summary">Vibrer en cas d\'authentification par empreinte digitale réussie</string>
@@ -579,6 +579,7 @@
   <string name="battery_style_land">Paysage</string>
   <string name="battery_style_circle">Cercle</string>
   <string name="battery_style_dotted_circle">Cercle en pointillé</string>
+  <string name="battery_style_square">Carré</string>
   <string name="battery_style_text">Texte</string>
   <string name="battery_style_hidden">Masqué</string>
   <!-- Battery percent -->

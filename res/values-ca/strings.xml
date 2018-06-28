@@ -579,6 +579,7 @@
   <string name="battery_style_land">Apaïsat</string>
   <string name="battery_style_circle">Circular</string>
   <string name="battery_style_dotted_circle">Cercle puntejat</string>
+  <string name="battery_style_square">Square</string>
   <string name="battery_style_text">Text</string>
   <string name="battery_style_hidden">Ocult</string>
   <!-- Battery percent -->
