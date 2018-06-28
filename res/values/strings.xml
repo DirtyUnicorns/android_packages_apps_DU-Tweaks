@@ -651,6 +651,7 @@
     <string name="battery_percent_hidden">Hidden</string>
     <string name="battery_percent_outside">Outside</string>
     <string name="battery_percent_inside">Inside</string>
+    <string name="battery_percent_inside_outside">Inside, outside when charging</string>
 
     <!-- Battery icon size -->
     <string name="large_battery_icon_title">Show large icon</string>
