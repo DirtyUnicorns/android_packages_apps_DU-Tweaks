@@ -40,6 +40,7 @@ import com.android.internal.utils.du.DUActionUtils;
 import com.dirtyunicorns.tweaks.preferences.CustomSeekBarPreference;
 
 public class Buttons extends ActionFragment implements Preference.OnPreferenceChangeListener {
+
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
 
     // category keys
@@ -116,6 +117,7 @@ public class Buttons extends ActionFragment implements Preference.OnPreferenceCh
                     UserHandle.USER_CURRENT);
             mHwKeyDisable.setChecked(keysDisabled != 0);
             mHwKeyDisable.setOnPreferenceChangeListener(this);
+            updateButtons();
         } else {
             prefScreen.removePreference(hwkeyCat);
         }
@@ -217,6 +219,7 @@ public class Buttons extends ActionFragment implements Preference.OnPreferenceCh
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+            updateButtons();
         } else if (preference == mButtonTimoutBar) {
             int buttonTimeout = (Integer) newValue;
             Settings.System.putInt(getContentResolver(),
@@ -234,5 +237,16 @@ public class Buttons extends ActionFragment implements Preference.OnPreferenceCh
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.DIRTYTWEAKS;
+    }
+
+    private void updateButtons() {
+        boolean hardwareButtons = Settings.Secure.getIntForUser(getActivity().getContentResolver(),
+                Settings.Secure.HARDWARE_KEYS_DISABLE, 0, UserHandle.USER_CURRENT) == 1;
+
+        if (hardwareButtons) {
+            mButtonBackLightCategory.setEnabled(false);
+        } else {
+            mButtonBackLightCategory.setEnabled(true);
+        }
     }
 }
