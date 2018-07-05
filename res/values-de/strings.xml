@@ -298,7 +298,7 @@
   <string name="smartbar_interface">Smartbar</string>
   <string name="icon_pack_picker_dialog_title">Symbolpakete</string>
   <string name="image_exceeds_max_allowed_size">Bild darf 512×512 nicht überschreiten</string>
-  <string name="invalid_icon_from_uri">Bild vom Anbieter kann nicht geladen werden</string>
+  <string name="invalid_icon_from_uri">Anbieterbild kann nicht geladen werden</string>
   <string name="picker_activities">Aktivitäten</string>
   <string name="select_custom_app_title">Benutzerdefinierte Anwendung wählen</string>
   <string name="select_custom_activity_title">Benutzerdefinierte Aktivität auswählen</string>
@@ -367,7 +367,7 @@
   <string name="fling_longpress_title">Verzögerung bei langem Tippen</string>
   <string name="fling_longpress_summary">Erhöht oder verringert die Zeit bis eine Aktion beim langen Tippen ausgeführt wird</string>
   <string name="fling_keyboard_cursors_title">Dynamische Cursor-Aktionen der Tastatur</string>
-  <string name="fling_keyboard_cursors_move_summary">Bei aktiver Tastatur, links oder rechts gedrückt halten, um den Textcursor zu bewegen.\nLänger gedrückt halten, um den Cursor weiter zu bewegen.\nTippen Sie auf die Leiste, um zum Startbildschirm zu gelangen.</string>
+  <string name="fling_keyboard_cursors_move_summary">Links oder rechts gedrückt halten, um den Textcursor bei aktiver Tastatur zu bewegen.\nLänger gedrückt halten, um den Cursor weiter zu bewegen.\nTippen Sie auf die Leiste, um zum Startbildschirm zu gelangen.</string>
   <string name="fling_logo_opacity_title">Deckkraft des Fling-Logos</string>
   <string name="fling_factory_reset_title">Auf Standard zurücksetzen</string>
   <string name="fling_factory_reset_confirm">Sind Sie sicher, dass Sie Fling auf die Standardeinstellungen zurücksetzen möchten?</string>
@@ -657,7 +657,7 @@
   <string name="smart_pixels_enable_title">Smart Pixels einschalten</string>
   <string name="smart_pixels_enable_summary">Pixel zur Reduzierung des Stromverbrauchs abschalten</string>
   <string name="smart_pixels_on_power_save_title">Bei Energiesparmodus automatisch einschalten</string>
-  <string name="smart_pixels_on_power_save_summary">Smart Pixels einschalten wenn Energiesparmodus eingeschaltet ist</string>
+  <string name="smart_pixels_on_power_save_summary">Smart Pixels einschalten, wenn Energiesparmodus eingeschaltet ist</string>
   <string name="smart_pixels_percent">Prozentsatz der abzuschaltenden Pixel</string>
   <string name="smart_pixels_shift_title">Einbrenn-Schutz</string>
   <string name="smart_pixels_shift_summary">Verhindert das Einbrennen auf OLED-Displays durch Verlagern von Pixeln</string>

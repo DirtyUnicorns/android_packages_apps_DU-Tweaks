@@ -403,7 +403,7 @@
   <string name="pulse_solid_dimen_category">Düz çizgi modu ayarları</string>
   <string name="pulse_custom_buttons_opacity_title">Smartbar tuşlarının Pulse üzerinde ki saydamlığı</string>
   <string name="pulse_auto_color_title">Otomatik Pulse rengi</string>
-  <string name="pulse_auto_color_summary">Rengi albüm kapaklarıyla senkronize eder. Lav Lambası ve çizgilerinin opaklığını geçersiz kılar.</string>
+  <string name="pulse_auto_color_summary">Renkleri albüm kapaklarıyla senkronize eder. Lav Lambası ve çizgilerinin opaklığını geçersiz kılar.</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Çubuk genişliği</string>
   <string name="pulse_custom_div">Çubuk aralığı</string>
@@ -422,7 +422,7 @@
   <string name="smartbar_editor_title">Düzenleme modunu başlat</string>
   <string name="smartbar_editor_summary">Smartbar tuş düzenleyicisini aç</string>
   <string name="smartbar_help_policy_notice_summary">Düzenleyici modundayken konumunu değiştirmek için bir tuşa basın ve sürükleyin veya düzenleme menüsünü görmek için bir tuşa uzunca basın. Menü gösterilirken tuş konumu değiştirilebilir.\n\nBir çift dokunma eylemi ayarlamak, bir seferlik tek dokunuşu geciktirecektir.</string>
-  <string name="smartbar_context_menu_position_title">Bağlamsal tuşların konum düzeni</string>
+  <string name="smartbar_context_menu_position_title">İçerik tuşlarının yerleşim konumu</string>
   <string name="smartbar_context_menu_position_summary">Menü ve klavye seçici gibi bağlamsal tuşların konumunu ayarlama</string>
   <string name="smartbar_right">Sağ</string>
   <string name="smartbar_left">Sol</string>

@@ -668,9 +668,9 @@
   <string name="chooser_activity_blacklist_pref_title">Aggiungi applicazione</string>
   <string name="chooser_activity_blacklist_pref_summary">Tocca qui per aggiungere, tocca l\'app aggiunta per rimuoverla</string>
   <!-- Wallpaper tint -->
-  <string name="wallpaper_tint_power_menu">Tinta di fondo del menu di accensione</string>
-  <string name="wallpaper_tint_recents">Tinta di fondo dei recenti</string>
-  <string name="wallpaper_tint_keyguard">Tinta du sfondo del lockscreen</string>
+  <string name="wallpaper_tint_power_menu">Colore dello sfondo del menù di accensione</string>
+  <string name="wallpaper_tint_recents">Colore dello sfondo dei recenti</string>
+  <string name="wallpaper_tint_keyguard">Colore dello sfondo della schermata di blocco</string>
   <string name="wallpaper_tint_notification_shade">Colore ombra della notifica</string>
   <string name="wallpaper_tint_summary">Applica un colore basato sullo sfondo della schermata principale</string>
 </resources>

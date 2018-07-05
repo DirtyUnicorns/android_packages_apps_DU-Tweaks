@@ -579,7 +579,7 @@
   <string name="battery_style_land">Apaisado</string>
   <string name="battery_style_circle">Circular</string>
   <string name="battery_style_dotted_circle">Círculo punteado</string>
-  <string name="battery_style_square">Square</string>
+  <string name="battery_style_square">Cuadrado</string>
   <string name="battery_style_text">Solo Texto</string>
   <string name="battery_style_hidden">Oculto</string>
   <!-- Battery percent -->
