@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">隐藏</string>
   <string name="battery_percent_outside">外部</string>
   <string name="battery_percent_inside">内部</string>
+  <string name="battery_percent_inside_outside">内, 外充电时</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">显示大图标</string>
   <string name="large_battery_icon_summary">增大状态栏电池图标</string>

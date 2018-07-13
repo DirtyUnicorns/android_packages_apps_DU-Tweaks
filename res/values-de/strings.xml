@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Ausgeblendet</string>
   <string name="battery_percent_outside">Außerhalb</string>
   <string name="battery_percent_inside">Innerhalb</string>
+  <string name="battery_percent_inside_outside">Innen, außen beim Aufladen</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Zeige großes Symbol</string>
   <string name="large_battery_icon_summary">Batteriesymbol in der Statusleiste vergrößern</string>

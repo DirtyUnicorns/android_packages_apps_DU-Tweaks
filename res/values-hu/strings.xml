@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Rejtett</string>
   <string name="battery_percent_outside">Kívül</string>
   <string name="battery_percent_inside">Belül</string>
+  <string name="battery_percent_inside_outside">Belül vagy kívül, ha töltődik</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Nagyobb ikont jelenítsen meg</string>
   <string name="large_battery_icon_summary">Nagyítsa az akkumulátorikont az állapotsoron</string>

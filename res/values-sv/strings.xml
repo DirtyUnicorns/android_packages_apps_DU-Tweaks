@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- The Team -->
-  <string name="dialog_team_title">The Team</string>
+  <string name="dialog_team_title">Teamet</string>
   <!-- Bottom navigation -->
   <string name="bottom_nav_system_title">System</string>
-  <string name="bottom_nav_lockscreen_title">Lockscreen</string>
+  <string name="bottom_nav_lockscreen_title">Låsskärm</string>
   <string name="bottom_nav_statusbar_title">Statusbar</string>
   <string name="bottom_nav_navigation_title">Navigation</string>
   <string name="bottom_nav_multitasking_title">Multitasking</string>
@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Hidden</string>
   <string name="battery_percent_outside">Outside</string>
   <string name="battery_percent_inside">Inside</string>
+  <string name="battery_percent_inside_outside">Inside, outside when charging</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Show large icon</string>
   <string name="large_battery_icon_summary">Enlarge the battery icon in the status bar</string>

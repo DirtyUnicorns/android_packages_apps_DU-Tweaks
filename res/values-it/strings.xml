@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Nascosto</string>
   <string name="battery_percent_outside">All\'esterno</string>
   <string name="battery_percent_inside">All\'interno</string>
+  <string name="battery_percent_inside_outside">All\'interno, all\'esterno quando ricarica</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Mostra icona grande</string>
   <string name="large_battery_icon_summary">Allarga l\'icona della batteria nella barra di stato</string>

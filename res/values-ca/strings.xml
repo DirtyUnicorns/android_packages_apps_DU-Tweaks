@@ -193,8 +193,8 @@
   <string name="hide_lockscreen_date_title">Widget de data</string>
   <string name="hide_lockscreen_date_summary">Canvieu la visibilitat de la data per sota del widget del rellotge</string>
   <string name="lockscreen_date_selection_title">Estil de la data</string>
-  <string name="lockscreen_date_selection_default_aosp">Default</string>
-  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
+  <string name="lockscreen_date_selection_default_aosp">Predeterminat</string>
+  <string name="lockscreen_date_selection_default">Per defecte (tamany més gran)</string>
   <string name="lockscreen_date_selection_str_box">Quadre semitransparent</string>
   <string name="lockscreen_date_selection_str_round">Quadre semitransparent (rodó)</string>
   <string name="hide_lockscreen_alarm_title">Text de l\'alarma</string>
@@ -519,8 +519,8 @@
   <string name="less_notification_sounds_1m">Cada minut</string>
   <string name="less_notification_sounds_2m">Cada 2 minuts</string>
   <!-- Notification count -->
-  <string name="status_bar_notif_count_title">Show notification count</string>
-  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+  <string name="status_bar_notif_count_title">Mostra comptador de notificacions</string>
+  <string name="status_bar_notif_count_summary">Mostra el nombre de notificacions pendents</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Escriptori ampliat</string>
   <string name="expanded_desktop_summary">Vista de configuració de la barra d\'estat i les tecles de navegació per aplicació</string>
@@ -579,7 +579,7 @@
   <string name="battery_style_land">Apaïsat</string>
   <string name="battery_style_circle">Circular</string>
   <string name="battery_style_dotted_circle">Cercle puntejat</string>
-  <string name="battery_style_square">Square</string>
+  <string name="battery_style_square">Quadrada</string>
   <string name="battery_style_text">Text</string>
   <string name="battery_style_hidden">Ocult</string>
   <!-- Battery percent -->
@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Ocult</string>
   <string name="battery_percent_outside">Fora</string>
   <string name="battery_percent_inside">Dins</string>
+  <string name="battery_percent_inside_outside">Dins, fora quan carrega</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Mostra la icona llarga</string>
   <string name="large_battery_icon_summary">Ampliar la icona de la bateria a la barra d\'estat</string>

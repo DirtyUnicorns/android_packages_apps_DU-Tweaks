@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Piilotettu</string>
   <string name="battery_percent_outside">Ulkopuolella</string>
   <string name="battery_percent_inside">Sisäpuolella</string>
+  <string name="battery_percent_inside_outside">Inside, outside when charging</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Käytä suurta kuvaketta</string>
   <string name="large_battery_icon_summary">Suurenna akun kuvakkeen kokoa tilapalkilla</string>

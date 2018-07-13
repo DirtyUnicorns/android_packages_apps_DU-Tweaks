@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Скрыт</string>
   <string name="battery_percent_outside">Снаружи</string>
   <string name="battery_percent_inside">Внутри</string>
+  <string name="battery_percent_inside_outside">Inside, outside when charging</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Показывать большую иконку</string>
   <string name="large_battery_icon_summary">Увеличение иконки батареи в строке состояния</string>

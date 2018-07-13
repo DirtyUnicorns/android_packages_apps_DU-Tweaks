@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Gizli</string>
   <string name="battery_percent_outside">Simge yanında göster</string>
   <string name="battery_percent_inside">Simge içinde göster</string>
+  <string name="battery_percent_inside_outside">İçinde, şarj sırasında dışında</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Büyük simge göster</string>
   <string name="large_battery_icon_summary">Durum çubuğundaki pil simgesini büyüt</string>

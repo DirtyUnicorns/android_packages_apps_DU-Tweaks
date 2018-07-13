@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">مخفي</string>
   <string name="battery_percent_outside">في الخارج</string>
   <string name="battery_percent_inside">في الداخل</string>
+  <string name="battery_percent_inside_outside">في الداخل، خارج عند الشحن</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">إظهار رمز كبير</string>
   <string name="large_battery_icon_summary">تكبير رمز البطارية في شريط الحالة</string>

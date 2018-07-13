@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Skryté</string>
   <string name="battery_percent_outside">Vedle ikony</string>
   <string name="battery_percent_inside">Uvnitř ikony</string>
+  <string name="battery_percent_inside_outside">Uvnitř, vedle při nabíjení</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Zobrazit velkou ikonu</string>
   <string name="large_battery_icon_summary">Zvětšit ikonu baterie ve stavové liště</string>

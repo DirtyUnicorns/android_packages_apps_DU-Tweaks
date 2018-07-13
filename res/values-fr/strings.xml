@@ -184,7 +184,7 @@
   <string name="lockscreen_items_other">Autre</string>
   <string name="hide_lockscreen_clock_title">Widget Horloge</string>
   <string name="hide_lockscreen_clock_summary">Afficher</string>
-  <string name="lockscreen_clock_selection_title">Style</string>
+  <string name="lockscreen_clock_selection_title">Style de l\'horloge</string>
   <string name="lockscreen_clock_selection_digital">Par défaut</string>
   <string name="lockscreen_clock_selection_digital_bold">Numérique (gras)</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
@@ -588,6 +588,7 @@
   <string name="battery_percent_hidden">Masqué</string>
   <string name="battery_percent_outside">À côté de l\'icône</string>
   <string name="battery_percent_inside">Dans l\'icône</string>
+  <string name="battery_percent_inside_outside">Dans l\'icône, à côté de l\'icône lors de la charge</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Grande icône</string>
   <string name="large_battery_icon_summary">Utiliser une grande icône pour la batterie dans la barre d\'état</string>
