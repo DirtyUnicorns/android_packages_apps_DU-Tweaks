@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Kullanıcı tarafından yapılandırılabilir</string>
   <string name="expanded_desktop_style">Genişletilmiş masaüstü stili</string>
   <string name="expanded_desktop_style_description">Geçerli genişletilmiş masaüstü stilini seçin</string>
-  <string name="expanded_desktop_options">Genişletilmiş masaüstü seçenekleri</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Durum çubuğu</string>
   <string name="status_bar_style_title">Stil</string>

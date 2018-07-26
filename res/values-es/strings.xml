@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Configurable por el usuario</string>
   <string name="expanded_desktop_style">Estilo de escritorio extendido</string>
   <string name="expanded_desktop_style_description">Escoge un estilo de escritorio extendido predeterminado</string>
-  <string name="expanded_desktop_options">Opciones del escritorio expandido</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Barra de estado</string>
   <string name="status_bar_style_title">Estilo</string>

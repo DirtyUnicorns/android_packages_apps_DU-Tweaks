@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">ユーザー設定</string>
   <string name="expanded_desktop_style">拡張デスクトップのスタイル</string>
   <string name="expanded_desktop_style_description">既定の拡張デスクトップスタイルを選択する</string>
-  <string name="expanded_desktop_options">拡張デスクトップのオプション</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">ステータスバー</string>
   <string name="status_bar_style_title">スタイル</string>

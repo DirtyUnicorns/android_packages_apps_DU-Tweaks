@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">用户配置</string>
   <string name="expanded_desktop_style">扩展桌面样式</string>
   <string name="expanded_desktop_style_description">选择默认的扩展桌面样式</string>
-  <string name="expanded_desktop_options">扩展桌面设置</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">状态栏</string>
   <string name="status_bar_style_title">样式</string>

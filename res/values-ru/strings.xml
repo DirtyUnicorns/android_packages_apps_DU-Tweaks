@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Настраиваемое пользователем</string>
   <string name="expanded_desktop_style">Стиль расширенного экрана</string>
   <string name="expanded_desktop_style_description">Выбрать стиль расширенного экрана по умолчанию</string>
-  <string name="expanded_desktop_options">Настройки расширенного экрана</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Строка состояния</string>
   <string name="status_bar_style_title">Стиль</string>
