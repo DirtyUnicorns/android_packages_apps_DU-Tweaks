@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Configurabile dall\'utente</string>
   <string name="expanded_desktop_style">Stile schermo esteso</string>
   <string name="expanded_desktop_style_description">Scegli lo stile predefinito dello schermo esteso</string>
-  <string name="expanded_desktop_options">Opzioni schermo esteso</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Barra di stato</string>
   <string name="status_bar_style_title">Stile</string>

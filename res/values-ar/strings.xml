@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">يمكن تعديله من المستخدم</string>
   <string name="expanded_desktop_style">نمط سطح المكتب الموسّع</string>
   <string name="expanded_desktop_style_description">إختر نمط سطح المكتب الموسّع الإفتراضي</string>
-  <string name="expanded_desktop_options">خيارات سطح المكتب الموسع</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">شريط الحالة</string>
   <string name="status_bar_style_title">الشكل</string>

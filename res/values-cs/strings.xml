@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Uživatelsky nastavitelné</string>
   <string name="expanded_desktop_style">Vzhled rozšířené plochy</string>
   <string name="expanded_desktop_style_description">Vyberte výchozí styl rozšířené plochy</string>
-  <string name="expanded_desktop_options">Možnosti rozšířené plochy</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Stavová lišta</string>
   <string name="status_bar_style_title">Styl</string>

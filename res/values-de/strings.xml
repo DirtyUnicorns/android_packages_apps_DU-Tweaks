@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Vom Benutzer konfigurierbar</string>
   <string name="expanded_desktop_style">Aussehen des erweiterten Startbildschirms</string>
   <string name="expanded_desktop_style_description">Standard-Aussehen des erweiterten Startbildschirms wählen</string>
-  <string name="expanded_desktop_options">Optionen für den erweiterten Startbildschirm</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Statusleiste</string>
   <string name="status_bar_style_title">Design</string>

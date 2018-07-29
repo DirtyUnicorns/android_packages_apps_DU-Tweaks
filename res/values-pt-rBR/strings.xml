@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Configurável pelo usuário</string>
   <string name="expanded_desktop_style">Estilo de área de trabalho expandida</string>
   <string name="expanded_desktop_style_description">Escolher um estilo padrão para a área de trabalho expandida</string>
-  <string name="expanded_desktop_options">Opções da área de trabalho expandida</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Barra de Status</string>
   <string name="status_bar_style_title">Estilo</string>

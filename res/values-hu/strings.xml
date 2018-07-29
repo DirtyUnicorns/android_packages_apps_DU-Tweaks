@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Felhasználó által konfigurálható</string>
   <string name="expanded_desktop_style">Kiterjesztett asztalstílus</string>
   <string name="expanded_desktop_style_description">Válasszon egy alapértelmezett kiterjesztett asztalstílust</string>
-  <string name="expanded_desktop_options">Kiterjesztett asztal beállításai</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Állapotsor</string>
   <string name="status_bar_style_title">Stílus</string>

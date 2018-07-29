@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Käyttäjän asettama</string>
   <string name="expanded_desktop_style">Laajennetun työpöydän tyyli</string>
   <string name="expanded_desktop_style_description">Valitse oletusarvoinen laajennetun työpöydän tyyli</string>
-  <string name="expanded_desktop_options">Laajennetun työpöydän asetukset</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Tilapalkki</string>
   <string name="status_bar_style_title">Tyyli</string>

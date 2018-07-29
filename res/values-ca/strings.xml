@@ -535,7 +535,6 @@
   <string name="expanded_user_configurable">Configurable per l\'usuari</string>
   <string name="expanded_desktop_style">Estil d\'escriptori expandit</string>
   <string name="expanded_desktop_style_description">Trieu un estil d\'escriptori expandit per defecte</string>
-  <string name="expanded_desktop_options">Opcions d\'escriptori expandit</string>
   <!-- Status bar clock options -->
   <string name="status_bar_title">Barra d\'estat</string>
   <string name="status_bar_style_title">Estil</string>
