@@ -16,46 +16,46 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- The Team -->
-  <string name="dialog_team_title">The Team</string>
+  <string name="dialog_team_title">團隊</string>
   <!-- Bottom navigation -->
-  <string name="bottom_nav_system_title">System</string>
-  <string name="bottom_nav_lockscreen_title">Lockscreen</string>
-  <string name="bottom_nav_statusbar_title">Statusbar</string>
-  <string name="bottom_nav_navigation_title">Navigation</string>
-  <string name="bottom_nav_multitasking_title">Multitasking</string>
+  <string name="bottom_nav_system_title">系統</string>
+  <string name="bottom_nav_lockscreen_title">鎖定畫面</string>
+  <string name="bottom_nav_statusbar_title">狀態列</string>
+  <string name="bottom_nav_navigation_title">導覽列</string>
+  <string name="bottom_nav_multitasking_title">多工處理</string>
   <!-- Footer warnings -->
-  <string name="heads_up_warning_text">Heads up notifications are meant to be used for multitasking while using full screen apps and/or playing games. Just know that while you use heads up notifications, you will not be able to use the ticker feature.</string>
-  <string name="ticker_warning_text">The ticker feature is meant to be used as a mulitasking tool and brings a bit of splash of the old times. Just know that while you use the ticker feature, you will not be able to use heads up notifications.</string>
-  <string name="carrier_label_warning_text">Be advised that the custom carrier label is not available in the extended statusbar area, also known as the quick settings area. Also using emojis as your carrier label might cause some visibility issues on lighter backgrounds.</string>
-  <string name="lockscreen_torch_warning_text">The lockscreen torch feature is meant to be used only when the screen is turned off. Also note that leaving your flashlight on for a long period of time will cause your battery to drain faster.</string>
-  <string name="slim_recents_hints_footer">To clear all apps, pinch-in with two fingers on the panel. To block an app from being cleared, long press on its icon to star it.\n\nFor additional recents features such as multiwindow or to kill an app, long press on any app window in the panel.</string>
-  <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend you set the amount of disabled pixels at 75 percent.</string>
+  <string name="heads_up_warning_text">浮出通知是用於你在使用全螢幕應用程式或者在玩遊戲時可以多工處理。只是記得使用浮動通知時狀態列的通知將會停用。</string>
+  <string name="ticker_warning_text">狀態列通知也是一個為了多工處理的工具，可以讓妳回味舊版本的Android通知。只是記得使用狀態列通知時的浮動通知將會停用。</string>
+  <string name="carrier_label_warning_text">請注意, 自訂電信業者標籤在擴展欄區域 (也稱為快速設置區域) 中不可用。同時, 若使用表情符號作為您的電信業者標籤可能會在較亮的背景上導致某些視覺上的問題。</string>
+  <string name="lockscreen_torch_warning_text">鎖定螢幕的手電筒只有在螢幕關閉下才可使用。還有記得長時間使用手電筒會快速耗盡你的電量。</string>
+  <string name="slim_recents_hints_footer">如果要關閉全部的應用程式，在多工畫面上兩跟手指往內捏合。如果不想應用程式被清除，長按應用程式圖標可以標記。\n\n 如果想要用最近新增的功能像是多工視窗或關閉應用，在多工畫面上應用程式長按該視窗。</string>
+  <string name="smart_pixels_warning_text">智慧 Pixels 是一項省電功能。這取決於你要關掉多少 Pixels，你就可以看見電池的續航力有明顯的改進。為了讓使用者有比較好的體驗，我們建議你將停用的 Pixels 數量設置為75%。</string>
   <!-- Categories -->
   <!-- System -->
-  <string name="device_extras_title">Device extras</string>
-  <string name="device_extras_summary">Device specific tweaks</string>
-  <string name="miscellaneous_title">Miscellaneous</string>
-  <string name="miscellaneous_summary">Miscellaneous tweaks</string>
-  <string name="powermenu_title">Power menu</string>
-  <string name="powermenu_summary">Configure the power menu on and off the lockscreen with many items</string>
+  <string name="device_extras_title">其他手勢</string>
+  <string name="device_extras_summary">特定裝置的調校</string>
+  <string name="miscellaneous_title">其他</string>
+  <string name="miscellaneous_summary">其他調校</string>
+  <string name="powermenu_title">電源功能表</string>
+  <string name="powermenu_summary">設定鎖定畫面時的電源功能表</string>
   <!-- Lockscreen -->
-  <string name="fingerprint_prefs_title">Fingerprint prefs</string>
-  <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>
-  <string name="lockscreen_items_title">Lockscreen items</string>
-  <string name="lockscreen_items_summary">Remove or add items on the lockscreen</string>
+  <string name="fingerprint_prefs_title">指紋設定</string>
+  <string name="fingerprint_prefs_summary">調校特定的指紋辨識器</string>
+  <string name="lockscreen_items_title">鎖定畫面項目</string>
+  <string name="lockscreen_items_summary">新增或移除鎖定畫面上的項目</string>
   <!-- Statusbar -->
-  <string name="battery_options_title">Battery options</string>
-  <string name="battery_options_summary">Customize the statusbar or QS tile battery</string>
-  <string name="carrier_label_title">Carrier label</string>
-  <string name="carrier_label_summary">Customize the carrier label on the lockscreen or statusbar</string>
-  <string name="clock_options_title">Clock options</string>
-  <string name="clock_options_summary">Customize your statusbar clock</string>
-  <string name="icon_manager_title">Icon manager</string>
-  <string name="icon_manager_summary">Configure the visibility of statusbar items</string>
-  <string name="notifications_title">Notifications</string>
-  <string name="notifications_summary">Tweaks specific to system notifications</string>
-  <string name="quicksettings_title">Quick settings</string>
-  <string name="quicksettings_summary">Configure the layout of the quick settings area</string>
+  <string name="battery_options_title">電池設定</string>
+  <string name="battery_options_summary">自訂的狀態列和快速下拉電池</string>
+  <string name="carrier_label_title">電信商標籤</string>
+  <string name="carrier_label_summary">自訂位於螢幕鎖定畫面或狀態列上的電信業者標籤</string>
+  <string name="clock_options_title">時鐘選項</string>
+  <string name="clock_options_summary">自訂狀態列時鐘</string>
+  <string name="icon_manager_title">圖示管理</string>
+  <string name="icon_manager_summary">設定在狀態列上顯示的項目</string>
+  <string name="notifications_title">通知視窗</string>
+  <string name="notifications_summary">對系統通知特別調整</string>
+  <string name="quicksettings_title">快速設定</string>
+  <string name="quicksettings_summary">設定快速設定的布局</string>
   <string name="ticker_title">Ticker</string>
   <string name="ticker_summary">Enable the statusbar ticker and configure ticker related tweaks</string>
   <string name="traffic_title">Traffic indicators</string>
@@ -89,70 +89,70 @@
   <string name="powermenu_lockscreen_title">Visibility on the lockscreen</string>
   <string name="powermenu_lockscreen_summary">Enable the ability to show and use the power menu dialog while on the lockscreen</string>
   <string name="powermenu_ls_reboot_summary">Show the reboot option on the lockscreen</string>
-  <string name="powermenu_ls_advanced_reboot_summary">Show the advanced reboot option on the lockscreen</string>
-  <string name="powermenu_ls_screenshot_summary">Show the screenshot option on the lockscreen</string>
-  <string name="powermenu_ls_airplane_summary">Show the airplane mode option on the lockscreen</string>
+  <string name="powermenu_ls_advanced_reboot_summary">在鎖定畫面上顯示進階重新啟動選項</string>
+  <string name="powermenu_ls_screenshot_summary">在鎖定畫面上顯示螢幕擷取畫面選項</string>
+  <string name="powermenu_ls_airplane_summary">在鎖定畫面上顯示飛航模式選項</string>
   <!-- System theme -->
-  <string name="theme_category_title">System theme</string>
-  <string name="systemui_theme_style_title">Background color</string>
-  <string name="systemui_theme_style_auto">Automatic (wallpaper based)</string>
-  <string name="systemui_theme_style_light">Light</string>
-  <string name="systemui_theme_style_dark">Dark</string>
-  <string name="applying_theme_toast">Applying theme, please wait...</string>
-  <string name="theme_applied_toast">Theme applied!</string>
-  <string name="disable_themes_installed_title">System themes are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use these themes instead.</string>
-  <string name="disable_accents_installed_title">Accent picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the accent picker.</string>
-  <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
-  <string name="accent_picker_dialog_title">Select an accent color</string>
-  <string name="theme_accent_picker_title">Accent color</string>
-  <string name="theme_accent_picker_summary">Select system theme accent color</string>
-  <string name="theme_accent_picker_default">Default</string>
+  <string name="theme_category_title">系统主题</string>
+  <string name="systemui_theme_style_title">背景顏色</string>
+  <string name="systemui_theme_style_auto">自動 (根據桌布)</string>
+  <string name="systemui_theme_style_light">淺色</string>
+  <string name="systemui_theme_style_dark">深色</string>
+  <string name="applying_theme_toast">套用主題中，請稍候...</string>
+  <string name="theme_applied_toast">主題已套用！</string>
+  <string name="disable_themes_installed_title">為了避免與 Substratum 疊層衝突，系統主題管理器已經停用。如果想要使用系統主題管理器，請解除安裝疊層。</string>
+  <string name="disable_accents_installed_title">為了避免與 Substratum 疊層衝突，強調色管理器已經停用。如果想要使用強調色管理器，請解除安裝疊層。</string>
+  <string name="disable_fonts_installed_title">為了避免與 Substratum 疊層衝突，字型管理器已經停用。如果想要使用字型管理器，請解除安裝疊層。</string>
+  <string name="accent_picker_dialog_title">選取一個強調色</string>
+  <string name="theme_accent_picker_title">強調顏色</string>
+  <string name="theme_accent_picker_summary">選擇系統主題強調色</string>
+  <string name="theme_accent_picker_default">預設</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Color Picker</string>
-  <string name="press_color_to_apply">Press on color below to apply</string>
+  <string name="dialog_color_picker">調色盤</string>
+  <string name="press_color_to_apply">輕觸下方顏色以套用</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
+  <string name="hex">Hex 色碼：</string>
   <string name="hex_hint">#ff000000</string>
-  <string name="set">Set</string>
-  <string name="color_default">Default</string>
+  <string name="set">儲存設定</string>
+  <string name="color_default">預設</string>
   <!-- Network Traffic -->
-  <string name="network_traffic_state_title">Show net activity in statusbar</string>
-  <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+  <string name="network_traffic_state_title">在狀態列中顯示網路活動</string>
+  <string name="network_traffic_autohide_threshold_title">網路活動自動隱藏下限 (KB/s)</string>
   <!-- Volume key controls media stream -->
-  <string name="volume_keys_control_media_stream_title">Media volume control</string>
-  <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+  <string name="volume_keys_control_media_stream_title">啟用音量控制</string>
+  <string name="volume_keys_control_media_stream_summary">強制使用音量鍵控制媒體串流</string>
   <!-- Volume rocker music control -->
-  <string name="volume_button_music_control_title">Playback control</string>
-  <string name="volume_button_music_control_summary">When the screen is off, long-pressing the volume keys will skip music tracks</string>
+  <string name="volume_button_music_control_title">播放控制</string>
+  <string name="volume_button_music_control_summary">螢幕關閉時，長按音量鍵即可切換曲目</string>
   <!-- Volume key rotation -->
-  <string name="swap_volume_buttons_title">Reorient</string>
-  <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+  <string name="swap_volume_buttons_title">從新調整方向</string>
+  <string name="swap_volume_buttons_summary">螢幕旋轉時交換音量鍵</string>
   <!-- Launch music player when headset is connected -->
-  <string name="headset_connect_player_title">Launch music app on headset connection</string>
-  <string name="headset_connect_player_disabled">Disabled</string>
-  <string name="headset_connect_player_wired">Wired headset plugged in</string>
-  <string name="headset_connect_player_bt_no_carkit">BT headset (no carkit) plugged in</string>
-  <string name="headset_connect_player_bt">BT headset plugged in</string>
-  <string name="headset_connect_player_both_no_carkit">Any headset (no carkit) plugged in</string>
-  <string name="headset_connect_player_both">Any headset plugged in</string>
+  <string name="headset_connect_player_title">在耳機連接上啟動音樂應用程式</string>
+  <string name="headset_connect_player_disabled">停用</string>
+  <string name="headset_connect_player_wired">當有線耳機插入時</string>
+  <string name="headset_connect_player_bt_no_carkit">藍牙耳機 (無車充) 插入時</string>
+  <string name="headset_connect_player_bt">藍牙耳機插入時</string>
+  <string name="headset_connect_player_both_no_carkit">任何耳機 (無車充) 插入時</string>
+  <string name="headset_connect_player_both">任何耳機插入時</string>
   <!-- Carrier Label -->
-  <string name="carrier_options">Select display locations</string>
-  <string name="custom_carrier_label_title">Custom carrier label</string>
-  <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
-  <string name="custom_carrier_label_notset">Custom label currently not set</string>
-  <string name="show_carrier_title">Carrier label</string>
-  <string name="show_carrier_disabled">Disabled</string>
-  <string name="show_carrier_keyguard">Lockscreen</string>
-  <string name="show_carrier_statusbar">Status bar</string>
-  <string name="show_carrier_enabled">Both</string>
+  <string name="carrier_options">選擇顯示位置</string>
+  <string name="custom_carrier_label_title">自訂電信公司標籤</string>
+  <string name="custom_carrier_label_explain">輸入自訂標籤。保留為空以使用您的電信業者名稱</string>
+  <string name="custom_carrier_label_notset">自訂標籤尚未設定</string>
+  <string name="show_carrier_title">電信商標籤</string>
+  <string name="show_carrier_disabled">停用</string>
+  <string name="show_carrier_keyguard">鎖定畫面</string>
+  <string name="show_carrier_statusbar">狀態列</string>
+  <string name="show_carrier_enabled">皆顯示</string>
   <!-- Quick Pulldown-->
-  <string name="quick_pulldown_title">Quick pulldown</string>
-  <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-  <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
-  <string name="quick_pulldown_off">Off</string>
-  <string name="quick_pulldown_left">Left</string>
-  <string name="quick_pulldown_right">Right</string>
+  <string name="quick_pulldown_title">快速下拉</string>
+  <string name="quick_pulldown_summary">在狀態列的%1$s側下拉時直接進入快速設定</string>
+  <string name="quick_pulldown_summary_always">下拉狀態列時永遠開啟快速設定</string>
+  <string name="quick_pulldown_off">已關閉</string>
+  <string name="quick_pulldown_left">左側</string>
+  <string name="quick_pulldown_right">右側</string>
   <string name="quick_pulldown_always">Always</string>
   <!-- QS footer warnings -->
   <string name="qs_footer_warnings_title">QS footer warnings</string>
