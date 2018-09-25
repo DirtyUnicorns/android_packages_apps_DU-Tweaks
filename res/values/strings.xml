@@ -16,6 +16,10 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Dirty Tweaks -->
+    <string name="dirtytweaks_title">Dirty Tweaks</string>
+    <string name="dirtytweaks_summary">Enhance your experience</string>
+
     <!-- The Team -->
     <string name="dialog_team_title">The Team</string>
 
