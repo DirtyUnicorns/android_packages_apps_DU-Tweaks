@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Dirty Unicorns Project
+<!-- Copyright (C) 2017-2018 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -30,11 +30,5 @@
     <color name="BottomBarBackgroundColor">@android:color/white</color>
     <color name="bottom_nav_text_icon_active">@android:color/black</color>
     <color name="bottom_nav_text_icon_inactive">@*android:color/hint_foreground_light</color>
-
-    <!-- Expanded desktop -->
-    <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
-    <drawable name="expanded_item_bg">@android:color/background_light</drawable>
-    <color name="expanded_button_color_normal">#4CAF50</color>
-    <color name="expanded_button_color_close">#F44336</color>
 
 </resources>

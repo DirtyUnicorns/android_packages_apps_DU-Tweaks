@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Dirty Unicorns Project
+<!-- Copyright (C) 2017-2018 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,73 +17,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/powermenu_title" >
-
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="powermenu_reboot"
-        android:title="@string/powermenu_reboot_title"
-        android:defaultValue="true" />
-
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="powermenu_advanced_reboot"
-        android:title="@string/powermenu_advanced_reboot_title"
-        android:summary="@string/powermenu_advanced_reboot_summary"
-        android:dependency="powermenu_reboot"
-        android:defaultValue="false" />
-
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="powermenu_screenshot"
-        android:title="@string/powermenu_screenshot_title"
-        android:defaultValue="false" />
-
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="powermenu_airplane"
-        android:title="@string/powermenu_airplane_title"
-        android:defaultValue="false" />
-
-    <PreferenceCategory
-        android:key="powermenu_category_visibility"
-        android:title="@string/powermenu_category_visibility">
-
-        <SwitchPreference
-            android:key="powermenu_lockscreen"
-            android:title="@string/powermenu_lockscreen_title"
-            android:summary="@string/powermenu_lockscreen_summary"
-            android:defaultValue="true" />
-
-        <SwitchPreference
-            android:key="powermenu_ls_reboot"
-            android:title="@string/powermenu_reboot_title"
-            android:summary="@string/powermenu_ls_reboot_summary"
-            android:dependency="powermenu_reboot"
-            android:defaultValue="true" />
-
-        <SwitchPreference
-            android:key="powermenu_ls_advanced_reboot"
-            android:title="@string/powermenu_advanced_reboot_title"
-            android:summary="@string/powermenu_ls_advanced_reboot_summary"
-            android:dependency="powermenu_advanced_reboot"
-            android:defaultValue="false" />
-
-        <SwitchPreference
-            android:key="powermenu_ls_screenshot"
-            android:title="@string/powermenu_screenshot_title"
-            android:summary="@string/powermenu_ls_screenshot_summary"
-            android:dependency="powermenu_screenshot"
-            android:defaultValue="false" />
-
-        <SwitchPreference
-            android:key="powermenu_ls_airplane"
-            android:title="@string/powermenu_airplane_title"
-            android:summary="@string/powermenu_ls_airplane_summary"
-            android:dependency="powermenu_airplane"
-            android:defaultValue="false" />
-
-        <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-            android:key="wallpaper_power_menu_tint"
-            android:title="@string/wallpaper_tint_power_menu"
-            android:summary="@string/wallpaper_tint_summary"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Dirty Unicorns Project
+ * Copyright (C) 2017-2018 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,6 @@
 package com.dirtyunicorns.tweaks.fragments;
 
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -34,30 +33,14 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class Notifications extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
-    private ListPreference mAnnoyingNotification;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notifications);
-
-        mAnnoyingNotification = (ListPreference) findPreference("less_notification_sounds");
-        mAnnoyingNotification.setOnPreferenceChangeListener(this);
-        int threshold = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
-                0, UserHandle.USER_CURRENT);
-        mAnnoyingNotification.setValue(String.valueOf(threshold));
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference.equals(mAnnoyingNotification)) {
-            int mode = Integer.parseInt(((String) newValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, mode, UserHandle.USER_CURRENT);
-            return true;
-        }
-
         return false;
     }
 

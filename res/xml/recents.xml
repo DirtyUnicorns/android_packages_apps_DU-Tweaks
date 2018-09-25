@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Dirty Unicorns Project
+<!-- Copyright (C) 2017-2018 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,57 +17,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/recents_title" >
-
-    <PreferenceCategory
-        android:key="stock_recents"
-        android:title="@string/aosp_recents_title">
-
-        <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-            android:key="show_clear_all_recents"
-            android:title="@string/show_clear_all_recents_button_title"
-            android:summaryOn="@string/show_clear_all_recents_button_summary_on"
-            android:summaryOff="@string/show_clear_all_recents_button_summary_off"
-            android:defaultValue="false" />
-
-        <ListPreference
-            android:key="recents_clear_all_location"
-            android:title="@string/recents_clear_all_location_title"
-            android:entries="@array/recents_clear_all_location_entries"
-            android:entryValues="@array/recents_clear_all_location_values"
-            android:defaultValue="3"
-            android:dependency="show_clear_all_recents" />
-
-        <Preference
-            android:key="recents_icon_pack"
-            android:title="@string/recents_icon_pack_title"
-            android:summary="@string/recents_icon_pack_summary" />
-
-        <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-            android:key="wallpaper_recents_tint"
-            android:title="@string/wallpaper_tint_recents"
-            android:summary="@string/wallpaper_tint_summary"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="slim_recents"
-        android:title="@string/slim_recents_title">
-
-        <SwitchPreference
-            android:key="use_slim_recents"
-            android:title="@string/use_slim_recents_title"
-            android:summary="@string/use_slim_recents_summary"
-            android:defaultValue="false" />
-
-        <Preference
-            android:key="slim_recents_panel"
-            android:fragment="com.dirtyunicorns.tweaks.fragments.SlimRecentsPanel"
-            android:title="@string/slim_recents_settings_title"
-            android:summary="@string/slim_recents_settings_summary"
-            android:dependency="use_slim_recents"
-            android:persistent="false" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>

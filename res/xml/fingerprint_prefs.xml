@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Dirty Unicorns Project
+<!-- Copyright (C) 2017-2018 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,12 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/fingerprint_prefs_title" >
-
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
-        android:key="fingerprint_success_vib"
-        android:title="@string/fprint_sucess_vib_title"
-        android:summary="@string/fprint_sucess_vib_summary"
-        android:defaultValue="true" />
 
 </PreferenceScreen>
 

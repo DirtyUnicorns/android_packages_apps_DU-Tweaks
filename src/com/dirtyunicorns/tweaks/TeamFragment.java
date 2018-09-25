@@ -305,24 +305,6 @@ public class TeamFragment extends DialogFragment {
             });
         }
 
-        FrameLayout nickreuter = null;
-        if (view != null) {
-            nickreuter = view.findViewById(R.id.nickreuter);
-        }
-        if (nickreuter != null) {
-            nickreuter.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    try {
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/+NickReuter"));
-                        startActivity(intent);
-                    } catch (ActivityNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-        }
-
         FrameLayout nicolas = null;
         if (view != null) {
             nicolas = view.findViewById(R.id.nicolas);

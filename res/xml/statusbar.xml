@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Dirty Unicorns Project
+<!-- Copyright (C) 2017-2018 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -42,9 +42,9 @@
         android:icon="@drawable/dt_icon_manager"
         android:title="@string/icon_manager_title"
         android:summary="@string/icon_manager_summary" >
-        <intent android:action="android.intent.action.MAIN"
+        <!-- <intent android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.TunerActivity" />
+            android:targetClass="com.android.systemui.tuner.TunerActivity" /> -->
     </com.dirtyunicorns.tweaks.preferences.CategoryPreference>
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
