@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Dirty Unicorns Project
+ * Copyright (C) 2017-2018 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,12 @@ import com.android.internal.logging.nano.MetricsProto;
 public class Statusbar extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String BATTERY_CATEGORY = "battery_options_category";
+    private static final String CARRIER_LABEL_CATEGORY = "carrier_label_category";
     private static final String CLOCK_CATEGORY = "clock_options_category";
+    private static final String ICON_MANAGER_CATEGORY = "icon_manager_title";
+    private static final String NOTIFICATIONS_CATEGORY = "notifications_category";
+    private static final String QUICK_SETTINGS_CATEGORY = "quick_settings_category";
+    private static final String TRAFFIC_CATEGORY = "traffic_category";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,9 +47,34 @@ public class Statusbar extends SettingsPreferenceFragment implements Preference.
             getPreferenceScreen().removePreference(BatteryOptions);
         }
 
+        Preference CarrierLabel = findPreference(CARRIER_LABEL_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_carrier_label)) {
+            getPreferenceScreen().removePreference(CarrierLabel);
+        }
+
         Preference ClockOptions = findPreference(CLOCK_CATEGORY);
         if (!getResources().getBoolean(R.bool.has_clock_options)) {
             getPreferenceScreen().removePreference(ClockOptions);
+        }
+
+        Preference IconManager = findPreference(ICON_MANAGER_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_icon_manager)) {
+            getPreferenceScreen().removePreference(IconManager);
+        }
+
+        Preference Notifications = findPreference(NOTIFICATIONS_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_notifications)) {
+            getPreferenceScreen().removePreference(Notifications);
+        }
+
+        Preference QuickSettings = findPreference(QUICK_SETTINGS_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_quick_settings)) {
+            getPreferenceScreen().removePreference(QuickSettings);
+        }
+
+        Preference Traffic = findPreference(TRAFFIC_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_traffic)) {
+            getPreferenceScreen().removePreference(Traffic);
         }
     }
 

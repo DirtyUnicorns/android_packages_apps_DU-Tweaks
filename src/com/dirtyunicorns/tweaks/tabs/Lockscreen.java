@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Dirty Unicorns Project
+ * Copyright (C) 2017-2018 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ import com.android.internal.util.du.Utils;
 public class Lockscreen extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String FINGERPRINT_PREFS_CATEGORY = "fingerprint_prefs_category";
+    private static final String LOCKSCREEN_ITEMS_CATEGORY = "lockscreen_items_category";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,11 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
         Preference FingerprintPrefs = findPreference(FINGERPRINT_PREFS_CATEGORY);
         if (!Utils.hasFingerprintSupport(getContext())) {
             getPreferenceScreen().removePreference(FingerprintPrefs);
+        }
+
+        Preference LockscreenItems = findPreference(LOCKSCREEN_ITEMS_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_lockscreen_items)) {
+            getPreferenceScreen().removePreference(LockscreenItems);
         }
     }
 

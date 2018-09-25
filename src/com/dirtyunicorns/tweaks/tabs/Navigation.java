@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Dirty Unicorns Project
+ * Copyright (C) 2017-2018 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,10 +29,23 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class Navigation extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+    private static final String BUTTONS_CATEGORY = "buttons_category";
+    private static final String NAVIGATION_CATEGORY = "navigation_category";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.navigation);
+
+        Preference Buttons = findPreference(BUTTONS_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_buttons)) {
+            getPreferenceScreen().removePreference(Buttons);
+        }
+
+        Preference Navigation = findPreference(NAVIGATION_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_navigation)) {
+            getPreferenceScreen().removePreference(Navigation);
+        }
     }
 
     @Override
