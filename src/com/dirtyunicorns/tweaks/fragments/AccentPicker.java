@@ -25,14 +25,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.om.IOverlayManager;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridLayout;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.statusbar.ThemeAccentUtils;
@@ -77,277 +75,92 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
     }
 
     private void initView() {
-        final ContentResolver resolver = getActivity().getContentResolver();
 
-        Button redAccent;
-        redAccent = mView.findViewById(R.id.redAccent);
-        if (redAccent != null) {
-            redAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 1, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button redAccent = mView.findViewById(R.id.redAccent);
+        setAccent("1", redAccent);
 
-        Button pinkAccent;
-        pinkAccent = mView.findViewById(R.id.pinkAccent);
-        if (pinkAccent != null) {
-            pinkAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 2, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button pinkAccent = mView.findViewById(R.id.pinkAccent);
+        setAccent("2", pinkAccent);
 
-        Button purpleAccent;
-        purpleAccent = mView.findViewById(R.id.purpleAccent);
-        if (purpleAccent != null) {
-            purpleAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 3, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button purpleAccent = mView.findViewById(R.id.purpleAccent);
+        setAccent("3", purpleAccent);
 
-        Button deeppurpleAccent;
-        deeppurpleAccent = mView.findViewById(R.id.deeppurpleAccent);
-        if (deeppurpleAccent != null) {
-            deeppurpleAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 4, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button deeppurpleAccent = mView.findViewById(R.id.deeppurpleAccent);
+        setAccent("4", deeppurpleAccent);
 
-        Button indigoAccent;
-        indigoAccent = mView.findViewById(R.id.indigoAccent);
-        if (indigoAccent != null) {
-            indigoAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 5, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button indigoAccent = mView.findViewById(R.id.indigoAccent);
+        setAccent("5", indigoAccent);
 
-        Button blueAccent;
-        blueAccent = mView.findViewById(R.id.blueAccent);
-        if (blueAccent != null) {
-            blueAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 6, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button blueAccent = mView.findViewById(R.id.blueAccent);
+        setAccent("6", blueAccent);
 
-        Button lightblueAccent;
-        lightblueAccent = mView.findViewById(R.id.lightblueAccent);
-        if (lightblueAccent != null) {
-            lightblueAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 7, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button lightblueAccent = mView.findViewById(R.id.lightblueAccent);
+        setAccent("7", lightblueAccent);
 
-        Button cyanAccent;
-        cyanAccent = mView.findViewById(R.id.cyanAccent);
-        if (cyanAccent != null) {
-            cyanAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 8, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button cyanAccent = mView.findViewById(R.id.cyanAccent);
+        setAccent("8", cyanAccent);
 
-        Button tealAccent;
-        tealAccent = mView.findViewById(R.id.tealAccent);
-        if (tealAccent != null) {
-            tealAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 9, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button tealAccent = mView.findViewById(R.id.tealAccent);
+        setAccent("9", tealAccent);
 
-        Button greenAccent;
-        greenAccent = mView.findViewById(R.id.greenAccent);
-        if (greenAccent != null) {
-            greenAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 10, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button greenAccent = mView.findViewById(R.id.greenAccent);
+        setAccent("10", greenAccent);
 
-        Button lightgreenAccent;
-        lightgreenAccent = mView.findViewById(R.id.lightgreenAccent);
-        if (lightgreenAccent != null) {
-            lightgreenAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 11, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button lightgreenAccent = mView.findViewById(R.id.lightgreenAccent);
+        setAccent("11", lightgreenAccent);
 
-        Button limeAccent;
-        limeAccent = mView.findViewById(R.id.limeAccent);
-        if (limeAccent != null) {
-            limeAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 12, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button limeAccent = mView.findViewById(R.id.limeAccent);
+        setAccent("12", limeAccent);
 
-        Button yellowAccent;
-        yellowAccent = mView.findViewById(R.id.yellowAccent);
-        if (yellowAccent != null) {
-            yellowAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 13, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button yellowAccent = mView.findViewById(R.id.yellowAccent);
+        setAccent("13", yellowAccent);
 
-        Button amberAccent;
-        amberAccent = mView.findViewById(R.id.amberAccent);
-        if (amberAccent != null) {
-            amberAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 14, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button amberAccent = mView.findViewById(R.id.amberAccent);
+        setAccent("14", amberAccent);
 
-        Button orangeAccent;
-        orangeAccent = mView.findViewById(R.id.orangeAccent);
-        if (orangeAccent != null) {
-            orangeAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 15, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button orangeAccent = mView.findViewById(R.id.orangeAccent);
+        setAccent("15", orangeAccent);
 
-        Button deeporangeAccent;
-        deeporangeAccent = mView.findViewById(R.id.deeporangeAccent);
-        if (deeporangeAccent != null) {
-            deeporangeAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 16, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button deeporangeAccent = mView.findViewById(R.id.deeporangeAccent);
+        setAccent("16", deeporangeAccent);
 
-        Button brownAccent;
-        brownAccent = mView.findViewById(R.id.brownAccent);
-        if (brownAccent != null) {
-            brownAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 17, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button brownAccent = mView.findViewById(R.id.brownAccent);
+        setAccent("17", brownAccent);
 
-        Button greyAccent;
-        greyAccent = mView.findViewById(R.id.greyAccent);
-        if (greyAccent != null) {
-            greyAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 18, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button greyAccent = mView.findViewById(R.id.greyAccent);
+        setAccent("18", greyAccent);
 
-        Button bluegreyAccent;
-        bluegreyAccent = mView.findViewById(R.id.bluegreyAccent);
-        if (bluegreyAccent != null) {
-            bluegreyAccent.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 19, mCurrentUserId);
-                    dismiss();
-                }
-            });
-        }
+        Button bluegreyAccent = mView.findViewById(R.id.bluegreyAccent);
+        setAccent("19", bluegreyAccent);
 
-        Button blackAccent;
-        blackAccent = mView.findViewById(R.id.blackAccent);
+        Button blackAccent = mView.findViewById(R.id.blackAccent);
         // Change the accent picker button depending on whether or not the dark theme is applied
         blackAccent.setBackgroundColor(getResources().getColor(
                 ThemeAccentUtils.isUsingDarkTheme(mOverlayManager, mCurrentUserId) ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
         blackAccent.setBackgroundTintList(getResources().getColorStateList(
                 ThemeAccentUtils.isUsingDarkTheme(mOverlayManager, mCurrentUserId) ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
-        blackAccent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Settings.System.putIntForUser(resolver,
-                        Settings.System.ACCENT_PICKER, 20, mCurrentUserId);
-                dismiss();
-            }
-        });
+        setAccent("20", blackAccent);
 
-        GridLayout gridlayout;
-        int intOrientation = getResources().getConfiguration().orientation;
-        gridlayout = mView.findViewById(R.id.Gridlayout);
-        // Lets split this up instead of creating two different layouts
-        // just so we can change the columns
-        gridlayout.setColumnCount(intOrientation == Configuration.ORIENTATION_PORTRAIT ? 5 : 8);
+        Button userAccentOne = mView.findViewById(R.id.userAccentOne);
+        setAccent("22", userAccentOne);
+
+        Button userAccentTwo = mView.findViewById(R.id.userAccentTwo);
+        setAccent("23", userAccentTwo);
+
+        Button userAccentThree = mView.findViewById(R.id.userAccentThree);
+        setAccent("24", userAccentThree);
+
+        Button userAccentFour = mView.findViewById(R.id.userAccentFour);
+        setAccent("25", userAccentFour);
+
+        Button userAccentFive = mView.findViewById(R.id.userAccentFive);
+        setAccent("26", userAccentFive);
+
+        Button userAccentSix = mView.findViewById(R.id.userAccentSix);
+        setAccent("27", userAccentSix);
+
+        Button userAccentSeven = mView.findViewById(R.id.userAccentSeven);
+        setAccent("28", userAccentSeven);
     }
 
     @Override
@@ -375,5 +188,19 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.DIRTYTWEAKS;
+    }
+
+    private void setAccent(final String accent, final Button buttonAccent) {
+        final ContentResolver resolver = getActivity().getContentResolver();
+        if (buttonAccent != null) {
+            buttonAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, Integer.parseInt(accent), mCurrentUserId);
+                    dismiss();
+                }
+            });
+        }
     }
 }
