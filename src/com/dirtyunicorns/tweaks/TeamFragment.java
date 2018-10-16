@@ -341,6 +341,24 @@ public class TeamFragment extends DialogFragment {
             });
         }
 
+        FrameLayout tushar = null;
+        if (view != null) {
+            tushar = view.findViewById(R.id.tushar);
+        }
+        if (tushar != null) {
+            tushar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/+TusharSaini91"));
+                        startActivity(intent);
+                    } catch (ActivityNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        }
+
         FrameLayout will = null;
         if (view != null) {
             will = view.findViewById(R.id.will);
