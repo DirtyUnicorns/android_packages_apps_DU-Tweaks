@@ -272,4 +272,8 @@
     <string name="show_lte_fourgee_title">4G/LTE network icon</string>
     <string name="show_lte_fourgee_summary">Display the 4G or LTE network icon when available in the statusbar</string>
 
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Show net activity in expanded statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
 </resources>
