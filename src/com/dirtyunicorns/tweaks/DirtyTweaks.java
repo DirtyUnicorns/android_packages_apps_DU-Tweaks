@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Dirty Unicorns Project
+ * Copyright (C) 2017-2018 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.dirtyunicorns.tweaks.fragments.Team;
 import com.dirtyunicorns.tweaks.navigation.BottomNavigationViewCustom;
 import com.dirtyunicorns.tweaks.tabs.Lockscreen;
 import com.dirtyunicorns.tweaks.tabs.Multitasking;
@@ -45,12 +46,7 @@ import com.dirtyunicorns.tweaks.tabs.System;
 
 public class DirtyTweaks extends SettingsPreferenceFragment {
 
-    public DirtyTweaks() {
-    }
-
     MenuItem menuitem;
-
-    PagerAdapter mPagerAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -58,12 +54,10 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         View view = inflater.inflate(R.layout.dirtytweaks, container, false);
 
         final BottomNavigationViewCustom navigation = view.findViewById(R.id.navigation);
-
-        final ViewPager viewPager = view.findViewById(R.id.viewpager);
-
         navigation.setBackground(new ColorDrawable(getResources().getColor(R.color.BottomBarBackgroundColor)));
 
-        mPagerAdapter = new PagerAdapter(getFragmentManager());
+        final ViewPager viewPager = view.findViewById(R.id.viewpager);
+        PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
         viewPager.setAdapter(mPagerAdapter);
 
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
@@ -172,7 +166,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case 0:
-                final TeamFragment dialog = new TeamFragment();
+                final Team dialog = new Team();
                 showDialog(this, dialog);
                 return true;
             default:
