@@ -18,4 +18,10 @@
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/buttons_title" >
 
+    <ListPreference
+        android:key="double_tap_power_flashlight"
+        android:title="@string/double_tap_power_flashlight_title"
+        android:entries="@array/double_tap_power_flashlight_entries"
+        android:entryValues="@array/double_tap_power_flashlight_values" />
+
 </PreferenceScreen>

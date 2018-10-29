@@ -28,12 +28,11 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
-
+import com.android.internal.util.du.Utils;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,15 +40,51 @@ import java.util.List;
 public class Buttons extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String DOUBLE_TAP_POWER_FLASHLIGHT = "double_tap_power_flashlight";
+
+    private ListPreference mDoubleTapPowerFlashlight;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.buttons);
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        mDoubleTapPowerFlashlight =
+                (ListPreference) prefSet.findPreference(DOUBLE_TAP_POWER_FLASHLIGHT);
+        if (deviceHasFlashlight()) {
+            mDoubleTapPowerFlashlight.setOnPreferenceChangeListener(this);
+            mDoubleTapPowerFlashlight.setValue(Integer.toString(Settings.Secure.getInt(getContext()
+                    .getContentResolver(), Settings.Secure.TORCH_POWER_BUTTON_GESTURE, 0)));
+            mDoubleTapPowerFlashlight.setSummary(mDoubleTapPowerFlashlight.getEntry());
+        } else {
+            prefSet.removePreference(mDoubleTapPowerFlashlight);
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mDoubleTapPowerFlashlight) {
+            int torchPowerButtonValue = Integer.parseInt((String) newValue);
+            Settings.Secure.putInt(getContext().getContentResolver(),
+                    Settings.Secure.TORCH_POWER_BUTTON_GESTURE, torchPowerButtonValue);
+            int index = mDoubleTapPowerFlashlight.findIndexOfValue((String) newValue);
+            mDoubleTapPowerFlashlight.setSummary(
+                    mDoubleTapPowerFlashlight.getEntries()[index]);
+            if (torchPowerButtonValue == 1) {
+                // if doubletap for torch is enabled, switch off double tap for camera
+                Settings.Secure.putInt(getContext().getContentResolver(),
+                        Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
+                        1/*camera gesture is disabled when 1*/);
+            }
+            return true;
+        }
         return false;
+    }
+
+    private boolean deviceHasFlashlight() {
+        return Utils.deviceHasFlashlight(getContext());
     }
 
     @Override
