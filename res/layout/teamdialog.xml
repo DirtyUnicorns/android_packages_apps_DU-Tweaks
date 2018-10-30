@@ -95,40 +95,6 @@
                     </FrameLayout>
 
                     <FrameLayout
-                        android:id="@+id/bosko"
-                        android:layout_width="80dp"
-                        android:layout_height="75dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="75dp">
-
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
-                                android:id="@+id/bosko_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/bosko"
-                                app:civ_border_color="@color/team_dialog_circle_border_color"
-                                app:civ_border="true"
-                                app:civ_border_width="3dp" />
-
-                            <TextView
-                                android:id="@+id/bosko_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Boško"
-                                android:textStyle="bold"
-                                android:layout_below="@+id/bosko_image"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
                         android:id="@+id/bret"
                         android:layout_width="80dp"
                         android:layout_height="75dp">
@@ -189,40 +155,6 @@
                                 android:text="Daniel"
                                 android:textStyle="bold"
                                 android:layout_below="@+id/daniel_image"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/drew"
-                        android:layout_width="80dp"
-                        android:layout_height="75dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="75dp">
-
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
-                                android:id="@+id/drew_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/drew"
-                                app:civ_border_color="@color/team_dialog_circle_border_color"
-                                app:civ_border="true"
-                                app:civ_border_width="3dp" />
-
-                            <TextView
-                                android:id="@+id/drew_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Drew"
-                                android:textStyle="bold"
-                                android:layout_below="@+id/drew_image"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="3dp" />
 
@@ -563,40 +495,6 @@
                                 android:text="Nicolas"
                                 android:textStyle="bold"
                                 android:layout_below="@+id/nicolas_image"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/sean"
-                        android:layout_width="80dp"
-                        android:layout_height="75dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="75dp">
-
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
-                                android:id="@+id/sean_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/sean"
-                                app:civ_border_color="@color/team_dialog_circle_border_color"
-                                app:civ_border="true"
-                                app:civ_border_width="3dp" />
-
-                            <TextView
-                                android:id="@+id/sean_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Sean"
-                                android:textStyle="bold"
-                                android:layout_below="@+id/sean_image"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="3dp" />
 

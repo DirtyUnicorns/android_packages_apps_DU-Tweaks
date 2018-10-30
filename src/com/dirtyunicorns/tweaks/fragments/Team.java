@@ -59,17 +59,11 @@ public class Team extends DialogFragment {
             FrameLayout alex = view.findViewById(R.id.alex);
             setTeamMember("+AlexCruz", alex);
 
-            FrameLayout bosko = view.findViewById(R.id.bosko);
-            setTeamMember("+BoskoTrkulja", bosko);
-
             FrameLayout bret = view.findViewById(R.id.bret);
             setTeamMember("+BretZamzow", bret);
 
             FrameLayout daniel = view.findViewById(R.id.daniel);
             setTeamMember("+DanielJohansson2000", daniel);
-
-            FrameLayout drew = view.findViewById(R.id.drew);
-            setTeamMember("+AndrewBoren", drew);
 
             FrameLayout edwin = view.findViewById(R.id.edwin);
             setTeamMember("+EdwinSPACEMANRivera", edwin);
@@ -100,9 +94,6 @@ public class Team extends DialogFragment {
 
             FrameLayout nicolas = view.findViewById(R.id.nicolas);
             setTeamMember("+NicolasDhouailly", nicolas);
-
-            FrameLayout sean = view.findViewById(R.id.sean);
-            setTeamMember("+Seanhoyt", sean);
 
             FrameLayout tushar = view.findViewById(R.id.tushar);
             setTeamMember("+TusharSaini91", tushar);
