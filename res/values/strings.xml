@@ -81,5 +81,6 @@
     <string name="theme_accent_picker_default">Default</string>
     <string name="accent_picker_material_colors">Material palette</string>
     <string name="accent_picker_custom_colors">User requested</string>
+    <string name="qs_styles_dialog_title">Select a QS tile style</string>
 
 </resources>
