@@ -46,4 +46,17 @@
         <item>2</item>
     </string-array>
 
+    <!-- Quick Pull -->
+    <string-array name="quick_pulldown_entries">
+       <item>@string/quick_pulldown_none</item>
+       <item>@string/quick_pulldown_right</item>
+       <item>@string/quick_pulldown_left</item>
+    </string-array>
+
+    <string-array name="quick_pulldown_values" translatable="false">
+       <item>0</item>
+       <item>1</item>
+       <item>2</item>
+    </string-array>
+
 </resources>
