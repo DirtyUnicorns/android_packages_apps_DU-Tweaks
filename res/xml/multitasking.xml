@@ -17,7 +17,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
-        android:key="headsup_category"
+        android:key="heads_up_category"
         android:icon="@drawable/dt_headsup"
         android:title="@string/headsup_title"
         android:summary="@string/headsup_summary"

@@ -40,8 +40,12 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
         addPreferencesFromResource(R.xml.lockscreen);
 
         Preference FingerprintPrefs = findPreference(FINGERPRINT_PREFS_CATEGORY);
-        if (!Utils.hasFingerprintSupport(getContext())) {
+        if (!getResources().getBoolean(R.bool.has_fingerprint_prefs)) {
             getPreferenceScreen().removePreference(FingerprintPrefs);
+        } else {
+            if (!Utils.hasFingerprintSupport(getContext())) {
+                getPreferenceScreen().removePreference(FingerprintPrefs);
+            }
         }
 
         Preference LockscreenItems = findPreference(LOCKSCREEN_ITEMS_CATEGORY);

@@ -18,4 +18,25 @@
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/powermenu_title" >
 
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+        android:key="reboot_in_power_menu"
+        android:title="@string/powermenu_reboot_title"
+        android:defaultValue="true" />
+
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+        android:key="advanced_reboot_in_power_menu"
+        android:title="@string/powermenu_advanced_restart_title"
+        android:summary="@string/powermenu_advanced_restart_summary"
+        android:defaultValue="false" />
+
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+        android:key="lockdown_in_power_menu"
+        android:title="@string/powermenu_lockdown_title"
+        android:defaultValue="false" />
+
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+        android:key="screenshot_in_power_menu"
+        android:title="@string/powermenu_screenshot_title"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
