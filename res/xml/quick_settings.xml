@@ -23,4 +23,9 @@
         android:fragment="com.dirtyunicorns.tweaks.fragments.QsRowsColumns"
         android:title="@string/qs_rows_columns_title"/>
 
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_title_visibility"
+            android:title="@string/qs_tile_title_visibility_title"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
