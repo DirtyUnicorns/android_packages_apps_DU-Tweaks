@@ -18,5 +18,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/navigationbar_title" >
-
+    <PreferenceScreen
+        android:key="pulse_settings"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.PulseSettings" />
 </PreferenceScreen>
