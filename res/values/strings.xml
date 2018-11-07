@@ -92,9 +92,8 @@
 
     <!-- Battery styles -->
     <string name="battery_style_title">Battery icon style</string>
-    <string name="battery_style_summary">Change the look of the battery icon in the statusbar</string>
+    <string name="battery_style_summary">Change the style of the status bar battery</string>
     <string name="battery_style_port">Portrait</string>
-    <string name="battery_style_land">Landscape</string>
     <string name="battery_style_circle">Circle</string>
     <string name="battery_style_dotted_circle">Dotted circle</string>
     <string name="battery_style_text">Text</string>
