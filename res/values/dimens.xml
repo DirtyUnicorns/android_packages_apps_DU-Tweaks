@@ -18,4 +18,7 @@
 
     <dimen name="qs_styles_layout_opacity" format="float">0.50</dimen>
 
+    <dimen name="design_bottom_navigation_text_size">10dp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size">11dp</dimen>
+
 </resources>
