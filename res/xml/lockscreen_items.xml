@@ -18,4 +18,15 @@
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/lockscreen_items_title" >
 
+    <PreferenceCategory
+        android:title="@string/lockscreen_items_other">
+
+        <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

@@ -73,6 +73,11 @@
     <string name="recents_title">Recents</string>
     <string name="recents_summary">Configure recents options</string>
 
+    <!-- Lockscreen Media art -->
+    <string name="lockscreen_items_other">Other</string>
+    <string name="media_art_title">Full-screen media cover art</string>
+    <string name="media_art_summary">Set full-screen media cover art on the lockscreen</string>
+
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">Restart</string>
     <string name="powermenu_advanced_restart_title">Advanced restart</string>
