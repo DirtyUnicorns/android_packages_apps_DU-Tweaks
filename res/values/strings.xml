@@ -85,6 +85,13 @@
     <string name="powermenu_lockdown_title">Lockdown</string>
     <string name="powermenu_screenshot_title">Screenshot</string>
 
+    <!-- Recents icon packs -->
+    <string name="recents_icon_pack_title">Icon Pack</string>
+    <string name="recents_icon_pack_summary">Apply a custom icon pack for Recents panel</string>
+    <string name="no_iconpacks_summary">No icon packs installed</string>
+    <string name="dialog_pick_iconpack_title">Pick icon pack</string>
+    <string name="default_iconpack_title">Default icons</string>
+
     <!-- Themes -->
     <string name="theme_category_title">Theme options</string>
     <string name="accent_picker_dialog_title">Select an accent color</string>

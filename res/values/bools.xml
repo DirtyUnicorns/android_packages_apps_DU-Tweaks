@@ -20,7 +20,7 @@
     <bool name="has_heads_up">false</bool>
 
     <!-- Whether to display recents category -->
-    <bool name="has_recents">false</bool>
+    <bool name="has_recents">true</bool>
 
     <!-- Whether to display ticker category -->
     <bool name="has_ticker">false</bool>
