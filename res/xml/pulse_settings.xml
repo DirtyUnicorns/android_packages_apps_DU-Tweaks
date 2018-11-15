@@ -26,6 +26,7 @@
         android:fragment="com.dirtyunicorns.tweaks.fragments.PulseBlacklist"
         android:title="@string/pulse_blacklist_title"
         android:summary="@string/pulse_blacklist_summary"
+        android:dependency="eos_fling_show_pulse"
         android:persistent="false" />
 
     <ListPreference
@@ -63,7 +64,8 @@
 
     <PreferenceCategory
         android:key="pulse_fading_bars_category"
-        android:title="@string/pulse_legacy_mode_advanced_category">
+        android:title="@string/pulse_legacy_mode_advanced_category"
+        android:dependency="eos_fling_show_pulse" >
 
         <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
             android:key="pulse_custom_dimen"
@@ -117,7 +119,8 @@
 
     <PreferenceCategory
         android:key="pulse_2"
-        android:title="@string/pulse_solid_dimen_category" >
+        android:title="@string/pulse_solid_dimen_category"
+        android:dependency="eos_fling_show_pulse" >
 
         <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
             android:key="pulse_solid_units_opacity"

@@ -66,6 +66,8 @@ public class PulseBlacklist extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.pulse_blacklist);
+
+        getActivity().getActionBar().setTitle(R.string.pulse_blacklist_title);
         initializeAllPreferences();
     }
 
