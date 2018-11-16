@@ -18,9 +18,26 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/navigationbar_title" >
-    <PreferenceScreen
-        android:key="pulse_settings"
-        android:title="@string/pulse_settings"
-        android:summary="@string/pulse_settings_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.PulseSettings" />
+
+    <Preference
+        android:key="stock_navbar"
+        android:title="@string/systemui_tuner_navbar_title"
+        android:summary="@string/systemui_tuner_navbar_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.NavbarActivity" />
+    </Preference>
+
+    <PreferenceCategory
+        android:key="category_navbar_general"
+        android:title="@string/sub_cat_advanced" >
+
+        <PreferenceScreen
+            android:key="pulse_settings"
+            android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="com.dirtyunicorns.tweaks.fragments.PulseSettings" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

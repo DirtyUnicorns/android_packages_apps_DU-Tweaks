@@ -73,8 +73,10 @@
     <string name="recents_title">Recents</string>
     <string name="recents_summary">Configure recents options</string>
 
+    <!-- Sub categories -->
+    <string name="sub_cat_advanced">Advanced</string>
+
     <!-- Lockscreen Media art -->
-    <string name="lockscreen_items_other">Other</string>
     <string name="media_art_title">Full-screen media cover art</string>
     <string name="media_art_summary">Set full-screen media cover art on the lockscreen</string>
 
@@ -185,5 +187,9 @@
     <string name="pulse_custom_div">Bar spacing</string>
     <string name="pulse_filled_block_size">Block size</string>
     <string name="pulse_empty_block_size">Block spacing</string>
+
+    <!-- Stock navbar -->
+    <string name="systemui_tuner_navbar_title">Stock navbar</string>
+    <string name="systemui_tuner_navbar_summary">Customize the stock navigation bar</string>
 
 </resources>

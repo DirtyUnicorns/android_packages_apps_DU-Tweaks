@@ -19,7 +19,7 @@
             android:title="@string/lockscreen_items_title" >
 
     <PreferenceCategory
-        android:title="@string/lockscreen_items_other">
+        android:title="@string/sub_cat_advanced">
 
         <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_media_metadata"
