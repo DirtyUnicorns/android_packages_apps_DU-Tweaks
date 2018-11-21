@@ -17,6 +17,7 @@
 package com.dirtyunicorns.tweaks.fragments;
 
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -31,10 +32,14 @@ import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-public class NavigationBar extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class NavigationBar extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener {
+
     private static final String KEY_PULSE_SETTINGS = "pulse_settings";
+    private static final String KEY_STOCK_NAVBAR = "stock_navbar";
 
     private PreferenceScreen mPulseSettings;
+    private Preference mStockNavbar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,6 +47,9 @@ public class NavigationBar extends SettingsPreferenceFragment implements Prefere
         addPreferencesFromResource(R.xml.navigation_bar);
 
         mPulseSettings = (PreferenceScreen) findPreference(KEY_PULSE_SETTINGS);
+
+        mStockNavbar = (Preference) findPreference(KEY_STOCK_NAVBAR);
+        updateNavbar();
     }
 
     @Override
@@ -52,5 +60,17 @@ public class NavigationBar extends SettingsPreferenceFragment implements Prefere
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.DIRTYTWEAKS;
+    }
+
+    private void updateNavbar() {
+        boolean enabled = Settings.Secure.getIntForUser(getActivity().getContentResolver(),
+                Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, 1, UserHandle.USER_CURRENT) == 1;
+        if (enabled) {
+            mStockNavbar.setEnabled(false);
+            mStockNavbar.setSummary(R.string.systemui_tuner_navbar_disabled_summary);
+        } else {
+            mStockNavbar.setEnabled(true);
+            mStockNavbar.setSummary(R.string.systemui_tuner_navbar_enabled_summary);
+        }
     }
 }

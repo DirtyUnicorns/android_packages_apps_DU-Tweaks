@@ -190,6 +190,7 @@
 
     <!-- Stock navbar -->
     <string name="systemui_tuner_navbar_title">Stock navbar</string>
-    <string name="systemui_tuner_navbar_summary">Customize the stock navigation bar</string>
+    <string name="systemui_tuner_navbar_enabled_summary">Customize the stock navigation bar</string>
+    <string name="systemui_tuner_navbar_disabled_summary">Gesture navbar is enabled. Disable it to use these options.</string>
 
 </resources>
