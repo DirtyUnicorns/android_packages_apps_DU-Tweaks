@@ -44,7 +44,7 @@
     <bool name="has_carrier_label">false</bool>
 
     <!-- Whether to display clock category -->
-    <bool name="has_clock_options">false</bool>
+    <bool name="has_clock_options">true</bool>
 
     <!-- Whether to display icon manager category -->
     <bool name="has_icon_manager">false</bool>
