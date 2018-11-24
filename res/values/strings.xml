@@ -86,6 +86,10 @@
     <string name="powermenu_advanced_restart_summary">Enables the advanced restart menu for other restarting options</string>
     <string name="powermenu_lockdown_title">Lockdown</string>
     <string name="powermenu_screenshot_title">Screenshot</string>
+    <string name="powermenu_disabled_title">Power menu when locked</string>
+    <string name="powermenu_disabled_summary">Disable power menu on secure lockscreen</string>
+    <string name="powermenu_lockscreen_title">Lockscreen visibility</string>
+    <string name="powermenu_lockscreen_summary">Display power menu on a secured lockscreen</string>
 
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Icon Pack</string>
