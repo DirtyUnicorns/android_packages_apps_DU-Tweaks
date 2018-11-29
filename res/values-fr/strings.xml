@@ -180,10 +180,10 @@
     <string name="pulse_custom_buttons_opacity_title">Opacité des boutons sur Pulse</string>
     <string name="pulse_auto_color_title">Couleur de Pulse automatique</string>
     <string name="pulse_auto_color_summary">Utiliser la couleur de l\'illustration du titre musical en cours de lecture. Annule les options \"Lampe Lava\" et \"Opacité des lignes\".</string>
-    <string name="pulse_blacklist_title">Liste d\'exclusion des applications</string>
+    <string name="pulse_blacklist_title">Applications exclues</string>
     <string name="pulse_blacklist_summary">Applications à ignorer pour Pulse</string>
-    <string name="pulse_blacklist_apps_cat_title">Liste d\'exclusion</string>
-    <string name="pulse_blacklist_apps_title">Liste d\'exclusion des applications</string>
+    <string name="pulse_blacklist_apps_cat_title">Applications exclues</string>
+    <string name="pulse_blacklist_apps_title">Applications exclues</string>
     <string name="pulse_blacklist_apps_summary">Applications à ne pas afficher dans le panneau</string>
     <string name="pulse_blacklist_add_apps_title">Ajouter une application</string>
     <string name="pulse_blacklist_add_apps_summary">Appuyer ici pour ajouter. Appuyer sur une application précédemment ajoutée, pour la supprimer.</string>
@@ -200,10 +200,69 @@
     <string name="systemui_tuner_navbar_enabled_summary">Réglages de la barre de navigation système</string>
     <string name="systemui_tuner_navbar_disabled_summary">Les gestes de la barre de navigation sont activés. Il faut les désactiver pour pouvoir utiliser ces options.</string>
 
+    <!-- ChooserActivity blacklist -->
+    <string name="chooser_activity_blacklist_title">Applications exclues</string>
+    <string name="chooser_activity_blacklist_summary">Applications à ne pas afficher lors de l\'utilisation de la fonction \"Partager via\"</string>
+    <string name="chooser_activity_blacklist_cat_title">Applications exclues</string>
+    <string name="chooser_activity_blacklist_pref_title">Ajouter une application</string>
+    <string name="chooser_activity_blacklist_pref_summary">Appuyer ici pour ajouter. Appuyer sur une application précédemment ajoutée, pour la supprimer.</string>
+
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">Informations de la piste musicale</string>
     <string name="force_ambient_for_media_pref_summary">Réglages des informations de la piste musicale</string>
     <string name="ambient_ticker_footer">Afficher les informations de la piste musicale en cours d\'écoute sur l\'écran de veille.\n\nLors du démarrage d\'une nouvelle piste musicale, ces informations s\'affichent au centre de l\'écran de veille, que l\'option \"Affichage en mode Veille\" soit ou non activée.\n\nUn double appui sur les informations de la piste musicale en cours d\'écoute permet de passer à la piste musicale suivante.</string>
     <string name="force_ambient_for_media_title">Activer</string>
+
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Barre d\'état</string>
+    <string name="status_bar_style_title">Aspect</string>
+    <string name="status_bar_clock">Date et heure</string>
+    <string name="clock_enabled">Activé</string>
+    <string name="clock_disabled">Désactivé</string>
+    <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
+    <string name="status_bar_show_clock_title">Afficher l\'heure et la date</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">L\'heure sur 24 heures est activée</string>
+    <string name="enable_clock_weekday">Jour de la semaine</string>
+    <string name="enable_clock_weekday_summary">Jour de la semaine abrégé avant l\'heure</string>
+    <string name="dont_show">Masqué</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Afficher une date personnalisée avant l\'heure</string>
+    <string name="clock_date_style">Aspect de la date</string>
+    <string name="clock_date_format">Format de la date</string>
+    <string name="clock_date_string_edittext_title">Doit être au format de date Java \"DateFormat\" par ex : MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Saisir le code</string>
+    <string name="am_pm_clock_normal">Police de taille normale</string>
+    <string name="am_pm_clock_small">Police de petite taille</string>
+    <string name="am_pm_clock_none">Masqué</string>
+    <string name="clock_date_display_none">Masqué</string>
+    <string name="clock_date_display_small">Police de petite taille</string>
+    <string name="clock_date_display_normal">Police de taille normale</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Minuscule</string>
+    <string name="clock_date_style_uppercase">Majuscule</string>
+    <string name="clock_date_right">À droite de l\'horloge</string>
+    <string name="clock_date_left">À gauche de l\'horloge</string>
+    <string name="clock_date_position">Position de la date</string>
+
+    <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">Animations</string>
+    <string name="qs_tile_animation_style_title">Style</string>
+    <string name="qs_tile_animation_duration_title">Vitesse</string>
+    <string name="qs_tile_animation_interpolator_title">Effet supplémentaire</string>
+    <string name="qs_tile_animation_style_off">Aucune animation</string>
+    <string name="qs_tile_animation_style_flip">Retournement</string>
+    <string name="qs_tile_animation_style_rotate">Rotation</string>
+    <string name="qs_tile_animation_duration_low">Lente</string>
+    <string name="qs_tile_animation_duration_default">Normale</string>
+    <string name="qs_tile_animation_duration_fast">Rapide</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linéaire</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accélérer</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Décélérer</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accélérer et décélérer</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Rebondir</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Surpasser</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticiper</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticiper et surpasser</string>
 
 </resources>
