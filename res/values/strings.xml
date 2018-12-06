@@ -215,6 +215,10 @@
     <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.</string>
     <string name="force_ambient_for_media_title">Enable</string>
 
+    <!-- DU logo -->
+    <string name="du_logo_title">DU swag</string>
+    <string name="du_logo_summary">Let everyone know that you\'re using DU when they see your screen</string>
+
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_style_title">Style</string>
