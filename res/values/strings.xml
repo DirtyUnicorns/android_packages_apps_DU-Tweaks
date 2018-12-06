@@ -268,4 +268,8 @@
     <!-- DT2S on lockscreen -->
     <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
 
+    <!-- Show LTE/4G switch -->
+    <string name="show_lte_fourgee_title">4G/LTE network icon</string>
+    <string name="show_lte_fourgee_summary">Display the 4G or LTE network icon when available in the statusbar</string>
+
 </resources>

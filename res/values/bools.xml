@@ -47,7 +47,7 @@
     <bool name="has_clock_options">true</bool>
 
     <!-- Whether to display icon manager category -->
-    <bool name="has_icon_manager">false</bool>
+    <bool name="has_icon_manager">true</bool>
 
     <!-- Whether to display notifications category -->
     <bool name="has_notifications">false</bool>

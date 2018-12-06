@@ -41,11 +41,8 @@
         android:key="icon_manager_title"
         android:icon="@drawable/dt_icon_manager"
         android:title="@string/icon_manager_title"
-        android:summary="@string/icon_manager_summary" >
-        <!-- <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.TunerActivity" /> -->
-    </com.dirtyunicorns.tweaks.preferences.CategoryPreference>
+        android:summary="@string/icon_manager_summary"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.IconManager" />
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="notifications_category"
