@@ -265,4 +265,15 @@
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticiper</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticiper et surpasser</string>
 
+    <!-- DT2S on lockscreen -->
+    <string name="double_tap_sleep_lockscreen">Veille par double appui</string>
+
+    <!-- Show LTE/4G switch -->
+    <string name="show_lte_fourgee_title">Icône \"4G\"</string>
+    <string name="show_lte_fourgee_summary">Afficher l\'icône \"4G\" plutôt que \"LTE\" sur la barre d\'état</string>
+
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Afficher l\'indicateur de vitesse de réseau lorsque la barre d\'état est déployée</string>
+    <string name="network_traffic_autohide_threshold_title">Seuil de masquage automatique (KB/s)</string>
+
 </resources>
