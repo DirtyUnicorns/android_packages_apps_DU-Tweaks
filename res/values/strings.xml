@@ -197,6 +197,10 @@
     <string name="systemui_tuner_navbar_enabled_summary">Customize the stock navigation bar</string>
     <string name="systemui_tuner_navbar_disabled_summary">Gesture navbar is enabled. Disable it to use these options.</string>
 
+    <!-- Navbar arrow keys -->
+    <string name="show_navbar_arrow_keys_title">Show arrow keys while typing</string>
+    <string name="show_navbar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing.</string>
+
     <!-- ChooserActivity blacklist -->
     <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
     <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on a Share button</string>
