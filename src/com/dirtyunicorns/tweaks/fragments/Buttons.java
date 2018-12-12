@@ -87,8 +87,11 @@ public class Buttons extends SettingsPreferenceFragment implements Preference.On
         final PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        final boolean navigationBarEnabled = Settings.System.getIntForUser(resolver,
-                Settings.System.NAVIGATION_BAR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
+        final boolean defaultToNavigationBar = getResources().getBoolean(
+                com.android.internal.R.bool.config_defaultToNavigationBar);
+        final boolean navigationBarEnabled = Settings.System.getIntForUser(
+                resolver, Settings.System.NAVIGATION_BAR_ENABLED,
+                defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
 
         final int deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
@@ -222,6 +225,16 @@ public class Buttons extends SettingsPreferenceFragment implements Preference.On
             prefSet.removePreference(assistCategory);
             prefSet.removePreference(appSwitchCategory);
             prefSet.removePreference(cameraCategory);
+        }
+
+        if (navigationBarEnabled) {
+            mButtonBrightness.setEnabled(false);
+            homeCategory.setEnabled(false);
+            backCategory.setEnabled(false);
+            menuCategory.setEnabled(false);
+            assistCategory.setEnabled(false);
+            appSwitchCategory.setEnabled(false);
+            cameraCategory.setEnabled(false);
         }
     }
 
