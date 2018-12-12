@@ -193,7 +193,7 @@
     <string name="pulse_empty_block_size">Block spacing</string>
 
     <!-- Stock navbar -->
-    <string name="systemui_tuner_navbar_title">Stock navbar</string>
+    <string name="systemui_tuner_navbar_title">Stock settings</string>
     <string name="systemui_tuner_navbar_enabled_summary">Customize the stock navigation bar</string>
     <string name="systemui_tuner_navbar_disabled_summary">Gesture navbar is enabled. Disable it to use these options.</string>
 
@@ -275,5 +275,32 @@
     <!-- Network Traffic -->
     <string name="network_traffic_state_title">Show net activity in expanded statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
+    <!-- Button Settings -->
+    <string name="button_settings_title">Buttons</string>
+    <string name="button_settings_title_summary">Perform custom button actions</string>
+    <string name="button_settings_description">Set custom button actions to several hardware keys presented on your device.</string>
+    <string name="navigation_bar_title">Enable</string>
+    <string name="navigation_bar_title_summary">Enable on-screen navigation keys</string>
+    <string name="hardware_brightness_keys_title">Backlight</string>
+    <string name="hardware_brightness_keys_title_summary">Enable navigation keys backlight</string>
+    <string name="home_key_title">Home button</string>
+    <string name="back_key_title">Back button</string>
+    <string name="menu_key_title">Menu button</string>
+    <string name="assist_key_title">Assist button</string>
+    <string name="app_switch_key_title">Recents button</string>
+    <string name="camera_key_title">Camera button</string>
+    <string name="short_press_title">Short press action</string>
+    <string name="long_press_title">Long press action</string>
+    <string name="double_tap_title">Double tap action</string>
+    <string name="action_nothing">No action</string>
+    <string name="action_menu">Open/close menu</string>
+    <string name="action_app_switch">Recents</string>
+    <string name="action_search">Search assistant</string>
+    <string name="action_voice_search">Voice search</string>
+    <string name="action_in_app_search">In-app search</string>
+    <string name="action_launch_camera">Open camera</string>
+    <string name="action_last_app">Launch last app</string>
+    <string name="action_splitscreen">Splitscreen</string>
 
 </resources>

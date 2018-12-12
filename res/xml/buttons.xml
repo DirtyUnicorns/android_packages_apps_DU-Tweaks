@@ -24,4 +24,129 @@
         android:summary="@string/volume_button_music_control_summary"
         android:defaultValue="false" />
 
+    <SwitchPreference
+        android:key="button_brightness"
+        android:title="@string/hardware_brightness_keys_title"
+        android:summary="@string/hardware_brightness_keys_title_summary" />
+
+    <PreferenceCategory
+        android:key="home_key"
+        android:title="@string/home_key_title">
+
+        <ListPreference
+            android:key="home_key_long_press"
+            android:title="@string/long_press_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.LongPressHomePreferenceController" />
+
+        <ListPreference
+            android:key="home_key_double_tap"
+            android:title="@string/double_tap_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.DoubleTapHomePreferenceController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="back_key"
+        android:title="@string/back_key_title">
+
+        <ListPreference
+            android:key="back_key_long_press"
+            android:title="@string/long_press_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.LongPressBackPreferenceController" />
+
+        <ListPreference
+            android:key="back_key_double_tap"
+            android:title="@string/double_tap_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.DoubleTapBackPreferenceController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="menu_key"
+        android:title="@string/menu_key_title">
+
+        <ListPreference
+            android:key="menu_key_long_press"
+            android:title="@string/long_press_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.LongPressMenuPreferenceController" />
+
+        <ListPreference
+            android:key="menu_key_double_tap"
+            android:title="@string/double_tap_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.DoubleTapMenuPreferenceController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="assist_key"
+        android:title="@string/assist_key_title">
+
+        <ListPreference
+            android:key="assist_key_long_press"
+            android:title="@string/long_press_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.LongPressAssistPreferenceController" />
+
+        <ListPreference
+            android:key="assist_key_double_tap"
+            android:title="@string/double_tap_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.DoubleTapAssistPreferenceController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="app_switch_key"
+        android:title="@string/app_switch_key_title">
+
+        <ListPreference
+            android:key="app_switch_key_long_press"
+            android:title="@string/long_press_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.LongPressAppSwitchPreferenceController" />
+
+        <ListPreference
+            android:key="app_switch_key_double_tap"
+            android:title="@string/double_tap_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.DoubleTapAppSwitchPreferenceController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="camera_key"
+        android:title="@string/camera_key_title">
+
+        <ListPreference
+            android:key="camera_key_long_press"
+            android:title="@string/long_press_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.LongPressCameraPreferenceController" />
+
+        <ListPreference
+            android:key="camera_key_double_tap"
+            android:title="@string/double_tap_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values"
+            settings:controller="com.dirtyunicorns.tweaks.fragments.buttons.DoubleTapCameraPreferenceController" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

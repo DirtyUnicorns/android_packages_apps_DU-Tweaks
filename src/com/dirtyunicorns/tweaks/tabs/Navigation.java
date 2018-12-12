@@ -26,7 +26,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.du.Utils;
 
 public class Navigation extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
@@ -44,14 +43,8 @@ public class Navigation extends SettingsPreferenceFragment implements Preference
         }
 
         Preference Navigation = findPreference(NAVIGATION_CATEGORY);
-        // This is temporary thing until we integrate a method to enable
-        // and disable the navigation bar on devices with hw keys.
-        if (!Utils.hasNavigationBar()) {
+        if (!getResources().getBoolean(R.bool.has_navigation)) {
             getPreferenceScreen().removePreference(Navigation);
-        } else {
-            if (!getResources().getBoolean(R.bool.has_navigation)) {
-                getPreferenceScreen().removePreference(Navigation);
-            }
         }
     }
 
