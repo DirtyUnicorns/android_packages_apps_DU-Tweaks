@@ -65,8 +65,8 @@
     <!-- Navigation -->
     <string name="buttons_title">Boutons</string>
     <string name="buttons_summary">Réglages des boutons physiques et du bouton Volume</string>
-    <string name="navigationbar_title">Barre de navigation</string>
-    <string name="navigationbar_summary">Réglages de Smartbar, Fling et Pulse</string>
+    <string name="navigation_options_title">Barre de navigation</string>
+    <string name="navigation_options_summary">Réglages de Smartbar, Fling et Pulse</string>
     <!-- Multitasking -->
     <string name="headsup_title">Notifications flottantes</string>
     <string name="headsup_summary">Réglages des notifications flottantes</string>

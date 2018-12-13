@@ -26,8 +26,8 @@
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="navigation_category"
         android:icon="@drawable/dt_navigationbar"
-        android:title="@string/navigationbar_title"
-        android:summary="@string/navigationbar_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.NavigationBar" />
+        android:title="@string/navigation_options_title"
+        android:summary="@string/navigation_options_summary"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.NavigationOptions" />
 
 </PreferenceScreen>
