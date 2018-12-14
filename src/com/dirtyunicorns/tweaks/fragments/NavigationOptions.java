@@ -17,6 +17,7 @@
 package com.dirtyunicorns.tweaks.fragments;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
@@ -93,6 +94,9 @@ public class NavigationOptions extends SettingsPreferenceFragment
     private int deviceKeys;
     private final int ON = 1;
     private final int OFF = 0;
+
+    private boolean mIsNavSwitchingMode = false;
+    private Handler mHandler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -234,6 +238,8 @@ public class NavigationOptions extends SettingsPreferenceFragment
             prefSet.removePreference(cameraCategory);
         }
 
+        mHandler = new Handler();
+
         updateBacklight();
         navbarCheck();
     }
@@ -241,10 +247,20 @@ public class NavigationOptions extends SettingsPreferenceFragment
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mNavigationBar) {
             boolean value = (Boolean) objValue;
+            if (mIsNavSwitchingMode) {
+                return false;
+            }
+            mIsNavSwitchingMode = true;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NAVIGATION_BAR_ENABLED, value ? 1 : 0);
             navbarCheck();
             updateBacklight();
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIsNavSwitchingMode = false;
+                }
+            }, 1500);
             return true;
         } else if (preference == mButtonBrightness) {
             boolean value = (Boolean) objValue;
