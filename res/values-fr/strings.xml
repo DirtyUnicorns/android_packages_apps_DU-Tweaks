@@ -66,7 +66,7 @@
     <string name="buttons_title">Boutons</string>
     <string name="buttons_summary">Réglages des boutons physiques et du bouton Volume</string>
     <string name="navigation_options_title">Barre de navigation</string>
-    <string name="navigation_options_summary">Réglages de Smartbar, Fling et Pulse</string>
+    <string name="navigation_options_summary">Réglages des options de la barre de navigation</string>
     <!-- Multitasking -->
     <string name="headsup_title">Notifications flottantes</string>
     <string name="headsup_summary">Réglages des notifications flottantes</string>
@@ -196,9 +196,14 @@
     <string name="pulse_empty_block_size">Espacement des blocs</string>
 
     <!-- Stock navbar -->
-    <string name="systemui_tuner_navbar_title">Barre de navigation système</string>
-    <string name="systemui_tuner_navbar_enabled_summary">Réglages de la barre de navigation système</string>
+    <string name="systemui_tuner_navbar_title">Disposition</string>
+    <string name="systemui_tuner_navbar_enabled_summary">Réglages de la disposition de la barre de navigation</string>
     <string name="systemui_tuner_navbar_disabled_summary">Les gestes de la barre de navigation sont activés. Il faut les désactiver pour pouvoir utiliser ces options.</string>
+    <string name="swipe_up_to_switch_apps_custom_summary">Activer les gestes sur la barre de navigation</string>
+
+    <!-- Navbar arrow keys -->
+    <string name="show_navbar_arrow_keys_title">Touches de direction du clavier</string>
+    <string name="show_navbar_arrow_keys_summary">Afficher les touches de direction gauche et droite en présence du clavier dans la barre de navigation</string>
 
     <!-- ChooserActivity blacklist -->
     <string name="chooser_activity_blacklist_title">Applications exclues</string>
@@ -275,5 +280,32 @@
     <!-- Network Traffic -->
     <string name="network_traffic_state_title">Afficher l\'indicateur de vitesse de réseau lorsque la barre d\'état est déployée</string>
     <string name="network_traffic_autohide_threshold_title">Seuil de masquage automatique (KB/s)</string>
+
+    <!-- Button Settings -->
+    <string name="button_settings_title">Boutons</string>
+    <string name="button_settings_title_summary">Actions des boutons physiques</string>
+    <string name="button_settings_description">Réglages des actions des boutons physiques de l\'appareil</string>
+    <string name="navigation_bar_title">Barre de navigation</string>
+    <string name="navigation_bar_title_summary">Afficher les touches de navigation</string>
+    <string name="hardware_brightness_keys_title">Rétroéclairage</string>
+    <string name="hardware_brightness_keys_title_summary">Activer le rétroéclairage pour les boutons capacitives</string>
+    <string name="home_key_title">Bouton Accueil</string>
+    <string name="back_key_title">Bouton Retour</string>
+    <string name="menu_key_title">Bouton Menu</string>
+    <string name="assist_key_title">Bouton Assistant</string>
+    <string name="app_switch_key_title">Bouton Applications récentes</string>
+    <string name="camera_key_title">Bouton Appareil photo</string>
+    <string name="short_press_title">Action par appui simple</string>
+    <string name="long_press_title">Action par appui prolongé</string>
+    <string name="double_tap_title">Action par double appui</string>
+    <string name="action_nothing">Aucune action</string>
+    <string name="action_menu">Ouvrir/fermer le menu</string>
+    <string name="action_app_switch">Applications récentes</string>
+    <string name="action_search">Rechercher via l\'Assistant</string>
+    <string name="action_voice_search">Recherche vocale</string>
+    <string name="action_in_app_search">Recherche dans l\'application</string>
+    <string name="action_launch_camera">Démarrer l\'appareil photo</string>
+    <string name="action_last_app">Démarrer la dernière application</string>
+    <string name="action_splitscreen">Écran partagé</string>
 
 </resources>
