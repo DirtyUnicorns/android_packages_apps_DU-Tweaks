@@ -385,8 +385,10 @@ public class NavigationOptions extends SettingsPreferenceFragment
     }
 
     private void updateBacklight() {
+        boolean defaultToNavigationBar = getResources().getBoolean(
+                com.android.internal.R.bool.config_defaultToNavigationBar);
         boolean navigationBar = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.NAVIGATION_BAR_ENABLED, 1) == 1;
+                Settings.System.NAVIGATION_BAR_ENABLED, defaultToNavigationBar ? 1 : 0) == 1;
         if (navigationBar) {
             mButtonBrightness.setEnabled(false);
         } else {
