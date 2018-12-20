@@ -313,5 +313,6 @@
     <string name="action_splitscreen">Splitscreen</string>
     <string name="action_flashlight">Flashlight</string>
     <string name="action_clear_notifications">Clear notifications</string>
+    <string name="action_volume_panel">Volume panel</string>
 
 </resources>
