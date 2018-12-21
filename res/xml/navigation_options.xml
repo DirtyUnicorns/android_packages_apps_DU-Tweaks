@@ -24,16 +24,6 @@
         android:summary="@string/navigation_bar_title_summary" />
 
     <Preference
-        android:key="layout_settings"
-        android:title="@string/systemui_tuner_navbar_title"
-        android:summary="@string/systemui_tuner_navbar_enabled_summary"
-        android:dependency="navigation_bar">
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.NavbarActivity" />
-    </Preference>
-
-    <Preference
         android:key="swipe_one_home_button"
         android:fragment="com.android.settings.gestures.SwipeUpGestureSettings"
         android:title="@string/swipe_up_to_switch_apps_title"
@@ -44,24 +34,6 @@
         android:key="button_brightness"
         android:title="@string/hardware_brightness_keys_title"
         android:summary="@string/hardware_brightness_keys_title_summary" />
-
-    <PreferenceCategory
-        android:key="home_key"
-        android:title="@string/home_key_title">
-
-        <ListPreference
-            android:key="home_key_long_press"
-            android:title="@string/long_press_title"
-            android:entries="@array/action_entries"
-            android:entryValues="@array/action_values" />
-
-        <ListPreference
-            android:key="home_key_double_tap"
-            android:title="@string/double_tap_title"
-            android:entries="@array/action_entries"
-            android:entryValues="@array/action_values" />
-
-    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="back_key"
@@ -75,6 +47,24 @@
 
         <ListPreference
             android:key="back_key_double_tap"
+            android:title="@string/double_tap_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="home_key"
+        android:title="@string/home_key_title">
+
+        <ListPreference
+            android:key="home_key_long_press"
+            android:title="@string/long_press_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values" />
+
+        <ListPreference
+            android:key="home_key_double_tap"
             android:title="@string/double_tap_title"
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
@@ -156,6 +146,16 @@
     <PreferenceCategory
         android:key="category_navbar_general"
         android:title="@string/sub_cat_advanced" >
+
+        <Preference
+            android:key="layout_settings"
+            android:title="@string/systemui_tuner_navbar_title"
+            android:summary="@string/systemui_tuner_navbar_enabled_summary"
+            android:dependency="navigation_bar">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NavbarActivity" />
+        </Preference>
 
         <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
             android:key="navigation_bar_menu_arrow_keys"
