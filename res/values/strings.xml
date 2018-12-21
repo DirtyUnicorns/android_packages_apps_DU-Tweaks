@@ -316,5 +316,6 @@
     <string name="action_volume_panel">Volume panel</string>
     <string name="action_screen_off">Screen off</string>
     <string name="action_notifications">Notifications</string>
+    <string name="action_power_menu">Power menu</string>
 
 </resources>
