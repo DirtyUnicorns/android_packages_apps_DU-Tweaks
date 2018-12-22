@@ -193,7 +193,6 @@
         <item>@string/action_app_switch</item>
         <item>@string/action_search</item>
         <item>@string/action_voice_search</item>
-        <item>@string/action_in_app_search</item>
         <item>@string/action_launch_camera</item>
         <item>@string/action_last_app</item>
         <item>@string/action_splitscreen</item>
