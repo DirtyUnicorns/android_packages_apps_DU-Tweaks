@@ -55,13 +55,6 @@
         android:summary="@string/eos_fling_lavalamp_summary"
         android:dependency="eos_fling_show_pulse" />
 
-    <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
-        android:key="pulse_custom_buttons_opacity"
-        android:title="@string/pulse_custom_buttons_opacity_title"
-        android:max="255"
-        settings:min="0"
-        android:dependency="eos_fling_show_pulse"/>
-
     <PreferenceCategory
         android:key="pulse_fading_bars_category"
         android:title="@string/pulse_legacy_mode_advanced_category"

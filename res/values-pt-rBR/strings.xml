@@ -174,7 +174,6 @@
     <string name="pulse_solid_lines_count">Contagem de linhas sólidas</string>
     <string name="pulse_solid_units_opacity">Opacidade de linhas sólidas</string>
     <string name="pulse_solid_dimen_category">Configurações do modo de linhas sólidas</string>
-    <string name="pulse_custom_buttons_opacity_title">Opacidade de botões de barra inteligente no Pulse</string>
     <string name="pulse_auto_color_title">Cor automática no Pulse</string>
     <string name="pulse_auto_color_summary">Sincronize a cor com as artes do álbum. Substitui o Lava Lamp opacidade das linhas.</string>
     <string name="pulse_blacklist_title">Apps blacklist</string>

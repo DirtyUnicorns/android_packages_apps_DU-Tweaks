@@ -174,7 +174,6 @@
     <string name="pulse_solid_lines_count">Počet sloupců</string>
     <string name="pulse_solid_units_opacity">Průhlednost sloupců</string>
     <string name="pulse_solid_dimen_category">Nastavení režimu sloupců</string>
-    <string name="pulse_custom_buttons_opacity_title">Průhlednost tlačítek chytré lišty při Pulsu</string>
     <string name="pulse_auto_color_title">Automatická barva Pulsu</string>
     <string name="pulse_auto_color_summary">Synchronizujte barvu s přebalem alba. Přepíše průhlednost sloupců a lávové lampy.</string>
     <string name="pulse_blacklist_title">Černá listina aplikací</string>

@@ -177,7 +177,6 @@
     <string name="pulse_solid_lines_count">Nombre de lignes</string>
     <string name="pulse_solid_units_opacity">Opacité des lignes</string>
     <string name="pulse_solid_dimen_category">Réglages des lignes pleines</string>
-    <string name="pulse_custom_buttons_opacity_title">Opacité des boutons sur Pulse</string>
     <string name="pulse_auto_color_title">Couleur de Pulse automatique</string>
     <string name="pulse_auto_color_summary">Utiliser la couleur de l\'illustration du titre musical en cours de lecture. Annule les options \"Lampe Lava\" et \"Opacité des lignes\".</string>
     <string name="pulse_blacklist_title">Applications exclues</string>
