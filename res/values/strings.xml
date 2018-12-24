@@ -316,4 +316,9 @@
     <string name="action_notifications">Notifications</string>
     <string name="action_power_menu">Power menu</string>
 
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
+    <string name="weather_unit_metric" translatable="false">Celsius</string>
+    <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
+
 </resources>
