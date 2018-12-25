@@ -31,12 +31,23 @@ import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.dirtyunicorns.support.preferences.SystemSettingListPreference;
+
 public class LockscreenItems extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+
+    private static final String KEY_WEATHER_TEMP = "weather_lockscreen_unit";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen_items);
+
+        SystemSettingListPreference mWeatherTemp =
+                (SystemSettingListPreference) findPreference(KEY_WEATHER_TEMP);
+        if (!com.android.internal.util.du.Utils.isPackageInstalled(
+                getActivity(), "org.pixelexperience.weather.client")) {
+            getPreferenceScreen().removePreference(mWeatherTemp);
+        }
     }
 
     @Override
