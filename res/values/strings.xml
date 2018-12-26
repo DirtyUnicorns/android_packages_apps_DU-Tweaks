@@ -145,6 +145,10 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
+    <!-- Option to show brightness bar in quick settings -->
+    <string name="show_brightness_title">Brightness slider</string>
+    <string name="show_brightness_summary">Show the brightness slider</string>
+
     <!-- QS visibility -->
     <string name="qs_tile_title_visibility_title">Title visibility</string>
     <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>

@@ -57,6 +57,12 @@
             android:min="1"
             settings:units="" />
 
+        <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/show_brightness_title"
+            android:summary="@string/show_brightness_summary"
+            android:defaultValue="true" />
+
         <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_title_visibility"
             android:title="@string/qs_tile_title_visibility_title"
