@@ -142,6 +142,10 @@
     <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
     <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
 
+    <!-- Option to show brightness bar in quick settings -->
+    <string name="show_brightness_title">Brightness slider</string>
+    <string name="show_brightness_summary">Show the brightness slider</string>
+
     <!-- Pulse config -->
     <string name="pulse_length_always_on">Always on</string>
     <string name="pulse_length_very_short">Very short</string>
