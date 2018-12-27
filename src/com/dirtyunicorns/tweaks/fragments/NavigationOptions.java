@@ -92,6 +92,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
     private static final int KEY_MASK_CAMERA = 0x20;
 
     private int deviceKeys;
+
     private final int ON = 1;
     private final int OFF = 0;
 
@@ -107,6 +108,31 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
         deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
+
+        int backKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnBackKeyBehavior);
+        int backKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnBackKeyBehavior);
+        int homeKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnHomeKeyBehavior);
+        int homeKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnHomeKeyBehavior);
+        int AppSwitchKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnAppSwitchKeyBehavior);
+        int AppSwitchKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnAppSwitchKeyBehavior);
+        int MenuKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnMenuKeyBehavior);
+        int MenuKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnMenuKeyBehavior);
+        int CameraKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnCameraKeyBehavior);
+        int CameraKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnCameraKeyBehavior);
+        int AssistKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnAssistKeyBehavior);
+        int AssistKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnAssistKeyBehavior);
 
         boolean hasMenu = (deviceKeys & KEY_MASK_MENU) != 0;
         boolean hasAssist = (deviceKeys & KEY_MASK_ASSIST) != 0;
@@ -137,84 +163,84 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
         mBackLongPress = (ListPreference) findPreference(KEY_BACK_LONG_PRESS_ACTION);
         int backlongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_BACK_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_BACK_LONG_PRESS_ACTION, backKeyLongPress, UserHandle.USER_CURRENT);
         mBackLongPress.setValue(String.valueOf(backlongpress));
         mBackLongPress.setSummary(mBackLongPress.getEntry());
         mBackLongPress.setOnPreferenceChangeListener(this);
 
         mBackDoubleTap = (ListPreference) findPreference(KEY_BACK_DOUBLE_TAP_ACTION);
         int backdoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_BACK_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_BACK_DOUBLE_TAP_ACTION, backKeyDoubleTap, UserHandle.USER_CURRENT);
         mBackDoubleTap.setValue(String.valueOf(backdoubletap));
         mBackDoubleTap.setSummary(mBackDoubleTap.getEntry());
         mBackDoubleTap.setOnPreferenceChangeListener(this);
 
         mHomeLongPress = (ListPreference) findPreference(KEY_HOME_LONG_PRESS_ACTION);
         int homelongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_HOME_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_HOME_LONG_PRESS_ACTION, homeKeyLongPress, UserHandle.USER_CURRENT);
         mHomeLongPress.setValue(String.valueOf(homelongpress));
         mHomeLongPress.setSummary(mHomeLongPress.getEntry());
         mHomeLongPress.setOnPreferenceChangeListener(this);
 
         mHomeDoubleTap = (ListPreference) findPreference(KEY_HOME_DOUBLE_TAP_ACTION);
         int homedoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_HOME_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_HOME_DOUBLE_TAP_ACTION, homeKeyDoubleTap, UserHandle.USER_CURRENT);
         mHomeDoubleTap.setValue(String.valueOf(homedoubletap));
         mHomeDoubleTap.setSummary(mHomeDoubleTap.getEntry());
         mHomeDoubleTap.setOnPreferenceChangeListener(this);
 
         mAppSwitchLongPress = (ListPreference) findPreference(KEY_APP_SWITCH_LONG_PRESS);
         int appswitchlongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, AppSwitchKeyLongPress, UserHandle.USER_CURRENT);
         mAppSwitchLongPress.setValue(String.valueOf(appswitchlongpress));
         mAppSwitchLongPress.setSummary(mAppSwitchLongPress.getEntry());
         mAppSwitchLongPress.setOnPreferenceChangeListener(this);
 
         mAppSwitchDoubleTap = (ListPreference) findPreference(KEY_APP_SWITCH_DOUBLE_TAP);
         int appswitchdoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION, AppSwitchKeyDoubleTap, UserHandle.USER_CURRENT);
         mAppSwitchDoubleTap.setValue(String.valueOf(appswitchdoubletap));
         mAppSwitchDoubleTap.setSummary(mAppSwitchDoubleTap.getEntry());
         mAppSwitchDoubleTap.setOnPreferenceChangeListener(this);
 
         mMenuLongPress = (ListPreference) findPreference(KEY_MENU_LONG_PRESS_ACTION);
         int menulongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_MENU_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_MENU_LONG_PRESS_ACTION, MenuKeyLongPress, UserHandle.USER_CURRENT);
         mMenuLongPress.setValue(String.valueOf(menulongpress));
         mMenuLongPress.setSummary(mMenuLongPress.getEntry());
         mMenuLongPress.setOnPreferenceChangeListener(this);
 
         mMenuDoubleTap = (ListPreference) findPreference(KEY_MENU_DOUBLE_TAP_ACTION);
         int menudoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_MENU_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_MENU_DOUBLE_TAP_ACTION, MenuKeyDoubleTap, UserHandle.USER_CURRENT);
         mMenuDoubleTap.setValue(String.valueOf(menudoubletap));
         mMenuDoubleTap.setSummary(mMenuDoubleTap.getEntry());
         mMenuDoubleTap.setOnPreferenceChangeListener(this);
 
         mCameraLongPress = (ListPreference) findPreference(KEY_CAMERA_LONG_PRESS_ACTION);
         int cameralongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_CAMERA_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_CAMERA_LONG_PRESS_ACTION, CameraKeyLongPress, UserHandle.USER_CURRENT);
         mCameraLongPress.setValue(String.valueOf(cameralongpress));
         mCameraLongPress.setSummary(mCameraLongPress.getEntry());
         mCameraLongPress.setOnPreferenceChangeListener(this);
 
         mCameraDoubleTap = (ListPreference) findPreference(KEY_CAMERA_DOUBLE_TAP_ACTION);
         int cameradoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_CAMERA_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_CAMERA_DOUBLE_TAP_ACTION, CameraKeyDoubleTap, UserHandle.USER_CURRENT);
         mCameraDoubleTap.setValue(String.valueOf(cameradoubletap));
         mCameraDoubleTap.setSummary(mCameraDoubleTap.getEntry());
         mCameraDoubleTap.setOnPreferenceChangeListener(this);
 
         mAssistLongPress = (ListPreference) findPreference(KEY_ASSIST_LONG_PRESS_ACTION);
         int assistlongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, AssistKeyLongPress, UserHandle.USER_CURRENT);
         mAssistLongPress.setValue(String.valueOf(assistlongpress));
         mAssistLongPress.setSummary(mAssistLongPress.getEntry());
         mAssistLongPress.setOnPreferenceChangeListener(this);
 
         mAssistDoubleTap = (ListPreference) findPreference(KEY_ASSIST_DOUBLE_TAP_ACTION);
         int assistdoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_ASSIST_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_ASSIST_DOUBLE_TAP_ACTION, AssistKeyDoubleTap, UserHandle.USER_CURRENT);
         mAssistDoubleTap.setValue(String.valueOf(assistdoubletap));
         mAssistDoubleTap.setSummary(mAssistDoubleTap.getEntry());
         mAssistDoubleTap.setOnPreferenceChangeListener(this);
