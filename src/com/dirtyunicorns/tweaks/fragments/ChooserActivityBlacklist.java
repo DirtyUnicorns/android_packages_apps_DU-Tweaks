@@ -65,8 +65,7 @@ public class ChooserActivityBlacklist extends SettingsPreferenceFragment impleme
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.chooser_activity_blacklist);
 
-        getActivity().getActionBar().setTitle(R.string.chooser_activity_blacklist_title);
-
+        getActivity().setTitle(R.string.chooser_activity_blacklist_title);
         initializeAllPreferences();
     }
 

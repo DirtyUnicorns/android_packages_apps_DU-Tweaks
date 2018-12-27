@@ -39,7 +39,7 @@ public class QsRowsColumns extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.qs_rows_columns);
 
-        getActivity().getActionBar().setTitle(R.string.qs_rows_columns_title);
+        getActivity().setTitle(R.string.qs_rows_columns_title);
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
