@@ -30,10 +30,12 @@
         android:summary="@string/swipe_up_to_switch_apps_custom_summary"
         android:dependency="navigation_bar" />
 
-    <SwitchPreference
+    <Preference
         android:key="button_brightness"
-        android:title="@string/hardware_brightness_keys_title"
-        android:summary="@string/hardware_brightness_keys_title_summary" />
+        android:title="@string/button_backlight_title"
+        android:summary="@string/button_backlight_summary"
+        android:persistent="false"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.ButtonBrightness" />
 
     <PreferenceCategory
         android:key="back_key"
