@@ -128,13 +128,13 @@
     <string name="volume_button_music_control_title">Playback control</string>
     <string name="volume_button_music_control_summary">When the screen is off, long-pressing the volume keys will skip music tracks</string>
 
-    <!-- QS rows and columns -->
-    <string name="qs_rows_columns_title">QS rows and columns</string>
-    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
-    <string name="qs_tile_title_visibility_title">Show tiles title</string>
+    <!-- QS layout -->
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_tile_title_visibility_title">Tiles title</string>
+    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
 
     <!-- Quick pulldown -->
     <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
