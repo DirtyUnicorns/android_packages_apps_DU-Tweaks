@@ -326,6 +326,7 @@
     <string name="action_screen_off">Screen off</string>
     <string name="action_notifications">Notifications</string>
     <string name="action_power_menu">Power menu</string>
+    <string name="action_screenshot">Screenshot</string>
 
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Clock widget</string>
