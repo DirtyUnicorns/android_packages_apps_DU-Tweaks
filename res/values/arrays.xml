@@ -222,6 +222,7 @@
         <item>@string/action_notifications</item>
         <item>@string/action_power_menu</item>
         <item>@string/action_screenshot</item>
+        <item>@string/action_qs_panel</item>
     </string-array>
 
     <string-array name="action_values" translatable="false">
@@ -240,6 +241,7 @@
         <item>12</item>
         <item>13</item>
         <item>14</item>
+        <item>15</item>
     </string-array>
 
     <!-- Weather -->

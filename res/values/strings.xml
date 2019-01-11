@@ -322,6 +322,7 @@
     <string name="action_notifications">Notifications</string>
     <string name="action_power_menu">Power menu</string>
     <string name="action_screenshot">Screenshot</string>
+    <string name="action_qs_panel">QS panel</string>
 
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Clock widget</string>
