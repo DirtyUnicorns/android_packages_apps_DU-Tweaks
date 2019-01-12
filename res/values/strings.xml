@@ -205,13 +205,6 @@
     <string name="show_navbar_arrow_keys_title">Show arrow keys while typing</string>
     <string name="show_navbar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing.</string>
 
-    <!-- ChooserActivity blacklist -->
-    <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
-    <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on a Share button</string>
-    <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
-    <string name="chooser_activity_blacklist_pref_title">Add app</string>
-    <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>
-
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
     <string name="force_ambient_for_media_pref_summary">Configure the Ambient music ticker</string>
