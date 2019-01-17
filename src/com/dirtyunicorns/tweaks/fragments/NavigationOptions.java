@@ -583,7 +583,31 @@ public class NavigationOptions extends SettingsPreferenceFragment
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     final List<String> keys = super.getNonIndexableKeys(context);
+                    int deviceKeys = context.getResources().getInteger(
+                            com.android.internal.R.integer.config_deviceHardwareKeys);
+                    boolean hasMenu = (deviceKeys & KEY_MASK_MENU) != 0;
+                    boolean hasAssist = (deviceKeys & KEY_MASK_ASSIST) != 0;
+                    boolean hasCamera = (deviceKeys & KEY_MASK_CAMERA) != 0;
+
+                    if (deviceKeys == 0) {
+                        keys.add(KEY_BUTTON_BRIGHTNESS);
+                    }
+                    if (!hasMenu) {
+                        keys.add(KEY_CATEGORY_MENU);
+                        keys.add(KEY_MENU_LONG_PRESS_ACTION);
+                        keys.add(KEY_MENU_DOUBLE_TAP_ACTION);
+                    }
+                    if (!hasAssist) {
+                        keys.add(KEY_CATEGORY_ASSIST);
+                        keys.add(KEY_ASSIST_LONG_PRESS_ACTION);
+                        keys.add(KEY_ASSIST_DOUBLE_TAP_ACTION);
+                    }
+                    if (!hasCamera) {
+                        keys.add(KEY_CATEGORY_CAMERA);
+                        keys.add(KEY_CAMERA_LONG_PRESS_ACTION);
+                        keys.add(KEY_CAMERA_DOUBLE_TAP_ACTION);
+                    }
                     return keys;
                 }
-    };
+            };
 }

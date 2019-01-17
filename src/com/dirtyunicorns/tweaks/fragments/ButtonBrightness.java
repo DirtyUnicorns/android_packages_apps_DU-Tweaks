@@ -109,7 +109,11 @@ public class ButtonBrightness extends SettingsPreferenceFragment
                     final ArrayList<SearchIndexableResource> result = new ArrayList<>();
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.button_brightness;
-                    result.add(sir);
+                    int deviceKeys = context.getResources().getInteger(
+                            com.android.internal.R.integer.config_deviceHardwareKeys);
+                    if (deviceKeys != 0) {
+                        result.add(sir);
+                    }
                     return result;
                 }
 
