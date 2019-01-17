@@ -65,7 +65,6 @@
             android:title="@string/pulse_custom_dimen"
             android:max="30"
             settings:min="1"
-            settings:units="dp"
             android:dependency="pulse_fading_bars_category"/>
 
         <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
@@ -74,7 +73,6 @@
             android:max="44"
             settings:min="2"
             settings:interval="2"
-            settings:units="dp"
             android:dependency="pulse_fading_bars_category"/>
 
         <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
@@ -82,7 +80,6 @@
             android:title="@string/pulse_filled_block_size"
             android:max="8"
             settings:min="4"
-            settings:units="dp"
             android:dependency="pulse_fading_bars_category"/>
 
         <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
@@ -90,7 +87,6 @@
             android:title="@string/pulse_empty_block_size"
             android:max="4"
             settings:min="0"
-            settings:units="dp"
             android:dependency="pulse_fading_bars_category"/>
 
         <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
@@ -106,7 +102,6 @@
             android:max="30000"
             settings:min="200"
             settings:interval="200"
-            settings:units="ms"
             android:dependency="pulse_fading_bars_category"/>
     </PreferenceCategory>
 
@@ -143,7 +138,6 @@
             android:max="30000"
             settings:min="200"
             settings:interval="200"
-            settings:units="ms"
             android:dependency="pulse_2"/>
     </PreferenceCategory>
 
