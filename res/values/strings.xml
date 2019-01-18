@@ -39,15 +39,15 @@
     <string name="miscellaneous_title">Miscellaneous</string>
     <string name="miscellaneous_summary">Miscellaneous tweaks</string>
     <string name="powermenu_title">Power menu</string>
-    <string name="powermenu_summary">Configure the power menu on and off the lockscreen with many items</string>
+    <string name="powermenu_summary">Configure the power menu</string>
     <!-- Lockscreen -->
     <string name="fingerprint_prefs_title">Fingerprint prefs</string>
     <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>
     <string name="lockscreen_items_title">Lockscreen items</string>
-    <string name="lockscreen_items_summary">Remove or add items on the lockscreen</string>
+    <string name="lockscreen_items_summary">Customize the lockscreen</string>
     <!-- Statusbar -->
     <string name="battery_options_title">Battery options</string>
-    <string name="battery_options_summary">Customize the statusbar or QS tile battery</string>
+    <string name="battery_options_summary">Customize the statusbar battery</string>
     <string name="carrier_label_title">Carrier label</string>
     <string name="carrier_label_summary">Customize the carrier label on the lockscreen or statusbar</string>
     <string name="clock_options_title">Clock options</string>
@@ -61,7 +61,7 @@
     <string name="ticker_title">Ticker</string>
     <string name="ticker_summary">Enable the statusbar ticker and configure ticker related tweaks</string>
     <string name="traffic_title">Traffic indicators</string>
-    <string name="traffic_summary">Enable and configure the traffic indicators on the statusbar</string>
+    <string name="traffic_summary">Enable and configure the traffic indicators</string>
     <!-- Navigation -->
     <string name="buttons_title">Buttons</string>
     <string name="buttons_summary">Configure volume rocker options</string>
@@ -278,7 +278,7 @@
     <string name="show_lte_fourgee_summary">Display the 4G or LTE network icon when available in the statusbar</string>
 
     <!-- Network Traffic -->
-    <string name="network_traffic_state_title">Show net activity in expanded statusbar</string>
+    <string name="network_traffic_state_title">Show net activity</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
     <string name="network_traffic_hidearrow">Hide arrows</string>
     <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
