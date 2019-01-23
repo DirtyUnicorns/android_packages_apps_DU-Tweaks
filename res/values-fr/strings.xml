@@ -336,6 +336,7 @@
     <string name="action_notifications">Notifications</string>
     <string name="action_power_menu">Menu Marche/Arrêt</string>
     <string name="action_screenshot">Capture d\'écran</string>
+    <string name="action_qs_panel">Panneau de configuration rapide</string>
 
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Horloge</string>
