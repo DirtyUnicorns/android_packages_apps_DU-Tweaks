@@ -37,6 +37,12 @@
         android:persistent="false"
         android:fragment="com.dirtyunicorns.tweaks.fragments.ButtonBrightness" />
 
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="swap_navigation_keys"
+        android:title="@string/swap_navigation_keys_title"
+        android:summary="@string/swap_navigation_keys_title_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="back_key"
         android:title="@string/back_key_title">

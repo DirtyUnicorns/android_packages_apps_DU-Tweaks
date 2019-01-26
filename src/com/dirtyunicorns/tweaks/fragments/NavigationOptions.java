@@ -50,6 +50,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
     private static final String KEY_NAVIGATION_BAR_ENABLED = "navigation_bar";
     private static final String KEY_NAVIGATION_ARROW_KEYS  = "navigation_bar_menu_arrow_keys";
+    private static final String KEY_SWAP_NAVIGATION_KEYS = "swap_navigation_keys";
 
     private static final String KEY_SWIPE_UP_PREFERENCE = "swipe_one_home_button";
     private static final String ACTION_QUICKSTEP = "android.intent.action.QUICKSTEP_SERVICE";
@@ -100,6 +101,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
     private SwitchPreference mNavigationBar;
 
+    private SystemSettingSwitchPreference mSwapHardwareKeys;
     private SystemSettingSwitchPreference mNavigationArrowKeys;
 
     private static final int KEY_MASK_MENU = 0x04;
@@ -163,6 +165,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
         boolean defaultToNavigationBar = getResources().getBoolean(
                 com.android.internal.R.bool.config_defaultToNavigationBar);
 
+        mSwapHardwareKeys = (SystemSettingSwitchPreference) findPreference(KEY_SWAP_NAVIGATION_KEYS);
         mNavigationArrowKeys = (SystemSettingSwitchPreference) findPreference(KEY_NAVIGATION_ARROW_KEYS);
 
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
@@ -272,6 +275,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
         if (deviceKeys == 0) {
             prefSet.removePreference(mButtonBrightness);
+            prefSet.removePreference(mSwapHardwareKeys);
             prefSet.removePreference(menuCategory);
             prefSet.removePreference(assistCategory);
             prefSet.removePreference(cameraCategory);
@@ -425,8 +429,10 @@ public class NavigationOptions extends SettingsPreferenceFragment
                 Settings.System.NAVIGATION_BAR_ENABLED, defaultToNavigationBar ? 1 : 0) == 1;
         if (navigationBar) {
             mButtonBrightness.setEnabled(false);
+            mSwapHardwareKeys.setEnabled(false);
         } else {
             mButtonBrightness.setEnabled(true);
+            mSwapHardwareKeys.setEnabled(true);
         }
     }
 
@@ -591,6 +597,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
                     if (deviceKeys == 0) {
                         keys.add(KEY_BUTTON_BRIGHTNESS);
+                        keys.add(KEY_SWAP_NAVIGATION_KEYS);
                     }
                     if (!hasMenu) {
                         keys.add(KEY_CATEGORY_MENU);
