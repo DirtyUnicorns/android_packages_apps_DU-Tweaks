@@ -31,6 +31,7 @@ public class System extends SettingsPreferenceFragment implements Preference.OnP
 
     private static final String DEVICE_CATEGORY = "device_extras_category";
     private static final String EXPANDED_DESKTOP_CATEGORY = "expanded_desktop_category";
+    private static final String LOCKSCREEN_ITEMS_CATEGORY = "lockscreen_items_category";
     private static final String MISC_CATEGORY = "miscellaneous_category";
     private static final String POWERMENU_CATEGORY = "powermenu_category";
 
@@ -47,6 +48,11 @@ public class System extends SettingsPreferenceFragment implements Preference.OnP
         Preference ExpandedDesktop = findPreference(EXPANDED_DESKTOP_CATEGORY);
         if (!getResources().getBoolean(R.bool.has_expanded_desktop)) {
             getPreferenceScreen().removePreference(ExpandedDesktop);
+        }
+
+        Preference LockscreenItems = findPreference(LOCKSCREEN_ITEMS_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_lockscreen_items)) {
+            getPreferenceScreen().removePreference(LockscreenItems);
         }
 
         Preference MiscOptions = findPreference("miscellaneous_category");

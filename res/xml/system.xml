@@ -34,6 +34,13 @@
         android:fragment="com.dirtyunicorns.tweaks.fragments.ExpandedDesktop" />
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
+        android:key="lockscreen_items_category"
+        android:icon="@drawable/dt_lockscreen_items"
+        android:title="@string/lockscreen_items_title"
+        android:summary="@string/lockscreen_items_summary"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.LockscreenItems" />
+
+    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="miscellaneous_category"
         android:icon="@drawable/dt_miscellaneous"
         android:title="@string/miscellaneous_title"

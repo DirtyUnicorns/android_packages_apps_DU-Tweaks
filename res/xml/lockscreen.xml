@@ -23,11 +23,4 @@
         android:summary="@string/fingerprint_prefs_summary"
         android:fragment="com.dirtyunicorns.tweaks.fragments.FingerprintPrefs" />
 
-    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
-        android:key="lockscreen_items_category"
-        android:icon="@drawable/dt_lockscreen_items"
-        android:title="@string/lockscreen_items_title"
-        android:summary="@string/lockscreen_items_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.LockscreenItems" />
-
 </PreferenceScreen>

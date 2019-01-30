@@ -23,11 +23,11 @@
         android:title="@string/bottom_nav_system_title"
         app:showAsAction="ifRoom|withText"/>
 
-    <item
+    <!--item
         android:id="@+id/lockscreen"
         android:icon="@drawable/bottomnav_lockscreen"
         android:title="@string/bottom_nav_lockscreen_title"
-        app:showAsAction="ifRoom|withText"/>
+        app:showAsAction="ifRoom|withText"/-->
 
     <item
         android:id="@+id/statusbar"
