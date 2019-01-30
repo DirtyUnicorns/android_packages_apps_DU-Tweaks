@@ -100,9 +100,6 @@
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Paquet d\'icônes</string>
     <string name="recents_icon_pack_summary">Utiliser un paquet d\'icônes personnalisé</string>
-    <string name="no_iconpacks_summary">Aucun paquet d\'icônes installé</string>
-    <string name="dialog_pick_iconpack_title">Sélectionner un paquet d\'icônes</string>
-    <string name="default_iconpack_title">Icônes par défaut</string>
 
     <!-- Themes -->
     <string name="theme_category_title">Options de thème</string>
@@ -213,6 +210,10 @@
     <!-- Navbar arrow keys -->
     <string name="show_navbar_arrow_keys_title">Touches de direction du clavier</string>
     <string name="show_navbar_arrow_keys_summary">Afficher les touches de direction gauche et droite en présence du clavier dans la barre de navigation</string>
+
+    <!-- Swap hw keys -->
+    <string name="swap_navigation_keys_title">Inverser les boutons physiques</string>
+    <string name="swap_navigation_keys_title_summary">Inverser l\'ordre des boutons Applications récentes et Retour</string>
 
     <!-- ChooserActivity blacklist -->
     <string name="chooser_activity_blacklist_title">Applications exclues</string>
