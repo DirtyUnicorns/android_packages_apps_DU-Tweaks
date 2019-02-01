@@ -52,11 +52,11 @@ public class CarrierLabel extends SettingsPreferenceFragment
 
     private static final String TAG = "CarrierLabel";
 
-    private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
-    private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+    private static final String KEY_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+    private static final String KEY_STATUS_BAR_SHOW_CARRIER = "status_bar_show_carrier";
 
-    private SwitchPreference mStatusBarCarrier;
-    private PreferenceScreen mCustomCarrierLabel;
+    private ListPreference mShowCarrierLabel;
+    private Preference mCustomCarrierLabel;
 
     private String mCustomCarrierLabelText;
 
@@ -65,20 +65,22 @@ public class CarrierLabel extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.carrier_label);
 
-        PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
+        final ContentResolver resolver = getActivity().getContentResolver();
 
-        mStatusBarCarrier = (SwitchPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
-        mStatusBarCarrier.setChecked((Settings.System.getInt(
-                    resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
-        mStatusBarCarrier.setOnPreferenceChangeListener(this);
-        mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
+        mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER);
+        int showCarrierLabel = Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_SHOW_CARRIER, 1);
+        mShowCarrierLabel.setValue(String.valueOf(showCarrierLabel));
+        mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
+        mShowCarrierLabel.setOnPreferenceChangeListener(this);
+
+        mCustomCarrierLabel = (Preference) findPreference(KEY_CUSTOM_CARRIER_LABEL);
         updateCustomLabelTextSummary();
     }
 
     private void updateCustomLabelTextSummary() {
         mCustomCarrierLabelText = Settings.System.getString(
-            getActivity().getContentResolver(), Settings.System.CUSTOM_CARRIER_LABEL);
+                getActivity().getContentResolver(), Settings.System.CUSTOM_CARRIER_LABEL);
 
         if (TextUtils.isEmpty(mCustomCarrierLabelText)) {
             mCustomCarrierLabel.setSummary(R.string.custom_carrier_label_notset);
@@ -87,14 +89,18 @@ public class CarrierLabel extends SettingsPreferenceFragment
         }
     }
 
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mStatusBarCarrier) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_CARRIER, value ? 1 : 0);
+        if (preference == mShowCarrierLabel) {
+            int showCarrierLabel = Integer.valueOf((String) newValue);
+            int index = mShowCarrierLabel.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver, Settings.System.
+                    STATUS_BAR_SHOW_CARRIER, showCarrierLabel);
+            mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
             return true;
-         }
-         return false;
+        }
+        return false;
     }
 
     @Override
@@ -102,10 +108,11 @@ public class CarrierLabel extends SettingsPreferenceFragment
         super.onResume();
     }
 
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
-            final Preference preference) {
+    @Override
+    public boolean onPreferenceTreeClick(final Preference preference) {
+        super.onPreferenceTreeClick(preference);
         final ContentResolver resolver = getActivity().getContentResolver();
-        if (preference.getKey().equals(CUSTOM_CARRIER_LABEL)) {
+        if (preference.getKey().equals(KEY_CUSTOM_CARRIER_LABEL)) {
             AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
             alert.setTitle(R.string.custom_carrier_label_title);
             alert.setMessage(R.string.custom_carrier_label_explain);
@@ -124,12 +131,12 @@ public class CarrierLabel extends SettingsPreferenceFragment
                             Intent i = new Intent();
                             i.setAction(Intent.ACTION_CUSTOM_CARRIER_LABEL_CHANGED);
                             getActivity().sendBroadcast(i);
-                }
-            });
+                        }
+                    });
             alert.setNegativeButton(getString(android.R.string.cancel), null);
             alert.show();
         }
-        return false;
+        return true;
     }
 
     @Override
