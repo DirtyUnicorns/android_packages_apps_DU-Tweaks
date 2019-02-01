@@ -65,6 +65,8 @@ public class CarrierLabel extends SettingsPreferenceFragment
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.carrier_label_warning_text);
+
         mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER);
         int showCarrierLabel = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_SHOW_CARRIER, 1);
