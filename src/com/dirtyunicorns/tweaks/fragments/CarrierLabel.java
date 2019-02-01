@@ -73,11 +73,7 @@ public class CarrierLabel extends SettingsPreferenceFragment
                     resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
         mStatusBarCarrier.setOnPreferenceChangeListener(this);
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
-        if (TelephonyManager.getDefault().isMultiSimEnabled()) {
-            prefSet.removePreference(mCustomCarrierLabel);
-        } else {
-            updateCustomLabelTextSummary();
-        }
+        updateCustomLabelTextSummary();
     }
 
     private void updateCustomLabelTextSummary() {
