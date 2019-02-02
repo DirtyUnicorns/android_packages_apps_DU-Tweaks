@@ -41,15 +41,14 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
+
+import com.android.internal.util.du.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CarrierLabel extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
-
-    private static final String TAG = "CarrierLabel";
 
     private static final String KEY_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String KEY_STATUS_BAR_SHOW_CARRIER = "status_bar_show_carrier";
@@ -71,6 +70,17 @@ public class CarrierLabel extends SettingsPreferenceFragment
         mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER);
         int showCarrierLabel = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_SHOW_CARRIER, 1);
+        CharSequence[] NonNotchEntries = { getResources().getString(R.string.show_carrier_disabled),
+                getResources().getString(R.string.show_carrier_keyguard),
+                getResources().getString(R.string.show_carrier_statusbar), getResources().getString(
+                        R.string.show_carrier_enabled) };
+        CharSequence[] NotchEntries = { getResources().getString(R.string.show_carrier_disabled),
+                getResources().getString(R.string.show_carrier_keyguard) };
+        CharSequence[] NonNotchValues = {"0", "1" , "2", "3"};
+        CharSequence[] NotchValues = {"0", "1"};
+        mShowCarrierLabel.setEntries(Utils.hasNotch(getActivity()) ? NotchEntries : NonNotchEntries);
+        mShowCarrierLabel.setDefaultValue("1");
+        mShowCarrierLabel.setEntryValues(Utils.hasNotch(getActivity()) ? NotchValues : NonNotchValues);
         mShowCarrierLabel.setValue(String.valueOf(showCarrierLabel));
         mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
         mShowCarrierLabel.setOnPreferenceChangeListener(this);

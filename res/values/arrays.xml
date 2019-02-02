@@ -16,21 +16,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Carrier Label -->
-    <string-array name="carrier_label_entries">
-        <item>@string/show_carrier_disabled</item>
-        <item>@string/show_carrier_keyguard</item>
-        <item>@string/show_carrier_statusbar</item>
-        <item>@string/show_carrier_enabled</item>
-    </string-array>
-
-    <string-array name="carrier_label_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
     <!-- Lockscreen clock styles -->
     <string-array name="lockscreen_clock_selection_entries" translatable="false">
         <item>@string/lockscreen_clock_selection_digital</item>
