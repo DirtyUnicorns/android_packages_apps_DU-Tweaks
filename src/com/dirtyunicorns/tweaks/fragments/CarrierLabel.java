@@ -58,6 +58,8 @@ public class CarrierLabel extends SettingsPreferenceFragment
 
     private String mCustomCarrierLabelText;
 
+    private int showCarrierLabel;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,12 +70,12 @@ public class CarrierLabel extends SettingsPreferenceFragment
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.carrier_label_warning_text);
 
         mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER);
-        int showCarrierLabel = Settings.System.getInt(resolver,
+        showCarrierLabel = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_SHOW_CARRIER, 1);
         CharSequence[] NonNotchEntries = { getResources().getString(R.string.show_carrier_disabled),
                 getResources().getString(R.string.show_carrier_keyguard),
                 getResources().getString(R.string.show_carrier_statusbar), getResources().getString(
-                        R.string.show_carrier_enabled) };
+                R.string.show_carrier_enabled) };
         CharSequence[] NotchEntries = { getResources().getString(R.string.show_carrier_disabled),
                 getResources().getString(R.string.show_carrier_keyguard) };
         CharSequence[] NonNotchValues = {"0", "1" , "2", "3"};
@@ -86,7 +88,10 @@ public class CarrierLabel extends SettingsPreferenceFragment
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
 
         mCustomCarrierLabel = (Preference) findPreference(KEY_CUSTOM_CARRIER_LABEL);
+
         updateCustomLabelTextSummary();
+        mCustomCarrierLabel.setEnabled(!mShowCarrierLabel.getEntryValues()
+                [showCarrierLabel].equals("0"));
     }
 
     private void updateCustomLabelTextSummary() {
@@ -109,6 +114,8 @@ public class CarrierLabel extends SettingsPreferenceFragment
             Settings.System.putInt(resolver, Settings.System.
                     STATUS_BAR_SHOW_CARRIER, showCarrierLabel);
             mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
+            mCustomCarrierLabel.setEnabled(!mShowCarrierLabel.getEntryValues()
+                    [showCarrierLabel].equals("0"));
             return true;
         }
         return false;
