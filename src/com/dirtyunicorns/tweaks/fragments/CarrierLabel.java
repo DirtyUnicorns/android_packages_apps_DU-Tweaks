@@ -31,6 +31,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 import android.text.InputFilter;
+import android.text.InputType;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -68,8 +69,6 @@ public class CarrierLabel extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.carrier_label);
 
         final ContentResolver resolver = getActivity().getContentResolver();
-
-        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.carrier_label_warning_text);
 
         mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER);
         showCarrierLabel = Settings.System.getInt(resolver,
@@ -146,6 +145,9 @@ public class CarrierLabel extends SettingsPreferenceFragment
             int maxLength = 10;
             input.setLayoutParams(lp);
             input.setGravity(android.view.Gravity.TOP| Gravity.START);
+            input.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS
+                    | InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+            input.setMaxLines(1);
             input.setText(TextUtils.isEmpty(mCustomCarrierLabelText) ? "" : mCustomCarrierLabelText);
             input.setFilters(new InputFilter[] {new InputFilter.LengthFilter(maxLength)});
             container.addView(input);

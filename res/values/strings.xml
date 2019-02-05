@@ -258,8 +258,6 @@
     <string name="show_carrier_keyguard">Lockscreen</string>
     <string name="show_carrier_statusbar">Status bar</string>
     <string name="show_carrier_enabled">Both</string>
-    <string name="carrier_label_warning_text">Be advised that using emojis as your carrier label might cause some visibility issues on lighter backgrounds.</string>
-
 
     <!-- Tiles animation/interpolator style  -->
     <string name="qs_animation_options_title">Animations</string>
