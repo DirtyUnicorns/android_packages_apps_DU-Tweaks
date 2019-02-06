@@ -264,6 +264,17 @@
     <string name="clock_date_left">À gauche de l\'horloge</string>
     <string name="clock_date_position">Position de la date</string>
 
+    <!-- Carrier Label -->
+    <string name="carrier_options">Affichage</string>
+    <string name="custom_carrier_label_title">Libellé</string>
+    <string name="custom_carrier_label_explain">Saisir un nouveau libellé. Laisser vide pour revenir au libellé d\'origine.</string>
+    <string name="custom_carrier_label_notset">Non défini</string>
+    <string name="show_carrier_title">Libellé opérateur</string>
+    <string name="show_carrier_disabled">Désactivé</string>
+    <string name="show_carrier_keyguard">Écran de déverrouillage</string>
+    <string name="show_carrier_statusbar">Barre d\'état</string>
+    <string name="show_carrier_enabled">Sur les deux</string>
+
     <!-- Tiles animation/interpolator style  -->
     <string name="qs_animation_options_title">Animations</string>
     <string name="qs_tile_animation_style_title">Style</string>
