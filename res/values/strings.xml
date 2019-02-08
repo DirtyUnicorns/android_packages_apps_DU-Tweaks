@@ -68,6 +68,8 @@
     <string name="navigation_options_title">Navigation</string>
     <string name="navigation_options_summary">Configure navigation options</string>
     <!-- Multitasking -->
+    <string name="active_edge_title">Active Edge</string>
+    <string name="active_edge_summary">Configure Active Edge options</string>
     <string name="headsup_title">Heads up</string>
     <string name="headsup_summary">Configure heads up options</string>
     <string name="recents_title">Recents</string>
@@ -350,5 +352,11 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+
+    <!-- Active edge -->
+    <string name="active_edge_actions_title">Squeeze action</string>
+    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
+    <string name="active_edge_wake_title">Allow when screen is off</string>
+    <string name="active_edge_wake_summary">Trigger any action even when the screen is off</string>
 
 </resources>

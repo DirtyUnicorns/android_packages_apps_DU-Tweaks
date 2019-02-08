@@ -29,6 +29,7 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class Multitasking extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+    private static final String ACTIVE_EDGE_CATEGORY = "active_edge_category";
     private static final String HEADS_UP_CATEGORY = "heads_up_category";
     private static final String RECENTS_CATEGORY = "recents_category";
     private static final String TICKER_CATEGORY = "ticker_category";
@@ -37,6 +38,16 @@ public class Multitasking extends SettingsPreferenceFragment implements Preferen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.multitasking);
+
+        Preference ActiveEdge = findPreference(ACTIVE_EDGE_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_active_edge)) {
+            getPreferenceScreen().removePreference(ActiveEdge);
+        } else {
+            if (!getContext().getPackageManager().hasSystemFeature(
+                    "android.hardware.sensor.assist")) {
+                getPreferenceScreen().removePreference(ActiveEdge);
+            }
+        }
 
         Preference HeadsUp = findPreference(HEADS_UP_CATEGORY);
         if (!getResources().getBoolean(R.bool.has_heads_up)) {
@@ -64,16 +75,13 @@ public class Multitasking extends SettingsPreferenceFragment implements Preferen
         super.onPause();
     }
 
-
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
         return false;
     }
-
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.DIRTYTWEAKS;
     }
 }
-
