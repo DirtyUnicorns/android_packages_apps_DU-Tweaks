@@ -51,16 +51,6 @@
                 android:title="@string/double_tap_sleep_lockscreen"
                 android:defaultValue="false" />
 
-            <com.dirtyunicorns.support.preferences.SystemSettingListPreference
-                android:key="weather_lockscreen_unit"
-                android:dialogTitle="@string/weather_unit"
-                android:title="@string/weather_unit"
-                android:summary="%s"
-                android:entries="@array/weather_unit_entries"
-                android:entryValues="@array/weather_unit_values"
-                android:dependency="lockscreen_info"
-                android:defaultValue="0" />
-
         </PreferenceCategory>
 
 </PreferenceScreen>
