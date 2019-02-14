@@ -17,7 +17,7 @@
 <resources>
 
     <!-- Whether to display active edge category -->
-    <bool name="has_active_edge">true</bool>
+    <bool name="has_active_edge">false</bool>
 
     <!-- Whether to display heads up category -->
     <bool name="has_heads_up">false</bool>
