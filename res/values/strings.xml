@@ -301,6 +301,7 @@
     <string name="button_settings_title">Buttons</string>
     <string name="button_settings_title_summary">Perform custom button actions</string>
     <string name="button_settings_description">Set custom button actions to several hardware keys presented on your device.</string>
+    <string name="app_picker_dialog_title">Select an app</string>
     <string name="button_backlight_title">Backlight</string>
     <string name="button_backlight_summary">Configure backlight for capacitive keys</string>
     <string name="button_backlight_on_touch_only_title">Button touch</string>
@@ -320,7 +321,9 @@
     <string name="camera_key_title">Camera button</string>
     <string name="short_press_title">Short press action</string>
     <string name="long_press_title">Long press action</string>
+    <string name="long_press_custom_app_title">Long press custom app</string>
     <string name="double_tap_title">Double tap action</string>
+    <string name="double_tap_custom_app_title">Double tap custom app</string>
     <string name="action_nothing">No action</string>
     <string name="action_menu">Menu</string>
     <string name="action_app_switch">Recents</string>
