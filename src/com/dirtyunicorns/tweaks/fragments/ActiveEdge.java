@@ -83,6 +83,7 @@ public class ActiveEdge extends SettingsPreferenceFragment
 
         mActiveEdgeAppSelection = (Preference) findPreference(KEY_SQUEEZE_APP_SELECTION);
 
+        customAppCheck();
         mActiveEdgeAppSelection.setEnabled(mActiveEdgeActions.getEntryValues()
                 [activeEdgeActions].equals("11"));
     }
@@ -96,6 +97,7 @@ public class ActiveEdge extends SettingsPreferenceFragment
             int index = mActiveEdgeActions.findIndexOfValue((String) newValue);
             mActiveEdgeActions.setSummary(
                     mActiveEdgeActions.getEntries()[index]);
+            customAppCheck();
             mActiveEdgeAppSelection.setEnabled(mActiveEdgeActions.getEntryValues()
                     [activeEdgeActions].equals("11"));
             return true;
@@ -113,6 +115,23 @@ public class ActiveEdge extends SettingsPreferenceFragment
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        customAppCheck();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        customAppCheck();
+    }
+
+    private void customAppCheck() {
+        mActiveEdgeAppSelection.setSummary(Settings.Secure.getString(getActivity().getContentResolver(),
+                String.valueOf(Settings.Secure.SQUEEZE_CUSTOM_APP_FR_NAME)));
     }
 
     @Override
