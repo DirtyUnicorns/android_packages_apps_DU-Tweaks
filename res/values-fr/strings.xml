@@ -68,6 +68,8 @@
     <string name="navigation_options_title">Barre de navigation</string>
     <string name="navigation_options_summary">Réglages des options de la barre de navigation</string>
     <!-- Multitasking -->
+    <string name="active_edge_title">Bord actif</string>
+    <string name="active_edge_summary">Réglages des options \"Bord actif\"</string>
     <string name="headsup_title">Notifications flottantes</string>
     <string name="headsup_summary">Réglages des notifications flottantes</string>
     <string name="recents_title">Applications récentes</string>
@@ -312,8 +314,9 @@
     <string name="button_settings_title">Boutons</string>
     <string name="button_settings_title_summary">Actions des boutons physiques</string>
     <string name="button_settings_description">Réglages des actions des boutons physiques de l\'appareil</string>
+    <string name="app_picker_dialog_title">Sélectionner une application</string>
     <string name="button_backlight_title">Rétroéclairage</string>
-    <string name="button_backlight_summary">Activer le rétroéclairage pour les boutons capacitives</string>
+    <string name="button_backlight_summary">Activer le rétroéclairage pour les boutons capacitifs</string>
     <string name="button_backlight_on_touch_only_title">Appui sur un bouton</string>
     <string name="button_backlight_on_touch_only_summary">Activer le délai de rétroéclairage uniquement lors d\'un appui sur un bouton</string>
     <string name="button_timeout_title">Délai de rétroéclairage (secondes)</string>
@@ -331,7 +334,9 @@
     <string name="camera_key_title">Bouton Appareil photo</string>
     <string name="short_press_title">Action par appui simple</string>
     <string name="long_press_title">Action par appui prolongé</string>
+    <string name="long_press_custom_app_title">Application par appui prolongé</string>
     <string name="double_tap_title">Action par double appui</string>
+    <string name="double_tap_custom_app_title">Application par double appui</string>
     <string name="action_nothing">Aucune action</string>
     <string name="action_menu">Ouvrir/fermer le menu</string>
     <string name="action_app_switch">Applications récentes</string>
@@ -349,6 +354,8 @@
     <string name="action_power_menu">Menu Marche/Arrêt</string>
     <string name="action_screenshot">Capture d\'écran</string>
     <string name="action_qs_panel">Panneau de configuration rapide</string>
+    <string name="action_app_action">Application</string>
+    <string name="action_ringer_modes">Sonnerie</string>
 
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Horloge</string>
@@ -365,7 +372,16 @@
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (gras)</string>
 
-    <!-- Weather -->
-    <string name="weather_unit">Unité de température</string>
+    <!-- Active edge -->
+    <string name="active_edge_short_actions_title">Action par appui court</string>
+    <string name="active_edge_long_actions_title">Action par appui prolongé</string>
+    <string name="active_edge_actions_title">Action par appui</string>
+    <string name="active_edge_sensitivity_title">Niveau d\'appui</string>
+    <string name="active_edge_wake_title">Autoriser lorsque l\'écran est éteint</string>
+    <string name="active_edge_wake_summary">Déclencher n\'importe quelle action même si l\'écran est éteint</string>
+    <string name="active_edge_ss_app_select_title">Sélectionner l\'application pour l\'appui court</string>
+    <string name="active_edge_ls_app_select_title">Sélectionner l\'application pour l\'appui prolongé</string>
+    <string name="active_edge_app_select_summary">Sélectionner une application à démarrer avec \"Action par appui\"</string>
+    <string name="active_edge_footer_info">Certaines actions par appui ne permettent pas d\'activer l\'affichage</string>
 
 </resources>
