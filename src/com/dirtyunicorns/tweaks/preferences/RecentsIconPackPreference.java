@@ -19,6 +19,8 @@ package com.dirtyunicorns.tweaks.preferences;
 import android.content.Context;
 import android.provider.Settings;
 import android.util.AttributeSet;
+
+import com.android.settings.R;
 import com.dirtyunicorns.support.preferences.IconPackPreference;
 
 public class RecentsIconPackPreference extends IconPackPreference {
@@ -29,6 +31,7 @@ public class RecentsIconPackPreference extends IconPackPreference {
 
     public RecentsIconPackPreference(Context context, AttributeSet attrs) {
         super(context, attrs, 0);
+        setLayoutResource(R.layout.recents_iconpack_preference);
     }
 
     public RecentsIconPackPreference(Context context, AttributeSet attrs, int defStyleAttr) {
