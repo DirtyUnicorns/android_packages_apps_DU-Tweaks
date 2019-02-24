@@ -57,49 +57,49 @@ public class Team extends DialogFragment {
 
         if (view != null) {
             FrameLayout alex = view.findViewById(R.id.alex);
-            setTeamMember("+AlexCruz", alex);
+            setTeamMember("Mazda--", alex);
 
             FrameLayout bret = view.findViewById(R.id.bret);
-            setTeamMember("+BretZamzow", bret);
+            setTeamMember("MazWoz", bret);
 
             FrameLayout daniel = view.findViewById(R.id.daniel);
-            setTeamMember("+DanielJohansson2000", daniel);
+            setTeamMember("wrapped", daniel);
 
             FrameLayout edwin = view.findViewById(R.id.edwin);
-            setTeamMember("+EdwinSPACEMANRivera", edwin);
+            setTeamMember("spaceman860", edwin);
 
             FrameLayout james = view.findViewById(R.id.james);
-            setTeamMember("+JamesTaylor3", james);
+            setTeamMember("JmzTaylor", james);
 
             FrameLayout joshchasky = view.findViewById(R.id.joshchasky);
-            setTeamMember("+JoshChasky", joshchasky);
+            setTeamMember("nychitman1", joshchasky);
 
             FrameLayout joshcorrell = view.findViewById(R.id.joshcorrell);
-            setTeamMember("+JoshCorrell", joshcorrell);
+            setTeamMember("jbats", joshcorrell);
 
             FrameLayout josip = view.findViewById(R.id.josip);
-            setTeamMember("+JosipLazic", josip);
+            setTeamMember("nasty007", josip);
 
             FrameLayout mark = view.findViewById(R.id.mark);
-            setTeamMember("104191856656335658539", mark);
+            setTeamMember("moepda", mark);
 
             FrameLayout mat = view.findViewById(R.id.mat);
-            setTeamMember("+MatPls", mat);
+            setTeamMember("tsubus", mat);
 
             FrameLayout nathan = view.findViewById(R.id.nathan);
-            setTeamMember("+NathanChancellor", nathan);
+            setTeamMember("nathanchance", nathan);
 
             FrameLayout nick = view.findViewById(R.id.nick);
-            setTeamMember("+NickDoherty81", nick);
+            setTeamMember("nickdoherty81", nick);
 
             FrameLayout nicolas = view.findViewById(R.id.nicolas);
-            setTeamMember("+NicolasDhouailly", nicolas);
+            setTeamMember("Nico60", nicolas);
 
             FrameLayout tushar = view.findViewById(R.id.tushar);
-            setTeamMember("+TusharSaini91", tushar);
+            setTeamMember("DeviousFusion", tushar);
 
             FrameLayout will = view.findViewById(R.id.will);
-            setTeamMember("107452708412699546248", will);
+            setTeamMember("flintman", will);
         }
 
         dialog.show();
@@ -107,14 +107,14 @@ public class Team extends DialogFragment {
         return dialog;
     }
 
-    private void setTeamMember(final String gplus, final FrameLayout name) {
+    private void setTeamMember(final String github, final FrameLayout name) {
         if (name != null) {
             name.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     try {
                         Intent intent = new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://plus.google.com/u/0/" + gplus));
+                                Uri.parse("https://github.com/" + github));
                         startActivity(intent);
                     } catch (ActivityNotFoundException e) {
                         e.printStackTrace();
