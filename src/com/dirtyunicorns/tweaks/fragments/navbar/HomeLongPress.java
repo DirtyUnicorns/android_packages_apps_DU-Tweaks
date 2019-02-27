@@ -1,25 +1,24 @@
 package com.dirtyunicorns.tweaks.fragments.navbar;
 
+import android.content.pm.ActivityInfo;
 import android.provider.Settings;
-import android.view.View;
-import android.widget.ListView;
 
-import com.dirtyunicorns.support.preferences.AppPicker;
-
-public class HomeLongPress extends AppPicker {
+public class HomeLongPress extends BackLongPress {
 
     @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
-
-        String mAppString = applist.get(position).packageName;
-        String mFriendlyAppString = (String) applist.get(position).loadLabel(packageManager);
-
+    protected void setPackage(String packageName, String friendlyAppString) {
         Settings.System.putString(
-                getContentResolver(), Settings.System.KEY_HOME_LONG_PRESS_CUSTOM_APP, mAppString);
+                getContentResolver(), Settings.System.KEY_HOME_LONG_PRESS_CUSTOM_APP, packageName);
         Settings.System.putString(
                 getContentResolver(), Settings.System.KEY_HOME_LONG_PRESS_CUSTOM_APP_FR_NAME,
-                mFriendlyAppString);
-        finish();
+                friendlyAppString);
+    }
+
+    @Override
+    protected void setPackageActivity(ActivityInfo ai) {
+        Settings.System.putString(
+                getContentResolver(), Settings.System.KEY_HOME_LONG_PRESS_CUSTOM_ACTIVITY,
+                ai != null ? ai.name : "NONE");
     }
 }
+
