@@ -17,20 +17,20 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Dirty Tweaks -->
     <string name="dirtytweaks_title">Dirty Tweaks</string>
-    <string name="dirtytweaks_summary">Enhance your experience</string>
+    <string name="dirtytweaks_summary">Polepsz swoje wrażenia</string>
     <!-- The Team -->
-    <string name="dialog_team_title">The Team</string>
+    <string name="dialog_team_title">Zespół</string>
     <!-- Bottom navigation -->
     <string name="bottom_nav_system_title">System</string>
-    <string name="bottom_nav_lockscreen_title">Lockscreen</string>
-    <string name="bottom_nav_statusbar_title">Statusbar</string>
-    <string name="bottom_nav_navigation_title">Navigation</string>
-    <string name="bottom_nav_multitasking_title">Multitasking</string>
+    <string name="bottom_nav_lockscreen_title">Ekran blokady</string>
+    <string name="bottom_nav_statusbar_title">Pasek stanu</string>
+    <string name="bottom_nav_navigation_title">Nawigacja</string>
+    <string name="bottom_nav_multitasking_title">Wielozadaniowość</string>
     <!-- Categories -->
     <!-- System -->
-    <string name="device_extras_title">Device extras</string>
-    <string name="device_extras_summary">Device specific tweaks</string>
-    <string name="expanded_desktop_title">Expanded desktop</string>
+    <string name="device_extras_title">Dodatki urządzenia</string>
+    <string name="device_extras_summary">Dodatki specyficzne dla urządzenia</string>
+    <string name="expanded_desktop_title">Rozszerzony pulpit</string>
     <string name="expanded_desktop_summary">Per-app configuration of the status bar and navigation key view</string>
     <string name="miscellaneous_title">Miscellaneous</string>
     <string name="miscellaneous_summary">Miscellaneous tweaks</string>
@@ -255,7 +255,7 @@
     <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Przewiduj i przekrocz</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
@@ -309,32 +309,32 @@
     <string name="action_volume_panel">Volume panel</string>
     <string name="action_screen_off">Screen off</string>
     <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="action_power_menu">Menu zasilania</string>
+    <string name="action_screenshot">Zrzut ekranu</string>
+    <string name="action_qs_panel">Panel QS</string>
+    <string name="action_app_action">Aplikacja</string>
+    <string name="action_ringer_modes">Tryb dzwonka</string>
     <!-- Lockscreen items -->
-    <string name="lockscreen_clock_title">Clock widget</string>
-    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
-    <string name="lockscreen_info_title">Items underneath the clock</string>
-    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <string name="lockscreen_clock_title">Widżet zegara</string>
+    <string name="lockscreen_clock_summary">Pokaż zegar na ekranie blokady</string>
+    <string name="lockscreen_info_title">Elementy znajdujące się pod zegarem</string>
+    <string name="lockscreen_info_summary">Pokazuj datę, pogodę i alarmy na ekranie blokady</string>
     <!-- Lockscreen clock styles -->
-    <string name="lockscreen_clock_selection_title">Clock style</string>
-    <string name="lockscreen_clock_selection_digital">Default</string>
-    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-    <string name="lockscreen_clock_selection_analog">Analog</string>
-    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_title">Styl zegara</string>
+    <string name="lockscreen_clock_selection_digital">Domyślny</string>
+    <string name="lockscreen_clock_selection_digital_bold">Cyfrowy (pogrubiony)</string>
+    <string name="lockscreen_clock_selection_analog">Analogowy</string>
+    <string name="lockscreen_clock_selection_du">Analogowy (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
-    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (pogrubiony)</string>
     <!-- Active edge -->
-    <string name="active_edge_short_actions_title">Short squeeze action</string>
-    <string name="active_edge_long_actions_title">Long squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
-    <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display.\n\nLong press on apps in the Select App menu to show and choose a specific activity.</string>
+    <string name="active_edge_short_actions_title">Akcja krótszego naciśnięcia</string>
+    <string name="active_edge_long_actions_title">Akcja dłuższego naciśnięcia</string>
+    <string name="active_edge_sensitivity_title">Czułość naciśnięcia</string>
+    <string name="active_edge_wake_title">Zezwól gdy ekran jest włączony</string>
+    <string name="active_edge_wake_summary">Wywołaj akcję, gdy ekran jest wyłączony</string>
+    <string name="active_edge_ss_app_select_title">Wybierz aplikacje dla krótszego naciśnięcia</string>
+    <string name="active_edge_ls_app_select_title">Wybierz aplikacje dla dłóższego naciśnięcia</string>
+    <string name="active_edge_app_select_summary">Wybierz aplikacje do uruchomienia przy krótszym naciśnięciu</string>
+    <string name="active_edge_footer_info">Nie wszystkie akcje naciśnięcia w aktywnych krawędziach mogą aktywować wyświetlacz.\n\nPrzytrzymaj dłużej aplikację w menu aplikacji w celu pokazania i wybrania specyficznej interackji.</string>
 </resources>
