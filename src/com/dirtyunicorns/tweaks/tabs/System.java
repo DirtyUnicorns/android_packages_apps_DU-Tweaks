@@ -27,7 +27,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
-public class System extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class System extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener {
 
     private static final String DEVICE_CATEGORY = "device_extras_category";
     private static final String EXPANDED_DESKTOP_CATEGORY = "expanded_desktop_category";

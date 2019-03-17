@@ -46,21 +46,24 @@ import com.dirtyunicorns.tweaks.tabs.System;
 
 public class DirtyTweaks extends SettingsPreferenceFragment {
 
-    MenuItem menuitem;
+    private MenuItem menuitem;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.dirtytweaks, container, false);
 
         final BottomNavigationViewCustom navigation = view.findViewById(R.id.navigation);
-        navigation.setBackground(new ColorDrawable(getResources().getColor(R.color.BottomBarBackgroundColor)));
+        navigation.setBackground(new ColorDrawable(
+                getResources().getColor(R.color.BottomBarBackgroundColor)));
 
         final ViewPager viewPager = view.findViewById(R.id.viewpager);
         PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
         viewPager.setAdapter(mPagerAdapter);
 
-        navigation.setOnNavigationItemSelectedListener(new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
+        navigation.setOnNavigationItemSelectedListener(
+                new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -85,8 +88,8 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         });
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+            public void onPageScrolled(int position, float positionOffset,
+                                       int positionOffsetPixels) {
             }
 
             @Override
@@ -115,7 +118,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         String titles[] = getTitles();
         private Fragment frags[] = new Fragment[titles.length];
 
-        public PagerAdapter(FragmentManager fm) {
+        PagerAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new System();
             //frags[1] = new Lockscreen();
@@ -174,7 +177,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         }
     }
 
-    public static void showDialog(Fragment context, DialogFragment dialog) {
+    private static void showDialog(Fragment context, DialogFragment dialog) {
         FragmentTransaction ft = context.getChildFragmentManager().beginTransaction();
         Fragment prev = context.getChildFragmentManager().findFragmentByTag("dialog");
         if (prev != null) {

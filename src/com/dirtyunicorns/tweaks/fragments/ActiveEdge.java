@@ -83,7 +83,8 @@ public class ActiveEdge extends SettingsPreferenceFragment
 
         int sensitivity = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.ASSIST_GESTURE_SENSITIVITY, 2, UserHandle.USER_CURRENT);
-        mActiveEdgeSensitivity = (CustomSeekBarPreference) findPreference("gesture_assist_sensitivity");
+        mActiveEdgeSensitivity = (CustomSeekBarPreference) findPreference(
+                "gesture_assist_sensitivity");
         mActiveEdgeSensitivity.setValue(sensitivity);
         mActiveEdgeSensitivity.setOnPreferenceChangeListener(this);
 
@@ -161,10 +162,14 @@ public class ActiveEdge extends SettingsPreferenceFragment
     }
 
     private void customAppCheck() {
-        mShortSqueezeAppSelection.setSummary(Settings.Secure.getStringForUser(getActivity().getContentResolver(),
-                String.valueOf(Settings.Secure.SHORT_SQUEEZE_CUSTOM_APP_FR_NAME), UserHandle.USER_CURRENT));
-        mLongSqueezeAppSelection.setSummary(Settings.Secure.getStringForUser(getActivity().getContentResolver(),
-                String.valueOf(Settings.Secure.LONG_SQUEEZE_CUSTOM_APP_FR_NAME), UserHandle.USER_CURRENT));
+        mShortSqueezeAppSelection.setSummary(
+                Settings.Secure.getStringForUser(getActivity().getContentResolver(),
+                String.valueOf(Settings.Secure.SHORT_SQUEEZE_CUSTOM_APP_FR_NAME),
+                        UserHandle.USER_CURRENT));
+        mLongSqueezeAppSelection.setSummary(
+                Settings.Secure.getStringForUser(getActivity().getContentResolver(),
+                String.valueOf(Settings.Secure.LONG_SQUEEZE_CUSTOM_APP_FR_NAME),
+                        UserHandle.USER_CURRENT));
     }
 
     /* Helper for reloading both short and long gesture as they might change on
@@ -187,9 +192,9 @@ public class ActiveEdge extends SettingsPreferenceFragment
 
         // Also ensure that the application chooser gets disabled when needed
         mShortSqueezeAppSelection.setEnabled(mShortSqueezeActions.getEntryValues()
-        [shortSqueezeActions].equals("11"));
+                [shortSqueezeActions].equals("11"));
         mLongSqueezeAppSelection.setEnabled(mLongSqueezeActions.getEntryValues()
-        [longSqueezeActions].equals("11"));
+                [longSqueezeActions].equals("11"));
     }
 
     @Override

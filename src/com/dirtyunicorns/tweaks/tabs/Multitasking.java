@@ -27,7 +27,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
-public class Multitasking extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class Multitasking extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener {
 
     private static final String ACTIVE_EDGE_CATEGORY = "active_edge_category";
     private static final String HEADS_UP_CATEGORY = "heads_up_category";

@@ -27,7 +27,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
-public class Statusbar extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class Statusbar extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener {
 
     private static final String BATTERY_CATEGORY = "battery_options_category";
     private static final String CARRIER_LABEL_CATEGORY = "carrier_label_category";

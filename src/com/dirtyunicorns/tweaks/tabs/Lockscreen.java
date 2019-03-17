@@ -29,7 +29,8 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.internal.util.du.Utils;
 
-public class Lockscreen extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class Lockscreen extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener {
 
     private static final String FINGERPRINT_PREFS_CATEGORY = "fingerprint_prefs_category";
 

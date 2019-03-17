@@ -27,7 +27,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
-public class Navigation extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class Navigation extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener {
 
     private static final String BUTTONS_CATEGORY = "buttons_category";
     private static final String NAVIGATION_CATEGORY = "navigation_category";
