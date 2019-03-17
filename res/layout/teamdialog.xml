@@ -50,7 +50,7 @@
                     android:layout_centerHorizontal="true"
                     android:gravity="center_horizontal" />
 
-                <com.dirtyunicorns.tweaks.helpers.RowLayout
+                <com.dirtyunicorns.support.helpers.RowLayout
                     xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/alex_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -103,7 +103,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/bret_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -137,7 +137,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/daniel_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -171,7 +171,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/edwin_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -205,7 +205,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/james_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -239,7 +239,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/joshchasky_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -273,7 +273,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/joshcorrell_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -307,7 +307,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/josip_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -341,7 +341,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/mark_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -375,7 +375,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/mat_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -409,7 +409,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/nathan_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -443,7 +443,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/nick_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -477,7 +477,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/nicolas_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -511,7 +511,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/tushar_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -545,7 +545,7 @@
                             android:layout_width="80dp"
                             android:layout_height="75dp">
 
-                            <com.dirtyunicorns.tweaks.helpers.CircularImageView
+                            <com.dirtyunicorns.support.helpers.CircularImageView
                                 android:id="@+id/will_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
@@ -570,7 +570,7 @@
 
                     </FrameLayout>
 
-                </com.dirtyunicorns.tweaks.helpers.RowLayout>
+                </com.dirtyunicorns.support.helpers.RowLayout>
 
             </LinearLayout>
 
