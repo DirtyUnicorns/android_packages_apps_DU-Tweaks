@@ -32,10 +32,10 @@
     <string name="device_extras_summary">Dodatki specyficzne dla urządzenia</string>
     <string name="expanded_desktop_title">Rozszerzony pulpit</string>
     <string name="expanded_desktop_summary">Per-app configuration of the status bar and navigation key view</string>
-    <string name="miscellaneous_title">Miscellaneous</string>
-    <string name="miscellaneous_summary">Miscellaneous tweaks</string>
-    <string name="powermenu_title">Power menu</string>
-    <string name="powermenu_summary">Configure the power menu</string>
+    <string name="miscellaneous_title">Różne</string>
+    <string name="miscellaneous_summary">Różne ulepszenia</string>
+    <string name="powermenu_title">Menu zasilania</string>
+    <string name="powermenu_summary">Konfiguracja menu zasilania</string>
     <!-- Lockscreen -->
     <string name="fingerprint_prefs_title">Fingerprint prefs</string>
     <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>

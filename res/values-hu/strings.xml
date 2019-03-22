@@ -35,15 +35,15 @@
     <string name="miscellaneous_title">Vegyes</string>
     <string name="miscellaneous_summary">Egyéb trükkök</string>
     <string name="powermenu_title">Kikapcsoló menü</string>
-    <string name="powermenu_summary">Configure the power menu</string>
+    <string name="powermenu_summary">Kikapcsoló menü konfigurálása</string>
     <!-- Lockscreen -->
     <string name="fingerprint_prefs_title">Ujjlenyomat-preferenciák</string>
     <string name="fingerprint_prefs_summary">Az ujjlenyomat-leolvasóhoz kapcsolódó trükkök</string>
     <string name="lockscreen_items_title">Zárképernyő elemek</string>
-    <string name="lockscreen_items_summary">Customize the lockscreen</string>
+    <string name="lockscreen_items_summary">Zárképernyő testreszabása</string>
     <!-- Statusbar -->
     <string name="battery_options_title">Akkumulátor beállítások</string>
-    <string name="battery_options_summary">Customize the statusbar battery</string>
+    <string name="battery_options_summary">Az állapotsor akkumulátorának testreszabása</string>
     <string name="carrier_label_title">Szolgáltatói felirat</string>
     <string name="carrier_label_summary">Záróképernyőn és állapotsoron látható szolgáltatói felirat beállítása</string>
     <string name="clock_options_title">Óra beállításai</string>
@@ -57,10 +57,10 @@
     <string name="ticker_title">Gördülő értesítés</string>
     <string name="ticker_summary">Állapotsori gördülő értesítések és az azokhoz tartozó trükkök</string>
     <string name="traffic_title">Hálózati forgalomjelzők</string>
-    <string name="traffic_summary">Enable and configure the traffic indicators</string>
+    <string name="traffic_summary">Adatforgalom kijelző engedélyezése, konfigurálása</string>
     <!-- Navigation -->
     <string name="buttons_title">Gombok</string>
-    <string name="buttons_summary">Configure volume rocker options</string>
+    <string name="buttons_summary">Hangerő szabályzó konfigurálása</string>
     <string name="navigation_options_title">Navigáció</string>
     <string name="navigation_options_summary">Navigációs gombok testreszabása</string>
     <!-- Multitasking -->
@@ -77,8 +77,8 @@
     <string name="media_art_summary">Állítsa teljes képernyősre a média borítóját a zárképernyőn</string>
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">Újraindítás</string>
-    <string name="powermenu_advanced_restart_title">Advanced restart</string>
-    <string name="powermenu_advanced_restart_summary">Enables the advanced restart menu for other restarting options</string>
+    <string name="powermenu_advanced_restart_title">Speciális újraindítás</string>
+    <string name="powermenu_advanced_restart_summary">Engedélyezi a speciális újraindítási menüt a kikapcsoló menüben</string>
     <string name="powermenu_lockdown_title">Lezárás</string>
     <string name="powermenu_screenshot_title">Képernyőmentés</string>
     <string name="powermenu_disabled_title">Kikapcsoló menü lezárt képernyőnél</string>
@@ -99,7 +99,7 @@
     <string name="qs_styles_dialog_title">Válasszon egy Gyorsbeállítás-csempestílust</string>
     <!-- Battery styles -->
     <string name="battery_style_title">Akkumulátorikon stílusa</string>
-    <string name="battery_style_summary">Change the style of the status bar battery</string>
+    <string name="battery_style_summary">Módosítsa az állapotsor akkumulátorának stílusát</string>
     <string name="battery_style_port">Álló</string>
     <string name="battery_style_circle">Kör</string>
     <string name="battery_style_dotted_circle">Pontozott kör</string>
@@ -120,12 +120,12 @@
     <string name="qs_columns_portrait_title">Oszlopok (álló)</string>
     <string name="qs_columns_landscape_title">Oszlopok (fekvő)</string>
     <string name="qs_tile_title_visibility_title">Csempefeliratok</string>
-    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
+    <string name="qs_tile_title_visibility_summary">Mutassa QS-csempe alatt a csempe nevét</string>
     <!-- Quick pulldown -->
     <string name="status_bar_quick_qs_pulldown">Gyors legördítés</string>
     <string name="quick_pulldown_none">Kikapcsolva</string>
-    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
-    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+    <string name="quick_pulldown_right">Húzza le az állapotsort a jobb oldalon</string>
+    <string name="quick_pulldown_left">Húzza le a állapotsort a bal oldalon</string>
     <!-- Option to show brightness bar in quick settings -->
     <string name="show_brightness_title">Fényerőszabályzó-csúszka</string>
     <string name="show_brightness_summary">Fényerőszabályzó-csúszka megjelenítése</string>
@@ -179,20 +179,20 @@
     <string name="pulse_empty_block_size">Blokk térköze</string>
     <!-- Stock navbar -->
     <string name="systemui_tuner_navbar_title">Elrendezés</string>
-    <string name="systemui_tuner_navbar_enabled_summary">Customize the layout of the navigation bar</string>
+    <string name="systemui_tuner_navbar_enabled_summary">A navigációs sáv elrendezésének testreszabása</string>
     <string name="systemui_tuner_navbar_disabled_summary">Gesture navbar is enabled. Disable it to use these options.</string>
-    <string name="swipe_up_to_switch_apps_custom_summary">Enable gesture navigation bar</string>
+    <string name="swipe_up_to_switch_apps_custom_summary">Engedélyezze a navigációs sávot</string>
     <!-- Navbar arrow keys -->
-    <string name="show_navbar_arrow_keys_title">Show arrow keys while typing</string>
-    <string name="show_navbar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing.</string>
+    <string name="show_navbar_arrow_keys_title">Nyílbillentyűk megjelenítése gépelés közben</string>
+    <string name="show_navbar_arrow_keys_summary">Mutassa a bal és jobb kurzort gépelés közben.</string>
     <!-- Swap hw keys -->
-    <string name="swap_navigation_keys_title">Swap hardware buttons</string>
-    <string name="swap_navigation_keys_title_summary">Swap the order of recents and back buttons</string>
+    <string name="swap_navigation_keys_title">Hardvergombok megfordítása</string>
+    <string name="swap_navigation_keys_title_summary">Az Előzmények és a Visszagomb sorrendjének felcserélése</string>
     <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
-    <string name="force_ambient_for_media_pref_summary">Configure the Ambient music ticker</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
-    <string name="force_ambient_for_media_title">Enable</string>
+    <string name="force_ambient_for_media_pref_title">Zeneszám a környezeti kijelzőn</string>
+    <string name="force_ambient_for_media_pref_summary">A környezeti kijelzőn megjelenő zeneszám-információ konfigurálása</string>
+    <string name="ambient_ticker_footer">Az Ambient Music a zeneszámokat a kiterjesztett képernyőn jeleníti meg.\n\nAkkor is aktiválódik, ha a környezeti kijelző le van tiltva, amikor egy új zeneszám elindul, a képernyő közepén egy új infobox jelenik meg.\n\nA zeneszámok átugrásához duplán érintse meg a zene adatait.\n\nHa Pixel-e van, és engedélyezi a Now Playing szolgáltatást és annak értesítéseit a rendszer hangbeállításaiban, az Ambient Music akkor is működni fog.</string>
+    <string name="force_ambient_for_media_title">Engedélyez</string>
     <!-- DU logo -->
     <string name="du_logo_title">DU jelkép</string>
     <string name="du_logo_summary">Engedje, hogy mindenki láthassa, ha ránéz a képernyőjére, hogy Dirty Unicorns-t használ</string>
@@ -200,14 +200,14 @@
     <string name="status_bar_title">Állapotsor</string>
     <string name="status_bar_style_title">Stílus</string>
     <string name="status_bar_clock">Óra és Dátum</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
+    <string name="clock_enabled">Engedélyezve</string>
+    <string name="clock_disabled">Letiltva</string>
     <string name="status_bar_clock_style_reset">Szín visszaállítása</string>
     <string name="status_bar_show_clock_title">Óra és dátum megjelenítése</string>
     <string name="status_bar_am_pm_title">DE/DU</string>
     <string name="status_bar_am_pm_info">24-órás formátum engedélyezve</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="enable_clock_weekday">Nap mutatása az óra mellett</string>
+    <string name="enable_clock_weekday_summary">Hét napja rövidítve jelenik meg az óra előtt</string>
     <string name="dont_show">Ne mutassa</string>
     <string name="clock_date_display">Dátum</string>
     <string name="clock_date_display_summary">Egyéni dátum megjelenítése az óra előtt</string>
@@ -263,26 +263,26 @@
     <string name="double_tap_sleep_lockscreen">A zárképernyő dupla érintésére alvómódba kerül a készülék</string>
     <!-- Show LTE/4G switch -->
     <string name="show_lte_fourgee_title">4G/LTE ikon</string>
-    <string name="show_lte_fourgee_summary">Display the 4G or LTE network icon when available in the statusbar</string>
+    <string name="show_lte_fourgee_summary">Jelenítse meg a 4G vagy LTE hálózati ikont, ha elérhető az állapotsorban</string>
     <!-- Network Traffic -->
     <string name="network_traffic_state_title">Adatforgalmi tevékenység megjelenítése</string>
     <string name="network_traffic_autohide_threshold_title">Hálózati aktivitás automatikus elrejtési küszöbérték (KB/s)</string>
     <string name="network_traffic_hidearrow">Nyilak elrejtése</string>
-    <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
+    <string name="network_traffic_hidearrow_summary">Hálózati forgalmat jelző nyilak elrejtése</string>
     <!-- Button Settings -->
     <string name="button_settings_title">Gombok</string>
     <string name="button_settings_title_summary">Egyéni gombműveletek végrehajtása</string>
     <string name="button_settings_description">Egyéni műveletek beállítása az eszköz különböző gombjaira.</string>
-    <string name="app_picker_dialog_title">Select an app</string>
+    <string name="app_picker_dialog_title">Alkalmazás kiválasztása</string>
     <string name="button_backlight_title">Háttérvilágítás</string>
-    <string name="button_backlight_summary">Configure backlight for capacitive keys</string>
+    <string name="button_backlight_summary">A háttér világítás konfigurálása a vezérlő gombokhoz</string>
     <string name="button_backlight_on_touch_only_title">Gomb érintése</string>
     <string name="button_backlight_on_touch_only_summary">Csak a gombok érintésekor kapcsolja be a háttérvilágítást</string>
-    <string name="button_timeout_title">Backlight timeout (seconds)</string>
+    <string name="button_timeout_title">Háttér világítás idő tartama (másodperc)</string>
     <string name="button_link_brightness">Igazodjon a képernyő fényerejéhez</string>
-    <string name="button_link_brightness_summary">Use screen brightness level</string>
+    <string name="button_link_brightness_summary">Használja a képernyő fényerejét</string>
     <string name="button_manual_brightness">Fényerősség</string>
-    <string name="button_backlight_enable_title">Allow backlight</string>
+    <string name="button_backlight_enable_title">Engedélyezi a háttér világitást</string>
     <string name="navigation_bar_title">Képernyőn megjelenő navigációs sáv</string>
     <string name="navigation_bar_title_summary">A képernyőn lévő navigációs sáv engedélyezése</string>
     <string name="home_key_title">Kezdőlap gomb</string>
@@ -293,9 +293,9 @@
     <string name="camera_key_title">Kamera gomb</string>
     <string name="short_press_title">Rövid érintés művelete</string>
     <string name="long_press_title">Nyomva tartás művelete</string>
-    <string name="long_press_custom_app_title">Long press custom app</string>
-    <string name="double_tap_title">Double tap action</string>
-    <string name="double_tap_custom_app_title">Double tap custom app</string>
+    <string name="long_press_custom_app_title">Hosszan nyomva egyéni alkalmazás</string>
+    <string name="double_tap_title">Dupla érintés művelete</string>
+    <string name="double_tap_custom_app_title">Dupla érintésre egyéni alkalmazás</string>
     <string name="action_nothing">Nincs művelet</string>
     <string name="action_menu">Menü</string>
     <string name="action_app_switch">Előzmények</string>
@@ -328,13 +328,13 @@
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
     <!-- Active edge -->
-    <string name="active_edge_short_actions_title">Short squeeze action</string>
-    <string name="active_edge_long_actions_title">Long squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
-    <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
+    <string name="active_edge_short_actions_title">Rövid szorítás művelete</string>
+    <string name="active_edge_long_actions_title">Hosszú szorítás művelete</string>
+    <string name="active_edge_sensitivity_title">Szorítás érzékenysége</string>
+    <string name="active_edge_wake_title">Engedélyezi amikor a képernyő ki van kapcsolva</string>
+    <string name="active_edge_wake_summary">Indítsa el a műveletet, amikor a képernyő ki van kapcsolva</string>
+    <string name="active_edge_ss_app_select_title">Válassz alkalmazást rövid nyomásra</string>
+    <string name="active_edge_ls_app_select_title">Válassz alkalmazást hosszú nyomásra</string>
+    <string name="active_edge_app_select_summary">Válasszon ki egy alkalmazást, amely nyomásra elindul</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display.\n\nLong press on apps in the Select App menu to show and choose a specific activity.</string>
 </resources>
