@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Dirty Unicorns Project
+<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -95,40 +95,6 @@
                     </FrameLayout>
 
                     <FrameLayout
-                        android:id="@+id/littlealex"
-                        android:layout_width="80dp"
-                        android:layout_height="75dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="75dp">
-
-                            <com.dirtyunicorns.support.helpers.CircularImageView
-                                android:id="@+id/littlealex_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/littlealex"
-                                app:civ_border_color="@color/team_dialog_circle_border_color"
-                                app:civ_border="true"
-                                app:civ_border_width="3dp" />
-
-                            <TextView
-                                android:id="@+id/littlealex_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Alex"
-                                android:textStyle="bold"
-                                android:layout_below="@+id/littlealex_image"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
                         android:id="@+id/bret"
                         android:layout_width="80dp"
                         android:layout_height="75dp">
@@ -155,40 +121,6 @@
                                 android:text="Bret"
                                 android:textStyle="bold"
                                 android:layout_below="@+id/bret_image"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/daniel"
-                        android:layout_width="80dp"
-                        android:layout_height="75dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="75dp">
-
-                            <com.dirtyunicorns.support.helpers.CircularImageView
-                                android:id="@+id/daniel_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/daniel"
-                                app:civ_border_color="@color/team_dialog_circle_border_color"
-                                app:civ_border="true"
-                                app:civ_border_width="3dp" />
-
-                            <TextView
-                                android:id="@+id/daniel_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Daniel"
-                                android:textStyle="bold"
-                                android:layout_below="@+id/daniel_image"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="3dp" />
 
@@ -401,6 +333,40 @@
                     </FrameLayout>
 
                     <FrameLayout
+                        android:id="@+id/littlealex"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.support.helpers.CircularImageView
+                                android:id="@+id/littlealex_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/littlealex"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/littlealex_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Little Alex"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/littlealex_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
                         android:id="@+id/mark"
                         android:layout_width="80dp"
                         android:layout_height="75dp">
@@ -427,40 +393,6 @@
                                 android:text="Mark"
                                 android:textStyle="bold"
                                 android:layout_below="@+id/mark_image"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/mat"
-                        android:layout_width="80dp"
-                        android:layout_height="75dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="75dp">
-
-                            <com.dirtyunicorns.support.helpers.CircularImageView
-                                android:id="@+id/mat_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/mat"
-                                app:civ_border_color="@color/team_dialog_circle_border_color"
-                                app:civ_border="true"
-                                app:civ_border_width="3dp" />
-
-                            <TextView
-                                android:id="@+id/mat_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mat"
-                                android:textStyle="bold"
-                                android:layout_below="@+id/mat_image"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="3dp" />
 
@@ -563,6 +495,40 @@
                                 android:text="Nicolas"
                                 android:textStyle="bold"
                                 android:layout_below="@+id/nicolas_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/surge"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp">
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="75dp">
+
+                            <com.dirtyunicorns.support.helpers.CircularImageView
+                                android:id="@+id/surge_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/surge"
+                                app:civ_border_color="@color/team_dialog_circle_border_color"
+                                app:civ_border="true"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/surge_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Surge"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/surge_image"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="3dp" />
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2018 The Dirty Unicorns Project
+ * Copyright (C) 2017-2019 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,19 +16,19 @@
 
 package com.dirtyunicorns.tweaks.fragments;
 
+import androidx.annotation.NonNull;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import androidx.fragment.app.DialogFragment;
 
 import com.dirtyunicorns.tweaks.R;
 
@@ -62,9 +62,6 @@ public class Team extends DialogFragment {
             FrameLayout bret = view.findViewById(R.id.bret);
             setTeamMember("MazWoz", bret);
 
-            FrameLayout daniel = view.findViewById(R.id.daniel);
-            setTeamMember("wrapped", daniel);
-
             FrameLayout edwin = view.findViewById(R.id.edwin);
             setTeamMember("spaceman860", edwin);
 
@@ -89,9 +86,6 @@ public class Team extends DialogFragment {
             FrameLayout mark = view.findViewById(R.id.mark);
             setTeamMember("moepda", mark);
 
-            FrameLayout mat = view.findViewById(R.id.mat);
-            setTeamMember("tsubus", mat);
-
             FrameLayout nathan = view.findViewById(R.id.nathan);
             setTeamMember("nathanchance", nathan);
 
@@ -100,6 +94,9 @@ public class Team extends DialogFragment {
 
             FrameLayout nicolas = view.findViewById(R.id.nicolas);
             setTeamMember("Nico60", nicolas);
+
+            FrameLayout surge = view.findViewById(R.id.surge);
+            setTeamMember("Surge1223", surge);
 
             FrameLayout tushar = view.findViewById(R.id.tushar);
             setTeamMember("DeviousFusion", tushar);

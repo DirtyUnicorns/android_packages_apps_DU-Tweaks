@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The ABC rom
+ * Copyright (C) 2019 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,9 +41,6 @@ public class Recents extends SettingsPreferenceFragment implements Indexable {
     @Override
     public void onResume() {
         super.onResume();
-        IconPackPreference iconPackPref = (IconPackPreference) findPreference("recents_icon_pack");
-        // Re-initialise preference
-        iconPackPref.init();
     }
 
     @Override

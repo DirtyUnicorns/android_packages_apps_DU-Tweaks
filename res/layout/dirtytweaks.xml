@@ -26,11 +26,17 @@
 
     </FrameLayout>
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/navigation"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@id/navigation"
+        android:background="@drawable/bottomnav_shadow"/>
 
     <com.dirtyunicorns.tweaks.navigation.BottomNavigationViewCustom
         android:id="@+id/navigation"
@@ -38,8 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
-        app:itemIconTint="@drawable/icon_selector"
-        app:itemTextColor="@drawable/icon_selector"
+        style="@style/DtBottomNavStyle"
         app:menu="@menu/main" />
 
 </RelativeLayout>

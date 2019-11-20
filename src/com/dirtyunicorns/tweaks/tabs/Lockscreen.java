@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2018 The Dirty Unicorns Project
+ * Copyright (C) 2017-2019 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,11 +17,11 @@
 package com.dirtyunicorns.tweaks.tabs;
 
 import android.os.Bundle;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v14.preference.PreferenceFragment;
 import android.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceFragment;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;

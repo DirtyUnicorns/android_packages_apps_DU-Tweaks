@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2018 The Dirty Unicorns Project
+ * Copyright (C) 2017-2019 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,21 +16,21 @@
 
 package com.dirtyunicorns.tweaks;
 
-import android.app.DialogFragment;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -46,17 +46,17 @@ import com.dirtyunicorns.tweaks.tabs.System;
 
 public class DirtyTweaks extends SettingsPreferenceFragment {
 
-    private MenuItem menuitem;
+    private MenuItem mMenuItem;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        getActivity().setTitle(R.string.dirtytweaks_title);
+
         View view = inflater.inflate(R.layout.dirtytweaks, container, false);
 
         final BottomNavigationViewCustom navigation = view.findViewById(R.id.navigation);
-        navigation.setBackground(new ColorDrawable(
-                getResources().getColor(R.color.BottomBarBackgroundColor)));
 
         final ViewPager viewPager = view.findViewById(R.id.viewpager);
         PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
@@ -94,13 +94,13 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
             @Override
             public void onPageSelected(int position) {
-                if(menuitem != null) {
-                    menuitem.setChecked(false);
+                if(mMenuItem != null) {
+                    mMenuItem.setChecked(false);
                 } else {
                     navigation.getMenu().getItem(0).setChecked(false);
                 }
                 navigation.getMenu().getItem(position).setChecked(true);
-                menuitem = navigation.getMenu().getItem(position);
+                mMenuItem = navigation.getMenu().getItem(position);
             }
 
             @Override
