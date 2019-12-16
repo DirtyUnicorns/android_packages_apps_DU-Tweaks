@@ -144,4 +144,8 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
+    <!-- QS visibility -->
+    <string name="qs_tile_title_visibility_title">Tiles title</string>
+    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
+
 </resources>
