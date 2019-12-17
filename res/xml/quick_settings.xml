@@ -18,9 +18,38 @@
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/quicksettings_title" >
 
-    <Preference
-        android:key="qs_rows_columns"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.QsRowsColumns"
-        android:title="@string/qs_rows_columns_title"/>
+    <PreferenceCategory
+        android:key="qs_layout_category"
+        android:title="@string/systemui_tuner_navbar_title">
+
+        <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="5"
+            settings:min="1"
+            settings:units="" />
+
+        <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="3"
+            settings:min="1"
+            settings:units="" />
+
+        <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
+            android:key="qs_columns_portrait"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="7"
+            settings:min="1"
+            settings:units="" />
+
+        <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
+            android:key="qs_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="9"
+            settings:min="1"
+            settings:units="" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
