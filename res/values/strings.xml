@@ -110,6 +110,7 @@
     <string name="powermenu_screenshot_title">Screenshot</string>
 
     <!-- QS layout -->
+    <string name="qs_layout_title">Layout</string>
     <string name="qs_rows_portrait_title">Rows (portrait)</string>
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
     <string name="qs_columns_portrait_title">Columns (portrait)</string>
