@@ -174,4 +174,15 @@
         <item>1</item>
     </string-array>
 
+    <!-- Motion Sense -->
+    <string-array name="skip_direction_entries">
+        <item>@string/gesture_skip_direction_rtl</item>
+        <item>@string/gesture_skip_direction_ltr</item>
+    </string-array>
+
+    <string-array name="skip_direction_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
 </resources>

@@ -71,6 +71,8 @@
     <string name="navigation_options_summary">Configure navigation options</string>
 
     <!-- Multitasking -->
+    <string name="aware_settings_title">Motion Sense</string>
+    <string name="aware_settings_summary">Configure Motion Sense options</string>
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">Configure Active Edge options</string>
     <string name="headsup_title">Heads up</string>
@@ -196,5 +198,42 @@
     <!-- DU logo -->
     <string name="du_logo_title">DU swag</string>
     <string name="du_logo_summary">Let everyone know that you\'re using DU when they see your screen</string>
+
+    <!-- Motion Sense -->
+    <string name="ambient_display_wake_screen_summary">To check time, notifications, and other info, reach for your phone</string>
+    <string name="ambient_display_wake_screen_summary_on">On</string>
+    <string name="aware_category_display">Ambient Display</string>
+    <string name="aware_category_gesture">Quick Gestures</string>
+    <string name="aware_disabled_preference_action">Motion Sense Settings</string>
+    <string name="aware_disabled_preference_dialog_content">To use this feature, turn on Motion Sense</string>
+    <string name="aware_disabled_preference_dialog_title">This feature is turned off</string>
+    <string name="aware_disabled_preference_neutral">Not now</string>
+    <string name="aware_display_settings_title">Idle lock screen</string>
+    <string name="aware_settings_description">With new sensors, Pixel can recognize distance and movement around the phone</string>
+    <string name="aware_settings_disabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are not supported in this country</string>
+    <string name="aware_settings_disabled_info_dialog_title">Motion Sense is off</string>
+    <string name="aware_settings_enabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are supported in this country</string>
+    <string name="aware_settings_enabled_info_dialog_title">Motion Sense is on</string>
+    <string name="aware_wake_display_summary">Show time, notification icons, and other info when you’re nearby</string>
+    <string name="aware_wake_display_summary_aod_off">Unavailable because always-on display is off</string>
+    <string name="aware_wake_display_title">Show display when nearby</string>
+    <string name="dialog_aware_settings_message">If you turn off Motion Sense, you can’t use Quick Gestures, show display when nearby, and reach to check phone</string>
+    <string name="dialog_aware_settings_title">Turn off Motion Sense?</string>
+    <string name="gesture_aware_confirmation_action_button">Got it</string>
+    <string name="gesture_aware_disabled_info_dialog_content">Quick Gestures and other Motion Sense features are not supported in this country.</string>
+    <string name="gesture_aware_off_dialog_content">To use Quick Gestures, turn on Motion Sense.</string>
+    <string name="gesture_aware_off_dialog_title">Quick Gestures are off</string>
+    <string name="gesture_silence_on_summary">On / Snooze alarms and silence calls</string>
+    <string name="gesture_silence_summary">Snooze alarms and silence calls</string>
+    <string name="gesture_silence_title">Silence interruptions</string>
+    <string name="gesture_skip_direction_ltr">Swipe left to right for next song</string>
+    <string name="gesture_skip_direction_rtl">Swipe right to left for next song</string>
+    <string name="gesture_skip_direction_title">Swipe direction</string>
+    <string name="gesture_skip_on_summary">On / Skip to the next or previous song</string>
+    <string name="gesture_skip_summary">Skip to the next or previous song</string>
+    <string name="gesture_skip_title">Skip songs</string>
+    <string name="wake_screen_aware_disabled_info_dialog_content">Reach to check phone and other Motion Sense features are not supported in this country</string>
+    <string name="wake_screen_aware_off_dialog_content">To use Reach to check phone, turn on Motion Sense</string>
+    <string name="wake_screen_aware_off_dialog_title">Reach to check phone is off</string>
 
 </resources>

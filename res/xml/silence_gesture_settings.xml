@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/gesture_silence_title"
+    android:key="silence_gesture">
+
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_silence_video"
+        app:animation="@raw/gesture_silence"
+        app:preview="@drawable/gesture_silence" />
+
+    <SwitchPreference
+        android:key="gesture_silence"
+        android:title="@string/gesture_silence_title"
+        android:summary="@string/gesture_silence_summary"
+        app:controller="com.google.android.settings.aware.SilenceGesturePreferenceController"
+        app:allowDividerAbove="true" />
+
+</PreferenceScreen>

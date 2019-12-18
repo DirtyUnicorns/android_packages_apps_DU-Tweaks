@@ -22,6 +22,12 @@
         android:title="@string/active_edge_title"
         android:summary="@string/active_edge_summary"
         android:fragment="com.dirtyunicorns.tweaks.fragments.ActiveEdge" />
+  
+    <com.google.android.settings.aware.AwareSettingsDialogPreference
+        android:key="aware_settings"
+        android:icon="@drawable/dt_aware"
+        android:title="@string/aware_settings_title"
+        android:summary="@string/aware_settings_summary" />
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="heads_up_category"

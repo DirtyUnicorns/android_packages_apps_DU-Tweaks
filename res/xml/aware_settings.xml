@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="aware_settings_page"
+    android:title="@string/aware_settings_title">
+
+    <com.android.settings.widget.VideoPreference
+        android:key="aware_settings_video"
+        android:title="@string/summary_placeholder"
+        settings:controller="com.android.settings.widget.VideoPreferenceController"
+        settings:animation="@raw/aware_settings"
+        settings:preview="@drawable/aware_settings" />
+
+    <SwitchPreference
+        android:key="aware_toggle"
+        android:title="@string/aware_settings_title"
+        settings:controller="com.google.android.settings.aware.AwarePreferenceController"
+        settings:allowDividerAbove="true" />
+
+    <PreferenceCategory
+        android:key="aware_settings_gesture"
+        android:title="@string/aware_category_gesture"
+        settings:controller="com.google.android.settings.aware.AwarePreferenceCategoryController">
+
+        <Preference
+            android:key="aware_gesture_skip"
+            android:title="@string/gesture_skip_title"
+            android:fragment="com.google.android.settings.aware.SkipGestureSettings"
+            settings:controller="com.google.android.settings.aware.AwareSkipPreferenceController"
+            settings:searchable="false" />
+
+        <Preference
+            android:key="aware_gesture_silence"
+            android:title="@string/gesture_silence_title"
+            android:fragment="com.google.android.settings.aware.SilenceGestureSettings"
+            settings:controller="com.google.android.settings.aware.AwareSilencePreferenceController"
+            settings:searchable="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="aware_settings_display"
+        android:title="@string/aware_category_display"
+        settings:controller="com.google.android.settings.aware.AwarePreferenceCategoryController">
+
+        <com.android.settingslib.RestrictedPreference
+            android:key="aware_wake_display"
+            android:title="@string/aware_display_settings_title"
+            android:fragment="com.google.android.settings.aware.AwareDisplaySettings"
+            settings:controller="com.google.android.settings.aware.AwareDisplayPreferenceController"
+            settings:userRestriction="no_ambient_display"
+            settings:searchable="false" />
+
+        <Preference
+            android:key="wake_screen"
+            android:title="@string/ambient_display_wake_screen_title"
+            android:fragment="com.google.android.settings.aware.WakeScreenGestureSettings"
+            settings:controller="com.google.android.settings.aware.AwareWakeScreenPreferenceController"
+            settings:searchable="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

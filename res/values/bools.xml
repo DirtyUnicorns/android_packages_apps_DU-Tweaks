@@ -16,6 +16,9 @@
 
 <resources>
 
+    <!-- Whether to display aware category -->
+    <bool name="has_aware">false</bool>
+
     <!-- Whether to display active edge category -->
     <bool name="has_active_edge">false</bool>
 

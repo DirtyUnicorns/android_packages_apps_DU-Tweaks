@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/gesture_skip_title"
+    android:key="skip_gesture">
+
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_skip_video"
+        app:animation="@raw/gesture_skip"
+        app:preview="@drawable/gesture_skip" />
+
+    <SwitchPreference
+        android:key="gesture_skip"
+        android:title="@string/gesture_skip_title"
+        android:summary="@string/gesture_skip_summary"
+        app:controller="com.google.android.settings.aware.SkipGesturePreferenceController"
+        app:allowDividerAbove="true" />
+
+    <ListPreference
+        android:key="gesture_skip_direction"
+        android:title="@string/gesture_skip_direction_title"
+        android:entries="@array/skip_direction_entries"
+        android:entryValues="@array/skip_direction_values"
+        app:controller="com.google.android.settings.aware.SkipGestureDirectionPreferenceController" />
+
+</PreferenceScreen>

@@ -17,6 +17,7 @@
 package com.dirtyunicorns.tweaks.tabs;
 
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -31,6 +32,7 @@ public class Multitasking extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String ACTIVE_EDGE_CATEGORY = "active_edge_category";
+    private static final String AWARE_CATEGORY = "aware_settings";
     private static final String HEADS_UP_CATEGORY = "heads_up_category";
     private static final String RECENTS_CATEGORY = "recents_category";
     private static final String TICKER_CATEGORY = "ticker_category";
@@ -47,6 +49,16 @@ public class Multitasking extends SettingsPreferenceFragment
             if (!getContext().getPackageManager().hasSystemFeature(
                     "android.hardware.sensor.assist")) {
                 getPreferenceScreen().removePreference(ActiveEdge);
+            }
+        }
+
+        Preference Aware = findPreference(AWARE_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_aware)) {
+            getPreferenceScreen().removePreference(Aware);
+        } else {
+            if (!SystemProperties.getBoolean(
+                    "ro.vendor.aware_available", false)) {
+                getPreferenceScreen().removePreference(Aware);
             }
         }
 
