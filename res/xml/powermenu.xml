@@ -30,6 +30,11 @@
         android:defaultValue="false" />
 
     <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+        android:key="lockdown_in_power_menu"
+        android:title="@string/powermenu_lockdown_title"
+        android:defaultValue="false" />
+
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
         android:key="screenshot_in_power_menu"
         android:title="@string/powermenu_screenshot_title"
         android:defaultValue="true" />
