@@ -65,6 +65,9 @@ public class Team extends DialogFragment {
             FrameLayout edwin = view.findViewById(R.id.edwin);
             setTeamMember("spaceman860", edwin);
 
+            FrameLayout ezio = view.findViewById(R.id.ezio);
+            setTeamMember("ezio84", ezio);
+
             FrameLayout giuseppe = view.findViewById(R.id.giuseppe);
             setTeamMember("Jertlok", giuseppe);
 
