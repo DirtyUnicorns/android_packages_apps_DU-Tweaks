@@ -32,6 +32,8 @@ import androidx.fragment.app.DialogFragment;
 
 import com.dirtyunicorns.tweaks.R;
 
+import com.android.internal.util.du.Utils;
+
 public class Team extends DialogFragment {
 
     @Override
@@ -114,19 +116,21 @@ public class Team extends DialogFragment {
     }
 
     private void setTeamMember(final String github, final FrameLayout name) {
-        if (name != null) {
-            name.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    try {
-                        Intent intent = new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://github.com/" + github));
-                        startActivity(intent);
-                    } catch (ActivityNotFoundException e) {
-                        e.printStackTrace();
+        if (Utils.isConnected(getContext())) {
+            if (name != null) {
+                name.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        try {
+                            Intent intent = new Intent(Intent.ACTION_VIEW,
+                                    Uri.parse("https://github.com/" + github));
+                            startActivity(intent);
+                        } catch (ActivityNotFoundException e) {
+                            e.printStackTrace();
+                        }
                     }
-                }
-            });
+                });
+            }
         }
     }
 
