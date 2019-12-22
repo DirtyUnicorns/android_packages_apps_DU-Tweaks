@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Dirty Tweaks -->
+    <string name="dirtytweaks_title">Dirty Tweaks</string>
+    <string name="dirtytweaks_summary">Améliorez votre expérience</string>
+
+    <!-- The Team -->
+    <string name="dialog_team_title">L\'équipe</string>
+
+    <!-- Bottom navigation -->
+    <string name="bottom_nav_system_title">Système</string>
+    <string name="bottom_nav_lockscreen_title">Écran de déverrouillage</string>
+    <string name="bottom_nav_statusbar_title">Barre d\'état</string>
+    <string name="bottom_nav_navigation_title">Navigation</string>
+    <string name="bottom_nav_multitasking_title">Multi-tâche</string>
+
+    <!-- Categories -->
+    <!-- System -->
+    <string name="device_extras_title">Réglages spécifiques</string>
+    <string name="device_extras_summary">Réglages spécifiques de cet appareil</string>
+    <string name="expanded_desktop_title">Bureau étendu</string>
+    <string name="expanded_desktop_summary">Réglages de l\'affichage de la barre d\'état et de la barre de navigation par application</string>
+    <string name="miscellaneous_title">Divers</string>
+    <string name="miscellaneous_summary">Réglages divers</string>
+    <string name="powermenu_title">Menu Marche/Arrêt</string>
+    <string name="powermenu_summary">Réglages des options du menu Marche/Arrêt</string>
+
+    <!-- Lockscreen -->
+    <string name="fingerprint_prefs_title">Empreinte digitale</string>
+    <string name="fingerprint_prefs_summary">Réglages spécifiques au lecteur d\'empreintes digitales</string>
+    <string name="lockscreen_items_title">Écran de déverrouillage</string>
+    <string name="lockscreen_items_summary">Réglages des éléments à afficher sur l\'écran de déverrouillage</string>
+
+    <!-- Statusbar -->
+    <string name="battery_options_title">Batterie</string>
+    <string name="battery_options_summary">Réglages de l\'icône de la batterie de la barre d\'état et de la tuile du panneau de configuration</string>
+    <string name="carrier_label_title">Libellé opérateur</string>
+    <string name="carrier_label_summary">Réglages du libellé opérateur de la barre d\'état</string>
+    <string name="clock_options_title">Horloge</string>
+    <string name="clock_options_summary">Réglages de l\'horloge de la barre d\'état</string>
+    <string name="icon_manager_title">Gestionnaire d\'icônes</string>
+    <string name="icon_manager_summary">Réglages de l\'affichage des éléments de la barre d\'état</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_summary">Réglages spécifiques des notifications système</string>
+    <string name="quicksettings_title">Panneau de configuration</string>
+    <string name="quicksettings_summary">Réglages du panneau de configuration</string>
+    <string name="ticker_title">Aperçu de notification</string>
+    <string name="ticker_summary">Réglages de l\'aperçu de notification sur la barre d\'état</string>
+    <string name="traffic_title">Indicateur de trafic</string>
+    <string name="traffic_summary">Réglages de l\'indicateur de vitesse de réseau sur la barre d\'état</string>
+
+    <!-- Navigation -->
+    <string name="buttons_title">Boutons</string>
+    <string name="buttons_summary">Réglages des boutons physiques et du bouton Volume</string>
+    <string name="navigation_options_title">Barre de navigation</string>
+    <string name="navigation_options_summary">Réglages des options de la barre de navigation</string>
+
+    <!-- Multitasking -->
+    <string name="active_edge_title">Bord actif</string>
+    <string name="active_edge_summary">Réglages des options \"Bord actif\"</string>
+    <string name="headsup_title">Notifications flottantes</string>
+    <string name="headsup_summary">Réglages des notifications flottantes</string>
+    <string name="recents_title">Applications récentes</string>
+    <string name="recents_summary">Réglages des applications récentes</string>
+
+    <!-- Themes -->
+    <string name="theme_category_title">Options de thème</string>
+    <string name="accent_picker_dialog_title">Sélectionner une couleur d\'accentuation</string>
+    <string name="theme_accent_picker_title">Couleur d\'accentuation</string>
+    <string name="theme_accent_picker_summary">Réglages de la couleur d\'accentuation du thème système</string>
+    <string name="theme_accent_picker_default">Par défaut</string>
+    <string name="accent_picker_material_colors">Sélecteur de couleur</string>
+    <string name="accent_picker_custom_colors">Personnalisée</string>
+    <string name="qs_styles_dialog_title">Réglages de l\'aspect des tuiles du panneau de configuration rapide</string>
+
+    <!-- Flashlight gestures -->
+    <string name="double_tap_power_flashlight_title">Lampe de poche en mode veille</string>
+    <string name="torch_power_button_gesture_none">Désactivé</string>
+    <string name="torch_power_button_gesture_dt">Double appui sur le bouton Marche/Arrêt</string>
+    <string name="torch_power_button_gesture_lp">Appui prolongé sur le bouton Marche/Arrêt</string>
+
+    <!-- Volume rocker music control -->
+    <string name="volume_button_music_control_title">Contrôle de lecture</string>
+    <string name="volume_button_music_control_summary">Sur écran éteint, un appui prolongé sur les touches Volume change la chanson</string>
+
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Afficher l\'indicateur de vitesse de réseau lorsque la barre d\'état est déployée</string>
+    <string name="network_traffic_autohide_threshold_title">Seuil de masquage automatique (KB/s)</string>
+    <string name="network_traffic_hidearrow">Flèches de l\'indicateur</string>
+    <string name="network_traffic_hidearrow_summary">Masquer les flèches de l\'indicateur de vitesse de réseau</string>
+
+    <!-- Advanced Reboot Menu -->
+    <string name="powermenu_reboot_title">Redémarrer</string>
+    <string name="powermenu_advanced_restart_title">Redémarrage optimisé</string>
+    <string name="powermenu_advanced_restart_summary">Afficher le menu incluant davantage d\'options de redémarrage</string>
+    <string name="powermenu_lockdown_title">Écran de déverrouillage</string>
+    <string name="powermenu_screenshot_title">Capture d\'écran</string>
+
+    <!-- QS layout -->
+    <string name="qs_layout_title">Disposition</string>
+    <string name="qs_rows_portrait_title">Lignes de tuiles en mode portrait</string>
+    <string name="qs_rows_landscape_title">Lignes de tuiles en mode paysage</string>
+    <string name="qs_columns_portrait_title">Colonnes de tuiles en mode portrait</string>
+    <string name="qs_columns_landscape_title">Colonnes de tuiles en mode paysage</string>
+
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Déroulement rapide</string>
+    <string name="quick_pulldown_none">Désactivé</string>
+    <string name="quick_pulldown_right">Tirer vers le bas du côté droit de la barre d\'état</string>
+    <string name="quick_pulldown_left">Tirer vers le bas du côté gauche de la barre d\'état</string>
+
+    <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">Animations</string>
+    <string name="qs_tile_animation_style_title">Style</string>
+    <string name="qs_tile_animation_duration_title">Vitesse</string>
+    <string name="qs_tile_animation_interpolator_title">Effet supplémentaire</string>
+    <string name="qs_tile_animation_style_off">Aucune animation</string>
+    <string name="qs_tile_animation_style_flip">Retournement</string>
+    <string name="qs_tile_animation_style_rotate">Rotation</string>
+    <string name="qs_tile_animation_duration_low">Lente</string>
+    <string name="qs_tile_animation_duration_default">Normale</string>
+    <string name="qs_tile_animation_duration_fast">Rapide</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linéaire</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accélérer</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Décélérer</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accélérer et décélérer</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Rebondir</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Surpasser</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticiper</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticiper et surpasser</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+
+    <!-- QS visibility -->
+    <string name="qs_tile_title_visibility_title">Titre des tuiles</string>
+    <string name="qs_tile_title_visibility_summary">Afficher les titres sous les tuiles du panneau de configuration</string>
+
+</resources>
