@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018 The Dirty Unicorns Project
+<!-- Copyright (C) 2018-2019 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -28,14 +28,23 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/SelectAccentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textColor="?android:textColorPrimary"
+            android:text="@string/accent_picker_dialog_title" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginStart="23dp"
-            android:textStyle="bold"
+            android:textAllCaps="true"
             android:textSize="14sp"
-            android:text="@string/accent_picker_material_colors" />
+            android:text="@string/accent_picker_stock_colors" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -48,7 +57,7 @@
                 android:columnCount="1"
                 android:columnOrderPreserved="true">
 
-                <include layout="@layout/material_colors" />
+                <include layout="@layout/stock_colors" />
 
             </GridLayout>
         </HorizontalScrollView>
@@ -58,8 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginStart="23dp"
-            android:textStyle="bold"
+            android:textAllCaps="true"
             android:textSize="14sp"
             android:text="@string/accent_picker_custom_colors" />
 
@@ -78,14 +86,5 @@
 
             </GridLayout>
         </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/SelectAccentTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="20dp"
-            android:textSize="14sp"
-            android:text="@string/accent_picker_dialog_title" />
     </LinearLayout>
 </ScrollView>
