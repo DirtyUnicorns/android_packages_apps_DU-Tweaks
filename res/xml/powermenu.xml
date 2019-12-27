@@ -37,6 +37,11 @@
     <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
         android:key="screenshot_in_power_menu"
         android:title="@string/powermenu_screenshot_title"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
+
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+        android:key="screenrecord_in_power_menu"
+        android:title="@string/powermenu_screenrecord_title"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
