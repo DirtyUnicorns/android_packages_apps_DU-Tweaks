@@ -78,15 +78,6 @@
     <string name="recents_title">Recents</string>
     <string name="recents_summary">Configure recents options</string>
 
-    <!-- Themes -->
-    <string name="theme_category_title">Theme options</string>
-    <string name="accent_picker_dialog_title">Select an accent</string>
-    <string name="theme_accent_picker_title">Accent color</string>
-    <string name="theme_accent_picker_summary">Select system theme accent color</string>
-    <string name="theme_accent_picker_default">Default</string>
-    <string name="accent_picker_stock_colors">Stock</string>
-    <string name="accent_picker_custom_colors">Custom</string>
-
     <!-- Flashlight gestures -->
     <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
     <string name="torch_power_button_gesture_none">Disabled</string>

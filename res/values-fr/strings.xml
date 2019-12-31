@@ -79,16 +79,6 @@
     <string name="recents_title">Applications récentes</string>
     <string name="recents_summary">Réglages des applications récentes</string>
 
-    <!-- Themes -->
-    <string name="theme_category_title">Options de thème</string>
-    <string name="accent_picker_dialog_title">Sélectionner une couleur d\'accentuation</string>
-    <string name="theme_accent_picker_title">Couleur d\'accentuation</string>
-    <string name="theme_accent_picker_summary">Réglages de la couleur d\'accentuation du thème système</string>
-    <string name="theme_accent_picker_default">Par défaut</string>
-    <string name="accent_picker_material_colors">Sélecteur de couleur</string>
-    <string name="accent_picker_custom_colors">Personnalisée</string>
-    <string name="qs_styles_dialog_title">Réglages de l\'aspect des tuiles du panneau de configuration rapide</string>
-
     <!-- Flashlight gestures -->
     <string name="double_tap_power_flashlight_title">Lampe de poche en mode veille</string>
     <string name="torch_power_button_gesture_none">Désactivé</string>
