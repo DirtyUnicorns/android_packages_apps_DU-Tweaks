@@ -34,6 +34,8 @@ import com.dirtyunicorns.tweaks.R;
 
 import com.android.internal.util.du.Utils;
 
+import java.util.Objects;
+
 public class Team extends DialogFragment {
 
     @Override
@@ -44,8 +46,9 @@ public class Team extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
-        LayoutInflater inflater = (LayoutInflater) getContext()
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                getActivity(), R.style.TeamDialogTheme);
+        LayoutInflater inflater = (LayoutInflater) Objects.requireNonNull(getContext())
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final ViewGroup nullParent = null;
         View view = null;
