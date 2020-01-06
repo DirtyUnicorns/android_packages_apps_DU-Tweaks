@@ -79,6 +79,15 @@
     <string name="recents_title">Applications récentes</string>
     <string name="recents_summary">Réglages des applications récentes</string>
 
+    <!-- Lockscreen clock style -->
+    <string name="lockscreen_clock_title">Horloge</string>
+    <string name="lockscreen_clock_dialog_title">Afficher le widget Horloge</string>
+    <string name="lockscreen_clock_hide">Masqué</string>
+    <string name="lockscreen_clock_default">Par défaut</string>
+    <string name="lockscreen_clock_default_bold">Par défaut (gras)</string>
+    <string name="lockscreen_clock_sammy">Sammy</string>
+    <string name="lockscreen_clock_sammy_bold">Sammy (gras)</string>
+
     <!-- Flashlight gestures -->
     <string name="double_tap_power_flashlight_title">Lampe de poche en mode veille</string>
     <string name="torch_power_button_gesture_none">Désactivé</string>
@@ -101,6 +110,7 @@
     <string name="powermenu_advanced_restart_summary">Afficher le menu incluant davantage d\'options de redémarrage</string>
     <string name="powermenu_lockdown_title">Écran de déverrouillage</string>
     <string name="powermenu_screenshot_title">Capture d\'écran</string>
+    <string name="powermenu_screenrecord_title">Enregistrement de l\'écran</string>
 
     <!-- QS layout -->
     <string name="qs_layout_title">Disposition</string>
@@ -138,8 +148,55 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
+    <!-- Option to show brightness bar in quick settings -->
+    <string name="show_brightness_title">Curseur de luminosité</string>
+    <string name="show_brightness_summary">Afficher le curseur de luminosité</string>
+
     <!-- QS visibility -->
     <string name="qs_tile_title_visibility_title">Titre des tuiles</string>
     <string name="qs_tile_title_visibility_summary">Afficher les titres sous les tuiles du panneau de configuration</string>
+
+    <!-- QS tiles haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibration au toucher</string>
+    <string name="quick_settings_vibrate_summary">Vibrer lors des appuis sur les tuiles du panneau de configuration</string>
+
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Barre d\'état</string>
+    <string name="status_bar_style_title">Aspect</string>
+    <string name="status_bar_clock">Date et heure</string>
+    <string name="clock_enabled">Activé</string>
+    <string name="clock_disabled">Désactivé</string>
+    <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
+    <string name="status_bar_show_clock_title">Afficher l\'heure et la date</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">L\'heure sur 24 heures est activée</string>
+    <string name="enable_clock_weekday">Jour de la semaine</string>
+    <string name="enable_clock_weekday_summary">Jour de la semaine abrégé avant l\'heure</string>
+    <string name="dont_show">Masqué</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Afficher une date personnalisée avant l\'heure</string>
+    <string name="clock_date_style">Aspect de la date</string>
+    <string name="clock_date_format">Format de la date</string>
+    <string name="clock_date_string_edittext_title">Doit être au format de date Java \"DateFormat\" par ex : MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Saisir le code</string>
+    <string name="am_pm_clock_normal">Police de taille normale</string>
+    <string name="am_pm_clock_small">Police de petite taille</string>
+    <string name="am_pm_clock_none">Masqué</string>
+    <string name="clock_date_display_none">Masqué</string>
+    <string name="clock_date_display_small">Police de petite taille</string>
+    <string name="clock_date_display_normal">Police de taille normale</string>
+    <string name="clock_date_style_normal">Normale</string>
+    <string name="clock_date_style_lowercase">Minuscule</string>
+    <string name="clock_date_style_uppercase">Majuscule</string>
+    <string name="clock_date_right">À droite de l\'horloge</string>
+    <string name="clock_date_left">À gauche de l\'horloge</string>
+    <string name="clock_date_position">Position de la date</string>
+
+    <!-- DT2S on lockscreen -->
+    <string name="double_tap_sleep_lockscreen">Veille par double appui</string>
+
+    <!-- DU logo -->
+    <string name="du_logo_title">Logo DU</string>
+    <string name="du_logo_summary">Afficher le logo de DU sur la gauche de la barre d\'état</string>
 
 </resources>
