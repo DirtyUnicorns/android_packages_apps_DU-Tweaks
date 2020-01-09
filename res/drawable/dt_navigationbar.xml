@@ -3,7 +3,8 @@
     android:width="250.000000dp"
     android:height="75.000000dp"
     android:viewportWidth="1000.000000"
-    android:viewportHeight="271.000000">
+    android:viewportHeight="271.000000"
+    android:tint="@color/dirty_tweaks_category_icon_tint">
 
     <group
         android:translateY="271.000000"

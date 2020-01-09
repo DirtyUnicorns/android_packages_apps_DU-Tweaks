@@ -19,8 +19,7 @@
     <!-- Dirty Tweaks -->
     <color name="preference_background_color">@*android:color/accent_device_default_light</color>
     <color name="team_dialog_circle_border_color">@*android:color/accent_device_default_light</color>
-    <color name="dirty_tweaks_dark_category_icon_tint">@android:color/white</color>
-    <color name="dirty_tweaks_light_category_icon_tint">@*android:color/primary_device_default_dark</color>
+    <color name="dirty_tweaks_category_icon_tint">@*android:color/notification_material_background_color</color>
     <color name="homepage_du_background">#D32F2F</color>
 
     <!-- Bottom navigation bar -->
