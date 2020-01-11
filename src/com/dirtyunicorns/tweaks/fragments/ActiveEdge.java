@@ -16,8 +16,10 @@
 
 package com.dirtyunicorns.tweaks.fragments;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import androidx.preference.PreferenceCategory;
@@ -43,15 +45,119 @@ import java.util.List;
 public class ActiveEdge extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
+    private int shortSqueezeActions;
+    private int longSqueezeActions;
+
+    private CustomSeekBarPreference mActiveEdgeSensitivity;
+    private ListPreference mShortSqueezeActions;
+    private ListPreference mLongSqueezeActions;
+    private SwitchPreference mActiveEdgeWake;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.active_edge);
 
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        shortSqueezeActions = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.SHORT_SQUEEZE_SELECTION, 0,
+                UserHandle.USER_CURRENT);
+        mShortSqueezeActions = (ListPreference) findPreference("short_squeeze_selection");
+        mShortSqueezeActions.setValue(Integer.toString(shortSqueezeActions));
+        mShortSqueezeActions.setSummary(mShortSqueezeActions.getEntry());
+        mShortSqueezeActions.setOnPreferenceChangeListener(this);
+
+        longSqueezeActions = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.LONG_SQUEEZE_SELECTION, 0,
+                UserHandle.USER_CURRENT);
+        mLongSqueezeActions = (ListPreference) findPreference("long_squeeze_selection");
+        mLongSqueezeActions.setValue(Integer.toString(longSqueezeActions));
+        mLongSqueezeActions.setSummary(mLongSqueezeActions.getEntry());
+        mLongSqueezeActions.setOnPreferenceChangeListener(this);
+
+        int sensitivity = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.ASSIST_GESTURE_SENSITIVITY, 2, UserHandle.USER_CURRENT);
+        mActiveEdgeSensitivity = (CustomSeekBarPreference) findPreference(
+                "gesture_assist_sensitivity");
+        mActiveEdgeSensitivity.setValue(sensitivity);
+        mActiveEdgeSensitivity.setOnPreferenceChangeListener(this);
+
+        mActiveEdgeWake = (SwitchPreference) findPreference("gesture_assist_wake");
+        mActiveEdgeWake.setChecked((Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.ASSIST_GESTURE_WAKE_ENABLED, 1,
+                UserHandle.USER_CURRENT) == 1));
+        mActiveEdgeWake.setOnPreferenceChangeListener(this);
+
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mShortSqueezeActions) {
+            int shortSqueezeActions = Integer.valueOf((String) newValue);
+            Settings.Secure.putIntForUser(getContentResolver(),
+                    Settings.Secure.SHORT_SQUEEZE_SELECTION, shortSqueezeActions,
+                    UserHandle.USER_CURRENT);
+            int index = mShortSqueezeActions.findIndexOfValue((String) newValue);
+            mShortSqueezeActions.setSummary(
+                    mShortSqueezeActions.getEntries()[index]);
+            return true;
+        } else if (preference == mLongSqueezeActions) {
+            int longSqueezeActions = Integer.valueOf((String) newValue);
+            Settings.Secure.putIntForUser(getContentResolver(),
+                    Settings.Secure.LONG_SQUEEZE_SELECTION, longSqueezeActions,
+                    UserHandle.USER_CURRENT);
+            int index = mLongSqueezeActions.findIndexOfValue((String) newValue);
+            mLongSqueezeActions.setSummary(
+                    mLongSqueezeActions.getEntries()[index]);
+            return true;
+        } else if (preference == mActiveEdgeSensitivity) {
+            int val = (Integer) newValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                    Settings.Secure.ASSIST_GESTURE_SENSITIVITY, val,
+                    UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mActiveEdgeWake) {
+            Settings.Secure.putIntForUser(getContentResolver(),
+                    Settings.Secure.ASSIST_GESTURE_WAKE_ENABLED,
+                    (Boolean) newValue ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            return true;
+        }
         return false;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        // Ensure preferences sensible to change get updated
+        actionPreferenceReload();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        // Ensure preferences sensible to change gets updated
+        actionPreferenceReload();
+    }
+
+    /* Helper for reloading both short and long gesture as they might change on
+       package uninstallation */
+    private void actionPreferenceReload() {
+        int shortSqueezeActions = Settings.Secure.getIntForUser(getContentResolver(),
+                Settings.Secure.SHORT_SQUEEZE_SELECTION, 0,
+                UserHandle.USER_CURRENT);
+
+        int longSqueezeActions = Settings.Secure.getIntForUser(getContentResolver(),
+                Settings.Secure.LONG_SQUEEZE_SELECTION, 0,
+                UserHandle.USER_CURRENT);
+
+        // Reload the action preferences
+        mShortSqueezeActions.setValue(Integer.toString(shortSqueezeActions));
+        mShortSqueezeActions.setSummary(mShortSqueezeActions.getEntry());
+
+        mLongSqueezeActions.setValue(Integer.toString(longSqueezeActions));
+        mLongSqueezeActions.setSummary(mLongSqueezeActions.getEntry());
+
     }
 
     @Override

@@ -236,4 +236,22 @@
     <string name="wake_screen_aware_off_dialog_content">To use Reach to check phone, turn on Motion Sense</string>
     <string name="wake_screen_aware_off_dialog_title">Reach to check phone is off</string>
 
+    <!-- Active edge -->
+    <string name="active_edge_short_actions_title">Short squeeze action</string>
+    <string name="active_edge_long_actions_title">Long squeeze action</string>
+    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
+    <string name="active_edge_wake_title">Allow when screen is off</string>
+    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
+    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
+
+    <!-- Custom actions -->
+    <string name="action_nothing">No action</string>
+    <string name="action_search">Assistant</string>
+    <string name="action_voice_search">Voice search</string>
+    <string name="action_launch_camera">Camera</string>
+    <string name="action_flashlight">Flashlight</string>
+    <string name="action_volume_panel">Volume panel</string>  
+    <string name="action_screen_off">Screen off</string>
+    <string name="action_screenshot">Screenshot</string>
+  
 </resources>
