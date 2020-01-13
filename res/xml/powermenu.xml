@@ -19,6 +19,11 @@
             android:title="@string/powermenu_title" >
 
     <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+        android:key="power_in_power_menu"
+        android:title="@string/powermenu_power_title"
+        android:defaultValue="true" />
+
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
         android:key="reboot_in_power_menu"
         android:title="@string/powermenu_reboot_title"
         android:defaultValue="true" />

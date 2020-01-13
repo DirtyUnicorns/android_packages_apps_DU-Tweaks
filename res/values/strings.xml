@@ -102,6 +102,7 @@
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
 
     <!-- Power menu -->
+    <string name="powermenu_power_title">Power</string>
     <string name="powermenu_reboot_title">Restart</string>
     <string name="powermenu_advanced_restart_title">Advanced restart</string>
     <string name="powermenu_advanced_restart_summary">Enables the advanced restart menu for other restarting options</string>
