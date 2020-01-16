@@ -104,7 +104,8 @@
     <string name="network_traffic_hidearrow">Flèches de l\'indicateur</string>
     <string name="network_traffic_hidearrow_summary">Masquer les flèches de l\'indicateur de vitesse de réseau</string>
 
-    <!-- Advanced Reboot Menu -->
+    <!-- Power menu -->
+    <string name="powermenu_power_title">Marche/Arrêt</string>
     <string name="powermenu_reboot_title">Redémarrer</string>
     <string name="powermenu_advanced_restart_title">Redémarrage optimisé</string>
     <string name="powermenu_advanced_restart_summary">Afficher le menu incluant davantage d\'options de redémarrage</string>
