@@ -43,9 +43,12 @@ import java.util.List;
 public class PowerMenu extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String KEY_POWER_MENU_OTHER_CAT = "powermenu_other_category";
     private static final String KEY_LOCKDOWN_IN_POWER_MENU = "lockdown_in_power_menu";
+
     private static final int MY_USER_ID = UserHandle.myUserId();
 
+    private PreferenceCategory mPowerMenuOtherCategory;
     private SwitchPreference mPowerMenuLockDown;
 
     @Override
@@ -56,6 +59,8 @@ public class PowerMenu extends SettingsPreferenceFragment
         final PreferenceScreen prefSet = getPreferenceScreen();
         final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
 
+        mPowerMenuOtherCategory = (PreferenceCategory) findPreference(KEY_POWER_MENU_OTHER_CAT);
+
         mPowerMenuLockDown = (SwitchPreference) findPreference(KEY_LOCKDOWN_IN_POWER_MENU);
         if (lockPatternUtils.isSecure(MY_USER_ID)) {
             mPowerMenuLockDown.setChecked((Settings.Secure.getInt(getContentResolver(),
@@ -63,6 +68,7 @@ public class PowerMenu extends SettingsPreferenceFragment
             mPowerMenuLockDown.setOnPreferenceChangeListener(this);
         } else {
             prefSet.removePreference(mPowerMenuLockDown);
+            prefSet.removePreference(mPowerMenuOtherCategory);
         }
     }
 

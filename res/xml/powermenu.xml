@@ -50,7 +50,7 @@
         android:defaultValue="false" />
 
     <PreferenceCategory
-        android:key="powermenu_advanced_category"
+        android:key="powermenu_other_category"
         android:title="@string/sub_category_other">
 
         <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
