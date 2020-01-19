@@ -49,4 +49,16 @@
         android:title="@string/powermenu_screenrecord_title"
         android:defaultValue="false" />
 
+    <PreferenceCategory
+        android:key="powermenu_advanced_category"
+        android:title="@string/sub_category_other">
+
+        <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+            android:key="secured_lock_power_menu"
+            android:title="@string/powermenu_lockscreen_title"
+            android:summary="@string/powermenu_lockscreen_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
