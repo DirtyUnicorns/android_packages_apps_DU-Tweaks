@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title="@string/ambient_display_wake_screen_title"
-    android:key="gesture_wake_screen_screen">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+            android:title="@string/ambient_display_wake_screen_title"
+            android:key="gesture_wake_screen_screen">
 
     <com.android.settings.widget.VideoPreference
         android:key="gesture_wake_screen_video"

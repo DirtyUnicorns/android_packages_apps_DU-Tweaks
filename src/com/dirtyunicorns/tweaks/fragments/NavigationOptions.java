@@ -39,12 +39,14 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settingslib.search.SearchIndexable;
 
 import com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@SearchIndexable
 public class NavigationOptions extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
@@ -54,7 +56,6 @@ public class NavigationOptions extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.navigation_options);
 
         final PreferenceScreen prefSet = getPreferenceScreen();
-
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -80,9 +81,11 @@ public class NavigationOptions extends SettingsPreferenceFragment
             new BaseSearchIndexProvider() {
                 @Override
                 public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
-                        boolean enabled) {
-                    final ArrayList<SearchIndexableResource> result = new ArrayList<>();
-                    final SearchIndexableResource sir = new SearchIndexableResource(context);
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.navigation_options;
                     result.add(sir);
                     return result;
@@ -90,7 +93,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
-                    final List<String> keys = super.getNonIndexableKeys(context);
+                    List<String> keys = super.getNonIndexableKeys(context);
                     return keys;
                 }
             };
