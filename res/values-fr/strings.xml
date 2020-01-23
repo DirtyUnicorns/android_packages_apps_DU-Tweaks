@@ -72,12 +72,17 @@
     <string name="navigation_options_summary">Réglages des options de la barre de navigation</string>
 
     <!-- Multitasking -->
+    <string name="aware_settings_title">Perception de geste</string>
+    <string name="aware_settings_summary">Réglages Perception de geste</string>
     <string name="active_edge_title">Bord actif</string>
     <string name="active_edge_summary">Réglages des options \"Bord actif\"</string>
     <string name="headsup_title">Notifications flottantes</string>
     <string name="headsup_summary">Réglages des notifications flottantes</string>
     <string name="recents_title">Applications récentes</string>
     <string name="recents_summary">Réglages des applications récentes</string>
+
+    <!-- Sub categories -->
+    <string name="sub_category_other">Divers</string>
 
     <!-- Lockscreen clock style -->
     <string name="lockscreen_clock_title">Horloge</string>
@@ -112,6 +117,8 @@
     <string name="powermenu_lockdown_title">Écran de déverrouillage</string>
     <string name="powermenu_screenshot_title">Capture d\'écran</string>
     <string name="powermenu_screenrecord_title">Enregistrement de l\'écran</string>
+    <string name="powermenu_lockscreen_title">Affichage du menu Marche/Arrêt</string>
+    <string name="powermenu_lockscreen_summary">Afficher la boîte de dialogue du menu Marche/Arrêt sur l\'écran de déverrouillage sécurisé</string>
 
     <!-- QS layout -->
     <string name="qs_layout_title">Disposition</string>
@@ -199,5 +206,76 @@
     <!-- DU logo -->
     <string name="du_logo_title">Logo DU</string>
     <string name="du_logo_summary">Afficher le logo de DU sur la gauche de la barre d\'état</string>
+
+    <!-- Carrier Label -->
+    <string name="carrier_options">Affichage</string>
+    <string name="custom_carrier_label_title">Libellé</string>
+    <string name="custom_carrier_label_explain">Saisir un nouveau libellé. Laisser vide pour revenir au libellé d\'origine.</string>
+    <string name="custom_carrier_label_notset">Non défini</string>
+    <string name="show_carrier_title">Libellé opérateur</string>
+    <string name="show_carrier_disabled">Désactivé</string>
+    <string name="show_carrier_keyguard">Écran de déverrouillage</string>
+    <string name="show_carrier_statusbar">Barre d\'état</string>
+    <string name="show_carrier_enabled">Sur les deux</string>
+
+    <!-- Motion Sense -->
+    <string name="ambient_display_wake_screen_summary">Pour afficher l\'heure, les notifications et d\'autres informations, saisir le téléphone</string>
+    <string name="ambient_display_wake_screen_summary_on">Activé</string>
+    <string name="aware_category_display">Affichage en mode Veille</string>
+    <string name="aware_category_gesture">Commandes gestuelles</string>
+    <string name="aware_disabled_preference_action">Perception de geste</string>
+    <string name="aware_disabled_preference_dialog_content">Pour utiliser cette fonction, activer Perception de geste</string>
+    <string name="aware_disabled_preference_dialog_title">Cette fonction est désactivée</string>
+    <string name="aware_disabled_preference_neutral">Pas maintenant</string>
+    <string name="aware_display_settings_title">Écran de déverrouillage au ralenti</string>
+    <string name="aware_settings_description">Avec les nouveaux capteurs, Pixel peut reconnaître la distance et les mouvements autour du téléphone</string>
+    <string name="aware_settings_disabled_info_dialog_content">Les fonctionnalités \"Perception de geste\", \"Commandes gestuelles\", \"Affichage à proximité\" et \"Saisir le téléphone\" ne sont pas prises en charge dans ce pays</string>
+    <string name="aware_settings_disabled_info_dialog_title">Perception de geste désactivé</string>
+    <string name="aware_settings_enabled_info_dialog_content">Les fonctionnalités \"Perception de geste\", \"Commandes gestuelles\", \"Affichage à proximité\" et \"Saisir le téléphone\" sont prises en charge dans ce pays</string>
+    <string name="aware_settings_enabled_info_dialog_title">Perception de geste activé</string>
+    <string name="aware_wake_display_summary">Pour afficher l\'heure, les notifications et d\'autres informations, lorsque vous êtes à proximité</string>
+    <string name="aware_wake_display_summary_aod_off">Non disponible car l\'Affichage en mode Veille est désactivé</string>
+    <string name="aware_wake_display_title">Réveiller l\'écran lorsque vous êtes à proximité</string>
+    <string name="dialog_aware_settings_message">La désactivation de \"Perception de geste\" désactive également \"Commandes gestuelles\", \"Affichage à proximité\" et \"Saisir le téléphone\".</string>
+    <string name="dialog_aware_settings_title">Désactiver \"Perception de geste\" ?</string>
+    <string name="gesture_aware_confirmation_action_button">Désactiver</string>
+    <string name="gesture_aware_disabled_info_dialog_content">Les fonctionnalités \"Perception de geste\", \"Commandes gestuelles\" ne sont pas prises en charge dans ce pays</string>
+    <string name="gesture_aware_off_dialog_content">Pour utiliser \"Commandes gestuelles\", activer \"Perception de geste\"</string>
+    <string name="gesture_aware_off_dialog_title">\"Commandes gestuelles\" désactivées</string>
+    <string name="gesture_silence_on_summary">Activer ou désactiver le son du réveil et des appels</string>
+    <string name="gesture_silence_summary">Désactiver le son du réveil ou des appels</string>
+    <string name="gesture_silence_title">Interruptions silencieuses</string>
+    <string name="gesture_skip_direction_ltr">De gauche à droite pour passer à la piste musicale suivante</string>
+    <string name="gesture_skip_direction_rtl">De droite à gauche pour passer à la piste musicale suivante</string>
+    <string name="gesture_skip_direction_title">Direction des gestes</string>
+    <string name="gesture_skip_on_summary">Passer à la piste musicale suivante ou précédente activé</string>
+    <string name="gesture_skip_summary">Passer à la piste musicale suivante ou précédente</string>
+    <string name="gesture_skip_title">Saut de piste musicale</string>
+    <string name="wake_screen_aware_disabled_info_dialog_content">Les fonctionnalités \"Perception de geste\", et \"Saisir le téléphone\" ne sont pas prises en charge dans ce pays</string>
+    <string name="wake_screen_aware_off_dialog_content">Pour utiliser \"Saisir le téléphone\", activer \"Perception de geste\"</string>
+    <string name="wake_screen_aware_off_dialog_title">\"Saisir le téléphone\" désactivé</string>
+
+    <!-- Active edge -->
+    <string name="active_edge_short_actions_title">Action par appui court</string>
+    <string name="active_edge_long_actions_title">Action par appui prolongé</string>
+    <string name="active_edge_sensitivity_title">Niveau d\'appui</string>
+    <string name="active_edge_wake_title">Autoriser lorsque l\'écran est éteint</string>
+    <string name="active_edge_wake_summary">Déclencher n\'importe quelle action même si l\'écran est éteint</string>
+    <string name="active_edge_footer_info">Certaines actions du mode Bord actif ne permettent pas d\'activer l\'affichage.</string>
+
+    <!-- Custom actions -->
+    <string name="action_nothing">Aucune action</string>
+    <string name="action_search">Rechercher via l\'Assistant</string>
+    <string name="action_voice_search">Recherche vocale</string>
+    <string name="action_launch_camera">Démarrer l\'appareil photo</string>
+    <string name="action_flashlight">Lampe de poche</string>
+    <string name="action_volume_panel">Panneau de volume</string>  
+    <string name="action_screen_off">Éteindre l\'écran</string>
+    <string name="action_screenshot">Capture d\'écran</string>
+
+    <!-- Lockscreen media artwork -->
+    <string name="lockscreen_media_blur_title">Niveau de flou de l\'illustration</string>
+    <string name="show_lockscreen_media_art_title">Illustration du titre musical</string>
+    <string name="lockscreen_media_art_options_title">Affichage sur l\'écran de déverrouillage</string>
 
 </resources>
