@@ -37,6 +37,7 @@
     <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
         android:key="lockdown_in_power_menu"
         android:title="@string/powermenu_lockdown_title"
+        android:summary="@string/lockdown_settings_summary"
         android:defaultValue="false" />
 
     <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
