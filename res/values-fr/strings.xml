@@ -156,17 +156,17 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
-    <!-- Option to show brightness bar in quick settings -->
-    <string name="show_brightness_title">Curseur de luminosité</string>
-    <string name="show_brightness_summary">Afficher le curseur de luminosité</string>
+    <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">Curseur de luminosité</string>
+    <string name="qs_brightness_slider_summary">Afficher le curseur de luminosité</string>
 
     <!-- QS visibility -->
     <string name="qs_tile_title_visibility_title">Titre des tuiles</string>
     <string name="qs_tile_title_visibility_summary">Afficher les titres sous les tuiles du panneau de configuration</string>
 
     <!-- QS tiles haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibration au toucher</string>
-    <string name="quick_settings_vibrate_summary">Vibrer lors des appuis sur les tuiles du panneau de configuration</string>
+    <string name="qs_vibrate_title">Vibration au toucher</string>
+    <string name="qs_vibrate_summary">Vibrer lors des appuis sur les tuiles du panneau de configuration</string>
 
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Barre d\'état</string>

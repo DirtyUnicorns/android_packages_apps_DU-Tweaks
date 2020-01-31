@@ -153,17 +153,21 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
-    <!-- Option to show brightness bar in quick settings -->
-    <string name="show_brightness_title">Brightness slider</string>
-    <string name="show_brightness_summary">Show the brightness slider</string>
+    <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show the brightness slider</string>
+
+    <!-- Qs auto-brightness icon -->
+    <string name="qs_autobrightness_icon_title">Auto-brightness icon</string>
+    <string name="qs_autobrightness_icon_summary">Show an auto-brightness icon next to the brightness slider</string>
 
     <!-- QS visibility -->
     <string name="qs_tile_title_visibility_title">Title visibility</string>
     <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
 
     <!-- QS tiles haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="qs_vibrate_title">Vibrate on touch</string>
+    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
 
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Status bar</string>
