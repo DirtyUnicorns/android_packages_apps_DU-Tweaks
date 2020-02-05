@@ -103,7 +103,7 @@
     <string name="volume_button_music_control_summary">When the screen is off, long-pressing the volume keys will skip music tracks</string>
 
     <!-- Network Traffic -->
-    <string name="network_traffic_state_title">Show net activity in expanded statusbar</string>
+    <string name="network_traffic_state_title">Show net activity</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
 
     <!-- Power menu -->
