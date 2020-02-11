@@ -64,13 +64,6 @@
             android:defaultValue="true" />
 
         <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_show_brightness_icon"
-            android:title="@string/qs_autobrightness_icon_title"
-            android:summary="@string/qs_autobrightness_icon_summary"
-            android:dependency="qs_show_brightness"
-            android:defaultValue="true"/>
-
-        <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_title_visibility"
             android:title="@string/qs_tile_title_visibility_title"
             android:summary="@string/qs_tile_title_visibility_summary"
