@@ -55,6 +55,8 @@ public class ActiveEdge extends SettingsPreferenceFragment
     private ListPreference mShortSqueezeActions;
     private ListPreference mLongSqueezeActions;
     private SwitchPreference mActiveEdgeWake;
+    private Preference mShortSqueezeAppSelection;
+    private Preference mLongSqueezeAppSelection;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,6 +94,16 @@ public class ActiveEdge extends SettingsPreferenceFragment
                 UserHandle.USER_CURRENT) == 1));
         mActiveEdgeWake.setOnPreferenceChangeListener(this);
 
+        mShortSqueezeAppSelection = (Preference) findPreference("short_squeeze_app_selection");
+        boolean isAppSelection = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.SHORT_SQUEEZE_SELECTION, 0, UserHandle.USER_CURRENT) == 5/*action_app_action*/;
+        mShortSqueezeAppSelection.setEnabled(isAppSelection);
+
+        mLongSqueezeAppSelection = (Preference) findPreference("long_squeeze_app_selection");
+        isAppSelection = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.LONG_SQUEEZE_SELECTION, 0, UserHandle.USER_CURRENT) == 5/*action_app_action*/;
+        mLongSqueezeAppSelection.setEnabled(isAppSelection);
+        customAppCheck();
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -103,6 +115,8 @@ public class ActiveEdge extends SettingsPreferenceFragment
             int index = mShortSqueezeActions.findIndexOfValue((String) newValue);
             mShortSqueezeActions.setSummary(
                     mShortSqueezeActions.getEntries()[index]);
+            mShortSqueezeAppSelection.setEnabled(shortSqueezeActions == 5);
+            customAppCheck();
             return true;
         } else if (preference == mLongSqueezeActions) {
             int longSqueezeActions = Integer.valueOf((String) newValue);
@@ -112,6 +126,8 @@ public class ActiveEdge extends SettingsPreferenceFragment
             int index = mLongSqueezeActions.findIndexOfValue((String) newValue);
             mLongSqueezeActions.setSummary(
                     mLongSqueezeActions.getEntries()[index]);
+            mLongSqueezeAppSelection.setEnabled(longSqueezeActions == 5);
+            customAppCheck();
             return true;
         } else if (preference == mActiveEdgeSensitivity) {
             int val = (Integer) newValue;
@@ -134,6 +150,7 @@ public class ActiveEdge extends SettingsPreferenceFragment
         super.onResume();
         // Ensure preferences sensible to change get updated
         actionPreferenceReload();
+        customAppCheck();
     }
 
     @Override
@@ -141,6 +158,7 @@ public class ActiveEdge extends SettingsPreferenceFragment
         super.onPause();
         // Ensure preferences sensible to change gets updated
         actionPreferenceReload();
+        customAppCheck();
     }
 
     /* Helper for reloading both short and long gesture as they might change on
@@ -161,6 +179,17 @@ public class ActiveEdge extends SettingsPreferenceFragment
         mLongSqueezeActions.setValue(Integer.toString(longSqueezeActions));
         mLongSqueezeActions.setSummary(mLongSqueezeActions.getEntry());
 
+        mShortSqueezeAppSelection.setEnabled(mShortSqueezeActions.getEntryValues()
+                [shortSqueezeActions].equals("5"));
+        mLongSqueezeAppSelection.setEnabled(mLongSqueezeActions.getEntryValues()
+                [longSqueezeActions].equals("5"));
+    }
+
+    private void customAppCheck() {
+        mShortSqueezeAppSelection.setSummary(Settings.Secure.getStringForUser(getContentResolver(),
+                String.valueOf(Settings.Secure.SHORT_SQUEEZE_CUSTOM_APP_FR_NAME), UserHandle.USER_CURRENT));
+        mLongSqueezeAppSelection.setSummary(Settings.Secure.getStringForUser(getContentResolver(),
+                String.valueOf(Settings.Secure.LONG_SQUEEZE_CUSTOM_APP_FR_NAME), UserHandle.USER_CURRENT));
     }
 
     @Override

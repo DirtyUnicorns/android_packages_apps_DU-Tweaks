@@ -192,6 +192,7 @@
         <item>@string/action_voice_search</item>
         <item>@string/action_launch_camera</item>
         <item>@string/action_flashlight</item>
+        <item>@string/action_app_action</item>
         <item>@string/action_volume_panel</item>
         <item>@string/action_screen_off</item>
         <item>@string/action_screenshot</item>
@@ -203,9 +204,10 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
         <item>6</item>
         <item>7</item>
-        <item>9</item>
+        <item>8</item>
     </string-array>
 
 </resources>
