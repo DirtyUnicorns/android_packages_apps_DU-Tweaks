@@ -140,6 +140,7 @@ public class ClockOptions extends SettingsPreferenceFragment
             mClockDateFormat.setEnabled(false);
             mClockDatePosition.setEnabled(false);
         }
+        mClockDateFormat.setSummary(mClockDateFormat.getEntries()[index]);
     }
 
     @Override
@@ -225,6 +226,7 @@ public class ClockOptions extends SettingsPreferenceFragment
                         Settings.Secure.STATUSBAR_CLOCK_DATE_FORMAT, (String) newValue);
                 }
             }
+            mClockDateFormat.setSummary(mClockDateFormat.getEntries()[index]);
             return true;
         } else if (preference == mClockDatePosition) {
             int val = Integer.parseInt((String) newValue);
@@ -243,7 +245,7 @@ public class ClockOptions extends SettingsPreferenceFragment
         CharSequence parsedDateEntries[];
         parsedDateEntries = new String[dateEntries.length];
         Date now = new Date();
-         int lastEntry = dateEntries.length - 1;
+        int lastEntry = dateEntries.length - 1;
         int dateFormat = Settings.Secure.getInt(getActivity()
                 .getContentResolver(), Settings.Secure.STATUSBAR_CLOCK_DATE_STYLE, 0);
         for (int i = 0; i < dateEntries.length; i++) {
