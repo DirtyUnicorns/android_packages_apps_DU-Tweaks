@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2017-2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -203,10 +203,6 @@
     <!-- DT2S on lockscreen -->
     <string name="double_tap_sleep_lockscreen">Veille par double appui</string>
 
-    <!-- DU logo -->
-    <string name="du_logo_title">Logo DU</string>
-    <string name="du_logo_summary">Afficher le logo de DU sur la gauche de la barre d\'état</string>
-
     <!-- Carrier Label -->
     <string name="carrier_options">Affichage</string>
     <string name="custom_carrier_label_title">Libellé</string>
@@ -227,7 +223,7 @@
     <string name="aware_disabled_preference_dialog_content">Pour utiliser cette fonction, activer Perception de geste</string>
     <string name="aware_disabled_preference_dialog_title">Cette fonction est désactivée</string>
     <string name="aware_disabled_preference_neutral">Pas maintenant</string>
-    <string name="aware_display_settings_title">Écran de déverrouillage au ralenti</string>
+    <string name="aware_display_settings_title">Écran de déverrouillage</string>
     <string name="aware_settings_description">Avec les nouveaux capteurs, Pixel peut reconnaître la distance et les mouvements autour du téléphone</string>
     <string name="aware_settings_disabled_info_dialog_content">Les fonctionnalités \"Perception de geste\", \"Commandes gestuelles\", \"Affichage à proximité\" et \"Saisir le téléphone\" ne sont pas prises en charge dans ce pays</string>
     <string name="aware_settings_disabled_info_dialog_title">Perception de geste désactivé</string>
@@ -272,6 +268,10 @@
     <string name="action_volume_panel">Panneau de volume</string>  
     <string name="action_screen_off">Éteindre l\'écran</string>
     <string name="action_screenshot">Capture d\'écran</string>
+    <string name="action_app_action">Application</string>
+    <string name="active_edge_ss_app_select_title">Application par appui court</string>
+    <string name="active_edge_ls_app_select_title">Application par appui prolongé</string>
+    <string name="active_edge_app_select_summary">Choisir une application à démarrer</string>
 
     <!-- Lockscreen media artwork -->
     <string name="lockscreen_media_blur_title">Niveau de flou de l\'illustration</string>
