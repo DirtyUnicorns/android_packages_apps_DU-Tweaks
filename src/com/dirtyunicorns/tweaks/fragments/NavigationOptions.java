@@ -49,8 +49,11 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
     private static final String KEY_NAVIGATION_BAR_ENABLED = "force_show_navbar";
     private static final String KEY_LAYOUT_SETTINGS = "layout_settings";
+    private static final String KEY_NAVIGATION_BAR_ARROWS = "navigation_bar_menu_arrow_keys";
 
+    private Preference mLayoutSettings;
     private SwitchPreference mNavigationBar;
+    private SystemSettingSwitchPreference mNavigationArrows;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -72,9 +75,14 @@ public class NavigationOptions extends SettingsPreferenceFragment
                 defaultToNavigationBar ? 1 : 0) == 1));
         mNavigationBar.setOnPreferenceChangeListener(this);
 
-        Preference mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
+        mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
         if (!Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             prefSet.removePreference(mLayoutSettings);
+        }
+
+        mNavigationArrows = (SystemSettingSwitchPreference) findPreference(KEY_NAVIGATION_BAR_ARROWS);
+        if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")) {
+            prefSet.removePreference(mNavigationArrows);
         }
     }
 
