@@ -275,6 +275,8 @@
     <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
     <string name="navigation_bar_layout_title">Layout</string>
     <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
+    <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
+    <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing</string>
 
     <!-- Lockscreen media artwork -->
     <string name="lockscreen_media_blur_title">Media art blur level</string>
