@@ -18,4 +18,9 @@
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/navigation_options_title" >
 
+    <SwitchPreference
+        android:key="force_show_navbar"
+        android:title="@string/navigation_bar_title"
+        android:summary="@string/navigation_bar_summary" />
+
 </PreferenceScreen>
