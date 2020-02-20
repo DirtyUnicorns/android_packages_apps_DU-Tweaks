@@ -23,4 +23,14 @@
         android:title="@string/navigation_bar_title"
         android:summary="@string/navigation_bar_summary" />
 
+    <Preference
+        android:key="layout_settings"
+        android:title="@string/navigation_bar_layout_title"
+        android:summary="@string/navigation_bar_layout_summary"
+        android:dependency="force_show_navbar">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.NavbarActivity" />
+    </Preference>
+
 </PreferenceScreen>
