@@ -24,6 +24,13 @@
         android:summary="@string/navigation_bar_summary" />
 
     <Preference
+        android:key="gesture_system_navigation"
+        android:title="@string/system_navigation_title"
+        android:dependency="force_show_navbar"
+        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
+        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
+
+    <Preference
         android:key="layout_settings"
         android:title="@string/navigation_bar_layout_title"
         android:summary="@string/navigation_bar_layout_summary"
