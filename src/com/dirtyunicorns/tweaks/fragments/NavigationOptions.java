@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018-2019 The Dirty Unicorns Project
+ * Copyright (C) 2018-2020 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,6 +72,13 @@ public class NavigationOptions extends SettingsPreferenceFragment
     private static final String KEY_CATEGORY_APP_SWITCH    = "app_switch_key";
     private static final String KEY_CATEGORY_CAMERA        = "camera_key";
 
+    private static final int KEY_MASK_HOME = 0x01;
+    private static final int KEY_MASK_BACK = 0x02;
+    private static final int KEY_MASK_MENU = 0x04;
+    private static final int KEY_MASK_ASSIST = 0x08;
+    private static final int KEY_MASK_APP_SWITCH = 0x10;
+    private static final int KEY_MASK_CAMERA = 0x20;
+
     private ListPreference mBackLongPress;
     private ListPreference mBackDoubleTap;
     private ListPreference mHomeLongPress;
@@ -85,18 +92,20 @@ public class NavigationOptions extends SettingsPreferenceFragment
     private ListPreference mAssistLongPress;
     private ListPreference mAssistDoubleTap;
     private Preference mLayoutSettings;
+    private PreferenceCategory mHomeCategory;
+    private PreferenceCategory mBackCategory;
+    private PreferenceCategory mMenuCategory;
+    private PreferenceCategory mAssistCategory;
+    private PreferenceCategory mAppSwitchCategory;
+    private PreferenceCategory mCameraCategory;
     private SwitchPreference mNavigationBar;
     private SystemSettingSwitchPreference mNavigationArrows;
     private SystemSettingSwitchPreference mSwapHardwareKeys;
 
     private int deviceKeys;
 
-    private static final int KEY_MASK_HOME = 0x01;
-    private static final int KEY_MASK_BACK = 0x02;
-    private static final int KEY_MASK_MENU = 0x04;
-    private static final int KEY_MASK_ASSIST = 0x08;
-    private static final int KEY_MASK_APP_SWITCH = 0x10;
-    private static final int KEY_MASK_CAMERA = 0x20;
+    private boolean defaultToNavigationBar;
+    private boolean navigationBarEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -106,14 +115,39 @@ public class NavigationOptions extends SettingsPreferenceFragment
         final PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        final boolean defaultToNavigationBar = getResources().getBoolean(
+        defaultToNavigationBar = getResources().getBoolean(
                 com.android.internal.R.bool.config_showNavigationBar);
-        final boolean navigationBarEnabled = Settings.System.getIntForUser(
+        navigationBarEnabled = Settings.System.getIntForUser(
                 resolver, Settings.System.FORCE_SHOW_NAVBAR,
                 defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
 
-        final int deviceKeys = getResources().getInteger(
+        deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
+
+        int backKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnBackKeyBehavior);
+        int backKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnBackKeyBehavior);
+        int homeKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnHomeKeyBehavior);
+        int homeKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnHomeKeyBehavior);
+        int AppSwitchKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnAppSwitchKeyBehavior);
+        int AppSwitchKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnAppSwitchKeyBehavior);
+        int MenuKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnMenuKeyBehavior);
+        int MenuKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnMenuKeyBehavior);
+        int CameraKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnCameraKeyBehavior);
+        int CameraKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnCameraKeyBehavior);
+        int AssistKeyLongPress = getResources().getInteger(
+                com.android.internal.R.integer.config_longPressOnAssistKeyBehavior);
+        int AssistKeyDoubleTap = getResources().getInteger(
+                com.android.internal.R.integer.config_doubleTapOnAssistKeyBehavior);
 
         boolean hasHome = (deviceKeys & KEY_MASK_HOME) != 0 || navigationBarEnabled;
         boolean hasMenu = (deviceKeys & KEY_MASK_MENU) != 0;
@@ -129,7 +163,15 @@ public class NavigationOptions extends SettingsPreferenceFragment
         mNavigationBar.setOnPreferenceChangeListener(this);
 
         mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
-        if (!Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+        if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")
+                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
+                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
+                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back")
+                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back")
+                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back_nopill")
+                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back")
+                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back_nopill")
+                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")) {
             prefSet.removePreference(mLayoutSettings);
         }
 
@@ -140,130 +182,117 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
         mSwapHardwareKeys = (SystemSettingSwitchPreference) findPreference(KEY_SWAP_NAVIGATION_KEYS);
 
-        if (deviceKeys == 0) {
-            prefSet.removePreference(mSwapHardwareKeys);
-        }
-
-
-        PreferenceCategory homeCategory =
-                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_HOME);
-        PreferenceCategory backCategory =
-                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_BACK);
-        PreferenceCategory menuCategory =
-                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_MENU);
-        PreferenceCategory assistCategory =
-                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_ASSIST);
-        PreferenceCategory appSwitchCategory =
-                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_APP_SWITCH);
-        PreferenceCategory cameraCategory =
-                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_CAMERA);
+        mHomeCategory = (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_HOME);
+        mBackCategory = (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_BACK);
+        mMenuCategory = (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_MENU);
+        mAssistCategory = (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_ASSIST);
+        mAppSwitchCategory = (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_APP_SWITCH);
+        mCameraCategory = (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_CAMERA);
 
         mBackLongPress = (ListPreference) findPreference(KEY_BACK_LONG_PRESS_ACTION);
         int backlongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_BACK_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_BACK_LONG_PRESS_ACTION, backKeyLongPress, UserHandle.USER_CURRENT);
         mBackLongPress.setValue(String.valueOf(backlongpress));
         mBackLongPress.setSummary(mBackLongPress.getEntry());
         mBackLongPress.setOnPreferenceChangeListener(this);
 
         mBackDoubleTap = (ListPreference) findPreference(KEY_BACK_DOUBLE_TAP_ACTION);
         int backdoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_BACK_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_BACK_DOUBLE_TAP_ACTION, backKeyDoubleTap, UserHandle.USER_CURRENT);
         mBackDoubleTap.setValue(String.valueOf(backdoubletap));
         mBackDoubleTap.setSummary(mBackDoubleTap.getEntry());
         mBackDoubleTap.setOnPreferenceChangeListener(this);
 
         mHomeLongPress = (ListPreference) findPreference(KEY_HOME_LONG_PRESS_ACTION);
         int homelongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_HOME_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_HOME_LONG_PRESS_ACTION, homeKeyLongPress, UserHandle.USER_CURRENT);
         mHomeLongPress.setValue(String.valueOf(homelongpress));
         mHomeLongPress.setSummary(mHomeLongPress.getEntry());
         mHomeLongPress.setOnPreferenceChangeListener(this);
 
         mHomeDoubleTap = (ListPreference) findPreference(KEY_HOME_DOUBLE_TAP_ACTION);
         int homedoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_HOME_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_HOME_DOUBLE_TAP_ACTION, homeKeyDoubleTap, UserHandle.USER_CURRENT);
         mHomeDoubleTap.setValue(String.valueOf(homedoubletap));
         mHomeDoubleTap.setSummary(mHomeDoubleTap.getEntry());
         mHomeDoubleTap.setOnPreferenceChangeListener(this);
 
         mAppSwitchLongPress = (ListPreference) findPreference(KEY_APP_SWITCH_LONG_PRESS);
         int appswitchlongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, AppSwitchKeyLongPress, UserHandle.USER_CURRENT);
         mAppSwitchLongPress.setValue(String.valueOf(appswitchlongpress));
         mAppSwitchLongPress.setSummary(mAppSwitchLongPress.getEntry());
         mAppSwitchLongPress.setOnPreferenceChangeListener(this);
 
         mAppSwitchDoubleTap = (ListPreference) findPreference(KEY_APP_SWITCH_DOUBLE_TAP);
         int appswitchdoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION, AppSwitchKeyDoubleTap, UserHandle.USER_CURRENT);
         mAppSwitchDoubleTap.setValue(String.valueOf(appswitchdoubletap));
         mAppSwitchDoubleTap.setSummary(mAppSwitchDoubleTap.getEntry());
         mAppSwitchDoubleTap.setOnPreferenceChangeListener(this);
 
         mMenuLongPress = (ListPreference) findPreference(KEY_MENU_LONG_PRESS_ACTION);
         int menulongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_MENU_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_MENU_LONG_PRESS_ACTION, MenuKeyLongPress, UserHandle.USER_CURRENT);
         mMenuLongPress.setValue(String.valueOf(menulongpress));
         mMenuLongPress.setSummary(mMenuLongPress.getEntry());
         mMenuLongPress.setOnPreferenceChangeListener(this);
 
         mMenuDoubleTap = (ListPreference) findPreference(KEY_MENU_DOUBLE_TAP_ACTION);
         int menudoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_MENU_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_MENU_DOUBLE_TAP_ACTION, MenuKeyDoubleTap, UserHandle.USER_CURRENT);
         mMenuDoubleTap.setValue(String.valueOf(menudoubletap));
         mMenuDoubleTap.setSummary(mMenuDoubleTap.getEntry());
         mMenuDoubleTap.setOnPreferenceChangeListener(this);
 
         mCameraLongPress = (ListPreference) findPreference(KEY_CAMERA_LONG_PRESS_ACTION);
         int cameralongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_CAMERA_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_CAMERA_LONG_PRESS_ACTION, CameraKeyLongPress, UserHandle.USER_CURRENT);
         mCameraLongPress.setValue(String.valueOf(cameralongpress));
         mCameraLongPress.setSummary(mCameraLongPress.getEntry());
         mCameraLongPress.setOnPreferenceChangeListener(this);
 
         mCameraDoubleTap = (ListPreference) findPreference(KEY_CAMERA_DOUBLE_TAP_ACTION);
         int cameradoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_CAMERA_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_CAMERA_DOUBLE_TAP_ACTION, CameraKeyDoubleTap, UserHandle.USER_CURRENT);
         mCameraDoubleTap.setValue(String.valueOf(cameradoubletap));
         mCameraDoubleTap.setSummary(mCameraDoubleTap.getEntry());
         mCameraDoubleTap.setOnPreferenceChangeListener(this);
 
         mAssistLongPress = (ListPreference) findPreference(KEY_ASSIST_LONG_PRESS_ACTION);
         int assistlongpress = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, AssistKeyLongPress, UserHandle.USER_CURRENT);
         mAssistLongPress.setValue(String.valueOf(assistlongpress));
         mAssistLongPress.setSummary(mAssistLongPress.getEntry());
         mAssistLongPress.setOnPreferenceChangeListener(this);
 
         mAssistDoubleTap = (ListPreference) findPreference(KEY_ASSIST_DOUBLE_TAP_ACTION);
         int assistdoubletap = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.KEY_ASSIST_DOUBLE_TAP_ACTION, 0, UserHandle.USER_CURRENT);
+                Settings.System.KEY_ASSIST_DOUBLE_TAP_ACTION, AssistKeyDoubleTap, UserHandle.USER_CURRENT);
         mAssistDoubleTap.setValue(String.valueOf(assistdoubletap));
         mAssistDoubleTap.setSummary(mAssistDoubleTap.getEntry());
         mAssistDoubleTap.setOnPreferenceChangeListener(this);
 
-        if (!hasMenu && menuCategory != null) {
-            prefSet.removePreference(menuCategory);
+        if (!hasMenu && mMenuCategory != null) {
+            prefSet.removePreference(mMenuCategory);
         }
 
-        if (!hasAssist && assistCategory != null) {
-            prefSet.removePreference(assistCategory);
+        if (!hasAssist && mAssistCategory != null) {
+            prefSet.removePreference(mAssistCategory);
         }
 
-        if (!hasCamera && cameraCategory != null) {
-            prefSet.removePreference(cameraCategory);
+        if (!hasCamera && mCameraCategory != null) {
+            prefSet.removePreference(mCameraCategory);
         }
 
         if (deviceKeys == 0) {
-            prefSet.removePreference(homeCategory);
-            prefSet.removePreference(backCategory);
-            prefSet.removePreference(menuCategory);
-            prefSet.removePreference(assistCategory);
-            prefSet.removePreference(appSwitchCategory);
-            prefSet.removePreference(cameraCategory);
+            prefSet.removePreference(mSwapHardwareKeys);
+            prefSet.removePreference(mMenuCategory);
+            prefSet.removePreference(mAssistCategory);
+            prefSet.removePreference(mCameraCategory);
         }
 
-        updateOptions();
+        navbarCheck();
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -271,7 +300,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FORCE_SHOW_NAVBAR, value ? 1 : 0);
-            updateOptions();
+            navbarCheck();
             return true;
         } else if (preference == mBackLongPress) {
             int value = Integer.parseInt((String) objValue);
@@ -393,28 +422,57 @@ public class NavigationOptions extends SettingsPreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
-        updateOptions();
-
+        navbarCheck();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        updateOptions();
+        navbarCheck();
     }
 
-    private void updateOptions() {
-        final ContentResolver resolver = getActivity().getContentResolver();
-        boolean defaultToNavigationBar = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
-        boolean navigationBarEnabled = Settings.System.getIntForUser(
-                resolver, Settings.System.FORCE_SHOW_NAVBAR,
-                defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+    private void navbarCheck() {
+        boolean navigationBar = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.FORCE_SHOW_NAVBAR, 1) == 1;
 
-        if (navigationBarEnabled) {
-            mSwapHardwareKeys.setEnabled(false);
+        if (deviceKeys == 0) {
+            if (navigationBar) {
+                mHomeCategory.setEnabled(true);
+                mBackCategory.setEnabled(true);
+                mMenuCategory.setEnabled(true);
+                mAssistCategory.setEnabled(true);
+                mAppSwitchCategory.setEnabled(true);
+                mCameraCategory.setEnabled(true);
+                mNavigationArrows.setEnabled(true);
+            } else {
+                mHomeCategory.setEnabled(false);
+                mBackCategory.setEnabled(false);
+                mMenuCategory.setEnabled(false);
+                mAssistCategory.setEnabled(false);
+                mAppSwitchCategory.setEnabled(false);
+                mCameraCategory.setEnabled(false);
+                mNavigationArrows.setEnabled(false);
+            }
         } else {
-            mSwapHardwareKeys.setEnabled(true);
+            if (navigationBar) {
+                mHomeCategory.setEnabled(true);
+                mBackCategory.setEnabled(true);
+                mMenuCategory.setEnabled(true);
+                mAssistCategory.setEnabled(true);
+                mAppSwitchCategory.setEnabled(true);
+                mCameraCategory.setEnabled(true);
+                mNavigationArrows.setEnabled(true);
+                mSwapHardwareKeys.setEnabled(false);
+            } else {
+                mHomeCategory.setEnabled(true);
+                mBackCategory.setEnabled(true);
+                mMenuCategory.setEnabled(true);
+                mAssistCategory.setEnabled(true);
+                mAppSwitchCategory.setEnabled(true);
+                mCameraCategory.setEnabled(true);
+                mNavigationArrows.setEnabled(false);
+                mSwapHardwareKeys.setEnabled(true);
+            }
         }
     }
 
@@ -437,8 +495,27 @@ public class NavigationOptions extends SettingsPreferenceFragment
                     List<String> keys = super.getNonIndexableKeys(context);
                     int deviceKeys = context.getResources().getInteger(
                             com.android.internal.R.integer.config_deviceHardwareKeys);
+                    boolean hasMenu = (deviceKeys & KEY_MASK_MENU) != 0;
+                    boolean hasAssist = (deviceKeys & KEY_MASK_ASSIST) != 0;
+                    boolean hasCamera = (deviceKeys & KEY_MASK_CAMERA) != 0;
+
                     if (deviceKeys == 0) {
                         keys.add(KEY_SWAP_NAVIGATION_KEYS);
+                    }
+                    if (!hasMenu) {
+                        keys.add(KEY_CATEGORY_MENU);
+                        keys.add(KEY_MENU_LONG_PRESS_ACTION);
+                        keys.add(KEY_MENU_DOUBLE_TAP_ACTION);
+                    }
+                    if (!hasAssist) {
+                        keys.add(KEY_CATEGORY_ASSIST);
+                        keys.add(KEY_ASSIST_LONG_PRESS_ACTION);
+                        keys.add(KEY_ASSIST_DOUBLE_TAP_ACTION);
+                    }
+                    if (!hasCamera) {
+                        keys.add(KEY_CATEGORY_CAMERA);
+                        keys.add(KEY_CAMERA_LONG_PRESS_ACTION);
+                        keys.add(KEY_CAMERA_DOUBLE_TAP_ACTION);
                     }
                     return keys;
                 }

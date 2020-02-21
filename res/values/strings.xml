@@ -266,11 +266,11 @@
     <string name="action_screen_off">Screen off</string>
     <string name="action_screenshot">Screenshot</string>
     <string name="action_app_action">Application</string>
-    <string name="action_menu">Open/close menu</string>
+    <string name="action_menu">Menu</string>
     <string name="action_app_switch">Recents</string>
     <string name="action_in_app_search">In-app search</string>
-    <string name="action_last_app">Launch last app</string>
-    <string name="action_splitscreen">Splitscreen</string>
+    <string name="action_last_app">Last app</string>
+    <string name="action_splitscreen">Split screen</string>
 
     <!-- Active edge -->
     <string name="active_edge_ss_app_select_title">Select short squeeze app</string>

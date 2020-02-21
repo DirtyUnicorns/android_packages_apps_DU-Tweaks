@@ -47,6 +47,24 @@
         android:defaultValue="false" />
 
     <PreferenceCategory
+        android:key="back_key"
+        android:title="@string/back_key_title">
+
+        <ListPreference
+            android:key="back_key_long_press"
+            android:title="@string/long_press_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values" />
+
+        <ListPreference
+            android:key="back_key_double_tap"
+            android:title="@string/double_tap_title"
+            android:entries="@array/action_entries"
+            android:entryValues="@array/action_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="home_key"
         android:title="@string/home_key_title">
 
@@ -65,17 +83,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="back_key"
-        android:title="@string/back_key_title">
+        android:key="app_switch_key"
+        android:title="@string/app_switch_key_title">
 
         <ListPreference
-            android:key="back_key_long_press"
+            android:key="app_switch_key_long_press"
             android:title="@string/long_press_title"
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
 
         <ListPreference
-            android:key="back_key_double_tap"
+            android:key="app_switch_key_double_tap"
             android:title="@string/double_tap_title"
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
@@ -112,24 +130,6 @@
 
         <ListPreference
             android:key="assist_key_double_tap"
-            android:title="@string/double_tap_title"
-            android:entries="@array/action_entries"
-            android:entryValues="@array/action_values" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="app_switch_key"
-        android:title="@string/app_switch_key_title">
-
-        <ListPreference
-            android:key="app_switch_key_long_press"
-            android:title="@string/long_press_title"
-            android:entries="@array/action_entries"
-            android:entryValues="@array/action_values" />
-
-        <ListPreference
-            android:key="app_switch_key_double_tap"
             android:title="@string/double_tap_title"
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
