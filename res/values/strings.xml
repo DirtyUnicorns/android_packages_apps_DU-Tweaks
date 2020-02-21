@@ -278,6 +278,10 @@
     <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
     <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing</string>
 
+    <!-- HW keys -->
+    <string name="hw_keys_swap_title">Swap hardware buttons</string>
+    <string name="hw_keys_swap_summary">Swap the order of recents and back buttons</string>
+
     <!-- Lockscreen media artwork -->
     <string name="lockscreen_media_blur_title">Media art blur level</string>
     <string name="show_lockscreen_media_art_title">Show media art</string>

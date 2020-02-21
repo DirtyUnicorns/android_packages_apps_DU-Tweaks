@@ -40,4 +40,10 @@
         android:dependency="force_show_navbar"
         android:defaultValue="false" />
 
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="swap_navigation_keys"
+        android:title="@string/hw_keys_swap_title"
+        android:summary="@string/hw_keys_swap_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
