@@ -53,6 +53,13 @@
         android:summary="@string/hw_keys_swap_summary"
         android:defaultValue="false" />
 
+    <Preference
+        android:key="button_brightness"
+        android:title="@string/button_backlight_title"
+        android:summary="@string/button_backlight_summary"
+        android:persistent="false"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.ButtonBrightness" />
+
     <PreferenceCategory
         android:key="back_key"
         android:title="@string/back_key_title">
