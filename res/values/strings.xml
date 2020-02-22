@@ -299,6 +299,9 @@
     <string name="short_press_title">Short press action</string>
     <string name="long_press_title">Long press action</string>
     <string name="double_tap_title">Double tap action</string>
+    <string name="app_picker_dialog_title">Select an app</string>
+    <string name="long_press_custom_app_title">Long press custom app</string>
+    <string name="double_tap_custom_app_title">Double tap custom app</string>
 
     <!-- Button backlight -->
     <string name="button_backlight_title">Backlight</string>

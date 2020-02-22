@@ -70,11 +70,29 @@
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
 
+        <Preference
+            android:key="back_key_long_press_custom_app"
+            android:title="@string/long_press_custom_app_title"
+            android:summary="">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.BackLongPress" />
+        </Preference>
+
         <ListPreference
             android:key="back_key_double_tap"
             android:title="@string/double_tap_title"
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
+
+        <Preference
+            android:key="back_key_double_tap_custom_app"
+            android:title="@string/double_tap_custom_app_title"
+            android:summary="">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.BackDoubleTap" />
+        </Preference>
 
     </PreferenceCategory>
 
@@ -88,11 +106,29 @@
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
 
+        <Preference
+            android:key="home_key_long_press_custom_app"
+            android:title="@string/long_press_custom_app_title"
+            android:summary="">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.HomeLongPress" />
+        </Preference>
+
         <ListPreference
             android:key="home_key_double_tap"
             android:title="@string/double_tap_title"
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
+
+        <Preference
+            android:key="home_key_double_tap_custom_app"
+            android:title="@string/double_tap_custom_app_title"
+            android:summary="">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.HomeDoubleTap" />
+        </Preference>
 
     </PreferenceCategory>
 
@@ -106,11 +142,29 @@
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
 
+        <Preference
+            android:key="app_switch_key_long_press_custom_app"
+            android:title="@string/long_press_custom_app_title"
+            android:summary="">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.AppSwitchLongPress" />
+        </Preference>
+
         <ListPreference
             android:key="app_switch_key_double_tap"
             android:title="@string/double_tap_title"
             android:entries="@array/action_entries"
             android:entryValues="@array/action_values" />
+
+        <Preference
+            android:key="app_switch_key_double_tap_custom_app"
+            android:title="@string/double_tap_custom_app_title"
+            android:summary="">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.AppSwitchDoubleTap" />
+        </Preference>
 
     </PreferenceCategory>
 

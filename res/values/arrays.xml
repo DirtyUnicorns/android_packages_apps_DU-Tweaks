@@ -236,6 +236,7 @@
         <item>@string/action_power_menu</item>
         <item>@string/action_screenshot</item>
         <item>@string/action_qs_panel</item>
+        <item>@string/action_app_action</item>
         <item>@string/action_ringer_modes</item>
     </string-array>
 
@@ -257,6 +258,7 @@
         <item>14</item>
         <item>15</item>
         <item>16</item>
+        <item>17</item>
     </string-array>
 
 </resources>
