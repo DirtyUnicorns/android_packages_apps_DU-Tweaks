@@ -22,6 +22,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
 import androidx.preference.PreferenceCategory;
@@ -31,15 +32,23 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
+import com.android.internal.logging.nano.MetricsProto;
+
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-
-import com.android.internal.logging.nano.MetricsProto;
+import com.android.settingslib.search.SearchIndexable;
 
 import com.dirtyunicorns.support.preferences.CustomSeekBarPreference;
 
-public class ButtonBrightness extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+import java.util.ArrayList;
+import java.util.List;
+
+@SearchIndexable
+public class ButtonBrightness extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
     private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
@@ -93,4 +102,29 @@ public class ButtonBrightness extends SettingsPreferenceFragment implements Pref
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.DIRTYTWEAKS;
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.button_brightness;
+                    int deviceKeys = context.getResources().getInteger(
+                            com.android.internal.R.integer.config_deviceHardwareKeys);
+                    if (deviceKeys != 0) {
+                        result.add(sir);
+                    }
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    return keys;
+                }
+            };
 }

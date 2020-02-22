@@ -645,6 +645,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
                     if (deviceKeys == 0) {
                         keys.add(KEY_SWAP_NAVIGATION_KEYS);
+                        keys.add(KEY_BUTTON_BRIGHTNESS);
                     }
                     if (!hasMenu) {
                         keys.add(KEY_CATEGORY_MENU);
