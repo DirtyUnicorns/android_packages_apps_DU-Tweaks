@@ -571,21 +571,21 @@ public class NavigationOptions extends SettingsPreferenceFragment
                 || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back_nopill")
                 || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")
                 && navigationBar) {
-            homeCategory.setEnabled(false);
-            backCategory.setEnabled(false);
-            menuCategory.setEnabled(false);
-            assistCategory.setEnabled(false);
-            appSwitchCategory.setEnabled(false);
-            cameraCategory.setEnabled(false);
+            homeCategory.setVisible(false);
+            backCategory.setVisible(false);
+            menuCategory.setVisible(false);
+            assistCategory.setVisible(false);
+            appSwitchCategory.setVisible(false);
+            cameraCategory.setVisible(false);
         }
 
         if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") && navigationBar) {
             homeCategory.setEnabled(true);
             backCategory.setEnabled(true);
-            menuCategory.setEnabled(false);
-            assistCategory.setEnabled(false);
-            appSwitchCategory.setEnabled(false);
-            cameraCategory.setEnabled(false);
+            menuCategory.setVisible(false);
+            assistCategory.setVisible(false);
+            appSwitchCategory.setVisible(false);
+            cameraCategory.setVisible(false);
         }
 
         if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
