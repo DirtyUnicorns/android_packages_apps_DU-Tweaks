@@ -209,7 +209,8 @@ public class ActiveEdge extends SettingsPreferenceFragment
                     sir.xmlResId = R.xml.active_edge;
 
                     if (context.getPackageManager().hasSystemFeature(
-                            "android.hardware.sensor.assist")) {
+                            "android.hardware.sensor.assist") &&
+                            context.getResources().getBoolean(R.bool.has_active_edge)) {
                         result.add(sir);
                     }
                     return result;
