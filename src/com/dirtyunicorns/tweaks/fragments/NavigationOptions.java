@@ -18,8 +18,10 @@ package com.dirtyunicorns.tweaks.fragments;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.om.IOverlayManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -40,6 +42,8 @@ import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.settings.gestures.SystemNavigationGestureSettings;
+
 import com.dirtyunicorns.support.preferences.SystemSettingListPreference;
 import com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference;
 
@@ -51,6 +55,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String KEY_NAVIGATION_BAR_ENABLED = "force_show_navbar";
+    private static final String KEY_GESTURE_PILL_SWITCH = "gesture_pill_switch";
     private static final String KEY_LAYOUT_SETTINGS = "layout_settings";
     private static final String KEY_NAVIGATION_BAR_ARROWS = "navigation_bar_menu_arrow_keys";
     private static final String KEY_SWAP_NAVIGATION_KEYS = "swap_navigation_keys";
@@ -91,7 +96,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
     private static final int KEY_MASK_ASSIST = 0x08;
     private static final int KEY_MASK_APP_SWITCH = 0x10;
     private static final int KEY_MASK_CAMERA = 0x20;
-    
+
     private ListPreference mBackLongPress;
     private ListPreference mBackDoubleTap;
     private ListPreference mHomeLongPress;
@@ -128,6 +133,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
     private PreferenceCategory leftSwipeCategory;
     private PreferenceCategory rightSwipeCategory;
 
+    private SwitchPreference mGesturePill;
     private SwitchPreference mNavigationBar;
     private SystemSettingListPreference mTimeout;
     private SystemSettingSwitchPreference mNavigationArrowKeys;
@@ -178,7 +184,6 @@ public class NavigationOptions extends SettingsPreferenceFragment
                 com.android.internal.R.integer.config_longPressOnAssistKeyBehavior);
         int AssistKeyDoubleTap = getResources().getInteger(
                 com.android.internal.R.integer.config_doubleTapOnAssistKeyBehavior);
-
 
         boolean hasMenu = (deviceKeys & KEY_MASK_MENU) != 0;
         boolean hasAssist = (deviceKeys & KEY_MASK_ASSIST) != 0;
@@ -339,7 +344,6 @@ public class NavigationOptions extends SettingsPreferenceFragment
         isAppSelection = Settings.System.getIntForUser(resolver,
                 Settings.System.RIGHT_LONG_BACK_SWIPE_ACTION, 0, UserHandle.USER_CURRENT) == 5/*action_app_action*/;
         mRightSwipeAppSelection.setEnabled(isAppSelection);
-        customAppCheck();
 
         mTimeout = (SystemSettingListPreference) findPreference("long_back_swipe_timeout");
 
@@ -350,6 +354,11 @@ public class NavigationOptions extends SettingsPreferenceFragment
         mExtendedSwipe.setChecked(extendedSwipe);
         mExtendedSwipe.setOnPreferenceChangeListener(this);
         mTimeout.setEnabled(!mExtendedSwipe.isChecked());
+
+        mGesturePill = (SwitchPreference) findPreference(KEY_GESTURE_PILL_SWITCH);
+        mGesturePill.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.GESTURE_PILL_TOGGLE, 0) == 1));
+        mGesturePill.setOnPreferenceChangeListener(this);
 
         if (!hasMenu && menuCategory != null) {
             prefSet.removePreference(menuCategory);
@@ -562,6 +571,13 @@ public class NavigationOptions extends SettingsPreferenceFragment
             boolean enabled = ((Boolean) objValue).booleanValue();
             mExtendedSwipe.setChecked(enabled);
             mTimeout.setEnabled(!enabled);
+        } else if (preference == mGesturePill) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.GESTURE_PILL_TOGGLE, value ? 1 : 0);
+            SystemNavigationGestureSettings.setBackGestureOverlaysToUse(getActivity());
+            SystemNavigationGestureSettings.setCurrentSystemNavigationMode(getActivity(),
+                    getOverlayManager(), SystemNavigationGestureSettings.getCurrentSystemNavigationMode(getActivity()));
         }
         return false;
     }
@@ -685,6 +701,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
             mExtendedSwipe.setVisible(true);
             leftSwipeCategory.setVisible(true);
             rightSwipeCategory.setVisible(true);
+            mGesturePill.setVisible(true);
         }
 
         if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") && navigationBar) {
@@ -698,6 +715,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
             mExtendedSwipe.setVisible(false);
             leftSwipeCategory.setVisible(false);
             rightSwipeCategory.setVisible(false);
+            mGesturePill.setVisible(false);
         }
 
         if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
@@ -706,12 +724,14 @@ public class NavigationOptions extends SettingsPreferenceFragment
             mExtendedSwipe.setVisible(false);
             leftSwipeCategory.setVisible(false);
             rightSwipeCategory.setVisible(false);
+            mGesturePill.setVisible(false);
         } else if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.swipe_up_to_switch_apps_title));
             mTimeout.setVisible(false);
             mExtendedSwipe.setVisible(false);
             leftSwipeCategory.setVisible(false);
             rightSwipeCategory.setVisible(false);
+            mGesturePill.setVisible(false);
         } else if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
                 || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
                 || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back")
@@ -725,6 +745,7 @@ public class NavigationOptions extends SettingsPreferenceFragment
             mExtendedSwipe.setVisible(true);
             leftSwipeCategory.setVisible(true);
             rightSwipeCategory.setVisible(true);
+            mGesturePill.setVisible(true);
         }
     }
 
@@ -748,6 +769,10 @@ public class NavigationOptions extends SettingsPreferenceFragment
                 [leftSwipeActions].equals("5"));
         mRightSwipeAppSelection.setVisible(mRightSwipeActions.getEntryValues()
                 [rightSwipeActions].equals("5"));
+    }
+
+    private IOverlayManager getOverlayManager() {
+        return IOverlayManager.Stub.asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

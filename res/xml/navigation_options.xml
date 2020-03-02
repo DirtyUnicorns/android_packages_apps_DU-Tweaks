@@ -47,15 +47,24 @@
         android:dependency="force_show_navbar"
         android:defaultValue="false" />
 
+    <SwitchPreference
+        android:key="gesture_pill_switch"
+        android:title="@string/navbar_gesture_pill_toggle_title"
+        android:summary="@string/navbar_gesture_pill_toggle_summary"
+        android:dependency="force_show_navbar"
+        android:defaultValue="false" />
+
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="back_swipe_extended"
         android:title="@string/back_swipe_extended_title"
         android:summary="@string/back_swipe_extended_summary"
+        android:dependency="force_show_navbar"
         android:defaultValue="false" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingListPreference
         android:key="long_back_swipe_timeout"
         android:title="@string/long_back_swipe_timeout_title"
+        android:dependency="force_show_navbar"
         android:entries="@array/long_back_swipe_timeout_entries"
         android:entryValues="@array/long_back_swipe_timeout_values"
         android:defaultValue="2000" />
@@ -67,6 +76,7 @@
         <ListPreference
             android:key="left_swipe_actions"
             android:title="@string/left_swipe_actions_title"
+            android:dependency="force_show_navbar"
             android:entries="@array/active_edge_actions_entries"
             android:entryValues="@array/active_edge_actions_values"
             android:defaultValue="0" />
@@ -74,7 +84,8 @@
         <Preference
             android:key="left_swipe_app_action"
             android:title="@string/left_swipe_app_action_title"
-            android:summary="@string/active_edge_app_select_summary">
+            android:summary="@string/active_edge_app_select_summary"
+            android:dependency="force_show_navbar">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.statusbar.phone.LeftBackSwipeCustomApp" />
@@ -89,6 +100,7 @@
         <ListPreference
             android:key="right_swipe_actions"
             android:title="@string/right_swipe_actions_title"
+            android:dependency="force_show_navbar"
             android:entries="@array/active_edge_actions_entries"
             android:entryValues="@array/active_edge_actions_values"
             android:defaultValue="0" />
@@ -96,7 +108,8 @@
         <Preference
             android:key="right_swipe_app_action"
             android:title="@string/right_swipe_app_action_title"
-            android:summary="@string/active_edge_app_select_summary">
+            android:summary="@string/active_edge_app_select_summary"
+            android:dependency="force_show_navbar">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.statusbar.phone.RightBackSwipeCustomApp" />
