@@ -320,4 +320,18 @@
     <string name="show_lockscreen_media_art_title">Show media art</string>
     <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
 
+   <!-- Long swipe gestures -->
+   <string name="left_swipe_key_title">Left swipe</string>
+   <string name="right_swipe_key_title">Right swipe</string>
+   <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
+   <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
+   <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
+   <string name="left_swipe_actions_title">Long left swipe action</string>
+   <string name="left_swipe_app_action_title">Select long left swipe app</string>
+   <string name="right_swipe_actions_title">Long right swipe action</string>
+   <string name="right_swipe_app_action_title">Select long right swipe app</string>
+   <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
+   <string name="back_swipe_extended_title">Extended swipe action</string>
+   <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
+
 </resources>

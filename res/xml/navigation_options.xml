@@ -48,6 +48,63 @@
         android:defaultValue="false" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="back_swipe_extended"
+        android:title="@string/back_swipe_extended_title"
+        android:summary="@string/back_swipe_extended_summary"
+        android:defaultValue="false" />
+
+    <com.dirtyunicorns.support.preferences.SystemSettingListPreference
+        android:key="long_back_swipe_timeout"
+        android:title="@string/long_back_swipe_timeout_title"
+        android:entries="@array/long_back_swipe_timeout_entries"
+        android:entryValues="@array/long_back_swipe_timeout_values"
+        android:defaultValue="2000" />
+
+    <PreferenceCategory
+        android:key="left_swipe"
+        android:title="@string/left_swipe_key_title">
+
+        <ListPreference
+            android:key="left_swipe_actions"
+            android:title="@string/left_swipe_actions_title"
+            android:entries="@array/active_edge_actions_entries"
+            android:entryValues="@array/active_edge_actions_values"
+            android:defaultValue="0" />
+
+        <Preference
+            android:key="left_swipe_app_action"
+            android:title="@string/left_swipe_app_action_title"
+            android:summary="@string/active_edge_app_select_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.statusbar.phone.LeftBackSwipeCustomApp" />
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="right_swipe"
+        android:title="@string/right_swipe_key_title">
+
+        <ListPreference
+            android:key="right_swipe_actions"
+            android:title="@string/right_swipe_actions_title"
+            android:entries="@array/active_edge_actions_entries"
+            android:entryValues="@array/active_edge_actions_values"
+            android:defaultValue="0" />
+
+        <Preference
+            android:key="right_swipe_app_action"
+            android:title="@string/right_swipe_app_action_title"
+            android:summary="@string/active_edge_app_select_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.statusbar.phone.RightBackSwipeCustomApp" />
+        </Preference>
+
+    </PreferenceCategory>
+
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="swap_navigation_keys"
         android:title="@string/hw_keys_swap_title"
         android:summary="@string/hw_keys_swap_summary"
@@ -221,5 +278,8 @@
             android:entryValues="@array/action_values" />
 
     </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference
+        android:title="@string/gesture_nav_tweaks_footer_info" />
 
 </PreferenceScreen>
