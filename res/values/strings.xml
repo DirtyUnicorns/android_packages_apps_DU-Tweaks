@@ -244,6 +244,10 @@
     <string name="gesture_skip_on_summary">On / Skip to the next or previous song</string>
     <string name="gesture_skip_summary">Skip to the next or previous song</string>
     <string name="gesture_skip_title">Skip songs</string>
+    <string name="gesture_tap_off_summary">Off / Pause or resume music</string>
+    <string name="gesture_tap_on_summary">On / Pause or resume music</string>
+    <string name="gesture_tap_summary">Pause or resume music by tapping the air above the phone</string>
+    <string name="gesture_tap_title">Pause music</string>
     <string name="wake_screen_aware_disabled_info_dialog_content">Reach to check phone and other Motion Sense features are not supported in this country</string>
     <string name="wake_screen_aware_off_dialog_content">To use Reach to check phone, turn on Motion Sense</string>
     <string name="wake_screen_aware_off_dialog_title">Reach to check phone is off</string>

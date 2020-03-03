@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/gesture_tap_title"
+    android:key="tap_gesture">
+
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_tap_video"
+        app:animation="@raw/gesture_tap"
+        app:preview="@drawable/gesture_tap" />
+
+    <SwitchPreference
+        android:key="gesture_tap"
+        android:title="@string/gesture_tap_title"
+        android:summary="@string/gesture_tap_summary"
+        app:controller="com.google.android.settings.aware.TapGesturePreferenceController"
+        app:allowDividerAbove="true" />
+
+</PreferenceScreen>

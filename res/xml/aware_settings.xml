@@ -24,6 +24,13 @@
         settings:controller="com.google.android.settings.aware.AwarePreferenceCategoryController">
 
         <Preference
+            android:key="aware_gesture_tap"
+            android:title="@string/gesture_tap_title"
+            android:fragment="com.google.android.settings.aware.TapGestureSettings"
+            settings:controller="com.google.android.settings.aware.AwareTapPreferenceController"
+            settings:searchable="false" />
+
+        <Preference
             android:key="aware_gesture_skip"
             android:title="@string/gesture_skip_title"
             android:fragment="com.google.android.settings.aware.SkipGestureSettings"
