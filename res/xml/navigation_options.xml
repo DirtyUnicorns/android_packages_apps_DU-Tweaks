@@ -41,6 +41,19 @@
     </Preference>
 
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="swap_navigation_keys"
+        android:title="@string/hw_keys_swap_title"
+        android:summary="@string/hw_keys_swap_summary"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="button_brightness"
+        android:title="@string/button_backlight_title"
+        android:summary="@string/button_backlight_summary"
+        android:persistent="false"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.ButtonBrightness" />
+
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="navigation_bar_menu_arrow_keys"
         android:title="@string/navigation_bar_arrow_keys_title"
         android:summary="@string/navigation_bar_arrow_keys_summary"
@@ -116,19 +129,6 @@
         </Preference>
 
     </PreferenceCategory>
-
-    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
-        android:key="swap_navigation_keys"
-        android:title="@string/hw_keys_swap_title"
-        android:summary="@string/hw_keys_swap_summary"
-        android:defaultValue="false" />
-
-    <Preference
-        android:key="button_brightness"
-        android:title="@string/button_backlight_title"
-        android:summary="@string/button_backlight_summary"
-        android:persistent="false"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.ButtonBrightness" />
 
     <PreferenceCategory
         android:key="back_key"
