@@ -67,6 +67,13 @@
         android:dependency="force_show_navbar"
         android:defaultValue="false" />
 
+    <ListPreference
+        android:key="navigation_handle_width"
+        android:title="@string/gesture_navbar_handle_title"
+        android:entries="@array/gesture_navbar_handle_entries"
+        android:entryValues="@array/gesture_navbar_handle_values"
+        android:dependency="force_show_navbar" />
+
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="back_swipe_extended"
         android:title="@string/back_swipe_extended_title"
