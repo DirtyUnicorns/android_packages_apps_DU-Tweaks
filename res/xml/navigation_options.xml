@@ -30,6 +30,13 @@
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
+    <ListPreference
+        android:key="navigation_handle_width"
+        android:title="@string/gesture_navbar_handle_title"
+        android:entries="@array/gesture_navbar_handle_entries"
+        android:entryValues="@array/gesture_navbar_handle_values"
+        android:dependency="force_show_navbar" />
+
     <Preference
         android:key="layout_settings"
         android:title="@string/navigation_bar_layout_title"
@@ -59,20 +66,6 @@
         android:summary="@string/navigation_bar_arrow_keys_summary"
         android:dependency="force_show_navbar"
         android:defaultValue="false" />
-
-    <SwitchPreference
-        android:key="gesture_pill_switch"
-        android:title="@string/navbar_gesture_pill_toggle_title"
-        android:summary="@string/navbar_gesture_pill_toggle_summary"
-        android:dependency="force_show_navbar"
-        android:defaultValue="false" />
-
-    <ListPreference
-        android:key="navigation_handle_width"
-        android:title="@string/gesture_navbar_handle_title"
-        android:entries="@array/gesture_navbar_handle_entries"
-        android:entryValues="@array/gesture_navbar_handle_values"
-        android:dependency="force_show_navbar" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="back_swipe_extended"
