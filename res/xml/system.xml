@@ -27,13 +27,6 @@
     </com.dirtyunicorns.tweaks.preferences.CategoryPreference>
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
-        android:key="expanded_desktop_category"
-        android:icon="@drawable/dt_expanded_desktop"
-        android:title="@string/expanded_desktop_title"
-        android:summary="@string/expanded_desktop_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.ExpandedDesktop" />
-
-    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="lockscreen_items_category"
         android:icon="@drawable/dt_lockscreen_items"
         android:title="@string/lockscreen_items_title"

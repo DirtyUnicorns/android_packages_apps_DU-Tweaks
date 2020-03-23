@@ -22,20 +22,8 @@
     <!-- Whether to display active edge category -->
     <bool name="has_active_edge">false</bool>
 
-    <!-- Whether to display heads up category -->
-    <bool name="has_heads_up">false</bool>
-
-    <!-- Whether to display recents category -->
-    <bool name="has_recents">false</bool>
-
-    <!-- Whether to display ticker category -->
-    <bool name="has_ticker">false</bool>
-
     <!-- Whether to display lockscreen items category -->
     <bool name="has_lockscreen_items">true</bool>
-
-    <!-- Whether to display fingerprint category -->
-    <bool name="has_fingerprint_prefs">false</bool>
 
     <!-- Whether to display buttons category -->
     <bool name="has_buttons">true</bool>
@@ -55,9 +43,6 @@
     <!-- Whether to display icon manager category -->
     <bool name="has_icon_manager">true</bool>
 
-    <!-- Whether to display notifications category -->
-    <bool name="has_notifications">false</bool>
-
     <!-- Whether to display QS category -->
     <bool name="has_quick_settings">true</bool>
 
@@ -66,9 +51,6 @@
 
     <!-- Whether to display device extras -->
     <bool name="has_device_extras">false</bool>
-
-    <!-- Whether to display expanded desktop category -->
-    <bool name="has_expanded_desktop">false</bool>
 
     <!-- Whether to display misc category -->
     <bool name="has_misc_options">false</bool>

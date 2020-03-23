@@ -29,25 +29,4 @@
         android:title="@string/aware_settings_title"
         android:summary="@string/aware_settings_summary" />
 
-    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
-        android:key="heads_up_category"
-        android:icon="@drawable/dt_headsup"
-        android:title="@string/headsup_title"
-        android:summary="@string/headsup_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.HeadsUp" />
-
-    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
-        android:key="recents_category"
-        android:icon="@drawable/dt_recents"
-        android:title="@string/recents_title"
-        android:summary="@string/recents_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.Recents" />
-
-    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
-        android:key="ticker_category"
-        android:icon="@drawable/dt_ticker"
-        android:title="@string/ticker_title"
-        android:summary="@string/ticker_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.Ticker" />
-
 </PreferenceScreen>

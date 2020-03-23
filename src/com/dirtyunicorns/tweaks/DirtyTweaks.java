@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2019 The Dirty Unicorns Project
+ * Copyright (C) 2017-2020 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package com.dirtyunicorns.tweaks;
 
-import android.graphics.drawable.ColorDrawable;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -38,7 +38,6 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.dirtyunicorns.tweaks.fragments.Team;
 import com.dirtyunicorns.tweaks.navigation.BottomNavigationViewCustom;
-//import com.dirtyunicorns.tweaks.tabs.Lockscreen;
 import com.dirtyunicorns.tweaks.tabs.Multitasking;
 import com.dirtyunicorns.tweaks.tabs.Navigation;
 import com.dirtyunicorns.tweaks.tabs.Statusbar;
@@ -46,11 +45,14 @@ import com.dirtyunicorns.tweaks.tabs.System;
 
 public class DirtyTweaks extends SettingsPreferenceFragment {
 
+    private Context mContext;
     private MenuItem mMenuItem;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        mContext = getActivity();
 
         getActivity().setTitle(R.string.dirtytweaks_title);
 
@@ -64,28 +66,27 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
         navigation.setOnNavigationItemSelectedListener(
                 new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.system:
-                        viewPager.setCurrentItem(0);
-                        return true;
-                    /*case R.id.lockscreen:
-                        viewPager.setCurrentItem(1);
-                        return true;*/
-                    case R.id.statusbar:
-                        viewPager.setCurrentItem(1);
-                        return true;
-                    case R.id.navigation:
-                        viewPager.setCurrentItem(2);
-                        return true;
-                    case R.id.multitasking:
-                        viewPager.setCurrentItem(3);
-                        return true;
-                }
-                return false;
-            }
-        });
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.system:
+                                viewPager.setCurrentItem(0);
+                                return true;
+                            case R.id.statusbar:
+                                viewPager.setCurrentItem(1);
+                                return true;
+                            case R.id.navigation:
+                                viewPager.setCurrentItem(2);
+                                return true;
+                            case R.id.multitasking:
+                                if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
+                                    viewPager.setCurrentItem(3);
+                                }
+                                return true;
+                        }
+                        return false;
+                    }
+                });
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset,
@@ -94,12 +95,12 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
             @Override
             public void onPageSelected(int position) {
-                if(mMenuItem != null) {
+                if (mMenuItem != null) {
                     mMenuItem.setChecked(false);
-                } else {
-                    navigation.getMenu().getItem(0).setChecked(false);
                 }
+                
                 navigation.getMenu().getItem(position).setChecked(true);
+
                 mMenuItem = navigation.getMenu().getItem(position);
             }
 
@@ -109,6 +110,10 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         });
 
         setHasOptionsMenu(true);
+
+        if (!mContext.getResources().getBoolean(R.bool.has_active_edge)) {
+            navigation.getMenu().removeItem(R.id.multitasking);
+        }
 
         return view;
     }
@@ -121,10 +126,11 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         PagerAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new System();
-            //frags[1] = new Lockscreen();
             frags[1] = new Statusbar();
             frags[2] = new Navigation();
-            frags[3] = new Multitasking();
+            if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
+                frags[3] = new Multitasking();
+            }
         }
 
         @Override
@@ -145,12 +151,19 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
     private String[] getTitles() {
         String titleString[];
-        titleString = new String[]{
-                getString(R.string.bottom_nav_system_title),
-                //getString(R.string.bottom_nav_lockscreen_title),
-                getString(R.string.bottom_nav_statusbar_title),
-                getString(R.string.bottom_nav_navigation_title),
-                getString(R.string.bottom_nav_multitasking_title)};
+
+        if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
+            titleString = new String[]{
+                    mContext.getString(R.string.bottom_nav_system_title),
+                    mContext.getString(R.string.bottom_nav_statusbar_title),
+                    mContext.getString(R.string.bottom_nav_navigation_title),
+                    mContext.getString(R.string.bottom_nav_multitasking_title)};
+        } else {
+            titleString = new String[]{
+                    mContext.getString(R.string.bottom_nav_system_title),
+                    mContext.getString(R.string.bottom_nav_statusbar_title),
+                    mContext.getString(R.string.bottom_nav_navigation_title)};
+        }
 
         return titleString;
     }

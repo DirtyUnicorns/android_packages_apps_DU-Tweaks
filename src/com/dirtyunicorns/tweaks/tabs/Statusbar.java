@@ -34,7 +34,6 @@ public class Statusbar extends SettingsPreferenceFragment
     private static final String CARRIER_LABEL_CATEGORY = "carrier_label_category";
     private static final String CLOCK_CATEGORY = "clock_options_category";
     private static final String ICON_MANAGER_CATEGORY = "icon_manager_title";
-    private static final String NOTIFICATIONS_CATEGORY = "notifications_category";
     private static final String QUICK_SETTINGS_CATEGORY = "quick_settings_category";
     private static final String TRAFFIC_CATEGORY = "traffic_category";
 
@@ -61,11 +60,6 @@ public class Statusbar extends SettingsPreferenceFragment
         Preference IconManager = findPreference(ICON_MANAGER_CATEGORY);
         if (!getResources().getBoolean(R.bool.has_icon_manager)) {
             getPreferenceScreen().removePreference(IconManager);
-        }
-
-        Preference Notifications = findPreference(NOTIFICATIONS_CATEGORY);
-        if (!getResources().getBoolean(R.bool.has_notifications)) {
-            getPreferenceScreen().removePreference(Notifications);
         }
 
         Preference QuickSettings = findPreference(QUICK_SETTINGS_CATEGORY);
