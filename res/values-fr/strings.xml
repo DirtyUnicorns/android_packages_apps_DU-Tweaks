@@ -233,6 +233,10 @@
     <string name="gesture_skip_on_summary">Passer à la piste musicale suivante ou précédente activé</string>
     <string name="gesture_skip_summary">Passer à la piste musicale suivante ou précédente</string>
     <string name="gesture_skip_title">Saut de piste musicale</string>
+    <string name="gesture_tap_off_summary">Désactivé</string>
+    <string name="gesture_tap_on_summary">Activé</string>
+    <string name="gesture_tap_summary">Mettre en pause ou reprendre la piste musicale en appuyant sur l\'air au-dessus du téléphone</string>
+    <string name="gesture_tap_title">Pause</string>
     <string name="wake_screen_aware_disabled_info_dialog_content">Les fonctionnalités \"Perception de geste\", et \"Saisir le téléphone\" ne sont pas prises en charge dans ce pays</string>
     <string name="wake_screen_aware_off_dialog_content">Pour utiliser \"Saisir le téléphone\", activer \"Perception de geste\"</string>
     <string name="wake_screen_aware_off_dialog_title">\"Saisir le téléphone\" désactivé</string>
@@ -259,7 +263,7 @@
     <string name="action_splitscreen">Écran partagé</string>
     <string name="action_flashlight">Lampe de poche</string>
     <string name="action_clear_notifications">Effacer les notifications</string>
-    <string name="action_volume_panel">Panneau de volume</string>
+    <string name="action_volume_panel">Panneau de volume</string>  
     <string name="action_screen_off">Éteindre l\'écran</string>
     <string name="action_notifications">Notifications</string>
     <string name="action_power_menu">Menu Marche/Arrêt</string>
@@ -267,6 +271,7 @@
     <string name="action_qs_panel">Panneau de configuration rapide</string>
     <string name="action_app_action">Application</string>
     <string name="action_ringer_modes">Sonnerie</string>
+    <string name="kill_app">Forcer la fermeture de l\'application de premier plan</string>
 
     <!-- Navigation -->
     <string name="navigation_bar_title">Barre de navigation</string>
@@ -305,5 +310,26 @@
     <string name="lockscreen_media_blur_title">Niveau de flou de l\'illustration</string>
     <string name="show_lockscreen_media_art_title">Illustration du titre musical</string>
     <string name="lockscreen_media_art_options_title">Affichage sur l\'écran de déverrouillage</string>
+
+   <!-- Long swipe gestures -->
+   <string name="left_swipe_key_title">Glissement vers la gauche</string>
+   <string name="right_swipe_key_title">Glissement vers la droite</string>
+   <string name="navbar_gesture_tweaks_pref_title">Gestes</string>
+   <string name="navbar_gesture_tweaks_pref_summary">Réglages des gestes et les actions</string>
+   <string name="long_back_swipe_timeout_title">Délai de déclenchement du glissement prolongé</string>
+   <string name="left_swipe_actions_title">Glissement prolongé vers la gauche</string>
+   <string name="left_swipe_app_action_title">Choisir une application</string>
+   <string name="right_swipe_actions_title">Glissement prolongé vers la droite</string>
+   <string name="right_swipe_app_action_title">Choisir une application</string>
+   <string name="gesture_nav_tweaks_footer_info">Pour choisir une activité d\'application spécifique pour le glissement, appuyer longuement sur n\'importe quelle application dans le sélecteur d\'application.\n\nSi le lanceur s\'affiche, faire glisser le doigt tout en bas de l\'écran pour déclencher l\'action.</string>
+   <string name="back_swipe_extended_title">Zone de déclenchement élargie</string>
+   <string name="back_swipe_extended_summary">Déclencher uniquement si le glissement dépasse les 3\/4 de la taille de l\'écran</string>
+
+    <!-- Gesture navbar handle -->
+    <string name="gesture_navbar_handle_title">Disposition du bouton</string>
+    <string name="gesture_navbar_handle_hidden">Masquée</string>
+    <string name="gesture_navbar_handle_default">Par défaut</string>
+    <string name="gesture_navbar_handle_middle">Milieu</string>
+    <string name="gesture_navbar_handle_large">Grande</string>
 
 </resources>
