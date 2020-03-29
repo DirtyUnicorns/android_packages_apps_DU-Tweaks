@@ -53,7 +53,7 @@
     <bool name="has_device_extras">false</bool>
 
     <!-- Whether to display misc category -->
-    <bool name="has_misc_options">false</bool>
+    <bool name="has_misc_options">true</bool>
 
     <!-- Whether to display power menu category -->
     <bool name="has_powermenu">true</bool>

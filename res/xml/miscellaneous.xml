@@ -18,4 +18,9 @@
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/miscellaneous_title" >
 
+        <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+            android:key="show_media_heads_up"
+            android:title="@string/show_media_heads_up_title"
+            android:summary="@string/show_media_heads_up_summary"
+            android:defaultValue="false" />
 </PreferenceScreen>

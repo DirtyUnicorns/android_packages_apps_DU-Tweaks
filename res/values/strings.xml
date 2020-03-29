@@ -333,4 +333,6 @@
     <string name="gesture_navbar_handle_middle">Middle</string>
     <string name="gesture_navbar_handle_large">Large</string>
 
+    <string name="show_media_heads_up_title">Show media heads up</string>
+    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
 </resources>
