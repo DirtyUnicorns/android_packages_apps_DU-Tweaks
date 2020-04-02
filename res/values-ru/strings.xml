@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Dirty Tweaks -->
+    <string name="dirtytweaks_title">Хитрые твики</string>
+    <string name="dirtytweaks_summary">Добавь впечатлений от использования</string>
+    <!-- The Team -->
+    <string name="dialog_team_title">Команда</string>
+    <!-- Bottom navigation -->
+    <string name="bottom_nav_system_title">Система</string>
+    <string name="bottom_nav_lockscreen_title">Экран блокировки</string>
+    <string name="bottom_nav_statusbar_title">Строка состояния</string>
+    <string name="bottom_nav_navigation_title">Навигация</string>
+    <string name="bottom_nav_multitasking_title">Недавние</string>
+    <!-- Categories -->
+    <!-- System -->
+    <string name="device_extras_title">Доп. настройки устройства</string>
+    <string name="device_extras_summary">Настройки, характерные для вашего устройства</string>
+    <string name="expanded_desktop_title">Расширенный экран</string>
+    <string name="expanded_desktop_summary">Индивидуальная настройка отображения строки состояния и панели навигации</string>
+    <string name="miscellaneous_title">Разное</string>
+    <string name="miscellaneous_summary">Разные настройки</string>
+    <string name="powermenu_title">Меню питания</string>
+    <string name="powermenu_summary">Настройки параметров меню питания</string>
+    <!-- Lockscreen -->
+    <string name="fingerprint_prefs_title">Сканер отпечатка пальца</string>
+    <string name="fingerprint_prefs_summary">Настройки сканера отпечатков пальца</string>
+    <string name="lockscreen_items_title">Элементы экрана блокировки</string>
+    <string name="lockscreen_items_summary">Настройка экрана блокировки</string>
+    <!-- Statusbar -->
+    <string name="battery_options_title">Параметры батареи</string>
+    <string name="battery_options_summary">Настройка батареи в строке состояния</string>
+    <string name="carrier_label_title">Имя оператора</string>
+    <string name="carrier_label_summary">Настройка названия оператора на экране блокировки или в строке состояния</string>
+    <string name="clock_options_title">Параметры часов</string>
+    <string name="clock_options_summary">Настройка часов в строке состояния</string>
+    <string name="icon_manager_title">Менеджер значков</string>
+    <string name="icon_manager_summary">Настройка видимости элементов строки состояния</string>
+    <string name="notifications_title">Уведомления</string>
+    <string name="notifications_summary">Настройки системных уведомлений</string>
+    <string name="quicksettings_title">Быстрые настройки</string>
+    <string name="quicksettings_summary">Настройка вида быстрых настроек</string>
+    <string name="ticker_title">Бегущая строка</string>
+    <string name="ticker_summary">Бегущая строка и связанные с ней настройки</string>
+    <string name="traffic_title">Индикатор сетевого трафика</string>
+    <string name="traffic_summary">Включите и настройте индикатор трафика</string>
+    <!-- Navigation -->
+    <string name="buttons_title">Кнопки</string>
+    <string name="buttons_summary">Настройка кнопок управления громкостью</string>
+    <string name="navigation_options_title">Навигация</string>
+    <string name="navigation_options_summary">Настройки панели навигации</string>
+    <!-- Multitasking -->
+    <string name="aware_settings_title">Чувство движения</string>
+    <string name="aware_settings_summary">Конфигурировать функцию \'Чувство движения\'</string>
+    <string name="active_edge_title">Активные стороны</string>
+    <string name="active_edge_summary">Конфигурировать функцию \'Активные стороны\'</string>
+    <string name="headsup_title">Всплывающие уведомления</string>
+    <string name="headsup_summary">Настройка всплывающих уведомлений</string>
+    <string name="recents_title">Недавние</string>
+    <string name="recents_summary">Настройка недавно запущенных приложений</string>
+    <!-- Sub categories -->
+    <string name="sub_category_other">Другое</string>
+    <!-- Lockscreen clock style -->
+    <string name="lockscreen_clock_title">Стиль часов</string>
+    <string name="lockscreen_clock_dialog_title">Выберать стиль часов</string>
+    <string name="lockscreen_clock_hide">Скрыть</string>
+    <string name="lockscreen_clock_default">По умолчанию</string>
+    <string name="lockscreen_clock_default_bold">Обычный (Жирный)</string>
+    <string name="lockscreen_clock_sammy">Вертикальные</string>
+    <string name="lockscreen_clock_sammy_bold">Вертикальные (жирные)</string>
+    <!-- Flashlight gestures -->
+    <string name="double_tap_power_flashlight_title">Включение фонарика нажатием кнопки питания</string>
+    <string name="torch_power_button_gesture_none">Отключено</string>
+    <string name="torch_power_button_gesture_dt">Двойное нажатие на кнопку питания для включения</string>
+    <string name="torch_power_button_gesture_lp">Удерживание кнопки питания для включения</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_button_music_control_title">Управление воспроизведением</string>
+    <string name="volume_button_music_control_summary">Когда экран выключен, длительное нажатие клавиш громкости пропускает музыкальные треки</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Показывать активность сети</string>
+    <string name="network_traffic_autohide_threshold_title">Порог автоматического скрытия (Kб/с)</string>
+    <!-- Power menu -->
+    <string name="powermenu_power_title">Кнопка питания</string>
+    <string name="powermenu_reboot_title">Перезагрузка</string>
+    <string name="powermenu_advanced_restart_title">Расширенная перезагрузка</string>
+    <string name="powermenu_advanced_restart_summary">Включает расширенное меню перезагрузки</string>
+    <string name="powermenu_lockdown_title">Блокировка</string>
+    <string name="powermenu_screenshot_title">Скриншот</string>
+    <string name="powermenu_screenrecord_title">Запись экрана</string>
+    <string name="powermenu_lockscreen_title">Видимость на экране блокировки</string>
+    <string name="powermenu_lockscreen_summary">Показывать меню питания на экране блокировки</string>
+    <!-- QS layout -->
+    <string name="qs_layout_title">Расположение</string>
+    <string name="qs_rows_portrait_title">Строки (портрет)</string>
+    <string name="qs_rows_landscape_title">Строки (ланшафт)</string>
+    <string name="qs_columns_portrait_title">Колонки (портрет)</string>
+    <string name="qs_columns_landscape_title">Колонки (ландшафт)</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Быстрый доступ</string>
+    <string name="quick_pulldown_none">Отключено</string>
+    <string name="quick_pulldown_right">Свайп с правой стороны</string>
+    <string name="quick_pulldown_left">Свайп с левой стороны</string>
+    <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">Анимации</string>
+    <string name="qs_tile_animation_style_title">Стиль</string>
+    <string name="qs_tile_animation_duration_title">Период</string>
+    <string name="qs_tile_animation_interpolator_title">Эффект анимации</string>
+    <string name="qs_tile_animation_style_off">Нет</string>
+    <string name="qs_tile_animation_style_flip">Переворот</string>
+    <string name="qs_tile_animation_style_rotate">Поворот</string>
+    <string name="qs_tile_animation_duration_low">Медленно</string>
+    <string name="qs_tile_animation_duration_default">По умолчанию</string>
+    <string name="qs_tile_animation_duration_fast">Быстро</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Вытягивание</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Ускорение</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Замедление</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Ускорить и замедлить</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Отскок</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Перекрытие</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Опережение</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Опережение с перекрытием</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">Ползунок яркости</string>
+    <string name="qs_brightness_slider_summary">Показать ползунок яркости</string>
+    <!-- QS visibility -->
+    <string name="qs_tile_title_visibility_title">Названия плиток</string>
+    <string name="qs_tile_title_visibility_summary">Показывать заголовки под плитками быстрых настроек</string>
+    <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Виброотклик</string>
+    <string name="qs_vibrate_summary">Вибрировать при нажатии на плитки быстрых настроек</string>
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Строка состояния</string>
+    <string name="status_bar_style_title">Стиль</string>
+    <string name="status_bar_clock">Часы &amp; Дата</string>
+    <string name="clock_enabled">Включено</string>
+    <string name="clock_disabled">Отключено</string>
+    <string name="status_bar_clock_style_reset">Сбросить цвет</string>
+    <string name="status_bar_show_clock_title">Показывать часы &amp; дату</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-часовой формат включен</string>
+    <string name="enable_clock_weekday">День недели</string>
+    <string name="enable_clock_weekday_summary">Сокращенный день недели перед временем</string>
+    <string name="dont_show">Не показывать</string>
+    <string name="clock_date_display">Дата</string>
+    <string name="clock_date_display_summary">Показывать дату перед часами</string>
+    <string name="clock_date_style">Стиль даты</string>
+    <string name="clock_date_format">Формат даты</string>
+    <string name="clock_date_string_edittext_title">Значение должно соответствовать формату даты, например: ММ/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Введите строку</string>
+    <string name="am_pm_clock_normal">Обычный размер шрифта</string>
+    <string name="am_pm_clock_small">Маленький шрифт</string>
+    <string name="am_pm_clock_none">Не показывать</string>
+    <string name="clock_date_display_none">Не показывать</string>
+    <string name="clock_date_display_small">Маленький шрифт</string>
+    <string name="clock_date_display_normal">Нормальный шрифт</string>
+    <string name="clock_date_style_normal">Обычный</string>
+    <string name="clock_date_style_lowercase">Нижний регистр</string>
+    <string name="clock_date_style_uppercase">Прописной</string>
+    <string name="clock_date_right">Справа от часов</string>
+    <string name="clock_date_left">Слева от часов</string>
+    <string name="clock_date_position">Расположение даты</string>
+    <!-- DT2S on lockscreen -->
+    <string name="double_tap_sleep_lockscreen">Двойное нажатие для сна на экране блокировки</string>
+    <!-- Carrier Label -->
+    <string name="carrier_options">Выбрать место отображения</string>
+    <string name="custom_carrier_label_title">Своё имя оператора</string>
+    <string name="custom_carrier_label_explain">Пожалуйста, введите имя. Оставьте пустым для использования текущего имя сети</string>
+    <string name="custom_carrier_label_notset">Пользовательское название не установлено</string>
+    <string name="show_carrier_title">Имя оператора</string>
+    <string name="show_carrier_disabled">Отключено</string>
+    <string name="show_carrier_keyguard">Экран блокировки</string>
+    <string name="show_carrier_statusbar">Строка состояния</string>
+    <string name="show_carrier_enabled">Оба</string>
+    <!-- Motion Sense -->
+    <string name="ambient_display_wake_screen_summary">Чтобы увидеть время, уведомления и другую информацию, возьмите телефон</string>
+    <string name="ambient_display_wake_screen_summary_on">Вкл</string>
+    <string name="aware_category_display">Индикация событий</string>
+    <string name="aware_category_gesture">Быстрые жесты</string>
+    <string name="aware_disabled_preference_action">Настройки Чувства движения</string>
+    <string name="aware_disabled_preference_dialog_content">Чтобы использовать эту функцию, включите Чувство движения</string>
+    <string name="aware_disabled_preference_dialog_title">Эта функция отключена</string>
+    <string name="aware_disabled_preference_neutral">Не сейчас</string>
+    <string name="aware_display_settings_title">Пассивный экран блокировки</string>
+    <string name="aware_settings_description">С новыми датчиками Pixel может распознавать расстояние и движение вокруг телефона</string>
+    <string name="aware_settings_disabled_info_dialog_content">Функции Чувства движения, такие как быстрые жесты, отображения экрана поблизости и функция \'дотянуться до телефона\' не поддерживаются в этой стране</string>
+    <string name="aware_settings_disabled_info_dialog_title">Чувство движения выкл</string>
+    <string name="aware_settings_enabled_info_dialog_content">Функции Чувства движения, такие как быстрые жесты, отображение экрана поблизости и функция \'дотянуться до телефона\' поддерживаются в этой стране</string>
+    <string name="aware_settings_enabled_info_dialog_title">Чувство движения вкл</string>
+    <string name="aware_wake_display_summary">Показывать время, значки уведомлений и другую информацию, когда Вы находитесь поблизости</string>
+    <string name="aware_wake_display_summary_aod_off">Недоступно, так как активный экран выключен</string>
+    <string name="aware_wake_display_title">Показать экран, если Вы рядом</string>
+    <string name="dialog_aware_settings_message">Если Вы отключите Чувство движения, Вы не сможете использовать быстрые жесты, включение дисплея, когда Вы поблизости и функцию \'дотянуться до телефона\'</string>
+    <string name="dialog_aware_settings_title">Выключить Чувство движения?</string>
+    <string name="gesture_aware_confirmation_action_button">Понятно</string>
+    <string name="gesture_aware_disabled_info_dialog_content">Быстрые жесты и другие функции Чувства движения в этой стране не поддерживаются.</string>
+    <string name="gesture_aware_off_dialog_content">Чтобы использовать быстрые жесты, включите Чувство движения.</string>
+    <string name="gesture_aware_off_dialog_title">Быстрые жесты выкл</string>
+    <string name="gesture_silence_on_summary">Вкл/Перенос будильника и вызовы без звука</string>
+    <string name="gesture_silence_summary">Перенос будильника и вызовы без звука</string>
+    <string name="gesture_silence_title">Прерывание бесшумного режима</string>
+    <string name="gesture_skip_direction_ltr">Проведите слева направо для следующей песни</string>
+    <string name="gesture_skip_direction_rtl">Смахните справа налево для следующей песни</string>
+    <string name="gesture_skip_direction_title">Направление свайпа</string>
+    <string name="gesture_skip_on_summary">Вкл/Перейти к следующей или предыдущей песне</string>
+    <string name="gesture_skip_summary">Перейти к следующей или предыдущей песне</string>
+    <string name="gesture_skip_title">Пропустить песни</string>
+    <string name="gesture_tap_off_summary">Выкл/Пауза или возобновить музыку</string>
+    <string name="gesture_tap_on_summary">Вкл/Пауза или возобновить музыку</string>
+    <string name="gesture_tap_summary">Приостановить или возобновить музыку, нажав на пространство над телефоном</string>
+    <string name="gesture_tap_title">Приостановить музыку</string>
+    <string name="wake_screen_aware_disabled_info_dialog_content">Функция \'дотянуться до телефона\' и другие функции Чувства движения не поддерживаются в этой стране</string>
+    <string name="wake_screen_aware_off_dialog_content">Чтобы использовать функцию \'дотянуться до телефона\', включите Чувство движения</string>
+    <string name="wake_screen_aware_off_dialog_title">Функция \'дотянуться до телефона\' выключена</string>
+    <!-- Active edge -->
+    <string name="active_edge_short_actions_title">Действие по короткому сжиманию</string>
+    <string name="active_edge_long_actions_title">Действие по долгому сжиманию</string>
+    <string name="active_edge_sensitivity_title">Чувствительность сжатия</string>
+    <string name="active_edge_wake_title">Разрешить, при выключенном экране</string>
+    <string name="active_edge_wake_summary">Запустить действие, когда экран выключен</string>
+    <string name="active_edge_footer_info">Не все действия сжатия в активном крае имеют возможность активировать дисплей.\n\nЕсли вы хотите выбрать определенное действие приложения для этой операции, удерживайте нажатие на любом приложении в меню выбора приложений.</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Нет действия</string>
+    <string name="action_menu">Меню</string>
+    <string name="action_app_switch">Недавние</string>
+    <string name="action_search">Ассистент</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_launch_camera">Камера</string>
+    <string name="action_last_app">Последнее приложение</string>
+    <string name="action_splitscreen">Разделенный экран</string>
+    <string name="action_flashlight">Фонарик</string>
+    <string name="action_clear_notifications">Очистить уведомления</string>
+    <string name="action_volume_panel">Панель громкости</string>
+    <string name="action_screen_off">Экран выкл</string>
+    <string name="action_notifications">Уведомления</string>
+    <string name="action_power_menu">Меню питания</string>
+    <string name="action_screenshot">Скриншот</string>
+    <string name="action_qs_panel">Панель быстрых настроек</string>
+    <string name="action_app_action">Приложения</string>
+    <string name="action_ringer_modes">Режимы звонков</string>
+    <string name="kill_app">Закрыть активное приложение</string>
+    <!-- Active edge -->
+    <string name="active_edge_ss_app_select_title">Выберать приложение по короткому сжатию</string>
+    <string name="active_edge_ls_app_select_title">Выберать приложение по долгому сжатию</string>
+    <string name="active_edge_app_select_summary">Выберать приложение для запуска по сжатию</string>
+    <!-- Navigation -->
+    <string name="navigation_bar_title">Наэкранная панель навигации</string>
+    <string name="navigation_bar_summary">Вкл наэкранную панель навигации</string>
+    <string name="navigation_bar_layout_title">Расположение</string>
+    <string name="navigation_bar_layout_summary">Настройка расположения панели навигации</string>
+    <string name="navigation_bar_arrow_keys_title">Показывать кнопки со стрелками при наборе</string>
+    <string name="navigation_bar_arrow_keys_summary">Показывать левую и правую кнопку курсора в панели навигации при наборе</string>
+    <string name="hw_keys_swap_title">Поменять местами аппаратные кнопки</string>
+    <string name="hw_keys_swap_summary">Поменять местами кнопку назад и недавние</string>
+    <string name="home_key_title">Кнопка «Домой»</string>
+    <string name="back_key_title">Кнопка \"Назад\"</string>
+    <string name="menu_key_title">Кнопка «Меню»</string>
+    <string name="assist_key_title">Кнопка «Поиск»</string>
+    <string name="app_switch_key_title">Кнопка «Недавние»</string>
+    <string name="camera_key_title">Кнопка «Камера»</string>
+    <string name="short_press_title">Действие по короткому нажатию</string>
+    <string name="long_press_title">Действие по долгому нажатию</string>
+    <string name="double_tap_title">Действие по двойному нажатию</string>
+    <string name="app_picker_dialog_title">Выберать приложение</string>
+    <string name="long_press_custom_app_title">Пользовательское приложение по удерживанию</string>
+    <string name="double_tap_custom_app_title">Пользовательское приложение по двойному нажатию</string>
+    <!-- Button backlight -->
+    <string name="button_backlight_title">Подсветка</string>
+    <string name="button_backlight_summary">Настройка подсветки для кнопок</string>
+    <string name="button_backlight_on_touch_only_title">Подсветка при касании</string>
+    <string name="button_backlight_on_touch_only_summary">Включать подсветку клавиш только при касании</string>
+    <string name="button_timeout_title">Тайм-аут подсветки кнопок (сек)</string>
+    <string name="button_link_brightness">Связать с яркостью экрана</string>
+    <string name="button_link_brightness_summary">Использовать уровень яркости экрана</string>
+    <string name="button_manual_brightness">Уровень яркости</string>
+    <string name="button_backlight_enable_title">Разрешить подсветку</string>
+    <!-- Lockscreen media artwork -->
+    <string name="lockscreen_media_blur_title">Уровень размытия обложки</string>
+    <string name="show_lockscreen_media_art_title">Показать обложку</string>
+    <string name="lockscreen_media_art_options_title">Обложка на экране блокировки</string>
+    <!-- Long swipe gestures -->
+    <string name="left_swipe_key_title">Свайп влево</string>
+    <string name="right_swipe_key_title">Свайп вправо</string>
+    <string name="navbar_gesture_tweaks_pref_title">Пользовательские жесты</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Настройка жестов и пользовательских действий</string>
+    <string name="long_back_swipe_timeout_title">Задержка длинного свайпа</string>
+    <string name="left_swipe_actions_title">Действие длинного свайпа влево</string>
+    <string name="left_swipe_app_action_title">Выберать приложение на длинный свайп влево</string>
+    <string name="right_swipe_actions_title">Действие длинного свайпа влево</string>
+    <string name="right_swipe_app_action_title">Выберать приложение на длинный свайп вправо</string>
+    <string name="gesture_nav_tweaks_footer_info">Чтобы выбрать приложение на действие, удерживайте нажатие на любом приложении в меню выбора приложений.\n\nВ лончере выполните свайп в самой нижней части экрана, чтобы запустить действие.</string>
+    <string name="back_swipe_extended_title">Действие на расширенный свайп</string>
+    <string name="back_swipe_extended_summary">Активировать действие, если свайп по горизонтали шире, чем 3\/4 размера дисплея</string>
+    <!-- Gesture navbar handle -->
+    <string name="gesture_navbar_handle_title">Размер ручки</string>
+    <string name="gesture_navbar_handle_hidden">Скрыт</string>
+    <string name="gesture_navbar_handle_default">По умолчанию</string>
+    <string name="gesture_navbar_handle_middle">Средние</string>
+    <string name="gesture_navbar_handle_large">Крупный</string>
+</resources>

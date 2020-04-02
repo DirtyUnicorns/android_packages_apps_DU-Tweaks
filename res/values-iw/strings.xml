@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Dirty Tweaks -->
+    <string name="dirtytweaks_title">Dirty Tweaks</string>
+    <string name="dirtytweaks_summary">Enhance your experience</string>
+    <!-- The Team -->
+    <string name="dialog_team_title">The Team</string>
+    <!-- Bottom navigation -->
+    <string name="bottom_nav_system_title">System</string>
+    <string name="bottom_nav_lockscreen_title">Lockscreen</string>
+    <string name="bottom_nav_statusbar_title">Statusbar</string>
+    <string name="bottom_nav_navigation_title">Navigation</string>
+    <string name="bottom_nav_multitasking_title">Multitasking</string>
+    <!-- Categories -->
+    <!-- System -->
+    <string name="device_extras_title">Device extras</string>
+    <string name="device_extras_summary">Device specific tweaks</string>
+    <string name="expanded_desktop_title">Expanded desktop</string>
+    <string name="expanded_desktop_summary">Per-app configuration of the status bar and navigation key view</string>
+    <string name="miscellaneous_title">Miscellaneous</string>
+    <string name="miscellaneous_summary">Miscellaneous tweaks</string>
+    <string name="powermenu_title">Power menu</string>
+    <string name="powermenu_summary">Configure the power menu</string>
+    <!-- Lockscreen -->
+    <string name="fingerprint_prefs_title">Fingerprint prefs</string>
+    <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>
+    <string name="lockscreen_items_title">Lockscreen items</string>
+    <string name="lockscreen_items_summary">Customize the lockscreen</string>
+    <!-- Statusbar -->
+    <string name="battery_options_title">Battery options</string>
+    <string name="battery_options_summary">Customize the statusbar battery</string>
+    <string name="carrier_label_title">Carrier label</string>
+    <string name="carrier_label_summary">Customize the carrier label on the lockscreen or statusbar</string>
+    <string name="clock_options_title">Clock options</string>
+    <string name="clock_options_summary">Customize your statusbar clock</string>
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Configure the visibility of statusbar items</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_summary">Tweaks specific to system notifications</string>
+    <string name="quicksettings_title">Quick settings</string>
+    <string name="quicksettings_summary">Configure the layout of the quick settings area</string>
+    <string name="ticker_title">Ticker</string>
+    <string name="ticker_summary">Enable the statusbar ticker and configure ticker related tweaks</string>
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="traffic_summary">Enable and configure the traffic indicators</string>
+    <!-- Navigation -->
+    <string name="buttons_title">Buttons</string>
+    <string name="buttons_summary">Configure volume rocker options</string>
+    <string name="navigation_options_title">Navigation</string>
+    <string name="navigation_options_summary">Configure navigation options</string>
+    <!-- Multitasking -->
+    <string name="aware_settings_title">Motion Sense</string>
+    <string name="aware_settings_summary">Configure Motion Sense options</string>
+    <string name="active_edge_title">Active Edge</string>
+    <string name="active_edge_summary">Configure Active Edge options</string>
+    <string name="headsup_title">Heads up</string>
+    <string name="headsup_summary">Configure heads up options</string>
+    <string name="recents_title">Recents</string>
+    <string name="recents_summary">Configure recents options</string>
+    <!-- Sub categories -->
+    <string name="sub_category_other">Other</string>
+    <!-- Lockscreen clock style -->
+    <string name="lockscreen_clock_title">Clock style</string>
+    <string name="lockscreen_clock_dialog_title">Select clock style</string>
+    <string name="lockscreen_clock_hide">Hide</string>
+    <string name="lockscreen_clock_default">Default</string>
+    <string name="lockscreen_clock_default_bold">Default (bold)</string>
+    <string name="lockscreen_clock_sammy">Sammy</string>
+    <string name="lockscreen_clock_sammy_bold">Sammy (bold)</string>
+    <!-- Flashlight gestures -->
+    <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
+    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_button_music_control_title">Playback control</string>
+    <string name="volume_button_music_control_summary">When the screen is off, long-pressing the volume keys will skip music tracks</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Show net activity</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <!-- Power menu -->
+    <string name="powermenu_power_title">Power</string>
+    <string name="powermenu_reboot_title">Restart</string>
+    <string name="powermenu_advanced_restart_title">Advanced restart</string>
+    <string name="powermenu_advanced_restart_summary">Enables the advanced restart menu for other restarting options</string>
+    <string name="powermenu_lockdown_title">Lockdown</string>
+    <string name="powermenu_screenshot_title">Screenshot</string>
+    <string name="powermenu_screenrecord_title">Screen record</string>
+    <string name="powermenu_lockscreen_title">Lockscreen visibility</string>
+    <string name="powermenu_lockscreen_summary">Display power menu on a secured lockscreen</string>
+    <!-- QS layout -->
+    <string name="qs_layout_title">Layout</string>
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
+    <string name="quick_pulldown_none">Disabled</string>
+    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
+    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+    <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">Animations</string>
+    <string name="qs_tile_animation_style_title">Style</string>
+    <string name="qs_tile_animation_duration_title">Duration</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
+    <string name="qs_tile_animation_style_off">None</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_default">Default</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show the brightness slider</string>
+    <!-- QS visibility -->
+    <string name="qs_tile_title_visibility_title">Title visibility</string>
+    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
+    <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrate on touch</string>
+    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_style_title">Style</string>
+    <string name="status_bar_clock">Clock &amp; Date</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="enable_clock_weekday">Day of the week</string>
+    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="dont_show">Don\'t show</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
+    <!-- DT2S on lockscreen -->
+    <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
+    <!-- Carrier Label -->
+    <string name="carrier_options">Select display locations</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Lockscreen</string>
+    <string name="show_carrier_statusbar">Status bar</string>
+    <string name="show_carrier_enabled">Both</string>
+    <!-- Motion Sense -->
+    <string name="ambient_display_wake_screen_summary">To check time, notifications, and other info, reach for your phone</string>
+    <string name="ambient_display_wake_screen_summary_on">On</string>
+    <string name="aware_category_display">Ambient Display</string>
+    <string name="aware_category_gesture">Quick Gestures</string>
+    <string name="aware_disabled_preference_action">Motion Sense Settings</string>
+    <string name="aware_disabled_preference_dialog_content">To use this feature, turn on Motion Sense</string>
+    <string name="aware_disabled_preference_dialog_title">This feature is turned off</string>
+    <string name="aware_disabled_preference_neutral">Not now</string>
+    <string name="aware_display_settings_title">Idle lock screen</string>
+    <string name="aware_settings_description">With new sensors, Pixel can recognize distance and movement around the phone</string>
+    <string name="aware_settings_disabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are not supported in this country</string>
+    <string name="aware_settings_disabled_info_dialog_title">Motion Sense is off</string>
+    <string name="aware_settings_enabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are supported in this country</string>
+    <string name="aware_settings_enabled_info_dialog_title">Motion Sense is on</string>
+    <string name="aware_wake_display_summary">Show time, notification icons, and other info when you’re nearby</string>
+    <string name="aware_wake_display_summary_aod_off">Unavailable because always-on display is off</string>
+    <string name="aware_wake_display_title">Show display when nearby</string>
+    <string name="dialog_aware_settings_message">If you turn off Motion Sense, you can’t use Quick Gestures, show display when nearby, and reach to check phone</string>
+    <string name="dialog_aware_settings_title">Turn off Motion Sense?</string>
+    <string name="gesture_aware_confirmation_action_button">Got it</string>
+    <string name="gesture_aware_disabled_info_dialog_content">Quick Gestures and other Motion Sense features are not supported in this country.</string>
+    <string name="gesture_aware_off_dialog_content">To use Quick Gestures, turn on Motion Sense.</string>
+    <string name="gesture_aware_off_dialog_title">Quick Gestures are off</string>
+    <string name="gesture_silence_on_summary">On / Snooze alarms and silence calls</string>
+    <string name="gesture_silence_summary">Snooze alarms and silence calls</string>
+    <string name="gesture_silence_title">Silence interruptions</string>
+    <string name="gesture_skip_direction_ltr">Swipe left to right for next song</string>
+    <string name="gesture_skip_direction_rtl">Swipe right to left for next song</string>
+    <string name="gesture_skip_direction_title">Swipe direction</string>
+    <string name="gesture_skip_on_summary">On / Skip to the next or previous song</string>
+    <string name="gesture_skip_summary">Skip to the next or previous song</string>
+    <string name="gesture_skip_title">Skip songs</string>
+    <string name="gesture_tap_off_summary">Off / Pause or resume music</string>
+    <string name="gesture_tap_on_summary">On / Pause or resume music</string>
+    <string name="gesture_tap_summary">Pause or resume music by tapping the air above the phone</string>
+    <string name="gesture_tap_title">Pause music</string>
+    <string name="wake_screen_aware_disabled_info_dialog_content">Reach to check phone and other Motion Sense features are not supported in this country</string>
+    <string name="wake_screen_aware_off_dialog_content">To use Reach to check phone, turn on Motion Sense</string>
+    <string name="wake_screen_aware_off_dialog_title">Reach to check phone is off</string>
+    <!-- Active edge -->
+    <string name="active_edge_short_actions_title">Short squeeze action</string>
+    <string name="active_edge_long_actions_title">Long squeeze action</string>
+    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
+    <string name="active_edge_wake_title">Allow when screen is off</string>
+    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
+    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display.\n\nIf you want to choose a specific app activity for the action, long press on any app in the app picker.</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">No action</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Recents</string>
+    <string name="action_search">Assistant</string>
+    <string name="action_voice_search">Voice search</string>
+    <string name="action_launch_camera">Camera</string>
+    <string name="action_last_app">Last app</string>
+    <string name="action_splitscreen">Split screen</string>
+    <string name="action_flashlight">Flashlight</string>
+    <string name="action_clear_notifications">Clear notifications</string>
+    <string name="action_volume_panel">Volume panel</string>
+    <string name="action_screen_off">Screen off</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_power_menu">Power menu</string>
+    <string name="action_screenshot">Screenshot</string>
+    <string name="action_qs_panel">QS panel</string>
+    <string name="action_app_action">Application</string>
+    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="kill_app">Kill foreground app</string>
+    <!-- Active edge -->
+    <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
+    <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
+    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
+    <!-- Navigation -->
+    <string name="navigation_bar_title">On-screen navigation bar</string>
+    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
+    <string name="navigation_bar_layout_title">Layout</string>
+    <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
+    <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
+    <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing</string>
+    <string name="hw_keys_swap_title">Swap hardware buttons</string>
+    <string name="hw_keys_swap_summary">Swap the order of recents and back buttons</string>
+    <string name="home_key_title">Home button</string>
+    <string name="back_key_title">Back button</string>
+    <string name="menu_key_title">Menu button</string>
+    <string name="assist_key_title">Assist button</string>
+    <string name="app_switch_key_title">Recents button</string>
+    <string name="camera_key_title">Camera button</string>
+    <string name="short_press_title">Short press action</string>
+    <string name="long_press_title">Long press action</string>
+    <string name="double_tap_title">Double tap action</string>
+    <string name="app_picker_dialog_title">Select an app</string>
+    <string name="long_press_custom_app_title">Long press custom app</string>
+    <string name="double_tap_custom_app_title">Double tap custom app</string>
+    <!-- Button backlight -->
+    <string name="button_backlight_title">Backlight</string>
+    <string name="button_backlight_summary">Configure backlight for capacitive keys</string>
+    <string name="button_backlight_on_touch_only_title">Button touch</string>
+    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
+    <string name="button_timeout_title">Backlight timeout (seconds)</string>
+    <string name="button_link_brightness">Link to screen brightness</string>
+    <string name="button_link_brightness_summary">Use screen brightness level</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="button_backlight_enable_title">Allow backlight</string>
+    <!-- Lockscreen media artwork -->
+    <string name="lockscreen_media_blur_title">Media art blur level</string>
+    <string name="show_lockscreen_media_art_title">Show media art</string>
+    <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
+    <!-- Long swipe gestures -->
+    <string name="left_swipe_key_title">Left swipe</string>
+    <string name="right_swipe_key_title">Right swipe</string>
+    <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
+    <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
+    <string name="left_swipe_actions_title">Long left swipe action</string>
+    <string name="left_swipe_app_action_title">Select long left swipe app</string>
+    <string name="right_swipe_actions_title">Long right swipe action</string>
+    <string name="right_swipe_app_action_title">Select long right swipe app</string>
+    <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
+    <string name="back_swipe_extended_title">Extended swipe action</string>
+    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
+    <!-- Gesture navbar handle -->
+    <string name="gesture_navbar_handle_title">Handle bar size</string>
+    <string name="gesture_navbar_handle_hidden">Hidden</string>
+    <string name="gesture_navbar_handle_default">Default</string>
+    <string name="gesture_navbar_handle_middle">Middle</string>
+    <string name="gesture_navbar_handle_large">Large</string>
+</resources>

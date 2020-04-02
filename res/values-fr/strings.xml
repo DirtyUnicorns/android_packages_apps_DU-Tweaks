@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2020 The Dirty Unicorns Project
+<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,36 +13,33 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- Dirty Tweaks -->
     <string name="dirtytweaks_title">Dirty Tweaks</string>
     <string name="dirtytweaks_summary">Améliorez votre expérience</string>
-
     <!-- The Team -->
     <string name="dialog_team_title">L\'équipe</string>
-
     <!-- Bottom navigation -->
     <string name="bottom_nav_system_title">Système</string>
     <string name="bottom_nav_lockscreen_title">Écran de déverrouillage</string>
     <string name="bottom_nav_statusbar_title">Barre d\'état</string>
     <string name="bottom_nav_navigation_title">Navigation</string>
     <string name="bottom_nav_multitasking_title">Multi-tâche</string>
-
     <!-- Categories -->
     <!-- System -->
     <string name="device_extras_title">Réglages spécifiques</string>
     <string name="device_extras_summary">Réglages spécifiques de cet appareil</string>
+    <string name="expanded_desktop_title">Bureau étendu</string>
+    <string name="expanded_desktop_summary">Réglages de l\'affichage de la barre d\'état et de la barre de navigation par application</string>
     <string name="miscellaneous_title">Divers</string>
     <string name="miscellaneous_summary">Réglages divers</string>
     <string name="powermenu_title">Menu Marche/Arrêt</string>
     <string name="powermenu_summary">Réglages des options du menu Marche/Arrêt</string>
-
     <!-- Lockscreen -->
+    <string name="fingerprint_prefs_title">Empreinte digitale</string>
+    <string name="fingerprint_prefs_summary">Réglages spécifiques au lecteur d\'empreintes digitales</string>
     <string name="lockscreen_items_title">Écran de déverrouillage</string>
     <string name="lockscreen_items_summary">Réglages des éléments à afficher sur l\'écran de déverrouillage</string>
-
     <!-- Statusbar -->
     <string name="battery_options_title">Batterie</string>
     <string name="battery_options_summary">Réglages de l\'icône de la batterie de la barre d\'état et de la tuile du panneau de configuration</string>
@@ -52,26 +49,30 @@
     <string name="clock_options_summary">Réglages de l\'horloge de la barre d\'état</string>
     <string name="icon_manager_title">Gestionnaire d\'icônes</string>
     <string name="icon_manager_summary">Réglages de l\'affichage des éléments de la barre d\'état</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_summary">Réglages spécifiques des notifications système</string>
     <string name="quicksettings_title">Panneau de configuration</string>
     <string name="quicksettings_summary">Réglages du panneau de configuration</string>
+    <string name="ticker_title">Aperçu de notification</string>
+    <string name="ticker_summary">Réglages de l\'aperçu de notification sur la barre d\'état</string>
     <string name="traffic_title">Indicateur de trafic</string>
     <string name="traffic_summary">Réglages de l\'indicateur de vitesse de réseau sur la barre d\'état</string>
-
     <!-- Navigation -->
     <string name="buttons_title">Boutons</string>
     <string name="buttons_summary">Réglages des boutons physiques et du bouton Volume</string>
     <string name="navigation_options_title">Barre de navigation</string>
     <string name="navigation_options_summary">Réglages des options de la barre de navigation</string>
-
     <!-- Multitasking -->
     <string name="aware_settings_title">Perception de geste</string>
     <string name="aware_settings_summary">Réglages Perception de geste</string>
     <string name="active_edge_title">Bord actif</string>
     <string name="active_edge_summary">Réglages des options \"Bord actif\"</string>
-
+    <string name="headsup_title">Notifications flottantes</string>
+    <string name="headsup_summary">Réglages des notifications flottantes</string>
+    <string name="recents_title">Applications récentes</string>
+    <string name="recents_summary">Réglages des applications récentes</string>
     <!-- Sub categories -->
     <string name="sub_category_other">Divers</string>
-
     <!-- Lockscreen clock style -->
     <string name="lockscreen_clock_title">Horloge</string>
     <string name="lockscreen_clock_dialog_title">Afficher le widget Horloge</string>
@@ -80,21 +81,17 @@
     <string name="lockscreen_clock_default_bold">Par défaut (gras)</string>
     <string name="lockscreen_clock_sammy">Sammy</string>
     <string name="lockscreen_clock_sammy_bold">Sammy (gras)</string>
-
     <!-- Flashlight gestures -->
     <string name="double_tap_power_flashlight_title">Lampe de poche en mode veille</string>
     <string name="torch_power_button_gesture_none">Désactivé</string>
     <string name="torch_power_button_gesture_dt">Double appui sur le bouton Marche/Arrêt</string>
     <string name="torch_power_button_gesture_lp">Appui prolongé sur le bouton Marche/Arrêt</string>
-
     <!-- Volume rocker music control -->
     <string name="volume_button_music_control_title">Contrôle de lecture</string>
     <string name="volume_button_music_control_summary">Sur écran éteint, un appui prolongé sur les touches Volume change la chanson</string>
-
     <!-- Network Traffic -->
     <string name="network_traffic_state_title">Afficher l\'indicateur de vitesse de réseau lorsque la barre d\'état est déployée</string>
     <string name="network_traffic_autohide_threshold_title">Seuil de masquage automatique (KB/s)</string>
-
     <!-- Power menu -->
     <string name="powermenu_power_title">Marche/Arrêt</string>
     <string name="powermenu_reboot_title">Redémarrer</string>
@@ -105,20 +102,17 @@
     <string name="powermenu_screenrecord_title">Enregistrement de l\'écran</string>
     <string name="powermenu_lockscreen_title">Affichage du menu Marche/Arrêt</string>
     <string name="powermenu_lockscreen_summary">Afficher la boîte de dialogue du menu Marche/Arrêt sur l\'écran de déverrouillage sécurisé</string>
-
     <!-- QS layout -->
     <string name="qs_layout_title">Disposition</string>
     <string name="qs_rows_portrait_title">Lignes de tuiles en mode portrait</string>
     <string name="qs_rows_landscape_title">Lignes de tuiles en mode paysage</string>
     <string name="qs_columns_portrait_title">Colonnes de tuiles en mode portrait</string>
     <string name="qs_columns_landscape_title">Colonnes de tuiles en mode paysage</string>
-
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Déroulement rapide</string>
     <string name="quick_pulldown_none">Désactivé</string>
     <string name="quick_pulldown_right">Tirer vers le bas du côté droit de la barre d\'état</string>
     <string name="quick_pulldown_left">Tirer vers le bas du côté gauche de la barre d\'état</string>
-
     <!-- Tiles animation/interpolator style  -->
     <string name="qs_animation_options_title">Animations</string>
     <string name="qs_tile_animation_style_title">Style</string>
@@ -141,19 +135,15 @@
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
-
     <!-- Qs brightness slider -->
     <string name="qs_brightness_slider_title">Curseur de luminosité</string>
     <string name="qs_brightness_slider_summary">Afficher le curseur de luminosité</string>
-
     <!-- QS visibility -->
     <string name="qs_tile_title_visibility_title">Titre des tuiles</string>
     <string name="qs_tile_title_visibility_summary">Afficher les titres sous les tuiles du panneau de configuration</string>
-
     <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Vibration au toucher</string>
     <string name="qs_vibrate_summary">Vibrer lors des appuis sur les tuiles du panneau de configuration</string>
-
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Barre d\'état</string>
     <string name="status_bar_style_title">Aspect</string>
@@ -185,10 +175,8 @@
     <string name="clock_date_right">À droite de l\'horloge</string>
     <string name="clock_date_left">À gauche de l\'horloge</string>
     <string name="clock_date_position">Position de la date</string>
-
     <!-- DT2S on lockscreen -->
     <string name="double_tap_sleep_lockscreen">Veille par double appui</string>
-
     <!-- Carrier Label -->
     <string name="carrier_options">Affichage</string>
     <string name="custom_carrier_label_title">Libellé</string>
@@ -199,7 +187,6 @@
     <string name="show_carrier_keyguard">Écran de déverrouillage</string>
     <string name="show_carrier_statusbar">Barre d\'état</string>
     <string name="show_carrier_enabled">Sur les deux</string>
-
     <!-- Motion Sense -->
     <string name="ambient_display_wake_screen_summary">Pour afficher l\'heure, les notifications et d\'autres informations, saisir le téléphone</string>
     <string name="ambient_display_wake_screen_summary_on">Activé</string>
@@ -233,14 +220,13 @@
     <string name="gesture_skip_on_summary">Passer à la piste musicale suivante ou précédente activé</string>
     <string name="gesture_skip_summary">Passer à la piste musicale suivante ou précédente</string>
     <string name="gesture_skip_title">Saut de piste musicale</string>
-    <string name="gesture_tap_off_summary">Désactivé</string>
-    <string name="gesture_tap_on_summary">Activé</string>
-    <string name="gesture_tap_summary">Mettre en pause ou reprendre la piste musicale en appuyant sur l\'air au-dessus du téléphone</string>
-    <string name="gesture_tap_title">Pause</string>
+    <string name="gesture_tap_off_summary">Off / Pause or resume music</string>
+    <string name="gesture_tap_on_summary">On / Pause or resume music</string>
+    <string name="gesture_tap_summary">Pause or resume music by tapping the air above the phone</string>
+    <string name="gesture_tap_title">Pause music</string>
     <string name="wake_screen_aware_disabled_info_dialog_content">Les fonctionnalités \"Perception de geste\", et \"Saisir le téléphone\" ne sont pas prises en charge dans ce pays</string>
     <string name="wake_screen_aware_off_dialog_content">Pour utiliser \"Saisir le téléphone\", activer \"Perception de geste\"</string>
     <string name="wake_screen_aware_off_dialog_title">\"Saisir le téléphone\" désactivé</string>
-
     <!-- Active edge -->
     <string name="active_edge_short_actions_title">Action par appui court</string>
     <string name="active_edge_long_actions_title">Action par appui prolongé</string>
@@ -248,10 +234,6 @@
     <string name="active_edge_wake_title">Autoriser lorsque l\'écran est éteint</string>
     <string name="active_edge_wake_summary">Déclencher n\'importe quelle action même si l\'écran est éteint</string>
     <string name="active_edge_footer_info">Certaines actions du mode Bord actif ne permettent pas d\'activer l\'affichage.</string>
-    <string name="active_edge_ss_app_select_title">Application par appui court</string>
-    <string name="active_edge_ls_app_select_title">Application par appui prolongé</string>
-    <string name="active_edge_app_select_summary">Choisir une application à démarrer</string>
-
     <!-- Custom actions -->
     <string name="action_nothing">Aucune action</string>
     <string name="action_menu">Menu</string>
@@ -263,7 +245,7 @@
     <string name="action_splitscreen">Écran partagé</string>
     <string name="action_flashlight">Lampe de poche</string>
     <string name="action_clear_notifications">Effacer les notifications</string>
-    <string name="action_volume_panel">Panneau de volume</string>  
+    <string name="action_volume_panel">Panneau de volume</string>
     <string name="action_screen_off">Éteindre l\'écran</string>
     <string name="action_notifications">Notifications</string>
     <string name="action_power_menu">Menu Marche/Arrêt</string>
@@ -271,8 +253,11 @@
     <string name="action_qs_panel">Panneau de configuration rapide</string>
     <string name="action_app_action">Application</string>
     <string name="action_ringer_modes">Sonnerie</string>
-    <string name="kill_app">Forcer la fermeture de l\'application de premier plan</string>
-
+    <string name="kill_app">Kill foreground app</string>
+    <!-- Active edge -->
+    <string name="active_edge_ss_app_select_title">Application par appui court</string>
+    <string name="active_edge_ls_app_select_title">Application par appui prolongé</string>
+    <string name="active_edge_app_select_summary">Choisir une application à démarrer</string>
     <!-- Navigation -->
     <string name="navigation_bar_title">Barre de navigation</string>
     <string name="navigation_bar_summary">Afficher les touches de navigation</string>
@@ -294,7 +279,6 @@
     <string name="app_picker_dialog_title">Sélectionner une application</string>
     <string name="long_press_custom_app_title">Application par appui prolongé</string>
     <string name="double_tap_custom_app_title">Application par double appui</string>
-
     <!-- Button backlight -->
     <string name="button_backlight_title">Rétroéclairage</string>
     <string name="button_backlight_summary">Activer le rétroéclairage pour les boutons capacitifs</string>
@@ -305,31 +289,27 @@
     <string name="button_link_brightness_summary">Utiliser le même niveau de luminosité que celui défini pour l\'écran</string>
     <string name="button_manual_brightness">Niveau de luminosité</string>
     <string name="button_backlight_enable_title">Autoriser le rétroéclairage</string>
-
     <!-- Lockscreen media artwork -->
     <string name="lockscreen_media_blur_title">Niveau de flou de l\'illustration</string>
     <string name="show_lockscreen_media_art_title">Illustration du titre musical</string>
     <string name="lockscreen_media_art_options_title">Affichage sur l\'écran de déverrouillage</string>
-
-   <!-- Long swipe gestures -->
-   <string name="left_swipe_key_title">Glissement vers la gauche</string>
-   <string name="right_swipe_key_title">Glissement vers la droite</string>
-   <string name="navbar_gesture_tweaks_pref_title">Gestes</string>
-   <string name="navbar_gesture_tweaks_pref_summary">Réglages des gestes et les actions</string>
-   <string name="long_back_swipe_timeout_title">Délai de déclenchement du glissement prolongé</string>
-   <string name="left_swipe_actions_title">Glissement prolongé vers la gauche</string>
-   <string name="left_swipe_app_action_title">Choisir une application</string>
-   <string name="right_swipe_actions_title">Glissement prolongé vers la droite</string>
-   <string name="right_swipe_app_action_title">Choisir une application</string>
-   <string name="gesture_nav_tweaks_footer_info">Pour choisir une activité d\'application spécifique pour le glissement, appuyer longuement sur n\'importe quelle application dans le sélecteur d\'application.\n\nSi le lanceur s\'affiche, faire glisser le doigt tout en bas de l\'écran pour déclencher l\'action.</string>
-   <string name="back_swipe_extended_title">Zone de déclenchement élargie</string>
-   <string name="back_swipe_extended_summary">Déclencher uniquement si le glissement dépasse les 3\/4 de la taille de l\'écran</string>
-
+    <!-- Long swipe gestures -->
+    <string name="left_swipe_key_title">Left swipe</string>
+    <string name="right_swipe_key_title">Right swipe</string>
+    <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
+    <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
+    <string name="left_swipe_actions_title">Long left swipe action</string>
+    <string name="left_swipe_app_action_title">Select long left swipe app</string>
+    <string name="right_swipe_actions_title">Long right swipe action</string>
+    <string name="right_swipe_app_action_title">Select long right swipe app</string>
+    <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
+    <string name="back_swipe_extended_title">Extended swipe action</string>
+    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Disposition du bouton</string>
-    <string name="gesture_navbar_handle_hidden">Masquée</string>
-    <string name="gesture_navbar_handle_default">Par défaut</string>
-    <string name="gesture_navbar_handle_middle">Milieu</string>
-    <string name="gesture_navbar_handle_large">Grande</string>
-
+    <string name="gesture_navbar_handle_title">Handle bar size</string>
+    <string name="gesture_navbar_handle_hidden">Hidden</string>
+    <string name="gesture_navbar_handle_default">Default</string>
+    <string name="gesture_navbar_handle_middle">Middle</string>
+    <string name="gesture_navbar_handle_large">Large</string>
 </resources>
