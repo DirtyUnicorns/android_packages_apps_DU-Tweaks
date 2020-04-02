@@ -29,15 +29,11 @@
     <!-- System -->
     <string name="device_extras_title">Další nastavení zařízení</string>
     <string name="device_extras_summary">Vylepšení specifická pro zařízení</string>
-    <string name="expanded_desktop_title">Rozšířená plocha</string>
-    <string name="expanded_desktop_summary">Konfigurace zobrazení stavového řádku a navigační lišty pro jednotlivé aplikace</string>
     <string name="miscellaneous_title">Různé</string>
     <string name="miscellaneous_summary">Ostatní vylepšení</string>
     <string name="powermenu_title">Menu napájení</string>
     <string name="powermenu_summary">Nakonfigurujte si menu napájení</string>
     <!-- Lockscreen -->
-    <string name="fingerprint_prefs_title">Preference otisku prstů</string>
-    <string name="fingerprint_prefs_summary">Vylepšení specifická pro senzor otisku prstů</string>
     <string name="lockscreen_items_title">Položky na zamykací obrazovce</string>
     <string name="lockscreen_items_summary">Přizpůsobte zamykací obrazovku</string>
     <!-- Statusbar -->
@@ -49,12 +45,8 @@
     <string name="clock_options_summary">Přizpůsobte si hodiny ve stavovém řádku</string>
     <string name="icon_manager_title">Správce ikon</string>
     <string name="icon_manager_summary">Nastavte si viditelnost položek na stavovém řádku</string>
-    <string name="notifications_title">Oznámení</string>
-    <string name="notifications_summary">Vylepšení specifická pro systémová upozornění</string>
     <string name="quicksettings_title">Panel rychlého nastavení</string>
     <string name="quicksettings_summary">Nastavte si rozložení ikon v oblasti rychlého nastavení</string>
-    <string name="ticker_title">Text oznámení</string>
-    <string name="ticker_summary">Povolte text oznámení na stavovém řádku a nakonfigurujte vylepšení s tím související</string>
     <string name="traffic_title">Indikátory datových přenosů</string>
     <string name="traffic_summary">Povolte a nakonfigurujte si indikátory datového provozu ve stavovém řádku</string>
     <!-- Navigation -->
@@ -67,10 +59,6 @@
     <string name="aware_settings_summary">Konfigurovat možnosti Motion Sense</string>
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">Konfigurovat možnosti Active Edge</string>
-    <string name="headsup_title">Plovoucí oznámení</string>
-    <string name="headsup_summary">Nastavte možnosti plovoucích oznámení</string>
-    <string name="recents_title">Nedávné</string>
-    <string name="recents_summary">Nakonfigurujte přehled nedávných aplikací</string>
     <!-- Sub categories -->
     <string name="sub_category_other">Ostatní</string>
     <!-- Lockscreen clock style -->

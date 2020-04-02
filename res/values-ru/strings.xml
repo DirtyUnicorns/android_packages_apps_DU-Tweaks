@@ -29,15 +29,11 @@
     <!-- System -->
     <string name="device_extras_title">Доп. настройки устройства</string>
     <string name="device_extras_summary">Настройки, характерные для вашего устройства</string>
-    <string name="expanded_desktop_title">Расширенный экран</string>
-    <string name="expanded_desktop_summary">Индивидуальная настройка отображения строки состояния и панели навигации</string>
     <string name="miscellaneous_title">Разное</string>
     <string name="miscellaneous_summary">Разные настройки</string>
     <string name="powermenu_title">Меню питания</string>
     <string name="powermenu_summary">Настройки параметров меню питания</string>
     <!-- Lockscreen -->
-    <string name="fingerprint_prefs_title">Сканер отпечатка пальца</string>
-    <string name="fingerprint_prefs_summary">Настройки сканера отпечатков пальца</string>
     <string name="lockscreen_items_title">Элементы экрана блокировки</string>
     <string name="lockscreen_items_summary">Настройка экрана блокировки</string>
     <!-- Statusbar -->
@@ -49,12 +45,8 @@
     <string name="clock_options_summary">Настройка часов в строке состояния</string>
     <string name="icon_manager_title">Менеджер значков</string>
     <string name="icon_manager_summary">Настройка видимости элементов строки состояния</string>
-    <string name="notifications_title">Уведомления</string>
-    <string name="notifications_summary">Настройки системных уведомлений</string>
     <string name="quicksettings_title">Быстрые настройки</string>
     <string name="quicksettings_summary">Настройка вида быстрых настроек</string>
-    <string name="ticker_title">Бегущая строка</string>
-    <string name="ticker_summary">Бегущая строка и связанные с ней настройки</string>
     <string name="traffic_title">Индикатор сетевого трафика</string>
     <string name="traffic_summary">Включите и настройте индикатор трафика</string>
     <!-- Navigation -->
@@ -67,10 +59,6 @@
     <string name="aware_settings_summary">Конфигурировать функцию \'Чувство движения\'</string>
     <string name="active_edge_title">Активные стороны</string>
     <string name="active_edge_summary">Конфигурировать функцию \'Активные стороны\'</string>
-    <string name="headsup_title">Всплывающие уведомления</string>
-    <string name="headsup_summary">Настройка всплывающих уведомлений</string>
-    <string name="recents_title">Недавние</string>
-    <string name="recents_summary">Настройка недавно запущенных приложений</string>
     <!-- Sub categories -->
     <string name="sub_category_other">Другое</string>
     <!-- Lockscreen clock style -->

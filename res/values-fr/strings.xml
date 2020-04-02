@@ -29,15 +29,11 @@
     <!-- System -->
     <string name="device_extras_title">Réglages spécifiques</string>
     <string name="device_extras_summary">Réglages spécifiques de cet appareil</string>
-    <string name="expanded_desktop_title">Bureau étendu</string>
-    <string name="expanded_desktop_summary">Réglages de l\'affichage de la barre d\'état et de la barre de navigation par application</string>
     <string name="miscellaneous_title">Divers</string>
     <string name="miscellaneous_summary">Réglages divers</string>
     <string name="powermenu_title">Menu Marche/Arrêt</string>
     <string name="powermenu_summary">Réglages des options du menu Marche/Arrêt</string>
     <!-- Lockscreen -->
-    <string name="fingerprint_prefs_title">Empreinte digitale</string>
-    <string name="fingerprint_prefs_summary">Réglages spécifiques au lecteur d\'empreintes digitales</string>
     <string name="lockscreen_items_title">Écran de déverrouillage</string>
     <string name="lockscreen_items_summary">Réglages des éléments à afficher sur l\'écran de déverrouillage</string>
     <!-- Statusbar -->
@@ -49,12 +45,8 @@
     <string name="clock_options_summary">Réglages de l\'horloge de la barre d\'état</string>
     <string name="icon_manager_title">Gestionnaire d\'icônes</string>
     <string name="icon_manager_summary">Réglages de l\'affichage des éléments de la barre d\'état</string>
-    <string name="notifications_title">Notifications</string>
-    <string name="notifications_summary">Réglages spécifiques des notifications système</string>
     <string name="quicksettings_title">Panneau de configuration</string>
     <string name="quicksettings_summary">Réglages du panneau de configuration</string>
-    <string name="ticker_title">Aperçu de notification</string>
-    <string name="ticker_summary">Réglages de l\'aperçu de notification sur la barre d\'état</string>
     <string name="traffic_title">Indicateur de trafic</string>
     <string name="traffic_summary">Réglages de l\'indicateur de vitesse de réseau sur la barre d\'état</string>
     <!-- Navigation -->
@@ -67,10 +59,6 @@
     <string name="aware_settings_summary">Réglages Perception de geste</string>
     <string name="active_edge_title">Bord actif</string>
     <string name="active_edge_summary">Réglages des options \"Bord actif\"</string>
-    <string name="headsup_title">Notifications flottantes</string>
-    <string name="headsup_summary">Réglages des notifications flottantes</string>
-    <string name="recents_title">Applications récentes</string>
-    <string name="recents_summary">Réglages des applications récentes</string>
     <!-- Sub categories -->
     <string name="sub_category_other">Divers</string>
     <!-- Lockscreen clock style -->

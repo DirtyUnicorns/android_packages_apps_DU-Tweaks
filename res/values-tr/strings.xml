@@ -29,15 +29,11 @@
     <!-- System -->
     <string name="device_extras_title">Cihaz ekstraları</string>
     <string name="device_extras_summary">Cihaza özel ayarlar</string>
-    <string name="expanded_desktop_title">Genişletilmiş masaüstü</string>
-    <string name="expanded_desktop_summary">Durum çubuğunun uygulama içi yapılandırması ve gezinme tuşu görünümü</string>
     <string name="miscellaneous_title">Çeşitli</string>
     <string name="miscellaneous_summary">Çeşitli ayarlar</string>
     <string name="powermenu_title">Güç menüsü</string>
     <string name="powermenu_summary">Güç menüsünü yapılandırın</string>
     <!-- Lockscreen -->
-    <string name="fingerprint_prefs_title">Parmak izi tercihleri</string>
-    <string name="fingerprint_prefs_summary">Parmak izi tarayıcısına özel ayarlar</string>
     <string name="lockscreen_items_title">Kilit ekranı öğeleri</string>
     <string name="lockscreen_items_summary">Kilit ekranı özelleştirmeleri</string>
     <!-- Statusbar -->
@@ -49,12 +45,8 @@
     <string name="clock_options_summary">Durum çubuğu saatinizi özelleştirin</string>
     <string name="icon_manager_title">Simge yöneticisi</string>
     <string name="icon_manager_summary">Durum çubuğu öğelerinin görünürlüğünü yapılandırın</string>
-    <string name="notifications_title">Bildirimler</string>
-    <string name="notifications_summary">Sistem bildirimlerine özel ayarlar</string>
     <string name="quicksettings_title">Hızlı ayarlar</string>
     <string name="quicksettings_summary">Hızlı ayarlar alanının düzenini yapılandırın</string>
-    <string name="ticker_title">Şerit</string>
-    <string name="ticker_summary">Durum çubuğu şeridini etkinleştirin ve şeritle ilgili ayarları yapılandırın</string>
     <string name="traffic_title">Ağ göstergeleri</string>
     <string name="traffic_summary">Ağ trafiği göstergelerini etkinleştirin ve yapılandırın</string>
     <!-- Navigation -->
@@ -67,10 +59,6 @@
     <string name="aware_settings_summary">Haraket Algılama seçeneklerini yapılandırın</string>
     <string name="active_edge_title">Aktif Kenar</string>
     <string name="active_edge_summary">Aktif Kenar seçeneklerini yapılandırın</string>
-    <string name="headsup_title">Bildirim pencereleri</string>
-    <string name="headsup_summary">Bildirim pencereleri seçeneklerini yapılandırın</string>
-    <string name="recents_title">Son uygulamalar</string>
-    <string name="recents_summary">Son kullanılanlar seçeneklerini yapılandırın</string>
     <!-- Sub categories -->
     <string name="sub_category_other">Diğer</string>
     <!-- Lockscreen clock style -->

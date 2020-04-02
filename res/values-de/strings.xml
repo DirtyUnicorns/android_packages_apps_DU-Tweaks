@@ -29,15 +29,11 @@
     <!-- System -->
     <string name="device_extras_title">Geräteextras</string>
     <string name="device_extras_summary">Gerätespezifische Einstellungen</string>
-    <string name="expanded_desktop_title">Erweiterter Desktop</string>
-    <string name="expanded_desktop_summary">Per-App-Konfiguration der Statusleiste und der Navigationstasten Ansicht</string>
     <string name="miscellaneous_title">Verschiedenes</string>
     <string name="miscellaneous_summary">Verschiedene Einstellungen</string>
     <string name="powermenu_title">Power Menü</string>
     <string name="powermenu_summary">Configure the power menu</string>
     <!-- Lockscreen -->
-    <string name="fingerprint_prefs_title">Fingerprint prefs</string>
-    <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>
     <string name="lockscreen_items_title">Lockscreen items</string>
     <string name="lockscreen_items_summary">Customize the lockscreen</string>
     <!-- Statusbar -->
@@ -49,12 +45,8 @@
     <string name="clock_options_summary">Customize your statusbar clock</string>
     <string name="icon_manager_title">Icon manager</string>
     <string name="icon_manager_summary">Configure the visibility of statusbar items</string>
-    <string name="notifications_title">Notifications</string>
-    <string name="notifications_summary">Tweaks specific to system notifications</string>
     <string name="quicksettings_title">Quick settings</string>
     <string name="quicksettings_summary">Configure the layout of the quick settings area</string>
-    <string name="ticker_title">Ticker</string>
-    <string name="ticker_summary">Enable the statusbar ticker and configure ticker related tweaks</string>
     <string name="traffic_title">Traffic indicators</string>
     <string name="traffic_summary">Enable and configure the traffic indicators</string>
     <!-- Navigation -->
@@ -67,10 +59,6 @@
     <string name="aware_settings_summary">Configure Motion Sense options</string>
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="headsup_title">Heads up</string>
-    <string name="headsup_summary">Configure heads up options</string>
-    <string name="recents_title">Recents</string>
-    <string name="recents_summary">Configure recents options</string>
     <!-- Sub categories -->
     <string name="sub_category_other">Other</string>
     <!-- Lockscreen clock style -->
