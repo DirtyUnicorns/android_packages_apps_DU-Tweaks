@@ -36,14 +36,14 @@
 
     <style name="HeaderTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"/>
 
-    <style name="TeamDialogTheme" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
-        <item name="android:colorBackgroundFloating">#FFFFFFFF</item>
-        <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
-        <item name="android:textColorPrimary">@android:color/black</item>
-        <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
-        <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
-        <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
-        <item name="android:topLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
+    <style name="TeamDialog" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/TeamAnimation.Window</item>
+    </style>
+
+    <style name="TeamAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
 
 </resources>

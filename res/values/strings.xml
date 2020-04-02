@@ -20,7 +20,10 @@
     <string name="dirtytweaks_summary">Enhance your experience</string>
 
     <!-- The Team -->
-    <string name="dialog_team_title">The Team</string>
+    <string name="dialog_team_title">The team</string>
+    <string name="developer_title">Developer</string>
+    <string name="maintainer_title">Maintainer</string>
+    <string name="server_admin_title">Server admin</string>
 
     <!-- Bottom navigation -->
     <string name="bottom_nav_system_title">System</string>

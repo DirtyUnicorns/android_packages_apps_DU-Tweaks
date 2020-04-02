@@ -17,6 +17,7 @@
 package com.dirtyunicorns.tweaks;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,10 +26,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
-import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -36,7 +35,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.dirtyunicorns.tweaks.fragments.Team;
+import com.dirtyunicorns.tweaks.fragments.team.TeamActivity;
 import com.dirtyunicorns.tweaks.navigation.BottomNavigationViewCustom;
 import com.dirtyunicorns.tweaks.tabs.Multitasking;
 import com.dirtyunicorns.tweaks.tabs.Navigation;
@@ -98,7 +97,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
                 if (mMenuItem != null) {
                     mMenuItem.setChecked(false);
                 }
-                
+
                 navigation.getMenu().getItem(position).setChecked(true);
 
                 mMenuItem = navigation.getMenu().getItem(position);
@@ -182,21 +181,11 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case 0:
-                final Team dialog = new Team();
-                showDialog(this, dialog);
+                Intent intent = new Intent(mContext, TeamActivity.class);
+                mContext.startActivity(intent);
                 return true;
             default:
                 return false;
         }
-    }
-
-    private static void showDialog(Fragment context, DialogFragment dialog) {
-        FragmentTransaction ft = context.getChildFragmentManager().beginTransaction();
-        Fragment prev = context.getChildFragmentManager().findFragmentByTag("dialog");
-        if (prev != null) {
-            ft.remove(prev);
-        }
-        ft.addToBackStack(null);
-        dialog.show(ft, "dialog");
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2006 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +14,16 @@
      limitations under the License.
 -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
 
-    <!-- Bottom navigation bar -->
-    <dimen name="design_bottom_navigation_text_size">10dp</dimen>
-    <dimen name="design_bottom_navigation_active_text_size">11dp</dimen>
+    <style name="TeamDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/TeamAnimation.Window</item>
+    </style>
 
-    <!-- The Team -->
-    <dimen name="team_recycler_height">500dp</dimen>
+    <style name="TeamAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
 
 </resources>

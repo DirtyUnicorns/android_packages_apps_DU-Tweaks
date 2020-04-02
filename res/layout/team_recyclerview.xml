@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +14,20 @@
      limitations under the License.
 -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background">
 
-    <!-- Bottom navigation bar -->
-    <dimen name="design_bottom_navigation_text_size">10dp</dimen>
-    <dimen name="design_bottom_navigation_active_text_size">11dp</dimen>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <!-- The Team -->
-    <dimen name="team_recycler_height">500dp</dimen>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/team_recycler_height"/>
 
-</resources>
+    </LinearLayout>
+
+</RelativeLayout>

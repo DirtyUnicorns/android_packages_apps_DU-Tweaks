@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2018 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,14 +13,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Bottom navigation bar -->
-    <dimen name="design_bottom_navigation_text_size">10dp</dimen>
-    <dimen name="design_bottom_navigation_active_text_size">11dp</dimen>
-
-    <!-- The Team -->
-    <dimen name="team_recycler_height">500dp</dimen>
-
-</resources>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@*android:color/notification_material_background_color">
+    </solid>
+    <corners
+        android:topLeftRadius="@*android:dimen/config_dialogCornerRadius"
+        android:topRightRadius="@*android:dimen/config_dialogCornerRadius"
+        android:bottomLeftRadius="@*android:dimen/config_dialogCornerRadius"
+        android:bottomRightRadius="@*android:dimen/config_dialogCornerRadius">
+    </corners>
+</shape>
