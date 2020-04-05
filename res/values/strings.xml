@@ -332,11 +332,12 @@
    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
 
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Handle bar size</string>
-    <string name="gesture_navbar_handle_hidden">Hidden</string>
-    <string name="gesture_navbar_handle_default">Default</string>
-    <string name="gesture_navbar_handle_middle">Middle</string>
-    <string name="gesture_navbar_handle_large">Large</string>
+    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
+    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
+    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
+    <string name="gesture_navbar_handle_default">Default pill</string>
+    <string name="gesture_navbar_handle_middle">Middle pill</string>
+    <string name="gesture_navbar_handle_large">Large pill</string>
 
     <string name="show_media_heads_up_title">Show media heads up</string>
     <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
