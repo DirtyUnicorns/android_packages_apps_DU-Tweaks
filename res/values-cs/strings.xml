@@ -18,10 +18,10 @@
     <string name="dirtytweaks_title">Dirty Tweaks</string>
     <string name="dirtytweaks_summary">Vylepšete svůj zážitek</string>
     <!-- The Team -->
-    <string name="dialog_team_title">The team</string>
-    <string name="developer_title">Developer</string>
-    <string name="maintainer_title">Maintainer</string>
-    <string name="server_admin_title">Server admin</string>
+    <string name="dialog_team_title">Tým</string>
+    <string name="developer_title">Vývojář</string>
+    <string name="maintainer_title">Správce</string>
+    <string name="server_admin_title">Správce serveru</string>
     <!-- Bottom navigation -->
     <string name="bottom_nav_system_title">Systém</string>
     <string name="bottom_nav_lockscreen_title">Zamykací obrazovka</string>
@@ -245,8 +245,8 @@
     <string name="action_app_action">Aplikace</string>
     <string name="action_ringer_modes">Režimy vyzvánění</string>
     <string name="kill_app">Ukončit aplikaci na popředí</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
+    <string name="skip_song">Přeskočit skladbu</string>
+    <string name="prev_song">Předchozí skladba</string>
     <!-- Active edge -->
     <string name="active_edge_ss_app_select_title">Vyberte aplikaci při krátkém zmáčknutí</string>
     <string name="active_edge_ls_app_select_title">Vyberte aplikaci při dlouhém zmáčknutí</string>
@@ -300,12 +300,12 @@
     <string name="back_swipe_extended_title">Pokročilé akce přejetím</string>
     <string name="back_swipe_extended_summary">Spustí akci, pokud je vodorovné přejetí širší než 3/4 šířky obrazovky</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
-    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
-    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
-    <string name="gesture_navbar_handle_default">Default pill</string>
-    <string name="gesture_navbar_handle_middle">Middle pill</string>
-    <string name="gesture_navbar_handle_large">Large pill</string>
-    <string name="show_media_heads_up_title">Show media heads up</string>
-    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
+    <string name="gesture_navbar_handle_title">Styl zobrazení navigačního panelu</string>
+    <string name="gesture_navbar_hidden">Skrytý navigační panel</string>
+    <string name="gesture_navbar_handle_hidden">Skrytá pilulka</string>
+    <string name="gesture_navbar_handle_default">Výchozí pilulka</string>
+    <string name="gesture_navbar_handle_middle">Střední pilulka</string>
+    <string name="gesture_navbar_handle_large">Velká pilulka</string>
+    <string name="show_media_heads_up_title">Zobrazit plovoucí oznámení médií</string>
+    <string name="show_media_heads_up_summary">Zobrazit plovoucí oznámení médií při přehrávání nové skladby, pokud již není přehrávač v popředí</string>
 </resources>
