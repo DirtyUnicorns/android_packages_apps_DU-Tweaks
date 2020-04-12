@@ -18,7 +18,10 @@
     <string name="dirtytweaks_title">Dirty Tweaks</string>
     <string name="dirtytweaks_summary">Améliorez votre expérience</string>
     <!-- The Team -->
-    <string name="dialog_team_title">L\'équipe</string>
+    <string name="dialog_team_title">The team</string>
+    <string name="developer_title">Developer</string>
+    <string name="maintainer_title">Maintainer</string>
+    <string name="server_admin_title">Server admin</string>
     <!-- Bottom navigation -->
     <string name="bottom_nav_system_title">Système</string>
     <string name="bottom_nav_lockscreen_title">Écran de déverrouillage</string>
@@ -242,6 +245,8 @@
     <string name="action_app_action">Application</string>
     <string name="action_ringer_modes">Sonnerie</string>
     <string name="kill_app">Kill foreground app</string>
+    <string name="skip_song">Skip song</string>
+    <string name="prev_song">Previous song</string>
     <!-- Active edge -->
     <string name="active_edge_ss_app_select_title">Application par appui court</string>
     <string name="active_edge_ls_app_select_title">Application par appui prolongé</string>
@@ -295,10 +300,12 @@
     <string name="back_swipe_extended_title">Extended swipe action</string>
     <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Style d\'affichage de la barre de navigation</string>
-    <string name="gesture_navbar_hidden">Barre de navigation cachée</string>
-    <string name="gesture_navbar_handle_hidden">Pilule cachée</string>
-    <string name="gesture_navbar_handle_default">Pilule normale</string>
-    <string name="gesture_navbar_handle_middle">Pilule moyenne</string>
-    <string name="gesture_navbar_handle_large">Pilule large</string>
+    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
+    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
+    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
+    <string name="gesture_navbar_handle_default">Default pill</string>
+    <string name="gesture_navbar_handle_middle">Middle pill</string>
+    <string name="gesture_navbar_handle_large">Large pill</string>
+    <string name="show_media_heads_up_title">Show media heads up</string>
+    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
 </resources>

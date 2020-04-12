@@ -18,10 +18,13 @@
     <string name="dirtytweaks_title">Dirty Tweaks</string>
     <string name="dirtytweaks_summary">Enhance your experience</string>
     <!-- The Team -->
-    <string name="dialog_team_title">The Team</string>
+    <string name="dialog_team_title">The team</string>
+    <string name="developer_title">Developer</string>
+    <string name="maintainer_title">Maintainer</string>
+    <string name="server_admin_title">Server admin</string>
     <!-- Bottom navigation -->
     <string name="bottom_nav_system_title">System</string>
-    <string name="bottom_nav_lockscreen_title">Lockscreen</string>
+    <string name="bottom_nav_lockscreen_title">Sperrbildschirm</string>
     <string name="bottom_nav_statusbar_title">Statusbar</string>
     <string name="bottom_nav_navigation_title">Navigation</string>
     <string name="bottom_nav_multitasking_title">Multitasking</string>
@@ -32,25 +35,25 @@
     <string name="miscellaneous_title">Verschiedenes</string>
     <string name="miscellaneous_summary">Verschiedene Einstellungen</string>
     <string name="powermenu_title">Power Menü</string>
-    <string name="powermenu_summary">Configure the power menu</string>
+    <string name="powermenu_summary">Ein-/Aus Menü konfigurieren</string>
     <!-- Lockscreen -->
-    <string name="lockscreen_items_title">Lockscreen items</string>
-    <string name="lockscreen_items_summary">Customize the lockscreen</string>
+    <string name="lockscreen_items_title">Sperrbildschirm-Elemente</string>
+    <string name="lockscreen_items_summary">Sperrbildschirm anpassen</string>
     <!-- Statusbar -->
-    <string name="battery_options_title">Battery options</string>
-    <string name="battery_options_summary">Customize the statusbar battery</string>
-    <string name="carrier_label_title">Carrier label</string>
-    <string name="carrier_label_summary">Customize the carrier label on the lockscreen or statusbar</string>
-    <string name="clock_options_title">Clock options</string>
-    <string name="clock_options_summary">Customize your statusbar clock</string>
-    <string name="icon_manager_title">Icon manager</string>
-    <string name="icon_manager_summary">Configure the visibility of statusbar items</string>
-    <string name="quicksettings_title">Quick settings</string>
-    <string name="quicksettings_summary">Configure the layout of the quick settings area</string>
-    <string name="traffic_title">Traffic indicators</string>
-    <string name="traffic_summary">Enable and configure the traffic indicators</string>
+    <string name="battery_options_title">Batterie Optionen</string>
+    <string name="battery_options_summary">Anpassen der Statusleisten Batterie Anzeige</string>
+    <string name="carrier_label_title">Netzbetreiber-Bezeichnung</string>
+    <string name="carrier_label_summary">Anpassen des Netzbetreibernamens auf Sperrbildschirm oder Statusleiste</string>
+    <string name="clock_options_title">Uhr-Optionen</string>
+    <string name="clock_options_summary">Statusbaruhr anpassen</string>
+    <string name="icon_manager_title">Symbolmanager</string>
+    <string name="icon_manager_summary">Sichtbarkeit der Statusleistensymbole anpassen</string>
+    <string name="quicksettings_title">Schnelleinstellungen</string>
+    <string name="quicksettings_summary">Konfigurieren Sie das Layout des Schnelleinstellungsbereichs</string>
+    <string name="traffic_title">Netzwerk-Datenverkehr</string>
+    <string name="traffic_summary">Aktivieren und Konfigurieren der Datenverkehrsanzeigen in der Statusleiste</string>
     <!-- Navigation -->
-    <string name="buttons_title">Buttons</string>
+    <string name="buttons_title">Tasten</string>
     <string name="buttons_summary">Configure volume rocker options</string>
     <string name="navigation_options_title">Navigation</string>
     <string name="navigation_options_summary">Configure navigation options</string>
@@ -60,39 +63,39 @@
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">Configure Active Edge options</string>
     <!-- Sub categories -->
-    <string name="sub_category_other">Other</string>
+    <string name="sub_category_other">Sonstiges</string>
     <!-- Lockscreen clock style -->
-    <string name="lockscreen_clock_title">Clock style</string>
-    <string name="lockscreen_clock_dialog_title">Select clock style</string>
-    <string name="lockscreen_clock_hide">Hide</string>
-    <string name="lockscreen_clock_default">Default</string>
-    <string name="lockscreen_clock_default_bold">Default (bold)</string>
+    <string name="lockscreen_clock_title">Uhr-Stil</string>
+    <string name="lockscreen_clock_dialog_title">Stil der Uhr wählen</string>
+    <string name="lockscreen_clock_hide">Ausblenden</string>
+    <string name="lockscreen_clock_default">Standard</string>
+    <string name="lockscreen_clock_default_bold">Standard (fett)</string>
     <string name="lockscreen_clock_sammy">Sammy</string>
-    <string name="lockscreen_clock_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_sammy_bold">Sammy (Fett)</string>
     <!-- Flashlight gestures -->
-    <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
-    <string name="torch_power_button_gesture_none">Disabled</string>
-    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
-    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+    <string name="double_tap_power_flashlight_title">Taschenlampe über Ein-/Aus-Taste bei ausgeschaltetem Display</string>
+    <string name="torch_power_button_gesture_none">Deaktiviert</string>
+    <string name="torch_power_button_gesture_dt">Ein-/Aus-Taste doppelt drücken um Taschenlampe einzuschalten</string>
+    <string name="torch_power_button_gesture_lp">Ein-/Aus-Taste lange drücken um Taschenlampe einzuschalten</string>
     <!-- Volume rocker music control -->
-    <string name="volume_button_music_control_title">Playback control</string>
-    <string name="volume_button_music_control_summary">When the screen is off, long-pressing the volume keys will skip music tracks</string>
+    <string name="volume_button_music_control_title">Wiedergabesteuerung</string>
+    <string name="volume_button_music_control_summary">Bei ausgeschaltetem Bildschirm wird durch langes drücken der Lautstärketaste der Musiktitel gewechselt</string>
     <!-- Network Traffic -->
-    <string name="network_traffic_state_title">Show net activity</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="network_traffic_state_title">Netzwerkaktivität anzeigen</string>
+    <string name="network_traffic_autohide_threshold_title">Schwellenwert (kB/s) zur Anzeige von Netzwerkaktivitäten</string>
     <!-- Power menu -->
-    <string name="powermenu_power_title">Power</string>
-    <string name="powermenu_reboot_title">Restart</string>
-    <string name="powermenu_advanced_restart_title">Advanced restart</string>
-    <string name="powermenu_advanced_restart_summary">Enables the advanced restart menu for other restarting options</string>
-    <string name="powermenu_lockdown_title">Lockdown</string>
+    <string name="powermenu_power_title">Ein-/Aus-Menü</string>
+    <string name="powermenu_reboot_title">Neustart</string>
+    <string name="powermenu_advanced_restart_title">Erweiterter Neustart</string>
+    <string name="powermenu_advanced_restart_summary">Aktiviert das erweiterte Neustartmenü für verschiedene Neustart-Optionen</string>
+    <string name="powermenu_lockdown_title">Sperren</string>
     <string name="powermenu_screenshot_title">Screenshot</string>
-    <string name="powermenu_screenrecord_title">Screen record</string>
-    <string name="powermenu_lockscreen_title">Lockscreen visibility</string>
-    <string name="powermenu_lockscreen_summary">Display power menu on a secured lockscreen</string>
+    <string name="powermenu_screenrecord_title">Bildschirmaufnahme</string>
+    <string name="powermenu_lockscreen_title">Sperrbildschirm-Sichtbarkeit</string>
+    <string name="powermenu_lockscreen_summary">Power-Menü im gesicherten Sperrbildschirm anzeigen</string>
     <!-- QS layout -->
     <string name="qs_layout_title">Layout</string>
-    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_portrait_title">Zeilen (Portrait)</string>
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
     <string name="qs_columns_portrait_title">Columns (portrait)</string>
     <string name="qs_columns_landscape_title">Columns (landscape)</string>
@@ -142,50 +145,50 @@
     <string name="status_bar_show_clock_title">Show clock &amp; date</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_format">Date format</string>
-    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="enable_clock_weekday">Wochentag</string>
+    <string name="enable_clock_weekday_summary">Abgekürzter Wochentag vor der Uhrzeit</string>
+    <string name="dont_show">Nicht anzeigen</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Benutzerdefiniertes Datum vor der Uhr anzeigen</string>
+    <string name="clock_date_style">Datums-Stil</string>
+    <string name="clock_date_format">Datumsformat</string>
+    <string name="clock_date_string_edittext_title">Muss ein Datumsformat sein (z. B. MM/TT/JJ)</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="am_pm_clock_normal">Normale Schriftgröße</string>
+    <string name="am_pm_clock_small">Kleine Schriftgröße</string>
+    <string name="am_pm_clock_none">Nicht zeigen</string>
+    <string name="clock_date_display_none">Nicht zeigen</string>
+    <string name="clock_date_display_small">Kleine Schriftgröße</string>
+    <string name="clock_date_display_normal">Normale Schriftgröße</string>
     <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
+    <string name="clock_date_style_uppercase">Großbuchstaben</string>
+    <string name="clock_date_right">Rechts neben der Uhrzeit</string>
+    <string name="clock_date_left">Links neben der Uhrzeit</string>
+    <string name="clock_date_position">Position des Datums</string>
     <!-- DT2S on lockscreen -->
-    <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
+    <string name="double_tap_sleep_lockscreen">Doppeltipp auf dem Sperrbildschirm, um den Bildschirm auszuschalten</string>
     <!-- Carrier Label -->
     <string name="carrier_options">Select display locations</string>
-    <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
-    <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="show_carrier_title">Carrier label</string>
-    <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Lockscreen</string>
-    <string name="show_carrier_statusbar">Status bar</string>
-    <string name="show_carrier_enabled">Both</string>
+    <string name="custom_carrier_label_title">Benutzerdefinierte Anbieter Bezeichnung</string>
+    <string name="custom_carrier_label_explain">Eigenen Namen eingeben. Leer lassen, um Standard Netzwerknamen zu verwenden</string>
+    <string name="custom_carrier_label_notset">Benutzerdefinierte Name ist derzeit nicht festgelegt</string>
+    <string name="show_carrier_title">Name des Netzbetreibers</string>
+    <string name="show_carrier_disabled">Deaktiviert</string>
+    <string name="show_carrier_keyguard">Sperrbildschirm</string>
+    <string name="show_carrier_statusbar">Statusleiste</string>
+    <string name="show_carrier_enabled">Beides</string>
     <!-- Motion Sense -->
-    <string name="ambient_display_wake_screen_summary">To check time, notifications, and other info, reach for your phone</string>
-    <string name="ambient_display_wake_screen_summary_on">On</string>
-    <string name="aware_category_display">Ambient Display</string>
-    <string name="aware_category_gesture">Quick Gestures</string>
-    <string name="aware_disabled_preference_action">Motion Sense Settings</string>
-    <string name="aware_disabled_preference_dialog_content">To use this feature, turn on Motion Sense</string>
-    <string name="aware_disabled_preference_dialog_title">This feature is turned off</string>
-    <string name="aware_disabled_preference_neutral">Not now</string>
+    <string name="ambient_display_wake_screen_summary">Wenn das Smartphone in die Hand genommen wird, werden die Uhrzeit, Benachrichtigungen und andere Informationen angezeigt</string>
+    <string name="ambient_display_wake_screen_summary_on">Ein</string>
+    <string name="aware_category_display">Inaktivitätsdisplay</string>
+    <string name="aware_category_gesture">Schnelle Gesten</string>
+    <string name="aware_disabled_preference_action">Motion Sense-Einstellungen</string>
+    <string name="aware_disabled_preference_dialog_content">Um diese Funktion zu nutzen, aktivieren Sie Motion Sense</string>
+    <string name="aware_disabled_preference_dialog_title">Diese Funktion ist deaktiviert</string>
+    <string name="aware_disabled_preference_neutral">Jetzt nicht</string>
     <string name="aware_display_settings_title">Idle lock screen</string>
-    <string name="aware_settings_description">With new sensors, Pixel can recognize distance and movement around the phone</string>
+    <string name="aware_settings_description">Mit neuen Sensoren kann das Pixel Entfernung und Bewegung erkennen</string>
     <string name="aware_settings_disabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are not supported in this country</string>
     <string name="aware_settings_disabled_info_dialog_title">Motion Sense is off</string>
     <string name="aware_settings_enabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are supported in this country</string>
@@ -242,6 +245,8 @@
     <string name="action_app_action">Application</string>
     <string name="action_ringer_modes">Ringer modes</string>
     <string name="kill_app">Kill foreground app</string>
+    <string name="skip_song">Skip song</string>
+    <string name="prev_song">Previous song</string>
     <!-- Active edge -->
     <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
     <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
@@ -295,9 +300,12 @@
     <string name="back_swipe_extended_title">Erweiterte Wischen Aktion</string>
     <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Handle bar size</string>
-    <string name="gesture_navbar_handle_hidden">Ausgeblendet</string>
-    <string name="gesture_navbar_handle_default">Standard</string>
-    <string name="gesture_navbar_handle_middle">Mittel</string>
-    <string name="gesture_navbar_handle_large">Groß</string>
+    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
+    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
+    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
+    <string name="gesture_navbar_handle_default">Default pill</string>
+    <string name="gesture_navbar_handle_middle">Middle pill</string>
+    <string name="gesture_navbar_handle_large">Large pill</string>
+    <string name="show_media_heads_up_title">Show media heads up</string>
+    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
 </resources>

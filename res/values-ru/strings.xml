@@ -18,7 +18,10 @@
     <string name="dirtytweaks_title">Хитрые твики</string>
     <string name="dirtytweaks_summary">Добавь впечатлений от использования</string>
     <!-- The Team -->
-    <string name="dialog_team_title">Команда</string>
+    <string name="dialog_team_title">The team</string>
+    <string name="developer_title">Developer</string>
+    <string name="maintainer_title">Maintainer</string>
+    <string name="server_admin_title">Server admin</string>
     <!-- Bottom navigation -->
     <string name="bottom_nav_system_title">Система</string>
     <string name="bottom_nav_lockscreen_title">Экран блокировки</string>
@@ -242,6 +245,8 @@
     <string name="action_app_action">Приложения</string>
     <string name="action_ringer_modes">Режимы звонков</string>
     <string name="kill_app">Закрыть активное приложение</string>
+    <string name="skip_song">Skip song</string>
+    <string name="prev_song">Previous song</string>
     <!-- Active edge -->
     <string name="active_edge_ss_app_select_title">Выберать приложение по короткому сжатию</string>
     <string name="active_edge_ls_app_select_title">Выберать приложение по долгому сжатию</string>
@@ -295,9 +300,12 @@
     <string name="back_swipe_extended_title">Действие на расширенный свайп</string>
     <string name="back_swipe_extended_summary">Активировать действие, если свайп по горизонтали шире, чем 3\/4 размера дисплея</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Размер ручки</string>
-    <string name="gesture_navbar_handle_hidden">Скрыт</string>
-    <string name="gesture_navbar_handle_default">По умолчанию</string>
-    <string name="gesture_navbar_handle_middle">Средние</string>
-    <string name="gesture_navbar_handle_large">Крупный</string>
+    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
+    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
+    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
+    <string name="gesture_navbar_handle_default">Default pill</string>
+    <string name="gesture_navbar_handle_middle">Middle pill</string>
+    <string name="gesture_navbar_handle_large">Large pill</string>
+    <string name="show_media_heads_up_title">Show media heads up</string>
+    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
 </resources>
