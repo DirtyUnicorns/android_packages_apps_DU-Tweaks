@@ -45,6 +45,7 @@
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
         style="@style/DtBottomNavStyle"
+        app:elevation="0dp"
         app:menu="@menu/main" />
 
 </RelativeLayout>

@@ -18,6 +18,7 @@ package com.dirtyunicorns.tweaks;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,6 +26,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;;
 import androidx.fragment.app.FragmentManager;
@@ -51,7 +54,14 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        Resources res = getResources();
+        Window win = getActivity().getWindow();
         mContext = getActivity();
+
+        win.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        win.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        win.setNavigationBarColor(res.getColor(R.color.dirtytweaks_navbar_color));
+        win.setNavigationBarDividerColor(res.getColor(R.color.dirtytweaks_navbar_color));
 
         getActivity().setTitle(R.string.dirtytweaks_title);
 

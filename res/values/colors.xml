@@ -24,6 +24,7 @@
 
     <!-- Bottom navigation bar -->
     <color name="material_grey500">#ff9e9e9e</color>
+    <color name="dirtytweaks_navbar_color">@*android:color/notification_material_background_color</color>
 
     <!-- Accent picker -->
     <color name="accent_picker_white_accent">@android:color/white</color>
