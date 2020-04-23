@@ -48,9 +48,11 @@ public class BatteryOptions extends SettingsPreferenceFragment
 
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
+    private static final String QS_BATTERY_PERCENTAGE = "qs_battery_percentage";
 
     private ListPreference mBatteryPercent;
     private ListPreference mBatteryStyle;
+    private SwitchPreference mQsBatteryPercent;
 
     private int mBatteryPercentValue;
     private int mBatteryPercentValuePrev;
@@ -83,6 +85,12 @@ public class BatteryOptions extends SettingsPreferenceFragment
         mBatteryPercent.setOnPreferenceChangeListener(this);
 
         updateBatteryOptions(batterystyle, mBatteryPercentValue);
+
+        mQsBatteryPercent = (SwitchPreference) findPreference(QS_BATTERY_PERCENTAGE);
+        mQsBatteryPercent.setChecked((Settings.System.getInt(
+                getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.QS_SHOW_BATTERY_PERCENT, 0) == 1));
+        mQsBatteryPercent.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -103,7 +111,12 @@ public class BatteryOptions extends SettingsPreferenceFragment
                     UserHandle.USER_CURRENT);
             int index = mBatteryPercent.findIndexOfValue((String) newValue);
             mBatteryPercent.setSummary(mBatteryPercent.getEntries()[index]);
-          return true;
+            return true;
+        } else if (preference == mQsBatteryPercent) {
+            Settings.System.putInt(resolver,
+                    Settings.System.QS_SHOW_BATTERY_PERCENT,
+                    (Boolean) newValue ? 1 : 0);
+            return true;
         }
         return false;
     }
