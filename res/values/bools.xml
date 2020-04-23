@@ -32,7 +32,7 @@
     <bool name="has_navigation">true</bool>
 
     <!-- Whether to display battery category -->
-    <bool name="has_battery_options">false</bool>
+    <bool name="has_battery_options">true</bool>
 
     <!-- Whether to display carrier label category -->
     <bool name="has_carrier_label">true</bool>

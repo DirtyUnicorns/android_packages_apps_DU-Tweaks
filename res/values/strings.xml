@@ -188,6 +188,20 @@
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
 
+    <!-- Battery Styles -->
+    <string name="battery_percent_title">Status bar battery percentage</string>
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+
     <!-- DT2S on lockscreen -->
     <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
 
