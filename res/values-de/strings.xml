@@ -16,12 +16,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Dirty Tweaks -->
     <string name="dirtytweaks_title">Dirty Tweaks</string>
-    <string name="dirtytweaks_summary">Enhance your experience</string>
+    <string name="dirtytweaks_summary">Verbessere dein Erlebnis</string>
     <!-- The Team -->
-    <string name="dialog_team_title">The team</string>
-    <string name="developer_title">Developer</string>
-    <string name="maintainer_title">Maintainer</string>
-    <string name="server_admin_title">Server admin</string>
+    <string name="dialog_team_title">Das Team</string>
+    <string name="developer_title">Entwickler</string>
+    <string name="maintainer_title">Betreuer</string>
+    <string name="server_admin_title">Serveradmin</string>
     <!-- Bottom navigation -->
     <string name="bottom_nav_system_title">System</string>
     <string name="bottom_nav_lockscreen_title">Sperrbildschirm</string>
@@ -54,14 +54,14 @@
     <string name="traffic_summary">Aktivieren und Konfigurieren der Datenverkehrsanzeigen in der Statusleiste</string>
     <!-- Navigation -->
     <string name="buttons_title">Tasten</string>
-    <string name="buttons_summary">Configure volume rocker options</string>
+    <string name="buttons_summary">Lautstärketasten-Optionen konfigurieren</string>
     <string name="navigation_options_title">Navigation</string>
-    <string name="navigation_options_summary">Configure navigation options</string>
+    <string name="navigation_options_summary">Navigationsoptionen anpassen</string>
     <!-- Multitasking -->
-    <string name="aware_settings_title">Motion Sense</string>
-    <string name="aware_settings_summary">Configure Motion Sense options</string>
+    <string name="aware_settings_title">Multitasking</string>
+    <string name="aware_settings_summary">Motion Sense konfigurieren</string>
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
+    <string name="active_edge_summary">Active Edge konfigurieren</string>
     <!-- Sub categories -->
     <string name="sub_category_other">Sonstiges</string>
     <!-- Lockscreen clock style -->
@@ -95,56 +95,56 @@
     <string name="powermenu_lockscreen_summary">Power-Menü im gesicherten Sperrbildschirm anzeigen</string>
     <!-- QS layout -->
     <string name="qs_layout_title">Layout</string>
-    <string name="qs_rows_portrait_title">Zeilen (Portrait)</string>
-    <string name="qs_rows_landscape_title">Rows (landscape)</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_rows_portrait_title">Zeilen (Hochformat)</string>
+    <string name="qs_rows_landscape_title">Zeilen (Querformat)</string>
+    <string name="qs_columns_portrait_title">Spalten (Hochformat)</string>
+    <string name="qs_columns_landscape_title">Spalten (Querformat)</string>
     <!-- Quick QS pulldown -->
-    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
-    <string name="quick_pulldown_none">Disabled</string>
-    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
-    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+    <string name="status_bar_quick_qs_pulldown">Schnell QS Herunterziehen</string>
+    <string name="quick_pulldown_none">Deaktiviert</string>
+    <string name="quick_pulldown_right">Statusleiste von rechts herunterziehen</string>
+    <string name="quick_pulldown_left">Statusleiste von links herunterziehen</string>
     <!-- Tiles animation/interpolator style  -->
-    <string name="qs_animation_options_title">Animations</string>
+    <string name="qs_animation_options_title">Animationen</string>
     <string name="qs_tile_animation_style_title">Style</string>
-    <string name="qs_tile_animation_duration_title">Duration</string>
-    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
-    <string name="qs_tile_animation_style_off">None</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_duration_title">Geschwindigkeit</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolation</string>
+    <string name="qs_tile_animation_style_off">Keine</string>
+    <string name="qs_tile_animation_style_flip">Drehen</string>
+    <string name="qs_tile_animation_style_rotate">Rotieren</string>
+    <string name="qs_tile_animation_duration_low">Langsam</string>
+    <string name="qs_tile_animation_duration_default">Standard</string>
+    <string name="qs_tile_animation_duration_fast">Schnell</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Beschleunigen</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Verzögern</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Beschleunigen - Verlangsamen</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Hüpfend</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Überschwingen</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
     <!-- Qs brightness slider -->
-    <string name="qs_brightness_slider_title">Brightness slider</string>
-    <string name="qs_brightness_slider_summary">Show the brightness slider</string>
+    <string name="qs_brightness_slider_title">Helligkeitsregler</string>
+    <string name="qs_brightness_slider_summary">Helligkeitsregler anzeigen</string>
     <!-- QS visibility -->
-    <string name="qs_tile_title_visibility_title">Title visibility</string>
-    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
+    <string name="qs_tile_title_visibility_title">Titelsichtbarkeit</string>
+    <string name="qs_tile_title_visibility_summary">Titel unter QS-Symbolen anzeigen</string>
     <!-- QS tiles haptic feedback -->
-    <string name="qs_vibrate_title">Vibrate on touch</string>
-    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="qs_vibrate_title">Bei Berührung vibrieren</string>
+    <string name="qs_vibrate_summary">Beim Berühren von QS-Symbolen vibrieren</string>
     <!-- Status bar clock and date options -->
-    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_title">Statusleiste</string>
     <string name="status_bar_style_title">Style</string>
-    <string name="status_bar_clock">Clock &amp; Date</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
-    <string name="status_bar_clock_style_reset">Reset color</string>
-    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
-    <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_clock">Uhr &amp; Datum</string>
+    <string name="clock_enabled">Aktiviert</string>
+    <string name="clock_disabled">Deaktiviert</string>
+    <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
+    <string name="status_bar_show_clock_title">Uhr &amp; Datum anzeigen</string>
+    <string name="status_bar_am_pm_title">AM/PM-Format</string>
+    <string name="status_bar_am_pm_info">24 Stunden-Format ist aktiviert</string>
     <string name="enable_clock_weekday">Wochentag</string>
     <string name="enable_clock_weekday_summary">Abgekürzter Wochentag vor der Uhrzeit</string>
     <string name="dont_show">Nicht anzeigen</string>
@@ -153,7 +153,7 @@
     <string name="clock_date_style">Datums-Stil</string>
     <string name="clock_date_format">Datumsformat</string>
     <string name="clock_date_string_edittext_title">Muss ein Datumsformat sein (z. B. MM/TT/JJ)</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_string_edittext_summary">Format eingeben</string>
     <string name="am_pm_clock_normal">Normale Schriftgröße</string>
     <string name="am_pm_clock_small">Kleine Schriftgröße</string>
     <string name="am_pm_clock_none">Nicht zeigen</string>
@@ -195,7 +195,7 @@
     <string name="aware_settings_enabled_info_dialog_title">Motion Sense is on</string>
     <string name="aware_wake_display_summary">Show time, notification icons, and other info when you’re nearby</string>
     <string name="aware_wake_display_summary_aod_off">Unavailable because always-on display is off</string>
-    <string name="aware_wake_display_title">Show display when nearby</string>
+    <string name="aware_wake_display_title">Bildschirm an wenn Sie in der Nähe sind</string>
     <string name="dialog_aware_settings_message">If you turn off Motion Sense, you can’t use Quick Gestures, show display when nearby, and reach to check phone</string>
     <string name="dialog_aware_settings_title">Turn off Motion Sense?</string>
     <string name="gesture_aware_confirmation_action_button">Got it</string>
@@ -237,19 +237,19 @@
     <string name="action_flashlight">Flashlight</string>
     <string name="action_clear_notifications">Clear notifications</string>
     <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
+    <string name="action_screen_off">Bildschirm ausschalten</string>
     <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
+    <string name="action_power_menu">Ein-/Aus Menü</string>
     <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
+    <string name="action_qs_panel">Schnelleinstellungsleiste</string>
+    <string name="action_app_action">Anwendung</string>
     <string name="action_ringer_modes">Ringer modes</string>
     <string name="kill_app">Kill foreground app</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
+    <string name="skip_song">Titel überspringen</string>
+    <string name="prev_song">Vorheriger Titel</string>
     <!-- Active edge -->
-    <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
-    <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
+    <string name="active_edge_ss_app_select_title">App für kurzes Drücken</string>
+    <string name="active_edge_ls_app_select_title">App für langes Drücken</string>
     <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
     <!-- Navigation -->
     <string name="navigation_bar_title">On-screen navigation bar</string>
@@ -298,14 +298,19 @@
     <string name="right_swipe_app_action_title">Select long right swipe app</string>
     <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
     <string name="back_swipe_extended_title">Erweiterte Wischen Aktion</string>
-    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
+    <string name="back_swipe_extended_summary">Aktion auslösen, wenn die Wischgeste horizontal breiter als 3/4 der Anzeige ist</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
-    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
-    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
-    <string name="gesture_navbar_handle_default">Default pill</string>
-    <string name="gesture_navbar_handle_middle">Middle pill</string>
-    <string name="gesture_navbar_handle_large">Large pill</string>
-    <string name="show_media_heads_up_title">Show media heads up</string>
-    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
+    <string name="gesture_navbar_handle_title">Anzeigestil der Navigationsleiste</string>
+    <string name="gesture_navbar_hidden">Navigationsleiste verstecken</string>
+    <string name="gesture_navbar_handle_hidden">Verstecke Pille</string>
+    <string name="gesture_navbar_handle_default">Standard Pille</string>
+    <string name="gesture_navbar_handle_middle">Mittlere Pille</string>
+    <string name="gesture_navbar_handle_large">Große Pille</string>
+    <string name="show_media_heads_up_title">Medien Heads-Up Benachrichtigung</string>
+    <string name="show_media_heads_up_summary">Medien als Heads-Up Benachrichtigung anzeigen, wenn ein neuer Track abgespielt wird und der Player nicht im Vordergrund ist</string>
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Bildschirm-aus Animation</string>
+    <string name="screen_off_animation_default">Standard</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skalierung</string>
 </resources>
