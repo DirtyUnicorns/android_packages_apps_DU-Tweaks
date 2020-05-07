@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
@@ -21,21 +20,21 @@
         android:icon="@drawable/dt_battery_options"
         android:title="@string/battery_options_title"
         android:summary="@string/battery_options_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.BatteryOptions" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.statusbar.BatteryOptions" />
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="carrier_label_category"
         android:icon="@drawable/dt_carrier_label"
         android:title="@string/carrier_label_title"
         android:summary="@string/carrier_label_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.CarrierLabel" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.statusbar.CarrierLabel" />
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="clock_options_category"
         android:icon="@drawable/dt_clock_options"
         android:title="@string/clock_options_title"
         android:summary="@string/clock_options_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.ClockOptions" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.statusbar.ClockOptions" />
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="icon_manager_title"
@@ -52,13 +51,13 @@
         android:icon="@drawable/dt_quicksettings"
         android:title="@string/quicksettings_title"
         android:summary="@string/quicksettings_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.QuickSettings" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.statusbar.QuickSettings" />
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="traffic_category"
         android:icon="@drawable/dt_traffic"
         android:title="@string/traffic_title"
         android:summary="@string/traffic_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.TrafficIndicators" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.statusbar.TrafficIndicators" />
 
 </PreferenceScreen>

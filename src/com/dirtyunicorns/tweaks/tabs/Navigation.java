@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2019 The Dirty Unicorns Project
+ * Copyright (C) 2020 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,15 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.dirtyunicorns.tweaks.tabs;
 
 import android.os.Bundle;
-import android.preference.Preference.OnPreferenceChangeListener;
+
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.PreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -50,6 +48,11 @@ public class Navigation extends SettingsPreferenceFragment
     }
 
     @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
     }
@@ -59,15 +62,13 @@ public class Navigation extends SettingsPreferenceFragment
         super.onPause();
     }
 
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.DIRTYTWEAKS;
+    }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
         return false;
-    }
-
-
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.DIRTYTWEAKS;
     }
 }

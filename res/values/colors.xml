@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,21 +13,14 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <resources>
 
     <!-- Dirty Tweaks -->
     <color name="preference_background_color">@*android:color/accent_device_default_light</color>
-    <color name="team_dialog_circle_border_color">@*android:color/accent_device_default_light</color>
+    <color name="dirty_tweaks_navbar_color">@*android:color/notification_material_background_color</color>
     <color name="dirty_tweaks_category_icon_tint">@*android:color/notification_material_background_color</color>
+
+    <!-- Settings dashboard -->
     <color name="homepage_du_background">#D32F2F</color>
-
-    <!-- Bottom navigation bar -->
-    <color name="material_grey500">#ff9e9e9e</color>
-    <color name="dirtytweaks_navbar_color">@*android:color/notification_material_background_color</color>
-
-    <!-- Accent picker -->
-    <color name="accent_picker_white_accent">@android:color/white</color>
-    <color name="accent_picker_dark_accent">@android:color/black</color>
 
 </resources>

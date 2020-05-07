@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
 
     <!-- Dirty Tweaks -->
     <string name="dirtytweaks_title">Dirty Tweaks</string>
@@ -31,6 +31,8 @@
     <string name="bottom_nav_statusbar_title">Statusbar</string>
     <string name="bottom_nav_navigation_title">Navigation</string>
     <string name="bottom_nav_multitasking_title">Multitasking</string>
+    <string name="accessibility_description">Screen menu</string>
+    <string name="accessibility_item_description">%1$s menu item</string>
 
     <!-- Categories -->
     <!-- System -->
@@ -333,25 +335,25 @@
     <string name="show_lockscreen_media_art_title">Show media art</string>
     <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
 
-   <!-- Long swipe gestures -->
-   <string name="left_swipe_key_title">Left swipe</string>
-   <string name="right_swipe_key_title">Right swipe</string>
-   <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
-   <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
-   <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
-   <string name="left_swipe_actions_title">Long left swipe action</string>
-   <string name="left_swipe_app_action_title">Select long left swipe app</string>
-   <string name="right_swipe_actions_title">Long right swipe action</string>
-   <string name="right_swipe_app_action_title">Select long right swipe app</string>
-   <string name="left_vertical_swipe_key_title">Left L swipe</string>
-   <string name="right_vertical_swipe_key_title">Right L swipe</string>
-   <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
-   <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
-   <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
-   <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
-   <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
-   <string name="back_swipe_extended_title">Extended swipe action</string>
-   <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
+    <!-- Long swipe gestures -->
+    <string name="left_swipe_key_title">Left swipe</string>
+    <string name="right_swipe_key_title">Right swipe</string>
+    <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
+    <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
+    <string name="left_swipe_actions_title">Long left swipe action</string>
+    <string name="left_swipe_app_action_title">Select long left swipe app</string>
+    <string name="right_swipe_actions_title">Long right swipe action</string>
+    <string name="right_swipe_app_action_title">Select long right swipe app</string>
+    <string name="left_vertical_swipe_key_title">Left L swipe</string>
+    <string name="right_vertical_swipe_key_title">Right L swipe</string>
+    <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
+    <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
+    <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
+    <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
+    <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
+    <string name="back_swipe_extended_title">Extended swipe action</string>
+    <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
 
     <!-- Gesture navbar handle -->
     <string name="gesture_navbar_handle_title">Navigation bar display style</string>
@@ -369,4 +371,5 @@
     <string name="screen_off_animation_default">Default</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
+
 </resources>

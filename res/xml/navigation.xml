@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
@@ -21,13 +20,13 @@
         android:icon="@drawable/dt_buttons"
         android:title="@string/buttons_title"
         android:summary="@string/buttons_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.Buttons" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.navigation.Buttons" />
 
     <com.dirtyunicorns.tweaks.preferences.CategoryPreference
         android:key="navigation_category"
         android:icon="@drawable/dt_navigationbar"
         android:title="@string/navigation_options_title"
         android:summary="@string/navigation_options_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.NavigationOptions" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.navigation.NavigationOptions" />
 
 </PreferenceScreen>

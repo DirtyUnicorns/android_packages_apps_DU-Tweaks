@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.dirtyunicorns.tweaks.preferences;
 
 import android.content.Context;
@@ -25,11 +24,10 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
 import com.android.settings.R;
-import com.android.settings.Utils;
 
 public class CategoryPreference extends Preference {
 
-    private final View.OnClickListener mClickListener = v -> performClick(v);
+    private final View.OnClickListener mClickListener = this::performClick;
 
     private boolean mAllowDividerAbove;
     private boolean mAllowDividerBelow;
@@ -46,10 +44,6 @@ public class CategoryPreference extends Preference {
         a.recycle();
 
         setLayoutResource(R.layout.category_preference);
-    }
-
-    public CategoryPreference(Context context, View view) {
-        super(context);
     }
 
     @Override

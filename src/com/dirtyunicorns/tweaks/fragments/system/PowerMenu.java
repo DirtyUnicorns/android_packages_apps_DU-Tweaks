@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2019 The Dirty Unicorns Project
+ * Copyright (C) 2020 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,12 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.dirtyunicorns.tweaks.fragments.system;
 
-package com.dirtyunicorns.tweaks.fragments;
-
-import android.content.ContentResolver;
 import android.content.Context;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
@@ -31,6 +28,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.widget.LockPatternUtils;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -39,53 +37,47 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.dirtyunicorns.support.preferences.CustomSeekBarPreference;
-
 import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class TrafficIndicators extends SettingsPreferenceFragment
+public class PowerMenu extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
-    private CustomSeekBarPreference mThreshold;
-    private SwitchPreference mNetMonitor;
+    private static final String KEY_POWER_MENU_OTHER_CAT = "powermenu_other_category";
+    private static final String KEY_LOCKDOWN_IN_POWER_MENU = "lockdown_in_power_menu";
+
+    private static final int MY_USER_ID = UserHandle.myUserId();
+
+    private PreferenceCategory mPowerMenuOtherCategory;
+    private SwitchPreference mPowerMenuLockDown;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.traffic_indicators);
-        final ContentResolver resolver = getActivity().getContentResolver();
+        addPreferencesFromResource(R.xml.powermenu);
 
-        boolean isNetMonitorEnabled = Settings.System.getIntForUser(resolver,
-                Settings.System.NETWORK_TRAFFIC_STATE, 0, UserHandle.USER_CURRENT) == 1;
-        mNetMonitor = (SwitchPreference) findPreference("network_traffic_state");
-        mNetMonitor.setChecked(isNetMonitorEnabled);
-        mNetMonitor.setOnPreferenceChangeListener(this);
+        final PreferenceScreen prefSet = getPreferenceScreen();
+        final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
 
-        int value = Settings.System.getIntForUser(resolver,
-                Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
-        mThreshold = (CustomSeekBarPreference) findPreference("network_traffic_autohide_threshold");
-        mThreshold.setValue(value);
-        mThreshold.setOnPreferenceChangeListener(this);
-        mThreshold.setEnabled(isNetMonitorEnabled);
+        mPowerMenuOtherCategory = (PreferenceCategory) findPreference(KEY_POWER_MENU_OTHER_CAT);
+
+        mPowerMenuLockDown = (SwitchPreference) findPreference(KEY_LOCKDOWN_IN_POWER_MENU);
+        if (lockPatternUtils.isSecure(MY_USER_ID)) {
+            mPowerMenuLockDown.setChecked((Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.LOCKDOWN_IN_POWER_MENU, 0) == 1));
+            mPowerMenuLockDown.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mPowerMenuLockDown);
+            prefSet.removePreference(mPowerMenuOtherCategory);
+        }
     }
 
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mNetMonitor) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putIntForUser(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_STATE, value ? 1 : 0,
-                    UserHandle.USER_CURRENT);
-            mNetMonitor.setChecked(value);
-            mThreshold.setEnabled(value);
-            return true;
-        } else if (preference == mThreshold) {
-            int val = (Integer) newValue;
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, val,
-                    UserHandle.USER_CURRENT);
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mPowerMenuLockDown) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.LOCKDOWN_IN_POWER_MENU, value ? 1 : 0);
             return true;
         }
         return false;
@@ -105,7 +97,7 @@ public class TrafficIndicators extends SettingsPreferenceFragment
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.traffic_indicators;
+                    sir.xmlResId = R.xml.powermenu;
                     result.add(sir);
                     return result;
                 }

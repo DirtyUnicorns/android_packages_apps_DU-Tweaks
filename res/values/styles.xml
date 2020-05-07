@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2006 The Android Open Source Project
+<!-- Copyright (C) 2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,28 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <resources>
-
-    <!-- Dirty Tweaks bottom navigation bar -->
-    <style name="DtBottomNavStyle">
-        <item name="itemIconTint">@drawable/bottomnav_item_color</item>
-        <item name="itemTextColor">@drawable/bottomnav_item_color</item>
-        <item name="itemTextAppearanceActive">@style/BottomNavTextAppearanceActive</item>
-        <item name="itemTextAppearanceInactive">@style/BottomNavTextAppearance</item>
-        <item name="itemBackground">?android:attr/selectableItemBackgroundBorderless</item>
-        <item name="android:background">?android:colorPrimary</item>
-    </style>
-
-    <style name="BottomNavTextAppearance" parent="HeaderTextAppearance">
-        <item name="android:textSize">@dimen/design_bottom_navigation_text_size</item>
-    </style>
-
-    <style name="BottomNavTextAppearanceActive" parent="BottomNavTextAppearance">
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="HeaderTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"/>
 
     <style name="TeamDialog" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
         <item name="android:windowNoTitle">true</item>
@@ -44,6 +23,19 @@
     <style name="TeamAnimation.Window" parent="@android:style/Animation.Activity">
         <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="ExpandableBottomBar">
+        <item name="exb_backgroundColor">@color/dirty_tweaks_navbar_color</item>
+        <item name="exb_backgroundCornerRadius">0dp</item>
+        <item name="exb_itemInactiveColor">#000</item>
+        <item name="exb_itemBackgroundCornerRadius">30dp</item>
+        <item name="exb_itemBackgroundOpacity">0.2</item>
+        <item name="exb_transitionDuration">100</item>
+        <item name="exb_item_vertical_margin">24dp</item>
+        <item name="exb_item_horizontal_margin">5dp</item>
+        <item name="exb_item_vertical_padding">10dp</item>
+        <item name="exb_item_horizontal_padding">15dp</item>
     </style>
 
 </resources>

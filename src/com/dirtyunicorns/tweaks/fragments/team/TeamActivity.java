@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.dirtyunicorns.tweaks.fragments.team;
 
 import android.app.Activity;
@@ -49,7 +48,7 @@ public class TeamActivity extends Activity {
     private void initTeam(){
         RecyclerView mRecycleview = findViewById(R.id.listView);
 
-        setTeamMember("Alex", getString(R.string.developer_title), "Mazda--", "dualexcruz", R.drawable.alex);
+        setTeamMember("Alex", getString(R.string.developer_title), "BoredOutOfMyGit", "BoredOutOfMyGit", R.drawable.alex);
         setTeamMember("Bret", getString(R.string.developer_title), "MazWoz", "MazWoz", R.drawable.bret);
         setTeamMember("Edwin", getString(R.string.developer_title)
                 + " / " + getString(R.string.maintainer_title), "spaceman860", "spaceman860", R.drawable.edwin);

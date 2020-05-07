@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2020 The Dirty Unicorns Project
+ * Copyright (C) 2020 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,13 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.dirtyunicorns.tweaks;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.TypedValue;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,153 +30,127 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.dirtyunicorns.tweaks.fragments.team.TeamActivity;
-import com.dirtyunicorns.tweaks.navigation.BottomNavigationViewCustom;
 import com.dirtyunicorns.tweaks.tabs.Multitasking;
 import com.dirtyunicorns.tweaks.tabs.Navigation;
 import com.dirtyunicorns.tweaks.tabs.Statusbar;
 import com.dirtyunicorns.tweaks.tabs.System;
 
+import github.com.st235.lib_expandablebottombar.ExpandableBottomBar;
+import github.com.st235.lib_expandablebottombar.ExpandableBottomBarMenuItem;
+
 public class DirtyTweaks extends SettingsPreferenceFragment {
 
-    private Context mContext;
-    private MenuItem mMenuItem;
+    Context mContext;
+    View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        super.onCreate(savedInstanceState);
+
+        mContext = getActivity();
         Resources res = getResources();
         Window win = getActivity().getWindow();
-        mContext = getActivity();
 
         win.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         win.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        win.setNavigationBarColor(res.getColor(R.color.dirtytweaks_navbar_color));
-        win.setNavigationBarDividerColor(res.getColor(R.color.dirtytweaks_navbar_color));
+        win.setNavigationBarColor(res.getColor(R.color.dirty_tweaks_navbar_color));
+        win.setNavigationBarDividerColor(res.getColor(R.color.dirty_tweaks_navbar_color));
 
-        getActivity().setTitle(R.string.dirtytweaks_title);
+        view = inflater.inflate(R.layout.dirtytweaks, container, false);
 
-        View view = inflater.inflate(R.layout.dirtytweaks, container, false);
+        ActionBar actionBar = getActivity().getActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle(R.string.dirtytweaks_title);
+        }
 
-        final BottomNavigationViewCustom navigation = view.findViewById(R.id.navigation);
+        ExpandableBottomBar bottomBar = view.findViewById(R.id.expandable_bottom_bar);
 
-        final ViewPager viewPager = view.findViewById(R.id.viewpager);
-        PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
-        viewPager.setAdapter(mPagerAdapter);
+        Fragment system = new System();
+        Fragment statusbar = new Statusbar();
+        Fragment navigation = new Navigation();
+        Fragment multitasking = new Multitasking();
 
-        navigation.setOnNavigationItemSelectedListener(
-                new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                        switch (item.getItemId()) {
-                            case R.id.system:
-                                viewPager.setCurrentItem(0);
-                                return true;
-                            case R.id.statusbar:
-                                viewPager.setCurrentItem(1);
-                                return true;
-                            case R.id.navigation:
-                                viewPager.setCurrentItem(2);
-                                return true;
-                            case R.id.multitasking:
-                                if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
-                                    viewPager.setCurrentItem(3);
-                                }
-                                return true;
-                        }
-                        return false;
+        Fragment fragment = (Fragment) getFragmentManager().findFragmentById(R.id.fragmentContainer);
+        if (fragment == null) {
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragmentContainer, system);
+            transaction.addToBackStack(null);
+            transaction.commit();
+        }
+
+        bottomBar.addItems(mContext.getResources().getBoolean(
+                R.bool.has_active_edge) ? new ExpandableBottomBarMenuItem.Builder(mContext)
+                .addItem(R.id.system,
+                        R.drawable.bottomnav_system,
+                        R.string.bottom_nav_system_title, getThemeAccentColor(mContext))
+                .addItem(R.id.statusbar,
+                        R.drawable.bottomnav_statusbar,
+                        R.string.bottom_nav_statusbar_title, getThemeAccentColor(mContext))
+                .addItem(R.id.navigation,
+                        R.drawable.bottomnav_navigation,
+                        R.string.bottom_nav_navigation_title, getThemeAccentColor(mContext))
+                .addItem(R.id.multitasking,
+                        R.drawable.bottomnav_multitasking,
+                        R.string.bottom_nav_multitasking_title, getThemeAccentColor(mContext))
+                .build() : new ExpandableBottomBarMenuItem.Builder(mContext)
+                .addItem(R.id.system,
+                        R.drawable.bottomnav_system,
+                        R.string.bottom_nav_system_title, getThemeAccentColor(mContext))
+                .addItem(R.id.statusbar,
+                        R.drawable.bottomnav_statusbar,
+                        R.string.bottom_nav_statusbar_title, getThemeAccentColor(mContext))
+                .addItem(R.id.navigation,
+                        R.drawable.bottomnav_navigation,
+                        R.string.bottom_nav_navigation_title, getThemeAccentColor(mContext))
+                .build()
+        );
+
+        bottomBar.setOnItemSelectedListener((view, menuItem) -> {
+            int id = menuItem.getItemId();
+            switch (id){
+                case R.id.system:
+                    launchFragment(system);
+                    break;
+                case R.id.statusbar:
+                    launchFragment(statusbar);
+                    break;
+                case R.id.navigation:
+                    launchFragment(navigation);
+                    break;
+                case R.id.multitasking:
+                    if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
+                        launchFragment(multitasking);
                     }
-                });
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset,
-                                       int positionOffsetPixels) {
+                    break;
             }
-
-            @Override
-            public void onPageSelected(int position) {
-                if (mMenuItem != null) {
-                    mMenuItem.setChecked(false);
-                }
-
-                navigation.getMenu().getItem(position).setChecked(true);
-
-                mMenuItem = navigation.getMenu().getItem(position);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-            }
+            return null;
         });
 
         setHasOptionsMenu(true);
 
-        if (!mContext.getResources().getBoolean(R.bool.has_active_edge)) {
-            navigation.getMenu().removeItem(R.id.multitasking);
-        }
-
         return view;
     }
 
-    class PagerAdapter extends FragmentPagerAdapter {
-
-        String titles[] = getTitles();
-        private Fragment frags[] = new Fragment[titles.length];
-
-        PagerAdapter(FragmentManager fm) {
-            super(fm);
-            frags[0] = new System();
-            frags[1] = new Statusbar();
-            frags[2] = new Navigation();
-            if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
-                frags[3] = new Multitasking();
-            }
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return frags[position];
-        }
-
-        @Override
-        public int getCount() {
-            return frags.length;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles[position];
-        }
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
     }
 
-    private String[] getTitles() {
-        String titleString[];
-
-        if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
-            titleString = new String[]{
-                    mContext.getString(R.string.bottom_nav_system_title),
-                    mContext.getString(R.string.bottom_nav_statusbar_title),
-                    mContext.getString(R.string.bottom_nav_navigation_title),
-                    mContext.getString(R.string.bottom_nav_multitasking_title)};
-        } else {
-            titleString = new String[]{
-                    mContext.getString(R.string.bottom_nav_system_title),
-                    mContext.getString(R.string.bottom_nav_statusbar_title),
-                    mContext.getString(R.string.bottom_nav_navigation_title)};
-        }
-
-        return titleString;
+    private void launchFragment(Fragment fragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentContainer, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
     @Override
@@ -189,13 +165,34 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case 0:
-                Intent intent = new Intent(mContext, TeamActivity.class);
-                mContext.startActivity(intent);
-                return true;
-            default:
-                return false;
+        if (item.getItemId() == 0) {
+            Intent intent = new Intent(mContext, TeamActivity.class);
+            mContext.startActivity(intent);
+            return true;
         }
+        return false;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        view = getView();
+        view.setFocusableInTouchMode(true);
+        view.requestFocus();
+        view.setOnKeyListener((v, keyCode, event) -> {
+            if (event.getAction() == KeyEvent.ACTION_UP &&
+                    keyCode == KeyEvent.KEYCODE_BACK) {
+                getActivity().finish();
+                return true;
+            }
+            return false;
+        });
+    }
+
+    public static int getThemeAccentColor (final Context context) {
+        final TypedValue value = new TypedValue ();
+        context.getTheme ().resolveAttribute (android.R.attr.colorAccent, value, true);
+        return value.data;
     }
 }
