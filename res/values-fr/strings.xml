@@ -28,6 +28,8 @@
     <string name="bottom_nav_statusbar_title">Barre d\'état</string>
     <string name="bottom_nav_navigation_title">Navigation</string>
     <string name="bottom_nav_multitasking_title">Multi-tâche</string>
+    <string name="accessibility_description">Écran</string>
+    <string name="accessibility_item_description">%1$s élément du menu</string>
     <!-- Categories -->
     <!-- System -->
     <string name="device_extras_title">Réglages spécifiques</string>
