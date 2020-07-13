@@ -189,6 +189,9 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
+    <string name="status_bar_clock_hide_on_home_title">Hide on Home</string>
+    <string name="status_bar_clock_hide_on_home_summary_on">Clock will hide when Home is showing</string>
+    <string name="status_bar_clock_hide_on_home_summary_off">Home does not affect clock</string>
 
     <!-- Battery Styles -->
     <string name="battery_percent_title">Status bar battery percentage</string>
