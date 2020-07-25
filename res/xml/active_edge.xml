@@ -59,7 +59,7 @@
         android:key="gesture_assist_sensitivity"
         android:title="@string/active_edge_sensitivity_title"
         android:max="8"
-        settings:min="0"
+        android:min="0"
         settings:units="" />
 
     <SwitchPreference
