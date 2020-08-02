@@ -168,6 +168,9 @@
     <string name="clock_date_right">À droite de l\'horloge</string>
     <string name="clock_date_left">À gauche de l\'horloge</string>
     <string name="clock_date_position">Position de la date</string>
+    <string name="status_bar_clock_hide_on_home_title">Écran d\'accueil</string>
+    <string name="status_bar_clock_hide_on_home_summary_on">Masquer l\'horloge sur l\'écran d\'accueil</string>
+    <string name="status_bar_clock_hide_on_home_summary_off">Ne pas masquer l\'horloge sur l\'écran d\'accueil</string>
     <!-- Battery Styles -->
     <string name="battery_percent_title">Affichage du pourcentage sur la barre d\'état</string>
     <string name="status_bar_battery_style_title">Apparence</string>
@@ -330,13 +333,41 @@
     <string name="gesture_navbar_handle_default">Pilule normale</string>
     <string name="gesture_navbar_handle_middle">Pilule moyenne</string>
     <string name="gesture_navbar_handle_large">Pilule large</string>
-
     <string name="show_media_heads_up_title">Notifications flottantes</string>
     <string name="show_media_heads_up_summary">Afficher une notification flottante lors du changement de piste musicale, si le lecteur n\'est pas déjà affiché</string>
-
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animation de l\'extinction de l\'écran</string>
     <string name="screen_off_animation_default">Par défaut</string>
     <string name="screen_off_animation_crt">Tube cathodique</string>
     <string name="screen_off_animation_scale">Réduction</string>
+    <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Pulse ne fonctionne pas avec certaines sources audio lors de l\'écoute de musique sur le(s) haut-parleur(s) de l\'appareil</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Égaliseur audio sur la barre de navigation</string>
+    <string name="show_pulse_title">Pulse</string>
+    <string name="show_pulse_summary">Animation à l\'aspect d\'un égaliseur audio sur la barre de navigation</string>
+    <string name="pulse_render_mode_title">Mode de rendu</string>
+    <string name="pulse_render_mode_fading_bars">Fondu des blocs</string>
+    <string name="pulse_render_mode_solid_lines">Lignes pleines</string>
+    <string name="pulse_color">Couleur</string>
+    <string name="pulse_color_mode">Mode de couleur</string>
+    <string name="pulse_color_accent">Couleur d\'accentuation</string>
+    <string name="pulse_color_custom">Sur mesure</string>
+    <string name="pulse_color_lava_lamp">Lampe Lava</string>
+    <string name="pulse_color_auto">Couleur de l\'illustration de l\'album</string>
+    <string name="pulse_color_chooser">Choisir la couleur</string>
+    <string name="smoothing_enabled_title">Activer le lissage</string>
+    <string name="smoothing_enabled_summary">Chaque bloc est animé de manière plus fluide</string>
+    <string name="pulse_advanced_category">Optimisations</string>
+    <string name="pulse_legacy_mode_advanced_category">Réglages du fondu des blocs</string>
+    <string name="pulse_custom_fudge_factor">Fréquence</string>
+    <string name="lavamp_speed_title">Vitesse de la lampe Lava</string>
+    <string name="pulse_solid_units_count">Nombre de lignes</string>
+    <string name="pulse_solid_lines_count">Nombre de lignes</string>
+    <string name="pulse_solid_units_opacity">Opacité des lignes</string>
+    <string name="pulse_solid_dimen_category">Réglages des lignes pleines</string>
+    <string name="pulse_custom_dimen">Largeur des barres</string>
+    <string name="pulse_custom_div">Espacement des barres</string>
+    <string name="pulse_filled_block_size">Dimension des blocs</string>
+    <string name="pulse_empty_block_size">Espacement des blocs</string>
 </resources>
