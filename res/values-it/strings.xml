@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- Dirty Tweaks -->
     <string name="dirtytweaks_title">Dirty Tweaks</string>
     <string name="dirtytweaks_summary">Migliora la tua esperienza</string>
@@ -28,6 +28,8 @@
     <string name="bottom_nav_statusbar_title">Barra di stato</string>
     <string name="bottom_nav_navigation_title">Navigazione</string>
     <string name="bottom_nav_multitasking_title">Multitasking</string>
+    <string name="accessibility_description">Screen menu</string>
+    <string name="accessibility_item_description">%1$s menu item</string>
     <!-- Categories -->
     <!-- System -->
     <string name="device_extras_title">Extra del dispositivo</string>
@@ -166,6 +168,24 @@
     <string name="clock_date_right">A destra dell\'ora</string>
     <string name="clock_date_left">A sinistra dell\'ora</string>
     <string name="clock_date_position">Posizione della data</string>
+    <string name="status_bar_clock_hide_on_home_title">Hide on Home</string>
+    <string name="status_bar_clock_hide_on_home_summary_on">Clock will hide when Home is showing</string>
+    <string name="status_bar_clock_hide_on_home_summary_off">Home does not affect clock</string>
+    <!-- Battery Styles -->
+    <string name="battery_percent_title">Percentuale batteria nella barra di stato</string>
+    <string name="status_bar_battery_style_title">Stile batteria</string>
+    <string name="status_bar_battery_style_icon_portrait">Icona verticale (predefinito)</string>
+    <string name="status_bar_battery_style_circle">Icona circolare</string>
+    <string name="status_bar_battery_style_dotted_circle">Cerchio tratteggiato</string>
+    <string name="status_bar_battery_style_filled_circle">Cerchio (pieno)</string>
+    <string name="status_bar_battery_style_text">Testo</string>
+    <string name="status_bar_battery_style_hidden">Nascosta</string>
+    <string name="status_bar_battery_percentage_title">Percentuale batteria</string>
+    <string name="status_bar_battery_percentage_default">Nascosta (predefinito)</string>
+    <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
+    <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
+    <string name="qs_battery_percentage_title">Mostra percentuale batteria QS</string>
+    <string name="qs_battery_percentage_summary">Mostra la percentuale della batteria nell\'intestazione delle impostazioni rapide invece della stima della batteria</string>
     <!-- DT2S on lockscreen -->
     <string name="double_tap_sleep_lockscreen">Doppio tocco per spegnere lo schermo sulla schermata di blocco</string>
     <!-- Carrier Label -->
@@ -296,9 +316,15 @@
     <string name="left_swipe_app_action_title">Seleziona l\'app a scorrimento prolungato a sinistra</string>
     <string name="right_swipe_actions_title">Azione di scorrimento  prolungato a destra</string>
     <string name="right_swipe_app_action_title">Seleziona l\'app a scorrimento prolungato a destra</string>
+    <string name="left_vertical_swipe_key_title">Swipe L a sinistra</string>
+    <string name="right_vertical_swipe_key_title">Swipe L a destra</string>
+    <string name="left_vertical_swipe_actions_title">Azione di scorrimento verticale a sinistra</string>
+    <string name="left_vertical_swipe_app_action_title">Seleziona l\'app di scorrimento a sinistra verticale</string>
+    <string name="right_vertical_swipe_actions_title">Azione di scorrimento verticale destro</string>
+    <string name="right_vertical_swipe_app_action_title">Seleziona l\'app di scorrimento destro verticale</string>
     <string name="gesture_nav_tweaks_footer_info">Per scegliere un\'attività specifica dell\'applicazione per l\'azione, premi a lungo su qualsiasi app nella selezione dell\'app.\n\nSe il launcher sta mostrando, fai lo swipe nell\'area inferiore dello schermo per attivare l\'azione.</string>
     <string name="back_swipe_extended_title">Azione di scorrimento estesa</string>
-    <string name="back_swipe_extended_summary">Attiva l\'azione se lo scorrimento orizzontalmente è superiore di 3\/4 della dimensione dello schermo</string>
+    <string name="back_swipe_extended_summary">Innesca l\'azione su scorrimento più ampio (più di metà della dimensione del display), o uno scorrimento a L (abbastanza più lungo verticalmente)</string>
     <!-- Gesture navbar handle -->
     <string name="gesture_navbar_handle_title">Stile visualizzazione barra di navigazione</string>
     <string name="gesture_navbar_hidden">Nascondi la barra di navigazione</string>
@@ -313,4 +339,34 @@
     <string name="screen_off_animation_default">Default</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scala</string>
+    <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+    <string name="show_pulse_title">Show Pulse</string>
+    <string name="show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+    <string name="pulse_render_mode_title">Render mode</string>
+    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+    <string name="pulse_render_mode_solid_lines">Solid lines</string>
+    <string name="pulse_color">Color</string>
+    <string name="pulse_color_mode">Color mode</string>
+    <string name="pulse_color_accent">Accent</string>
+    <string name="pulse_color_custom">Custom</string>
+    <string name="pulse_color_lava_lamp">Lava lamp</string>
+    <string name="pulse_color_auto">Album art</string>
+    <string name="pulse_color_chooser">Choose color</string>
+    <string name="smoothing_enabled_title">Turn on smoothing</string>
+    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
+    <string name="pulse_advanced_category">Advanced</string>
+    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+    <string name="pulse_custom_fudge_factor">Sanity level</string>
+    <string name="lavamp_speed_title">Lava lamp speed</string>
+    <string name="pulse_solid_units_count">Solid lines count</string>
+    <string name="pulse_solid_lines_count">Solid lines count</string>
+    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
+    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+    <string name="pulse_custom_dimen">Bar width</string>
+    <string name="pulse_custom_div">Bar spacing</string>
+    <string name="pulse_filled_block_size">Block size</string>
+    <string name="pulse_empty_block_size">Block spacing</string>
 </resources>

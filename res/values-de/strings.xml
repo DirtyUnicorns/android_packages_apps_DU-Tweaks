@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- Dirty Tweaks -->
     <string name="dirtytweaks_title">Dirty Tweaks</string>
     <string name="dirtytweaks_summary">Verbessere dein Erlebnis</string>
@@ -28,6 +28,8 @@
     <string name="bottom_nav_statusbar_title">Statusbar</string>
     <string name="bottom_nav_navigation_title">Navigation</string>
     <string name="bottom_nav_multitasking_title">Multitasking</string>
+    <string name="accessibility_description">Screen menu</string>
+    <string name="accessibility_item_description">%1$s menu item</string>
     <!-- Categories -->
     <!-- System -->
     <string name="device_extras_title">Geräteextras</string>
@@ -121,8 +123,8 @@
     <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Beschleunigen - Verlangsamen</string>
     <string name="qs_tile_animation_interpolator_bounceInterpolator">Hüpfend</string>
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Überschwingen</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Vorausberechnen</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Überschwingen vorausberechnen</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
@@ -166,10 +168,28 @@
     <string name="clock_date_right">Rechts neben der Uhrzeit</string>
     <string name="clock_date_left">Links neben der Uhrzeit</string>
     <string name="clock_date_position">Position des Datums</string>
+    <string name="status_bar_clock_hide_on_home_title">Hide on Home</string>
+    <string name="status_bar_clock_hide_on_home_summary_on">Clock will hide when Home is showing</string>
+    <string name="status_bar_clock_hide_on_home_summary_off">Home does not affect clock</string>
+    <!-- Battery Styles -->
+    <string name="battery_percent_title">Status bar battery percentage</string>
+    <string name="status_bar_battery_style_title">Akku Stil</string>
+    <string name="status_bar_battery_style_icon_portrait">Symbol Hochformat (Standard)</string>
+    <string name="status_bar_battery_style_circle">Kreis</string>
+    <string name="status_bar_battery_style_dotted_circle">Kreis (gepunktet)</string>
+    <string name="status_bar_battery_style_filled_circle">Kreis (gefüllt)</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
+    <string name="status_bar_battery_percentage_title">Prozentanzeige</string>
+    <string name="status_bar_battery_percentage_default">Ausgeblendet (Standard)</string>
+    <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
+    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    <string name="qs_battery_percentage_title">QS Akkuprozentanzeige</string>
+    <string name="qs_battery_percentage_summary">Zeige Akku-Prozentanzeige in der QS-Kopfzeile statt der Akku-Schätzung</string>
     <!-- DT2S on lockscreen -->
     <string name="double_tap_sleep_lockscreen">Doppeltipp auf dem Sperrbildschirm, um den Bildschirm auszuschalten</string>
     <!-- Carrier Label -->
-    <string name="carrier_options">Select display locations</string>
+    <string name="carrier_options">Anzeigeorte wählen</string>
     <string name="custom_carrier_label_title">Benutzerdefinierte Anbieter Bezeichnung</string>
     <string name="custom_carrier_label_explain">Eigenen Namen eingeben. Leer lassen, um Standard Netzwerknamen zu verwenden</string>
     <string name="custom_carrier_label_notset">Benutzerdefinierte Name ist derzeit nicht festgelegt</string>
@@ -190,88 +210,88 @@
     <string name="aware_display_settings_title">Idle lock screen</string>
     <string name="aware_settings_description">Mit neuen Sensoren kann das Pixel Entfernung und Bewegung erkennen</string>
     <string name="aware_settings_disabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are not supported in this country</string>
-    <string name="aware_settings_disabled_info_dialog_title">Motion Sense is off</string>
+    <string name="aware_settings_disabled_info_dialog_title">Motion Sense ist aus</string>
     <string name="aware_settings_enabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are supported in this country</string>
-    <string name="aware_settings_enabled_info_dialog_title">Motion Sense is on</string>
+    <string name="aware_settings_enabled_info_dialog_title">Motion Sense ist aktiv</string>
     <string name="aware_wake_display_summary">Show time, notification icons, and other info when you’re nearby</string>
     <string name="aware_wake_display_summary_aod_off">Unavailable because always-on display is off</string>
     <string name="aware_wake_display_title">Bildschirm an wenn Sie in der Nähe sind</string>
     <string name="dialog_aware_settings_message">If you turn off Motion Sense, you can’t use Quick Gestures, show display when nearby, and reach to check phone</string>
-    <string name="dialog_aware_settings_title">Turn off Motion Sense?</string>
-    <string name="gesture_aware_confirmation_action_button">Got it</string>
+    <string name="dialog_aware_settings_title">Motion Sense ausschalten?</string>
+    <string name="gesture_aware_confirmation_action_button">Verstanden</string>
     <string name="gesture_aware_disabled_info_dialog_content">Quick Gestures and other Motion Sense features are not supported in this country.</string>
     <string name="gesture_aware_off_dialog_content">To use Quick Gestures, turn on Motion Sense.</string>
-    <string name="gesture_aware_off_dialog_title">Quick Gestures are off</string>
+    <string name="gesture_aware_off_dialog_title">\"Schelle Gesten\" sind ausgeschaltet</string>
     <string name="gesture_silence_on_summary">On / Snooze alarms and silence calls</string>
     <string name="gesture_silence_summary">Snooze alarms and silence calls</string>
     <string name="gesture_silence_title">Silence interruptions</string>
-    <string name="gesture_skip_direction_ltr">Swipe left to right for next song</string>
-    <string name="gesture_skip_direction_rtl">Swipe right to left for next song</string>
-    <string name="gesture_skip_direction_title">Swipe direction</string>
+    <string name="gesture_skip_direction_ltr">Für den nächsten Song von links nach rechts wischen</string>
+    <string name="gesture_skip_direction_rtl">Für den nächsten Song von rechts nach links wischen</string>
+    <string name="gesture_skip_direction_title">Wischrichtung</string>
     <string name="gesture_skip_on_summary">On / Skip to the next or previous song</string>
     <string name="gesture_skip_summary">Skip to the next or previous song</string>
-    <string name="gesture_skip_title">Skip songs</string>
+    <string name="gesture_skip_title">Song überspringen</string>
     <string name="gesture_tap_off_summary">Off / Pause or resume music</string>
     <string name="gesture_tap_on_summary">On / Pause or resume music</string>
     <string name="gesture_tap_summary">Pause or resume music by tapping the air above the phone</string>
-    <string name="gesture_tap_title">Pause music</string>
+    <string name="gesture_tap_title">Musik pausieren</string>
     <string name="wake_screen_aware_disabled_info_dialog_content">Reach to check phone and other Motion Sense features are not supported in this country</string>
     <string name="wake_screen_aware_off_dialog_content">To use Reach to check phone, turn on Motion Sense</string>
     <string name="wake_screen_aware_off_dialog_title">Reach to check phone is off</string>
     <!-- Active edge -->
     <string name="active_edge_short_actions_title">Short squeeze action</string>
     <string name="active_edge_long_actions_title">Long squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
+    <string name="active_edge_sensitivity_title">Druckempfindlichkeit</string>
+    <string name="active_edge_wake_title">Erlauben, wenn Bildschirm aus ist</string>
+    <string name="active_edge_wake_summary">Löse eine Aktion aus wenn der Bildschirm aus ist</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display.\n\nIf you want to choose a specific app activity for the action, long press on any app in the app picker.</string>
     <!-- Custom actions -->
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
+    <string name="action_nothing">Keine Aktion</string>
+    <string name="action_menu">Menü</string>
+    <string name="action_app_switch">Anwendungsverlauf</string>
+    <string name="action_search">Assistent</string>
+    <string name="action_voice_search">Sprachsuche</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Letzte App</string>
+    <string name="action_splitscreen">Splitscreen</string>
+    <string name="action_flashlight">Taschenlampe</string>
+    <string name="action_clear_notifications">Benachrichtigungen löschen</string>
+    <string name="action_volume_panel">Lautstärkeregler</string>
     <string name="action_screen_off">Bildschirm ausschalten</string>
-    <string name="action_notifications">Notifications</string>
+    <string name="action_notifications">Benachrichtigungen</string>
     <string name="action_power_menu">Ein-/Aus Menü</string>
     <string name="action_screenshot">Screenshot</string>
     <string name="action_qs_panel">Schnelleinstellungsleiste</string>
     <string name="action_app_action">Anwendung</string>
-    <string name="action_ringer_modes">Ringer modes</string>
-    <string name="kill_app">Kill foreground app</string>
+    <string name="action_ringer_modes">Klingelton-Modus</string>
+    <string name="kill_app">App im Vordergrund beenden</string>
     <string name="skip_song">Titel überspringen</string>
     <string name="prev_song">Vorheriger Titel</string>
     <!-- Active edge -->
     <string name="active_edge_ss_app_select_title">App für kurzes Drücken</string>
     <string name="active_edge_ls_app_select_title">App für langes Drücken</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
+    <string name="active_edge_app_select_summary">App auswählen für Active Edge Drücken</string>
     <!-- Navigation -->
-    <string name="navigation_bar_title">On-screen navigation bar</string>
-    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
+    <string name="navigation_bar_title">Navigationsleiste auf dem Bildschirm</string>
+    <string name="navigation_bar_summary">Navigationstasten auf dem Bildschirm aktivieren</string>
     <string name="navigation_bar_layout_title">Layout</string>
-    <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
-    <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
-    <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing</string>
-    <string name="hw_keys_swap_title">Swap hardware buttons</string>
-    <string name="hw_keys_swap_summary">Swap the order of recents and back buttons</string>
-    <string name="home_key_title">Home button</string>
-    <string name="back_key_title">Back button</string>
-    <string name="menu_key_title">Menu button</string>
-    <string name="assist_key_title">Assist button</string>
+    <string name="navigation_bar_layout_summary">Darstellung der Navigationsleiste anpassen</string>
+    <string name="navigation_bar_arrow_keys_title">Pfeiltasten beim Tippen anzeigen</string>
+    <string name="navigation_bar_arrow_keys_summary">Während der Eingabe Tasten zur Cursorsteuerung in der Navigationsleiste einblenden</string>
+    <string name="hw_keys_swap_title">Hardwaretasten tauschen</string>
+    <string name="hw_keys_swap_summary">Anordnung der Tasten für Anwendungsverlauf und Zurück tauschen</string>
+    <string name="home_key_title">Home-Taste</string>
+    <string name="back_key_title">Zurück-Taste</string>
+    <string name="menu_key_title">Menü-Taste</string>
+    <string name="assist_key_title">Assistent-Taste</string>
     <string name="app_switch_key_title">Anwendungsverlauf-Taste</string>
     <string name="camera_key_title">Kamera-Taste</string>
     <string name="short_press_title">Kurzes Drücken (Aktion)</string>
     <string name="long_press_title">Langes Drücken (Aktion)</string>
     <string name="double_tap_title">Doppeltes Tippen (Aktion)</string>
     <string name="app_picker_dialog_title">Wähle eine App</string>
-    <string name="long_press_custom_app_title">Long press custom app</string>
-    <string name="double_tap_custom_app_title">Double tap custom app</string>
+    <string name="long_press_custom_app_title">Benutzerdefinierte App lange drücken</string>
+    <string name="double_tap_custom_app_title">Benutzerdefinierte App doppelt tippen</string>
     <!-- Button backlight -->
     <string name="button_backlight_title">Hintergrundbeleuchtung</string>
     <string name="button_backlight_summary">Hintergrundbeleuchtung für Tasten konfigurieren</string>
@@ -292,13 +312,19 @@
     <string name="navbar_gesture_tweaks_pref_title">Eigene Gesten</string>
     <string name="navbar_gesture_tweaks_pref_summary">Gesten anpassen und benutzerdefinierte Aktionen festlegen</string>
     <string name="long_back_swipe_timeout_title">Timeout für langes Wischen</string>
-    <string name="left_swipe_actions_title">Long left swipe action</string>
-    <string name="left_swipe_app_action_title">Select long left swipe app</string>
-    <string name="right_swipe_actions_title">Long right swipe action</string>
-    <string name="right_swipe_app_action_title">Select long right swipe app</string>
+    <string name="left_swipe_actions_title">Lange links wischen Aktion</string>
+    <string name="left_swipe_app_action_title">Lange links wischen App auswählen</string>
+    <string name="right_swipe_actions_title">Lange rechts wischen Aktion</string>
+    <string name="right_swipe_app_action_title">Lange rechts wischen App auswählen</string>
+    <string name="left_vertical_swipe_key_title">Linker L Swipe</string>
+    <string name="right_vertical_swipe_key_title">Rechter L Swipe</string>
+    <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
+    <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
+    <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
+    <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
     <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
     <string name="back_swipe_extended_title">Erweiterte Wischen Aktion</string>
-    <string name="back_swipe_extended_summary">Aktion auslösen, wenn die Wischgeste horizontal breiter als 3/4 der Anzeige ist</string>
+    <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
     <!-- Gesture navbar handle -->
     <string name="gesture_navbar_handle_title">Anzeigestil der Navigationsleiste</string>
     <string name="gesture_navbar_hidden">Navigationsleiste verstecken</string>
@@ -313,4 +339,34 @@
     <string name="screen_off_animation_default">Standard</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Skalierung</string>
+    <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+    <string name="show_pulse_title">Show Pulse</string>
+    <string name="show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+    <string name="pulse_render_mode_title">Render mode</string>
+    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+    <string name="pulse_render_mode_solid_lines">Solid lines</string>
+    <string name="pulse_color">Color</string>
+    <string name="pulse_color_mode">Color mode</string>
+    <string name="pulse_color_accent">Accent</string>
+    <string name="pulse_color_custom">Custom</string>
+    <string name="pulse_color_lava_lamp">Lava lamp</string>
+    <string name="pulse_color_auto">Album art</string>
+    <string name="pulse_color_chooser">Choose color</string>
+    <string name="smoothing_enabled_title">Turn on smoothing</string>
+    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
+    <string name="pulse_advanced_category">Advanced</string>
+    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+    <string name="pulse_custom_fudge_factor">Sanity level</string>
+    <string name="lavamp_speed_title">Lava lamp speed</string>
+    <string name="pulse_solid_units_count">Solid lines count</string>
+    <string name="pulse_solid_lines_count">Solid lines count</string>
+    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
+    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+    <string name="pulse_custom_dimen">Bar width</string>
+    <string name="pulse_custom_div">Bar spacing</string>
+    <string name="pulse_filled_block_size">Block size</string>
+    <string name="pulse_empty_block_size">Block spacing</string>
 </resources>
