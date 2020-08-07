@@ -48,12 +48,11 @@ public class TeamActivity extends Activity {
     private void initTeam(){
         RecyclerView mRecycleview = findViewById(R.id.listView);
 
-        setTeamMember("Alex", getString(R.string.developer_title), "BoredOutOfMyGit", "BoredOutOfMyGit", R.drawable.alex);
         setTeamMember("Bret", getString(R.string.developer_title), "MazWoz", "MazWoz", R.drawable.bret);
+        setTeamMember("Cruz", getString(R.string.developer_title), "BoredOutOfMyGit", "BoredOutOfMyGit", R.drawable.cruz);
         setTeamMember("Edwin", getString(R.string.developer_title)
                 + " / " + getString(R.string.maintainer_title), "spaceman860", "spaceman860", R.drawable.edwin);
         setTeamMember("Ezio", getString(R.string.developer_title), "ezio84", "ezio_lacandia", R.drawable.ezio);
-        setTeamMember("Francesco", getString(R.string.developer_title), "Dil3mm4", "Dil3mm4_ita", R.drawable.frank);
         setTeamMember("Giuseppe", getString(R.string.developer_title)
                 + " / " + getString(R.string.maintainer_title), "Jertlok", "Jertlok", R.drawable.giuseppe);
         setTeamMember("James", getString(R.string.developer_title)
