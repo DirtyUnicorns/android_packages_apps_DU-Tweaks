@@ -14,25 +14,14 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.tweaks.fragments;
+package com.dirtyunicorns.tweaks.fragments.navigation;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.android.internal.logging.nano.MetricsProto;
-import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
-import com.android.settingslib.search.SearchIndexable;
-import com.dirtyunicorns.support.colorpicker.ColorPickerPreference;
-import com.dirtyunicorns.tweaks.DirtyTweaks;
-
-import android.app.ActionBar;
+import android.content.ContentResolver;
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 
 import androidx.preference.PreferenceCategory;
 import androidx.preference.ListPreference;
@@ -41,8 +30,19 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
-import android.provider.SearchIndexableResource;
-import android.provider.Settings;
+import com.android.internal.logging.nano.MetricsProto;
+
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+import com.android.settingslib.search.SearchIndexable;
+
+import com.dirtyunicorns.support.colorpicker.ColorPickerPreference;
+import com.dirtyunicorns.tweaks.DirtyTweaks;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SearchIndexable
 public class PulseSettings extends SettingsPreferenceFragment implements

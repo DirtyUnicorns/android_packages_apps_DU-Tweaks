@@ -27,7 +27,7 @@
         android:title="@string/pulse_settings"
         android:summary="@string/pulse_settings_summary"
         android:dependency="force_show_navbar"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.PulseSettings" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.navigation.PulseSettings" />
 
     <Preference
         android:key="gesture_system_navigation"
