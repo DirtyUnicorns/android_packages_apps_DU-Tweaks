@@ -28,8 +28,8 @@
     <string name="bottom_nav_statusbar_title">Stavový řádek</string>
     <string name="bottom_nav_navigation_title">Navigace</string>
     <string name="bottom_nav_multitasking_title">Multitasking</string>
-    <string name="accessibility_description">Screen menu</string>
-    <string name="accessibility_item_description">%1$s menu item</string>
+    <string name="accessibility_description">Nabídka obrazovky</string>
+    <string name="accessibility_item_description">%1$s položka nabídky</string>
     <!-- Categories -->
     <!-- System -->
     <string name="device_extras_title">Další nastavení zařízení</string>
@@ -168,9 +168,9 @@
     <string name="clock_date_right">Napravo od času</string>
     <string name="clock_date_left">Nalevo od času</string>
     <string name="clock_date_position">Pozice data</string>
-    <string name="status_bar_clock_hide_on_home_title">Hide on Home</string>
-    <string name="status_bar_clock_hide_on_home_summary_on">Clock will hide when Home is showing</string>
-    <string name="status_bar_clock_hide_on_home_summary_off">Home does not affect clock</string>
+    <string name="status_bar_clock_hide_on_home_title">Skrýt na domovské obrazovce</string>
+    <string name="status_bar_clock_hide_on_home_summary_on">Hodiny se skryjí, když se zobrazí domovská obrazovka</string>
+    <string name="status_bar_clock_hide_on_home_summary_off">Domovská stránka nemá vliv na hodiny</string>
     <!-- Battery Styles -->
     <string name="battery_percent_title">Procenta baterie ve stavovém řádku</string>
     <string name="status_bar_battery_style_title">Styl baterie</string>
@@ -340,33 +340,33 @@
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Měřítko</string>
     <!-- Pulse -->
-    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_help_policy_notice_summary">Pulse nefunguje s některými zvukovými zdroji při poslechu z reproduktoru zařízení</string>
     <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
-    <string name="show_pulse_title">Show Pulse</string>
-    <string name="show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-    <string name="pulse_render_mode_title">Render mode</string>
-    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-    <string name="pulse_render_mode_solid_lines">Solid lines</string>
-    <string name="pulse_color">Color</string>
-    <string name="pulse_color_mode">Color mode</string>
-    <string name="pulse_color_accent">Accent</string>
-    <string name="pulse_color_custom">Custom</string>
-    <string name="pulse_color_lava_lamp">Lava lamp</string>
-    <string name="pulse_color_auto">Album art</string>
-    <string name="pulse_color_chooser">Choose color</string>
-    <string name="smoothing_enabled_title">Turn on smoothing</string>
-    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
-    <string name="pulse_advanced_category">Advanced</string>
-    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-    <string name="pulse_custom_fudge_factor">Sanity level</string>
-    <string name="lavamp_speed_title">Lava lamp speed</string>
-    <string name="pulse_solid_units_count">Solid lines count</string>
-    <string name="pulse_solid_lines_count">Solid lines count</string>
-    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
-    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
-    <string name="pulse_custom_dimen">Bar width</string>
-    <string name="pulse_custom_div">Bar spacing</string>
-    <string name="pulse_filled_block_size">Block size</string>
-    <string name="pulse_empty_block_size">Block spacing</string>
+    <string name="pulse_settings_summary">Audio grafický ekvalizér v navigačním panelu</string>
+    <string name="show_pulse_title">Zobrazit Pulse</string>
+    <string name="show_pulse_summary">Audio grafický ekvalizér v navigačním panelu</string>
+    <string name="pulse_render_mode_title">Režim vykreslování</string>
+    <string name="pulse_render_mode_fading_bars">Zahalující se bloky</string>
+    <string name="pulse_render_mode_solid_lines">Sloupce</string>
+    <string name="pulse_color">Barva</string>
+    <string name="pulse_color_mode">Barevný režim</string>
+    <string name="pulse_color_accent">Odstín</string>
+    <string name="pulse_color_custom">Vlastní</string>
+    <string name="pulse_color_lava_lamp">Lávová lampa</string>
+    <string name="pulse_color_auto">Obal interpreta</string>
+    <string name="pulse_color_chooser">Vyberte barvu</string>
+    <string name="smoothing_enabled_title">Zapnout vyhlazování</string>
+    <string name="smoothing_enabled_summary">Animace sloupců je mnohem hladší</string>
+    <string name="pulse_advanced_category">Pokročilé</string>
+    <string name="pulse_legacy_mode_advanced_category">Nastavení režimu zahalujících se bloků</string>
+    <string name="pulse_custom_fudge_factor">Úroveň výkonu</string>
+    <string name="lavamp_speed_title">Rychlost lávové lampy</string>
+    <string name="pulse_solid_units_count">Počet sloupců</string>
+    <string name="pulse_solid_lines_count">Počet sloupců</string>
+    <string name="pulse_solid_units_opacity">Průhlednost sloupců</string>
+    <string name="pulse_solid_dimen_category">Nastavení režimu sloupců</string>
+    <string name="pulse_custom_dimen">Šířka pruhu</string>
+    <string name="pulse_custom_div">Mezera pruhu</string>
+    <string name="pulse_filled_block_size">Velikost bloku</string>
+    <string name="pulse_empty_block_size">Odsazení bloků</string>
 </resources>
