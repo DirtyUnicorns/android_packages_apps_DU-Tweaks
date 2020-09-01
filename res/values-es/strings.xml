@@ -28,8 +28,8 @@
     <string name="bottom_nav_statusbar_title">Barra de estado</string>
     <string name="bottom_nav_navigation_title">Barra de navegación</string>
     <string name="bottom_nav_multitasking_title">Multitarea</string>
-    <string name="accessibility_description">Screen menu</string>
-    <string name="accessibility_item_description">%1$s menu item</string>
+    <string name="accessibility_description">Menú de pantalla</string>
+    <string name="accessibility_item_description">%1$s elemento de menú</string>
     <!-- Categories -->
     <!-- System -->
     <string name="device_extras_title">Extras del dispositivo</string>
@@ -168,9 +168,9 @@
     <string name="clock_date_right">A la derecha de la hora</string>
     <string name="clock_date_left">A la izquierda de la hora</string>
     <string name="clock_date_position">Posición de la fecha</string>
-    <string name="status_bar_clock_hide_on_home_title">Hide on Home</string>
-    <string name="status_bar_clock_hide_on_home_summary_on">Clock will hide when Home is showing</string>
-    <string name="status_bar_clock_hide_on_home_summary_off">Home does not affect clock</string>
+    <string name="status_bar_clock_hide_on_home_title">Ocultar en Inicio</string>
+    <string name="status_bar_clock_hide_on_home_summary_on">El reloj se ocultará cuando se muestre el inicio</string>
+    <string name="status_bar_clock_hide_on_home_summary_off">Inicio no afecta el reloj</string>
     <!-- Battery Styles -->
     <string name="battery_percent_title">Porcentaje de batería en barra de estado</string>
     <string name="status_bar_battery_style_title">Estilo de batería</string>
@@ -340,33 +340,33 @@
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Escalado</string>
     <!-- Pulse -->
-    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
-    <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
-    <string name="show_pulse_title">Show Pulse</string>
-    <string name="show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-    <string name="pulse_render_mode_title">Render mode</string>
-    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-    <string name="pulse_render_mode_solid_lines">Solid lines</string>
+    <string name="pulse_help_policy_notice_summary">La Pulsación no funciona con algunas fuentes de audio cuando escucha en el altavoz del dispositivo</string>
+    <string name="pulse_settings">Pulso</string>
+    <string name="pulse_settings_summary">Ecualizador gráfico de audio de la barra de navegación</string>
+    <string name="show_pulse_title">Mostrar Pulse</string>
+    <string name="show_pulse_summary">Ecualizador gráfico en la barra de navegación</string>
+    <string name="pulse_render_mode_title">Modo de renderizado</string>
+    <string name="pulse_render_mode_fading_bars">Desvanecimiento de bloques</string>
+    <string name="pulse_render_mode_solid_lines">Líneas sólidas</string>
     <string name="pulse_color">Color</string>
-    <string name="pulse_color_mode">Color mode</string>
-    <string name="pulse_color_accent">Accent</string>
-    <string name="pulse_color_custom">Custom</string>
-    <string name="pulse_color_lava_lamp">Lava lamp</string>
-    <string name="pulse_color_auto">Album art</string>
-    <string name="pulse_color_chooser">Choose color</string>
-    <string name="smoothing_enabled_title">Turn on smoothing</string>
-    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
-    <string name="pulse_advanced_category">Advanced</string>
-    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-    <string name="pulse_custom_fudge_factor">Sanity level</string>
-    <string name="lavamp_speed_title">Lava lamp speed</string>
-    <string name="pulse_solid_units_count">Solid lines count</string>
-    <string name="pulse_solid_lines_count">Solid lines count</string>
-    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
-    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
-    <string name="pulse_custom_dimen">Bar width</string>
-    <string name="pulse_custom_div">Bar spacing</string>
-    <string name="pulse_filled_block_size">Block size</string>
-    <string name="pulse_empty_block_size">Block spacing</string>
+    <string name="pulse_color_mode">Modo de color</string>
+    <string name="pulse_color_accent">Acento</string>
+    <string name="pulse_color_custom">Personalizada</string>
+    <string name="pulse_color_lava_lamp">Lámpara de lava</string>
+    <string name="pulse_color_auto">Portada de Albúm</string>
+    <string name="pulse_color_chooser">Elegir color</string>
+    <string name="smoothing_enabled_title">Encender suavizado</string>
+    <string name="smoothing_enabled_summary">La animación de las barras es mas suave</string>
+    <string name="pulse_advanced_category">Opciones avanzadas</string>
+    <string name="pulse_legacy_mode_advanced_category">Configuración del modo de desvanecimiento de bloques</string>
+    <string name="pulse_custom_fudge_factor">Nivel de sensibilidad</string>
+    <string name="lavamp_speed_title">Velocidad de la lámpara de lava</string>
+    <string name="pulse_solid_units_count">Cantidad de líneas sólidas</string>
+    <string name="pulse_solid_lines_count">Cantidad de líneas sólidas</string>
+    <string name="pulse_solid_units_opacity">Opacidad de líneas sólidas</string>
+    <string name="pulse_solid_dimen_category">Ajustes del modo de lineas solidas</string>
+    <string name="pulse_custom_dimen">Ancho de la barra</string>
+    <string name="pulse_custom_div">Espacio de la barra</string>
+    <string name="pulse_filled_block_size">Tamaño de los bloques</string>
+    <string name="pulse_empty_block_size">Espacio de bloques</string>
 </resources>
