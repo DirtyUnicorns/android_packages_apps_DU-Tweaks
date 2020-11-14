@@ -15,13 +15,9 @@
  */
 package com.dirtyunicorns.tweaks.fragments.navigation;
 
-import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.PowerManager;
-import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
-import android.provider.Settings;
 
 import androidx.preference.PreferenceCategory;
 import androidx.preference.ListPreference;
@@ -34,12 +30,10 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
-
-import com.dirtyunicorns.support.preferences.CustomSeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,52 +42,14 @@ import java.util.List;
 public class ButtonBrightness extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
-    private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
-
-    private CustomSeekBarPreference mButtonTimoutBar;
-    private CustomSeekBarPreference mManualButtonBrightness;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.button_brightness);
-
-        PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        mManualButtonBrightness = (CustomSeekBarPreference) findPreference(
-                KEY_BUTTON_MANUAL_BRIGHTNESS_NEW);
-        final int customButtonBrightness = getResources().getInteger(
-                com.android.internal.R.integer.config_button_brightness_default);
-        final int currentBrightness = Settings.System.getInt(resolver,
-                Settings.System.CUSTOM_BUTTON_BRIGHTNESS, customButtonBrightness);
-        PowerManager pm = (PowerManager) getActivity().getSystemService(Context.POWER_SERVICE);
-
-        mManualButtonBrightness.setMax(pm.getMaximumScreenBrightnessSetting());
-        mManualButtonBrightness.setValue(currentBrightness);
-        mManualButtonBrightness.setOnPreferenceChangeListener(this);
-
-        mButtonTimoutBar = (CustomSeekBarPreference) findPreference(KEY_BUTTON_TIMEOUT);
-        int currentTimeout = Settings.System.getInt(resolver,
-                Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 0);
-        mButtonTimoutBar.setValue(currentTimeout);
-        mButtonTimoutBar.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mButtonTimoutBar) {
-            int buttonTimeout = (Integer) objValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, buttonTimeout);
-        } else if (preference == mManualButtonBrightness) {
-            int buttonBrightness = (Integer) objValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.CUSTOM_BUTTON_BRIGHTNESS, buttonBrightness);
-        } else {
-            return false;
-        }
-        return true;
+        return false;
     }
 
     @Override
@@ -111,11 +67,6 @@ public class ButtonBrightness extends SettingsPreferenceFragment
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.button_brightness;
-                    int deviceKeys = context.getResources().getInteger(
-                            com.android.internal.R.integer.config_deviceHardwareKeys);
-                    if (deviceKeys != 0) {
-                        result.add(sir);
-                    }
                     return result;
                 }
 

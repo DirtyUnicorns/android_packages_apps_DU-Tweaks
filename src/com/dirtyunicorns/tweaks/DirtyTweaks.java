@@ -39,10 +39,6 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.dirtyunicorns.tweaks.fragments.team.TeamActivity;
-import com.dirtyunicorns.tweaks.tabs.Multitasking;
-import com.dirtyunicorns.tweaks.tabs.Navigation;
-import com.dirtyunicorns.tweaks.tabs.Statusbar;
-import com.dirtyunicorns.tweaks.tabs.System;
 
 import github.com.st235.lib_expandablebottombar.ExpandableBottomBar;
 import github.com.st235.lib_expandablebottombar.ExpandableBottomBarMenuItem;
@@ -76,10 +72,10 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
         ExpandableBottomBar bottomBar = view.findViewById(R.id.expandable_bottom_bar);
 
-        Fragment system = new System();
-        Fragment statusbar = new Statusbar();
-        Fragment navigation = new Navigation();
-        Fragment multitasking = new Multitasking();
+        Fragment system = new com.dirtyunicorns.tweaks.tabs.System();
+        Fragment statusbar = new com.dirtyunicorns.tweaks.tabs.Statusbar();
+        Fragment navigation = new com.dirtyunicorns.tweaks.tabs.Navigation();
+        Fragment multitasking = new com.dirtyunicorns.tweaks.tabs.Multitasking();
 
         Fragment fragment = (Fragment) getFragmentManager().findFragmentById(R.id.fragmentContainer);
         if (fragment == null) {
@@ -118,21 +114,16 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
         bottomBar.setOnItemSelectedListener((view, menuItem) -> {
             int id = menuItem.getItemId();
-            switch (id){
-                case R.id.system:
-                    launchFragment(system);
-                    break;
-                case R.id.statusbar:
-                    launchFragment(statusbar);
-                    break;
-                case R.id.navigation:
-                    launchFragment(navigation);
-                    break;
-                case R.id.multitasking:
-                    if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
-                        launchFragment(multitasking);
-                    }
-                    break;
+            if (id == R.id.system) {
+                launchFragment(system);
+            } else if (id == R.id.statusbar) {
+                launchFragment(statusbar);
+            } else if (id == R.id.navigation) {
+                launchFragment(navigation);
+            } else if (id == R.id.multitasking) {
+                if (mContext.getResources().getBoolean(R.bool.has_active_edge)) {
+                    launchFragment(multitasking);
+                }
             }
             return null;
         });

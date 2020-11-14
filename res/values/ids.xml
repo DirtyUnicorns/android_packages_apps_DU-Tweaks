@@ -21,7 +21,4 @@
     <item name="navigation" type="id" />
     <item name="multitasking" type="id" />
 
-    <!-- Active edge -->
-    <item type="id" name="info_button" />
-
 </resources>

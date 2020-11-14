@@ -90,31 +90,25 @@ public class ListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             mContext = itemView.getContext();
 
-            mGithub.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    try {
-                        Intent intent = new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://github.com/" + mGithubName.getText()));
-                        mContext.startActivity(intent);
-                    } catch (ActivityNotFoundException e) {
-                        e.printStackTrace();
-                    }
+            mGithub.setOnClickListener(v -> {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("https://github.com/" + mGithubName.getText()));
+                    mContext.startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    e.printStackTrace();
                 }
             });
 
-            mTwitter.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    try {
-                        Intent intent = new Intent(Intent.ACTION_VIEW,
-                                mTwitterName.getText().equals("") ?
-                                        Uri.parse("https://twitter.com/_DirtyUnicorns_") :
-                                        Uri.parse("https://twitter.com/" + mTwitterName.getText()));
-                        mContext.startActivity(intent);
-                    } catch (ActivityNotFoundException e) {
-                        e.printStackTrace();
-                    }
+            mTwitter.setOnClickListener(v -> {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW,
+                            mTwitterName.getText().equals("") ?
+                                    Uri.parse("https://twitter.com/_DirtyUnicorns_") :
+                                    Uri.parse("https://twitter.com/" + mTwitterName.getText()));
+                    mContext.startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    e.printStackTrace();
                 }
             });
         }

@@ -18,7 +18,7 @@ package com.dirtyunicorns.tweaks.fragments.system;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
-import android.provider.Settings;
+
 import androidx.preference.PreferenceCategory;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -30,12 +30,10 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
-
-import com.dirtyunicorns.support.preferences.SystemSettingListPreference;
 
 import java.util.ArrayList;
 import java.util.List;
