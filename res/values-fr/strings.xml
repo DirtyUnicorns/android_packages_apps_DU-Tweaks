@@ -66,4 +66,20 @@
     <string name="active_edge_summary">Réglages des options \"Bord actif\"</string>
     <!-- Sub categories -->
     <string name="sub_category_other">Divers</string>
+
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Afficher l\'indicateur de vitesse de réseau</string>
+    <string name="network_traffic_autohide_threshold_title">Seuil de masquage automatique (KB/s)</string>
+
+    <!-- Motion Sense -->
+    <string name="ambient_display_wake_screen_summary">Pour afficher l\'heure, les notifications et d\'autres informations, saisir le téléphone</string>
+    <string name="aware_display_settings_title">Écran de déverrouillage</string>
+    <string name="gesture_silence_title">Interruptions silencieuses</string>
+    <string name="gesture_skip_title">Saut de piste musicale</string>
+
+    <!-- Button backlight -->
+    <string name="button_backlight_title">Rétroéclairage</string>
+
+    <!-- Pulse -->
+    <string name="pulse_settings">Pulse</string>
 </resources>
